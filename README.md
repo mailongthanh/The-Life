@@ -1,2 +1,2 @@
 # The-Life
-Đồ án môn di động CNTT
+Đồ án môn di động CNTT - ĐH CNTT 
