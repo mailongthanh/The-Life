@@ -1,0 +1,4 @@
+com/ntsua/thelife/BuildConfig.java
+ com.ntsua.thelife.BuildConfig
+com/ntsua/thelife/MainActivity.java
+ com.ntsua.thelife.MainActivity
