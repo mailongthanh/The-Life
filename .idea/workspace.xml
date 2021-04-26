@@ -6,7 +6,9 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3805d861-35cb-4c36-bb26-abe18c510500" name="Default Changelist" comment="" />
+    <list default="true" id="b15790df-40e3-41f9-b380-728816af1ac7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +24,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1rYCxlAsLLialnnlMJ5zcwS9pzS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -102,7 +107,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3805d861-35cb-4c36-bb26-abe18c510500" name="Default Changelist" comment="" />
+      <changelist id="b15790df-40e3-41f9-b380-728816af1ac7" name="Default Changelist" comment="" />
       <created>1619143884861</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -110,10 +115,13 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="695" y="155" key="FileChooserDialogImpl" timestamp="1619144721366">
+    <state x="695" y="155" key="FileChooserDialogImpl" timestamp="1619425284488">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="695" y="155" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1619144721366" />
+    <state x="695" y="155" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1619425284488" />
   </component>
 </project>
