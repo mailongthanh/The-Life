@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/ImvIcon"
+            android:layout_width="38dp"
+            android:layout_height="44dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toStartOf="@+id/tvHoTen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvHoTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Như Quỳnh"
+            android:textSize="15dp"
+            app:layout_constraintLeft_toRightOf="@+id/ImvIcon"
+            app:layout_constraintRight_toLeftOf="@id/tvMoiQuanHe"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMucquanhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Mối quan hệ"
+            android:textSize="12dp"
+            app:layout_constraintRight_toLeftOf="@id/pbThanhQuanHe"
+            app:layout_constraintStart_toEndOf="@+id/ImvIcon"
+            app:layout_constraintTop_toBottomOf="@+id/tvHoTen">
+
+        </TextView>
+
+        <ProgressBar
+            android:id="@+id/pbThanhQuanHe"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="119dp"
+            android:layout_height="20dp"
+            android:paddingLeft="5dp"
+            android:progressBackgroundTint="#05F10E"
+            app:layout_constraintLeft_toRightOf="@id/tvMucquanhe"
+            app:layout_constraintTop_toBottomOf="@+id/tvMoiQuanHe" />
+
+        <TextView
+            android:id="@+id/tvMoiQuanHe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="(Vợ)"
+            android:textSize="15dp"
+            app:layout_constraintLeft_toRightOf="@id/tvHoTen"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/ImbArow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:src="@android:drawable/ic_menu_send"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageButton>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
