@@ -2,7 +2,9 @@ package com.ntsua.thelife;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -16,7 +18,7 @@ public class RelationShip extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.relationship);
 
         lvQuanHe = (ListView) findViewById(R.id.ListViewQuanHe);
         MangQuanHe = new ArrayList<QuanHe>();
@@ -33,5 +35,10 @@ public class RelationShip extends AppCompatActivity {
 
         lvQuanHe.setAdapter(adapter);
 
+    }
+
+    public void gotoMainMenu(View view)
+    {
+        startActivity(new Intent(RelationShip.this, MainActivity.class));
     }
 }

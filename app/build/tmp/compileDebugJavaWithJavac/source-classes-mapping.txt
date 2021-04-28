@@ -1,9 +1,17 @@
+com/ntsua/thelife/FoodAdapter.java
+ com.ntsua.thelife.FoodAdapter
+ com.ntsua.thelife.FoodAdapter$1
+ com.ntsua.thelife.FoodAdapter$ViewHolder
 com/ntsua/thelife/QuanHe.java
  com.ntsua.thelife.QuanHe
 com/ntsua/thelife/BuildConfig.java
  com.ntsua.thelife.BuildConfig
+com/ntsua/thelife/Food.java
+ com.ntsua.thelife.Food
 com/ntsua/thelife/MainActivity.java
  com.ntsua.thelife.MainActivity
+com/ntsua/thelife/FoodActivity.java
+ com.ntsua.thelife.FoodActivity
 com/ntsua/thelife/RelationShip.java
  com.ntsua.thelife.RelationShip
 com/ntsua/thelife/QuanHeAdapter.java

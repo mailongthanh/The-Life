@@ -109,14 +109,14 @@
                 <TableRow>
 
                     <Button
-                        android:id="@+id/imageButtonInfant"
+                        android:id="@+id/buttonInfant"
                         android:background="@drawable/custom_button_menu"
                         android:layout_weight="1"
                         app:backgroundTint="@null"
                         android:layout_margin="2dp"
                         android:text="Trẻ con"/>
                     <Button
-                        android:id="@+id/imageButtonAssets"
+                        android:id="@+id/buttonAssets"
                         android:background="@drawable/custom_button_menu"
                         android:layout_weight="1"
                         app:backgroundTint="@null"
@@ -131,19 +131,22 @@
                 <TableRow>
 
                     <Button
-                        android:id="@+id/imageButtonRelationship"
-                        android:background="@drawable/custom_button_menu"
-                        android:layout_weight="1"
-                        app:backgroundTint="@null"
+                        android:id="@+id/buttonRelationship"
                         android:layout_margin="2dp"
-                        android:text="Mối quan hệ"/>
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_button_menu"
+                        android:onClick="gotoRelationship"
+                        android:text="Mối quan hệ"
+                        app:backgroundTint="@null" />
+
                     <Button
-                        android:id="@+id/imageButtonActivity"
-                        android:background="@drawable/custom_button_menu"
-                        android:layout_weight="1"
-                        app:backgroundTint="@null"
+                        android:id="@+id/buttonActivity"
                         android:layout_margin="2dp"
-                        android:text="Hoạt động"/>
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_button_menu"
+                        android:onClick="gotoActivity"
+                        android:text="Hoạt động"
+                        app:backgroundTint="@null" />
                     <!--<ImageButton
                         android:id="@+id/imageButtonRelationship"
                         android:src="@mipmap/ic_launcher"

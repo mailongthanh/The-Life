@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#DCDCDC"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageAvatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/boy" />
+
+    <TextView
+        android:id="@+id/textviewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/imageAvatar"
+        android:text="Name of player" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewName"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/imageAvatar"
+        android:text="Job" />
+
+    <TextView
+        android:id="@+id/textviewMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="$0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewMoney"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="Bank Balance" />
+</RelativeLayout>
