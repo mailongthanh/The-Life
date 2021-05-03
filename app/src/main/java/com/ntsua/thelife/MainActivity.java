@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void gotoActivity(View view)
     {
-        startActivity(new Intent(MainActivity.this, FoodActivity.class));
+        startActivity(new Intent(MainActivity.this, SportActivity.class));
     }
 
     public void gotoRelationship(View view)

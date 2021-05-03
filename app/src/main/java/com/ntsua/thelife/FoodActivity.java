@@ -3,6 +3,7 @@ package com.ntsua.thelife;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
@@ -16,6 +17,7 @@ public class FoodActivity extends AppCompatActivity {
     ListView lvFood;
     FoodAdapter adapter;
     ArrayList<Food> arrFood;
+    SharedPreferences preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +56,6 @@ public class FoodActivity extends AppCompatActivity {
 
     private void Anhxa() {
         lvFood = (ListView) findViewById(R.id.listviewFood);
-        TextView txtTilte = (TextView) findViewById(R.id.textviewTitle);
     }
 
     public void gotoMainMenu(View view)
