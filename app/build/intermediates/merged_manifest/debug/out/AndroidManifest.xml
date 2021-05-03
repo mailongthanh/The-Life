@@ -18,12 +18,14 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.TheLife" >
-        <activity android:name="com.ntsua.thelife.MainActivity" >
+        <activity android:name="com.ntsua.thelife.Tuong_tacActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.ntsua.thelife.MainActivity" >
         </activity>
 
         <meta-data

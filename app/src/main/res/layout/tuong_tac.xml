@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ImvIcon"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toStartOf="@+id/tvHoTen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvHoatDong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Hoạt động"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/ImvIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvChiTiet"/>
+
+    <TextView
+        android:id="@+id/tvChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Chi tiết"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/ImvIcon"
+        app:layout_constraintTop_toBottomOf="@+id/tvHoatDong">
+    </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

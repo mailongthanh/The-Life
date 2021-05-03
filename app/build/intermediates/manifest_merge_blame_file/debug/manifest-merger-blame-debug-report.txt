@@ -11,7 +11,7 @@
 9-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:5:5-22:19
+11-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:5:5-26:19
 12        android:allowBackup="true"
 12-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -28,9 +28,9 @@
 19        android:testOnly="true"
 20        android:theme="@style/Theme.TheLife" >
 20-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:11:9-45
-21        <activity android:name="com.ntsua.thelife.MainActivity" >
+21        <activity android:name="com.ntsua.thelife.Tuong_tacActivity" >
 21-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:12:9-18:20
-21-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:12:19-47
+21-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:12:19-52
 22            <intent-filter>
 22-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:13:13-17:29
 23                <action android:name="android.intent.action.MAIN" />
@@ -42,13 +42,17 @@
 25-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:16:27-74
 26            </intent-filter>
 27        </activity>
-28
-29        <meta-data
-29-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:19:9-21:57
-30            android:name="preloaded_fonts"
-30-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:20:13-43
-31            android:resource="@array/preloaded_fonts" />
-31-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:21:13-54
-32    </application>
-33
-34</manifest>
+28        <activity android:name="com.ntsua.thelife.MainActivity" >
+28-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:19:9-21:20
+28-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:19:19-47
+29        </activity>
+30
+31        <meta-data
+31-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:23:9-25:57
+32            android:name="preloaded_fonts"
+32-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:24:13-43
+33            android:resource="@array/preloaded_fonts" />
+33-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:25:13-54
+34    </application>
+35
+36</manifest>

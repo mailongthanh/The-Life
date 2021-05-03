@@ -1631,8 +1631,10 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable appearance
+drawable assualt
 drawable avd_hide_password
 drawable avd_show_password
+drawable back
 drawable boy
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -1642,6 +1644,8 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable communication
+drawable compliment
 drawable custom_button_menu
 drawable custom_progressbar
 drawable design_bottom_navigation_item_background
@@ -1650,6 +1654,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable film
 drawable girl
 drawable happy
 drawable heartbeat
@@ -1661,6 +1666,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable insult
 drawable life_insurance
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
@@ -1674,6 +1680,7 @@ drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
 drawable mental_health
 drawable menu
+drawable money
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1709,6 +1716,7 @@ id FUNCTION
 id ImbArow
 id ImvIcon
 id ListViewQuanHe
+id ListViewTuongTac
 id META
 id NO_DEBUG
 id SHIFT
@@ -2119,7 +2127,9 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvChiTiet
 id tvHoTen
+id tvHoatDong
 id tvMoiQuanHe
 id tvMucquanhe
 id txtAppearance
@@ -2199,6 +2209,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_tuong_tac
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2283,6 +2294,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout tuong_tac
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
