@@ -1,6 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\jniLibs"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\debug\jniLibs"/></dataSet></merger>
-=======
-<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\HOC TAP\UngDung\The-Life\app\src\main\jniLibs"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\HOC TAP\UngDung\The-Life\app\src\debug\jniLibs"/></dataSet></merger>
->>>>>>> fd32272529a5801cf530da9a74577e8ae65400a9

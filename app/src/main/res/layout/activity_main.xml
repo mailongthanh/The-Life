@@ -359,6 +359,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Noi dung"
+        android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

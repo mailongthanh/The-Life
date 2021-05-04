@@ -1,0 +1,16 @@
+{
+  "age": {
+    "1": [
+      {"events": "", "assets": 0, "happy": 100, "health": 100, "smart":100, "appearance": 100}
+    ],
+    "2": [
+      {"events": "", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+      {"events": "", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+      {"events": "", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+      {"events": "", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+    ]
+  },
+  "events": {
+
+  }
+}

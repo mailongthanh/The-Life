@@ -1,8 +1,12 @@
 package com.ntsua.thelife;
 
 import android.content.SharedPreferences;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -10,15 +14,30 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 
-public final class SaveGame extends AppCompatActivity {
-    private SharedPreferences preferences = getSharedPreferences("data", MODE_PRIVATE);
-    SharedPreferences.Editor editor = preferences.edit();
+public class SaveGame{
+    private SharedPreferences preferences;
+    private SharedPreferences.Editor editor;
+    Gson gson;
+
+    public SaveGame(SharedPreferences preferences) {
+        this.preferences = preferences;
+        editor = this.preferences.edit();
+        gson = new Gson();
+    }
 
     public void saveMoney(int money)
     {
         editor.putInt("money", money);
+        editor.commit();
+    }
+
+    public void saveAge(int age)
+    {
+        editor.putInt("age", age);
+        editor.commit();
     }
 
     public void savePlayerInfo(int happy, int health, int smart, int appearance)
@@ -27,19 +46,24 @@ public final class SaveGame extends AppCompatActivity {
         editor.putInt("health", health);
         editor.putInt("smart", smart);
         editor.putInt("appearance", appearance);
+        editor.commit();
     }
 
     public void saveDetailActivity(String s){
         editor.putString("detail", s);
+        editor.commit();
     }
 
-    public void saveRelationship(ArrayList arrRelationship) throws IOException {
-        editor.putString("relationship", serialize(arrRelationship));
+    public void saveRelationship(ArrayList<QuanHe> arrRelationship){
+        String json = gson.toJson(arrRelationship);
+        editor.putString("relationship", json);
+        editor.commit();
     }
 
     public void saveJob(String job)
     {
         editor.putString("job", job);
+        editor.commit();
     }
 
 
@@ -63,9 +87,9 @@ public final class SaveGame extends AppCompatActivity {
         return  preferences.getInt("appearance", 0);
     }
 
-    public void getJob()
+    public String getJob()
     {
-        preferences.getString("job", "unemployment");
+        return preferences.getString("job", "unemployment");
     }
 
     public int getMoney()
@@ -73,53 +97,17 @@ public final class SaveGame extends AppCompatActivity {
         return preferences.getInt("money", 0);
     }
 
-    public ArrayList getDetailActivity() throws IOException {
-        return (ArrayList) deserialize(preferences.getString("detail", ""));
+    public int getAge(){ return preferences.getInt("age", 0);}
+
+    public String getDetailActivity() {
+        return preferences.getString("detail", "");
     }
 
-    private String serialize(Serializable obj) throws IOException {
-        if (obj == null) return "";
-        try {
-            ByteArrayOutputStream serialObj = new ByteArrayOutputStream();
-            ObjectOutputStream objStream = new ObjectOutputStream(serialObj);
-            objStream.writeObject(obj);
-            objStream.close();
-            return encodeBytes(serialObj.toByteArray());
-        } catch (Exception e) {
-            return "";
-        }
+    public ArrayList<QuanHe> getRelationship(){
+        String json = preferences.getString("relationship", "");
+        Type type = new TypeToken<ArrayList<QuanHe>>() {}.getType();
+        ArrayList<QuanHe> arrRelationship = gson.fromJson(json, type);
+        return arrRelationship;
     }
 
-    private String encodeBytes(byte[] bytes) {
-        StringBuffer strBuf = new StringBuffer();
-
-        for (int i = 0; i < bytes.length; i++) {
-            strBuf.append((char) (((bytes[i] >> 4) & 0xF) + ((int) 'a')));
-            strBuf.append((char) (((bytes[i]) & 0xF) + ((int) 'a')));
-        }
-
-        return strBuf.toString();
-    }
-
-    private Object deserialize(String str) throws IOException {
-        if (str == null || str.length() == 0) return null;
-        try {
-            ByteArrayInputStream serialObj = new ByteArrayInputStream(decodeBytes(str));
-            ObjectInputStream objStream = new ObjectInputStream(serialObj);
-            return objStream.readObject();
-        } catch (Exception e) {
-            return null;
-        }
-    }
-
-    private byte[] decodeBytes(String str) {
-        byte[] bytes = new byte[str.length() / 2];
-        for (int i = 0; i < str.length(); i+=2) {
-            char c = str.charAt(i);
-            bytes[i/2] = (byte) ((c - 'a') << 4);
-            c = str.charAt(i+1);
-            bytes[i/2] += (c - 'a');
-        }
-        return bytes;
-    }
 }

@@ -1,0 +1,28 @@
+{
+  "vi": {
+    "father": [
+      "Nguyễn Văn A",
+      "Nguyễn Văn B",
+      "Nguyễn Văn C",
+      "Nguyễn Văn D",
+      "Nguyễn Văn E"
+    ],
+    "mother": [
+      "Nguyễn Thị A",
+      "Nguyễn Thị B",
+      "Nguyễn Thị C",
+      "Nguyễn Thị D",
+      "Nguyễn Thị E"
+    ]
+  },
+  "en": {
+    "father": [
+      "Nguyen Van A",
+      "Nguyen Van B"
+    ],
+    "mother": [
+      "Nguyen Thi A",
+      "Nguyen Thi B"
+    ]
+  }
+}

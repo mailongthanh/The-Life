@@ -12,11 +12,14 @@ com/ntsua/thelife/QuanHeAdapter.java
  com.ntsua.thelife.QuanHeAdapter
  com.ntsua.thelife.QuanHeAdapter$1
  com.ntsua.thelife.QuanHeAdapter$ViewHolder
+com/ntsua/thelife/SaveGame.java
+ com.ntsua.thelife.SaveGame
+ com.ntsua.thelife.SaveGame$1
 com/ntsua/thelife/SportActivity.java
  com.ntsua.thelife.SportActivity
-com/ntsua/thelife/FoodActivity.java
- com.ntsua.thelife.FoodActivity
 com/ntsua/thelife/MainActivity.java
  com.ntsua.thelife.MainActivity
+com/ntsua/thelife/FoodActivity.java
+ com.ntsua.thelife.FoodActivity
 com/ntsua/thelife/RelationShip.java
  com.ntsua.thelife.RelationShip
