@@ -27,6 +27,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="b15790df-40e3-41f9-b380-728816af1ac7" name="Default Changelist" comment="git push" />
+=======
     <list default="true" id="b15790df-40e3-41f9-b380-728816af1ac7" name="Default Changelist" comment="git push">
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
@@ -187,12 +190,17 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
+>>>>>>> d120873f334c0f53dc736abae59ca4f4f70685c9
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[192.168.231.102:5555]" />
+=======
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[192.168.38.104:5555]" />
+>>>>>>> d120873f334c0f53dc736abae59ca4f4f70685c9
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -214,8 +222,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="layoutResourceFile_vertical" />
+<<<<<<< HEAD
+        <option value="resourceFile" />
+        <option value="layoutResourceFile" />
+=======
         <option value="layoutResourceFile" />
         <option value="resourceFile" />
+>>>>>>> d120873f334c0f53dc736abae59ca4f4f70685c9
         <option value="Class" />
       </list>
     </option>
@@ -235,7 +248,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/assets" />
+=======
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+>>>>>>> a16490b81a17fa119c224e4763a75f4dbb333db3
   </component>
   <component name="RecentsManager">
     <key name="android.template.-9915908">
@@ -246,6 +266,22 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\assets" />
+      <recent name="D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\res\drawable" />
+      <recent name="D:\Study\University\Sophomore\HK2\The-Life\app\src\main\res\drawable" />
+    </key>
+>>>>>>> d120873f334c0f53dc736abae59ca4f4f70685c9
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.-9915908">
+      <recent name="com.ntsua.thelife" />
+    </key>
+    <key name="android.template.92802409">
+      <recent name="com.ntsua.thelife" />
+    </key>
+    <key name="android.template.-1796687155">
+      <recent name="com.ntsua.thelife" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\res\drawable" />
       <recent name="D:\Study\University\Sophomore\HK2\The-Life\app\src\main\res\drawable" />
     </key>
@@ -374,11 +410,19 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1619597945658" />
+<<<<<<< HEAD
+    <state x="361" y="237" key="AndroidCreateResourceFileDialog" timestamp="1620095863414">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="321" y="211" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1619598956290" />
+    <state x="361" y="237" key="AndroidCreateResourceFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1620095863414" />
+=======
     <state x="321" y="211" key="AndroidCreateResourceFileDialog" timestamp="1619598956290">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="321" y="211" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1619598956290" />
     <state x="361" y="237" key="AndroidCreateResourceFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1619440372088" />
+>>>>>>> d120873f334c0f53dc736abae59ca4f4f70685c9
     <state x="449" y="187" key="Downloadable.Font.Dialog.Size" timestamp="1619439697212">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
