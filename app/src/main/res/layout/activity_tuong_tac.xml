@@ -6,11 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@color/white">
-    </TextView>
+    <include layout="@layout/player_info">
+
+    </include>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -19,14 +17,14 @@
 
         <TextView
             android:id="@+id/Tvbanner"
-            android:layout_width="100dp"
+            android:layout_width="150dp"
             android:layout_height="60dp"
             android:background="@color/Ocean"
             android:fontFamily="@font/anton"
             android:gravity="center"
             android:text="MỐI QUAN HỆ"
             android:textColor="@color/white"
-            android:textSize="19sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">

@@ -11,12 +11,12 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class HoatDongQHAdater extends BaseAdapter {
+public class HoatDongQHAdapter extends BaseAdapter {
     Context myContext;
     int myLayout;
     List<HoatDongQH> myHoatDongList;
 
-    public HoatDongQHAdater(Context context, int Layout, List<HoatDongQH> HoatdongList )
+    public HoatDongQHAdapter(Context context, int Layout, List<HoatDongQH> HoatdongList )
     {
         myContext = context;
         myLayout = Layout;
@@ -47,14 +47,14 @@ public class HoatDongQHAdater extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        HoatDongQHAdater.ViewHolder holder;
+        HoatDongQHAdapter.ViewHolder holder;
 
         if(convertView == null)
         {
 
             LayoutInflater inflater = (LayoutInflater) myContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(myLayout,null);
-            holder = new HoatDongQHAdater.ViewHolder();
+            holder = new HoatDongQHAdapter.ViewHolder();
 
             //ánh xạ
             holder.tvChiTiet= (TextView) convertView.findViewById(R.id.tvChiTiet);
@@ -62,7 +62,7 @@ public class HoatDongQHAdater extends BaseAdapter {
             holder.imvicon = convertView.findViewById(R.id.ImvIcon);
             convertView.setTag(holder);
         } else{
-            holder = (HoatDongQHAdater.ViewHolder) convertView.getTag();
+            holder = (HoatDongQHAdapter.ViewHolder) convertView.getTag();
         }
 
         holder.tvTenHoatDong.setText(myHoatDongList.get(position).TenHoatDong);
@@ -74,3 +74,4 @@ public class HoatDongQHAdater extends BaseAdapter {
 
 
 }
+

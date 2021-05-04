@@ -2,7 +2,9 @@ package com.ntsua.thelife;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -16,14 +18,17 @@ public class RelationShip extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.relationship);
 
         lvQuanHe = (ListView) findViewById(R.id.ListViewQuanHe);
         MangQuanHe = new ArrayList<QuanHe>();
 
-        MangQuanHe.add(new QuanHe("Trần Thanh Vũ",19,50,"Bạn bè"));
-        MangQuanHe.add(new QuanHe("Nguyễn Thiện Sua",19,2,"Bạn bè"));
-        MangQuanHe.add(new QuanHe("Nguyễn Hiếu Nghĩa",19,50,"Bạn bè"));
+        //MangQuanHe.add(new QuanHe("Trần Thanh Vũ",19,50,"Bạn bè"));
+        //MangQuanHe.add(new QuanHe("Nguyễn Thiện Sua",19,2,"Bạn bè"));
+        //MangQuanHe.add(new QuanHe("Nguyễn Hiếu Nghĩa",19,50,"Bạn bè"));
+        MangQuanHe.add(new QuanHe("Mai Long Thành",19,80,"Bạn bè"));
+        MangQuanHe.add(new QuanHe("Võ Thành Phát",19,2,"Bạn bè"));
+        MangQuanHe.add(new QuanHe("Hoàng Nhật Tiến",19,0,"Bạn bè"));
 
         QuanHeAdapter adapter = new QuanHeAdapter(
                 RelationShip.this,
@@ -33,5 +38,10 @@ public class RelationShip extends AppCompatActivity {
 
         lvQuanHe.setAdapter(adapter);
 
+    }
+
+    public void gotoMainMenu(View view)
+    {
+        startActivity(new Intent(RelationShip.this, MainActivity.class));
     }
 }

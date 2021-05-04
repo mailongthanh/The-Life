@@ -1,6 +1,5 @@
 package com.ntsua.thelife;
 
-import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -28,7 +27,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
         MangTuongTac.add(new HoatDongQH(R.drawable.insult,"Xúc phạm","Giết người bằng lời nói"));
         MangTuongTac.add(new HoatDongQH(R.drawable.film,"Rủ xem phim","Phimcuzzzzz.net"));
 
-        HoatDongQHAdater adapter = new HoatDongQHAdater(
+        HoatDongQHAdapter adapter = new HoatDongQHAdapter(
                 Tuong_tacActivity.this,
                 R.layout.tuong_tac,
                 MangTuongTac

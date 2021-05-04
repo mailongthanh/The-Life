@@ -24,14 +24,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b15790df-40e3-41f9-b380-728816af1ac7" name="Default Changelist" comment="git push">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b15790df-40e3-41f9-b380-728816af1ac7" name="Default Changelist" comment="git push" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +52,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="layoutResourceFile_vertical" />
+        <option value="resourceFile" />
         <option value="layoutResourceFile" />
         <option value="Class" />
       </list>
@@ -78,14 +72,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="ExtractSuperBase.RECENT_KEYS">
+    <key name="android.template.-9915908">
       <recent name="com.ntsua.thelife" />
     </key>
-    <key name="android.template.-1261309780">
+    <key name="android.template.92802409">
       <recent name="com.ntsua.thelife" />
+    </key>
+    <key name="android.template.-1796687155">
+      <recent name="com.ntsua.thelife" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\res\drawable" />
+      <recent name="D:\Study\University\Sophomore\HK2\The-Life\app\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunManager">
@@ -106,7 +108,7 @@
       <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
+      <option name="MODE" value="specific_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
@@ -146,9 +148,9 @@
         <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
+      <option name="ACTIVITY_CLASS" value="com.ntsua.thelife.MainActivity" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
-      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="true" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -175,16 +177,6 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
-      <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
-      </list>
-    </option>
-  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -202,14 +194,23 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update Relationships" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1619595134346">
+    <state x="137" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619769021425">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="137" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1619769021425" />
+    <state x="412" y="174" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1619769020223">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="412" y="174" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.768@0.0.1366.768" timestamp="1619769020223" />
+    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619597945658">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1619597945658" />
+    <state x="361" y="237" key="AndroidCreateResourceFileDialog" timestamp="1620095863414">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1619595134346" />
-    <state x="361" y="237" width="838" height="486" key="AndroidCreateResourceFileDialog" timestamp="1619659263742">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="361" y="237" width="838" height="486" key="AndroidCreateResourceFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1619659263742" />
+    <state x="321" y="211" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1619598956290" />
+    <state x="361" y="237" key="AndroidCreateResourceFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1620095863414" />
     <state x="449" y="187" key="Downloadable.Font.Dialog.Size" timestamp="1619439697212">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -218,33 +219,24 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="695" y="155" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1619425284488" />
-    <state width="1491" height="223" key="GridCell.Tab.0.bottom" timestamp="1619663871197">
+    <state x="509" y="152" key="RollbackChangesDialog" timestamp="1619440111132">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1619663871197" />
-    <state width="1491" height="223" key="GridCell.Tab.0.center" timestamp="1619663871196">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="509" y="152" key="RollbackChangesDialog/0.0.1536.864@0.0.1536.864" timestamp="1619440111132" />
+    <state x="499" y="162" key="chooseDestDirectoryDialog" timestamp="1619767490109">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1491" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1619663871196" />
-    <state width="1491" height="223" key="GridCell.Tab.0.left" timestamp="1619663871196">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1491" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1619663871196" />
-    <state width="1491" height="223" key="GridCell.Tab.0.right" timestamp="1619663871197">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1491" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1619663871197" />
-    <state x="509" y="152" key="RollbackChangesDialog" timestamp="1619663134861">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="509" y="152" key="RollbackChangesDialog/0.0.1536.864@0.0.1536.864" timestamp="1619663134861" />
-    <state x="584" y="210" key="chooseDestDirectoryDialog" timestamp="1619660461913">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="584" y="210" key="chooseDestDirectoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1619660461913" />
-    <state x="579" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619441445417">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="579" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1619441445417" />
+    <state x="499" y="162" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1619767490109" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/ntsua/thelife/SaveGame.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

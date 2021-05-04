@@ -1,20 +1,22 @@
+com/ntsua/thelife/FoodAdapter.java
+ com.ntsua.thelife.FoodAdapter
+ com.ntsua.thelife.FoodAdapter$1
+ com.ntsua.thelife.FoodAdapter$ViewHolder
 com/ntsua/thelife/QuanHe.java
  com.ntsua.thelife.QuanHe
 com/ntsua/thelife/BuildConfig.java
  com.ntsua.thelife.BuildConfig
-com/ntsua/thelife/HoatDongQH.java
- com.ntsua.thelife.HoatDongQH
-com/ntsua/thelife/MainActivity.java
- com.ntsua.thelife.MainActivity
-com/ntsua/thelife/HoatDongQHAdater.java
- com.ntsua.thelife.HoatDongQHAdater
- com.ntsua.thelife.HoatDongQHAdater$1
- com.ntsua.thelife.HoatDongQHAdater$ViewHolder
-com/ntsua/thelife/RelationShip.java
- com.ntsua.thelife.RelationShip
+com/ntsua/thelife/Food.java
+ com.ntsua.thelife.Food
 com/ntsua/thelife/QuanHeAdapter.java
  com.ntsua.thelife.QuanHeAdapter
  com.ntsua.thelife.QuanHeAdapter$1
  com.ntsua.thelife.QuanHeAdapter$ViewHolder
-com/ntsua/thelife/Tuong_tacActivity.java
- com.ntsua.thelife.Tuong_tacActivity
+com/ntsua/thelife/SportActivity.java
+ com.ntsua.thelife.SportActivity
+com/ntsua/thelife/FoodActivity.java
+ com.ntsua.thelife.FoodActivity
+com/ntsua/thelife/MainActivity.java
+ com.ntsua.thelife.MainActivity
+com/ntsua/thelife/RelationShip.java
+ com.ntsua.thelife.RelationShip

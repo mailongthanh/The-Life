@@ -1,4 +1,12 @@
-#Thu Apr 29 09:43:52 ICT 2021
-base.0=D\:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+<<<<<<< HEAD
+#Fri Apr 30 14:57:12 ICT 2021
+base.0=D\:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+=======
+#Mon May 03 10:38:48 ICT 2021
+base.0=D\:\\Study\\University\\Sophomore\\HK2\\The-Life\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+>>>>>>> fd32272529a5801cf530da9a74577e8ae65400a9
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=D\:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
