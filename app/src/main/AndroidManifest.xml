@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheLife">
+<<<<<<< HEAD
         <activity android:name=".Tuong_tacActivity"></activity>
         <activity android:name=".SportActivity" />
+=======
+        <activity android:name=".SportActivity"></activity>
+>>>>>>> d120873f334c0f53dc736abae59ca4f4f70685c9
         <activity android:name=".RelationShip" />
         <activity android:name=".FoodActivity" />
         <activity android:name=".MainActivity">
