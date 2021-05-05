@@ -24,10 +24,53 @@
 17        android:roundIcon="@mipmap/ic_launcher_round"
 17-->D:\The-Life\app\src\main\AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
+<<<<<<< HEAD
+18-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:10:9-35
+19        android:theme="@style/Theme.TheLife" >
+19-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:11:9-45
+20        <activity android:name="com.ntsua.thelife.Tuong_tacActivity" >
+20-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:12:9-65
+20-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:12:19-52
+21        </activity>
+22        <activity android:name="com.ntsua.thelife.SportActivity" />
+22-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:13:9-51
+22-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:13:19-48
+23        <activity android:name="com.ntsua.thelife.RelationShip" />
+23-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:14:9-50
+23-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:14:19-47
+24        <activity android:name="com.ntsua.thelife.FoodActivity" />
+24-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:15:9-50
+24-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:15:19-47
+25        <activity android:name="com.ntsua.thelife.MainActivity" >
+25-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:16:9-22:20
+25-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:16:19-47
+26            <intent-filter>
+26-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:17:13-21:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:18:17-69
+27-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:18:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:20:17-77
+29-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:20:27-74
+30            </intent-filter>
+31        </activity>
+32
+33        <meta-data
+33-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:24:9-26:57
+34            android:name="preloaded_fonts"
+34-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:25:13-43
+35            android:resource="@array/preloaded_fonts" />
+35-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:26:13-54
+36    </application>
+37
+38</manifest>
+=======
 18-->D:\The-Life\app\src\main\AndroidManifest.xml:10:9-35
 19        android:testOnly="true"
 20        android:theme="@style/Theme.TheLife" >
 20-->D:\The-Life\app\src\main\AndroidManifest.xml:11:9-45
+<<<<<<< HEAD
 21        <activity android:name="com.ntsua.thelife.BoiToan" />
 21-->D:\The-Life\app\src\main\AndroidManifest.xml:12:9-54
 21-->D:\The-Life\app\src\main\AndroidManifest.xml:12:19-42
@@ -106,3 +149,51 @@
 50    </application>
 51
 52</manifest>
+=======
+21        <activity android:name="com.ntsua.thelife.HoatDong" />
+21-->D:\The-Life\app\src\main\AndroidManifest.xml:12:9-55
+21-->D:\The-Life\app\src\main\AndroidManifest.xml:12:19-43
+22        <activity android:name="com.ntsua.thelife.relationshipActivity" />
+22-->D:\The-Life\app\src\main\AndroidManifest.xml:13:9-58
+22-->D:\The-Life\app\src\main\AndroidManifest.xml:13:19-55
+23        <activity android:name="com.ntsua.thelife.CrimeActivity" />
+23-->D:\The-Life\app\src\main\AndroidManifest.xml:14:9-51
+23-->D:\The-Life\app\src\main\AndroidManifest.xml:14:19-48
+24        <activity android:name="com.ntsua.thelife.Tuong_tacActivity" />
+24-->D:\The-Life\app\src\main\AndroidManifest.xml:15:9-55
+24-->D:\The-Life\app\src\main\AndroidManifest.xml:15:19-52
+25        <activity android:name="com.ntsua.thelife.SportActivity" />
+25-->D:\The-Life\app\src\main\AndroidManifest.xml:16:9-51
+25-->D:\The-Life\app\src\main\AndroidManifest.xml:16:19-48
+26        <activity android:name="com.ntsua.thelife.RelationShip" />
+26-->D:\The-Life\app\src\main\AndroidManifest.xml:17:9-50
+26-->D:\The-Life\app\src\main\AndroidManifest.xml:17:19-47
+27        <activity android:name="com.ntsua.thelife.FoodActivity" />
+27-->D:\The-Life\app\src\main\AndroidManifest.xml:18:9-50
+27-->D:\The-Life\app\src\main\AndroidManifest.xml:18:19-47
+28        <activity android:name="com.ntsua.thelife.MainActivity" >
+28-->D:\The-Life\app\src\main\AndroidManifest.xml:19:9-25:20
+28-->D:\The-Life\app\src\main\AndroidManifest.xml:19:19-47
+29            <intent-filter>
+29-->D:\The-Life\app\src\main\AndroidManifest.xml:20:13-24:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->D:\The-Life\app\src\main\AndroidManifest.xml:21:17-69
+30-->D:\The-Life\app\src\main\AndroidManifest.xml:21:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->D:\The-Life\app\src\main\AndroidManifest.xml:23:17-77
+32-->D:\The-Life\app\src\main\AndroidManifest.xml:23:27-74
+33            </intent-filter>
+34        </activity>
+35
+36        <meta-data
+36-->D:\The-Life\app\src\main\AndroidManifest.xml:27:9-29:57
+37            android:name="preloaded_fonts"
+37-->D:\The-Life\app\src\main\AndroidManifest.xml:28:13-43
+38            android:resource="@array/preloaded_fonts" />
+38-->D:\The-Life\app\src\main\AndroidManifest.xml:29:13-54
+39    </application>
+40
+41</manifest>
+>>>>>>> 0b5843b5b5ac40fe034a06aaab7b68fd7fd6cba1
+>>>>>>> 503605665b01cad360b10b330177c867d05dba89
