@@ -40,13 +40,57 @@ public class HoatDong extends AppCompatActivity {
         lvHoatDong.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 12) {
-                    Intent myintent = new Intent(view.getContext(), SportActivity.class);
-                    startActivityForResult(myintent, 12);
+                if (position == 0) {
+                    Intent myintent = new Intent(view.getContext(), Playground.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 1) {
+                    Intent myintent = new Intent(view.getContext(), Love.class);
+                    startActivityForResult(myintent, 1);
+                }
+                if (position == 2) {
+                    Intent myintent = new Intent(view.getContext(), Hospital.class);
+                    startActivityForResult(myintent, 2);
+                }
+                if (position == 3) {
+                    Intent myintent = new Intent(view.getContext(), Startup.class);
+                    startActivityForResult(myintent, 3);
+                }
+                if (position == 4) {
+                    Intent myintent = new Intent(view.getContext(), Cooking.class);
+                    startActivityForResult(myintent, 4);
+                }
+                if (position == 5) {
+                    Intent myintent = new Intent(view.getContext(), SongKhac.class);
+                    startActivityForResult(myintent, 5);
+                }
+                if (position == 6) {
+                    Intent myintent = new Intent(view.getContext(), MakeUp.class);
+                    startActivityForResult(myintent, 6);
+                }
+                if (position == 7) {
+                    Intent myintent = new Intent(view.getContext(), Degree.class);
+                    startActivityForResult(myintent, 7);
                 }
                 if (position == 8) {
                     Intent myintent = new Intent(view.getContext(), FoodActivity.class);
                     startActivityForResult(myintent, 8);
+                }
+                if (position == 9) {
+                    Intent myintent = new Intent(view.getContext(), Travel.class);
+                    startActivityForResult(myintent, 9);
+                }
+                if (position == 10) {
+                    Intent myintent = new Intent(view.getContext(), BoiToan.class);
+                    startActivityForResult(myintent, 10);
+                }
+                if (position == 11) {
+                    Intent myintent = new Intent(view.getContext(), Entertainment.class);
+                    startActivityForResult(myintent, 11);
+                }
+                if (position == 12) {
+                    Intent myintent = new Intent(view.getContext(), SportActivity.class);
+                    startActivityForResult(myintent, 12);
                 }
             }
         });
