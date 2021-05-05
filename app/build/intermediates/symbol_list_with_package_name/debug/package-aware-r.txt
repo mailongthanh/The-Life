@@ -977,6 +977,7 @@ bool abc_action_bar_embed_tabs
 bool abc_allow_stacked_button_bar
 bool abc_config_actionMenuItemAllCaps
 bool mtrl_btn_textappearance_all_caps
+color Blue
 color Ocean
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
@@ -1671,8 +1672,10 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable alcohol
 drawable appearance
+drawable assualt
 drawable avd_hide_password
 drawable avd_show_password
+drawable back
 drawable badminton
 drawable baseball
 drawable basketball
@@ -1689,7 +1692,12 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable bubble_tea
+drawable cancel
+drawable cannabis
+drawable carrobber
 drawable coffee
+drawable communication
+drawable compliment
 drawable custom_button_menu
 drawable custom_progressbar
 drawable cutlery
@@ -1699,12 +1707,17 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable dogrobber
 drawable drink
 drawable fast_food
+drawable film
 drawable fitness
 drawable football
 drawable fruits
 drawable girl
+drawable gradient_bg
+drawable gradient_bg_select
+drawable hacker
 drawable hamburger
 drawable happy
 drawable heartbeat
@@ -1717,8 +1730,10 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable insult
 drawable jogging
 drawable life_insurance
+drawable list_selector
 drawable lollipop
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
@@ -1732,6 +1747,7 @@ drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
 drawable mental_health
 drawable menu
+drawable money
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1755,6 +1771,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pickpocket
 drawable ping_pong
 drawable pizza
 drawable plus
@@ -1762,6 +1779,7 @@ drawable previous
 drawable racing
 drawable restaurant
 drawable rice_bowl
+drawable robber
 drawable rowing
 drawable salad
 drawable seafood
@@ -1783,10 +1801,9 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
-id FirstFragment
-id ImbArow
 id ImvIcon
 id ListViewQuanHe
+id ListViewTuongTac
 id META
 id NO_DEBUG
 id SHIFT
@@ -1794,7 +1811,6 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
-id SecondFragment
 id TOP_END
 id TOP_START
 id Tvbanner
@@ -1832,8 +1848,6 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
-id action_FirstFragment_to_SecondFragment
-id action_SecondFragment_to_FirstFragment
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1981,6 +1995,7 @@ id ignoreRequest
 id image
 id imageAvatar
 id imageButtonMenu
+id imageCrime
 id imageFood
 id imageviewFoodBack
 id imageviewSportBack
@@ -2004,6 +2019,7 @@ id linearLayout
 id linearLayout2
 id listMode
 id list_item
+id listviewCrime
 id listviewFood
 id listviewSports
 id masked
@@ -2061,7 +2077,6 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
-id nav_graph
 id nav_host_fragment_container
 id navigation_header_container
 id never
@@ -2191,7 +2206,9 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id textviewCrime
 id textviewDescription
+id textviewDescriptionCr
 id textviewFoodName
 id textviewMoney
 id textviewName
@@ -2212,7 +2229,9 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvChiTiet
 id tvHoTen
+id tvHoatDong
 id tvMoiQuanHe
 id tvMucquanhe
 id txtAppearance
@@ -2293,9 +2312,12 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_crime
 layout activity_food
 layout activity_main
 layout activity_sport
+layout activity_tuong_tac
+layout crime
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2382,9 +2404,9 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout tuong_tac
 mipmap ic_launcher
 mipmap ic_launcher_round
-navigation nav_graph
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description

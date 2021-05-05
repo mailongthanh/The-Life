@@ -1,11 +1,7 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-kk\\values-kk.xml",
-=======
             "outputFile": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-kk\\values-kk.xml",
->>>>>>> fd32272529a5801cf530da9a74577e8ae65400a9
             "map": [
                 {
                     "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-2\\files-2.1\\8dbd859d1cd89239b42e7382b4fc40d7\\core-1.3.1\\res\\values-kk\\values-kk.xml",

@@ -1,11 +1,7 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zu\\values-zu.xml",
-=======
             "outputFile": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zu\\values-zu.xml",
->>>>>>> fd32272529a5801cf530da9a74577e8ae65400a9
             "map": [
                 {
                     "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-2\\files-2.1\\44b21666f861b2b454523071d69d07d7\\appcompat-1.2.0\\res\\values-zu\\values-zu.xml",

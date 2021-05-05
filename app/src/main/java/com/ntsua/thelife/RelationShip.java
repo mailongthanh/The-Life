@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -38,10 +41,19 @@ public class RelationShip extends AppCompatActivity {
 
         lvQuanHe.setAdapter(adapter);
 
+        lvQuanHe.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                startActivity(new Intent(RelationShip.this, Tuong_tacActivity.class));
+            }
+        });
+
     }
 
     public void gotoMainMenu(View view)
     {
         startActivity(new Intent(RelationShip.this, MainActivity.class));
     }
+
+
 }
