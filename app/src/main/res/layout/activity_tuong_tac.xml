@@ -31,7 +31,7 @@
 
         </TextView>
 
-        <ImageButton
+        <ImageView
             android:layout_width="40dp"
             android:layout_height="60dp"
             android:background="@color/Ocean"
@@ -41,7 +41,8 @@
             app:layout_constraintHorizontal_bias="0.047"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/abc_vector_test" />
+            android:onClick="gotoRelationship"
+            android:src="@drawable/previous" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -4,33 +4,45 @@ com/ntsua/thelife/FoodAdapter.java
  com.ntsua.thelife.FoodAdapter$ViewHolder
 com/ntsua/thelife/QuanHe.java
  com.ntsua.thelife.QuanHe
+com/ntsua/thelife/RelationShip.java
+ com.ntsua.thelife.RelationShip
+ com.ntsua.thelife.RelationShip$1
 com/ntsua/thelife/HoatDongQH.java
  com.ntsua.thelife.HoatDongQH
-com/ntsua/thelife/BuildConfig.java
- com.ntsua.thelife.BuildConfig
-com/ntsua/thelife/HoatDongQHAdapter.java
- com.ntsua.thelife.HoatDongQHAdapter
- com.ntsua.thelife.HoatDongQHAdapter$1
- com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
-com/ntsua/thelife/Food.java
- com.ntsua.thelife.Food
-com/ntsua/thelife/QuanHeAdapter.java
- com.ntsua.thelife.QuanHeAdapter
- com.ntsua.thelife.QuanHeAdapter$1
- com.ntsua.thelife.QuanHeAdapter$ViewHolder
-com/ntsua/thelife/Tuong_tacActivity.java
- com.ntsua.thelife.Tuong_tacActivity
-com/ntsua/thelife/SaveGame.java
- com.ntsua.thelife.SaveGame
- com.ntsua.thelife.SaveGame$1
-com/ntsua/thelife/SportActivity.java
- com.ntsua.thelife.SportActivity
 com/ntsua/thelife/MainActivity.java
  com.ntsua.thelife.MainActivity
  com.ntsua.thelife.MainActivity$1
  com.ntsua.thelife.MainActivity$2
  com.ntsua.thelife.MainActivity$3
+com/ntsua/thelife/HoatDongQHAdapter.java
+ com.ntsua.thelife.HoatDongQHAdapter
+ com.ntsua.thelife.HoatDongQHAdapter$1
+ com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
+com/ntsua/thelife/CrimeAdapter.java
+ com.ntsua.thelife.CrimeAdapter
+ com.ntsua.thelife.CrimeAdapter$1
+ com.ntsua.thelife.CrimeAdapter$ViewHolder
+com/ntsua/thelife/QuanHeAdapter.java
+ com.ntsua.thelife.QuanHeAdapter
+ com.ntsua.thelife.QuanHeAdapter$1
+ com.ntsua.thelife.QuanHeAdapter$ViewHolder
+com/ntsua/thelife/CrimeActivity.java
+ com.ntsua.thelife.CrimeActivity
+ com.ntsua.thelife.CrimeActivity$1
+com/ntsua/thelife/Tuong_tacActivity.java
+ com.ntsua.thelife.Tuong_tacActivity
+com/ntsua/thelife/SaveGame.java
+ com.ntsua.thelife.SaveGame
+ com.ntsua.thelife.SaveGame$1
+com/ntsua/thelife/BuildConfig.java
+ com.ntsua.thelife.BuildConfig
+com/ntsua/thelife/Food.java
+ com.ntsua.thelife.Food
+com/ntsua/thelife/HoatDong.java
+ com.ntsua.thelife.HoatDong
+ com.ntsua.thelife.HoatDong$1
+com/ntsua/thelife/SportActivity.java
+ com.ntsua.thelife.SportActivity
 com/ntsua/thelife/FoodActivity.java
  com.ntsua.thelife.FoodActivity
-com/ntsua/thelife/RelationShip.java
- com.ntsua.thelife.RelationShip
+ com.ntsua.thelife.FoodActivity$1

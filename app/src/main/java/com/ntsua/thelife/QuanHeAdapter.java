@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -13,19 +15,21 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.ntsua.thelife.QuanHe;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class QuanHeAdapter extends BaseAdapter {
 
     Context myContext;
     int myLayout;
-    List<QuanHe> myQuanHeList;
+    ArrayList<QuanHe> myQuanHeList;
 
-    public QuanHeAdapter(Context context, int Layout, List<QuanHe> QuanHeList)
+    public QuanHeAdapter(Context context, int Layout, ArrayList<QuanHe> QuanHeList)
     {
-        myContext=context;
-        myLayout=Layout;
-        myQuanHeList=QuanHeList;
+        myContext = context;
+        myLayout = Layout;
+        myQuanHeList = QuanHeList;
     }
 
     @Override
@@ -60,9 +64,14 @@ public class QuanHeAdapter extends BaseAdapter {
             convertView = inflater.inflate(myLayout,null);
             holder = new ViewHolder();
             //ánh xạ
-            holder.tvTen= (TextView) convertView.findViewById(R.id.tvHoTen);
-            holder.tvMoiQuanHe= (TextView) convertView.findViewById(R.id.tvMoiQuanHe);
-            holder.PbThanhQH= (ProgressBar) convertView.findViewById(R.id.pbThanhQuanHe);
+            holder.tvTen        = (TextView) convertView.findViewById(R.id.tvHoTen);
+            holder.tvMoiQuanHe  = (TextView) convertView.findViewById(R.id.tvMoiQuanHe);
+            holder.PbThanhQH    = (ProgressBar) convertView.findViewById(R.id.pbThanhQuanHe);
+
+            //Gán giá trị
+            holder.tvTen.setText(myQuanHeList.get(position).getHoten());
+            holder.tvMoiQuanHe.setText("(" + myQuanHeList.get(position).getQuanHe() + ")");
+            holder.PbThanhQH.setProgress(myQuanHeList.get(position).getDoThanMat());
             convertView.setTag(holder);
         } else{
             holder = (ViewHolder) convertView.getTag();
@@ -72,10 +81,11 @@ public class QuanHeAdapter extends BaseAdapter {
         //ImageView ImgIcon = (ImageView) convertView.findViewById(R.id.ImvIcon);
         //ImgIcon.setImageResource(myQuanHeList.get(position).HinhAnh);
 
-        //Gán giá trị
-        holder.tvTen.setText(myQuanHeList.get(position).Hoten);
-        holder.tvMoiQuanHe.setText("(" + myQuanHeList.get(position).QuanHe + ")");
-        holder.PbThanhQH.setProgress(myQuanHeList.get(position).DoThanMat);
+
+
+        Animation anim = AnimationUtils.loadAnimation(myContext, R.anim.listview_scale);
+        convertView.startAnimation(anim);
+
         return convertView;
     }
 }

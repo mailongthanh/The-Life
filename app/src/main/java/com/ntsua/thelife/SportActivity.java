@@ -48,6 +48,6 @@ public class SportActivity extends AppCompatActivity {
 
     public void gotoMainMenu(View view)
     {
-        startActivity(new Intent(SportActivity.this, MainActivity.class));
+        startActivity(new Intent(SportActivity.this, HoatDong.class));
     }
 }

@@ -17,8 +17,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheLife" >
-        <activity android:name="com.ntsua.thelife.Tuong_tacActivity" >
-        </activity>
+        <activity android:name="com.ntsua.thelife.HoatDong" />
+        <activity android:name="com.ntsua.thelife.relationshipActivity" />
+        <activity android:name="com.ntsua.thelife.CrimeActivity" />
+        <activity android:name="com.ntsua.thelife.Tuong_tacActivity" />
         <activity android:name="com.ntsua.thelife.SportActivity" />
         <activity android:name="com.ntsua.thelife.RelationShip" />
         <activity android:name="com.ntsua.thelife.FoodActivity" />

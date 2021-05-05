@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:background="@drawable/list_selector">
+
+    <ImageView
+        android:id="@+id/imageCrime"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@color/black"/>
+    <TextView
+        android:id="@+id/textviewCrime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ten mon an"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/imageCrime"
+        android:textSize="20dp"/>
+    <TextView
+        android:textSize="15dp"
+        android:id="@+id/textviewDescriptionCr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mo ta mon an"
+        android:layout_below="@id/textviewCrime"
+        android:layout_toRightOf="@id/imageCrime"
+        android:layout_marginLeft="20dp"/>
+
+
+</RelativeLayout>
