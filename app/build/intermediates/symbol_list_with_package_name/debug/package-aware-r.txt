@@ -1672,6 +1672,10 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable alcohol
 drawable appearance
+<<<<<<< HEAD
+=======
+drawable asset
+>>>>>>> 9042b0df92884b576af9a603ca0ee4c8d7e0462b
 drawable assualt
 drawable avd_hide_password
 drawable avd_show_password
@@ -1699,6 +1703,7 @@ drawable coffee
 drawable communication
 drawable compliment
 drawable custom_button_menu
+drawable custom_dialog
 drawable custom_progressbar
 drawable cutlery
 drawable design_bottom_navigation_item_background
@@ -1889,6 +1894,7 @@ id bottom
 id bounce
 id buttonActivity
 id buttonAssets
+id buttonDialogEventOke
 id buttonInfant
 id buttonPanel
 id buttonRelationship
@@ -1937,6 +1943,8 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id dialog_button
+id dialog_event
+id dialog_event_result
 id dimensions
 id direct
 id disableHome
@@ -1997,6 +2005,7 @@ id imageAvatar
 id imageButtonMenu
 id imageCrime
 id imageFood
+id imagebuttonAddAge
 id imageviewFoodBack
 id imageviewSportBack
 id info
@@ -2015,8 +2024,13 @@ id leftToRight
 id line1
 id line3
 id linear
+id linearAppearance
+id linearHappy
+id linearHealth
 id linearLayout
 id linearLayout2
+id linearMoney
+id linearSmart
 id listMode
 id list_item
 id listviewCrime
@@ -2208,10 +2222,20 @@ id textinput_prefix_text
 id textinput_suffix_text
 id textviewCrime
 id textviewDescription
+<<<<<<< HEAD
 id textviewDescriptionCr
+=======
+id textviewDialogEventContent
+id textviewDialogEventTitle
+>>>>>>> 9042b0df92884b576af9a603ca0ee4c8d7e0462b
 id textviewFoodName
 id textviewMoney
 id textviewName
+id textviewResultAppearance
+id textviewResultHappy
+id textviewResultHealth
+id textviewResultMoney
+id textviewResultSmart
 id textviewTitle
 id time
 id title
@@ -2317,7 +2341,10 @@ layout activity_food
 layout activity_main
 layout activity_sport
 layout activity_tuong_tac
+<<<<<<< HEAD
 layout crime
+=======
+>>>>>>> 9042b0df92884b576af9a603ca0ee4c8d7e0462b
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2334,6 +2361,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_event
+layout dialog_event_result
 layout food_line
 layout material_chip_input_combo
 layout material_clock_display

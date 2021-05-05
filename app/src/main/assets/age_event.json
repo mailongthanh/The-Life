@@ -1,0 +1,24 @@
+{
+  "age": [
+    [],
+    [],
+    [
+      {"title":"Ăn uống", "event": "Bạn được này ăn này kia kia nọ, bạn chọn món nào?", "selection": true,
+      "select": [
+        {"content": "Bò", "selection":false, "event":"Món bò nhiều gân, nhưng mình không biết ăn!!!", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0},
+        {"content": "Cá", "selection":false, "event":"Bạn bị hốc xương, may mà tự hết!!!", "assets": 0, "happy": -3, "health": -3, "smart":0, "appearance": 0},
+        {"content": "Gà", "selection":true, "event": "Bạn chọn ăn món gà nào?",
+        "select": [
+          {"content": "Gà cứng", "selection":false, "event":"Gà hôm nay cứng như tên gọi...", "assets": 0, "happy": -2, "health": 0, "smart":0, "appearance": 0},
+          {"content": "Gà chiên bột", "selection":false, "event":"Hôm nay gà chiên bột bị sống, chắc lần sau không ăn nữa...", "assets": 0, "happy": -2, "health": -2, "smart":0, "appearance": 0},
+          {"content": "Gà bóp gỏi", "selection":false, "event":"Hôm nay món này hết sớm rồi, bạn đành ăn trứng tròn...", "assets": 0, "happy": -1, "health": 0, "smart":0, "appearance": 0}
+        ]}
+      ]},
+      {"title":"Ăn uống", "event": "Hôm nay không có bán cơm, bạn đành ăn bánh vụn", "selection": false,
+        "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0}
+    ]
+  ],
+  "events": {
+
+  }
+}

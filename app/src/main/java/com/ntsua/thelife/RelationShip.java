@@ -26,9 +26,9 @@ public class RelationShip extends AppCompatActivity {
         lvQuanHe = (ListView) findViewById(R.id.ListViewQuanHe);
         MangQuanHe = new ArrayList<QuanHe>();
 
-        //MangQuanHe.add(new QuanHe("Trần Thanh Vũ",19,50,"Bạn bè"));
-        //MangQuanHe.add(new QuanHe("Nguyễn Thiện Sua",19,2,"Bạn bè"));
-        //MangQuanHe.add(new QuanHe("Nguyễn Hiếu Nghĩa",19,50,"Bạn bè"));
+        MangQuanHe.add(new QuanHe("Trần Thanh Vũ",19,50,"Bạn bè"));
+        MangQuanHe.add(new QuanHe("Nguyễn Thiện Sua",19,2,"Bạn bè"));
+        MangQuanHe.add(new QuanHe("Nguyễn Hiếu Nghĩa",19,50,"Bạn bè"));
         MangQuanHe.add(new QuanHe("Mai Long Thành",19,80,"Bạn bè"));
         MangQuanHe.add(new QuanHe("Võ Thành Phát",19,2,"Bạn bè"));
         MangQuanHe.add(new QuanHe("Hoàng Nhật Tiến",19,0,"Bạn bè"));
@@ -54,6 +54,10 @@ public class RelationShip extends AppCompatActivity {
     {
         startActivity(new Intent(RelationShip.this, MainActivity.class));
     }
+<<<<<<< HEAD
 
 
 }
+=======
+}
+>>>>>>> 9042b0df92884b576af9a603ca0ee4c8d7e0462b

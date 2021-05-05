@@ -61,16 +61,18 @@ public class FoodAdapter extends BaseAdapter {
             viewHolder.txtDescription   = (TextView) convertView.findViewById(R.id.textviewDescription);
             viewHolder.txtFoodName      = (TextView) convertView.findViewById(R.id.textviewFoodName);
 
-            Food food = arrFood.get(position);
-            viewHolder.imgFood.setImageResource(food.getImage());
-            viewHolder.txtFoodName.setText(food.getFoodName());
-            viewHolder.txtDescription.setText(food.getDescription());
+
 
             convertView.setTag(viewHolder);
         }
         else{
             viewHolder = (ViewHolder) convertView.getTag();
         }
+
+        Food food = arrFood.get(position);
+        viewHolder.imgFood.setImageResource(food.getImage());
+        viewHolder.txtFoodName.setText(food.getFoodName());
+        viewHolder.txtDescription.setText(food.getDescription());
 
         Animation anim = AnimationUtils.loadAnimation(context, R.anim.listview_scale);
         convertView.startAnimation(anim);
