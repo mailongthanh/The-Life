@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -36,10 +37,22 @@ public class HoatDong extends AppCompatActivity {
         arrHoatDong.add(new Food("Thể thao", "", R.drawable.sport));
         adapter = new FoodAdapter(this, R.layout.food_line, arrHoatDong);
         lvHoatDong.setAdapter(adapter);
-    }
-
-    public void gotoMainMenu(View view)
-    {
+        lvHoatDong.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (position == 12) {
+                    Intent myintent = new Intent(view.getContext(), SportActivity.class);
+                    startActivityForResult(myintent, 12);
+                }
+                if (position == 8) {
+                    Intent myintent = new Intent(view.getContext(), FoodActivity.class);
+                    startActivityForResult(myintent, 8);
+                }
+            }
+        });
+        }
+    public void gotoMainMenu(View view) {
         startActivity(new Intent(HoatDong.this, MainActivity.class));
     }
-}
+    }
+
