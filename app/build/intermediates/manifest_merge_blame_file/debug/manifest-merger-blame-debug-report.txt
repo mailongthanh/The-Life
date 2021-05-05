@@ -25,43 +25,42 @@
 17-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
 18-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/Theme.TheLife" >
-20-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:11:9-45
-21        <activity android:name="com.ntsua.thelife.Tuong_tacActivity" >
-21-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:12:9-65
-21-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:12:19-52
-22        </activity>
-23        <activity android:name="com.ntsua.thelife.SportActivity" />
-23-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:13:9-51
-23-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:13:19-48
-24        <activity android:name="com.ntsua.thelife.RelationShip" />
-24-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:14:9-50
-24-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:14:19-47
-25        <activity android:name="com.ntsua.thelife.FoodActivity" />
-25-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:15:9-50
-25-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:15:19-47
-26        <activity android:name="com.ntsua.thelife.MainActivity" >
-26-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:16:9-22:20
-26-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:16:19-47
-27            <intent-filter>
-27-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:17:13-21:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:18:17-69
-28-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:18:25-66
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:20:17-77
-30-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:20:27-74
-31            </intent-filter>
-32        </activity>
-33
-34        <meta-data
-34-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:24:9-26:57
-35            android:name="preloaded_fonts"
-35-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:25:13-43
-36            android:resource="@array/preloaded_fonts" />
-36-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:26:13-54
-37    </application>
-38
-39</manifest>
+19        android:theme="@style/Theme.TheLife" >
+19-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:11:9-45
+20        <activity android:name="com.ntsua.thelife.Tuong_tacActivity" >
+20-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:12:9-65
+20-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:12:19-52
+21        </activity>
+22        <activity android:name="com.ntsua.thelife.SportActivity" />
+22-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:13:9-51
+22-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:13:19-48
+23        <activity android:name="com.ntsua.thelife.RelationShip" />
+23-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:14:9-50
+23-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:14:19-47
+24        <activity android:name="com.ntsua.thelife.FoodActivity" />
+24-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:15:9-50
+24-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:15:19-47
+25        <activity android:name="com.ntsua.thelife.MainActivity" >
+25-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:16:9-22:20
+25-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:16:19-47
+26            <intent-filter>
+26-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:17:13-21:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:18:17-69
+27-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:18:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:20:17-77
+29-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:20:27-74
+30            </intent-filter>
+31        </activity>
+32
+33        <meta-data
+33-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:24:9-26:57
+34            android:name="preloaded_fonts"
+34-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:25:13-43
+35            android:resource="@array/preloaded_fonts" />
+35-->D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:26:13-54
+36    </application>
+37
+38</manifest>

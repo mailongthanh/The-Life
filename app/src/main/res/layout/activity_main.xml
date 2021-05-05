@@ -207,7 +207,7 @@
                         android:layout_gravity="center_vertical"
                         android:max="100"
                         android:min="0"
-                        android:progress="50"
+                        android:progress="2"
                         android:progressDrawable="@drawable/custom_progressbar"
                         style="@android:style/Widget.ProgressBar.Horizontal"/>
 
@@ -218,7 +218,7 @@
                         android:layout_alignBottom="@id/progressbarHappy"
                         android:gravity="center"
                         android:shadowColor="#555555"
-                        android:text="50%" />
+                        android:text="2%" />
                 </RelativeLayout>
             </LinearLayout>
             <LinearLayout
@@ -355,18 +355,22 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textViewDetail"
+    <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Noi dung"
-        android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0">
 
+        <TextView
+            android:id="@+id/textViewDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="Noi dung" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
