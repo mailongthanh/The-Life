@@ -1671,8 +1671,11 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable alcohol
 drawable appearance
+drawable asset
+drawable assualt
 drawable avd_hide_password
 drawable avd_show_password
+drawable back
 drawable badminton
 drawable baseball
 drawable basketball
@@ -1690,7 +1693,10 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable bubble_tea
 drawable coffee
+drawable communication
+drawable compliment
 drawable custom_button_menu
+drawable custom_dialog
 drawable custom_progressbar
 drawable cutlery
 drawable design_bottom_navigation_item_background
@@ -1701,6 +1707,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable drink
 drawable fast_food
+drawable film
 drawable fitness
 drawable football
 drawable fruits
@@ -1717,6 +1724,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable insult
 drawable jogging
 drawable life_insurance
 drawable lollipop
@@ -1732,6 +1740,7 @@ drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
 drawable mental_health
 drawable menu
+drawable money
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1787,6 +1796,7 @@ id FirstFragment
 id ImbArow
 id ImvIcon
 id ListViewQuanHe
+id ListViewTuongTac
 id META
 id NO_DEBUG
 id SHIFT
@@ -1875,6 +1885,7 @@ id bottom
 id bounce
 id buttonActivity
 id buttonAssets
+id buttonDialogEventOke
 id buttonInfant
 id buttonPanel
 id buttonRelationship
@@ -1923,6 +1934,8 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id dialog_button
+id dialog_event
+id dialog_event_result
 id dimensions
 id direct
 id disableHome
@@ -1982,6 +1995,7 @@ id image
 id imageAvatar
 id imageButtonMenu
 id imageFood
+id imagebuttonAddAge
 id imageviewFoodBack
 id imageviewSportBack
 id info
@@ -2000,8 +2014,13 @@ id leftToRight
 id line1
 id line3
 id linear
+id linearAppearance
+id linearHappy
+id linearHealth
 id linearLayout
 id linearLayout2
+id linearMoney
+id linearSmart
 id listMode
 id list_item
 id listviewFood
@@ -2192,9 +2211,16 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id textviewDescription
+id textviewDialogEventContent
+id textviewDialogEventTitle
 id textviewFoodName
 id textviewMoney
 id textviewName
+id textviewResultAppearance
+id textviewResultHappy
+id textviewResultHealth
+id textviewResultMoney
+id textviewResultSmart
 id textviewTitle
 id time
 id title
@@ -2212,7 +2238,9 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvChiTiet
 id tvHoTen
+id tvHoatDong
 id tvMoiQuanHe
 id tvMucquanhe
 id txtAppearance
@@ -2296,6 +2324,7 @@ layout abc_tooltip
 layout activity_food
 layout activity_main
 layout activity_sport
+layout activity_tuong_tac
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2312,6 +2341,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_event
+layout dialog_event_result
 layout food_line
 layout material_chip_input_combo
 layout material_clock_display
@@ -2382,6 +2413,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout tuong_tac
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
