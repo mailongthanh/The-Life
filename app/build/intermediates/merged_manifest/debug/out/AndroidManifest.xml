@@ -18,14 +18,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.TheLife" >
-<<<<<<< HEAD
+        <activity android:name="com.ntsua.thelife.HoatDong" />
         <activity android:name="com.ntsua.thelife.relationshipActivity" />
         <activity android:name="com.ntsua.thelife.CrimeActivity" />
         <activity android:name="com.ntsua.thelife.Tuong_tacActivity" />
-=======
-        <activity android:name="com.ntsua.thelife.Tuong_tacActivity" >
-        </activity>
->>>>>>> 9042b0df92884b576af9a603ca0ee4c8d7e0462b
         <activity android:name="com.ntsua.thelife.SportActivity" />
         <activity android:name="com.ntsua.thelife.RelationShip" />
         <activity android:name="com.ntsua.thelife.FoodActivity" />

@@ -1672,10 +1672,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable alcohol
 drawable appearance
-<<<<<<< HEAD
-=======
 drawable asset
->>>>>>> 9042b0df92884b576af9a603ca0ee4c8d7e0462b
 drawable assualt
 drawable avd_hide_password
 drawable avd_show_password
@@ -1702,22 +1699,27 @@ drawable carrobber
 drawable coffee
 drawable communication
 drawable compliment
+drawable cook
 drawable custom_button_menu
 drawable custom_dialog
 drawable custom_progressbar
 drawable cutlery
+drawable degree
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable devil
 drawable dogrobber
 drawable drink
+drawable entertainment
 drawable fast_food
 drawable film
 drawable fitness
 drawable football
+drawable fortunetelling
 drawable fruits
 drawable girl
 drawable gradient_bg
@@ -1727,6 +1729,7 @@ drawable hamburger
 drawable happy
 drawable heartbeat
 drawable hiking
+drawable hospital
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -1740,6 +1743,8 @@ drawable jogging
 drawable life_insurance
 drawable list_selector
 drawable lollipop
+drawable love
+drawable makeup
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1779,6 +1784,7 @@ drawable notify_panel_notification_icon_bg
 drawable pickpocket
 drawable ping_pong
 drawable pizza
+drawable playground
 drawable plus
 drawable previous
 drawable racing
@@ -1790,12 +1796,14 @@ drawable salad
 drawable seafood
 drawable snorkle
 drawable sport
+drawable startup
 drawable surfing
 drawable tennis_racket
 drawable test_custom_background
 drawable thanksgiving
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable travel
 drawable triangle
 drawable volleyball
 drawable vovinam
@@ -2007,6 +2015,7 @@ id imageCrime
 id imageFood
 id imagebuttonAddAge
 id imageviewFoodBack
+id imageviewHoatDongBack
 id imageviewSportBack
 id info
 id invisible
@@ -2035,6 +2044,7 @@ id listMode
 id list_item
 id listviewCrime
 id listviewFood
+id listviewHoatDong
 id listviewSports
 id masked
 id material_clock_display
@@ -2222,12 +2232,9 @@ id textinput_prefix_text
 id textinput_suffix_text
 id textviewCrime
 id textviewDescription
-<<<<<<< HEAD
 id textviewDescriptionCr
-=======
 id textviewDialogEventContent
 id textviewDialogEventTitle
->>>>>>> 9042b0df92884b576af9a603ca0ee4c8d7e0462b
 id textviewFoodName
 id textviewMoney
 id textviewName
@@ -2338,13 +2345,11 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_crime
 layout activity_food
+layout activity_hoat_dong
 layout activity_main
 layout activity_sport
 layout activity_tuong_tac
-<<<<<<< HEAD
 layout crime
-=======
->>>>>>> 9042b0df92884b576af9a603ca0ee4c8d7e0462b
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

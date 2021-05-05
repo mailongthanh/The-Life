@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheLife">
-        <activity android:name=".relationshipActivity"></activity>
+        <activity android:name=".HoatDong"></activity>
+        <activity android:name=".relationshipActivity" />
         <activity android:name=".CrimeActivity" />
         <activity android:name=".Tuong_tacActivity" />
         <activity android:name=".SportActivity" />
