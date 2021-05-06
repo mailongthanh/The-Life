@@ -21,7 +21,6 @@
         <activity android:name=".Love" />
         <activity android:name=".Playground" />
         <activity android:name=".HoatDong" />
-        <activity android:name=".relationshipActivity" />
         <activity android:name=".CrimeActivity" />
         <activity android:name=".Tuong_tacActivity" />
         <activity android:name=".SportActivity" />
