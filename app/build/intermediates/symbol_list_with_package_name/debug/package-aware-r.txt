@@ -979,6 +979,7 @@ bool abc_config_actionMenuItemAllCaps
 bool mtrl_btn_textappearance_all_caps
 color Blue
 color Ocean
+color Red
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -1672,10 +1673,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable alcohol
 drawable appearance
-<<<<<<< HEAD
-=======
 drawable asset
->>>>>>> 9042b0df92884b576af9a603ca0ee4c8d7e0462b
 drawable assualt
 drawable avd_hide_password
 drawable avd_show_password
@@ -1818,6 +1816,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id TvQuanHe
 id Tvbanner
 id accelerate
 id accessibility_action_clickable_span
@@ -2002,12 +2001,14 @@ id ignore
 id ignoreRequest
 id image
 id imageAvatar
+id imageAvatarA
 id imageButtonMenu
 id imageCrime
 id imageFood
 id imagebuttonAddAge
 id imageviewFoodBack
 id imageviewSportBack
+id imvQuanHe
 id info
 id invisible
 id inward
@@ -2114,6 +2115,7 @@ id password_toggle
 id path
 id pathRelative
 id pbThanhQuanHe
+id pbThanhQuanHeA
 id peekHeight
 id percent
 id pin
@@ -2222,15 +2224,14 @@ id textinput_prefix_text
 id textinput_suffix_text
 id textviewCrime
 id textviewDescription
-<<<<<<< HEAD
 id textviewDescriptionCr
-=======
 id textviewDialogEventContent
 id textviewDialogEventTitle
->>>>>>> 9042b0df92884b576af9a603ca0ee4c8d7e0462b
 id textviewFoodName
 id textviewMoney
+id textviewMqhA
 id textviewName
+id textviewNameA
 id textviewResultAppearance
 id textviewResultHappy
 id textviewResultHealth
@@ -2258,6 +2259,7 @@ id tvHoTen
 id tvHoatDong
 id tvMoiQuanHe
 id tvMucquanhe
+id tvTuoi
 id txtAppearance
 id txtHappy
 id txtHealth
@@ -2341,10 +2343,7 @@ layout activity_food
 layout activity_main
 layout activity_sport
 layout activity_tuong_tac
-<<<<<<< HEAD
 layout crime
-=======
->>>>>>> 9042b0df92884b576af9a603ca0ee4c8d7e0462b
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

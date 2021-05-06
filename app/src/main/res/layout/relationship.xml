@@ -11,41 +11,34 @@
 
     </include>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/Ocean">
 
         <TextView
             android:id="@+id/Tvbanner"
-            android:layout_width="150dp"
-            android:layout_height="77dp"
-            android:layout_marginTop="4dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
             android:background="@color/Ocean"
             android:fontFamily="@font/anton"
             android:gravity="center"
+            android:layout_centerInParent="true"
             android:text="MỐI QUAN HỆ"
             android:textColor="@color/white"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:textSize="25sp"
+            >
 
         </TextView>
 
         <ImageView
-            android:layout_width="33dp"
-            android:layout_height="39dp"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
             android:onClick="gotoMainMenu"
-            android:src="@drawable/cancel"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/Tvbanner"
-            app:layout_constraintHorizontal_bias="0.164"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/cancel" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
 
     <ListView
         android:id="@+id/ListViewQuanHe"

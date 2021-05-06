@@ -23,9 +23,9 @@ public class CrimeActivity extends AppCompatActivity {
         lvCrime = findViewById(R.id.listviewCrime);
         arrCrime = new ArrayList<>();
 
-        arrCrime.add(new Food("Móc túi", "đi Loot", R.drawable.pickpocket));
+        arrCrime.add(new Food("Móc túi", "Đi Loot", R.drawable.pickpocket));
         arrCrime.add(new Food("Cướp ngân hàng", "$$$$$$$$", R.drawable.robber));
-        arrCrime.add(new Food("Buôn rau", "kinh doanh rau muống đột biến", R.drawable.cannabis));
+        arrCrime.add(new Food("Buôn rau", "Kinh doanh rau muống đột biến", R.drawable.cannabis));
         arrCrime.add(new Food("Cướp xe", "Grand Theft Auto", R.drawable.carrobber));
         arrCrime.add(new Food("Hack", "Wảning", R.drawable.hacker));
         arrCrime.add(new Food("Trộm chó", "Cẩu tặc", R.drawable.dogrobber));

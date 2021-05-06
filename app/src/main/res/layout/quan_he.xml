@@ -6,13 +6,9 @@
     android:padding="10dp">
 
         <ImageView
-            android:id="@+id/ImvIcon"
-            android:layout_width="38dp"
-            android:layout_height="44dp"
-            android:src="@drawable/ic_launcher_background"
-            app:layout_constraintEnd_toStartOf="@+id/tvHoTen"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:id="@+id/imvQuanHe"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
 
         </ImageView>
 
@@ -20,21 +16,21 @@
             android:id="@+id/tvHoTen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
-            android:text="Như Quỳnh"
-            android:textSize="15dp"
-            android:layout_toRightOf="@id/ImvIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:paddingLeft="8dp"
+            android:text="ABCD"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/Blue"
+            android:layout_toRightOf="@id/imvQuanHe" />
 
         <TextView
             android:id="@+id/tvMucquanhe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
+            android:paddingLeft="8dp"
             android:text="Mối quan hệ"
-            android:textSize="12dp"
             android:layout_below="@id/tvHoTen"
-            android:layout_toRightOf="@id/ImvIcon">
+            android:layout_toRightOf="@id/imvQuanHe">
 
 
         </TextView>
@@ -55,7 +51,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="5dp"
             android:text="(Vợ)"
-            android:textSize="15dp"
+            android:textSize="18sp"
             android:layout_toRightOf="@id/tvHoTen">
 
         </TextView>

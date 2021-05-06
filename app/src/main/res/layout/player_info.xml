@@ -18,7 +18,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_toRightOf="@id/imageAvatar"
-        android:text="Name of player" />
+        android:text="Name of player"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/Blue"/>
 
     <TextView
         android:layout_width="wrap_content"

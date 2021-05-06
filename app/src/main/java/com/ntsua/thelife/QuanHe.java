@@ -2,12 +2,18 @@ package com.ntsua.thelife;
 
 import android.widget.ImageView;
 
-public class QuanHe {
+import java.io.Serializable;
+
+public class QuanHe implements Serializable {
     private String Hoten;
     private int Tuoi;
     private int DoThanMat;
     private String QuanHe;
-    //public int HinhAnh;
+    public int HinhAnh;
+
+    public void setHinhAnh(int hinhAnh) { HinhAnh = hinhAnh; }
+
+    public int getHinhAnh() {  return HinhAnh; }
 
     public String getHoten() {
         return Hoten;
@@ -41,11 +47,11 @@ public class QuanHe {
         QuanHe = quanHe;
     }
 
-    public QuanHe(String hoten, int tuoi, int doThanMat, String quanhe) {
+    public QuanHe(String hoten, int tuoi, int doThanMat, String quanhe, int hinhAnh) {
         Hoten = hoten;
         Tuoi = tuoi;
         DoThanMat = doThanMat;
         QuanHe = quanhe;
-        //HinhAnh = hinhAnh;
+        HinhAnh = hinhAnh;
     }
 }
