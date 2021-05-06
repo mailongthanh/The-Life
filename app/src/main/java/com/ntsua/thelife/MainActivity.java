@@ -1,5 +1,7 @@
 package com.ntsua.thelife;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
@@ -22,8 +24,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,17 +39,28 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.text.DateFormat;
+import java.text.FieldPosition;
+import java.text.ParsePosition;
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btnActivity, btnRelationship;
     ImageButton ibtnAddAge;
-    TextView txtContent;
+    ProgressBar prbHappy, prbHealth, prbSmart, prbAppearance;
+    TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney;
     SharedPreferences preferences;
     SaveGame saveGame;
     JSONArray arrJsonAge, arrJsonEvent;
     JSONObject jsonResult;
+
+    String contentHtml;
+    int money;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         AnhXa();
-        saveGame.saveAge(1);
         try {
             readEvent();
         } catch (JSONException e) {
@@ -61,7 +75,9 @@ public class MainActivity extends AppCompatActivity {
         }
         //Test
         try {
-            init("Name", "vn");
+            if (saveGame.getDetailActivity().equals(""))
+                init("Name", "vn");
+            else loadGame();
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -86,10 +102,12 @@ public class MainActivity extends AppCompatActivity {
     void addAge() throws JSONException {
         //them tuoi
         int age = saveGame.getAge() + 1;
+        addAgeHTML(age);
         //saveGame.saveAge(age);
         //lay su kien tuoi
         JSONArray arrAge = arrJsonAge.getJSONArray(age);
         Random random = new Random();
+        //Toast.makeText(this, arrAge.length() + " - " + age, Toast.LENGTH_SHORT).show();
         final JSONObject[] object = {arrAge.getJSONObject(random.nextInt(arrAge.length()))};
 
         final String[] event = {object[0].getString("event")};
@@ -99,41 +117,8 @@ public class MainActivity extends AppCompatActivity {
 
         //Kiem tra su kien co su lua chon hay khong
         final boolean[] isSelection = {object[0].getBoolean("selection")};
-//        while (isSelection[0])
-//        {
-//            Dialog dialog = createDialog(title, event[0]);
-//
-//            LinearLayout dialogCustom = dialog.findViewById(R.id.dialog_event);
-//            JSONArray arrSelect = object[0].getJSONArray("select");
-//            for (int i = 0; i < arrSelect.length(); i++) {
-//                JSONObject objectSelect = arrSelect.getJSONObject(i);
-//                Button btn = addButton(dialogCustom, objectSelect.getString("content"));
-//                int finalI = i;
-//                btn.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        try {
-//                            object[0] = arrSelect.getJSONObject(finalI);
-//                            isSelection[0] = object[0].getBoolean("selection");
-//                            event[0] = object[0].getString("event");
-//                            dialog.dismiss();
-//                        } catch (JSONException e) {
-//                            e.printStackTrace();
-//                        }
-//                    }
-//                });
-//            }
-//            countDownTimer.start();
-//            dialog.show();
-//            dialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
-//                @Override
-//                public void onCancel(DialogInterface dialog) {
-//                    countDownTimer.cancel();
-//                }
-//            });
-//            //isSelection[0] = false;
-//        }
 
+        //Tao dialog hien thi su kien
         if (isSelection[0])
             dialogEvent(object, isSelection, title, event);
         else {
@@ -150,8 +135,13 @@ public class MainActivity extends AppCompatActivity {
             dialogEventResult(title);
             return;
         }
-        Dialog dialog = createDialog(title, event[0]);
 
+
+        //Them thong tin da choi vao textview
+        contentHtml += event[0] + "<br>";
+
+        //Tao dialog va them cac buttton lua chon vao dialog
+        Dialog dialog = createDialog(title, event[0]);
         LinearLayout dialogCustom = dialog.findViewById(R.id.dialog_event);
         JSONArray arrSelect = object[0].getJSONArray("select");
         for (int i = 0; i < arrSelect.length(); i++) {
@@ -174,7 +164,6 @@ public class MainActivity extends AppCompatActivity {
             });
         }
         dialog.show();
-        //isSelection[0] = false;
     }
 
     void dialogEventResult(String title) throws JSONException {
@@ -198,6 +187,8 @@ public class MainActivity extends AppCompatActivity {
 
         txtTitle.setText(title);
         txtContent.setText(jsonResult.getString("event"));
+        contentHtml += txtContent.getText().toString() + "<br>";
+
 
 
         int value = 0;
@@ -207,6 +198,8 @@ public class MainActivity extends AppCompatActivity {
             dialogResult.removeView(dialog.findViewById(R.id.linearHappy));
         } else {
             txtHappy.setText(value + "");
+            prbHappy.setProgress(prbHappy.getProgress() + value);
+            this.txtHappy.setText(prbHappy.getProgress() + "%");
         }
         value = jsonResult.getInt("health");
         if (value == 0)
@@ -214,6 +207,8 @@ public class MainActivity extends AppCompatActivity {
             dialogResult.removeView(dialog.findViewById(R.id.linearHealth));
         } else {
             txtHealth.setText(value + "");
+            prbHealth.setProgress(prbHealth.getProgress() + value);
+            this.txtHealth.setText(prbHealth.getProgress() + "%");
         }
         value = jsonResult.getInt("smart");
         if (value == 0)
@@ -221,6 +216,8 @@ public class MainActivity extends AppCompatActivity {
             dialogResult.removeView(dialog.findViewById(R.id.linearSmart));
         } else {
             txtSmart.setText(value + "");
+            prbSmart.setProgress(prbSmart.getProgress() + value);
+            this.txtSmart.setText(prbSmart.getProgress() + "%");
         }
         value = jsonResult.getInt("appearance");
         if (value == 0)
@@ -228,6 +225,8 @@ public class MainActivity extends AppCompatActivity {
             dialogResult.removeView(dialog.findViewById(R.id.linearAppearance));
         } else {
             txtAppearance.setText(value + "");
+            prbAppearance.setProgress(prbAppearance.getProgress() + value);
+            this.txtAppearance.setText(prbAppearance.getProgress() + "%");
         }
         value = jsonResult.getInt("assets");
         if (value == 0)
@@ -235,7 +234,13 @@ public class MainActivity extends AppCompatActivity {
             dialogResult.removeView(dialog.findViewById(R.id.linearMoney));
         } else {
             txtAssets.setText(value + "");
+            money += value;
+            this.txtMoney.setText(money + "");
+            saveGame.saveMoney(money);
         }
+        saveGame.savePlayerInfo(prbHappy.getProgress(), prbHealth.getProgress(), prbSmart.getProgress(), prbAppearance.getProgress());
+        saveGame.saveDetailActivity(contentHtml);
+        this.txtContent.setText(android.text.Html.fromHtml(contentHtml));
 
         btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -304,7 +309,19 @@ public class MainActivity extends AppCompatActivity {
     private void AnhXa() {
         btnRelationship = (Button) findViewById(R.id.buttonRelationship);
         btnActivity = (Button) findViewById(R.id.buttonActivity);
+
         txtContent = findViewById(R.id.textViewDetail);
+        txtAppearance = findViewById(R.id.txtAppearance);
+        txtHappy = findViewById(R.id.txtHappy);
+        txtSmart = findViewById(R.id.txtSmart);
+        txtHealth = findViewById(R.id.txtHealth);
+        txtMoney = findViewById(R.id.textviewMoney);
+
+        prbAppearance = findViewById(R.id.progressbarAppearance);
+        prbHappy = findViewById(R.id.progressbarHappy);
+        prbHealth = findViewById(R.id.progressbarHealth);
+        prbSmart = findViewById(R.id.progressbarSmart);
+
         ibtnAddAge = findViewById(R.id.imagebuttonAddAge);
 
         preferences = getSharedPreferences("data", MODE_PRIVATE);
@@ -313,12 +330,33 @@ public class MainActivity extends AppCompatActivity {
 
     public void gotoActivity(View view)
     {
-        startActivity(new Intent(MainActivity.this, FoodActivity.class));
+        startActivity(new Intent(MainActivity.this, HoatDong.class));
     }
 
     public void gotoRelationship(View view)
     {
         startActivity(new Intent(MainActivity.this, RelationShip.class));
+    }
+
+    void loadGame()
+    {
+        contentHtml = saveGame.getDetailActivity();
+        txtContent.setText(android.text.Html.fromHtml(contentHtml));
+
+        prbAppearance.setProgress(saveGame.getAppearance());
+        prbHappy.setProgress(saveGame.getHappy());
+        prbHealth.setProgress(saveGame.getHealth());
+        prbSmart.setProgress(saveGame.getSmart());
+
+        txtAppearance.setText(prbAppearance.getProgress() + "%");
+        txtHappy.setText(prbHappy.getProgress() + "%");
+        txtSmart.setText(prbSmart.getProgress() + "%");
+        txtHealth.setText(prbHealth.getProgress() + "%");
+
+        money = saveGame.getMoney();
+        txtMoney.setText(money + "");
+
+
     }
 
     // init tam thoi
@@ -339,12 +377,27 @@ public class MainActivity extends AppCompatActivity {
         JSONObject vn = object.getJSONObject("vi");
         JSONArray arrFather = vn.getJSONArray("father");
         JSONArray arrMother = vn.getJSONArray("mother");
+        JSONArray arrJob = vn.getJSONArray("job");
         Random random = new Random();
 
-        String s = "Tôi tên " + name + "\n" +
-                "Bố tôi là " + arrFather.getString(random.nextInt(arrFather.length())) + "\n" +
-                "Mẹ tôi là " + arrMother.getString(random.nextInt(arrMother.length()));
+        //Tao ngay sinh
+        Date date = Calendar.getInstance().getTime();
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+        contentHtml = "<h5> <font color=\"blue\">Age 0</font></h5>" +
+                "Tôi tên " + name + "<br>" +
+                "Sinh ngày " + format.format(date) + "<br>" +
+                "Bố tôi là " + arrFather.getString(random.nextInt(arrFather.length())) + " - " + arrJob.getString(random.nextInt(arrJob.length())) + "<br>" +
+                "Mẹ tôi là " + arrMother.getString(random.nextInt(arrMother.length())) + " - " + arrJob.getString(random.nextInt(arrJob.length())) + "<br>";
         //Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
-        txtContent.setText(s);
+        saveGame.saveAge(0);
+        saveGame.saveDetailActivity(contentHtml);
+        txtContent.setText(android.text.Html.fromHtml(contentHtml));
+    }
+
+    void addAgeHTML(int age)
+    {
+        contentHtml += "<h5> <font color=\"blue\">Age " + age + "</font></h5>";
+        txtContent.setText(android.text.Html.fromHtml(contentHtml));
+        saveGame.saveDetailActivity(contentHtml);
     }
 }

@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-my\\values-my.xml",
+=======
+            "outputFile": "D:\\Study\\University\\Sophomore\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-my\\values-my.xml",
+>>>>>>> 894b7d348eb0f249a248ba48480f79670375b9a4
             "map": [
                 {
                     "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-2\\files-2.1\\9773cf80f63a729525da08ed7d917aac\\navigation-ui-2.3.3\\res\\values-my\\values-my.xml",

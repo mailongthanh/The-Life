@@ -9,6 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheLife">
+<<<<<<< HEAD
+=======
+        <activity android:name=".BoiToan"></activity>
+        <activity android:name=".MakeUp" />
+        <activity android:name=".Cooking" />
+        <activity android:name=".Startup" />
+        <activity android:name=".Hospital" />
+        <activity android:name=".SongKhac" />
+        <activity android:name=".Travel" />
+        <activity android:name=".Entertainment" />
+        <activity android:name=".Degree" />
+        <activity android:name=".Love" />
+        <activity android:name=".Playground" />
+        <activity android:name=".HoatDong" />
+>>>>>>> 894b7d348eb0f249a248ba48480f79670375b9a4
         <activity android:name=".CrimeActivity" />
         <activity android:name=".Tuong_tacActivity" />
         <activity android:name=".SportActivity" />

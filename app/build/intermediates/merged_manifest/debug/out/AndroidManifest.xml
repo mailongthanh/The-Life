@@ -18,6 +18,21 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.TheLife" >
+<<<<<<< HEAD
+=======
+        <activity android:name="com.ntsua.thelife.BoiToan" />
+        <activity android:name="com.ntsua.thelife.MakeUp" />
+        <activity android:name="com.ntsua.thelife.Cooking" />
+        <activity android:name="com.ntsua.thelife.Startup" />
+        <activity android:name="com.ntsua.thelife.Hospital" />
+        <activity android:name="com.ntsua.thelife.SongKhac" />
+        <activity android:name="com.ntsua.thelife.Travel" />
+        <activity android:name="com.ntsua.thelife.Entertainment" />
+        <activity android:name="com.ntsua.thelife.Degree" />
+        <activity android:name="com.ntsua.thelife.Love" />
+        <activity android:name="com.ntsua.thelife.Playground" />
+        <activity android:name="com.ntsua.thelife.HoatDong" />
+>>>>>>> 894b7d348eb0f249a248ba48480f79670375b9a4
         <activity android:name="com.ntsua.thelife.CrimeActivity" />
         <activity android:name="com.ntsua.thelife.Tuong_tacActivity" />
         <activity android:name="com.ntsua.thelife.SportActivity" />
