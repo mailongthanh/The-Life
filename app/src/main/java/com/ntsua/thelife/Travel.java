@@ -19,13 +19,13 @@ public class Travel extends AppCompatActivity {
         setContentView(R.layout.activity_travel);
         lvTravel = (ListView) findViewById((R.id.listviewTravel));
         arrTravel = new ArrayList<>();
-        arrTravel.add(new Food("Hong Kong", "", R.drawable.hongkong));
-        arrTravel.add(new Food("America", "", R.drawable.america));
-        arrTravel.add(new Food("Korea", "", R.drawable.korea));
-        arrTravel.add(new Food("ThaiLand", "", R.drawable.thailand));
-        arrTravel.add(new Food("Vũng Tàu", "", R.drawable.vungtau));
-        arrTravel.add(new Food("Phú Quốc", "", R.drawable.phuquoc));
-        arrTravel.add(new Food("Đà Nẵng", "", R.drawable.danang));
+        arrTravel.add(new Food("Hong Kong", "", R.drawable.hongkong, 0));
+        arrTravel.add(new Food("America", "", R.drawable.america, 0));
+        arrTravel.add(new Food("Korea", "", R.drawable.korea, 0));
+        arrTravel.add(new Food("ThaiLand", "", R.drawable.thailand, 0));
+        arrTravel.add(new Food("Vũng Tàu", "", R.drawable.vungtau, 0));
+        arrTravel.add(new Food("Phú Quốc", "", R.drawable.phuquoc, 0));
+        arrTravel.add(new Food("Đà Nẵng", "", R.drawable.danang, 0));
         adapter = new FoodAdapter(this, R.layout.food_line, arrTravel);
         lvTravel.setAdapter(adapter);
     }

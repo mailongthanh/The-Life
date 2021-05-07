@@ -1,0 +1,17 @@
+{
+  "money": [
+    {"event": "Đại khái là không cho xin tiền, còn bị ăn chửi",
+      "assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0, "relationship": -20},
+    {"event": "Đại khái là cho xin tiền, nhưng vẫn bị ăn chửi",
+      "assets": 1000, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": 0},
+    {"event": "Đại khái là không cho xin tiền, nhưng không nói gì",
+      "assets": 0, "happy": -2, "health": 0, "smart":0, "appearance": 0, "relationship": -10},
+    {"event": "Im lặng giả vờ không nghe",
+      "assets": 0, "happy": -10, "health": 0, "smart":0, "appearance": 0, "relationship": -30}
+  ],
+  "assault": [],
+  "praise": [],
+  "talk": [],
+  "offense": [],
+  "movie": []
+}

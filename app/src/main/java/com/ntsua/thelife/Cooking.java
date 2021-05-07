@@ -20,11 +20,11 @@ public class Cooking extends AppCompatActivity {
         setContentView(R.layout.activity_cooking);
         lvCooking = (ListView) findViewById((R.id.listviewCooking));
         arrCooking = new ArrayList<>();
-        arrCooking.add(new Food("Sushi", "", R.drawable.sushi));
-        arrCooking.add(new Food("Bún bò", "", R.drawable.bunbo));
-        arrCooking.add(new Food("Phở", "", R.drawable.pho));
-        arrCooking.add(new Food("Pizza", "", R.drawable.pizza));
-        arrCooking.add(new Food("Bánh xèo", "", R.drawable.banhxeo));
+        arrCooking.add(new Food("Sushi", "", R.drawable.sushi, 0));
+        arrCooking.add(new Food("Bún bò", "", R.drawable.bunbo, 0));
+        arrCooking.add(new Food("Phở", "", R.drawable.pho, 0));
+        arrCooking.add(new Food("Pizza", "", R.drawable.pizza, 0));
+        arrCooking.add(new Food("Bánh xèo", "", R.drawable.banhxeo, 0));
         adapter = new FoodAdapter(this, R.layout.food_line, arrCooking);
         lvCooking.setAdapter(adapter);
     }

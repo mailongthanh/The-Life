@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnActivity, btnRelationship;
     ImageButton ibtnAddAge;
     ProgressBar prbHappy, prbHealth, prbSmart, prbAppearance;
-    TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney;
+    TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName;
     SharedPreferences preferences;
     SaveGame saveGame;
     JSONArray arrJsonAge, arrJsonEvent;
@@ -316,6 +316,7 @@ public class MainActivity extends AppCompatActivity {
         txtSmart = findViewById(R.id.txtSmart);
         txtHealth = findViewById(R.id.txtHealth);
         txtMoney = findViewById(R.id.textviewMoney);
+        txtName = findViewById(R.id.textviewName);
 
         prbAppearance = findViewById(R.id.progressbarAppearance);
         prbHappy = findViewById(R.id.progressbarHappy);
@@ -355,7 +356,7 @@ public class MainActivity extends AppCompatActivity {
 
         money = saveGame.getMoney();
         txtMoney.setText(money + "");
-
+        txtName.setText(saveGame.getName());
 
     }
 
@@ -363,7 +364,7 @@ public class MainActivity extends AppCompatActivity {
     void init(String name, String country) throws JSONException {
         String json = null;
         try {
-            InputStream inputStream = getAssets().open("parent_name.json");
+            InputStream inputStream = getAssets().open("parent.json");
             int size = inputStream.available();
             byte[] buffer = new byte[size];
             inputStream.read(buffer);
@@ -391,7 +392,20 @@ public class MainActivity extends AppCompatActivity {
         //Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
         saveGame.saveAge(0);
         saveGame.saveDetailActivity(contentHtml);
+        saveGame.saveName(name);
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
+        txtName.setText(name);
+
+        prbHealth.setProgress(100);
+        prbHappy.setProgress(100);
+        prbSmart.setProgress(33);
+        prbAppearance.setProgress(50);
+
+        txtAppearance.setText(prbAppearance.getProgress() + "%");
+        txtHappy.setText(prbHappy.getProgress() + "%");
+        txtSmart.setText(prbSmart.getProgress() + "%");
+        txtHealth.setText(prbHealth.getProgress() + "%");
+        saveGame.savePlayerInfo(prbHappy.getProgress(), prbHealth.getProgress(), prbSmart.getProgress(), prbAppearance.getProgress());
     }
 
     void addAgeHTML(int age)

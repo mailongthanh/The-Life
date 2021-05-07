@@ -21,9 +21,9 @@ public class Entertainment extends AppCompatActivity {
         setContentView(R.layout.activity_entertainment);
         lvEntertainment = (ListView) findViewById((R.id.listviewEntertainment));
         arrEntertainment = new ArrayList<>();
-        arrEntertainment.add(new Food("Bar", "1 triệu", R.drawable.bar));
-        arrEntertainment.add(new Food("Đi xem phim", "80 nghìn", R.drawable.movie));
-        arrEntertainment.add(new Food("Thư viện", "Free", R.drawable.library));
+        arrEntertainment.add(new Food("Bar", "1 triệu", R.drawable.bar, 1000));
+        arrEntertainment.add(new Food("Đi xem phim", "80 nghìn", R.drawable.movie, 80));
+        arrEntertainment.add(new Food("Thư viện", "Free", R.drawable.library, 0));
         adapter = new FoodAdapter(this, R.layout.food_line, arrEntertainment);
         lvEntertainment.setAdapter(adapter);
     }

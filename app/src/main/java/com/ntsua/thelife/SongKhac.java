@@ -20,8 +20,8 @@ public class SongKhac extends AppCompatActivity {
         setContentView(R.layout.activity_song_khac);
         lvSongKhac = (ListView) findViewById((R.id.listviewSongKhac));
         arrSongKhac = new ArrayList<>();
-        arrSongKhac.add(new Food("Cướp giật", "", R.drawable.knife));
-        arrSongKhac.add(new Food("Trộm chó", "", R.drawable.dog));
+        arrSongKhac.add(new Food("Cướp giật", "", R.drawable.knife, 0));
+        arrSongKhac.add(new Food("Trộm chó", "", R.drawable.dog, 0));
         adapter = new FoodAdapter(this, R.layout.food_line, arrSongKhac);
         lvSongKhac.setAdapter(adapter);
     }

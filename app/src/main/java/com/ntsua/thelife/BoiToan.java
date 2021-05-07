@@ -19,9 +19,9 @@ public class BoiToan extends AppCompatActivity {
         setContentView(R.layout.activity_boi_toan);
         lvBoi = (ListView) findViewById((R.id.listviewBoi));
         arrBoi = new ArrayList<>();
-        arrBoi.add(new Food("Bói tử vi", "500 nghìn - Cuộc sống nở hoa hay bế tắc", R.drawable.tuvi));
-        arrBoi.add(new Food("Bói công danh sự nghiệp", "1 triệu - Sự nghiệp lên như diều gặp gió hay lận đận?", R.drawable.career));
-        arrBoi.add(new Food("Bói tình duyên", "500 nghìn - Theo tình, tình chạy, đuổi tình, tình theo", R.drawable.handlove));
+        arrBoi.add(new Food("Bói tử vi", "500 nghìn - Cuộc sống nở hoa hay bế tắc", R.drawable.tuvi, 500));
+        arrBoi.add(new Food("Bói công danh sự nghiệp", "1 triệu - Sự nghiệp lên như diều gặp gió hay lận đận?", R.drawable.career, 1000));
+        arrBoi.add(new Food("Bói tình duyên", "500 nghìn - Theo tình, tình chạy, đuổi tình, tình theo", R.drawable.handlove, 500));
         adapter = new FoodAdapter(this, R.layout.food_line, arrBoi);
         lvBoi.setAdapter(adapter);
     }
