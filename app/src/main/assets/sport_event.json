@@ -1,9 +1,9 @@
 {
   "jogging": [
-    {"event": "1", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0},
-    {"event": "2", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0},
-    {"event": "3", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0},
-    {"event": "4", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+    {"event": "Thêm nội dung sự kiện vào đây", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0},
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0},
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0},
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
   ],
   "exercise": [
     {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0},
