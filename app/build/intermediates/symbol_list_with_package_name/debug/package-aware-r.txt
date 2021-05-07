@@ -979,6 +979,7 @@ bool abc_config_actionMenuItemAllCaps
 bool mtrl_btn_textappearance_all_caps
 color Blue
 color Ocean
+color Red
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -1749,6 +1750,7 @@ drawable happy
 drawable heartbeat
 drawable hero
 drawable hiking
+drawable holding_hands
 drawable hongkong
 drawable hospital
 drawable ic_clock_black_24dp
@@ -1865,6 +1867,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id TvQuanHe
 id Tvbanner
 id accelerate
 id accessibility_action_clickable_span
@@ -1942,6 +1945,7 @@ id bounce
 id buttonActivity
 id buttonAssets
 id buttonDialogEventOke
+id buttonDialogRelationship_Oke
 id buttonInfant
 id buttonPanel
 id buttonRelationship
@@ -1989,6 +1993,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id dialog_Relationship
 id dialog_button
 id dialog_event
 id dialog_event_result
@@ -2049,6 +2054,7 @@ id ignore
 id ignoreRequest
 id image
 id imageAvatar
+id imageAvatarA
 id imageButtonMenu
 id imageCrime
 id imageFood
@@ -2056,6 +2062,7 @@ id imagebuttonAddAge
 id imageviewFoodBack
 id imageviewHoatDongBack
 id imageviewSportBack
+id imvQuanHe
 id info
 id invisible
 id inward
@@ -2073,12 +2080,18 @@ id line1
 id line3
 id linear
 id linearAppearance
+id linearAppearanceRelationship
 id linearHappy
+id linearHappyRelationship
 id linearHealth
+id linearHealthRelationship
 id linearLayout
 id linearLayout2
 id linearMoney
+id linearMoneyRelationship
+id linearRelationship
 id linearSmart
+id linearSmartRelationship
 id listMode
 id list_item
 id listviewBoi
@@ -2174,6 +2187,7 @@ id password_toggle
 id path
 id pathRelative
 id pbThanhQuanHe
+id pbThanhQuanHeA
 id peekHeight
 id percent
 id pin
@@ -2285,9 +2299,22 @@ id textviewDescription
 id textviewDescriptionCr
 id textviewDialogEventContent
 id textviewDialogEventTitle
+id textviewDialogRelationshipContent
+id textviewDialogRelationshipTitle
 id textviewFoodName
+id textviewJob
 id textviewMoney
+id textviewMqhA
 id textviewName
+id textviewNameA
+id textviewNameRelationship
+id textviewRelationship
+id textviewRelationshipTitle
+id textviewRelationship_Appearance
+id textviewRelationship_Happy
+id textviewRelationship_Health
+id textviewRelationship_Money
+id textviewRelationship_Smart
 id textviewResultAppearance
 id textviewResultHappy
 id textviewResultHealth
@@ -2315,6 +2342,7 @@ id tvHoTen
 id tvHoatDong
 id tvMoiQuanHe
 id tvMucquanhe
+id tvTuoi
 id txtAppearance
 id txtHappy
 id txtHealth
@@ -2427,8 +2455,10 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_activity
 layout dialog_event
 layout dialog_event_result
+layout dialog_relationship
 layout food_line
 layout material_chip_input_combo
 layout material_clock_display

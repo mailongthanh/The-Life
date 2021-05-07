@@ -7,26 +7,25 @@
 
     <ImageView
         android:id="@+id/imageCrime"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:src="@color/black"/>
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
     <TextView
         android:id="@+id/textviewCrime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
         android:text="Ten mon an"
-        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
         android:layout_toRightOf="@id/imageCrime"
-        android:textSize="20dp"/>
+        android:textSize="18sp"/>
     <TextView
-        android:textSize="15dp"
         android:id="@+id/textviewDescriptionCr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mo ta mon an"
+        android:paddingLeft="8dp"
         android:layout_below="@id/textviewCrime"
-        android:layout_toRightOf="@id/imageCrime"
-        android:layout_marginLeft="20dp"/>
+        android:layout_toRightOf="@id/imageCrime" />
 
 
 </RelativeLayout>

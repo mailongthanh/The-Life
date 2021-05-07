@@ -50,6 +50,7 @@ public class QuanHeAdapter extends BaseAdapter {
     private class ViewHolder{
         TextView tvTen, tvMoiQuanHe;
         ProgressBar PbThanhQH;
+        ImageView imgQuanhe;
     };
 
     @Override
@@ -67,11 +68,13 @@ public class QuanHeAdapter extends BaseAdapter {
             holder.tvTen        = (TextView) convertView.findViewById(R.id.tvHoTen);
             holder.tvMoiQuanHe  = (TextView) convertView.findViewById(R.id.tvMoiQuanHe);
             holder.PbThanhQH    = (ProgressBar) convertView.findViewById(R.id.pbThanhQuanHe);
+            holder.imgQuanhe    = convertView.findViewById(R.id.imvQuanHe);
 
             //Gán giá trị
             holder.tvTen.setText(myQuanHeList.get(position).getHoten());
             holder.tvMoiQuanHe.setText("(" + myQuanHeList.get(position).getQuanHe() + ")");
             holder.PbThanhQH.setProgress(myQuanHeList.get(position).getDoThanMat());
+            holder.imgQuanhe.setImageResource(myQuanHeList.get(position).getHinhAnh());
             convertView.setTag(holder);
         } else{
             holder = (ViewHolder) convertView.getTag();

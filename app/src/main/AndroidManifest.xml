@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheLife">
+
         <activity android:name=".BoiToan"></activity>
         <activity android:name=".MakeUp" />
         <activity android:name=".Cooking" />

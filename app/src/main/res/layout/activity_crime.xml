@@ -13,41 +13,33 @@
 
     </include>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/Blue">
+        android:background="@color/Blue"
+        android:padding="1dp">
 
         <TextView
             android:id="@+id/Tvbanner"
             android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="4dp"
+            android:layout_height="50dp"
             android:background="@color/Blue"
             android:fontFamily="@font/anton"
             android:gravity="center"
             android:text="PHẠM TỘI"
+            android:layout_centerInParent="true"
             android:textColor="@color/white"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:textSize="25sp">
 
         </TextView>
 
         <ImageView
-            android:layout_width="40dp"
+            android:layout_width="30dp"
             android:layout_height="50dp"
-            android:src="@drawable/cancel"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/Tvbanner"
-            app:layout_constraintHorizontal_bias="0.177"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.516" />
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/previous" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
 
     <ListView
         android:id="@+id/listviewCrime"

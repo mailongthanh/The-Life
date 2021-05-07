@@ -44,6 +44,7 @@ import java.text.FieldPosition;
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
@@ -355,7 +356,7 @@ public class MainActivity extends AppCompatActivity {
         txtHealth.setText(prbHealth.getProgress() + "%");
 
         money = saveGame.getMoney();
-        txtMoney.setText(money + "");
+        txtMoney.setText("$" + money);
         txtName.setText(saveGame.getName());
 
     }
@@ -381,14 +382,39 @@ public class MainActivity extends AppCompatActivity {
         JSONArray arrJob = vn.getJSONArray("job");
         Random random = new Random();
 
+        //Tao quan he Bo Me
+        String fatherName = arrFather.getString(random.nextInt(arrFather.length()));
+        int fatherAge = (random.nextInt(11) + 20);
+        QuanHe father = new QuanHe(fatherName, fatherAge, 100, "Bố", R.drawable.boy); //Thay hinh sau
+        String motherName = arrMother.getString(random.nextInt(arrMother.length()));
+        int motherAge = (random.nextInt(11) + 20);
+        QuanHe mother = new QuanHe(motherName, motherAge, 100, "Mẹ", R.drawable.girl); //Thay hinh sau
+
+        ArrayList<QuanHe> arrRelationship = new ArrayList<>();
+        arrRelationship.add(father);
+        arrRelationship.add(mother);
+        //Them cho vui
+        arrRelationship.add(new QuanHe("Trần Thanh Vũ", 19, 50, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Nguyễn Thiện Sua", 19, 2, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Nguyễn Hiếu Nghĩa", 19, 50, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Mai Long Thành", 19, 80, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Võ Thành Phát", 19, 2, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Hoàng Nhật Tiến", 19, 0, "Bạn bè",R.drawable.boy));
+
+        saveGame.saveRelationship(arrRelationship);
+
         //Tao ngay sinh
         Date date = Calendar.getInstance().getTime();
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
         contentHtml = "<h5> <font color=\"blue\">Age 0</font></h5>" +
                 "Tôi tên " + name + "<br>" +
                 "Sinh ngày " + format.format(date) + "<br>" +
-                "Bố tôi là " + arrFather.getString(random.nextInt(arrFather.length())) + " - " + arrJob.getString(random.nextInt(arrJob.length())) + "<br>" +
-                "Mẹ tôi là " + arrMother.getString(random.nextInt(arrMother.length())) + " - " + arrJob.getString(random.nextInt(arrJob.length())) + "<br>";
+                "Bố tôi là " + fatherName + " - " +
+                arrJob.getString(random.nextInt(arrJob.length())) +
+                " (" + fatherAge + " tuổi )" + "<br>" +
+                "Mẹ tôi là " + motherName + " - " +
+                arrJob.getString(random.nextInt(arrJob.length())) +
+                " (" + motherAge + " tuổi )" + "<br>";
         //Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
         saveGame.saveAge(0);
         saveGame.saveDetailActivity(contentHtml);

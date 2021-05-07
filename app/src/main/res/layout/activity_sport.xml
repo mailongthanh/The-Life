@@ -12,17 +12,17 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
+        android:padding="1dp"
         android:background="#007BFF">
 
         <TextView
             android:id="@+id/textviewTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Thể thao"
+            android:fontFamily="@font/anton"
+            android:text="THỂ THAO"
             android:layout_centerInParent="true"
-            android:textSize="28sp"
-            android:textStyle="bold"
+            android:textSize="25sp"
             android:textColor="#fff" />
         <ImageView
             android:layout_width="30dp"
@@ -31,10 +31,11 @@
             android:layout_toLeftOf="@id/textviewTitle"
             android:layout_centerVertical="true"
             android:layout_marginRight="5dp"/>
+
         <ImageView
             android:id="@+id/imageviewSportBack"
             android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:src="@drawable/previous"
             android:onClick="gotoMainMenu"/>
 

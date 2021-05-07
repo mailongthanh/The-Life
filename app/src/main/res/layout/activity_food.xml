@@ -7,34 +7,39 @@
     <include android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         layout="@layout/player_info"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:background="#007BFF">
+        android:background="#007BFF"
+        android:padding="1dp">
 
         <TextView
             android:id="@+id/textviewTitle"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ăn uống"
+            android:layout_height="50dp"
             android:layout_centerInParent="true"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:textColor="#fff" />
+            android:fontFamily="@font/anton"
+            android:gravity="center"
+            android:text="ĂN UỐNG"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/cutlery"
-            android:layout_toLeftOf="@id/textviewTitle"
             android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"/>
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/textviewTitle"
+            android:src="@drawable/cutlery" />
+
         <ImageView
             android:id="@+id/imageviewFoodBack"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/previous"
-            android:onClick="gotoMainMenu"/>
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:onClick="gotoMainMenu"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/previous" />
 
     </RelativeLayout>
 

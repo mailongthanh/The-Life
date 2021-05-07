@@ -10,48 +10,88 @@
 
     </include>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:background="@color/Ocean">
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:padding="1dp">
 
         <TextView
-            android:id="@+id/Tvbanner"
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:background="@color/Ocean"
+            android:id="@+id/TvQuanHe"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@color/purple_500"
             android:fontFamily="@font/anton"
             android:gravity="center"
+            android:layout_centerInParent="true"
             android:text="MỐI QUAN HỆ"
             android:textColor="@color/white"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:textSize="25sp" >
 
         </TextView>
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="60dp"
-            android:background="@color/Ocean"
-            app:backgroundTint="@null"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/Tvbanner"
-            app:layout_constraintHorizontal_bias="0.047"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/purple_500"
             android:onClick="gotoRelationship"
             android:src="@drawable/previous" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="50sp"
-        android:background="@color/white">
-    </TextView>
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageAvatarA"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/textviewNameA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/imageAvatarA"
+            android:text="Name of Acquaintance"
+            android:textColor="@color/Blue"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textviewMqhA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textviewNameA"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/imageAvatarA"
+            android:text="Mối quan hệ" />
+
+        <TextView
+            android:id="@+id/tvTuoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="( tuoi ) "
+            android:textSize="18sp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/textviewNameA">
+
+        </TextView>
+
+        <ProgressBar
+            android:id="@+id/pbThanhQuanHeA"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="119dp"
+            android:layout_height="20dp"
+            android:paddingLeft="5dp"
+            android:progressBackgroundTint="#05F10E"
+            android:layout_toRightOf="@+id/textviewMqhA"
+            android:layout_below="@id/textviewNameA" />
+
+    </RelativeLayout>
 
     <TextView
         android:layout_width="match_parent"
