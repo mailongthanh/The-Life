@@ -90,7 +90,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-
                     addAge();
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -112,8 +111,6 @@ public class MainActivity extends AppCompatActivity {
 
         final String[] event = {object[0].getString("event")};
         String title = object[0].getString("title");
-
-
 
         //Kiem tra su kien co su lua chon hay khong
         final boolean[] isSelection = {object[0].getBoolean("selection")};

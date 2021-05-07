@@ -26,22 +26,12 @@ public class RelationShip extends AppCompatActivity {
         lvQuanHe = (ListView) findViewById(R.id.ListViewQuanHe);
         MangQuanHe = new ArrayList<QuanHe>();
 
-<<<<<<< HEAD
         MangQuanHe.add(new QuanHe("Trần Thanh Vũ", 19, 50, "Bạn bè",R.drawable.boy));
         MangQuanHe.add(new QuanHe("Nguyễn Thiện Sua", 19, 2, "Bạn bè",R.drawable.boy));
         MangQuanHe.add(new QuanHe("Nguyễn Hiếu Nghĩa", 19, 50, "Bạn bè",R.drawable.boy));
         MangQuanHe.add(new QuanHe("Mai Long Thành", 19, 80, "Bạn bè",R.drawable.boy));
         MangQuanHe.add(new QuanHe("Võ Thành Phát", 19, 2, "Bạn bè",R.drawable.boy));
         MangQuanHe.add(new QuanHe("Hoàng Nhật Tiến", 19, 0, "Bạn bè",R.drawable.boy));
-=======
-        MangQuanHe.add(new QuanHe("Trần Thanh Vũ", 19, 50, "Bạn bè"));
-        MangQuanHe.add(new QuanHe("Nguyễn Thiện Sua", 19, 2, "Bạn bè"));
-        MangQuanHe.add(new QuanHe("Nguyễn Hiếu Nghĩa", 19, 50, "Bạn bè"));
-        MangQuanHe.add(new QuanHe("Mai Long Thành", 19, 80, "Bạn bè"));
-        MangQuanHe.add(new QuanHe("Võ Thành Phát", 19, 2, "Bạn bè"));
-        MangQuanHe.add(new QuanHe("Hoàng Nhật Tiến", 19, 0, "Bạn bè"));
->>>>>>> 894b7d348eb0f249a248ba48480f79670375b9a4
-
         QuanHeAdapter adapter = new QuanHeAdapter(
                 RelationShip.this,
                 R.layout.quan_he,
@@ -62,7 +52,6 @@ public class RelationShip extends AppCompatActivity {
     public void gotoMainMenu(View view) {
         startActivity(new Intent(RelationShip.this, MainActivity.class));
     }
-<<<<<<< HEAD
 
     public void gotoTuongTac(int i){
         Intent intent = new Intent(RelationShip.this, Tuong_tacActivity.class);
@@ -80,6 +69,3 @@ public class RelationShip extends AppCompatActivity {
     }
 
 }
-=======
-}
->>>>>>> 894b7d348eb0f249a248ba48480f79670375b9a4
