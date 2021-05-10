@@ -62,6 +62,7 @@
                 android:text="Name of player" />
 
             <TextView
+                android:id="@+id/textviewJob"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textviewName"
