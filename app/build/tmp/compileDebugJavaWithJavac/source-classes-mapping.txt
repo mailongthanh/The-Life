@@ -2,13 +2,14 @@ com/ntsua/thelife/FoodAdapter.java
  com.ntsua.thelife.FoodAdapter
  com.ntsua.thelife.FoodAdapter$1
  com.ntsua.thelife.FoodAdapter$ViewHolder
-com/ntsua/thelife/HoatDong.java
- com.ntsua.thelife.HoatDong
- com.ntsua.thelife.HoatDong$1
+com/ntsua/thelife/Startup.java
+ com.ntsua.thelife.Startup
 com/ntsua/thelife/HoatDongQH.java
  com.ntsua.thelife.HoatDongQH
-com/ntsua/thelife/SportActivity.java
- com.ntsua.thelife.SportActivity
+com/ntsua/thelife/HoatDongQHAdapter.java
+ com.ntsua.thelife.HoatDongQHAdapter
+ com.ntsua.thelife.HoatDongQHAdapter$1
+ com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
 com/ntsua/thelife/Degree.java
  com.ntsua.thelife.Degree
 com/ntsua/thelife/SongKhac.java
@@ -16,27 +17,29 @@ com/ntsua/thelife/SongKhac.java
 com/ntsua/thelife/FoodActivity.java
  com.ntsua.thelife.FoodActivity
  com.ntsua.thelife.FoodActivity$1
-com/ntsua/thelife/CrimeActivity.java
- com.ntsua.thelife.CrimeActivity
- com.ntsua.thelife.CrimeActivity$1
+com/ntsua/thelife/SportActivity.java
+ com.ntsua.thelife.SportActivity
+ com.ntsua.thelife.SportActivity$1
+ com.ntsua.thelife.SportActivity$2
+com/ntsua/thelife/Cooking.java
+ com.ntsua.thelife.Cooking
+com/ntsua/thelife/Playground.java
+ com.ntsua.thelife.Playground
 com/ntsua/thelife/CrimeAdapter.java
  com.ntsua.thelife.CrimeAdapter
  com.ntsua.thelife.CrimeAdapter$1
  com.ntsua.thelife.CrimeAdapter$ViewHolder
-com/ntsua/thelife/Playground.java
- com.ntsua.thelife.Playground
-com/ntsua/thelife/HoatDongQHAdapter.java
- com.ntsua.thelife.HoatDongQHAdapter
- com.ntsua.thelife.HoatDongQHAdapter$1
- com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
 com/ntsua/thelife/QuanHe.java
  com.ntsua.thelife.QuanHe
 com/ntsua/thelife/Love.java
  com.ntsua.thelife.Love
 com/ntsua/thelife/MakeUp.java
  com.ntsua.thelife.MakeUp
-com/ntsua/thelife/Startup.java
- com.ntsua.thelife.Startup
+com/ntsua/thelife/MainActivity.java
+ com.ntsua.thelife.MainActivity
+ com.ntsua.thelife.MainActivity$1
+ com.ntsua.thelife.MainActivity$2
+ com.ntsua.thelife.MainActivity$3
 com/ntsua/thelife/Hospital.java
  com.ntsua.thelife.Hospital
 com/ntsua/thelife/BoiToan.java
@@ -56,17 +59,16 @@ com/ntsua/thelife/Food.java
  com.ntsua.thelife.Food
 com/ntsua/thelife/Entertainment.java
  com.ntsua.thelife.Entertainment
-com/ntsua/thelife/Cooking.java
- com.ntsua.thelife.Cooking
-com/ntsua/thelife/MainActivity.java
- com.ntsua.thelife.MainActivity
- com.ntsua.thelife.MainActivity$1
- com.ntsua.thelife.MainActivity$2
- com.ntsua.thelife.MainActivity$3
-com/ntsua/thelife/RelationShip.java
- com.ntsua.thelife.RelationShip
- com.ntsua.thelife.RelationShip$1
 com/ntsua/thelife/Tuong_tacActivity.java
  com.ntsua.thelife.Tuong_tacActivity
  com.ntsua.thelife.Tuong_tacActivity$1
  com.ntsua.thelife.Tuong_tacActivity$2
+com/ntsua/thelife/RelationShip.java
+ com.ntsua.thelife.RelationShip
+ com.ntsua.thelife.RelationShip$1
+com/ntsua/thelife/HoatDong.java
+ com.ntsua.thelife.HoatDong
+ com.ntsua.thelife.HoatDong$1
+com/ntsua/thelife/CrimeActivity.java
+ com.ntsua.thelife.CrimeActivity
+ com.ntsua.thelife.CrimeActivity$1
