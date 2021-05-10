@@ -37,7 +37,8 @@
             android:layout_width="30dp"
             android:layout_height="50dp"
             android:layout_marginLeft="15dp"
-            android:src="@drawable/previous" />
+            android:src="@drawable/previous"
+            android:onClick="gotoMainMenu"/>
 
     </RelativeLayout>
 

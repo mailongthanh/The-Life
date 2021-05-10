@@ -8,6 +8,8 @@ com/ntsua/thelife/HoatDongQH.java
  com.ntsua.thelife.HoatDongQH
 com/ntsua/thelife/SportActivity.java
  com.ntsua.thelife.SportActivity
+ com.ntsua.thelife.SportActivity$1
+ com.ntsua.thelife.SportActivity$2
 com/ntsua/thelife/Degree.java
  com.ntsua.thelife.Degree
 com/ntsua/thelife/SongKhac.java

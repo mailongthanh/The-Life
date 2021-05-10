@@ -2,6 +2,7 @@ package com.ntsua.thelife;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -19,7 +20,6 @@ public class CrimeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crime);
-
         lvCrime = findViewById(R.id.listviewCrime);
         arrCrime = new ArrayList<>();
 
@@ -39,5 +39,9 @@ public class CrimeActivity extends AppCompatActivity {
 
             }
         });
+    }
+    public void gotoMainMenu(View view)
+    {
+        startActivity(new Intent(CrimeActivity.this, HoatDong.class));
     }
 }

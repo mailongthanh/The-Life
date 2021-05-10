@@ -127,9 +127,10 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     try {
-                        jsonResult = arrJob.getJSONObject(finalI);
+                        JSONArray array = object.getJSONArray("event");
+                        jsonResult = array.getJSONObject(new Random().nextInt(array.length()));
                         dialog.dismiss();
-                        dialogEventResult(jsonResult.getString(arrJob.getJSONObject(finalI).getString("content")));
+                        dialogEventResult(object.getString("content"));
 
                     } catch (JSONException e) {
                         e.printStackTrace();

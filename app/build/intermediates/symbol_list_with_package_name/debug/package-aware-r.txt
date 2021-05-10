@@ -2458,6 +2458,7 @@ layout design_text_input_start_icon
 layout dialog_activity
 layout dialog_event
 layout dialog_event_result
+layout dialog_hoatdong
 layout dialog_relationship
 layout food_line
 layout material_chip_input_combo
