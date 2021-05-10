@@ -13,7 +13,7 @@
   "football": [
     {"event": "Môn thể thao vua giúp bạn đoàn kết với những người anh em", "assets": -150, "happy": 3, "health": 1, "smart":0, "appearance": 0},
     {"event": "Buổi đá banh hôm đó bạn vô tình đá phản lưới nhà khiến team mình thua với tỉ số 0-1", "assets": -150, "happy": -4, "health": 1, "smart":0, "appearance": 0},
-    {"event": "Chạy hùng hục trên sân giúp bạn hô biến được đống mỡ thừa đáng ghét,cơ bắp cuồn cuộn nhìn thật hấp dẫn", "assets": -150, "happy": 0, "health": 2, "smart":0, "appearance": 1},
+    {"event": "Chạy hùng hục trên sân giúp bạn hô biến được đống mỡ thừa đáng ghét, cơ bắp cuồn cuộn nhìn thật hấp dẫn", "assets": -150, "happy": 0, "health": 2, "smart":0, "appearance": 1},
     {"event": "Buổi đá banh hôm đó bạn tàng hình gần như cả trận, team của bạn thua team địch với kết quả 0-3", "assets": -150, "happy": -5, "health": 0, "smart":0, "appearance": 0},
     {"event": "Bóng đá giúp hệ tim mạch của bạn tốt hơn rất nhiều, nhưng bạn vẫn hay bị căng cơ vì không khởi động kỹ. Hãy cẩn thận", "assets": -150, "happy": 0, "health": 0, "smart":0, "appearance": 0},
     {"event": "Buổi đá banh hôm đó bạn là người ghi bàn thắng quyết định giúp team giành chiến thắng với kết quả 2-1", "assets": -150, "happy": 5, "health": 1, "smart":0, "appearance": 0}

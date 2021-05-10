@@ -1,13 +1,15 @@
 {
   "money": [
-    {"event": "Đại khái là không cho xin tiền, còn bị ăn chửi",
+    {"event": "Bạn xin tiền của @, @ không cho mà còn chửi bạn.",
       "assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0, "relationship": -20},
-    {"event": "Đại khái là cho xin tiền, nhưng vẫn bị ăn chửi",
-      "assets": 1000, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": -10},
-    {"event": "Đại khái là không cho xin tiền, nhưng không nói gì",
+    {"event": "Bạn xin tiền của @, @ cũng đồng ý cho xin tiền, nhưng càu nhàu liên tục.",
+      "assets": 1000, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": -5},
+    {"event": "Bạn xin tiền của @, @ nói rằng đang khô máu :((",
       "assets": 0, "happy": -2, "health": 0, "smart":0, "appearance": 0, "relationship": -10},
-    {"event": "Im lặng giả vờ không nghe",
-      "assets": 0, "happy": -10, "health": 0, "smart":0, "appearance": 0, "relationship": -30}
+    {"event": "Bạn xin tiền của @, @ im lặng giả vờ không nghe.",
+      "assets": 0, "happy": -10, "health": 0, "smart":0, "appearance": 0, "relationship": -30},
+    {"event": "Bạn xin tiền của @, @ vui vẻ cho bạn tiền một ít.",
+      "assets": 100, "happy": 3, "health": 0, "smart":0, "appearance": 0, "relationship": 5}
   ],
   "assault": [
     {"event": "",

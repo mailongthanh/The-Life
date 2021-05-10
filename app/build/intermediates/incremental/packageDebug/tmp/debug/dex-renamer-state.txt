@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Mon May 10 16:39:21 ICT 2021
 base.0=D\:\\The-Life\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+=======
+#Mon May 10 15:55:22 ICT 2021
+base.0=D\:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+>>>>>>> d30004633b71388a49b645d0bbdd6bdef405dff9
 path.0=classes.dex
 renamed.0=classes.dex

@@ -1,0 +1,46 @@
+{
+  "student": {
+    "work": [
+      {"content": "Học bài",
+        "event": [
+          {"event": "Bạn từ chối đi chơi với bạn bè để học bài nhưng quên mất hôm nay không có bài để học", "assets": 0, "happy": -2, "health":0 , "smart":0, "appearance": 0},
+          {"event": "Hôm này học được rất nhiều bài", "assets": 0, "happy": 0, "health": -2, "smart":2, "appearance": 0},
+          {"event": "3", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
+          {"event": "4", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
+          {"event": "5", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0}
+        ]},
+      {"content": "Không học đi chơi",
+        "event": [
+          {"event": "Hôm nay không có bài để học, bạn đi chơi một cách thoải mái", "assets": 0, "happy": 3, "health":0 , "smart":0, "appearance": 0},
+          {"event": "Bạn đi chơi quên mất việc học bài", "assets": 0, "happy": 2, "health":0 , "smart":-2, "appearance": 0},
+          {"event": "3", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
+          {"event": "4", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
+          {"event": "5", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0}
+        ]}
+    ]
+
+  },
+  "coder": {
+    "work": [
+      {"content": "Viết một con game xịn xò",
+        "event": [
+          {"event": "1", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
+          {"event": "2", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
+          {"event": "3", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
+          {"event": "4", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
+          {"event": "5", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0}
+      ]},
+      {"content": "Đi dạy thêm",
+        "event": [
+          {"event": "1", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
+          {"event": "2", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
+          {"event": "3", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
+          {"event": "4", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
+          {"event": "5", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0}
+        ]}
+    ]
+  },
+  "event": {
+
+  }
+}
