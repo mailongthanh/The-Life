@@ -17,10 +17,9 @@ com/ntsua/thelife/SongKhac.java
 com/ntsua/thelife/FoodActivity.java
  com.ntsua.thelife.FoodActivity
  com.ntsua.thelife.FoodActivity$1
-com/ntsua/thelife/SportActivity.java
- com.ntsua.thelife.SportActivity
- com.ntsua.thelife.SportActivity$1
- com.ntsua.thelife.SportActivity$2
+com/ntsua/thelife/CrimeActivity.java
+ com.ntsua.thelife.CrimeActivity
+ com.ntsua.thelife.CrimeActivity$1
 com/ntsua/thelife/Cooking.java
  com.ntsua.thelife.Cooking
 com/ntsua/thelife/Playground.java
@@ -69,6 +68,7 @@ com/ntsua/thelife/RelationShip.java
 com/ntsua/thelife/HoatDong.java
  com.ntsua.thelife.HoatDong
  com.ntsua.thelife.HoatDong$1
-com/ntsua/thelife/CrimeActivity.java
- com.ntsua.thelife.CrimeActivity
- com.ntsua.thelife.CrimeActivity$1
+com/ntsua/thelife/SportActivity.java
+ com.ntsua.thelife.SportActivity
+ com.ntsua.thelife.SportActivity$1
+ com.ntsua.thelife.SportActivity$2
