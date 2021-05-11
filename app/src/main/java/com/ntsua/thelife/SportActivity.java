@@ -38,26 +38,13 @@ public class SportActivity extends AppCompatActivity {
     SaveGame saveGame;
     SharedPreferences preference;
     TextView txtName, txtJob, txtMoney;
-<<<<<<< HEAD
-=======
-
->>>>>>> d99eb9bbdf9a009f1099cbb3041c7f11b87d09e0
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sport);
-<<<<<<< HEAD
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
-=======
-
-        txtName = findViewById(R.id.textviewName);
-        txtJob = findViewById(R.id.textviewJob);
-        txtMoney = findViewById(R.id.textviewMoney);
-        loadGame();
-
->>>>>>> d99eb9bbdf9a009f1099cbb3041c7f11b87d09e0
         lvSport = (ListView) findViewById((R.id.listviewSports));
         preference = getSharedPreferences("data", MODE_PRIVATE);
         saveGame = new SaveGame(preference);
@@ -369,19 +356,11 @@ public class SportActivity extends AppCompatActivity {
 
         dialog.show();
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> d99eb9bbdf9a009f1099cbb3041c7f11b87d09e0
     private void loadGame() {
         txtName.setText(saveGame.getName());
         txtMoney.setText("$" + saveGame.getMoney());
         txtJob.setText(saveGame.getJob());
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> d99eb9bbdf9a009f1099cbb3041c7f11b87d09e0
     void readEvent()
     {
         String jsonEvent = null;
