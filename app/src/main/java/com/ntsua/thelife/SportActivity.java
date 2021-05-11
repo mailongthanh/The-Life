@@ -39,18 +39,27 @@ public class SportActivity extends AppCompatActivity {
     SharedPreferences preference;
     String jsonEvent;
     ActivitiesEvent Activity;
+    TextView txtName, txtJob, txtMoney;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sport);
+        txtName = findViewById(R.id.textviewName);
+        txtJob = findViewById(R.id.textviewJob);
+        txtMoney = findViewById(R.id.textviewMoney);
 
+        txtName = findViewById(R.id.textviewName);
+        txtJob = findViewById(R.id.textviewJob);
+        txtMoney = findViewById(R.id.textviewMoney);
         lvSport = (ListView) findViewById((R.id.listviewSports));
         preference = getSharedPreferences("data", MODE_PRIVATE);
         saveGame = new SaveGame(preference);
         random = new Random();
-
-
         arrSport = new ArrayList<Food>();
+
+        loadGame();
+
         arrSport.add(new Food("Chạy bộ", "FREE", R.drawable.jogging, 0));
         arrSport.add(new Food("Bài tập thể dục", "FREE", R.drawable.triangle, 0));
         arrSport.add(new Food("Bóng đá", "150 nghìn", R.drawable.football, 0));
@@ -76,126 +85,217 @@ public class SportActivity extends AppCompatActivity {
         lvSport.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (arrSport.get(position).getFoodName() == "Chạy bộ") {
+                if (arrSport.get(position).getFoodName() == "Chạy bộ")
+                {
                     try {
                         Activity.CreateDialog("jogging","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (arrSport.get(position).getFoodName() == "Bài tập thể dục") {
+                if (arrSport.get(position).getFoodName() == "Bài tập thể dục")
+                {
                     try {
                         Activity.CreateDialog("exercise","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (arrSport.get(position).getFoodName() == "Bóng đá") {
+                if (arrSport.get(position).getFoodName() == "Bóng đá" &&
+                        saveGame.getMoney() >= arrSport.get(2).getPrice())
+                {
                     try {
                         Activity.CreateDialog("football","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
+                } else if(position == 2) {
+                    createDialogOFM();
                 }
-                if (arrSport.get(position).getFoodName() == "Bóng bàn") {
+
+                if (arrSport.get(position).getFoodName() == "Bóng bàn"
+                        && saveGame.getMoney() >= arrSport.get(3).getPrice())
+                {
                     try {
                         Activity.CreateDialog("pingpong","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (arrSport.get(position).getFoodName() == "Bóng rỗ") {
+                else if(position == 3) {
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Bóng rỗ"
+                        && saveGame.getMoney() >= arrSport.get(4).getPrice())
+                {
                     try {
                         Activity.CreateDialog("basketball","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (arrSport.get(position).getFoodName() == "Bóng chày") {
+                else if(position == 4){
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Bóng chày"
+                        && saveGame.getMoney() >= arrSport.get(5).getPrice())
+                {
                     try {
                         Activity.CreateDialog("baseball","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (arrSport.get(position).getFoodName() == "Quần vợt") {
+                else if(position ==5 ){
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Quần vợt"
+                        && saveGame.getMoney() >= arrSport.get(6).getPrice())
+                {
                     try {
                         Activity.CreateDialog("tennis","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (arrSport.get(position).getFoodName() == "Cầu lông") {
+                else if(position==6){
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Cầu lông"
+                        && saveGame.getMoney() >= arrSport.get(7).getPrice()) {
                     try {
                         Activity.CreateDialog("badminton","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (arrSport.get(position).getFoodName() == "Chạy xe đạp") {
+                else if(position == 7){
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Chạy xe đạp"
+                        && saveGame.getMoney() >= arrSport.get(8).getPrice()) {
                     try {
                         Activity.CreateDialog("cycling","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (arrSport.get(position).getFoodName() == "Leo núi") {
+                else if(position ==8){
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Leo núi"
+                        && saveGame.getMoney() >= arrSport.get(9).getPrice()) {
                     try {
                         Activity.CreateDialog("climb","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (arrSport.get(position).getFoodName() == "Cử tạ") {
+                else if(position ==9){
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Cử tạ"
+                        && saveGame.getMoney() >= arrSport.get(10).getPrice()) {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("GYM");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("GYM","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 11) {
+                else if(position ==10){
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Võ Vovinam"
+                        && saveGame.getMoney() >= arrSport.get(11).getPrice()) {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("martial");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("martial","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 12) {
+                else if(position == 11)
+                {
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Chèo thuyền"
+                        && saveGame.getMoney() >= arrSport.get(12).getPrice()) {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("rowing");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("rowing","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 13) {
+                else if(position ==12)
+                {
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Lướt sóng"
+                        && saveGame.getMoney() >= arrSport.get(13).getPrice()) {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("surf");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("surf","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 14) {
+                else if(position ==13)
+                {
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Lặn"
+                        && saveGame.getMoney() >= arrSport.get(14).getPrice()) {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("dive");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("dive","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 15) {
+                else if(position ==14)
+                {
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Yoga"
+                        && saveGame.getMoney() >= arrSport.get(15).getPrice()) {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("yoga");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("yoga","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
+                }
+                else if(position ==15)
+                {
+                    createDialogOFM();
                 }
             }
         });
+    }
+    void createDialogOFM() {
+        Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.setContentView(R.layout.dialog_out_of_money);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        LinearLayout dialogResult = dialog.findViewById(R.id.dialog_event_result);
+        Button btnOke = dialog.findViewById(R.id.buttonDialogEventOke);
+        btnOke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
     }
     void createDialog(JSONObject object) throws JSONException {
         //Tao dialog
@@ -261,6 +361,7 @@ public class SportActivity extends AppCompatActivity {
         } else {
             txtAssets.setText(String.format( "%,d",value*1000));
             saveGame.saveMoney(saveGame.getMoney() + value);
+            loadGame();
         }
         saveGame.savePlayerInfo(happy, health, smart, appearance);
         String contentHtml = saveGame.getDetailActivity();
@@ -275,6 +376,11 @@ public class SportActivity extends AppCompatActivity {
         });
 
         dialog.show();
+    }
+    private void loadGame() {
+        txtName.setText(saveGame.getName());
+        txtMoney.setText("$" + saveGame.getMoney());
+        txtJob.setText(saveGame.getJob());
     }
     String readEvent()
     {
@@ -295,6 +401,7 @@ public class SportActivity extends AppCompatActivity {
     }
     public void gotoMainMenu(View view)
     {
-        startActivity(new Intent(SportActivity.this, HoatDong.class));
+        //startActivity(new Intent(SportActivity.this, HoatDong.class));
+        finish();
     }
 }

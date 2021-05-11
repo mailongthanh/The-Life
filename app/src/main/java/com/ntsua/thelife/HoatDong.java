@@ -3,10 +3,12 @@ package com.ntsua.thelife;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -15,12 +17,27 @@ public class HoatDong extends AppCompatActivity {
     ListView lvHoatDong;
     FoodAdapter adapter;
     ArrayList<Food> arrHoatDong;
+    TextView txtName, txtJob, txtMoney;
+    SaveGame saveGame;
+    SharedPreferences preference;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hoat_dong);
-        lvHoatDong = (ListView) findViewById((R.id.listviewHoatDong));
+        txtName = findViewById(R.id.textviewName);
+        txtJob = findViewById(R.id.textviewJob);
+        txtMoney = findViewById(R.id.textviewMoney);
 
+        preference = getSharedPreferences("data", MODE_PRIVATE);
+        saveGame = new SaveGame(preference);
+        txtName = findViewById(R.id.textviewName);
+        txtJob = findViewById(R.id.textviewJob);
+        txtMoney = findViewById(R.id.textviewMoney);
+        lvHoatDong = (ListView) findViewById((R.id.listviewHoatDong));
+        preference = getSharedPreferences("data", MODE_PRIVATE);
+        saveGame = new SaveGame(preference);
+        loadGame();
         arrHoatDong = new ArrayList<>();
         arrHoatDong.add(new Food("Khu vui chơi", "", R.drawable.playground, 0));
         arrHoatDong.add(new Food("Tình yêu", "", R.drawable.love, 0));
@@ -95,8 +112,13 @@ public class HoatDong extends AppCompatActivity {
             }
         });
         }
+    private void loadGame() {
+        txtName.setText(saveGame.getName());
+        txtMoney.setText("$" + saveGame.getMoney());
+        txtJob.setText(saveGame.getJob());
+    }
     public void gotoMainMenu(View view) {
         startActivity(new Intent(HoatDong.this, MainActivity.class));
     }
-    }
+}
 

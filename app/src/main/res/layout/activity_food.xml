@@ -24,15 +24,6 @@
             android:text="ĂN UỐNG"
             android:textColor="#fff"
             android:textSize="25sp" />
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"
-            android:layout_toLeftOf="@id/textviewTitle"
-            android:src="@drawable/cutlery" />
-
         <ImageView
             android:id="@+id/imageviewFoodBack"
             android:layout_width="30dp"

@@ -384,6 +384,10 @@
         "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\bubble_tea.png"
     },
     {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_out_of_money.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\layout\\dialog_out_of_money.xml"
+    },
+    {
         "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lollipop.png.flat",
         "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\lollipop.png"
     },
