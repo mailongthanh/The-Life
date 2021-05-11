@@ -37,10 +37,17 @@ public class SportActivity extends AppCompatActivity {
     Random random;
     SaveGame saveGame;
     SharedPreferences preference;
+    TextView txtName, txtJob, txtMoney;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sport);
+
+        txtName = findViewById(R.id.textviewName);
+        txtJob = findViewById(R.id.textviewJob);
+        txtMoney = findViewById(R.id.textviewMoney);
+        loadGame();
 
         lvSport = (ListView) findViewById((R.id.listviewSports));
         preference = getSharedPreferences("data", MODE_PRIVATE);
@@ -48,22 +55,22 @@ public class SportActivity extends AppCompatActivity {
         random = new Random();
 
         arrSport = new ArrayList<Food>();
-        arrSport.add(new Food("Chạy bộ", "", R.drawable.jogging, 0));
-        arrSport.add(new Food("Bài tập thể dục", "", R.drawable.triangle, 0));
-        arrSport.add(new Food("Bóng đá", "", R.drawable.football, 0));
-        arrSport.add(new Food("Bóng bàn", "", R.drawable.ping_pong, 0));
-        arrSport.add(new Food("Bóng rỗ", "", R.drawable.basketball, 0));
-        arrSport.add(new Food("Bóng chày", "", R.drawable.baseball, 0));
-        arrSport.add(new Food("Quần vợt", "", R.drawable.tennis_racket, 0));
-        arrSport.add(new Food("Cầu lông", "", R.drawable.badminton, 0));
-        arrSport.add(new Food("Chạy xe đạp", "", R.drawable.racing, 0));
-        arrSport.add(new Food("Leo núi", "", R.drawable.hiking, 0));
-        arrSport.add(new Food("Cử tạ", "", R.drawable.fitness, 0));
-        arrSport.add(new Food("Võ Vovinam", "", R.drawable.vovinam, 0));
-        arrSport.add(new Food("Chèo thuyền", "", R.drawable.rowing, 0));
-        arrSport.add(new Food("Lướt sóng", "", R.drawable.surfing, 0));
-        arrSport.add(new Food("Lặn", "", R.drawable.snorkle, 0));
-        arrSport.add(new Food("Yoga", "", R.drawable.yoga, 0));
+        arrSport.add(new Food("Chạy bộ", "FREE", R.drawable.jogging, 0));
+        arrSport.add(new Food("Bài tập thể dục", "FREE", R.drawable.triangle, 0));
+        arrSport.add(new Food("Bóng đá", "150 nghìn", R.drawable.football, 0));
+        arrSport.add(new Food("Bóng bàn", "200 nghìn", R.drawable.ping_pong, 0));
+        arrSport.add(new Food("Bóng rỗ", "100 nghìn", R.drawable.basketball, 0));
+        arrSport.add(new Food("Bóng chày", "220 nghìn", R.drawable.baseball, 0));
+        arrSport.add(new Food("Quần vợt", "1 triệu", R.drawable.tennis_racket, 0));
+        arrSport.add(new Food("Cầu lông", "150 nghìn", R.drawable.badminton, 0));
+        arrSport.add(new Food("Chạy xe đạp", "150 nghìn", R.drawable.racing, 0));
+        arrSport.add(new Food("Leo núi", "300 nghìn", R.drawable.hiking, 0));
+        arrSport.add(new Food("Cử tạ", "400 nghìn", R.drawable.fitness, 0));
+        arrSport.add(new Food("Võ Vovinam", "200 nghìn", R.drawable.vovinam, 0));
+        arrSport.add(new Food("Chèo thuyền", "450 nghìn", R.drawable.rowing, 0));
+        arrSport.add(new Food("Lướt sóng", "600 nghìn", R.drawable.surfing, 0));
+        arrSport.add(new Food("Lặn", "1 triệu", R.drawable.snorkle, 0));
+        arrSport.add(new Food("Yoga", "500 nghìn", R.drawable.yoga, 0));
 
         adapter = new FoodAdapter(this, R.layout.food_line, arrSport);
         lvSport.setAdapter(adapter);
@@ -74,6 +81,126 @@ public class SportActivity extends AppCompatActivity {
                 if (position == 0) {
                     try {
                         JSONArray arrEvent = Sportjs.getJSONArray("jogging");
+                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (position == 1) {
+                    try {
+                        JSONArray arrEvent = Sportjs.getJSONArray("exercise");
+                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (position == 2) {
+                    try {
+                        JSONArray arrEvent = Sportjs.getJSONArray("football");
+                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (position == 3) {
+                    try {
+                        JSONArray arrEvent = Sportjs.getJSONArray("pingpong");
+                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (position == 4) {
+                    try {
+                        JSONArray arrEvent = Sportjs.getJSONArray("basketball");
+                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (position == 5) {
+                    try {
+                        JSONArray arrEvent = Sportjs.getJSONArray("baseball");
+                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (position == 6) {
+                    try {
+                        JSONArray arrEvent = Sportjs.getJSONArray("tennis");
+                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (position == 7) {
+                    try {
+                        JSONArray arrEvent = Sportjs.getJSONArray("badminton");
+                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (position == 8) {
+                    try {
+                        JSONArray arrEvent = Sportjs.getJSONArray("cycling");
+                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (position == 9) {
+                    try {
+                        JSONArray arrEvent = Sportjs.getJSONArray("climb");
+                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (position == 10) {
+                    try {
+                        JSONArray arrEvent = Sportjs.getJSONArray("GYM");
+                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (position == 11) {
+                    try {
+                        JSONArray arrEvent = Sportjs.getJSONArray("martial");
+                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (position == 12) {
+                    try {
+                        JSONArray arrEvent = Sportjs.getJSONArray("rowing");
+                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (position == 13) {
+                    try {
+                        JSONArray arrEvent = Sportjs.getJSONArray("surf");
+                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (position == 14) {
+                    try {
+                        JSONArray arrEvent = Sportjs.getJSONArray("dive");
+                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (position == 15) {
+                    try {
+                        JSONArray arrEvent = Sportjs.getJSONArray("yoga");
                         createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -161,6 +288,13 @@ public class SportActivity extends AppCompatActivity {
 
         dialog.show();
     }
+
+    private void loadGame() {
+        txtName.setText(saveGame.getName());
+        txtMoney.setText("$" + saveGame.getMoney());
+        txtJob.setText(saveGame.getJob());
+    }
+
     void readEvent()
     {
         String jsonEvent = null;
@@ -178,6 +312,7 @@ public class SportActivity extends AppCompatActivity {
     }
     public void gotoMainMenu(View view)
     {
-        startActivity(new Intent(SportActivity.this, HoatDong.class));
+        //startActivity(new Intent(SportActivity.this, HoatDong.class));
+        finish();
     }
 }
