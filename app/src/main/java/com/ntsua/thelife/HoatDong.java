@@ -20,13 +20,28 @@ public class HoatDong extends AppCompatActivity {
     TextView txtName, txtJob, txtMoney;
     SaveGame saveGame;
     SharedPreferences preference;
+<<<<<<< HEAD
+=======
+
+>>>>>>> d99eb9bbdf9a009f1099cbb3041c7f11b87d09e0
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hoat_dong);
+<<<<<<< HEAD
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
+=======
+
+        preference = getSharedPreferences("data", MODE_PRIVATE);
+        saveGame = new SaveGame(preference);
+        txtName = findViewById(R.id.textviewName);
+        txtJob = findViewById(R.id.textviewJob);
+        txtMoney = findViewById(R.id.textviewMoney);
+        loadGame();
+
+>>>>>>> d99eb9bbdf9a009f1099cbb3041c7f11b87d09e0
         lvHoatDong = (ListView) findViewById((R.id.listviewHoatDong));
         preference = getSharedPreferences("data", MODE_PRIVATE);
         saveGame = new SaveGame(preference);
@@ -113,5 +128,5 @@ public class HoatDong extends AppCompatActivity {
     public void gotoMainMenu(View view) {
         startActivity(new Intent(HoatDong.this, MainActivity.class));
     }
-    }
+}
 

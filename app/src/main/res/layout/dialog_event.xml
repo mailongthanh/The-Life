@@ -33,8 +33,9 @@
             android:layout_height="wrap_content"
             android:text="Đây là nội dung của sự kiện"
             android:textSize="17dp"
-            android:layout_marginTop="10dp"
-            android:textAlignment="center"/>
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center" />
         <!--<Button
             android:id="@+id/buttonDialogEventOke"
             android:layout_width="wrap_content"

@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.app.UiAutomation;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -20,6 +21,7 @@ import android.text.SpannableStringBuilder;
 import android.text.style.RelativeSizeSpan;
 import android.text.style.UnderlineSpan;
 import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -60,9 +62,11 @@ public class MainActivity extends AppCompatActivity {
     SaveGame saveGame;
     JSONArray arrJsonAge;
     JSONObject jsonResult, jsonJob;
-
+    boolean onEvent = false;
     String contentHtml;
     int money;
+    long currentTime = 0;
+    Toast backToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-
+                    onEvent = true;
                     addAge();
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -103,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
+                    onEvent = true;
                     doWork();
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -162,8 +167,7 @@ public class MainActivity extends AppCompatActivity {
     void addAge() throws JSONException {
         //them tuoi
         int age = saveGame.getAge() + 1;
-        addAgeHTML(age);
-        //saveGame.saveAge(age);
+
         //lay su kien tuoi
         JSONArray arrAge = arrJsonAge.getJSONArray(age);
         Random random = new Random();
@@ -191,6 +195,10 @@ public class MainActivity extends AppCompatActivity {
     {
         jsonResult = object[0];
         if (!isSelection[0]) {
+            //Luu tuoi
+            int age = saveGame.getAge() + 1;
+            addAgeHTML(age);
+            //saveGame.saveAge(age);
             //Tao dialog hien thi ket qua cua event
             dialogEventResult(title);
             return;
@@ -306,6 +314,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
+                onEvent = false;
             }
         });
 
@@ -316,7 +325,7 @@ public class MainActivity extends AppCompatActivity {
     {
         Button btn = new Button(dialogCustom.getContext());
         btn.setText(text);
-        btn.setTextSize(15);
+        btn.setTextSize(14);
         btn.setBackgroundResource(R.drawable.custom_button_menu);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(400, ViewGroup.LayoutParams.WRAP_CONTENT);
         params.bottomMargin = 10;
@@ -336,6 +345,16 @@ public class MainActivity extends AppCompatActivity {
         dialog.setContentView(R.layout.dialog_event);
         dialog.setCanceledOnTouchOutside(false);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
+            @Override
+            public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_BACK)
+                {
+                    return true;
+                }
+                return false;
+            }
+        });
 
         //Anh xa cac phan tu trong dialog
         TextView txtTitle = dialog.findViewById(R.id.textviewDialogEventTitle);
@@ -519,5 +538,21 @@ public class MainActivity extends AppCompatActivity {
         contentHtml += "<h5> <font color=\"blue\">Tuổi " + age + "</font></h5>";
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
         saveGame.saveDetailActivity(contentHtml);
+    }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+        if (currentTime + 2000 > System.currentTimeMillis())
+        {
+            backToast.cancel();
+            this.finishAffinity();
+
+        }
+        else {
+            backToast = Toast.makeText(this, "Press back again to exit", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        currentTime = System.currentTimeMillis();
     }
 }
