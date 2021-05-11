@@ -51,14 +51,14 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnActivity, btnRelationship;
+    Button btnActivity, btnRelationship, btnWork, btnAssets;;
     ImageButton ibtnAddAge;
     ProgressBar prbHappy, prbHealth, prbSmart, prbAppearance;
-    TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName;
+    TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName, txtJob;
     SharedPreferences preferences;
     SaveGame saveGame;
-    JSONArray arrJsonAge, arrJsonEvent;
-    JSONObject jsonResult;
+    JSONArray arrJsonAge;
+    JSONObject jsonResult, jsonJob;
 
     String contentHtml;
     int money;
@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
         AnhXa();
         try {
             readEvent();
+            readJob();
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -97,6 +98,64 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        btnWork.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    doWork();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+    }
+
+    void dialogJob(JSONArray arrJob) throws JSONException {
+        Toast.makeText(this, "here", Toast.LENGTH_SHORT).show();
+        Dialog dialog = createDialog("Làm việc", "Làm, làm nữa, làm mãi");
+        LinearLayout dialogCustom = dialog.findViewById(R.id.dialog_event);
+
+
+        for (int i=0; i<arrJob.length(); i++)
+        {
+            JSONObject object = arrJob.getJSONObject(i);
+            Button btn = addButton(dialogCustom, object.getString("content"));
+            int finalI = i;
+            btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    try {
+                        JSONArray array = object.getJSONArray("event");
+                        jsonResult = array.getJSONObject(new Random().nextInt(array.length()));
+                        dialog.dismiss();
+                        dialogEventResult(object.getString("content"));
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+        }
+        dialog.show();
+    }
+
+    void doWork() throws JSONException {
+        JSONObject object;
+        JSONArray arrJob;
+        switch (saveGame.getJob())
+        {
+            case "Lập trình viên":
+                object = jsonJob.getJSONObject("coder");
+                arrJob = object.getJSONArray("work");
+                dialogJob(arrJob);
+                break;
+            case "Trẻ trâu":
+                object = jsonJob.getJSONObject("student");
+                arrJob = object.getJSONArray("work");
+                dialogJob(arrJob);
+                break;
+        }
     }
 
     void addAge() throws JSONException {
@@ -136,7 +195,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Them thong tin da choi vao textview
-        contentHtml += event[0] + "<br>";
+        //contentHtml += event[0] + "<br>";
 
         //Tao dialog va them cac button lua chon vao dialog
         Dialog dialog = createDialog(title, event[0]);
@@ -267,7 +326,7 @@ public class MainActivity extends AppCompatActivity {
         return btn;
     }
 
-    Dialog createDialog(String title, String event) throws JSONException {
+    Dialog createDialog(String title, String event){
         //Dinh dang dialog
         Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -302,7 +361,22 @@ public class MainActivity extends AppCompatActivity {
 
         JSONObject object = new JSONObject(jsonEvent);
         arrJsonAge = object.getJSONArray("age");
-        arrJsonEvent = object.getJSONArray("event");
+    }
+
+    void readJob() throws JSONException {
+        String jsonEvent = null;
+        try {
+            InputStream inputStream = getAssets().open("job.json");
+            int size = inputStream.available();
+            byte[] buffer = new byte[size];
+            inputStream.read(buffer);
+            inputStream.close();
+            jsonEvent = new String(buffer, "UTF-8");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        jsonJob = new JSONObject(jsonEvent);
     }
 
     private void AnhXa() {
@@ -316,6 +390,7 @@ public class MainActivity extends AppCompatActivity {
         txtHealth = findViewById(R.id.txtHealth);
         txtMoney = findViewById(R.id.textviewMoney);
         txtName = findViewById(R.id.textviewName);
+        txtJob = findViewById(R.id.textviewJob);
 
         prbAppearance = findViewById(R.id.progressbarAppearance);
         prbHappy = findViewById(R.id.progressbarHappy);
@@ -323,6 +398,8 @@ public class MainActivity extends AppCompatActivity {
         prbSmart = findViewById(R.id.progressbarSmart);
 
         ibtnAddAge = findViewById(R.id.imagebuttonAddAge);
+        btnAssets = findViewById(R.id.buttonAssets);
+        btnWork = findViewById(R.id.buttonInfant);
 
         preferences = getSharedPreferences("data", MODE_PRIVATE);
         saveGame = new SaveGame(preferences);
@@ -356,6 +433,7 @@ public class MainActivity extends AppCompatActivity {
         money = saveGame.getMoney();
         txtMoney.setText("$" + money);
         txtName.setText(saveGame.getName());
+        txtJob.setText(saveGame.getJob());
 
     }
 
@@ -404,7 +482,7 @@ public class MainActivity extends AppCompatActivity {
         //Tao ngay sinh
         Date date = Calendar.getInstance().getTime();
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-        contentHtml = "<h5> <font color=\"blue\">Age 0</font></h5>" +
+        contentHtml = "<h5> <font color=\"blue\">Tuổi 0</font></h5>" +
                 "Tôi tên " + name + "<br>" +
                 "Sinh ngày " + format.format(date) + "<br>" +
                 "Bố tôi là " + fatherName + " - " +
@@ -417,6 +495,8 @@ public class MainActivity extends AppCompatActivity {
         saveGame.saveAge(0);
         saveGame.saveDetailActivity(contentHtml);
         saveGame.saveName(name);
+        saveGame.saveJob("Trẻ trâu");
+        txtJob.setText(saveGame.getJob());
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
         txtName.setText(name);
 
@@ -434,7 +514,7 @@ public class MainActivity extends AppCompatActivity {
 
     void addAgeHTML(int age)
     {
-        contentHtml += "<h5> <font color=\"blue\">Age " + age + "</font></h5>";
+        contentHtml += "<h5> <font color=\"blue\">Tuổi " + age + "</font></h5>";
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
         saveGame.saveDetailActivity(contentHtml);
     }

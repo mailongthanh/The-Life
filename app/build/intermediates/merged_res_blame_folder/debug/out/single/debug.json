@@ -512,6 +512,10 @@
         "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
     },
     {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_hoatdong.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\layout\\dialog_hoatdong.xml"
+    },
+    {
         "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ping_pong.png.flat",
         "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\ping_pong.png"
     },

@@ -27,12 +27,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.regex.Pattern;
 
 public class Tuong_tacActivity extends AppCompatActivity {
 
     ListView lvTuongTac;
     ArrayList<HoatDongQH> MangTuongTac;
-    TextView txthoten, txttuoi, txtquanhe;
+    TextView txthoten, txttuoi, txtquanhe, txtName, txtJob, txtMoney;
     ImageView hinhanh;
     ProgressBar pbqhanhe;
     int dothanmat;
@@ -53,6 +54,9 @@ public class Tuong_tacActivity extends AppCompatActivity {
         txtquanhe = findViewById(R.id.TvQuanHe);
         hinhanh = findViewById(R.id.imageAvatarA);
         pbqhanhe = findViewById(R.id.pbThanhQuanHeA);
+        txtName = findViewById(R.id.textviewName);
+        txtJob = findViewById(R.id.textviewJob);
+        txtMoney = findViewById(R.id.textviewMoney);
 
         //Nhận dữ liệu
         Intent intent=getIntent();
@@ -92,6 +96,8 @@ public class Tuong_tacActivity extends AppCompatActivity {
         //Read Event
         readEvent();
 
+        //Load game
+        loadGame();
 
 
 
@@ -151,7 +157,8 @@ public class Tuong_tacActivity extends AppCompatActivity {
         txtTitle.setText(txthoten.getText().toString());
         txtNameRelationship.setText(txtquanhe.getText().toString());
         txtNameActivity.setText(titleEvent);
-        txtContent.setText(object.getString("event"));
+        String event = object.getString("event").replaceAll( "@", bundle.getString("hoten"));
+        txtContent.setText(event);
 
 
         int happy = saveGame.getHappy();
@@ -192,6 +199,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
             txtAppearance.setText(value + "");
             appearance += value;
         }
+
         value = object.getInt("assets");
         if (value == 0)
         {
@@ -199,6 +207,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
         } else {
             txtAssets.setText(String.format( "%,d",value*1000));
             saveGame.saveMoney(saveGame.getMoney() + value);
+            txtMoney.setText("$" + value);
         }
         saveGame.savePlayerInfo(happy, health, smart, appearance);
         value = object.getInt("relationship");
@@ -221,7 +230,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
         }
 
         String contentHtml = saveGame.getDetailActivity();
-        contentHtml += txtContent.getText().toString() + "<br>";
+        contentHtml += event + "<br>";
         saveGame.saveDetailActivity(contentHtml);
 
         btnOke.setOnClickListener(new View.OnClickListener() {
@@ -232,6 +241,12 @@ public class Tuong_tacActivity extends AppCompatActivity {
         });
 
         dialog.show();
+    }
+
+    private void loadGame() {
+        txtName.setText(saveGame.getName());
+        txtMoney.setText("$" + saveGame.getMoney());
+        txtJob.setText(saveGame.getJob());
     }
 
     void readEvent()

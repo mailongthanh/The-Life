@@ -65,6 +65,7 @@ public class RelationShip extends AppCompatActivity {
         MangQuanHe = saveGame.getRelationship();
         txtName.setText(saveGame.getName());
         txtMoney.setText(saveGame.getMoney() + "");
+        txtMoney.setText("$" + saveGame.getMoney());
         txtJob.setText(saveGame.getJob());
     }
 

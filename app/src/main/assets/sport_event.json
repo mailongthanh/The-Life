@@ -1,51 +1,87 @@
 {
   "jogging": [
-    {"event": "1", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0},
-    {"event": "2", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0},
-    {"event": "3", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0},
-    {"event": "4", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+    {"event": "Bạn đang chạy bộ ngoài công viên thì bị vấp té.Bạn bất ngờ gặp được người nổi tiếng đỡ bạn dậy.Bạn quên hết cả đau", "assets": 0, "happy": 3, "health": -1, "smart":0, "appearance": 0},
+    {"event": "Chạy bộ giúp bạn giảm mỡ.Trong một tháng, bạn giảm được 5cm vòng eo nhờ chạy bộ 30 phút hằng ngày", "assets": 0, "happy":0, "health": 5, "smart":0, "appearance": 3},
+    {"event": "Trong lúc chạy bộ bạn lỡ làm rớt mất bóp tiền chứa 1 triệu đồng, bạn rất buồn :((", "assets": -1000, "happy":-3, "health": 1, "smart":0, "appearance": 0},
+    {"event": "Một lần đang chạy bộ thì bạn nhặt được 500k.Thể thao đúng là mang lại thật nhiều lợi ích!!!", "assets": 500, "happy": 4, "health": 1, "smart":0, "appearance": 0}
   ],
   "exercise": [
-    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0},
-    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+    {"event": "Sau 2 tháng dành ra 30 phút tập thể dục mỗi ngày, bạn giảm được 5kg và trở nên thon gọn", "assets": 0, "happy": 0, "health": 3, "smart":0, "appearance": 2},
+    {"event": "Tập thể dục thật tuyệt vời nó khiến bạn trở nên vui vẻ và sảng khoải", "assets": 0, "happy": 2, "health": 2, "smart":0, "appearance": 0},
+    {"event": "Vào một hôm tập thể dục vì không khởi động kỹ mà bạn bị trật khớp vai", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
   ],
   "football": [
-    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+    {"event": "Môn thể thao vua giúp bạn đoàn kết với những người anh em", "assets": -150, "happy": 3, "health": 1, "smart":0, "appearance": 0},
+    {"event": "Buổi đá banh hôm đó bạn vô tình đá phản lưới nhà khiến team mình thua với tỉ số 0-1", "assets": -150, "happy": -4, "health": 1, "smart":0, "appearance": 0},
+    {"event": "Chạy hùng hục trên sân giúp bạn hô biến được đống mỡ thừa đáng ghét, cơ bắp cuồn cuộn nhìn thật hấp dẫn", "assets": -150, "happy": 0, "health": 2, "smart":0, "appearance": 1},
+    {"event": "Buổi đá banh hôm đó bạn tàng hình gần như cả trận, team của bạn thua team địch với kết quả 0-3", "assets": -150, "happy": -5, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Bóng đá giúp hệ tim mạch của bạn tốt hơn rất nhiều, nhưng bạn vẫn hay bị căng cơ vì không khởi động kỹ. Hãy cẩn thận", "assets": -150, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Buổi đá banh hôm đó bạn là người ghi bàn thắng quyết định giúp team giành chiến thắng với kết quả 2-1", "assets": -150, "happy": 5, "health": 1, "smart":0, "appearance": 0}
   ],
   "pingpong": [
-    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+    {"event": "Trong buổi tập đầu, vì không khởi động mà bạn bị trật cổ tay. Nhớ chú ý khởi động thật kỹ nhé", "assets": -200, "happy": -1, "health": -1, "smart":0, "appearance": 0},
+    {"event": "Bạn có một kèo đấu với ông chú U40, bạn vì coi thường đối thủ mà bị thua đo ván", "assets": -200, "happy": -3, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Việc tập luyện giúp cơ thể bạn trở nên nhanh nhẹn, mắt tinh, phản xạ tuyệt vời", "assets": -200, "happy": 0, "health": 3, "smart":0, "appearance": 0}
   ],
   "basketball": [
-    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+    {"event": "Nhờ chơi bóng rổ nhiều nên bạn được cao thêm 2cm. Sắp thành siêu mẫu đến nơi rồi", "assets": -100, "happy": 0, "health": 2, "smart":0, "appearance": 2},
+    {"event": "Bạn thực hiện được cú úp rổ đầu tiên trong đời mọi người ai nấy đều trố mắt ngưỡng mộ", "assets": -100, "happy": 3, "health": 2, "smart":0, "appearance": 0},
+    {"event": "Cơ thể bạn khỏe khoắn, khả năng quan sát nhanh nhạy nhờ chơi bóng rổ thường xuyên", "assets": -100, "happy": 0, "health": 3, "smart":0, "appearance": 0},
+    {"event": "Bạn thực hiện được cú úp rổ đầu tiên trong đời mọi người ai nấy đều trố mắt ngưỡng mộ", "assets": -100, "happy": 3, "health": 2, "smart":0, "appearance": 0}
   ],
   "baseball": [
-    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+    {"event": "Trận đấu hôm nay bạn thực hiện được một cú HOMERUN đẹp mắt, đội bạn thắng và mọi người trong team ai nấy đều ca ngợi bạn", "assets": -220, "happy": 3, "health": 3, "smart":0, "appearance": 0},
+    {"event": "Cơ thể bạn trở nên khỏe khoắn, khả năng quan sát nhạy bén", "assets": -220, "happy": 0, "health": 3, "smart":0, "appearance": 0},
+    {"event": "Nhờ chơi bóng chày nhiều mà tay bạn trở nên săn chắc và khỏe khoắn", "assets": -220, "happy": 0, "health": 3, "smart":0, "appearance": 0}
   ],
   "tennis": [
-    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+    {"event": "Nhờ tennis, sức khỏe bạn đã được cải thiện nhiều nhưng cổ tay bắt đầu có dấu hiệu đau vì khởi động không kỹ hãy cẩn thận hơn", "assets": -1000, "happy": 0, "health": 4, "smart":0, "appearance": 0},
+    {"event": "Cơ thể cân đối, săn chắc ai nhìn cũng mê", "assets": -1000, "happy": 0, "health": 5, "smart":0, "appearance": 2},
+    {"event": "Sức khỏe tăng rõ rệt, đồng thời bạn đã xây dựng được nhiều mối quan hệ làm ăn chất lượng ở nơi tập tennis", "assets": -1000, "happy": 1, "health": 7, "smart":0, "appearance": 0}
   ],
   "badminton": [
-    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+    {"event": "Việc tập luyện giúp cơ thể bạn trở nên nhanh nhẹn, mắt tinh, phản xạ tuyệt vời", "assets": -150, "happy":0, "health": 2, "smart":0, "appearance": 0},
+    {"event": "Trong một trận giao đấu cầu lông, bạn đã để thua mất một ông chú U35", "assets": -150, "happy":-2, "health": 1, "smart":0, "appearance": 0},
+    {"event": "Bạn đã đánh bay được vài kg mỡ thừa, giành lại dáng vẻ nuột nà như Ngọc Chynh", "assets": -150, "happy":0, "health": 2, "smart":0, "appearance": 1}
   ],
   "cycling": [
-    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+    {"event": "Đạp xe nhiều giúp cơ chân bạn săn chắc, thể lực tăng lên rõ rệt", "assets": -150, "happy": 0, "health": 3, "smart":0, "appearance": 0},
+    {"event": "Trong quá trình đạp xe ngoài nâng cao thể chất bạn con thấy được nhiều cảnh đẹp trên đường đi.Điều đó khiến bạn rất vui", "assets": -150, "happy": 3, "health": 2, "smart":0, "appearance": 0},
+    {"event": "Trong quá trình đạp xe bạn vô tình đụng phải xe máy, bạn bị chấn thương phải vào viện chữa trị 2 tháng", "assets": -150, "happy": -2, "health": -5, "smart":0, "appearance": 0}
   ],
   "climb": [
-    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+    {"event": "Leo núi giúp bạn vận động hoàn toàn cơ thể, bạn trở nên khỏe mạnh và nhanh nhạy", "assets": -300, "happy": 0, "health": 5, "smart":0, "appearance": 0},
+    {"event": "Trong quá trình leo núi giúp bạn làm quen được rất nhiều người, điều đó khiến bạn rất vui", "assets": -300, "happy": 3, "health": 5, "smart":0, "appearance": 0},
+    {"event": "Trong một buổi leo núi bạn vô tình trượt chân té đập đầu vào đá, may sao bạn không chết nhưng phải vào viện chữa trị tận 5 tháng", "assets": -300, "happy": -5, "health": -10, "smart":0, "appearance": 0}
+  ],
+  "GYM": [
+    {"event": "Sau 1 tháng Cử tạ, tay bạn trở nên to hơn giúp dáng vẻ của bạn trở nên săn chắc và cân đối", "assets": -400, "happy": 0, "health": 3, "smart":0, "appearance": 2},
+    {"event": "Nhờ tập luyện chăm chỉ cơ thể bạn tràn đầy sức sống", "assets": -400, "happy": 2, "health": 2, "smart":0, "appearance": 0},
+    {"event": "Trong lúc cử tạ vì khởi động không kỹ, tay bạn đã bị trật khớp", "assets": -400, "happy": 0, "health": -1, "smart":0, "appearance": 0}
   ],
   "martial": [
-    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+    {"event": "Nhờ võ, thần thái bạn đầy uy lực, ai nhìn cũng phải e dè kín nể", "assets": -200, "happy": 0, "health": 2, "smart":0, "appearance": 3},
+    {"event": "Sau một năm tập luyện, cơ thể bạn trở nên săn chắc, nhanh nhạy, thần thái đầy uy lực", "assets": -200, "happy": 0, "health": 5, "smart":0, "appearance": 3},
+    {"event": "Trong 1 buổi giao đấu, bạn bị bạn tập vô ý đấm sưng mồm", "assets": -200, "happy": 0, "health": -1, "smart":0, "appearance": -1}
   ],
   "rowing": [
-    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+    {"event": "Chèo thuyền là một môn hoạt động nhóm vì thế với những chiến hữu xung quanh bạn đã không còn cô đơn nữa", "assets": -450, "happy": 3, "health": 2, "smart":0, "appearance": 0},
+    {"event": "Việc chèo thuyền mỗi ngày giúp tay bạn trở nên săn chắc", "assets": -450, "happy": 0, "health": 2, "smart":0, "appearance": 0},
+    {"event": "Trong một buổi chèo thuyền, thuyền bạn vô tình bị vỡ đấy dẫn tới bị chìm, bạn bị đuối nước, may có một đồng đội ra cứu dẫn vào bờ", "assets": -450, "happy": -3, "health": -2, "smart":0, "appearance": 3}
   ],
   "surf": [
-    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+    {"event": "Lướt sóng trên biển là một bộ môn đầy thử thách, chính vì vậy vào ngày đầu tập luyện bạn đã ngã ván và phải uống rất nhiều nước biển", "assets": -600, "happy": -2, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Sau hơn 3 tháng tập luyện, nay bạn đã có thể thành thạo lướt trên một con sóng lớn, bạn rất vui và tự hào", "assets": -600, "happy": 3, "health": 2, "smart":0, "appearance": 0},
+    {"event": "Tập luyện lướt sóng hơn nửa năm giúp cơ thể bạn trở nên săn chắc và khỏe mạnh", "assets": -600, "happy": 0, "health": 4, "smart":0, "appearance": 0}
   ],
   "dive": [
-    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+    {"event": "Trong quá trình lặn bạn thấy được nhiều cảnh đẹp dưới biển bạn được mở mang tầm mắt và rất vui", "assets": -1000, "happy": 3, "health": 2, "smart":0, "appearance": 0},
+    {"event": "Lặn là hoạt động toàn thân vì vậy sau 2 tháng tập lăn cơ thể bạn trở nên rất khỏe mạnh, săn chắc", "assets": -1000, "happy": 0, "health": 5, "smart":0, "appearance": 0},
+    {"event": "Vì không khởi động kỹ trong một hôm lặn bạn bị chuột rút và suýt chết đuối, may có người cứu bạn lên", "assets": -1000, "happy": -4, "health": -5, "smart":0, "appearance": 0}
   ],
   "yoga": [
-    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+    {"event": "Sau 6 tháng tập, cơ thể bạn trở nên dẻo dai hơn, tinh thần điềm tĩnh, giảm lo âu căng thẳng rõ rệt", "assets": -500, "happy": 2, "health": 2, "smart":0, "appearance": 0},
+    {"event": "Một lần tập xoạc chân quá đà khiến bạn đau háng, chân đi thành hai hàng mấy ngày. Hãy tập vừa phải thôi", "assets": -500, "happy": -2, "health": -2, "smart":0, "appearance": 0},
+    {"event": "Nhờ chăm chỉ tập luyện mà tinh thần bạn sảng khoái, gương mặt thanh tú ai nhìn vào cũng mê", "assets": -500, "happy": 2, "health": 0, "smart":0, "appearance": 2}
   ]
 }
