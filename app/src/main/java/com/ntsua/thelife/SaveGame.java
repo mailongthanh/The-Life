@@ -28,6 +28,12 @@ public class SaveGame{
         gson = new Gson();
     }
 
+    public void saveName(String name)
+    {
+        editor.putString("name", name);
+        editor.commit();
+    }
+
     public void saveMoney(int money)
     {
         editor.putInt("money", money);
@@ -66,6 +72,9 @@ public class SaveGame{
         editor.commit();
     }
 
+    public String getName(){
+        return preferences.getString("name", "NoName");
+    }
 
     public int getHappy()
     {
@@ -109,5 +118,4 @@ public class SaveGame{
         ArrayList<QuanHe> arrRelationship = gson.fromJson(json, type);
         return arrRelationship;
     }
-
 }

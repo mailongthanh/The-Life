@@ -44,6 +44,7 @@ import java.text.FieldPosition;
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnActivity, btnRelationship;
     ImageButton ibtnAddAge;
     ProgressBar prbHappy, prbHealth, prbSmart, prbAppearance;
-    TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney;
+    TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName;
     SharedPreferences preferences;
     SaveGame saveGame;
     JSONArray arrJsonAge, arrJsonEvent;
@@ -137,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
         //Them thong tin da choi vao textview
         contentHtml += event[0] + "<br>";
 
-        //Tao dialog va them cac buttton lua chon vao dialog
+        //Tao dialog va them cac button lua chon vao dialog
         Dialog dialog = createDialog(title, event[0]);
         LinearLayout dialogCustom = dialog.findViewById(R.id.dialog_event);
         JSONArray arrSelect = object[0].getJSONArray("select");
@@ -294,6 +295,7 @@ public class MainActivity extends AppCompatActivity {
             inputStream.read(buffer);
             inputStream.close();
             jsonEvent = new String(buffer, "UTF-8");
+            
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -313,6 +315,7 @@ public class MainActivity extends AppCompatActivity {
         txtSmart = findViewById(R.id.txtSmart);
         txtHealth = findViewById(R.id.txtHealth);
         txtMoney = findViewById(R.id.textviewMoney);
+        txtName = findViewById(R.id.textviewName);
 
         prbAppearance = findViewById(R.id.progressbarAppearance);
         prbHappy = findViewById(R.id.progressbarHappy);
@@ -351,8 +354,8 @@ public class MainActivity extends AppCompatActivity {
         txtHealth.setText(prbHealth.getProgress() + "%");
 
         money = saveGame.getMoney();
-        txtMoney.setText(money + "");
-
+        txtMoney.setText("$" + money);
+        txtName.setText(saveGame.getName());
 
     }
 
@@ -360,7 +363,7 @@ public class MainActivity extends AppCompatActivity {
     void init(String name, String country) throws JSONException {
         String json = null;
         try {
-            InputStream inputStream = getAssets().open("parent_name.json");
+            InputStream inputStream = getAssets().open("parent.json");
             int size = inputStream.available();
             byte[] buffer = new byte[size];
             inputStream.read(buffer);
@@ -377,18 +380,56 @@ public class MainActivity extends AppCompatActivity {
         JSONArray arrJob = vn.getJSONArray("job");
         Random random = new Random();
 
+        //Tao quan he Bo Me
+        String fatherName = arrFather.getString(random.nextInt(arrFather.length()));
+        int fatherAge = (random.nextInt(11) + 20);
+        QuanHe father = new QuanHe(fatherName, fatherAge, 100, "Bố", R.drawable.boy); //Thay hinh sau
+        String motherName = arrMother.getString(random.nextInt(arrMother.length()));
+        int motherAge = (random.nextInt(11) + 20);
+        QuanHe mother = new QuanHe(motherName, motherAge, 100, "Mẹ", R.drawable.girl); //Thay hinh sau
+
+        ArrayList<QuanHe> arrRelationship = new ArrayList<>();
+        arrRelationship.add(father);
+        arrRelationship.add(mother);
+        //Them cho vui
+        arrRelationship.add(new QuanHe("Trần Thanh Vũ", 19, 50, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Nguyễn Thiện Sua", 19, 2, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Nguyễn Hiếu Nghĩa", 19, 50, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Mai Long Thành", 19, 80, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Võ Thành Phát", 19, 2, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Hoàng Nhật Tiến", 19, 0, "Bạn bè",R.drawable.boy));
+
+        saveGame.saveRelationship(arrRelationship);
+
         //Tao ngay sinh
         Date date = Calendar.getInstance().getTime();
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
         contentHtml = "<h5> <font color=\"blue\">Age 0</font></h5>" +
                 "Tôi tên " + name + "<br>" +
                 "Sinh ngày " + format.format(date) + "<br>" +
-                "Bố tôi là " + arrFather.getString(random.nextInt(arrFather.length())) + " - " + arrJob.getString(random.nextInt(arrJob.length())) + "<br>" +
-                "Mẹ tôi là " + arrMother.getString(random.nextInt(arrMother.length())) + " - " + arrJob.getString(random.nextInt(arrJob.length())) + "<br>";
+                "Bố tôi là " + fatherName + " - " +
+                arrJob.getString(random.nextInt(arrJob.length())) +
+                " (" + fatherAge + " tuổi )" + "<br>" +
+                "Mẹ tôi là " + motherName + " - " +
+                arrJob.getString(random.nextInt(arrJob.length())) +
+                " (" + motherAge + " tuổi )" + "<br>";
         //Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
         saveGame.saveAge(0);
         saveGame.saveDetailActivity(contentHtml);
+        saveGame.saveName(name);
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
+        txtName.setText(name);
+
+        prbHealth.setProgress(100);
+        prbHappy.setProgress(100);
+        prbSmart.setProgress(33);
+        prbAppearance.setProgress(50);
+
+        txtAppearance.setText(prbAppearance.getProgress() + "%");
+        txtHappy.setText(prbHappy.getProgress() + "%");
+        txtSmart.setText(prbSmart.getProgress() + "%");
+        txtHealth.setText(prbHealth.getProgress() + "%");
+        saveGame.savePlayerInfo(prbHappy.getProgress(), prbHealth.getProgress(), prbSmart.getProgress(), prbAppearance.getProgress());
     }
 
     void addAgeHTML(int age)

@@ -1,0 +1,51 @@
+{
+  "jogging": [
+    {"event": "1", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0},
+    {"event": "2", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0},
+    {"event": "3", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0},
+    {"event": "4", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+  ],
+  "exercise": [
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0},
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+  ],
+  "football": [
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+  ],
+  "pingpong": [
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+  ],
+  "basketball": [
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+  ],
+  "baseball": [
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+  ],
+  "tennis": [
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+  ],
+  "badminton": [
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+  ],
+  "cycling": [
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+  ],
+  "climb": [
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+  ],
+  "martial": [
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+  ],
+  "rowing": [
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+  ],
+  "surf": [
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+  ],
+  "dive": [
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+  ],
+  "yoga": [
+    {"event": "", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+  ]
+}

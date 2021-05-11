@@ -20,9 +20,9 @@ public class Playground extends AppCompatActivity {
         setContentView(R.layout.activity_playground);
         lvPlayground = (ListView) findViewById((R.id.listviewPlayground));
         arrPlayground = new ArrayList<>();
-        arrPlayground.add(new Food("Bầu cua", "", R.drawable.baucua));
-        arrPlayground.add(new Food("Ai là triệu phú", "", R.drawable.ailatrieuphu));
-        arrPlayground.add(new Food("Casino", "", R.drawable.casino));
+        arrPlayground.add(new Food("Bầu cua", "", R.drawable.baucua, 0));
+        arrPlayground.add(new Food("Ai là triệu phú", "", R.drawable.ailatrieuphu, 0));
+        arrPlayground.add(new Food("Casino", "", R.drawable.casino, 0));
         adapter = new FoodAdapter(this, R.layout.food_line, arrPlayground);
         lvPlayground.setAdapter(adapter);
     }

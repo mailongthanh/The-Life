@@ -1,0 +1,45 @@
+{
+  "vi": {
+    "father": [
+      "Nguyễn Hiếu Thành",
+      "Nguyễn Văn An",
+      "Nguyễn Anh Hùng",
+      "Võ Quang Đạt",
+      "Phùng Thanh Lịch",
+      "Phan Tuấn Anh",
+      "Phạm Văn Khá"
+    ],
+    "mother": [
+      "Nguyễn Thị Xuân",
+      "Nguyễn Ngọc Nhã",
+      "Lê Thuỳ Dung",
+      "Phạm Huỳnh Thi",
+      "Tấn Phương An"
+    ],
+    "job": [
+      "Bác sĩ",
+      "Kĩ sư điện tử",
+      "Giáo viên",
+      "Y tá",
+      "Cảnh sát",
+      "Công an",
+      "Lập trình viên",
+      "Tài xế",
+      "Streamer",
+      "Công nhân",
+      "Thợ may",
+      "Nhân viên văn phòng",
+      "Kinh doanh bất động sản"
+    ]
+  },
+  "en": {
+    "father": [
+      "Nguyen Van A",
+      "Nguyen Van B"
+    ],
+    "mother": [
+      "Nguyen Thi A",
+      "Nguyen Thi B"
+    ]
+  }
+}

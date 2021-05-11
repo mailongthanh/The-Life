@@ -136,6 +136,10 @@
         "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\phuquoc.png"
     },
     {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_holding_hands.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\holding_hands.png"
+    },
+    {
         "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rice_bowl.png.flat",
         "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\rice_bowl.png"
     },
@@ -412,6 +416,10 @@
         "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\library.png"
     },
     {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_relationship.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\layout\\dialog_relationship.xml"
+    },
+    {
         "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fortunetelling.png.flat",
         "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\fortunetelling.png"
     },
@@ -654,6 +662,10 @@
     {
         "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_career.png.flat",
         "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\career.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_activity.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\layout\\dialog_activity.xml"
     },
     {
         "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_hacker.png.flat",

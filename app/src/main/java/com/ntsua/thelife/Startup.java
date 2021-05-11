@@ -19,10 +19,10 @@ public class Startup extends AppCompatActivity {
         setContentView(R.layout.activity_startup);
         lvStartUp = (ListView) findViewById((R.id.listviewStartUp));
         arrStartUp = new ArrayList<>();
-        arrStartUp.add(new Food("Quân tử lập nghiệp", "Now or never", R.drawable.hero));
-        arrStartUp.add(new Food("Bán máu", "Hãy cho đi mà không cần nhận lại", R.drawable.blooddonate));
-        arrStartUp.add(new Food("Vé số", "Xổ số kiến thiết mang niềm vui đến mọi nhà", R.drawable.lottery));
-        arrStartUp.add(new Food("Đánh đề", "Sau 5h chiều không biết ai giàu hơn ai", R.drawable.dice));
+        arrStartUp.add(new Food("Quân tử lập nghiệp", "Now or never", R.drawable.hero, 0));
+        arrStartUp.add(new Food("Bán máu", "Hãy cho đi mà không cần nhận lại", R.drawable.blooddonate, 0));
+        arrStartUp.add(new Food("Vé số", "Xổ số kiến thiết mang niềm vui đến mọi nhà", R.drawable.lottery, 0));
+        arrStartUp.add(new Food("Đánh đề", "Sau 5h chiều không biết ai giàu hơn ai", R.drawable.dice, 0));
         adapter = new FoodAdapter(this, R.layout.food_line, arrStartUp);
         lvStartUp.setAdapter(adapter);
     }

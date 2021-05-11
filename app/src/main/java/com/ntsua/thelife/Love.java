@@ -20,7 +20,7 @@ public class Love extends AppCompatActivity {
         setContentView(R.layout.activity_love);
         lvLove = (ListView) findViewById((R.id.listviewLove));
         arrLove = new ArrayList<>();
-        arrLove.add(new Food("Mai mối", "", R.drawable.maimoi));
+        arrLove.add(new Food("Mai mối", "", R.drawable.maimoi, 0));
         adapter = new FoodAdapter(this, R.layout.food_line, arrLove);
         lvLove.setAdapter(adapter);
     }

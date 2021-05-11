@@ -20,8 +20,8 @@ public class Degree extends AppCompatActivity {
         setContentView(R.layout.activity_degree);
         lvDegree = (ListView) findViewById((R.id.listviewDegree));
         arrDegree = new ArrayList<>();
-        arrDegree.add(new Food("Bằng tiếng anh", "5 triệu", R.drawable.book));
-        arrDegree.add(new Food("Bằng lái xe", "600 nghìn", R.drawable.motorcycle));
+        arrDegree.add(new Food("Bằng tiếng anh", "5 triệu", R.drawable.book, 0));
+        arrDegree.add(new Food("Bằng lái xe", "600 nghìn", R.drawable.motorcycle, 0));
         adapter = new FoodAdapter(this, R.layout.food_line, arrDegree);
         lvDegree.setAdapter(adapter);
     }

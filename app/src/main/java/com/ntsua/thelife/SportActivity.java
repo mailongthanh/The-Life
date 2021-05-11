@@ -25,22 +25,22 @@ public class SportActivity extends AppCompatActivity {
         lvSport = (ListView) findViewById((R.id.listviewSports));
 
         arrSport = new ArrayList<>();
-        arrSport.add(new Food("Chạy bộ", "", R.drawable.jogging));
-        arrSport.add(new Food("Bài tập thể dục", "", R.drawable.triangle));
-        arrSport.add(new Food("Bóng đá", "", R.drawable.football));
-        arrSport.add(new Food("Bóng bàn", "", R.drawable.ping_pong));
-        arrSport.add(new Food("Bóng rỗ", "", R.drawable.basketball));
-        arrSport.add(new Food("Bóng chày", "", R.drawable.baseball));
-        arrSport.add(new Food("Quần vợt", "", R.drawable.tennis_racket));
-        arrSport.add(new Food("Cầu lông", "", R.drawable.badminton));
-        arrSport.add(new Food("Chạy xe đạp", "", R.drawable.racing));
-        arrSport.add(new Food("Leo núi", "", R.drawable.hiking));
-        arrSport.add(new Food("Cử tạ", "", R.drawable.fitness));
-        arrSport.add(new Food("Võ Vovinam", "", R.drawable.vovinam));
-        arrSport.add(new Food("Chèo thuyền", "", R.drawable.rowing));
-        arrSport.add(new Food("Lướt sóng", "", R.drawable.surfing));
-        arrSport.add(new Food("Lặn", "", R.drawable.snorkle));
-        arrSport.add(new Food("Yoga", "", R.drawable.yoga));
+        arrSport.add(new Food("Chạy bộ", "", R.drawable.jogging, 0));
+        arrSport.add(new Food("Bài tập thể dục", "", R.drawable.triangle, 0));
+        arrSport.add(new Food("Bóng đá", "", R.drawable.football, 0));
+        arrSport.add(new Food("Bóng bàn", "", R.drawable.ping_pong, 0));
+        arrSport.add(new Food("Bóng rỗ", "", R.drawable.basketball, 0));
+        arrSport.add(new Food("Bóng chày", "", R.drawable.baseball, 0));
+        arrSport.add(new Food("Quần vợt", "", R.drawable.tennis_racket, 0));
+        arrSport.add(new Food("Cầu lông", "", R.drawable.badminton, 0));
+        arrSport.add(new Food("Chạy xe đạp", "", R.drawable.racing, 0));
+        arrSport.add(new Food("Leo núi", "", R.drawable.hiking, 0));
+        arrSport.add(new Food("Cử tạ", "", R.drawable.fitness, 0));
+        arrSport.add(new Food("Võ Vovinam", "", R.drawable.vovinam, 0));
+        arrSport.add(new Food("Chèo thuyền", "", R.drawable.rowing, 0));
+        arrSport.add(new Food("Lướt sóng", "", R.drawable.surfing, 0));
+        arrSport.add(new Food("Lặn", "", R.drawable.snorkle, 0));
+        arrSport.add(new Food("Yoga", "", R.drawable.yoga, 0));
 
         adapter = new FoodAdapter(this, R.layout.food_line, arrSport);
         lvSport.setAdapter(adapter);

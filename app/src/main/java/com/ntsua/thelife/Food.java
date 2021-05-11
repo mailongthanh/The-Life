@@ -4,8 +4,9 @@ public class Food {
     private String foodName;
     private String description;
     private int image;
+    private int price;
 
-    public Food(String foodName, String description, int image) {
+    public Food(String foodName, String description, int image, int price) {
         this.foodName = foodName;
         this.description = description;
         this.image = image;
@@ -33,5 +34,13 @@ public class Food {
 
     public void setImage(int image) {
         this.image = image;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
     }
 }

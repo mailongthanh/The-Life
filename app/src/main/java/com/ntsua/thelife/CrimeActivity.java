@@ -23,12 +23,12 @@ public class CrimeActivity extends AppCompatActivity {
         lvCrime = findViewById(R.id.listviewCrime);
         arrCrime = new ArrayList<>();
 
-        arrCrime.add(new Food("Móc túi", "Đi Loot", R.drawable.pickpocket));
-        arrCrime.add(new Food("Cướp ngân hàng", "$$$$$$$$", R.drawable.robber));
-        arrCrime.add(new Food("Buôn rau", "Kinh doanh rau muống đột biến", R.drawable.cannabis));
-        arrCrime.add(new Food("Cướp xe", "Grand Theft Auto", R.drawable.carrobber));
-        arrCrime.add(new Food("Hack", "Wảning", R.drawable.hacker));
-        arrCrime.add(new Food("Trộm chó", "Cẩu tặc", R.drawable.dogrobber));
+        arrCrime.add(new Food("Móc túi", "đi Loot", R.drawable.pickpocket, 0));
+        arrCrime.add(new Food("Cướp ngân hàng", "$$$$$$$$", R.drawable.robber, 0));
+        arrCrime.add(new Food("Buôn rau", "kinh doanh rau muống đột biến", R.drawable.cannabis, 0));
+        arrCrime.add(new Food("Cướp xe", "Grand Theft Auto", R.drawable.carrobber, 0));
+        arrCrime.add(new Food("Hack", "Wảning", R.drawable.hacker, 0));
+        arrCrime.add(new Food("Trộm chó", "Cẩu tặc", R.drawable.dogrobber, 0));
 
         adapter = new CrimeAdapter(this, R.layout.crime, arrCrime);
         lvCrime.setAdapter(adapter);
