@@ -58,10 +58,9 @@ public class MainActivity extends AppCompatActivity {
     ProgressBar prbHappy, prbHealth, prbSmart, prbAppearance;
     TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName, txtJob;
     SharedPreferences preferences;
-    SaveGame saveGame;
+    static SaveGame saveGame;
     JSONArray arrJsonAge;
     JSONObject jsonResult, jsonJob;
-    boolean onEvent = false;
     String contentHtml;
     int money;
     long currentTime = 0;
@@ -96,7 +95,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    onEvent = true;
                     addAge();
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -107,7 +105,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    onEvent = true;
                     doWork();
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -136,7 +133,6 @@ public class MainActivity extends AppCompatActivity {
                         jsonResult = array.getJSONObject(new Random().nextInt(array.length()));
                         dialog.dismiss();
                         dialogEventResult(object.getString("content"));
-
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -314,7 +310,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
-                onEvent = false;
             }
         });
 
@@ -517,6 +512,7 @@ public class MainActivity extends AppCompatActivity {
         saveGame.saveDetailActivity(contentHtml);
         saveGame.saveName(name);
         saveGame.saveJob("Trẻ trâu");
+        saveGame.saveSkill(0);
         txtJob.setText(saveGame.getJob());
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
         txtName.setText(name);

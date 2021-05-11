@@ -39,8 +39,6 @@ public class Tuong_tacActivity extends AppCompatActivity {
     int dothanmat;
     Bundle bundle;
     JSONObject jsonRelationship;
-    SaveGame saveGame;
-    SharedPreferences preference;
     Random random;
     int position;
 
@@ -74,8 +72,6 @@ public class Tuong_tacActivity extends AppCompatActivity {
         //Ánh xạ listview
         lvTuongTac = (ListView) findViewById(R.id.ListViewTuongTac);
         MangTuongTac = new ArrayList<HoatDongQH>();
-        preference = getSharedPreferences("data", MODE_PRIVATE);
-        saveGame = new SaveGame(preference);
         random = new Random();
 
         MangTuongTac.add(new HoatDongQH(R.drawable.money, "Xin tiền", "Không làm mà vẫn có ăn"));
@@ -159,10 +155,10 @@ public class Tuong_tacActivity extends AppCompatActivity {
         txtContent.setText(event);
 
 
-        int happy = saveGame.getHappy();
-        int health = saveGame.getHealth();
-        int smart = saveGame.getSmart();
-        int appearance = saveGame.getAppearance();
+        int happy = MainActivity.saveGame.getHappy();
+        int health = MainActivity.saveGame.getHealth();
+        int smart = MainActivity.saveGame.getSmart();
+        int appearance = MainActivity.saveGame.getAppearance();
 
         int value = 0;
         value = object.getInt("happy");
@@ -203,10 +199,10 @@ public class Tuong_tacActivity extends AppCompatActivity {
             dialogResult.removeView(dialog.findViewById(R.id.linearMoneyRelationship));
         } else {
             txtAssets.setText(String.format( "%,d",value*1000));
-            saveGame.saveMoney(saveGame.getMoney() + value);
+            MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() + value);
             txtMoney.setText("$" + value);
         }
-        saveGame.savePlayerInfo(happy, health, smart, appearance);
+        MainActivity.saveGame.savePlayerInfo(happy, health, smart, appearance);
         value = object.getInt("relationship");
         if (value == 0)
         {
@@ -219,16 +215,16 @@ public class Tuong_tacActivity extends AppCompatActivity {
                 dothanmat = 0;
 
             //Toast.makeText(this, "" + position, Toast.LENGTH_SHORT).show();
-            ArrayList<QuanHe> arrQuanHe = saveGame.getRelationship();
+            ArrayList<QuanHe> arrQuanHe = MainActivity.saveGame.getRelationship();
             pbqhanhe.setProgress(dothanmat);
 
             arrQuanHe.get(position).setDoThanMat(dothanmat);
-            saveGame.saveRelationship(arrQuanHe);
+            MainActivity.saveGame.saveRelationship(arrQuanHe);
         }
 
-        String contentHtml = saveGame.getDetailActivity();
+        String contentHtml = MainActivity.saveGame.getDetailActivity();
         contentHtml += event + "<br>";
-        saveGame.saveDetailActivity(contentHtml);
+        MainActivity.saveGame.saveDetailActivity(contentHtml);
 
         btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -241,9 +237,9 @@ public class Tuong_tacActivity extends AppCompatActivity {
     }
 
     private void loadGame() {
-        txtName.setText(saveGame.getName());
-        txtMoney.setText("$" + saveGame.getMoney());
-        txtJob.setText(saveGame.getJob());
+        txtName.setText(MainActivity.saveGame.getName());
+        txtMoney.setText("$" + MainActivity.saveGame.getMoney());
+        txtJob.setText(MainActivity.saveGame.getJob());
     }
 
     void readEvent()

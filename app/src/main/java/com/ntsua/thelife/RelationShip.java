@@ -20,16 +20,12 @@ public class RelationShip extends AppCompatActivity {
     ArrayList<QuanHe> MangQuanHe;
     TextView txtName, txtJob, txtMoney;
 
-    SaveGame saveGame;
-    SharedPreferences preference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.relationship);
 
-        preference = getSharedPreferences("data", MODE_PRIVATE);
-        saveGame = new SaveGame(preference);
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
@@ -65,10 +61,10 @@ public class RelationShip extends AppCompatActivity {
     }
 
     private void loadGame() {
-        MangQuanHe = saveGame.getRelationship();
-        txtName.setText(saveGame.getName());
-        txtMoney.setText("$" + saveGame.getMoney());
-        txtJob.setText(saveGame.getJob());
+        MangQuanHe = MainActivity.saveGame.getRelationship();
+        txtName.setText(MainActivity.saveGame.getName());
+        txtMoney.setText("$" + MainActivity.saveGame.getMoney());
+        txtJob.setText(MainActivity.saveGame.getJob());
     }
 
     public void gotoMainMenu(View view) {

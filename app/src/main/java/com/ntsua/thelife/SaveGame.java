@@ -28,6 +28,12 @@ public class SaveGame{
         gson = new Gson();
     }
 
+    public void saveSkill(int skill)
+    {
+        editor.putInt("skill", skill);
+        editor.commit();
+    }
+
     public void saveName(String name)
     {
         editor.putString("name", name);
@@ -110,6 +116,11 @@ public class SaveGame{
 
     public String getDetailActivity() {
         return preferences.getString("detail", "");
+    }
+
+    public int getSkill()
+    {
+        return preferences.getInt("skill", 0);
     }
 
     public ArrayList<QuanHe> getRelationship(){

@@ -35,8 +35,6 @@ public class SportActivity extends AppCompatActivity {
     ArrayList<Food> arrSport;
     JSONObject Sportjs;
     Random random;
-    SaveGame saveGame;
-    SharedPreferences preference;
     TextView txtName, txtJob, txtMoney;
 
     @Override
@@ -50,8 +48,6 @@ public class SportActivity extends AppCompatActivity {
         loadGame();
 
         lvSport = (ListView) findViewById((R.id.listviewSports));
-        preference = getSharedPreferences("data", MODE_PRIVATE);
-        saveGame = new SaveGame(preference);
         random = new Random();
 
         arrSport = new ArrayList<Food>();
@@ -229,10 +225,10 @@ public class SportActivity extends AppCompatActivity {
 
         txtContent.setText(object.getString("event"));
 
-        int happy = saveGame.getHappy();
-        int health = saveGame.getHealth();
-        int smart = saveGame.getSmart();
-        int appearance = saveGame.getAppearance();
+        int happy = MainActivity.saveGame.getHappy();
+        int health = MainActivity.saveGame.getHealth();
+        int smart = MainActivity.saveGame.getSmart();
+        int appearance = MainActivity.saveGame.getAppearance();
         int value = 0;
         value = object.getInt("happy");
         if (value == 0)
@@ -272,12 +268,12 @@ public class SportActivity extends AppCompatActivity {
             dialogResult.removeView(dialog.findViewById(R.id.linearMoney));
         } else {
             txtAssets.setText(String.format( "%,d",value*1000));
-            saveGame.saveMoney(saveGame.getMoney() + value);
+            MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() + value);
         }
-        saveGame.savePlayerInfo(happy, health, smart, appearance);
-        String contentHtml = saveGame.getDetailActivity();
+        MainActivity.saveGame.savePlayerInfo(happy, health, smart, appearance);
+        String contentHtml = MainActivity.saveGame.getDetailActivity();
         contentHtml += txtContent.getText().toString() + "<br>";
-        saveGame.saveDetailActivity(contentHtml);
+        MainActivity.saveGame.saveDetailActivity(contentHtml);
 
         btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -290,9 +286,9 @@ public class SportActivity extends AppCompatActivity {
     }
 
     private void loadGame() {
-        txtName.setText(saveGame.getName());
-        txtMoney.setText("$" + saveGame.getMoney());
-        txtJob.setText(saveGame.getJob());
+        txtName.setText(MainActivity.saveGame.getName());
+        txtMoney.setText("$" + MainActivity.saveGame.getMoney());
+        txtJob.setText(MainActivity.saveGame.getJob());
     }
 
     void readEvent()
