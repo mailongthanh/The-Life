@@ -17,21 +17,14 @@
 
         <TextView
             android:id="@+id/textviewTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/anton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
             android:text="THỂ THAO"
+            android:gravity="center"
+            android:fontFamily="@font/anton"
             android:layout_centerInParent="true"
             android:textSize="25sp"
-            android:textColor="#fff" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/sport"
-            android:layout_toLeftOf="@id/textviewTitle"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"/>
-
+            android:textColor="@color/white" />
         <ImageView
             android:id="@+id/imageviewSportBack"
             android:layout_width="40dp"

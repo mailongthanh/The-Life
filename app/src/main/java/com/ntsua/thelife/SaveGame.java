@@ -93,7 +93,7 @@ public class SaveGame{
 
     public int getAppearance()
     {
-        return  preferences.getInt("appearance", 0);
+        return  preferences.getInt("appearance",0);
     }
 
     public String getJob()
@@ -103,7 +103,7 @@ public class SaveGame{
 
     public int getMoney()
     {
-        return preferences.getInt("money", 0);
+        return preferences.getInt("money", 5000);
     }
 
     public int getAge(){ return preferences.getInt("age", 0);}

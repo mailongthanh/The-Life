@@ -37,17 +37,20 @@ public class SportActivity extends AppCompatActivity {
     Random random;
     SaveGame saveGame;
     SharedPreferences preference;
+    TextView txtName, txtJob, txtMoney;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sport);
-
+        txtName = findViewById(R.id.textviewName);
+        txtJob = findViewById(R.id.textviewJob);
+        txtMoney = findViewById(R.id.textviewMoney);
         lvSport = (ListView) findViewById((R.id.listviewSports));
         preference = getSharedPreferences("data", MODE_PRIVATE);
         saveGame = new SaveGame(preference);
         random = new Random();
-
         arrSport = new ArrayList<Food>();
+        loadGame();
         arrSport.add(new Food("Chạy bộ", "FREE", R.drawable.jogging, 0));
         arrSport.add(new Food("Bài tập thể dục", "FREE", R.drawable.triangle, 0));
         arrSport.add(new Food("Bóng đá", "150 nghìn", R.drawable.football, 0));
@@ -64,14 +67,13 @@ public class SportActivity extends AppCompatActivity {
         arrSport.add(new Food("Lướt sóng", "600 nghìn", R.drawable.surfing, 0));
         arrSport.add(new Food("Lặn", "1 triệu", R.drawable.snorkle, 0));
         arrSport.add(new Food("Yoga", "500 nghìn", R.drawable.yoga, 0));
-
         adapter = new FoodAdapter(this, R.layout.food_line, arrSport);
         lvSport.setAdapter(adapter);
         readEvent();
         lvSport.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 0) {
+                if (position == 0 ) {
                     try {
                         JSONArray arrEvent = Sportjs.getJSONArray("jogging");
                         createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
@@ -87,7 +89,7 @@ public class SportActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                if (position == 2) {
+                if (position == 2 && saveGame.getMoney() >= arrSport.get(2).getPrice()) {
                     try {
                         JSONArray arrEvent = Sportjs.getJSONArray("football");
                         createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
@@ -95,7 +97,11 @@ public class SportActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                if (position == 3) {
+                else if(position==2)
+                {
+                    createDialogOFM();
+                }
+                if (position == 3 && saveGame.getMoney() >= arrSport.get(3).getPrice()) {
                     try {
                         JSONArray arrEvent = Sportjs.getJSONArray("pingpong");
                         createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
@@ -103,7 +109,11 @@ public class SportActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                if (position == 4) {
+                else if(position==3)
+                {
+                    createDialogOFM();
+                }
+                if (position == 4 && saveGame.getMoney() >= arrSport.get(4).getPrice()) {
                     try {
                         JSONArray arrEvent = Sportjs.getJSONArray("basketball");
                         createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
@@ -111,7 +121,11 @@ public class SportActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                if (position == 5) {
+                else if(position ==4)
+                {
+                    createDialogOFM();
+                }
+                if (position == 5 && saveGame.getMoney() >= arrSport.get(5).getPrice()) {
                     try {
                         JSONArray arrEvent = Sportjs.getJSONArray("baseball");
                         createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
@@ -119,7 +133,11 @@ public class SportActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                if (position == 6) {
+                else if(position ==5)
+                {
+                    createDialogOFM();
+                }
+                if (position == 6 && saveGame.getMoney() >= arrSport.get(6).getPrice()) {
                     try {
                         JSONArray arrEvent = Sportjs.getJSONArray("tennis");
                         createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
@@ -127,7 +145,11 @@ public class SportActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                if (position == 7) {
+                else if(position==6)
+                {
+                    createDialogOFM();
+                }
+                if (position == 7 && saveGame.getMoney() >= arrSport.get(7).getPrice()) {
                     try {
                         JSONArray arrEvent = Sportjs.getJSONArray("badminton");
                         createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
@@ -135,15 +157,22 @@ public class SportActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                if (position == 8) {
+                else if(position ==7)
+                {
+                    createDialogOFM();
+                }
+                if (position == 8 && saveGame.getMoney() >= arrSport.get(8).getPrice()) {
                     try {
                         JSONArray arrEvent = Sportjs.getJSONArray("cycling");
                         createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
+                }else if(position ==8)
+                {
+                    createDialogOFM();
                 }
-                if (position == 9) {
+                if (position == 9 && saveGame.getMoney() >= arrSport.get(9).getPrice()) {
                     try {
                         JSONArray arrEvent = Sportjs.getJSONArray("climb");
                         createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
@@ -151,7 +180,11 @@ public class SportActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                if (position == 10) {
+                else if(position ==9)
+                {
+                    createDialogOFM();
+                }
+                if (position == 10 && saveGame.getMoney() >= arrSport.get(10).getPrice()) {
                     try {
                         JSONArray arrEvent = Sportjs.getJSONArray("GYM");
                         createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
@@ -159,7 +192,11 @@ public class SportActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                if (position == 11) {
+                else if(position ==10)
+                {
+                    createDialogOFM();
+                }
+                if (position == 11 && saveGame.getMoney() >= arrSport.get(11).getPrice()) {
                     try {
                         JSONArray arrEvent = Sportjs.getJSONArray("martial");
                         createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
@@ -167,7 +204,11 @@ public class SportActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                if (position == 12) {
+                else if(position ==11)
+                {
+                    createDialogOFM();
+                }
+                if (position == 12 && saveGame.getMoney() >= arrSport.get(12).getPrice()) {
                     try {
                         JSONArray arrEvent = Sportjs.getJSONArray("rowing");
                         createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
@@ -175,7 +216,11 @@ public class SportActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                if (position == 13) {
+                else if(position ==12)
+                {
+                    createDialogOFM();
+                }
+                if (position == 13 && saveGame.getMoney() >= arrSport.get(13).getPrice()) {
                     try {
                         JSONArray arrEvent = Sportjs.getJSONArray("surf");
                         createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
@@ -183,7 +228,11 @@ public class SportActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                if (position == 14) {
+                else if(position ==13)
+                {
+                    createDialogOFM();
+                }
+                if (position == 14 && saveGame.getMoney() >= arrSport.get(14).getPrice()) {
                     try {
                         JSONArray arrEvent = Sportjs.getJSONArray("dive");
                         createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
@@ -191,7 +240,11 @@ public class SportActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                if (position == 15) {
+                else if(position ==14)
+                {
+                    createDialogOFM();
+                }
+                if (position == 15 && saveGame.getMoney() >= arrSport.get(15).getPrice()) {
                     try {
                         JSONArray arrEvent = Sportjs.getJSONArray("yoga");
                         createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
@@ -199,8 +252,29 @@ public class SportActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
+                else if(position ==15)
+                {
+                    createDialogOFM();
+                }
             }
         });
+    }
+    void createDialogOFM() {
+        Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.setContentView(R.layout.dialog_out_of_money);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        LinearLayout dialogResult = dialog.findViewById(R.id.dialog_event_result);
+        Button btnOke = dialog.findViewById(R.id.buttonDialogEventOke);
+        btnOke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
     }
     void createDialog(JSONObject object) throws JSONException {
         //Tao dialog
@@ -266,6 +340,7 @@ public class SportActivity extends AppCompatActivity {
         } else {
             txtAssets.setText(String.format( "%,d",value*1000));
             saveGame.saveMoney(saveGame.getMoney() + value);
+            loadGame();
         }
         saveGame.savePlayerInfo(happy, health, smart, appearance);
         String contentHtml = saveGame.getDetailActivity();
@@ -280,6 +355,11 @@ public class SportActivity extends AppCompatActivity {
         });
 
         dialog.show();
+    }
+    private void loadGame() {
+        txtName.setText(saveGame.getName());
+        txtMoney.setText("$" + saveGame.getMoney());
+        txtJob.setText(saveGame.getJob());
     }
     void readEvent()
     {

@@ -1,0 +1,62 @@
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="300dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/custom_button_menu"
+    android:backgroundTintMode="@null">
+
+    <TextView
+        android:id="@+id/textviewDialogEventTitle"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OUT OF MONEY"
+        android:textColor="#FF1500"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/dialog_event_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_dialog"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/linearMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="3dp">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/asset"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="TÀI KHOẢN CỦA BẠN KHÔNG ĐỦ TIỀN"
+                android:textColor="@color/Red"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonDialogEventOke"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Đồng ý"
+            android:background="@drawable/custom_button_menu"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
