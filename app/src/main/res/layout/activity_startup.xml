@@ -17,21 +17,14 @@
 
         <TextView
             android:id="@+id/textviewTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="KHỞI NGHIỆP"
+            android:gravity="center"
+            android:fontFamily="@font/anton"
             android:layout_centerInParent="true"
-            android:text="Khởi nghiệp"
-            android:textColor="#fff"
-            android:textSize="28sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/startup"
-            android:layout_toLeftOf="@id/textviewTitle"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"/>
+            android:textSize="25sp"
+            android:textColor="@color/white" />
         <ImageView
             android:id="@+id/imageviewHoatDongBack"
             android:layout_width="40dp"

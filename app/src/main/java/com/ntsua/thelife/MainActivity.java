@@ -50,6 +50,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     ProgressBar prbHappy, prbHealth, prbSmart, prbAppearance;
     TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName, txtJob;
     SharedPreferences preferences;
-    static SaveGame saveGame;
+    static public SaveGame saveGame;
     JSONArray arrJsonAge;
     JSONObject jsonResult, jsonJob;
     String contentHtml;
@@ -70,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         AnhXa();
         try {
             readEvent();
@@ -115,7 +115,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void dialogJob(JSONArray arrJob) throws JSONException {
-        Toast.makeText(this, "here", Toast.LENGTH_SHORT).show();
         Dialog dialog = createDialog("Làm việc", "Làm, làm nữa, làm mãi");
         LinearLayout dialogCustom = dialog.findViewById(R.id.dialog_event);
 
@@ -173,8 +172,6 @@ public class MainActivity extends AppCompatActivity {
         final String[] event = {object[0].getString("event")};
         String title = object[0].getString("title");
 
-
-
         //Kiem tra su kien co su lua chon hay khong
         final boolean[] isSelection = {object[0].getBoolean("selection")};
 
@@ -191,6 +188,8 @@ public class MainActivity extends AppCompatActivity {
     {
         jsonResult = object[0];
         if (!isSelection[0]) {
+            JSONArray arr = jsonResult.getJSONArray("event");
+            jsonResult = arr.getJSONObject(new Random().nextInt(arr.length()));
             //Luu tuoi
             int age = saveGame.getAge() + 1;
             addAgeHTML(age);
@@ -204,7 +203,7 @@ public class MainActivity extends AppCompatActivity {
         //Them thong tin da choi vao textview
         //contentHtml += event[0] + "<br>";
 
-        //Tao dialog va them cac buttton lua chon vao dialog
+        //Tao dialog va them cac button lua chon vao dialog
         Dialog dialog = createDialog(title, event[0]);
         LinearLayout dialogCustom = dialog.findViewById(R.id.dialog_event);
         JSONArray arrSelect = object[0].getJSONArray("select");
@@ -322,7 +321,7 @@ public class MainActivity extends AppCompatActivity {
         btn.setText(text);
         btn.setTextSize(14);
         btn.setBackgroundResource(R.drawable.custom_button_menu);
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(400, ViewGroup.LayoutParams.WRAP_CONTENT);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(550, ViewGroup.LayoutParams.WRAP_CONTENT);
         params.bottomMargin = 10;
         params.topMargin = 10;
         params.gravity = Gravity.CENTER_HORIZONTAL;
@@ -371,6 +370,7 @@ public class MainActivity extends AppCompatActivity {
             inputStream.read(buffer);
             inputStream.close();
             jsonEvent = new String(buffer, "UTF-8");
+            
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -447,7 +447,7 @@ public class MainActivity extends AppCompatActivity {
         txtHealth.setText(prbHealth.getProgress() + "%");
 
         money = saveGame.getMoney();
-        txtMoney.setText("$" + money);
+        txtMoney.setText(money + "VND");
         txtName.setText(saveGame.getName());
         txtJob.setText(saveGame.getJob());
 
@@ -546,7 +546,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
         else {
-            backToast = Toast.makeText(this, "Press back again to exit", Toast.LENGTH_SHORT);
+            backToast = Toast.makeText(this, "Ấn lần nữa để thoát", Toast.LENGTH_SHORT);
             backToast.show();
         }
         currentTime = System.currentTimeMillis();

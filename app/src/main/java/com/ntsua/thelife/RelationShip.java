@@ -30,8 +30,6 @@ public class RelationShip extends AppCompatActivity {
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
         lvQuanHe = (ListView) findViewById(R.id.ListViewQuanHe);
-        MangQuanHe = new ArrayList<QuanHe>();
-
 
         loadGame();
 //        MangQuanHe.add(new QuanHe("Trần Thanh Vũ", 19, 50, "Bạn bè",R.drawable.boy));
@@ -42,7 +40,6 @@ public class RelationShip extends AppCompatActivity {
 //        MangQuanHe.add(new QuanHe("Hoàng Nhật Tiến", 19, 0, "Bạn bè",R.drawable.boy));
 
         //saveGame.saveRelationship(MangQuanHe);
-
         QuanHeAdapter adapter = new QuanHeAdapter(
                 RelationShip.this,
                 R.layout.quan_he,
@@ -88,4 +85,3 @@ public class RelationShip extends AppCompatActivity {
     }
 
 }
-

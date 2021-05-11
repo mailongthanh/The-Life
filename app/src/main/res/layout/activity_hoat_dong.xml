@@ -17,13 +17,14 @@
 
         <TextView
             android:id="@+id/textviewTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hoạt Động"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="HOẠT ĐỘNG"
+            android:gravity="center"
+            android:fontFamily="@font/anton"
             android:layout_centerInParent="true"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:textColor="#fff" />
+            android:textSize="25sp"
+            android:textColor="@color/white" />
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
@@ -42,6 +43,6 @@
     <ListView
         android:id="@+id/listviewHoatDong"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 </LinearLayout>

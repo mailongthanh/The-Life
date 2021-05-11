@@ -35,22 +35,29 @@ public class SportActivity extends AppCompatActivity {
     ArrayList<Food> arrSport;
     JSONObject Sportjs;
     Random random;
+
+    String jsonEvent;
+    ActivitiesEvent Activity;
+
     TextView txtName, txtJob, txtMoney;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sport);
 
+
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
-        loadGame();
-
         lvSport = (ListView) findViewById((R.id.listviewSports));
         random = new Random();
-
         arrSport = new ArrayList<Food>();
+
+        loadGame();
+
         arrSport.add(new Food("Chạy bộ", "FREE", R.drawable.jogging, 0));
         arrSport.add(new Food("Bài tập thể dục", "FREE", R.drawable.triangle, 0));
         arrSport.add(new Food("Bóng đá", "150 nghìn", R.drawable.football, 0));
@@ -70,140 +77,223 @@ public class SportActivity extends AppCompatActivity {
 
         adapter = new FoodAdapter(this, R.layout.food_line, arrSport);
         lvSport.setAdapter(adapter);
-        readEvent();
+        jsonEvent = readEvent();
+        Activity = new ActivitiesEvent(jsonEvent,MainActivity.saveGame,SportActivity.this);
+
         lvSport.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 0) {
+                if (arrSport.get(position).getFoodName() == "Chạy bộ")
+                {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("jogging");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("jogging","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 1) {
+                if (arrSport.get(position).getFoodName() == "Bài tập thể dục")
+                {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("exercise");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("exercise","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 2) {
+                if (arrSport.get(position).getFoodName() == "Bóng đá" &&
+                        MainActivity.saveGame.getMoney() >= arrSport.get(2).getPrice())
+                {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("football");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("football","Thể thao");
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                } else if(position == 2) {
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Bóng bàn"
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(3).getPrice())
+                {
+                    try {
+                        Activity.CreateDialog("pingpong","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 3) {
+                else if(position == 3) {
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Bóng rỗ"
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(4).getPrice())
+                {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("pingpong");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("basketball","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 4) {
+                else if(position == 4){
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Bóng chày"
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(5).getPrice())
+                {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("basketball");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("baseball","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 5) {
+                else if(position ==5 ){
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Quần vợt"
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(6).getPrice())
+                {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("baseball");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("tennis","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 6) {
+                else if(position==6){
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Cầu lông"
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(7).getPrice()) {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("tennis");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("badminton","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 7) {
+                else if(position == 7){
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Chạy xe đạp"
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(8).getPrice()) {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("badminton");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("cycling","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 8) {
+                else if(position ==8){
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Leo núi"
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(9).getPrice()) {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("cycling");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("climb","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 9) {
+                else if(position ==9){
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Cử tạ"
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(10).getPrice()) {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("climb");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("GYM","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 10) {
+                else if(position ==10){
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Võ Vovinam"
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(11).getPrice()) {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("GYM");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("martial","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 11) {
+                else if(position == 11)
+                {
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Chèo thuyền"
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(12).getPrice()) {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("martial");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("rowing","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 12) {
+                else if(position ==12)
+                {
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Lướt sóng"
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(13).getPrice()) {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("rowing");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("surf","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 13) {
+                else if(position ==13)
+                {
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Lặn"
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(14).getPrice()) {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("surf");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("dive","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 14) {
+                else if(position ==14)
+                {
+                    createDialogOFM();
+                }
+
+                if (arrSport.get(position).getFoodName() == "Yoga"
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(15).getPrice()) {
                     try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("dive");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
+                        Activity.CreateDialog("yoga","Thể thao");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-                if (position == 15) {
-                    try {
-                        JSONArray arrEvent = Sportjs.getJSONArray("yoga");
-                        createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())));
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
+                else if(position ==15)
+                {
+                    createDialogOFM();
                 }
             }
         });
+    }
+    void createDialogOFM() {
+        Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.setContentView(R.layout.dialog_out_of_money);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        LinearLayout dialogResult = dialog.findViewById(R.id.dialog_event_result);
+        Button btnOke = dialog.findViewById(R.id.buttonDialogEventOke);
+        btnOke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
     }
     void createDialog(JSONObject object) throws JSONException {
         //Tao dialog
@@ -269,6 +359,8 @@ public class SportActivity extends AppCompatActivity {
         } else {
             txtAssets.setText(String.format( "%,d",value*1000));
             MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() + value);
+
+            loadGame();
         }
         MainActivity.saveGame.savePlayerInfo(happy, health, smart, appearance);
         String contentHtml = MainActivity.saveGame.getDetailActivity();
@@ -284,16 +376,15 @@ public class SportActivity extends AppCompatActivity {
 
         dialog.show();
     }
-
     private void loadGame() {
         txtName.setText(MainActivity.saveGame.getName());
         txtMoney.setText("$" + MainActivity.saveGame.getMoney());
         txtJob.setText(MainActivity.saveGame.getJob());
     }
 
-    void readEvent()
+    String readEvent()
     {
-        String jsonEvent = null;
+        jsonEvent = null;
         try {
             InputStream inputStream = getAssets().open("sport_event.json");
             int size = inputStream.available();
@@ -302,9 +393,11 @@ public class SportActivity extends AppCompatActivity {
             inputStream.close();
             jsonEvent = new String(buffer, "UTF-8");
             Sportjs = new JSONObject(jsonEvent);
+
         } catch (JSONException | IOException e) {
             e.printStackTrace();
         }
+        return jsonEvent;
     }
     public void gotoMainMenu(View view)
     {

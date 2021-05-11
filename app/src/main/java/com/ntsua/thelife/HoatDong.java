@@ -19,18 +19,22 @@ public class HoatDong extends AppCompatActivity {
     ArrayList<Food> arrHoatDong;
     TextView txtName, txtJob, txtMoney;
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hoat_dong);
+        txtName = findViewById(R.id.textviewName);
+        txtJob = findViewById(R.id.textviewJob);
+        txtMoney = findViewById(R.id.textviewMoney);
 
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
-        loadGame();
-
         lvHoatDong = (ListView) findViewById((R.id.listviewHoatDong));
 
+
+        lvHoatDong=(ListView) findViewById((R.id.listviewHoatDong));
+
+        loadGame();
         arrHoatDong = new ArrayList<>();
         arrHoatDong.add(new Food("Khu vui chơi", "", R.drawable.playground, 0));
         arrHoatDong.add(new Food("Tình yêu", "", R.drawable.love, 0));

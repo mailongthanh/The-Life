@@ -95,6 +95,8 @@ public class Tuong_tacActivity extends AppCompatActivity {
         //Load game
         loadGame();
 
+
+
         lvTuongTac.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -193,6 +195,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
             txtAppearance.setText(value + "");
             appearance += value;
         }
+
         value = object.getInt("assets");
         if (value == 0)
         {

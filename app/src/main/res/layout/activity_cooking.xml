@@ -17,20 +17,14 @@
 
         <TextView
             android:id="@+id/textviewTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nấu ăn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="NẤU ĂN"
+            android:gravity="center"
+            android:fontFamily="@font/anton"
             android:layout_centerInParent="true"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:textColor="#fff" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/cook"
-            android:layout_toLeftOf="@id/textviewTitle"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"/>
+            android:textSize="25sp"
+            android:textColor="@color/white" />
         <ImageView
             android:id="@+id/imageviewHoatDongBack"
             android:layout_width="40dp"
