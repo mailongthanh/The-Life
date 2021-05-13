@@ -106,16 +106,18 @@ public class HoatDong extends AppCompatActivity {
                     Intent myintent = new Intent(view.getContext(), SportActivity.class);
                     startActivityForResult(myintent, 12);
                 }
+                overridePendingTransition(R.anim.enter, R.anim.exit);
             }
         });
         }
     private void loadGame() {
         txtName.setText(MainActivity.saveGame.getName());
-        txtMoney.setText("$" + MainActivity.saveGame.getMoney());
+        txtMoney.setText(MainActivity.saveGame.getMoney() + " VND");
         txtJob.setText(MainActivity.saveGame.getJob());
     }
     public void gotoMainMenu(View view) {
         startActivity(new Intent(HoatDong.this, MainActivity.class));
+        overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 }
 

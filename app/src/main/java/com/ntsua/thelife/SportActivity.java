@@ -378,7 +378,7 @@ public class SportActivity extends AppCompatActivity {
     }
     private void loadGame() {
         txtName.setText(MainActivity.saveGame.getName());
-        txtMoney.setText("$" + MainActivity.saveGame.getMoney());
+        txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
         txtJob.setText(MainActivity.saveGame.getJob());
     }
 
@@ -403,5 +403,6 @@ public class SportActivity extends AppCompatActivity {
     {
         //startActivity(new Intent(SportActivity.this, HoatDong.class));
         finish();
+        overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 }

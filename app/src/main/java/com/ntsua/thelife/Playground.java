@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -14,10 +15,18 @@ public class Playground extends AppCompatActivity {
     ListView lvPlayground;
     FoodAdapter adapter;
     ArrayList<Food> arrPlayground;
+    TextView txtName, txtJob, txtMoney;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_playground);
+
+        txtName = findViewById(R.id.textviewName);
+        txtJob = findViewById(R.id.textviewJob);
+        txtMoney = findViewById(R.id.textviewMoney);
+        loadGame();
+
         lvPlayground = (ListView) findViewById((R.id.listviewPlayground));
         arrPlayground = new ArrayList<>();
         arrPlayground.add(new Food("Bầu cua", "", R.drawable.baucua, 0));
@@ -27,8 +36,15 @@ public class Playground extends AppCompatActivity {
         lvPlayground.setAdapter(adapter);
     }
 
+    private void loadGame() {
+        txtName.setText(MainActivity.saveGame.getName());
+        txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
+        txtJob.setText(MainActivity.saveGame.getJob());
+    }
+
     public void gotoMainMenu(View view)
     {
         startActivity(new Intent(Playground.this, HoatDong.class));
+        overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 }

@@ -9,7 +9,6 @@
             { "event" :"Bạn từ chối tiêm ngừa, và có nguy cơ mắc bệnh!!!", "assets": 0, "happy": 0, "health": -5, "smart":-3, "appearance": 0},
             { "event" :"Bạn cắn bác sĩ, phụ huynh bắt đầu trở trên gay gắt và ép bạn tiêm !!!", "assets": 0, "happy": -5, "health": -5, "smart":0, "appearance": 0}
           ]},
-
         {"content": "Khóc, không muốn tiêm", "selection":false,
           "event":[
             { "event": "Tuy bạn không muốn tiêm ngừa, nhưng dưới sự bắt ép của phụ huynh, bạn vẫn phải tiêm!!!", "assets": 0, "happy": -5, "health": 5, "smart":0, "appearance": 0},

@@ -28,6 +28,12 @@ public class SaveGame{
         gson = new Gson();
     }
 
+    public void saveSalary(int salary)
+    {
+        editor.putInt("salary", salary);
+        editor.commit();
+    }
+
     public void saveSkill(int skill)
     {
         editor.putInt("skill", skill);
@@ -76,6 +82,11 @@ public class SaveGame{
     {
         editor.putString("job", job);
         editor.commit();
+    }
+
+    public int getSalary()
+    {
+        return preferences.getInt("salary", 0);
     }
 
     public String getName(){

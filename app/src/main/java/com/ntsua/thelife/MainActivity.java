@@ -33,6 +33,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
 import org.json.JSONArray;
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
     SharedPreferences preferences;
     static public SaveGame saveGame;
     JSONArray arrJsonAge;
-    JSONObject jsonResult, jsonJob;
+    JSONObject jsonResult, jsonAllJob, jsonJob;
     String contentHtml;
     int money;
     long currentTime = 0;
@@ -72,17 +73,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         AnhXa();
-        try {
-            readEvent();
-            readJob();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
         //Test
         try {
             if (saveGame.getDetailActivity().equals(""))
                 init("Name", "vn");
             else loadGame();
+            readEvent();
+            readJob();
+            changeWork();
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -90,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
         //s.setSpan(new RelativeSizeSpan(2f), 0, 3, 0);
         //txtContent.setText(saveGame.getDetailActivity());
         //saveGame.saveDetailActivity(txtContent.getText().toString());
+
 
         ibtnAddAge.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,6 +130,8 @@ public class MainActivity extends AppCompatActivity {
                         JSONArray array = object.getJSONArray("event");
                         jsonResult = array.getJSONObject(new Random().nextInt(array.length()));
                         dialog.dismiss();
+                        //saveGame.saveSkill(saveGame.getSkill() + jsonResult.getInt("skill"));
+                        //Toast.makeText(MainActivity.this, "" + saveGame.getSkill(), Toast.LENGTH_SHORT).show();
                         dialogEventResult(object.getString("content"));
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -142,21 +143,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void doWork() throws JSONException {
-        JSONObject object;
-        JSONArray arrJob;
-        switch (saveGame.getJob())
-        {
-            case "Lập trình viên":
-                object = jsonJob.getJSONObject("coder");
-                arrJob = object.getJSONArray("work");
-                dialogJob(arrJob);
-                break;
-            case "Trẻ trâu":
-                object = jsonJob.getJSONObject("student");
-                arrJob = object.getJSONArray("work");
-                dialogJob(arrJob);
-                break;
-        }
+        JSONArray arrJob = jsonJob.getJSONArray("work");
+        dialogJob(arrJob);
     }
 
     void addAge() throws JSONException {
@@ -235,6 +223,7 @@ public class MainActivity extends AppCompatActivity {
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.setContentView(R.layout.dialog_event_result);
         dialog.setCanceledOnTouchOutside(false);
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogEventAnimation;
 
 
         //Lay gia tri gan vao dialog
@@ -309,10 +298,75 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
+                try {
+                    jobEvent();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
             }
         });
 
         dialog.show();
+    }
+
+    void dialogJobEvent(String title) throws JSONException {
+        //Toast.makeText(this, "ssdfsgsdgsdgd", Toast.LENGTH_LONG).show();
+        if (!jsonResult.getBoolean("selection")) {
+            JSONArray arr = jsonResult.getJSONArray("event");
+            jsonResult = arr.getJSONObject(new Random().nextInt(arr.length()));
+            saveGame.saveSalary(jsonResult.getInt("salary"));
+            //Tao dialog hien thi ket qua cua event
+            dialogEventResult(title);
+            return;
+        }
+
+        //Tao dialog va them cac button lua chon vao dialog
+        Dialog dialog = createDialog(title, jsonResult.getString("event"));
+        LinearLayout dialogCustom = dialog.findViewById(R.id.dialog_event);
+        JSONArray arrSelect = jsonResult.getJSONArray("select");
+        for (int i = 0; i < arrSelect.length(); i++) {
+            JSONObject objectSelect = arrSelect.getJSONObject(i);
+            Button btn = addButton(dialogCustom, objectSelect.getString("content"));
+            int finalI = i;
+            btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    try {
+                        jsonResult = arrSelect.getJSONObject(finalI);
+                        dialog.dismiss();
+                        dialogJobEvent(title);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+        }
+        dialog.show();
+    }
+
+    void jobEvent() throws JSONException {
+        int currentSkill = saveGame.getSkill();
+        int addSkill = jsonResult.getInt("skill");
+        saveGame.saveSkill(currentSkill + addSkill);
+
+        JSONArray arrJob = jsonJob.getJSONArray("event");
+        for (int i=0; i<arrJob.length(); i++)
+        {
+            //Toast.makeText(MainActivity.this, "error1", Toast.LENGTH_SHORT).show();
+            jsonResult =  arrJob.getJSONObject(i);
+            int require = jsonResult.getInt("require");
+            if (currentSkill < require && currentSkill + addSkill >= require)
+            {
+                if (jsonResult.getBoolean("selection")) {
+                    dialogJobEvent("Công việc");
+                } else {
+                    saveGame.saveSalary(jsonResult.getInt("salary"));
+                    dialogEventResult("Công việc");
+                    //Toast.makeText(MainActivity.this, "error", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            }
+        }
     }
 
     Button addButton(LinearLayout dialogCustom, String text)
@@ -339,6 +393,7 @@ public class MainActivity extends AppCompatActivity {
         dialog.setContentView(R.layout.dialog_event);
         dialog.setCanceledOnTouchOutside(false);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogResultAnimation;
         dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
             @Override
             public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
@@ -392,7 +447,7 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        jsonJob = new JSONObject(jsonEvent);
+        jsonAllJob = new JSONObject(jsonEvent);
     }
 
     private void AnhXa() {
@@ -424,11 +479,13 @@ public class MainActivity extends AppCompatActivity {
     public void gotoActivity(View view)
     {
         startActivity(new Intent(MainActivity.this, HoatDong.class));
+        overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 
     public void gotoRelationship(View view)
     {
         startActivity(new Intent(MainActivity.this, RelationShip.class));
+        overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 
     void loadGame()
@@ -451,6 +508,18 @@ public class MainActivity extends AppCompatActivity {
         txtName.setText(saveGame.getName());
         txtJob.setText(saveGame.getJob());
 
+    }
+
+    void changeWork() throws JSONException {
+        switch (saveGame.getJob())
+        {
+            case "Lập trình viên":
+                jsonJob = jsonAllJob.getJSONObject("coder");
+                break;
+            case "Trẻ trâu":
+                jsonJob = jsonAllJob.getJSONObject("student");
+                break;
+        }
     }
 
     // init tam thoi
@@ -509,11 +578,13 @@ public class MainActivity extends AppCompatActivity {
                 " (" + motherAge + " tuổi )" + "<br>";
         //Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
         saveGame.saveAge(0);
+        saveGame.saveMoney(0);
         saveGame.saveDetailActivity(contentHtml);
         saveGame.saveName(name);
         saveGame.saveJob("Trẻ trâu");
         saveGame.saveSkill(0);
         txtJob.setText(saveGame.getJob());
+        txtMoney.setText("0 VND");
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
         txtName.setText(name);
 

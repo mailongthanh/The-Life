@@ -241,7 +241,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
 
     private void loadGame() {
         txtName.setText(MainActivity.saveGame.getName());
-        txtMoney.setText("$" + MainActivity.saveGame.getMoney());
+        txtMoney.setText(MainActivity.saveGame.getMoney() + " VND");
         txtJob.setText(MainActivity.saveGame.getJob());
     }
 
@@ -264,6 +264,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
     public void gotoRelationship(View view)
     {
         startActivity(new Intent(Tuong_tacActivity.this, RelationShip.class));
+        overridePendingTransition(R.anim.enter, R.anim.exit);
     };
 
 }

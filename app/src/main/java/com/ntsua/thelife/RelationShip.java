@@ -60,12 +60,13 @@ public class RelationShip extends AppCompatActivity {
     private void loadGame() {
         MangQuanHe = MainActivity.saveGame.getRelationship();
         txtName.setText(MainActivity.saveGame.getName());
-        txtMoney.setText("$" + MainActivity.saveGame.getMoney());
+        txtMoney.setText(MainActivity.saveGame.getMoney() + " VND");
         txtJob.setText(MainActivity.saveGame.getJob());
     }
 
     public void gotoMainMenu(View view) {
         startActivity(new Intent(RelationShip.this, MainActivity.class));
+        overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 
     public void gotoTuongTac(int i){
@@ -82,6 +83,7 @@ public class RelationShip extends AppCompatActivity {
         intent.putExtra("BUN",bundle);
 
         startActivity(intent);
+        overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 
 }

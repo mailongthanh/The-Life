@@ -18,7 +18,7 @@ public class FoodActivity extends AppCompatActivity {
     ListView lvFood;
     FoodAdapter adapter;
     ArrayList<Food> arrFood;
-    SharedPreferences preferences;
+    TextView txtName, txtJob, txtMoney;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +26,15 @@ public class FoodActivity extends AppCompatActivity {
         setContentView(R.layout.activity_food);
 
         Anhxa();
+        loadGame();
         addFood();
 
+    }
+
+    private void loadGame() {
+        txtName.setText(MainActivity.saveGame.getName());
+        txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
+        txtJob.setText(MainActivity.saveGame.getJob());
     }
 
     private void addFood() {
@@ -65,10 +72,14 @@ public class FoodActivity extends AppCompatActivity {
 
     private void Anhxa() {
         lvFood = (ListView) findViewById(R.id.listviewFood);
+        txtName = findViewById(R.id.textviewName);
+        txtJob = findViewById(R.id.textviewJob);
+        txtMoney = findViewById(R.id.textviewMoney);
     }
 
     public void gotoMainMenu(View view)
     {
         startActivity(new Intent(FoodActivity.this, HoatDong.class));
+        overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 }

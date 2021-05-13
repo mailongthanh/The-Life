@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -13,10 +14,18 @@ public class MakeUp extends AppCompatActivity {
     ListView lvMakeUp;
     FoodAdapter adapter;
     ArrayList<Food> arrMakeUp;
+    TextView txtName, txtJob, txtMoney;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_make_up);
+
+        txtName = findViewById(R.id.textviewName);
+        txtJob = findViewById(R.id.textviewJob);
+        txtMoney = findViewById(R.id.textviewMoney);
+        loadGame();
+
         lvMakeUp = (ListView) findViewById((R.id.listviewMakeUp));
         arrMakeUp = new ArrayList<>();
         arrMakeUp.add(new Food("Xăm mình", "Xăm đi ngại chi", R.drawable.tattoo, 1000));
@@ -28,8 +37,15 @@ public class MakeUp extends AppCompatActivity {
         lvMakeUp.setAdapter(adapter);
     }
 
+    private void loadGame() {
+        txtName.setText(MainActivity.saveGame.getName());
+        txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
+        txtJob.setText(MainActivity.saveGame.getJob());
+    }
+
     public void gotoMainMenu(View view)
     {
         startActivity(new Intent(MakeUp.this, HoatDong.class));
+        overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 }
