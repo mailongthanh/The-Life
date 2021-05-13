@@ -41,24 +41,17 @@ public class SportActivity extends AppCompatActivity {
 
     TextView txtName, txtJob, txtMoney;
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 5353c4c8248e1fc076049ad9133f4d03bede8340
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sport);
-<<<<<<< HEAD
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
 
-=======
 
 
->>>>>>> 5353c4c8248e1fc076049ad9133f4d03bede8340
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
@@ -403,10 +396,7 @@ public class SportActivity extends AppCompatActivity {
         txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
         txtJob.setText(MainActivity.saveGame.getJob());
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> 5353c4c8248e1fc076049ad9133f4d03bede8340
     String readEvent()
     {
         jsonEvent = null;

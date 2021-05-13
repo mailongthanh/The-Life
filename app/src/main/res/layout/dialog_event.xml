@@ -42,7 +42,7 @@
                 android:text="Đây là nội dung của sự kiện"
                 android:padding="5dp"
                 android:textColor="@color/Blue"
-                android:textSize="15sp" />
+                android:textSize="17sp" />
 
             <!--<Button
             android:id="@+id/buttonDialogEventOke"

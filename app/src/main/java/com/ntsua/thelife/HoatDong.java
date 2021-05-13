@@ -18,14 +18,10 @@ public class HoatDong extends AppCompatActivity {
     FoodAdapter adapter;
     ArrayList<Food> arrHoatDong;
     TextView txtName, txtJob, txtMoney;
-<<<<<<< HEAD
     SaveGame saveGame;
     SharedPreferences preference;
 
     @Override
-=======
-
->>>>>>> 5353c4c8248e1fc076049ad9133f4d03bede8340
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hoat_dong);
@@ -33,25 +29,19 @@ public class HoatDong extends AppCompatActivity {
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
 
-<<<<<<< HEAD
         preference = getSharedPreferences("data", MODE_PRIVATE);
         saveGame = new SaveGame(preference);
-=======
->>>>>>> 5353c4c8248e1fc076049ad9133f4d03bede8340
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
         lvHoatDong = (ListView) findViewById((R.id.listviewHoatDong));
-<<<<<<< HEAD
         preference = getSharedPreferences("data", MODE_PRIVATE);
         saveGame = new SaveGame(preference);
         lvHoatDong=(ListView) findViewById((R.id.listviewHoatDong));
-=======
 
 
         lvHoatDong=(ListView) findViewById((R.id.listviewHoatDong));
 
->>>>>>> 5353c4c8248e1fc076049ad9133f4d03bede8340
         loadGame();
         arrHoatDong = new ArrayList<>();
         arrHoatDong.add(new Food("Khu vui chơi", "", R.drawable.playground, 0));
