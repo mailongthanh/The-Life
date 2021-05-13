@@ -34,6 +34,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -62,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnActivity, btnRelationship, btnWork, btnAssets;;
     ImageButton ibtnAddAge;
     ProgressBar prbHappy, prbHealth, prbSmart, prbAppearance;
+    ScrollView scrollView;
     TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName, txtJob;
     SharedPreferences preferences;
     static public SaveGame saveGame;
@@ -174,8 +176,8 @@ public class MainActivity extends AppCompatActivity {
             dialogEvent(object, isSelection, title, event);
         else {
             jsonResult = object[0];
-            dialogEventResult(title);
             initNewAge();
+            dialogEventResult(title);
         }
     }
 
@@ -299,6 +301,12 @@ public class MainActivity extends AppCompatActivity {
         saveGame.savePlayerInfo(prbHappy.getProgress(), prbHealth.getProgress(), prbSmart.getProgress(), prbAppearance.getProgress());
         saveGame.saveDetailActivity(contentHtml);
         this.txtContent.setText(android.text.Html.fromHtml(contentHtml));
+        scrollView.post(new Runnable() {
+            @Override
+            public void run() {
+                scrollView.fullScroll(View.FOCUS_DOWN);
+            }
+        });
 
         btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -508,6 +516,8 @@ public class MainActivity extends AppCompatActivity {
         ibtnAddAge = findViewById(R.id.imagebuttonAddAge);
         btnAssets = findViewById(R.id.buttonAssets);
         btnWork = findViewById(R.id.buttonInfant);
+        scrollView = findViewById(R.id.scrollViewText);
+
 
         preferences = getSharedPreferences("data", MODE_PRIVATE);
         saveGame = new SaveGame(preferences);
@@ -529,6 +539,13 @@ public class MainActivity extends AppCompatActivity {
     {
         contentHtml = saveGame.getDetailActivity();
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
+        scrollView.post(new Runnable() {
+            @Override
+            public void run() {
+                scrollView.fullScroll(View.FOCUS_DOWN);
+            }
+        });
+
 
         prbAppearance.setProgress(saveGame.getAppearance());
         prbHappy.setProgress(saveGame.getHappy());
@@ -615,7 +632,7 @@ public class MainActivity extends AppCompatActivity {
                 " (" + motherAge + " tuổi )" + "<br>";
         //Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
         saveGame.saveAge(0);
-        saveGame.saveMoney(0);
+        saveGame.saveMoney(5000);
         saveGame.saveDetailActivity(contentHtml);
         saveGame.saveName(name);
         saveGame.saveJob("Trẻ trâu");
@@ -626,6 +643,12 @@ public class MainActivity extends AppCompatActivity {
         txtJob.setText(saveGame.getJob());
         txtMoney.setText("0 VND");
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
+        scrollView.post(new Runnable() {
+            @Override
+            public void run() {
+                scrollView.fullScroll(View.FOCUS_DOWN);
+            }
+        });
         txtName.setText(name);
 
         prbHealth.setProgress(100);
@@ -653,6 +676,12 @@ public class MainActivity extends AppCompatActivity {
     {
         contentHtml += "<h5> <font color=\"blue\">Tuổi " + age + "</font></h5>";
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
+        scrollView.post(new Runnable() {
+            @Override
+            public void run() {
+                scrollView.fullScroll(View.FOCUS_DOWN);
+            }
+        });
         saveGame.saveDetailActivity(contentHtml);
     }
 

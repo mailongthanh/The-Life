@@ -417,4 +417,10 @@ public class SportActivity extends AppCompatActivity {
         finish();
         overridePendingTransition(R.anim.enter, R.anim.exit);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadGame();
+    }
 }
