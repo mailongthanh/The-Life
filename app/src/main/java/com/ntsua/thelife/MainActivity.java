@@ -325,9 +325,9 @@ public class MainActivity extends AppCompatActivity {
     {
         Button btn = new Button(dialogCustom.getContext());
         btn.setText(text);
-        btn.setTextSize(14);
+        btn.setTextSize(12);
         btn.setBackgroundResource(R.drawable.custom_button_menu);
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(550, ViewGroup.LayoutParams.WRAP_CONTENT);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(800, ViewGroup.LayoutParams.WRAP_CONTENT);
         params.bottomMargin = 10;
         params.topMargin = 10;
         params.gravity = Gravity.CENTER_HORIZONTAL;

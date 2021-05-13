@@ -1673,6 +1673,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable acnet
+drawable addage
 drawable ailatrieuphu
 drawable alcohol
 drawable america
@@ -1714,7 +1715,9 @@ drawable communication
 drawable compliment
 drawable cook
 drawable custom_button_menu
+drawable custom_color
 drawable custom_dialog
+drawable custom_frame
 drawable custom_progressbar
 drawable cutlery
 drawable dalieu
@@ -1831,6 +1834,7 @@ drawable salad
 drawable seafood
 drawable skincare
 drawable snorkle
+drawable sperm
 drawable sport
 drawable startup
 drawable steam
@@ -1841,6 +1845,7 @@ drawable tennis_racket
 drawable test_custom_background
 drawable thailand
 drawable thanksgiving
+drawable thelife
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable travel

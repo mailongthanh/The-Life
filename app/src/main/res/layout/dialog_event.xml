@@ -1,42 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_height="wrap_content"
+<FrameLayout android:layout_height="wrap_content"
     android:layout_width="300dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="5dp"
     android:orientation="vertical"
-    android:background="@drawable/custom_button_menu"
+    android:background="@android:color/transparent"
     android:backgroundTintMode="@null">
 
-    <TextView
-        android:id="@+id/textviewDialogEventTitle"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Đây là tiêu đề"
-        android:textColor="#FF1500"
-        android:textSize="20sp"
-        android:gravity="center_horizontal"/>
+
 
     <LinearLayout
-        android:id="@+id/dialog_event"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/custom_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+    <LinearLayout
+        android:gravity="center|bottom"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button_menu"
         android:orientation="vertical"
-        android:padding="5dp">
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp">
 
-        <TextView
-            android:id="@+id/textviewDialogEventContent"
+        <LinearLayout
+            android:id="@+id/dialog_event"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Đây là nội dung của sự kiện"
-            android:textSize="17dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:textAlignment="center" />
-        <!--<Button
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/custom_dialog"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/textviewDialogEventContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đây là nội dung của sự kiện"
+                android:padding="5dp"
+                android:textColor="@color/Blue"
+                android:textSize="15sp" />
+
+            <!--<Button
             android:id="@+id/buttonDialogEventOke"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
@@ -47,6 +55,24 @@
             app:backgroundTint="@null"
             android:layout_marginBottom="5dp"/>-->
 
+        </LinearLayout>
+
+    </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/textviewDialogEventTitle"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:text="Đây là tiêu đề"
+            android:textStyle="bold"
+            android:textColor="@color/Blue"
+            android:fontFamily="@font/anton"
+            android:background="@drawable/custom_button_menu"
+            android:textSize="20sp" />
+
+
+</FrameLayout>
