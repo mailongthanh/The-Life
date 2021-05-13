@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -15,11 +16,18 @@ public class CrimeActivity extends AppCompatActivity {
     ListView lvCrime;
     CrimeAdapter adapter;
     ArrayList<Food> arrCrime;
+    TextView txtName, txtJob, txtMoney;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crime);
+
+        txtName = findViewById(R.id.textviewName);
+        txtJob = findViewById(R.id.textviewJob);
+        txtMoney = findViewById(R.id.textviewMoney);
+        loadGame();
+
         lvCrime = findViewById(R.id.listviewCrime);
         arrCrime = new ArrayList<>();
 
@@ -40,8 +48,16 @@ public class CrimeActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void loadGame() {
+        txtName.setText(MainActivity.saveGame.getName());
+        txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
+        txtJob.setText(MainActivity.saveGame.getJob());
+    }
+
     public void gotoMainMenu(View view)
     {
         startActivity(new Intent(CrimeActivity.this, HoatDong.class));
+        overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 }

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -13,10 +14,18 @@ public class Travel extends AppCompatActivity {
     ListView lvTravel;
     FoodAdapter adapter;
     ArrayList<Food> arrTravel;
+    TextView txtName, txtJob, txtMoney;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_travel);
+
+        txtName = findViewById(R.id.textviewName);
+        txtJob = findViewById(R.id.textviewJob);
+        txtMoney = findViewById(R.id.textviewMoney);
+        loadGame();
+
         lvTravel = (ListView) findViewById((R.id.listviewTravel));
         arrTravel = new ArrayList<>();
         arrTravel.add(new Food("Hong Kong", "", R.drawable.hongkong, 0));
@@ -30,8 +39,15 @@ public class Travel extends AppCompatActivity {
         lvTravel.setAdapter(adapter);
     }
 
+    private void loadGame() {
+        txtName.setText(MainActivity.saveGame.getName());
+        txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
+        txtJob.setText(MainActivity.saveGame.getJob());
+    }
+
     public void gotoMainMenu(View view)
     {
         startActivity(new Intent(Travel.this, HoatDong.class));
+        overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 }

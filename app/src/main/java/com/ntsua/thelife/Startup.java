@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -13,10 +14,18 @@ public class Startup extends AppCompatActivity {
     ListView lvStartUp;
     FoodAdapter adapter;
     ArrayList<Food> arrStartUp;
+    TextView txtName, txtJob, txtMoney;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_startup);
+
+        txtName = findViewById(R.id.textviewName);
+        txtJob = findViewById(R.id.textviewJob);
+        txtMoney = findViewById(R.id.textviewMoney);
+        loadGame();
+
         lvStartUp = (ListView) findViewById((R.id.listviewStartUp));
         arrStartUp = new ArrayList<>();
         arrStartUp.add(new Food("Quân tử lập nghiệp", "Now or never", R.drawable.hero, 0));
@@ -27,8 +36,15 @@ public class Startup extends AppCompatActivity {
         lvStartUp.setAdapter(adapter);
     }
 
+    private void loadGame() {
+        txtName.setText(MainActivity.saveGame.getName());
+        txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
+        txtJob.setText(MainActivity.saveGame.getJob());
+    }
+
     public void gotoMainMenu(View view)
     {
         startActivity(new Intent(Startup.this, HoatDong.class));
+        overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 }

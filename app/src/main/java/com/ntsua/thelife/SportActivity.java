@@ -35,26 +35,34 @@ public class SportActivity extends AppCompatActivity {
     ArrayList<Food> arrSport;
     JSONObject Sportjs;
     Random random;
-    SaveGame saveGame;
-    SharedPreferences preference;
+
     String jsonEvent;
     ActivitiesEvent Activity;
+
     TextView txtName, txtJob, txtMoney;
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 5353c4c8248e1fc076049ad9133f4d03bede8340
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sport);
+<<<<<<< HEAD
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
 
+=======
+
+
+>>>>>>> 5353c4c8248e1fc076049ad9133f4d03bede8340
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
         lvSport = (ListView) findViewById((R.id.listviewSports));
-        preference = getSharedPreferences("data", MODE_PRIVATE);
-        saveGame = new SaveGame(preference);
         random = new Random();
         arrSport = new ArrayList<Food>();
 
@@ -62,47 +70,59 @@ public class SportActivity extends AppCompatActivity {
 
         arrSport.add(new Food("Chạy bộ", "FREE", R.drawable.jogging, 0));
         arrSport.add(new Food("Bài tập thể dục", "FREE", R.drawable.triangle, 0));
-        arrSport.add(new Food("Bóng đá", "150 nghìn", R.drawable.football, 0));
-        arrSport.add(new Food("Bóng bàn", "200 nghìn", R.drawable.ping_pong, 0));
-        arrSport.add(new Food("Bóng rỗ", "100 nghìn", R.drawable.basketball, 0));
-        arrSport.add(new Food("Bóng chày", "220 nghìn", R.drawable.baseball, 0));
-        arrSport.add(new Food("Quần vợt", "1 triệu", R.drawable.tennis_racket, 0));
-        arrSport.add(new Food("Cầu lông", "150 nghìn", R.drawable.badminton, 0));
-        arrSport.add(new Food("Chạy xe đạp", "150 nghìn", R.drawable.racing, 0));
-        arrSport.add(new Food("Leo núi", "300 nghìn", R.drawable.hiking, 0));
-        arrSport.add(new Food("Cử tạ", "400 nghìn", R.drawable.fitness, 0));
-        arrSport.add(new Food("Võ Vovinam", "200 nghìn", R.drawable.vovinam, 0));
-        arrSport.add(new Food("Chèo thuyền", "450 nghìn", R.drawable.rowing, 0));
-        arrSport.add(new Food("Lướt sóng", "600 nghìn", R.drawable.surfing, 0));
-        arrSport.add(new Food("Lặn", "1 triệu", R.drawable.snorkle, 0));
-        arrSport.add(new Food("Yoga", "500 nghìn", R.drawable.yoga, 0));
+        arrSport.add(new Food("Bóng đá", "150 nghìn", R.drawable.football, 150));
+        arrSport.add(new Food("Bóng bàn", "200 nghìn", R.drawable.ping_pong, 200));
+        arrSport.add(new Food("Bóng rỗ", "100 nghìn", R.drawable.basketball, 100));
+        arrSport.add(new Food("Bóng chày", "220 nghìn", R.drawable.baseball, 220));
+        arrSport.add(new Food("Quần vợt", "1 triệu", R.drawable.tennis_racket, 1000));
+        arrSport.add(new Food("Cầu lông", "150 nghìn", R.drawable.badminton, 150));
+        arrSport.add(new Food("Chạy xe đạp", "150 nghìn", R.drawable.racing, 150));
+        arrSport.add(new Food("Leo núi", "300 nghìn", R.drawable.hiking, 300));
+        arrSport.add(new Food("Cử tạ", "400 nghìn", R.drawable.fitness, 400));
+        arrSport.add(new Food("Võ Vovinam", "200 nghìn", R.drawable.vovinam, 200));
+        arrSport.add(new Food("Chèo thuyền", "450 nghìn", R.drawable.rowing, 450));
+        arrSport.add(new Food("Lướt sóng", "600 nghìn", R.drawable.surfing, 600));
+        arrSport.add(new Food("Lặn", "1 triệu", R.drawable.snorkle, 1000));
+        arrSport.add(new Food("Yoga", "500 nghìn", R.drawable.yoga, 500));
 
         adapter = new FoodAdapter(this, R.layout.food_line, arrSport);
         lvSport.setAdapter(adapter);
         jsonEvent = readEvent();
-        Activity = new ActivitiesEvent(jsonEvent,saveGame,SportActivity.this);
+        Activity = new ActivitiesEvent(jsonEvent,MainActivity.saveGame,SportActivity.this);
 
         lvSport.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (arrSport.get(position).getFoodName() == "Chạy bộ")
+                if (arrSport.get(position).getFoodName() == "Chạy bộ" )
                 {
-                    try {
-                        Activity.CreateDialog("jogging","Thể thao");
-                    } catch (JSONException e) {
-                        e.printStackTrace();
+                    if (MainActivity.saveGame.getJogging() < 3) {
+                        try {
+                            Activity.CreateDialog("jogging", "Thể thao");
+                            MainActivity.saveGame.saveJogging(MainActivity.saveGame.getJogging() + 1);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    else {
+                        MainActivity.createNotification(R.drawable.jogging, "Hôm nay bạn đã chạy bộ quá nhiều rồi", SportActivity.this);
                     }
                 }
                 if (arrSport.get(position).getFoodName() == "Bài tập thể dục")
                 {
-                    try {
-                        Activity.CreateDialog("exercise","Thể thao");
-                    } catch (JSONException e) {
-                        e.printStackTrace();
+                    if (MainActivity.saveGame.getExercise() < 3) {
+                        try {
+                            Activity.CreateDialog("exercise", "Thể thao");
+                            MainActivity.saveGame.saveExercise(MainActivity.saveGame.getExercise() + 1);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    else {
+                        MainActivity.createNotification(R.drawable.triangle, "Hôm nay bạn đã tập thể dục quá nhiều rồi", SportActivity.this);
                     }
                 }
                 if (arrSport.get(position).getFoodName() == "Bóng đá" &&
-                        saveGame.getMoney() >= arrSport.get(2).getPrice())
+                        MainActivity.saveGame.getMoney() >= arrSport.get(2).getPrice())
                 {
                     try {
                         Activity.CreateDialog("football","Thể thao");
@@ -114,7 +134,7 @@ public class SportActivity extends AppCompatActivity {
                 }
 
                 if (arrSport.get(position).getFoodName() == "Bóng bàn"
-                        && saveGame.getMoney() >= arrSport.get(3).getPrice())
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(3).getPrice())
                 {
                     try {
                         Activity.CreateDialog("pingpong","Thể thao");
@@ -127,7 +147,7 @@ public class SportActivity extends AppCompatActivity {
                 }
 
                 if (arrSport.get(position).getFoodName() == "Bóng rỗ"
-                        && saveGame.getMoney() >= arrSport.get(4).getPrice())
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(4).getPrice())
                 {
                     try {
                         Activity.CreateDialog("basketball","Thể thao");
@@ -140,7 +160,7 @@ public class SportActivity extends AppCompatActivity {
                 }
 
                 if (arrSport.get(position).getFoodName() == "Bóng chày"
-                        && saveGame.getMoney() >= arrSport.get(5).getPrice())
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(5).getPrice())
                 {
                     try {
                         Activity.CreateDialog("baseball","Thể thao");
@@ -153,7 +173,7 @@ public class SportActivity extends AppCompatActivity {
                 }
 
                 if (arrSport.get(position).getFoodName() == "Quần vợt"
-                        && saveGame.getMoney() >= arrSport.get(6).getPrice())
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(6).getPrice())
                 {
                     try {
                         Activity.CreateDialog("tennis","Thể thao");
@@ -166,7 +186,7 @@ public class SportActivity extends AppCompatActivity {
                 }
 
                 if (arrSport.get(position).getFoodName() == "Cầu lông"
-                        && saveGame.getMoney() >= arrSport.get(7).getPrice()) {
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(7).getPrice()) {
                     try {
                         Activity.CreateDialog("badminton","Thể thao");
                     } catch (JSONException e) {
@@ -178,7 +198,7 @@ public class SportActivity extends AppCompatActivity {
                 }
 
                 if (arrSport.get(position).getFoodName() == "Chạy xe đạp"
-                        && saveGame.getMoney() >= arrSport.get(8).getPrice()) {
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(8).getPrice()) {
                     try {
                         Activity.CreateDialog("cycling","Thể thao");
                     } catch (JSONException e) {
@@ -190,7 +210,7 @@ public class SportActivity extends AppCompatActivity {
                 }
 
                 if (arrSport.get(position).getFoodName() == "Leo núi"
-                        && saveGame.getMoney() >= arrSport.get(9).getPrice()) {
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(9).getPrice()) {
                     try {
                         Activity.CreateDialog("climb","Thể thao");
                     } catch (JSONException e) {
@@ -202,7 +222,7 @@ public class SportActivity extends AppCompatActivity {
                 }
 
                 if (arrSport.get(position).getFoodName() == "Cử tạ"
-                        && saveGame.getMoney() >= arrSport.get(10).getPrice()) {
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(10).getPrice()) {
                     try {
                         Activity.CreateDialog("GYM","Thể thao");
                     } catch (JSONException e) {
@@ -214,7 +234,7 @@ public class SportActivity extends AppCompatActivity {
                 }
 
                 if (arrSport.get(position).getFoodName() == "Võ Vovinam"
-                        && saveGame.getMoney() >= arrSport.get(11).getPrice()) {
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(11).getPrice()) {
                     try {
                         Activity.CreateDialog("martial","Thể thao");
                     } catch (JSONException e) {
@@ -227,7 +247,7 @@ public class SportActivity extends AppCompatActivity {
                 }
 
                 if (arrSport.get(position).getFoodName() == "Chèo thuyền"
-                        && saveGame.getMoney() >= arrSport.get(12).getPrice()) {
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(12).getPrice()) {
                     try {
                         Activity.CreateDialog("rowing","Thể thao");
                     } catch (JSONException e) {
@@ -240,7 +260,7 @@ public class SportActivity extends AppCompatActivity {
                 }
 
                 if (arrSport.get(position).getFoodName() == "Lướt sóng"
-                        && saveGame.getMoney() >= arrSport.get(13).getPrice()) {
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(13).getPrice()) {
                     try {
                         Activity.CreateDialog("surf","Thể thao");
                     } catch (JSONException e) {
@@ -253,7 +273,7 @@ public class SportActivity extends AppCompatActivity {
                 }
 
                 if (arrSport.get(position).getFoodName() == "Lặn"
-                        && saveGame.getMoney() >= arrSport.get(14).getPrice()) {
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(14).getPrice()) {
                     try {
                         Activity.CreateDialog("dive","Thể thao");
                     } catch (JSONException e) {
@@ -266,7 +286,7 @@ public class SportActivity extends AppCompatActivity {
                 }
 
                 if (arrSport.get(position).getFoodName() == "Yoga"
-                        && saveGame.getMoney() >= arrSport.get(15).getPrice()) {
+                        && MainActivity.saveGame.getMoney() >= arrSport.get(15).getPrice()) {
                     try {
                         Activity.CreateDialog("yoga","Thể thao");
                     } catch (JSONException e) {
@@ -317,10 +337,10 @@ public class SportActivity extends AppCompatActivity {
 
         txtContent.setText(object.getString("event"));
 
-        int happy = saveGame.getHappy();
-        int health = saveGame.getHealth();
-        int smart = saveGame.getSmart();
-        int appearance = saveGame.getAppearance();
+        int happy = MainActivity.saveGame.getHappy();
+        int health = MainActivity.saveGame.getHealth();
+        int smart = MainActivity.saveGame.getSmart();
+        int appearance = MainActivity.saveGame.getAppearance();
         int value = 0;
         value = object.getInt("happy");
         if (value == 0)
@@ -360,13 +380,14 @@ public class SportActivity extends AppCompatActivity {
             dialogResult.removeView(dialog.findViewById(R.id.linearMoney));
         } else {
             txtAssets.setText(String.format( "%,d",value*1000));
-            saveGame.saveMoney(saveGame.getMoney() + value);
+            MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() + value);
+
             loadGame();
         }
-        saveGame.savePlayerInfo(happy, health, smart, appearance);
-        String contentHtml = saveGame.getDetailActivity();
+        MainActivity.saveGame.savePlayerInfo(happy, health, smart, appearance);
+        String contentHtml = MainActivity.saveGame.getDetailActivity();
         contentHtml += txtContent.getText().toString() + "<br>";
-        saveGame.saveDetailActivity(contentHtml);
+        MainActivity.saveGame.saveDetailActivity(contentHtml);
 
         btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -377,11 +398,15 @@ public class SportActivity extends AppCompatActivity {
 
         dialog.show();
     }
-    private void loadGame() {
-        txtName.setText(saveGame.getName());
-        txtMoney.setText("$" + saveGame.getMoney());
-        txtJob.setText(saveGame.getJob());
+    public void loadGame() {
+        txtName.setText(MainActivity.saveGame.getName());
+        txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
+        txtJob.setText(MainActivity.saveGame.getJob());
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5353c4c8248e1fc076049ad9133f4d03bede8340
     String readEvent()
     {
         jsonEvent = null;
@@ -393,15 +418,16 @@ public class SportActivity extends AppCompatActivity {
             inputStream.close();
             jsonEvent = new String(buffer, "UTF-8");
             Sportjs = new JSONObject(jsonEvent);
-
         } catch (JSONException | IOException e) {
             e.printStackTrace();
         }
         return jsonEvent;
     }
+
     public void gotoMainMenu(View view)
     {
         //startActivity(new Intent(SportActivity.this, HoatDong.class));
         finish();
+        overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 }

@@ -17,7 +17,7 @@ import java.io.Serializable;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
-public class SaveGame{
+public class SaveGame {
     private SharedPreferences preferences;
     private SharedPreferences.Editor editor;
     Gson gson;
@@ -28,26 +28,47 @@ public class SaveGame{
         gson = new Gson();
     }
 
-    public void saveName(String name)
-    {
+    public void saveJogging(int time) {
+        editor.putInt("jogging", time);
+        editor.commit();
+    }
+
+    public void saveExercise(int time) {
+        editor.putInt("exercise", time);
+        editor.commit();
+    }
+
+    public void saveLibrary(int time) {
+        editor.putInt("library", time);
+        editor.commit();
+    }
+
+    public void saveSalary(int salary) {
+        editor.putInt("salary", salary);
+        editor.commit();
+    }
+
+    public void saveSkill(int skill) {
+        editor.putInt("skill", skill);
+        editor.commit();
+    }
+
+    public void saveName(String name) {
         editor.putString("name", name);
         editor.commit();
     }
 
-    public void saveMoney(int money)
-    {
+    public void saveMoney(int money) {
         editor.putInt("money", money);
         editor.commit();
     }
 
-    public void saveAge(int age)
-    {
+    public void saveAge(int age) {
         editor.putInt("age", age);
         editor.commit();
     }
 
-    public void savePlayerInfo(int happy, int health, int smart, int appearance)
-    {
+    public void savePlayerInfo(int happy, int health, int smart, int appearance) {
         editor.putInt("happy", happy);
         editor.putInt("health", health);
         editor.putInt("smart", smart);
@@ -55,21 +76,40 @@ public class SaveGame{
         editor.commit();
     }
 
-    public void saveDetailActivity(String s){
+    public void saveDetailActivity(String s) {
         editor.putString("detail", s);
         editor.commit();
     }
 
-    public void saveRelationship(ArrayList<QuanHe> arrRelationship){
+    public void saveRelationship(ArrayList<QuanHe> arrRelationship) {
         String json = gson.toJson(arrRelationship);
         editor.putString("relationship", json);
         editor.commit();
     }
 
-    public void saveJob(String job)
-    {
+    public void saveJob(String job) {
         editor.putString("job", job);
         editor.commit();
+    }
+
+    public int getJogging()
+    {
+        return preferences.getInt("jogging", 0);
+    }
+
+    public int getExercise()
+    {
+        return preferences.getInt("exercise", 0);
+    }
+
+    public int getLibrary()
+    {
+        return preferences.getInt("library", 0);
+    }
+
+    public int getSalary()
+    {
+        return preferences.getInt("salary", 0);
     }
 
     public String getName(){
@@ -110,6 +150,11 @@ public class SaveGame{
 
     public String getDetailActivity() {
         return preferences.getString("detail", "");
+    }
+
+    public int getSkill()
+    {
+        return preferences.getInt("skill", 0);
     }
 
     public ArrayList<QuanHe> getRelationship(){
