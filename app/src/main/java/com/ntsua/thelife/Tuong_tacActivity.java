@@ -203,7 +203,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
         } else {
             txtAssets.setText(String.format( "%,d",value*1000));
             MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() + value);
-            txtMoney.setText("$" + value);
+            txtMoney.setText(value + MainActivity.saveGame.getMoney() + " VND");
         }
         MainActivity.saveGame.savePlayerInfo(happy, health, smart, appearance);
         value = object.getInt("relationship");

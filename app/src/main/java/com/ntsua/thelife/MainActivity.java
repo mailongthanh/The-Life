@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.app.UiAutomation;
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -25,9 +27,11 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -84,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
+        //(R.drawable.jogging, "Hôm nay bạn đã chạy bộ quá nhiều rồi", MainActivity.this);
         //SpannableString s = new SpannableString(txtContent.getText().toString());
         //s.setSpan(new RelativeSizeSpan(2f), 0, 3, 0);
         //txtContent.setText(saveGame.getDetailActivity());
@@ -169,6 +175,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             jsonResult = object[0];
             dialogEventResult(title);
+            initNewAge();
         }
     }
 
@@ -179,8 +186,7 @@ public class MainActivity extends AppCompatActivity {
             JSONArray arr = jsonResult.getJSONArray("event");
             jsonResult = arr.getJSONObject(new Random().nextInt(arr.length()));
             //Luu tuoi
-            int age = saveGame.getAge() + 1;
-            addAgeHTML(age);
+            initNewAge();
             //saveGame.saveAge(age);
             //Tao dialog hien thi ket qua cua event
             dialogEventResult(title);
@@ -223,7 +229,7 @@ public class MainActivity extends AppCompatActivity {
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.setContentView(R.layout.dialog_event_result);
         dialog.setCanceledOnTouchOutside(false);
-        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogEventAnimation;
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogResultAnimation;
 
 
         //Lay gia tri gan vao dialog
@@ -287,7 +293,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             txtAssets.setText(value + "");
             money += value;
-            this.txtMoney.setText(money + "");
+            this.txtMoney.setText(money + " VND");
             saveGame.saveMoney(money);
         }
         saveGame.savePlayerInfo(prbHappy.getProgress(), prbHealth.getProgress(), prbSmart.getProgress(), prbAppearance.getProgress());
@@ -393,7 +399,7 @@ public class MainActivity extends AppCompatActivity {
         dialog.setContentView(R.layout.dialog_event);
         dialog.setCanceledOnTouchOutside(false);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogResultAnimation;
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogEventAnimation;
         dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
             @Override
             public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
@@ -414,6 +420,37 @@ public class MainActivity extends AppCompatActivity {
         txtTitle.setText(title);
 
         return dialog;
+    }
+
+    public static void createNotification(int image, String content, Context context)
+    {
+        //Tao dialog
+        Dialog dialog = new Dialog(context);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_notification);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogResultAnimation;
+
+        //Anh xa
+        TextView txtTitle   = dialog.findViewById(R.id.textviewNotificationTitle);
+        TextView txtContent = dialog.findViewById(R.id.textviewNotificationContent);
+        ImageView imageView = dialog.findViewById(R.id.imageviewNotification);
+        Button btnOke       = dialog.findViewById(R.id.buttonNotificationtOke);
+
+        //Gan gia tri
+        txtTitle.setText("Thông báo");
+        txtContent.setText(content);
+        imageView.setImageResource(image);
+
+        btnOke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
     }
 
     void readEvent() throws JSONException {
@@ -583,6 +620,9 @@ public class MainActivity extends AppCompatActivity {
         saveGame.saveName(name);
         saveGame.saveJob("Trẻ trâu");
         saveGame.saveSkill(0);
+        saveGame.saveExercise(0);
+        saveGame.saveJogging(0);
+        saveGame.saveJogging(0);
         txtJob.setText(saveGame.getJob());
         txtMoney.setText("0 VND");
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
@@ -598,6 +638,15 @@ public class MainActivity extends AppCompatActivity {
         txtSmart.setText(prbSmart.getProgress() + "%");
         txtHealth.setText(prbHealth.getProgress() + "%");
         saveGame.savePlayerInfo(prbHappy.getProgress(), prbHealth.getProgress(), prbSmart.getProgress(), prbAppearance.getProgress());
+    }
+
+    void initNewAge()
+    {
+        int age = saveGame.getAge() + 1;
+        saveGame.saveExercise(0);
+        saveGame.saveJogging(0);
+        saveGame.saveJogging(0);
+        addAgeHTML(age);
     }
 
     void addAgeHTML(int age)

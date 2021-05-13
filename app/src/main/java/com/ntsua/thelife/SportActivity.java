@@ -60,20 +60,20 @@ public class SportActivity extends AppCompatActivity {
 
         arrSport.add(new Food("Chạy bộ", "FREE", R.drawable.jogging, 0));
         arrSport.add(new Food("Bài tập thể dục", "FREE", R.drawable.triangle, 0));
-        arrSport.add(new Food("Bóng đá", "150 nghìn", R.drawable.football, 0));
-        arrSport.add(new Food("Bóng bàn", "200 nghìn", R.drawable.ping_pong, 0));
-        arrSport.add(new Food("Bóng rỗ", "100 nghìn", R.drawable.basketball, 0));
-        arrSport.add(new Food("Bóng chày", "220 nghìn", R.drawable.baseball, 0));
-        arrSport.add(new Food("Quần vợt", "1 triệu", R.drawable.tennis_racket, 0));
-        arrSport.add(new Food("Cầu lông", "150 nghìn", R.drawable.badminton, 0));
-        arrSport.add(new Food("Chạy xe đạp", "150 nghìn", R.drawable.racing, 0));
-        arrSport.add(new Food("Leo núi", "300 nghìn", R.drawable.hiking, 0));
-        arrSport.add(new Food("Cử tạ", "400 nghìn", R.drawable.fitness, 0));
-        arrSport.add(new Food("Võ Vovinam", "200 nghìn", R.drawable.vovinam, 0));
-        arrSport.add(new Food("Chèo thuyền", "450 nghìn", R.drawable.rowing, 0));
-        arrSport.add(new Food("Lướt sóng", "600 nghìn", R.drawable.surfing, 0));
-        arrSport.add(new Food("Lặn", "1 triệu", R.drawable.snorkle, 0));
-        arrSport.add(new Food("Yoga", "500 nghìn", R.drawable.yoga, 0));
+        arrSport.add(new Food("Bóng đá", "150 nghìn", R.drawable.football, 150));
+        arrSport.add(new Food("Bóng bàn", "200 nghìn", R.drawable.ping_pong, 200));
+        arrSport.add(new Food("Bóng rỗ", "100 nghìn", R.drawable.basketball, 100));
+        arrSport.add(new Food("Bóng chày", "220 nghìn", R.drawable.baseball, 220));
+        arrSport.add(new Food("Quần vợt", "1 triệu", R.drawable.tennis_racket, 1000));
+        arrSport.add(new Food("Cầu lông", "150 nghìn", R.drawable.badminton, 150));
+        arrSport.add(new Food("Chạy xe đạp", "150 nghìn", R.drawable.racing, 150));
+        arrSport.add(new Food("Leo núi", "300 nghìn", R.drawable.hiking, 300));
+        arrSport.add(new Food("Cử tạ", "400 nghìn", R.drawable.fitness, 400));
+        arrSport.add(new Food("Võ Vovinam", "200 nghìn", R.drawable.vovinam, 200));
+        arrSport.add(new Food("Chèo thuyền", "450 nghìn", R.drawable.rowing, 450));
+        arrSport.add(new Food("Lướt sóng", "600 nghìn", R.drawable.surfing, 600));
+        arrSport.add(new Food("Lặn", "1 triệu", R.drawable.snorkle, 1000));
+        arrSport.add(new Food("Yoga", "500 nghìn", R.drawable.yoga, 500));
 
         adapter = new FoodAdapter(this, R.layout.food_line, arrSport);
         lvSport.setAdapter(adapter);
@@ -83,20 +83,32 @@ public class SportActivity extends AppCompatActivity {
         lvSport.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (arrSport.get(position).getFoodName() == "Chạy bộ")
+                if (arrSport.get(position).getFoodName() == "Chạy bộ" )
                 {
-                    try {
-                        Activity.CreateDialog("jogging","Thể thao");
-                    } catch (JSONException e) {
-                        e.printStackTrace();
+                    if (MainActivity.saveGame.getJogging() < 3) {
+                        try {
+                            Activity.CreateDialog("jogging", "Thể thao");
+                            MainActivity.saveGame.saveJogging(MainActivity.saveGame.getJogging() + 1);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    else {
+                        MainActivity.createNotification(R.drawable.jogging, "Hôm nay bạn đã chạy bộ quá nhiều rồi", SportActivity.this);
                     }
                 }
                 if (arrSport.get(position).getFoodName() == "Bài tập thể dục")
                 {
-                    try {
-                        Activity.CreateDialog("exercise","Thể thao");
-                    } catch (JSONException e) {
-                        e.printStackTrace();
+                    if (MainActivity.saveGame.getExercise() < 3) {
+                        try {
+                            Activity.CreateDialog("exercise", "Thể thao");
+                            MainActivity.saveGame.saveExercise(MainActivity.saveGame.getExercise() + 1);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    else {
+                        MainActivity.createNotification(R.drawable.triangle, "Hôm nay bạn đã tập thể dục quá nhiều rồi", SportActivity.this);
                     }
                 }
                 if (arrSport.get(position).getFoodName() == "Bóng đá" &&
@@ -376,7 +388,7 @@ public class SportActivity extends AppCompatActivity {
 
         dialog.show();
     }
-    private void loadGame() {
+    public void loadGame() {
         txtName.setText(MainActivity.saveGame.getName());
         txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
         txtJob.setText(MainActivity.saveGame.getJob());
@@ -393,12 +405,12 @@ public class SportActivity extends AppCompatActivity {
             inputStream.close();
             jsonEvent = new String(buffer, "UTF-8");
             Sportjs = new JSONObject(jsonEvent);
-
         } catch (JSONException | IOException e) {
             e.printStackTrace();
         }
         return jsonEvent;
     }
+
     public void gotoMainMenu(View view)
     {
         //startActivity(new Intent(SportActivity.this, HoatDong.class));

@@ -20,6 +20,10 @@
         "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\skincare.png"
     },
     {
+        "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_notification.xml.flat",
+        "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\layout\\dialog_notification.xml"
+    },
+    {
         "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tuvi.png.flat",
         "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\tuvi.png"
     },

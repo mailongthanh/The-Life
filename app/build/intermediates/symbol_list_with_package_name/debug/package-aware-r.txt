@@ -1953,6 +1953,7 @@ id buttonAssets
 id buttonDialogEventOke
 id buttonDialogRelationship_Oke
 id buttonInfant
+id buttonNotificationtOke
 id buttonPanel
 id buttonRelationship
 id cache_measures
@@ -2067,6 +2068,7 @@ id imageFood
 id imagebuttonAddAge
 id imageviewFoodBack
 id imageviewHoatDongBack
+id imageviewNotification
 id imageviewSportBack
 id imvQuanHe
 id info
@@ -2314,6 +2316,8 @@ id textviewMqhA
 id textviewName
 id textviewNameA
 id textviewNameRelationship
+id textviewNotificationContent
+id textviewNotificationTitle
 id textviewRelationship
 id textviewRelationshipTitle
 id textviewRelationship_Appearance
@@ -2465,6 +2469,7 @@ layout dialog_activity
 layout dialog_event
 layout dialog_event_result
 layout dialog_hoatdong
+layout dialog_notification
 layout dialog_out_of_money
 layout dialog_relationship
 layout food_line

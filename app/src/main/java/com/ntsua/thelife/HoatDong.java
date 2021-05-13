@@ -119,5 +119,11 @@ public class HoatDong extends AppCompatActivity {
         startActivity(new Intent(HoatDong.this, MainActivity.class));
         overridePendingTransition(R.anim.enter, R.anim.exit);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadGame();
+    }
 }
 
