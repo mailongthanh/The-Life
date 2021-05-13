@@ -35,7 +35,9 @@
         <activity android:name="com.ntsua.thelife.SportActivity" />
         <activity android:name="com.ntsua.thelife.RelationShip" />
         <activity android:name="com.ntsua.thelife.FoodActivity" />
-        <activity android:name="com.ntsua.thelife.MainActivity" >
+        <activity android:name="com.ntsua.thelife.MainActivity" />
+        <activity android:name="com.ntsua.thelife.SelectGender" />
+        <activity android:name="com.ntsua.thelife.CreateName" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

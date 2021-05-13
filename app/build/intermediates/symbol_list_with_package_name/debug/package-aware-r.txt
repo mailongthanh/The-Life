@@ -1700,6 +1700,7 @@ drawable blooddonate
 drawable book
 drawable boy
 drawable bread
+drawable btn_back
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1749,6 +1750,7 @@ drawable fitness
 drawable football
 drawable fortunetelling
 drawable fruits
+drawable genderselect_button
 drawable girl
 drawable gradient_bg
 drawable gradient_bg_select
@@ -1953,6 +1955,10 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btn_SelectNam
+id btn_SelectNu
+id btn_back
+id btn_create
 id buttonActivity
 id buttonAssets
 id buttonDialogEventOke
@@ -2439,6 +2445,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_boi_toan
 layout activity_cooking
+layout activity_createname
 layout activity_crime
 layout activity_degree
 layout activity_entertainment
@@ -2448,7 +2455,9 @@ layout activity_hospital
 layout activity_love
 layout activity_main
 layout activity_make_up
+layout activity_modau
 layout activity_playground
+layout activity_selectgender
 layout activity_song_khac
 layout activity_sport
 layout activity_startup
