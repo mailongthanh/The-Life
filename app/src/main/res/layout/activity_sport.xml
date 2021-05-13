@@ -25,12 +25,15 @@
             android:layout_centerInParent="true"
             android:textSize="25sp"
             android:textColor="@color/white" />
+
         <ImageView
             android:id="@+id/imageviewSportBack"
             android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:src="@drawable/previous"
-            android:onClick="gotoMainMenu"/>
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:onClick="gotoMainMenu"
+            android:src="@drawable/previous" />
 
     </RelativeLayout>
 

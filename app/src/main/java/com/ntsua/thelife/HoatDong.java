@@ -22,17 +22,11 @@ public class HoatDong extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hoat_dong);
-        txtName = findViewById(R.id.textviewName);
-        txtJob = findViewById(R.id.textviewJob);
-        txtMoney = findViewById(R.id.textviewMoney);
 
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
         lvHoatDong = (ListView) findViewById((R.id.listviewHoatDong));
-
-
-        lvHoatDong=(ListView) findViewById((R.id.listviewHoatDong));
 
         loadGame();
         arrHoatDong = new ArrayList<>();

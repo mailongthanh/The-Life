@@ -20,34 +20,41 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#00FFFF">
+            android:background="#FF0000">
 
             <ImageButton
                 android:id="@+id/imageButtonMenu"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="34dp"
+                android:layout_height="31dp"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
+                android:scaleType="fitXY"
                 android:layout_marginLeft="10dp"
                 android:background="@null"
                 android:src="@drawable/menu" />
 
-            <TextView
-                android:layout_width="100dp"
+
+            <ImageView
+                android:layout_width="117dp"
                 android:layout_height="30dp"
                 android:layout_centerInParent="true"
-                android:layout_margin="10dp"
-                android:textAlignment="center"
-                android:text="The Life"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
                 android:fontFamily="@font/anton"
-                android:textSize="20sp"/>
+                android:src="@drawable/thelife"
+                android:textAlignment="center"
+                android:textSize="20sp" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#DCDCDC"
+            android:background="#EEEEEE"
             android:padding="10dp">
 
             <ImageView
@@ -185,7 +192,8 @@
             android:layout_weight="4"
             android:weightSum="4"
             android:orientation="vertical"
-            android:padding="15dp" >
+            android:padding="15dp"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"

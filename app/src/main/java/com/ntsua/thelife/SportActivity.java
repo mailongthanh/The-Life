@@ -41,17 +41,14 @@ public class SportActivity extends AppCompatActivity {
 
     TextView txtName, txtJob, txtMoney;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sport);
-
-
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
+
         lvSport = (ListView) findViewById((R.id.listviewSports));
         random = new Random();
         arrSport = new ArrayList<Food>();
