@@ -113,6 +113,7 @@ public class SportActivity extends AppCompatActivity {
                 {
                     try {
                         Activity.CreateDialog("football","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -125,6 +126,7 @@ public class SportActivity extends AppCompatActivity {
                 {
                     try {
                         Activity.CreateDialog("pingpong","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -138,6 +140,7 @@ public class SportActivity extends AppCompatActivity {
                 {
                     try {
                         Activity.CreateDialog("basketball","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -151,6 +154,7 @@ public class SportActivity extends AppCompatActivity {
                 {
                     try {
                         Activity.CreateDialog("baseball","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -164,6 +168,7 @@ public class SportActivity extends AppCompatActivity {
                 {
                     try {
                         Activity.CreateDialog("tennis","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -176,6 +181,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(7).getPrice()) {
                     try {
                         Activity.CreateDialog("badminton","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -188,6 +194,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(8).getPrice()) {
                     try {
                         Activity.CreateDialog("cycling","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -200,6 +207,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(9).getPrice()) {
                     try {
                         Activity.CreateDialog("climb","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -212,6 +220,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(10).getPrice()) {
                     try {
                         Activity.CreateDialog("GYM","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -224,6 +233,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(11).getPrice()) {
                     try {
                         Activity.CreateDialog("martial","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -237,6 +247,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(12).getPrice()) {
                     try {
                         Activity.CreateDialog("rowing","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -250,6 +261,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(13).getPrice()) {
                     try {
                         Activity.CreateDialog("surf","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -263,6 +275,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(14).getPrice()) {
                     try {
                         Activity.CreateDialog("dive","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -276,6 +289,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(15).getPrice()) {
                     try {
                         Activity.CreateDialog("yoga","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }

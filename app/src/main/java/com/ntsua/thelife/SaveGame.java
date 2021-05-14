@@ -96,7 +96,17 @@ public class SaveGame {
     {
         return preferences.getInt("jogging", 0);
     }
-
+    public int getTuVi()
+    {
+        return preferences.getInt("Bói tử vi", 0);
+    }
+    public int getBoiSN()
+    {
+        return preferences.getInt("Bói công danh sự nghiệp", 0);
+    } public int getBoiTinh()
+    {
+        return preferences.getInt("Bói tình duyên", 0);
+    }
     public int getExercise()
     {
         return preferences.getInt("exercise", 0);
