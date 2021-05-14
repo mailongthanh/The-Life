@@ -1737,16 +1737,19 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable devil
+drawable diamondv
 drawable dice
 drawable doctor
 drawable dog
 drawable dogrobber
+drawable dragon
 drawable drink
 drawable entertainment
 drawable eyesdoctor
 drawable fast_food
 drawable film
 drawable fitness
+drawable foot
 drawable football
 drawable fortunetelling
 drawable fruits
@@ -1840,7 +1843,10 @@ drawable rowing
 drawable salad
 drawable seafood
 drawable skincare
+drawable snake
 drawable snorkle
+drawable snowflake
+drawable snowflakes
 drawable sperm
 drawable sport
 drawable startup
@@ -1861,6 +1867,7 @@ drawable tuvi
 drawable volleyball
 drawable vovinam
 drawable vungtau
+drawable wax
 drawable yoga
 font anton
 id ALT
@@ -1962,6 +1969,10 @@ id btn_create
 id buttonActivity
 id buttonAssets
 id buttonDialogEventOke
+id buttonDialogEventdiamond
+id buttonDialogEventdragon
+id buttonDialogEventsnake
+id buttonDialogEventsnow
 id buttonDialogRelationship_Oke
 id buttonInfant
 id buttonNotificationtOke
@@ -2487,6 +2498,7 @@ layout dialog_hoatdong
 layout dialog_notification
 layout dialog_out_of_money
 layout dialog_relationship
+layout dialog_tattoo
 layout food_line
 layout material_chip_input_combo
 layout material_clock_display

@@ -48,13 +48,10 @@ public class SportActivity extends AppCompatActivity {
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
-
         lvSport = (ListView) findViewById((R.id.listviewSports));
         random = new Random();
         arrSport = new ArrayList<Food>();
-
         loadGame();
-
         arrSport.add(new Food("Chạy bộ", "FREE", R.drawable.jogging, 0));
         arrSport.add(new Food("Bài tập thể dục", "FREE", R.drawable.triangle, 0));
         arrSport.add(new Food("Bóng đá", "150 nghìn", R.drawable.football, 150));
