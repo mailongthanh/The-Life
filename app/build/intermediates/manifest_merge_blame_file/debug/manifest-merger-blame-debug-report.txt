@@ -25,81 +25,80 @@
 17-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
 18-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/Theme.TheLife" >
-20-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:11:9-45
-21        <activity android:name="com.ntsua.thelife.BoiToan" />
-21-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:12:9-54
-21-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:12:19-42
-22        <activity android:name="com.ntsua.thelife.MakeUp" />
-22-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:13:9-44
-22-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:13:19-41
-23        <activity android:name="com.ntsua.thelife.Cooking" />
-23-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:14:9-45
-23-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:14:19-42
-24        <activity android:name="com.ntsua.thelife.Startup" />
-24-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:15:9-45
-24-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:15:19-42
-25        <activity android:name="com.ntsua.thelife.Hospital" />
-25-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:16:9-46
-25-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:16:19-43
-26        <activity android:name="com.ntsua.thelife.SongKhac" />
-26-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:17:9-46
-26-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:17:19-43
-27        <activity android:name="com.ntsua.thelife.Travel" />
-27-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:18:9-44
-27-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:18:19-41
-28        <activity android:name="com.ntsua.thelife.Entertainment" />
-28-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:19:9-51
-28-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:19:19-48
-29        <activity android:name="com.ntsua.thelife.Degree" />
-29-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:20:9-44
-29-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:20:19-41
-30        <activity android:name="com.ntsua.thelife.Love" />
-30-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:21:9-42
-30-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:21:19-39
-31        <activity android:name="com.ntsua.thelife.Playground" />
-31-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:22:9-48
-31-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:22:19-45
-32        <activity android:name="com.ntsua.thelife.HoatDong" />
-32-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:23:9-46
-32-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:23:19-43
-33        <activity android:name="com.ntsua.thelife.CrimeActivity" />
-33-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:24:9-51
-33-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:24:19-48
-34        <activity android:name="com.ntsua.thelife.Tuong_tacActivity" />
-34-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:25:9-55
-34-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:25:19-52
-35        <activity android:name="com.ntsua.thelife.SportActivity" />
-35-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:26:9-51
-35-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:26:19-48
-36        <activity android:name="com.ntsua.thelife.RelationShip" />
-36-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:27:9-50
-36-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:27:19-47
-37        <activity android:name="com.ntsua.thelife.FoodActivity" />
-37-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:28:9-50
-37-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:28:19-47
-38        <activity android:name="com.ntsua.thelife.MainActivity" >
-38-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:29:9-35:20
-38-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:29:19-47
-39            <intent-filter>
-39-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:30:13-34:29
-40                <action android:name="android.intent.action.MAIN" />
-40-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:31:17-69
-40-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:31:25-66
-41
-42                <category android:name="android.intent.category.LAUNCHER" />
-42-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:33:17-77
-42-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:33:27-74
-43            </intent-filter>
-44        </activity>
-45
-46        <meta-data
-46-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:37:9-39:57
-47            android:name="preloaded_fonts"
-47-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:38:13-43
-48            android:resource="@array/preloaded_fonts" />
-48-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:39:13-54
-49    </application>
-50
-51</manifest>
+19        android:theme="@style/Theme.TheLife" >
+19-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:11:9-45
+20        <activity android:name="com.ntsua.thelife.BoiToan" />
+20-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:12:9-54
+20-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:12:19-42
+21        <activity android:name="com.ntsua.thelife.MakeUp" />
+21-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:13:9-44
+21-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:13:19-41
+22        <activity android:name="com.ntsua.thelife.Cooking" />
+22-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:14:9-45
+22-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:14:19-42
+23        <activity android:name="com.ntsua.thelife.Startup" />
+23-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:15:9-45
+23-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:15:19-42
+24        <activity android:name="com.ntsua.thelife.Hospital" />
+24-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:16:9-46
+24-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:16:19-43
+25        <activity android:name="com.ntsua.thelife.SongKhac" />
+25-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:17:9-46
+25-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:17:19-43
+26        <activity android:name="com.ntsua.thelife.Travel" />
+26-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:18:9-44
+26-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:18:19-41
+27        <activity android:name="com.ntsua.thelife.Entertainment" />
+27-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:19:9-51
+27-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:19:19-48
+28        <activity android:name="com.ntsua.thelife.Degree" />
+28-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:20:9-44
+28-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:20:19-41
+29        <activity android:name="com.ntsua.thelife.Love" />
+29-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:21:9-42
+29-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:21:19-39
+30        <activity android:name="com.ntsua.thelife.Playground" />
+30-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:22:9-48
+30-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:22:19-45
+31        <activity android:name="com.ntsua.thelife.HoatDong" />
+31-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:23:9-46
+31-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:23:19-43
+32        <activity android:name="com.ntsua.thelife.CrimeActivity" />
+32-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:24:9-51
+32-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:24:19-48
+33        <activity android:name="com.ntsua.thelife.Tuong_tacActivity" />
+33-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:25:9-55
+33-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:25:19-52
+34        <activity android:name="com.ntsua.thelife.SportActivity" />
+34-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:26:9-51
+34-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:26:19-48
+35        <activity android:name="com.ntsua.thelife.RelationShip" />
+35-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:27:9-50
+35-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:27:19-47
+36        <activity android:name="com.ntsua.thelife.FoodActivity" />
+36-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:28:9-50
+36-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:28:19-47
+37        <activity android:name="com.ntsua.thelife.MainActivity" >
+37-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:29:9-35:20
+37-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:29:19-47
+38            <intent-filter>
+38-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:30:13-34:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:31:17-69
+39-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:31:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:33:17-77
+41-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:33:27-74
+42            </intent-filter>
+43        </activity>
+44
+45        <meta-data
+45-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:37:9-39:57
+46            android:name="preloaded_fonts"
+46-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:38:13-43
+47            android:resource="@array/preloaded_fonts" />
+47-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:39:13-54
+48    </application>
+49
+50</manifest>

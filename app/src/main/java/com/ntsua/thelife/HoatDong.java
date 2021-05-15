@@ -18,29 +18,17 @@ public class HoatDong extends AppCompatActivity {
     FoodAdapter adapter;
     ArrayList<Food> arrHoatDong;
     TextView txtName, txtJob, txtMoney;
-    SaveGame saveGame;
-    SharedPreferences preference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hoat_dong);
-        txtName = findViewById(R.id.textviewName);
-        txtJob = findViewById(R.id.textviewJob);
-        txtMoney = findViewById(R.id.textviewMoney);
 
-        preference = getSharedPreferences("data", MODE_PRIVATE);
-        saveGame = new SaveGame(preference);
+
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
         lvHoatDong = (ListView) findViewById((R.id.listviewHoatDong));
-        preference = getSharedPreferences("data", MODE_PRIVATE);
-        saveGame = new SaveGame(preference);
-        lvHoatDong=(ListView) findViewById((R.id.listviewHoatDong));
-
-
-        lvHoatDong=(ListView) findViewById((R.id.listviewHoatDong));
 
         loadGame();
         arrHoatDong = new ArrayList<>();

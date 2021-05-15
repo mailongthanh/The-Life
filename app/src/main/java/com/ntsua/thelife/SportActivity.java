@@ -51,10 +51,6 @@ public class SportActivity extends AppCompatActivity {
         txtMoney = findViewById(R.id.textviewMoney);
 
 
-
-        txtName = findViewById(R.id.textviewName);
-        txtJob = findViewById(R.id.textviewJob);
-        txtMoney = findViewById(R.id.textviewMoney);
         lvSport = (ListView) findViewById((R.id.listviewSports));
         random = new Random();
         arrSport = new ArrayList<Food>();
@@ -310,87 +306,7 @@ public class SportActivity extends AppCompatActivity {
 
         dialog.show();
     }
-    void createDialog(JSONObject object) throws JSONException {
-        //Tao dialog
-        Dialog dialog = new Dialog(this);
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setCanceledOnTouchOutside(false);
-        dialog.setContentView(R.layout.dialog_hoatdong);
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
-        //Anh xa cac view
-        TextView txtContent = dialog.findViewById(R.id.textviewDialogEventContent);
-        TextView txtHappy = dialog.findViewById(R.id.textviewResultHappy);
-        TextView txtHealth = dialog.findViewById(R.id.textviewResultHealth);
-        TextView txtSmart= dialog.findViewById(R.id.textviewResultSmart);
-        TextView txtAppearance = dialog.findViewById(R.id.textviewResultAppearance);
-        TextView txtAssets = dialog.findViewById(R.id.textviewResultMoney);
-        LinearLayout dialogResult = dialog.findViewById(R.id.dialog_event_result);
-        Button btnOke = dialog.findViewById(R.id.buttonDialogEventOke);
-
-        txtContent.setText(object.getString("event"));
-
-        int happy = MainActivity.saveGame.getHappy();
-        int health = MainActivity.saveGame.getHealth();
-        int smart = MainActivity.saveGame.getSmart();
-        int appearance = MainActivity.saveGame.getAppearance();
-        int value = 0;
-        value = object.getInt("happy");
-        if (value == 0)
-        {
-            dialogResult.removeView(dialog.findViewById(R.id.linearHappy));
-        } else {
-            txtHappy.setText(value + "");
-            happy += value;
-        }
-        value = object.getInt("health");
-        if (value == 0)
-        {
-            dialogResult.removeView(dialog.findViewById(R.id.linearHealth));
-        } else {
-            txtHealth.setText(value + "");
-            health += value;
-        }
-        value = object.getInt("smart");
-        if (value == 0)
-        {
-            dialogResult.removeView(dialog.findViewById(R.id.linearSmart));
-        } else {
-            txtSmart.setText(value + "");
-            smart += value;
-        }
-        value = object.getInt("appearance");
-        if (value == 0)
-        {
-            dialogResult.removeView(dialog.findViewById(R.id.linearAppearance));
-        } else {
-            txtAppearance.setText(value + "");
-            appearance += value;
-        }
-        value = object.getInt("assets");
-        if (value == 0)
-        {
-            dialogResult.removeView(dialog.findViewById(R.id.linearMoney));
-        } else {
-            txtAssets.setText(String.format( "%,d",value*1000));
-            MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() + value);
-
-            loadGame();
-        }
-        MainActivity.saveGame.savePlayerInfo(happy, health, smart, appearance);
-        String contentHtml = MainActivity.saveGame.getDetailActivity();
-        contentHtml += txtContent.getText().toString() + "<br>";
-        MainActivity.saveGame.saveDetailActivity(contentHtml);
-
-        btnOke.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss();
-            }
-        });
-
-        dialog.show();
-    }
     public void loadGame() {
         txtName.setText(MainActivity.saveGame.getName());
         txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
@@ -419,5 +335,11 @@ public class SportActivity extends AppCompatActivity {
         //startActivity(new Intent(SportActivity.this, HoatDong.class));
         finish();
         overridePendingTransition(R.anim.enter, R.anim.exit);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadGame();
     }
 }

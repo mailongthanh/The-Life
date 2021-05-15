@@ -15,16 +15,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Đây là tên đối tượng"
-        android:textColor="#FF1500"
-        android:textSize="20sp"
+        android:textColor="@color/Blue"
+        android:textStyle="bold"
+        android:textSize="25sp"
         android:gravity="center_horizontal"/>
     <TextView
         android:id="@+id/textviewNameRelationship"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="(Đây là tên mối quan hệ)"
+        android:text="ban be"
+        android:fontFamily="@font/anton"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
         android:gravity="center_horizontal"
-        android:textColor="#f00"/>
+        android:textColor="@color/Ocean"/>
     <LinearLayout
         android:id="@+id/dialog_Relationship"
         android:layout_width="match_parent"
@@ -38,16 +42,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Đây là tiêu đề"
-            android:textSize="17dp"
+            android:textSize="20dp"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
+            android:textColor="@color/Red"
             android:textAlignment="center"/>
         <TextView
             android:id="@+id/textviewDialogRelationshipContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Đây là nội dung của sự kiện"
-            android:textSize="17dp"
+            android:textSize="17sp"
+            android:textColor="@color/Blue"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:paddingRight="10dp"
@@ -69,6 +75,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:textColor="@color/Red"
+                android:textStyle="bold"
                 android:text="Hạnh phúc:" />
             <TextView
                 android:id="@+id/textviewRelationship_Happy"
@@ -76,7 +84,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="-1" />
+                android:text="-1"
+                android:textStyle="bold"
+                android:textColor="#2EDD06"/>
 
         </LinearLayout>
         <LinearLayout
@@ -95,14 +105,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Sức khỏe:" />
+                android:text="Sức khỏe:"
+                android:textColor="@color/Red"
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/textviewRelationship_Health"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="-1" />
+                android:text="-1"
+                android:textStyle="bold"
+                android:textColor="#2EDD06"/>
 
         </LinearLayout>
         <LinearLayout
@@ -121,14 +135,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Thông minh:" />
+                android:text="Thông minh:"
+                android:textStyle="bold"
+                android:textColor="@color/Red"/>
             <TextView
                 android:id="@+id/textviewRelationship_Smart"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="-1" />
+                android:text="-1"
+                android:textStyle="bold"
+                android:textColor="#2EDD06"/>
 
         </LinearLayout>
         <LinearLayout
@@ -147,14 +165,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Ngoại hình:" />
+                android:text="Ngoại hình:"
+                android:textColor="@color/Red"
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/textviewRelationship_Appearance"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="-1" />
+                android:text="-1"
+                android:textStyle="bold"
+                android:textColor="#2EDD06"/>
 
         </LinearLayout>
         <LinearLayout
@@ -173,14 +195,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Tài khoản:" />
+                android:text="Tài khoản:"
+                android:textStyle="bold"
+                android:textColor="#F1DB1A"/>
             <TextView
                 android:id="@+id/textviewRelationship_Money"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="-1" />
+                android:text="-1"
+                android:textStyle="bold"/>
 
         </LinearLayout>
         <LinearLayout
@@ -199,14 +224,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Mối quan hệ:" />
+                android:text="Mối quan hệ:"
+                android:textColor="#FF009688"
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/textviewRelationship"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="-1" />
+                android:text="-1"
+                android:textStyle="bold"
+                android:textColor="#66FF00"/>
 
         </LinearLayout>
 
@@ -217,6 +246,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:text="Đồng ý"
+            android:textColor="@color/black"
             android:background="@drawable/custom_button_menu"
             app:backgroundTint="@null"
             android:layout_marginBottom="5dp"/>

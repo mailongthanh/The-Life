@@ -39,8 +39,9 @@
                 android:id="@+id/textviewDialogEventContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Đây là nội dung của sự kiện"
                 android:padding="5dp"
+                android:text="Đây là nội dung của sự kiện"
+                android:textAlignment="center"
                 android:textColor="@color/Blue"
                 android:textSize="17sp" />
 
@@ -60,19 +61,19 @@
     </LinearLayout>
     </LinearLayout>
 
-        <TextView
-            android:id="@+id/textviewDialogEventTitle"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:layout_gravity="center|top"
-            android:gravity="center"
-            android:text="Đây là tiêu đề"
-            android:textStyle="bold"
-            android:textColor="@color/Blue"
-            android:fontFamily="@font/anton"
-            android:background="@drawable/custom_button_menu"
-            android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textviewDialogEventTitle"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:background="@drawable/custom_button_menu"
+        android:fontFamily="@font/anton"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Đây là tiêu đề"
+        android:textColor="@color/Blue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 
 </FrameLayout>
