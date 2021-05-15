@@ -1,0 +1,61 @@
+{
+  "Triệt lông": [
+    {
+      "event": "Sau quá trình triệt lông, bạn sở hữu một làn da sáng mịn và không còn bóng dáng của vi-o-lông đáng ghét",
+      "assets": -300,
+      "happy": 2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 6
+    }
+  ],
+  "Trị mụn": [
+    {
+      "event": "Bạn bị lừa mua gói dịch vụ trị mụn mà không được gì cả. Chủ spa đã chạy trốn",
+      "assets": -1500,
+      "happy": -2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    }
+  ],
+  "Skin care": [
+    {
+      "event": "Nhân viên thủ pháp thô bạo làm da mặt bạn bị tổn thương, nổi mẫn đỏ. Bạn phải đi da liễu chữa trị mất nửa năm",
+      "assets": -800,
+      "happy": -2,
+      "health": 0,
+      "smart": 0,
+      "appearance": -4}
+  ],
+  "Massage": [
+    {
+      "event": "Nhân viên massage tay nghề không tốt làm bạn bị trật khớp phải bó thuốc 2 tháng",
+      "assets": -800,
+      "happy": -1,
+      "health": -2,
+      "smart": 0,
+      "appearance": 0
+    }
+  ],
+  "Xông hơi": [
+    {
+      "event": "Sau khi xông hơi 2 tiếng, bạn toát mồ hôi như tắm, cơ thể nhẹ nhàng rất nhiều",
+      "assets": -600,
+      "happy":2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 1
+    }
+  ],
+  "Ngâm chân thảo dược":[
+    {
+      "event": "Ngâm chân dược liệu làm gót chân bạn trở nên mềm mại, thông máu tốt hơn, da dẻ hồng hào hơn",
+      "assets": -400,
+      "happy": 3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 4
+    }
+  ]
+}

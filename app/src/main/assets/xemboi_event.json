@@ -1,0 +1,176 @@
+{
+  "Bói tử vi": [
+    {
+      "event": "Thầy phán cuộc đời của bạn sẽ được sống trong cảnh an nhàn, đầy đủ vật chất, không lo thiếu thốn. Thông minh, tốt bụng, tài giỏi, được mọi người yêu quý, gặp nhiều may mắn trong cuộc sống",
+      "assets": -500,
+      "happy": 3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Thầy phán bạn có duyên với kinh doanh sẽ gặp được nhiều may mắn trên con đường học vấn. Tự thân lập nghiệp, đi lên từ hai bàn tay trắng, nếu cố gắng sẽ đạt được thành công trong cuộc sống và có sự nghiệp vững chắc, ổn định. ",
+      "assets": -500,
+      "happy": 3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 3
+    },
+    {
+      "event": "Thầy phán cuộc đời bạn về sau gặp nhiều gian nan, trắc trở, nếu muốn thành công cần phải kiên trì và tìm đến sự giúp đỡ của những người thân. Không nên vội vàng, nóng nảy trong công việc nếu không sẽ gặp phải thất bại lớn.",
+      "assets": -500,
+      "happy": 0,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Thầy phán cuộc sống của bạn đang không ổn định, lúc tiền bạc dư thừa, lúc khó khăn thiết thốn. Cần phải học cách tiết kiệm tiền bạc, chi tiêu có kế hoạch, hợp lý.",
+      "assets": -500,
+      "happy": 0,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Thầy phán năm nay sức khỏe của bạn sẽ sa sút cần tăng cường tập thể dục thể thao",
+      "assets": -500,
+      "happy": -1,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Thầy phán năm nay bạn sẽ rất may mắn, được nhiều lộc, mua vé số dễ trúng, chơi đâu trúng đó $$$",
+      "assets": -500,
+      "happy": 3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Thầy phán năm nay làm việc gì cũng phải thận trọng, không nên tin tưởng quá nhiều vào người khác kẻo bị lợi dụng",
+      "assets": -500,
+      "happy": -1,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    }
+  ],
+  "Bói công danh sự nghiệp": [
+    {
+      "event": "Quẻ bói nói rằng: Cuối năm bạn sẽ được thăng chức",
+      "assets": -1000,
+      "happy": 3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Quẻ bói nói rằng: Cuối năm nay bạn sẽ gặp vận hạn lớn nhưng đừng lo bạn sẽ có quý nhân phù trọ xuất hiện kịp thời và giúp bạn",
+      "assets": -1000,
+      "happy": 1,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Quẻ bói nói rằng: Nếu bạn muốn thăng chức hãy mặc một bộ quần áo màu đỏ khi đến nơi làm việc",
+      "assets": -1000,
+      "happy": 0,
+      "health": 0,
+      "smart": 0,
+      "appearance": -2
+    },
+    {
+      "event": "Quẻ bói nói rằng: Sự nghiệp sẽ lên như diều gặp gió nếu bạn đặt bàn làm việc của mình ở hướng Tây",
+      "assets": -1000,
+      "happy": 0,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Quẻ bói nói rằng: Trong công việc bạn sẽ gặp nhiều thị phi, đồng nghiệp nói xấu không tôn trọng bạn. Bạn cần cố gắng nhẫn nhịn và cẩn thận trong giao tiếp",
+      "assets": -1000,
+      "happy": -3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    }
+  ],
+  "Bói tình duyên": [
+    {
+      "event": "Quẻ bói nói rằng: có người đang thầm thích bạn chỉ là bạn chưa nhận ra điều đó hãy để ý thật kĩ các mối quan hệ xung quanh, khả năng bạn sẽ hết FA vào cuối năm nay",
+      "assets": -500,
+      "happy": 3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Quẻ bói nói rằng: cuối năm bạn sẽ được một người tỏ tình, nhưng hãy cẩn thận xem xét đừng vì quá cô đơn mà dễ dàng chấp nhận không tìm hiểu kỹ người đó",
+      "assets": -500,
+      "happy": 0,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Quẻ bói nói rằng: Có không giữ mất đừng tìm nhầm ngụ ý rằng hãy vung đắp trân trọng những mối quan hệ xung quanh, đừng đứng núi này trông núi nọ ",
+      "assets": -500,
+      "happy": 0,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Quẻ bói nói rằng: bạn còn ế vì đang có duyên âm theo đuổi. Vì vậy nếu muốn cắt duyên âm thì chỉ có cách là bạn xấu đi bớt một chút tự duyên âm thấy xấu sẽ bỏ đi",
+      "assets": -500,
+      "happy": -3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Quẻ bói nói rằng: Tình cảm của bạn và người yêu đang không tốt. Hãy quan tam đến người ấy nhiều hơn nữa, cùng nhau tận hưởng một chuyến du lịch lãng mạn chẳng hạn",
+      "assets": -500,
+      "happy": 0,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Quẻ bói nói rằng: Trong vòng 1 năm tới bạn sẽ tìm được tình yêu của đời mình. Những người trước đó đơn giản chỉ là người qua đường, đến rồi đi đừng quá buồn và bận tâm",
+      "assets": -500,
+      "happy": 2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Quẻ bói nói rằng: Bạn ế không phải vì bạn xấu, mà vì bạn khẩu nghiệp quá nhiều, nghiệp quật vào tình duyên. Hãy bớt khẩu nghiệp lại, tu tâm dưỡng tính thì tự nhiên tình duyên sẽ tự động tìm tới",
+      "assets": -500,
+      "happy": -1,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Quẻ bói nói rằng: Nếu bạn không chịu tút lại toàn bộ vẻ đẹp của bản thân, thì còn lâu bạn mới thoát Ế",
+      "assets": -500,
+      "happy": -2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Quẻ bói nói rằng: Đường tình duyên bạn còn lận đận. Lập gia đình muộn thì mới tránh được đổ vỡ. Phải lấy người tài giỏi hơn mới tạo được hạnh phúc gia đình",
+      "assets": -500,
+      "happy": -1,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    }
+  ]
+}

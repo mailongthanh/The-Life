@@ -49,14 +49,15 @@ public class SportActivity extends AppCompatActivity {
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 1b3419cae02b35e5bf6a621dcbaa7bc1dd529ec2
         lvSport = (ListView) findViewById((R.id.listviewSports));
         random = new Random();
         arrSport = new ArrayList<Food>();
-
         loadGame();
-
         arrSport.add(new Food("Chạy bộ", "FREE", R.drawable.jogging, 0));
         arrSport.add(new Food("Bài tập thể dục", "FREE", R.drawable.triangle, 0));
         arrSport.add(new Food("Bóng đá", "150 nghìn", R.drawable.football, 150));
@@ -115,6 +116,7 @@ public class SportActivity extends AppCompatActivity {
                 {
                     try {
                         Activity.CreateDialog("football","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -127,6 +129,7 @@ public class SportActivity extends AppCompatActivity {
                 {
                     try {
                         Activity.CreateDialog("pingpong","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -140,6 +143,7 @@ public class SportActivity extends AppCompatActivity {
                 {
                     try {
                         Activity.CreateDialog("basketball","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -153,6 +157,7 @@ public class SportActivity extends AppCompatActivity {
                 {
                     try {
                         Activity.CreateDialog("baseball","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -166,6 +171,7 @@ public class SportActivity extends AppCompatActivity {
                 {
                     try {
                         Activity.CreateDialog("tennis","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -178,6 +184,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(7).getPrice()) {
                     try {
                         Activity.CreateDialog("badminton","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -190,6 +197,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(8).getPrice()) {
                     try {
                         Activity.CreateDialog("cycling","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -202,6 +210,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(9).getPrice()) {
                     try {
                         Activity.CreateDialog("climb","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -214,6 +223,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(10).getPrice()) {
                     try {
                         Activity.CreateDialog("GYM","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -226,6 +236,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(11).getPrice()) {
                     try {
                         Activity.CreateDialog("martial","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -239,6 +250,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(12).getPrice()) {
                     try {
                         Activity.CreateDialog("rowing","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -252,6 +264,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(13).getPrice()) {
                     try {
                         Activity.CreateDialog("surf","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -265,6 +278,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(14).getPrice()) {
                     try {
                         Activity.CreateDialog("dive","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -278,6 +292,7 @@ public class SportActivity extends AppCompatActivity {
                         && MainActivity.saveGame.getMoney() >= arrSport.get(15).getPrice()) {
                     try {
                         Activity.CreateDialog("yoga","Thể thao");
+                        loadGame();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }

@@ -26,7 +26,9 @@
         <activity android:name=".SportActivity" />
         <activity android:name=".RelationShip" />
         <activity android:name=".FoodActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".SelectGender"/>
+        <activity android:name=".CreateName">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -26,7 +26,6 @@ public class ActivitiesEvent {
     SaveGame savegame;
     Random random;
     Context context;
-
     public ActivitiesEvent(String Json, SaveGame savegame, Context context) {
         try {
             jsonevent = new JSONObject(Json);
@@ -130,5 +129,4 @@ public class ActivitiesEvent {
 
         dialog.show();
     }
-
 }
