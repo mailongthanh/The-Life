@@ -19,9 +19,11 @@ public class HoatDong extends AppCompatActivity {
     ArrayList<Food> arrHoatDong;
     TextView txtName, txtJob, txtMoney;
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hoat_dong);
+
 
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);

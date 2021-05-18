@@ -2,54 +2,54 @@
  "age": [
     [],
     [
-      {"title":"Sức khoẻ", "event": "Sau khi nghe tin về các loại dịch tễ nên tiêm cho bé trên tivi, hôm nay bố mẹ bạn quyết định đưa bạn vào bệnh viện địa phương để tiêm ngừa, đứng trước mũi tiêm bạn sẽ làm gì?", "selection": true,
+      {"title":"Sức khoẻ", "event": "Hôm nay bố mẹ bạn quyết định đưa bạn vào bệnh viện địa phương để tiêm ngừa. \n \nĐứng trước mũi tiêm bạn sẽ làm gì?", "selection": true,
       "select":[
         {"content": "Cắn bác sĩ", "selection":false,
           "event": [
-            { "event" :"Bạn từ chối tiêm ngừa, và có nguy cơ mắc bệnh!!!", "assets": 0, "happy": 0, "health": -5, "smart":-3, "appearance": 0},
-            { "event" :"Bạn cắn bác sĩ, phụ huynh bắt đầu trở trên gay gắt và ép bạn tiêm !!!", "assets": 0, "happy": -5, "health": -5, "smart":0, "appearance": 0}
+            { "event" :"Dù được bố mẹ khuyến khích đưa đi tiêm, nhưng đứng trước mũi tiêm, bạn cắn bác sĩ và từ chối tiêm ngừa. \nBạn có nguy cơ mắc bệnh", "assets": 0, "happy": 0, "health": -5, "smart":-3, "appearance": 0},
+            { "event" :"Dù được bố mẹ đưa đi tiêm ở bệnh viện huyện, nhưng trước mũi tiêm bạn quyết định cắn bác sĩ. \nBố mẹ bạn bắt đầu trở trên gay gắt hơn và ép bạn tiêm", "assets": 0, "happy": -5, "health": -5, "smart":0, "appearance": 0}
           ]},
         {"content": "Khóc, không muốn tiêm", "selection":false,
           "event":[
-            { "event": "Tuy bạn không muốn tiêm ngừa, nhưng dưới sự bắt ép của phụ huynh, bạn vẫn phải tiêm!!!", "assets": 0, "happy": -5, "health": 5, "smart":0, "appearance": 0},
-            { "event": "Phụ huynh bạn cảm thấy bạn không muốn tiêm, họ cũng không muốn ép buộc bạn!!!", "assets": 0, "happy": 0, "health": -5, "smart":0, "appearance": 0}
+            { "event": "Đứng trước cổng bệnh viện, bạn oà khóc, tỏ thái độ không muốn tiêm ngừa, nhưng dưới sự bắt ép của bố mẹ, kết quả bạn vẫn phải tiêm", "assets": 0, "happy": -5, "health": 5, "smart":0, "appearance": 0},
+            { "event": "Đứng trước mũi tiêm bạn oà khóc, bác sĩ cũng bảo rằng có thể hôm nay sức khoẻ của bạn không được tốt, bố mẹ bạn nghe vậy cũng không muốn ép buộc bạn", "assets": 0, "happy": 0, "health": -5, "smart":0, "appearance": 0}
           ]},
-        {"content": "Im lặng để bác sĩ tiêm", "selection":true, "event": "Bạn muốn cho vị bác sĩ nào tiêm cho bạn?",
-        "select": [
-          {"content": "Bác sĩ An", "selection": false,
-            "event": [
-              {"event": "Bác sĩ tiêm cho bạn đạt danh hiệu thủ khoa của trường Đại học Y Dược Hà Nội, bạn không cảm thấy đau mà còn thấy khoẻ mạnh hơn trước", "assets": 0, "happy": 5, "health": 10, "smart":0, "appearance": 0},
-              {"event": "Bác sĩ tiêm cho bạn có vẻ mới được giao thực tập hôm nay, bạn cảm thấy không khoẻ sau khi tiêm...", "assets": 0, "happy": -5, "health": -5, "smart":0, "appearance": 0}
+        {"content": "Để bác sĩ tiêm ngừa", "selection":true, "event": "Bạn muốn cho vị bác sĩ nào tiêm cho mình ?",
+          "select": [
+            {"content": "Bác sĩ An", "selection":false,
+              "event": [
+                {"event": "Được bố mẹ đưa đi tiêm ngừa, bạn quyết định nghe lời, bạn lựa chọn BS An tiêm cho mình. \n\nBS An từng đạt danh hiệu thủ khoa của trường Y Dược Hà Nội, bạn không cảm thấy đau mà còn thấy khoẻ mạnh hơn trước", "assets": 0, "happy": 5, "health": 10, "smart":0, "appearance": 0},
+                {"event": "Bạn đồng ý để bố mẹ đưa đi tiêm ngừa, bạn lựa chọn BS An tiêm cho mình. \n\nBS An có vẻ mới được giao thực tập hôm nay, bạn cảm thấy không khoẻ sau khi tiêm...", "assets": 0, "happy": -5, "health": -5, "smart":0, "appearance": 0}
               ]},
-          {"content:":"Bác sĩ Mai", "selection":false,
-            "event": [
-              {"event": "Bác sĩ tiêm cho bạn vừa mới hoàn thành khoá đào tạo online, khoan đã, hình như bác sĩ đang cầm mũi tiêm không đúng cách... ", "assets": 0, "happy": 0, "health": -10, "smart":0, "appearance": 0},
-              {"event": "Bác sĩ tiêm cho bạn tay nghề cao, dịu dàng tiêm cho bạn, bạn cảm thấy hạnh phúc và khoẻ hơn trước", "assets": 0, "happy": 5, "health": 5, "smart":0, "appearance": 0}
+            {"content": "Bác sĩ Mai", "selection":false,
+              "event": [
+                {"event": "Bạn đồng ý để bố mẹ đưa đi tiêm ngừa, nhìn thấy BS Mai bạn đã muốn được bác sĩ Mai tiêm cho. \n\nBS Mai vừa mới hoàn thành khoá đào tạo online, khoan đã, hình như bác sĩ Mai đang cầm mũi tiêm không đúng cách... ", "assets": 0, "happy": 0, "health": -10, "smart":0, "appearance": 0},
+                {"event": "Bạn đồng ý để bố mẹ đưa đi tiêm ngừa, nhìn thấy BS Mai bạn đã muốn được bác sĩ Mai tiêm cho. \n\nBS Mai tay nghề cao, dịu dàng tiêm cho bạn, bạn cảm thấy hạnh phúc và khoẻ hơn trước", "assets": 0, "happy": 5, "health": 5, "smart":0, "appearance": 0}
               ]},
-          {"content":"Bác sĩ Đức","selection":false,
-            "event": [
-              {"event": "Bác sĩ tiêm cho bạn quá nổi tiếng, nhiều người đến gặp bác sĩ để chữa bệnh, còn chưa đến lượt bạn thì đã hết ca làm rồi", "assets": 0, "happy": -5, "health": -5, "smart":0, "appearance": 0},
-              {"event": "Bác sĩ tiêm thuốc cho bạn, nhưng bạn không cảm nhận được gì khác cả", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+            {"content": "Bác sĩ Đức", "selection":false,
+              "event": [
+                {"event": "Bạn đồng ý để bố mẹ đưa đi tiêm ngừa, bạn chọn và tin vào tay nghề của BS Đức. \n\nBác sĩ Đức quá nổi tiếng, nhiều người đến gặp bác sĩ để chữa bệnh, còn chưa đến lượt bạn thì đã hết ca làm rồi", "assets": 0, "happy": -5, "health": -5, "smart":0, "appearance": 0},
+                {"event": "Bạn đồng ý để bố mẹ đưa đi tiêm ngừa, bạn chọn và tin vào tay nghề của BS Đức. \n\nBác sĩ Đức tiêm thuốc cho bạn, bạn không cảm nhận được gì mới cả", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
               ]}
           ]}
-        ]},
-      {"title":"Đời sống", "event": "Mẹ bạn nghĩ rằng bạn đã tới giai đoạn cai sữa mẹ, mẹ bạn đã mua sữa bột về pha, đối mặt bạn là một bình sữa được pha, bạn muốn làm gì? ", "selection": true,
+      ]},
+      {"title":"Đời sống", "event": "Mẹ bạn vừa mua sữa bột về pha vì nghĩ rằng bạn đã tới lúc cai sữa mẹ. \n\nĐối mặt bạn là một bình sữa được pha, bạn muốn làm gì ? ", "selection": true,
         "select":[
           {"content": "Tự nhấc lên uống", "selection":false,
             "event": [
-              { "event" :"Bạn tự mình cầm bình sữa trước sự ngỡ ngàng của người lớn!!!", "assets": 0, "happy": 5, "health": 0, "smart":5, "appearance": 0},
-              { "event" :"Bạn bị vuột mất bình sữa, bình sữa rơi trúng chân bạn, bạn khóc oà lên!!!", "assets": 0, "happy": -2, "health": 0, "smart":-3, "appearance": 0}
+              { "event" :"Trước bình sữa mẹ pha, bạn tự mình cầm bình sữa lên uống. \n\nMẹ bạn ngỡ ngàng với tốc độ phát triển của bạn.", "assets": 0, "happy": 5, "health": 0, "smart":5, "appearance": 0},
+              { "event" :"Trước bình sữa mẹ pha, bạn tự mình cầm bình sữa lên uống. \n\n Sau đó bạn bị vuột mất bình sữa, bình sữa rơi trúng chân bạn, bạn khóc oà lên", "assets": 0, "happy": -2, "health": 0, "smart":-3, "appearance": 0}
             ]},
 
           {"content": "Hất bình sữa đi", "selection":false,
             "event":[
-              { "event": "Có vẻ còn quá sớm để bạn có thể cai sữa mẹ", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0},
-              { "event": "Người lớn bắt đầu lo lắng vì đáng lẽ bạn phải đến giai đoạn cai sữa mẹ từ lâu lắm rồi", "assets": 0, "happy": -3, "health": -2, "smart":0, "appearance": 0}
+              { "event": "Trước bình sữa mẹ pha, bạn hất văng đi. \n\nMẹ bạn thầm nghĩ có vẻ còn quá sớm để bạn có thể cai sữa mẹ", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0},
+              { "event": "Trước bình sữa mẹ pha, bạn hất văng đi. \n\nTrước hành động của bạn người lớn bắt đầu lo lắng vì bạn đã phải đến giai đoạn cai sữa mẹ rồi", "assets": 0, "happy": -3, "health": -2, "smart":0, "appearance": 0}
             ]},
           {"content": "Muốn được bón sữa", "selection":false,
                 "event": [
-                  {"event": "Được người lớn bón sữa, bạn cảm thấy cực kì hạnh phúc", "assets": 0, "happy": 5, "health": 2, "smart":0, "appearance": 0},
-                  {"event": "Vị sữa hôm nay không hợp khẩu vị với bạn, bạn cố khóc nhưng vẫn bị ép uống", "assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0}
+                  {"event": "Trước bình sữa mẹ pha, bạn khóc và nũng nịu muốn được bón sữa. \n\nĐúng như ước muốn, bạn được người lớn bón sữa, bạn cảm thấy cực kì hạnh phúc", "assets": 0, "happy": 5, "health": 2, "smart":0, "appearance": 0},
+                  {"event": "Trước bình sữa mẹ pha, bạn khóc và nũng nịu muốn được bón sữa. \n\nBạn được bế lên bón sữa, tuy nhiên vị sữa hôm nay không hợp khẩu vị với bạn, bạn khóc nhưng vẫn bị ép uống", "assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0}
                 ]}
           ]}
     ]

@@ -1723,7 +1723,6 @@ drawable cook
 drawable custom_button_menu
 drawable custom_color
 drawable custom_dialog
-drawable custom_frame
 drawable custom_progressbar
 drawable cutlery
 drawable dalieu
@@ -2491,10 +2490,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout dialog_activity
 layout dialog_event
 layout dialog_event_result
-layout dialog_hoatdong
 layout dialog_notification
 layout dialog_out_of_money
 layout dialog_relationship

@@ -15,7 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Đây là tiêu đề"
-        android:textColor="#FF1500"
+        android:fontFamily="@font/anton"
+        android:textColor="@color/Blue"
         android:textSize="20sp"
         android:gravity="center_horizontal"/>
 
@@ -32,7 +33,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Đây là nội dung của sự kiện"
-            android:textSize="17dp"
+            android:textSize="17sp"
+            android:padding="5dp"
+            android:textColor="@color/Blue"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:textAlignment="center"/>
@@ -52,14 +55,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Hạnh phúc:" />
+                android:textColor="@color/Red"
+                android:text="Hạnh phúc:"
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/textviewResultHappy"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="-1" />
+                android:text="-1"
+                android:textStyle="bold"
+                android:textColor="#2EDD06"/>
 
         </LinearLayout>
         <LinearLayout
@@ -78,14 +85,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Sức khỏe:" />
+                android:text="Sức khỏe:"
+                android:textColor="@color/Red"
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/textviewResultHealth"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="-1" />
+                android:text="-1"
+                android:textColor="#2EDD06"
+                android:textStyle="bold"/>
 
         </LinearLayout>
         <LinearLayout
@@ -104,14 +115,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Thông minh:" />
+                android:text="Thông minh:"
+                android:textStyle="bold"
+                android:textColor="@color/Red"/>
             <TextView
                 android:id="@+id/textviewResultSmart"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="-1" />
+                android:text="-1"
+                android:textColor="#2EDD06"
+                android:textStyle="bold"/>
 
         </LinearLayout>
         <LinearLayout
@@ -130,14 +145,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Ngoại hình:" />
+                android:text="Ngoại hình:"
+                android:textColor="@color/Red"
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/textviewResultAppearance"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="-1" />
+                android:text="-1"
+                android:textColor="#2EDD06"
+                android:textStyle="bold"/>
 
         </LinearLayout>
         <LinearLayout
@@ -156,14 +175,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Tài khoản:" />
+                android:text="Tài khoản:"
+                android:textStyle="bold"
+                android:textColor="@color/Red"/>
             <TextView
                 android:id="@+id/textviewResultMoney"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="-1" />
+                android:text="-1"
+                android:textStyle="bold"
+                android:textColor="#2EDD06"/>
 
         </LinearLayout>
 
@@ -174,6 +197,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:text="Đồng ý"
+            android:textColor="@color/black"
             android:background="@drawable/custom_button_menu"
             app:backgroundTint="@null"
             android:layout_marginBottom="5dp"/>

@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.app.UiAutomation;
 import android.content.ComponentName;
@@ -383,18 +384,19 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @SuppressLint("ResourceAsColor")
     Button addButton(LinearLayout dialogCustom, String text)
     {
         Button btn = new Button(dialogCustom.getContext());
         btn.setText(text);
-        btn.setTextSize(12);
+        btn.setTextSize(15);
         btn.setBackgroundResource(R.drawable.custom_button_menu);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(800, ViewGroup.LayoutParams.WRAP_CONTENT);
         params.bottomMargin = 10;
         params.topMargin = 10;
         params.gravity = Gravity.CENTER_HORIZONTAL;
         btn.setLayoutParams(params);
-        btn.setTextColor(Color.WHITE);
+        btn.setTextColor( Color.argb(255,16,54,103));
         dialogCustom.addView(btn);
 
         return btn;
