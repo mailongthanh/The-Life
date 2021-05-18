@@ -44,7 +44,6 @@ public class BoiToan extends AppCompatActivity {
         random = new Random();
         arrBoi = new ArrayList<Food>();
         loadGame();
-
         lvBoi = (ListView) findViewById((R.id.listviewBoi));
         arrBoi = new ArrayList<>();
         arrBoi.add(new Food("Bói tử vi", "500 nghìn - Cuộc sống nở hoa hay bế tắc", R.drawable.tuvi, 500));

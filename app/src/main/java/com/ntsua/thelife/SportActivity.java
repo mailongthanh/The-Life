@@ -83,6 +83,7 @@ public class SportActivity extends AppCompatActivity {
                         try {
                             Activity.CreateDialog("jogging", "Thể thao");
                             MainActivity.saveGame.saveJogging(MainActivity.saveGame.getJogging() + 1);
+                            loadGame();
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -97,6 +98,7 @@ public class SportActivity extends AppCompatActivity {
                         try {
                             Activity.CreateDialog("exercise", "Thể thao");
                             MainActivity.saveGame.saveExercise(MainActivity.saveGame.getExercise() + 1);
+                            loadGame();
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
