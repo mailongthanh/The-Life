@@ -40,7 +40,6 @@ public class MakeUp extends AppCompatActivity {
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
         random = new Random();
-        arrMakeUp = new ArrayList<Food>();
         lvMakeUp = (ListView) findViewById((R.id.listviewMakeUp));
         loadGame();
         arrMakeUp = new ArrayList<>();

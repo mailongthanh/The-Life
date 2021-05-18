@@ -40,12 +40,10 @@ public class BoiToan extends AppCompatActivity {
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
-        lvBoi = (ListView) findViewById((R.id.listviewSports));
         random = new Random();
         arrBoi = new ArrayList<Food>();
-        loadGame();
         lvBoi = (ListView) findViewById((R.id.listviewBoi));
-        arrBoi = new ArrayList<>();
+        loadGame();
         arrBoi.add(new Food("Bói tử vi", "500 nghìn - Cuộc sống nở hoa hay bế tắc", R.drawable.tuvi, 500));
         arrBoi.add(new Food("Bói công danh sự nghiệp", "1 triệu - Sự nghiệp lên như diều gặp gió hay lận đận?", R.drawable.career, 1000));
         arrBoi.add(new Food("Bói tình duyên", "500 nghìn - Theo tình, tình chạy, đuổi tình, tình theo", R.drawable.handlove, 500));
