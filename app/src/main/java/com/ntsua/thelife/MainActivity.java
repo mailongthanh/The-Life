@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
     TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName, txtJob;
     SharedPreferences preferences;
     static public SaveGame saveGame;
+    static public  JSONArray arrFriend;
     JSONArray arrJsonAge;
     JSONObject jsonResult, jsonAllJob, jsonJob;
     String contentHtml;
@@ -75,29 +76,32 @@ public class MainActivity extends AppCompatActivity {
     long currentTime = 0;
     Toast backToast;
 
+    int REQUEST_CODE_INIT = 123;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         AnhXa();
         //Test
+        //startActivityForResult(new Intent(MainActivity.this,  CreateName.class), REQUEST_CODE_INIT);
+
         try {
-            if (saveGame.getDetailActivity().equals(""))
-                init("Name", "vn");
-            else loadGame();
-            readEvent();
-            readJob();
-            changeWork();
+            if (saveGame.getDetailActivity().equals("")) {
+                startActivityForResult(new Intent(MainActivity.this, CreateName.class), REQUEST_CODE_INIT);
+            }
+            else {
+                loadGame();
+                readEvent();
+                //Toast.makeText(this, "hể", Toast.LENGTH_SHORT).show();
+                readJob();
+                readFriend();
+                changeWork();
+            }
         } catch (JSONException e) {
+
             e.printStackTrace();
         }
-
-        //(R.drawable.jogging, "Hôm nay bạn đã chạy bộ quá nhiều rồi", MainActivity.this);
-        //SpannableString s = new SpannableString(txtContent.getText().toString());
-        //s.setSpan(new RelativeSizeSpan(2f), 0, 3, 0);
-        //txtContent.setText(saveGame.getDetailActivity());
-        //saveGame.saveDetailActivity(txtContent.getText().toString());
-
 
         ibtnAddAge.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -154,6 +158,8 @@ public class MainActivity extends AppCompatActivity {
     void doWork() throws JSONException {
         JSONArray arrJob = jsonJob.getJSONArray("work");
         dialogJob(arrJob);
+//        if (jsonJob == null)
+//            Toast.makeText(this, "null", Toast.LENGTH_SHORT).show();
     }
 
     void addAge() throws JSONException {
@@ -258,7 +264,8 @@ public class MainActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearHappy));
         } else {
-            txtHappy.setText(value + "");
+            String str = toString(value);
+            txtHappy.setText(str);
             prbHappy.setProgress(prbHappy.getProgress() + value);
             this.txtHappy.setText(prbHappy.getProgress() + "%");
         }
@@ -267,7 +274,8 @@ public class MainActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearHealth));
         } else {
-            txtHealth.setText(value + "");
+            String str = toString(value);
+            txtHealth.setText(str);
             prbHealth.setProgress(prbHealth.getProgress() + value);
             this.txtHealth.setText(prbHealth.getProgress() + "%");
         }
@@ -276,7 +284,8 @@ public class MainActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearSmart));
         } else {
-            txtSmart.setText(value + "");
+            String str = toString(value);
+            txtSmart.setText(str);
             prbSmart.setProgress(prbSmart.getProgress() + value);
             this.txtSmart.setText(prbSmart.getProgress() + "%");
         }
@@ -285,7 +294,8 @@ public class MainActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearAppearance));
         } else {
-            txtAppearance.setText(value + "");
+            String str = toString(value);
+            txtAppearance.setText(str);
             prbAppearance.setProgress(prbAppearance.getProgress() + value);
             this.txtAppearance.setText(prbAppearance.getProgress() + "%");
         }
@@ -294,7 +304,8 @@ public class MainActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearMoney));
         } else {
-            txtAssets.setText(value + "");
+            String str = toString(value);
+            txtAssets.setText(str);
             money += value;
             this.txtMoney.setText(money + " VND");
             saveGame.saveMoney(money);
@@ -320,6 +331,10 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        changeProgressBackground(prbAppearance);
+        changeProgressBackground(prbHappy);
+        changeProgressBackground(prbHealth);
+        changeProgressBackground(prbSmart);
 
         dialog.show();
     }
@@ -477,8 +492,24 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        JSONObject object = new JSONObject(jsonEvent);
-        arrJsonAge = object.getJSONArray("age");
+        arrJsonAge = new JSONArray(jsonEvent);
+    }
+
+    void readFriend() throws JSONException {
+        String jsonEvent = null;
+        try {
+            InputStream inputStream = getAssets().open("friend.json");
+            int size = inputStream.available();
+            byte[] buffer = new byte[size];
+            inputStream.read(buffer);
+            inputStream.close();
+            jsonEvent = new String(buffer, "UTF-8");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        arrFriend = new JSONArray(jsonEvent);
     }
 
     void readJob() throws JSONException {
@@ -525,6 +556,17 @@ public class MainActivity extends AppCompatActivity {
         saveGame = new SaveGame(preferences);
     }
 
+    void changeProgressBackground(ProgressBar pb)
+    {
+        int progress = pb.getProgress();
+        if (progress >= 80 )
+            pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar));
+        else if (progress<80 && progress > 30)
+            pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar_medium));
+        else pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar_low));
+        //Toast.makeText(this, "a", Toast.LENGTH_SHORT).show();
+    }
+
     public void gotoActivity(View view)
     {
         startActivity(new Intent(MainActivity.this, HoatDong.class));
@@ -564,6 +606,10 @@ public class MainActivity extends AppCompatActivity {
         txtName.setText(saveGame.getName());
         txtJob.setText(saveGame.getJob());
 
+        changeProgressBackground(prbAppearance);
+        changeProgressBackground(prbHappy);
+        changeProgressBackground(prbHealth);
+        changeProgressBackground(prbSmart);
     }
 
     void changeWork() throws JSONException {
@@ -576,10 +622,11 @@ public class MainActivity extends AppCompatActivity {
                 jsonJob = jsonAllJob.getJSONObject("student");
                 break;
         }
+
     }
 
     // init tam thoi
-    void init(String name, String country) throws JSONException {
+    void init(String name, String gender) throws JSONException {
         String json = null;
         try {
             InputStream inputStream = getAssets().open("parent.json");
@@ -593,10 +640,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         JSONObject object = new JSONObject(json);
-        JSONObject vn = object.getJSONObject("vi");
-        JSONArray arrFather = vn.getJSONArray("father");
-        JSONArray arrMother = vn.getJSONArray("mother");
-        JSONArray arrJob = vn.getJSONArray("job");
+        JSONArray arrFather = object.getJSONArray("father");
+        JSONArray arrMother = object.getJSONArray("mother");
+        JSONArray arrJob = object.getJSONArray("job");
         Random random = new Random();
 
         //Tao quan he Bo Me
@@ -624,7 +670,7 @@ public class MainActivity extends AppCompatActivity {
         Date date = Calendar.getInstance().getTime();
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
         contentHtml = "<h5> <font color=\"blue\">Tuổi 0</font></h5>" +
-                "Tôi tên " + name + "<br>" +
+                "Tôi tên " + name + " - " + gender + "<br>" +
                 "Sinh ngày " + format.format(date) + "<br>" +
                 "Bố tôi là " + fatherName + " - " +
                 arrJob.getString(random.nextInt(arrJob.length())) +
@@ -655,8 +701,12 @@ public class MainActivity extends AppCompatActivity {
 
         prbHealth.setProgress(100);
         prbHappy.setProgress(100);
-        prbSmart.setProgress(33);
+        prbSmart.setProgress(30);
         prbAppearance.setProgress(50);
+        changeProgressBackground(prbAppearance);
+        changeProgressBackground(prbHappy);
+        changeProgressBackground(prbHealth);
+        changeProgressBackground(prbSmart);
 
         txtAppearance.setText(prbAppearance.getProgress() + "%");
         txtHappy.setText(prbHappy.getProgress() + "%");
@@ -694,12 +744,41 @@ public class MainActivity extends AppCompatActivity {
         {
             backToast.cancel();
             this.finishAffinity();
-
         }
         else {
             backToast = Toast.makeText(this, "Ấn lần nữa để thoát", Toast.LENGTH_SHORT);
             backToast.show();
         }
         currentTime = System.currentTimeMillis();
+    }
+
+    String toString(int value)
+    {
+        String str = null;
+        if (value > 0)
+            str = "+ " + value;
+        else if (value < 0)
+            str = "- " + (-1*value);
+        //Toast.makeText(context, str, Toast.LENGTH_SHORT).show();
+        return str;
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if (requestCode == REQUEST_CODE_INIT && resultCode == RESULT_OK && data != null)
+        {
+            String name = data.getStringExtra("name");
+            String gender = data.getStringExtra("gender");
+            try {
+                init(name, gender);
+                readEvent();
+                readJob();
+                readFriend();
+                changeWork();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+        super.onActivityResult(requestCode, resultCode, data);
     }
 }

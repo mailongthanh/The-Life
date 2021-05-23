@@ -26,15 +26,16 @@
         <activity android:name=".SportActivity" />
         <activity android:name=".RelationShip" />
         <activity android:name=".FoodActivity" />
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".SelectGender"/>
-        <activity android:name=".CreateName">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SelectGender"/>
+        <activity android:name=".CreateName"/>
+
 
         <meta-data
             android:name="preloaded_fonts"

@@ -1,12 +1,22 @@
-{
-  "vi":[
+[
     {
       "name": "Thành mập",
-      "gender": "Bê đê"
+      "gender": "Bê đê",
+      "age": 20
     },
     {
       "name": "Mập Thành",
-      "gender": "Bê đê"
-    }
-  ]
-}
+      "gender": "Bê đê",
+      "age": 20
+    },
+  {
+    "name": "1",
+    "gender": "Bê đê",
+    "age": 20
+  },
+  {
+    "name": "2",
+    "gender": "Bê đê",
+    "age": 20
+  }
+]

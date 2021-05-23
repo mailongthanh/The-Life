@@ -1,5 +1,4 @@
 {
-  "vi": {
     "father": [
       "Nguyễn Hiếu Thành",
       "Nguyễn Văn An",
@@ -31,15 +30,4 @@
       "Nhân viên văn phòng",
       "Kinh doanh bất động sản"
     ]
-  },
-  "en": {
-    "father": [
-      "Nguyen Van A",
-      "Nguyen Van B"
-    ],
-    "mother": [
-      "Nguyen Thi A",
-      "Nguyen Thi B"
-    ]
-  }
 }

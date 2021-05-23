@@ -79,7 +79,8 @@ public class FoodActivity extends AppCompatActivity {
 
     public void gotoMainMenu(View view)
     {
-        startActivity(new Intent(FoodActivity.this, HoatDong.class));
+        //startActivity(new Intent(FoodActivity.this, HoatDong.class));
         overridePendingTransition(R.anim.enter, R.anim.exit);
+        onBackPressed();
     }
 }

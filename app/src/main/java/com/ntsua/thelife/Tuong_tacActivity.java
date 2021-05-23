@@ -263,8 +263,9 @@ public class Tuong_tacActivity extends AppCompatActivity {
 
     public void gotoRelationship(View view)
     {
-        startActivity(new Intent(Tuong_tacActivity.this, RelationShip.class));
+        //startActivity(new Intent(Tuong_tacActivity.this, RelationShip.class));
         overridePendingTransition(R.anim.enter, R.anim.exit);
+        onBackPressed();
     };
 
 }

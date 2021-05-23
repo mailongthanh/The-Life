@@ -50,7 +50,7 @@ public class BoiToan extends AppCompatActivity {
         adapter = new FoodAdapter(this, R.layout.food_line, arrBoi);
         lvBoi.setAdapter(adapter);
         jsonEvent = readEvent();
-        Activity = new ActivitiesEvent(jsonEvent,MainActivity.saveGame,BoiToan.this);
+        Activity = new ActivitiesEvent(jsonEvent, BoiToan.this);
         lvBoi.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -146,7 +146,8 @@ public class BoiToan extends AppCompatActivity {
 
     public void gotoMainMenu(View view)
     {
-        startActivity(new Intent(BoiToan.this, HoatDong.class));
+        //startActivity(new Intent(BoiToan.this, HoatDong.class));
         overridePendingTransition(R.anim.enter, R.anim.exit);
+        onBackPressed();
     }
 }

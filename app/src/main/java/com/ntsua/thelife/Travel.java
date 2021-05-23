@@ -47,7 +47,8 @@ public class Travel extends AppCompatActivity {
 
     public void gotoMainMenu(View view)
     {
-        startActivity(new Intent(Travel.this, HoatDong.class));
+        //startActivity(new Intent(Travel.this, HoatDong.class));
         overridePendingTransition(R.anim.enter, R.anim.exit);
+        onBackPressed();
     }
 }

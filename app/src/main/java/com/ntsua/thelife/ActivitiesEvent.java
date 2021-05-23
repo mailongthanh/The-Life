@@ -11,6 +11,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -19,24 +20,27 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.RandomAccessFile;
+import java.util.List;
 import java.util.Random;
 
 public class ActivitiesEvent {
     JSONObject jsonevent;
-    SaveGame savegame;
     Random random;
     Context context;
-    public ActivitiesEvent(String Json, SaveGame savegame, Context context) {
+    List<QuanHe> arrQuanHe;
+
+    public ActivitiesEvent(String Json, Context context) {
         try {
             jsonevent = new JSONObject(Json);
-            this.savegame = savegame;
             this.context = context;
+            arrQuanHe = MainActivity.saveGame.getRelationship();
         } catch (JSONException e) {
             e.printStackTrace();
         };
+
         random = new Random();
     }
-    void CreateDialog(String name,String titleEvent) throws JSONException {
+    public void CreateDialog(String name,String titleEvent) throws JSONException {
         JSONArray arrEvent = jsonevent.getJSONArray(name);
         AddDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())),titleEvent);
     }
@@ -63,10 +67,10 @@ public class ActivitiesEvent {
         String event = object.getString("event");
         txtContent.setText(event);
 
-        int happy = savegame.getHappy();
-        int health = savegame.getHealth();
-        int smart = savegame.getSmart();
-        int appearance = savegame.getAppearance();
+        int happy = MainActivity.saveGame.getHappy();
+        int health = MainActivity.saveGame.getHealth();
+        int smart = MainActivity.saveGame.getSmart();
+        int appearance = MainActivity.saveGame.getAppearance();
 
         int value = 0;
         value = object.getInt("happy");
@@ -74,16 +78,20 @@ public class ActivitiesEvent {
         {
             DialogResult.removeView(dialog.findViewById(R.id.linearHappy));
         } else {
-            txtHappy.setText(value + "");
+
+            String str = toString(value);
+
+            txtHappy.setText(str);
             happy += value;
         }
 
-        value =object.getInt("health");
+        value = object.getInt("health");
         if(value == 0)
         {
             DialogResult.removeView(dialog.findViewById(R.id.linearHealth));
         } else {
-            txtHealth.setText(value + "");
+            String str = toString(value);
+            txtHealth.setText(str);
             health += value;
         }
 
@@ -92,7 +100,8 @@ public class ActivitiesEvent {
         {
             DialogResult.removeView(dialog.findViewById(R.id.linearSmart));
         } else {
-            txtSmart.setText(value + "");
+            String str = toString(value);
+            txtSmart.setText(str);
             smart += value;
         }
 
@@ -101,7 +110,8 @@ public class ActivitiesEvent {
         {
             DialogResult.removeView(dialog.findViewById(R.id.linearAppearance));
         } else {
-            txtAppearance.setText(value + "");
+            String str = toString(value);
+            txtAppearance.setText(str);
             appearance += value;
         }
 
@@ -110,15 +120,18 @@ public class ActivitiesEvent {
         {
             DialogResult.removeView(dialog.findViewById(R.id.linearMoney));
         } else {
-            txtAssets.setText(String.format( "%,d",value*1000));
-            savegame.saveMoney(savegame.getMoney() + value);
+            String money = String.format( "%,d", value*1000);
+            if (value > 0)
+                money = "+" + money;
+            txtAssets.setText(money);
+            MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() + value);
             txtAssets.setText("$" + value);
         }
 
-        savegame.savePlayerInfo(happy,health,smart,appearance);
-        String contentHTML = savegame.getDetailActivity();
+        MainActivity.saveGame.savePlayerInfo(happy,health,smart,appearance);
+        String contentHTML = MainActivity.saveGame.getDetailActivity();
         contentHTML += event + "<br>";
-        savegame.saveDetailActivity(contentHTML);
+        MainActivity.saveGame.saveDetailActivity(contentHTML);
 
         btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,5 +141,16 @@ public class ActivitiesEvent {
         });
 
         dialog.show();
+    }
+
+    String toString(int value)
+    {
+        String str = null;
+        if (value > 0)
+            str = "+ " + value;
+        else if (value < 0)
+            str = "- " + (-1*value);
+        //Toast.makeText(context, str, Toast.LENGTH_SHORT).show();
+        return str;
     }
 }

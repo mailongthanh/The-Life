@@ -1724,6 +1724,8 @@ drawable custom_button_menu
 drawable custom_color
 drawable custom_dialog
 drawable custom_progressbar
+drawable custom_progressbar_low
+drawable custom_progressbar_medium
 drawable cutlery
 drawable dalieu
 drawable danang
@@ -2042,6 +2044,7 @@ id easeIn
 id easeInOut
 id easeOut
 id edit_query
+id editextName
 id elastic
 id end
 id endToStart

@@ -44,7 +44,8 @@ public class Playground extends AppCompatActivity {
 
     public void gotoMainMenu(View view)
     {
-        startActivity(new Intent(Playground.this, HoatDong.class));
+        //startActivity(new Intent(Playground.this, HoatDong.class));
         overridePendingTransition(R.anim.enter, R.anim.exit);
+        onBackPressed();
     }
 }

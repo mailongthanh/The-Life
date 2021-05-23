@@ -46,7 +46,8 @@ public class Cooking extends AppCompatActivity {
 
     public void gotoMainMenu(View view)
     {
-        startActivity(new Intent(Cooking.this, HoatDong.class));
+        //startActivity(new Intent(Cooking.this, HoatDong.class));
         overridePendingTransition(R.anim.enter, R.anim.exit);
+        onBackPressed();
     }
 }

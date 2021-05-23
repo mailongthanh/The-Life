@@ -69,10 +69,12 @@ public class SportActivity extends AppCompatActivity {
         adapter = new FoodAdapter(this, R.layout.food_line, arrSport);
         lvSport.setAdapter(adapter);
         jsonEvent = readEvent();
-        Activity = new ActivitiesEvent(jsonEvent,MainActivity.saveGame,SportActivity.this);
+        Activity = new ActivitiesEvent(jsonEvent ,SportActivity.this);
+        //Toast.makeText(SportActivity.this, "hey", Toast.LENGTH_SHORT).show();
         lvSport.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
                 if (arrSport.get(position).getFoodName() == "Chạy bộ" )
                 {
                     if (MainActivity.saveGame.getJogging() < 3) {
@@ -324,8 +326,9 @@ public class SportActivity extends AppCompatActivity {
     public void gotoMainMenu(View view)
     {
         //startActivity(new Intent(SportActivity.this, HoatDong.class));
-        finish();
+        //finish();
         overridePendingTransition(R.anim.enter, R.anim.exit);
+        onBackPressed();
     }
 
     @Override

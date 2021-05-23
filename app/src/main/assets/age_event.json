@@ -1,5 +1,4 @@
-{
- "age": [
+[
     [],
     [
       {"title":"Sức khoẻ", "event": "Hôm nay bố mẹ bạn quyết định đưa bạn vào bệnh viện địa phương để tiêm ngừa. \n \nĐứng trước mũi tiêm bạn sẽ làm gì?", "selection": true,
@@ -53,6 +52,4 @@
                 ]}
           ]}
     ]
-  ]
-
-}
+]
