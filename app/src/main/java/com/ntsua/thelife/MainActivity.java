@@ -68,7 +68,8 @@ public class MainActivity extends AppCompatActivity {
     TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName, txtJob;
     SharedPreferences preferences;
     static public SaveGame saveGame;
-    static public  JSONArray arrFriend;
+    static public  ArrayList<QuanHe> arrFriend;
+    ArrayList<QuanHe> arrRelationship;
     JSONArray arrJsonAge;
     JSONObject jsonResult, jsonAllJob, jsonJob;
     String contentHtml;
@@ -102,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
 
             e.printStackTrace();
         }
-
         ibtnAddAge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
+        //createNotification(R.drawable.holding_hands, "Bạn đã có bằng tiếng anh rồi Bạn đã có bằng tiếng anh rồi Bạn đã có bằng tiếng anh rồi", this);
     }
 
     void dialogJob(JSONArray arrJob) throws JSONException {
@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
                         dialog.dismiss();
                         //saveGame.saveSkill(saveGame.getSkill() + jsonResult.getInt("skill"));
                         //Toast.makeText(MainActivity.this, "" + saveGame.getSkill(), Toast.LENGTH_SHORT).show();
-                        dialogEventResult(object.getString("content"));
+                        dialogEventResult(object.getString("content"), false);
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -166,6 +166,7 @@ public class MainActivity extends AppCompatActivity {
         //them tuoi
         int age = saveGame.getAge() + 1;
 
+
         //lay su kien tuoi
         JSONArray arrAge = arrJsonAge.getJSONArray(age);
         Random random = new Random();
@@ -183,8 +184,8 @@ public class MainActivity extends AppCompatActivity {
             dialogEvent(object, isSelection, title, event);
         else {
             jsonResult = object[0];
-            initNewAge();
-            dialogEventResult(title);
+            addAgeHTML(age);
+            dialogEventResult(title, true);
         }
     }
 
@@ -194,11 +195,10 @@ public class MainActivity extends AppCompatActivity {
         if (!isSelection[0]) {
             JSONArray arr = jsonResult.getJSONArray("event");
             jsonResult = arr.getJSONObject(new Random().nextInt(arr.length()));
-            //Luu tuoi
-            initNewAge();
-            //saveGame.saveAge(age);
+            int age = saveGame.getAge() + 1;
+            addAgeHTML(age);
             //Tao dialog hien thi ket qua cua event
-            dialogEventResult(title);
+            dialogEventResult(title, true);
             return;
         }
 
@@ -232,7 +232,7 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
     }
 
-    void dialogEventResult(String title) throws JSONException {
+    void dialogEventResult(String title, boolean isAgeEvent) throws JSONException {
         Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
@@ -325,7 +325,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 dialog.dismiss();
                 try {
-                    jobEvent();
+                    if (isAgeEvent)
+                        initNewAge();
+                    else jobEvent();
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -346,7 +348,7 @@ public class MainActivity extends AppCompatActivity {
             jsonResult = arr.getJSONObject(new Random().nextInt(arr.length()));
             saveGame.saveSalary(jsonResult.getInt("salary"));
             //Tao dialog hien thi ket qua cua event
-            dialogEventResult(title);
+            dialogEventResult(title, false);
             return;
         }
 
@@ -391,7 +393,7 @@ public class MainActivity extends AppCompatActivity {
                     dialogJobEvent("Công việc");
                 } else {
                     saveGame.saveSalary(jsonResult.getInt("salary"));
-                    dialogEventResult("Công việc");
+                    dialogEventResult("Công việc", false);
                     //Toast.makeText(MainActivity.this, "error", Toast.LENGTH_SHORT).show();
                 }
                 break;
@@ -447,7 +449,7 @@ public class MainActivity extends AppCompatActivity {
         return dialog;
     }
 
-    public static void createNotification(int image, String content, Context context)
+    public static Dialog createNotification(int image, String content, Context context)
     {
         //Tao dialog
         Dialog dialog = new Dialog(context);
@@ -468,6 +470,11 @@ public class MainActivity extends AppCompatActivity {
         txtContent.setText(content);
         imageView.setImageResource(image);
 
+        //ViewGroup.LayoutParams layoutParams = txtContent.getLayoutParams();
+        //LinearLayout.LayoutParams paramsImage = new LinearLayout.LayoutParams(0, layoutParams.height);
+        //imageView.setLayoutParams(paramsImage);
+
+
         btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -476,6 +483,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         dialog.show();
+
+        return dialog;
     }
 
     void readEvent() throws JSONException {
@@ -509,7 +518,20 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        arrFriend = new JSONArray(jsonEvent);
+        arrFriend = new ArrayList<>();
+        JSONArray jsonFriend;
+        jsonFriend = new JSONArray(jsonEvent);
+
+        for (int i=0; i<jsonFriend.length(); i++)
+        {
+            JSONObject object = jsonFriend.getJSONObject(i);
+            String name = object.getString("name");
+            int age = saveGame.getAge() + (new Random().nextInt(5) - 2);
+            String avatar = object.getString("avatar");
+
+            arrFriend.add(new QuanHe(name, age, new Random().nextInt(30) + 30,
+                    "Bạn bè", getResources().getIdentifier(avatar, "drawable", this.getPackageName())));
+        }
     }
 
     void readJob() throws JSONException {
@@ -526,57 +548,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         jsonAllJob = new JSONObject(jsonEvent);
-    }
-
-    private void AnhXa() {
-        btnRelationship = (Button) findViewById(R.id.buttonRelationship);
-        btnActivity = (Button) findViewById(R.id.buttonActivity);
-
-        txtContent = findViewById(R.id.textViewDetail);
-        txtAppearance = findViewById(R.id.txtAppearance);
-        txtHappy = findViewById(R.id.txtHappy);
-        txtSmart = findViewById(R.id.txtSmart);
-        txtHealth = findViewById(R.id.txtHealth);
-        txtMoney = findViewById(R.id.textviewMoney);
-        txtName = findViewById(R.id.textviewName);
-        txtJob = findViewById(R.id.textviewJob);
-
-        prbAppearance = findViewById(R.id.progressbarAppearance);
-        prbHappy = findViewById(R.id.progressbarHappy);
-        prbHealth = findViewById(R.id.progressbarHealth);
-        prbSmart = findViewById(R.id.progressbarSmart);
-
-        ibtnAddAge = findViewById(R.id.imagebuttonAddAge);
-        btnAssets = findViewById(R.id.buttonAssets);
-        btnWork = findViewById(R.id.buttonInfant);
-        scrollView = findViewById(R.id.scrollViewText);
-
-
-        preferences = getSharedPreferences("data", MODE_PRIVATE);
-        saveGame = new SaveGame(preferences);
-    }
-
-    void changeProgressBackground(ProgressBar pb)
-    {
-        int progress = pb.getProgress();
-        if (progress >= 80 )
-            pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar));
-        else if (progress<80 && progress > 30)
-            pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar_medium));
-        else pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar_low));
-        //Toast.makeText(this, "a", Toast.LENGTH_SHORT).show();
-    }
-
-    public void gotoActivity(View view)
-    {
-        startActivity(new Intent(MainActivity.this, HoatDong.class));
-        overridePendingTransition(R.anim.enter, R.anim.exit);
-    }
-
-    public void gotoRelationship(View view)
-    {
-        startActivity(new Intent(MainActivity.this, RelationShip.class));
-        overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 
     void loadGame()
@@ -605,6 +576,7 @@ public class MainActivity extends AppCompatActivity {
         txtMoney.setText(money + "VND");
         txtName.setText(saveGame.getName());
         txtJob.setText(saveGame.getJob());
+        arrRelationship = saveGame.getRelationship();
 
         changeProgressBackground(prbAppearance);
         changeProgressBackground(prbHappy);
@@ -658,13 +630,16 @@ public class MainActivity extends AppCompatActivity {
         arrRelationship.add(mother);
         //Them cho vui
         arrRelationship.add(new QuanHe("Trần Thanh Vũ", 19, 50, "Bạn bè",R.drawable.boy));
-        arrRelationship.add(new QuanHe("Nguyễn Thiện Sua", 19, 2, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Nguyễn Thiện Sua", 19, 50, "Bạn bè",R.drawable.boy));
         arrRelationship.add(new QuanHe("Nguyễn Hiếu Nghĩa", 19, 50, "Bạn bè",R.drawable.boy));
         arrRelationship.add(new QuanHe("Mai Long Thành", 19, 80, "Bạn bè",R.drawable.boy));
-        arrRelationship.add(new QuanHe("Võ Thành Phát", 19, 2, "Bạn bè",R.drawable.boy));
-        arrRelationship.add(new QuanHe("Hoàng Nhật Tiến", 19, 0, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Võ Thành Phát", 19, 20, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Hoàng Nhật Tiến", 19, 50, "Bạn bè",R.drawable.boy));
 
         saveGame.saveRelationship(arrRelationship);
+        this.arrRelationship = arrRelationship;
+        saveGame.saveNewFriendInYear(0);
+        saveGame.saveNumberOfFriends(0);
 
         //Tao ngay sinh
         Date date = Calendar.getInstance().getTime();
@@ -717,13 +692,52 @@ public class MainActivity extends AppCompatActivity {
 
     void initNewAge()
     {
+        //Toast.makeText(this, "new age", Toast.LENGTH_SHORT).show();
         int age = saveGame.getAge() + 1;
+        //saveGame.saveAge(age);
         saveGame.saveExercise(0);
         saveGame.saveJogging(0);
         saveGame.saveJogging(0);
-        addAgeHTML(age);
+        saveGame.saveNewFriendInYear(0);
+
+
+        for (int i=0; i<arrRelationship.size(); i++)
+        {
+            QuanHe friend = arrRelationship.get(i);
+            friend.setTuoi(friend.getTuoi() + 1); // Them tuoi
+            if (friend.getQuanHe() == "Bạn bè")
+            {
+                friend.setDoThanMat(friend.getDoThanMat() - 20); //Giam moi quan he
+            }
+        }
+
+        saveGame.saveRelationship(arrRelationship);
+        dialogLostFriend(0);
     }
 
+    void dialogLostFriend(int index) {
+        if (index == arrRelationship.size()) {
+            saveGame.saveRelationship(arrRelationship);
+            return;
+        }
+        QuanHe friend = arrRelationship.get(index);
+        if (friend.getDoThanMat() <= 0) {
+            Dialog dialog = createNotification(R.drawable.cancel, "Tình bạn giữa bạn và " + friend.getHoten() + " đã rạn nứt.", this);
+            Button btnOke       = dialog.findViewById(R.id.buttonNotificationtOke);
+            btnOke.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    arrRelationship.remove(index);
+                    saveGame.saveNumberOfFriends(saveGame.getNumberOfFriends() - 1);
+                    dialog.dismiss();
+                    dialogLostFriend(index);
+                }
+            });
+        }
+        else {
+            dialogLostFriend(index + 1);
+        }
+    }
     void addAgeHTML(int age)
     {
         contentHtml += "<h5> <font color=\"blue\">Tuổi " + age + "</font></h5>";
@@ -780,5 +794,56 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    void changeProgressBackground(ProgressBar pb)
+    {
+        int progress = pb.getProgress();
+        if (progress >= 80 )
+            pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar));
+        else if (progress<80 && progress > 30)
+            pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar_medium));
+        else pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar_low));
+        //Toast.makeText(this, "a", Toast.LENGTH_SHORT).show();
+    }
+
+    private void AnhXa() {
+        btnRelationship = (Button) findViewById(R.id.buttonRelationship);
+        btnActivity = (Button) findViewById(R.id.buttonActivity);
+
+        txtContent = findViewById(R.id.textViewDetail);
+        txtAppearance = findViewById(R.id.txtAppearance);
+        txtHappy = findViewById(R.id.txtHappy);
+        txtSmart = findViewById(R.id.txtSmart);
+        txtHealth = findViewById(R.id.txtHealth);
+        txtMoney = findViewById(R.id.textviewMoney);
+        txtName = findViewById(R.id.textviewName);
+        txtJob = findViewById(R.id.textviewJob);
+
+        prbAppearance = findViewById(R.id.progressbarAppearance);
+        prbHappy = findViewById(R.id.progressbarHappy);
+        prbHealth = findViewById(R.id.progressbarHealth);
+        prbSmart = findViewById(R.id.progressbarSmart);
+
+        ibtnAddAge = findViewById(R.id.imagebuttonAddAge);
+        btnAssets = findViewById(R.id.buttonAssets);
+        btnWork = findViewById(R.id.buttonInfant);
+        scrollView = findViewById(R.id.scrollViewText);
+
+
+        preferences = getSharedPreferences("data", MODE_PRIVATE);
+        saveGame = new SaveGame(preferences);
+    }
+
+    public void gotoActivity(View view)
+    {
+        startActivity(new Intent(MainActivity.this, HoatDong.class));
+        overridePendingTransition(R.anim.enter, R.anim.exit);
+    }
+
+    public void gotoRelationship(View view)
+    {
+        startActivity(new Intent(MainActivity.this, RelationShip.class));
+        overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 }

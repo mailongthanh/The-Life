@@ -33,17 +33,14 @@
                 android:background="@null"
                 android:src="@drawable/menu" />
 
-
             <ImageView
                 android:layout_width="117dp"
                 android:layout_height="30dp"
                 android:layout_centerInParent="true"
-                android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginTop="13dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="13dp"
                 android:fontFamily="@font/anton"
                 android:src="@drawable/thelife"
                 android:textAlignment="center"
@@ -55,7 +52,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:background="#EEEEEE"
-            android:padding="10dp">
+            android:padding="8dp">
 
             <ImageView
                 android:id="@+id/imageAvatar"
@@ -69,7 +66,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_toRightOf="@id/imageAvatar"
-                android:text="Name of player" />
+                android:text="Name of player"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/Blue"/>
 
             <TextView
                 android:id="@+id/textviewJob"

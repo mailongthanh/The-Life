@@ -232,10 +232,29 @@ public class Tuong_tacActivity extends AppCompatActivity {
         btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (pbqhanhe.getProgress() <= 0)
+                    breakFriend();
                 dialog.dismiss();
             }
         });
 
+        dialog.show();
+    }
+
+    void breakFriend()
+    {
+        Dialog dialog = MainActivity.createNotification(R.drawable.cancel, "Tình bạn giữa bạn và " + txthoten.getText() + " đã đổ vỡ.", this);
+        Button btnOke  = dialog.findViewById(R.id.buttonNotificationtOke);
+        ArrayList<QuanHe> arrQuanHe = MainActivity.saveGame.getRelationship();
+        btnOke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                arrQuanHe.remove(position);
+                MainActivity.saveGame.saveNumberOfFriends(MainActivity.saveGame.getNumberOfFriends() - 1);
+                MainActivity.saveGame.saveRelationship(arrQuanHe);
+                onBackPressed();
+            }
+        });
         dialog.show();
     }
 

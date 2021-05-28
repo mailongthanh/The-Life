@@ -9,6 +9,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +21,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.RandomAccessFile;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -27,7 +29,7 @@ public class ActivitiesEvent {
     JSONObject jsonevent;
     Random random;
     Context context;
-    List<QuanHe> arrQuanHe;
+    ArrayList<QuanHe> arrQuanHe;
 
     public ActivitiesEvent(String Json, Context context) {
         try {
@@ -137,10 +139,86 @@ public class ActivitiesEvent {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
+                if (isNewFriend())
+                {
+                    newFriend();
+                }
             }
         });
 
         dialog.show();
+    }
+
+    boolean isNewFriend()
+    {
+        int friend = new Random().nextInt(10);
+        if (friend < 3 &&
+                MainActivity.saveGame.getNumberOfFriends() < MainActivity.arrFriend.size() &&
+        MainActivity.saveGame.getNewFriendInYear() < 3) // Khả năng có bạn mới là 30% :D
+            return true;
+        return false;
+    }
+
+    void newFriend()
+    {
+        Dialog dialog = new Dialog(context);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.setContentView(R.layout.dialog_new_friend);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        //Anh xa
+        TextView txtName = dialog.findViewById(R.id.textviewFriendName);
+        TextView txtAge = dialog.findViewById(R.id.textviewFriendAge);
+        ImageView imgAvatar = dialog.findViewById(R.id.imageViewNewFriend);
+        Button btnAccept = dialog.findViewById(R.id.buttonDialogFriendAccept);
+        Button btnCancel = dialog.findViewById(R.id.buttonDialogFriendCancel);
+
+        QuanHe friend = whoIsNewFriend();
+
+        txtName.setText(friend.getHoten());
+        txtAge.setText(friend.getTuoi() +" Tuổi");
+        imgAvatar.setImageResource(friend.getHinhAnh());
+
+        btnAccept.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                arrQuanHe.add(friend);
+                MainActivity.saveGame.saveRelationship(arrQuanHe);
+                MainActivity.createNotification(friend.getHinhAnh(),
+                        "Bạn đã đồng ý kết bạn với " + friend.getHoten(),
+                        context);
+                MainActivity.saveGame.saveNewFriendInYear(MainActivity.saveGame.getNewFriendInYear() + 1);
+                MainActivity.saveGame.saveNumberOfFriends(MainActivity.saveGame.getNumberOfFriends() + 1);
+                dialog.dismiss();
+            }
+        });
+
+        btnCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainActivity.createNotification(friend.getHinhAnh(),
+                        "Bạn đã từ chối kết bạn với " + friend.getHoten(),
+                        context);
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+    }
+
+    QuanHe whoIsNewFriend() // random ra nguoi ban moi (Nguoi ay la ai ?)
+    {
+        QuanHe friend = null;
+        Random random = new Random();
+
+        do {
+            int index = random.nextInt(MainActivity.arrFriend.size());
+            friend = MainActivity.arrFriend.get(index);
+        }
+        while (arrQuanHe.indexOf(friend) != -1);
+
+        return friend;
     }
 
     String toString(int value)
@@ -150,7 +228,7 @@ public class ActivitiesEvent {
             str = "+ " + value;
         else if (value < 0)
             str = "- " + (-1*value);
-        //Toast.makeText(context, str, Toast.LENGTH_SHORT).show();
+
         return str;
     }
 }

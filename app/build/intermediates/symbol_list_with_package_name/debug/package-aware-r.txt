@@ -1974,6 +1974,8 @@ id buttonDialogEventdiamond
 id buttonDialogEventdragon
 id buttonDialogEventsnake
 id buttonDialogEventsnow
+id buttonDialogFriendAccept
+id buttonDialogFriendCancel
 id buttonDialogRelationship_Oke
 id buttonInfant
 id buttonNotificationtOke
@@ -2089,6 +2091,7 @@ id imageAvatarA
 id imageButtonMenu
 id imageCrime
 id imageFood
+id imageViewNewFriend
 id imagebuttonAddAge
 id imageviewFoodBack
 id imageviewHoatDongBack
@@ -2335,6 +2338,8 @@ id textviewDialogEventTitle
 id textviewDialogRelationshipContent
 id textviewDialogRelationshipTitle
 id textviewFoodName
+id textviewFriendAge
+id textviewFriendName
 id textviewJob
 id textviewMoney
 id textviewMqhA
@@ -2495,6 +2500,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_event
 layout dialog_event_result
+layout dialog_new_friend
 layout dialog_notification
 layout dialog_out_of_money
 layout dialog_relationship

@@ -10,6 +10,7 @@ public class Food {
         this.foodName = foodName;
         this.description = description;
         this.image = image;
+        this.price = price;
     }
 
     public String getFoodName() {

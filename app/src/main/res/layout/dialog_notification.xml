@@ -27,30 +27,31 @@
         android:padding="5dp">
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:layout_margin="3dp"
+            android:orientation="horizontal"
             android:weightSum="10">
 
             <ImageView
-                android:layout_weight="2"
                 android:id="@+id/imageviewNotification"
+                android:layout_weight="2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/jogging" />
+                android:src="@drawable/jogging"
+                android:scaleType="fitCenter"/>
 
             <TextView
-                android:layout_weight="8"
                 android:id="@+id/textviewNotificationContent"
+                android:layout_weight="8"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:gravity="center"
                 android:text=" Nội dung thông báhôdung thông "
                 android:textColor="@color/Blue"
-                android:textSize="16sp"
-                android:gravity="center"/>
+                android:textSize="16sp" />
         </LinearLayout>
 
         <Button

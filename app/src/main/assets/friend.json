@@ -1,22 +1,26 @@
 [
     {
-      "name": "Thành mập",
-      "gender": "Bê đê",
-      "age": 20
+      "name": "Nguyễn Thiện Sua",
+      "avatar": "boy"
     },
     {
-      "name": "Mập Thành",
-      "gender": "Bê đê",
-      "age": 20
+      "name": "Mai Long Thành",
+      "avatar": "girl"
     },
   {
-    "name": "1",
-    "gender": "Bê đê",
-    "age": 20
+    "name": "Nguyễn Thanh Vũ",
+    "avatar": "boy"
   },
   {
-    "name": "2",
-    "gender": "Bê đê",
-    "age": 20
+    "name": "Nguyễn Hiếu Nghĩa",
+    "avatar": "boy"
+  },
+  {
+    "name": "Hoàng Nhật Tiến",
+    "avatar": "boy"
+  },
+  {
+    "name": "Võ Thành Phát",
+    "avatar": "boy"
   }
 ]
