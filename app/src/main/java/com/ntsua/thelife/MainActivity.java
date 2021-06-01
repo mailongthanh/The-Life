@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.app.LauncherActivity;
 import android.app.UiAutomation;
 import android.content.ComponentName;
 import android.content.Context;
@@ -34,6 +35,7 @@ import android.widget.DatePicker;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -100,7 +102,6 @@ public class MainActivity extends AppCompatActivity {
                 changeWork();
             }
         } catch (JSONException e) {
-
             e.printStackTrace();
         }
         ibtnAddAge.setOnClickListener(new View.OnClickListener() {
@@ -124,6 +125,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         //createNotification(R.drawable.holding_hands, "Bạn đã có bằng tiếng anh rồi Bạn đã có bằng tiếng anh rồi Bạn đã có bằng tiếng anh rồi", this);
+
+        dialogUniversity();
+
     }
 
     void dialogJob(JSONArray arrJob) throws JSONException {
@@ -166,6 +170,10 @@ public class MainActivity extends AppCompatActivity {
         //them tuoi
         int age = saveGame.getAge() + 1;
 
+        if (age == 18)
+        {
+            dialogUniversity();
+        }
 
         //lay su kien tuoi
         JSONArray arrAge = arrJsonAge.getJSONArray(age);
@@ -805,6 +813,47 @@ public class MainActivity extends AppCompatActivity {
             pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar_medium));
         else pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar_low));
         //Toast.makeText(this, "a", Toast.LENGTH_SHORT).show();
+    }
+
+    void dialogUniversity()
+    {
+        Dialog dialog = new Dialog(this);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.setContentView(R.layout.dialog_university);
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogResultAnimation;
+
+        //Anh xa
+        ListView lvUni = dialog.findViewById(R.id.listViewUni);
+        ArrayList<University> arrUniversity = new ArrayList<>();
+
+        arrUniversity.add(new University(R.drawable.angiang, "Đại học An Giang", 40));
+        arrUniversity.add(new University(R.drawable.uit, "Đại học Công nghệ Thông tin", 60));
+        arrUniversity.add(new University(R.drawable.fpt, "Đại học FPT", 40));
+        arrUniversity.add(new University(R.drawable.bachkhoa, "Đại học Bách Khoa", 60));
+        arrUniversity.add(new University(R.drawable.hoasen, "Đại học Hoa Sen", 50));
+        arrUniversity.add(new University(R.drawable.yduoc, "Đại học Y Dược", 55));
+        arrUniversity.add(new University(R.drawable.cantho, "Đại học Cần Thơ", 45));
+        arrUniversity.add(new University(R.drawable.rmit, "Đại học RMIT", 55));
+        arrUniversity.add(new University(R.drawable.ngoaithuong, "Đại học Ngoại thương", 55));
+        arrUniversity.add(new University(R.drawable.kinhte, "Đại học Kinh tế", 55));
+        arrUniversity.add(new University(R.drawable.supham, "Đại học Sư phạm", 45));
+        arrUniversity.add(new University(R.drawable.suphamkithuat, "Đại học Sư phạm Kĩ thuật", 55));
+        arrUniversity.add(new University(R.drawable.tonducthang, "Đại học Tôn Đức Thắng", 55));
+
+        UniversityAdapter adapter = new UniversityAdapter(this, R.layout.university_line, arrUniversity);
+        lvUni.setAdapter(adapter);
+
+//        for (int i=0; i<5; i++)
+//        {
+//            if (arrUniversity.get(i).getScore() < 55)
+//            {
+//                lvUni.getChildAt(i).setBackgroundColor(Color.RED);//R.drawable.list_item_unable);
+//            }
+//        }
+
+        dialog.show();
     }
 
     private void AnhXa() {

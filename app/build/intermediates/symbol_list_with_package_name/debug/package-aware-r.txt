@@ -1682,11 +1682,13 @@ drawable addage
 drawable ailatrieuphu
 drawable alcohol
 drawable america
+drawable angiang
 drawable appearance
 drawable asset
 drawable assualt
 drawable avd_hide_password
 drawable avd_show_password
+drawable bachkhoa
 drawable back
 drawable badminton
 drawable banhxeo
@@ -1713,6 +1715,7 @@ drawable bubble_tea
 drawable bunbo
 drawable cancel
 drawable cannabis
+drawable cantho
 drawable career
 drawable carrobber
 drawable casino
@@ -1753,6 +1756,7 @@ drawable fitness
 drawable foot
 drawable football
 drawable fortunetelling
+drawable fpt
 drawable fruits
 drawable genderselect_button
 drawable girl
@@ -1765,6 +1769,7 @@ drawable happy
 drawable heartbeat
 drawable hero
 drawable hiking
+drawable hoasen
 drawable holding_hands
 drawable hongkong
 drawable hospital
@@ -1778,10 +1783,12 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable insult
 drawable jogging
+drawable kinhte
 drawable knife
 drawable korea
 drawable library
 drawable life_insurance
+drawable list_item_unable
 drawable list_selector
 drawable lollipop
 drawable lottery
@@ -1814,6 +1821,7 @@ drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable ngoaithuong
 drawable noodle
 drawable notification_action_background
 drawable notification_bg
@@ -1839,6 +1847,7 @@ drawable psychiatrist
 drawable racing
 drawable restaurant
 drawable rice_bowl
+drawable rmit
 drawable robber
 drawable rowing
 drawable salad
@@ -1852,6 +1861,8 @@ drawable sperm
 drawable sport
 drawable startup
 drawable steam
+drawable supham
+drawable suphamkithuat
 drawable surfing
 drawable sushi
 drawable tattoo
@@ -1860,15 +1871,18 @@ drawable test_custom_background
 drawable thailand
 drawable thanksgiving
 drawable thelife
+drawable tonducthang
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable travel
 drawable triangle
 drawable tuvi
+drawable uit
 drawable volleyball
 drawable vovinam
 drawable vungtau
 drawable wax
+drawable yduoc
 drawable yoga
 font anton
 id ALT
@@ -2097,6 +2111,7 @@ id imageviewFoodBack
 id imageviewHoatDongBack
 id imageviewNotification
 id imageviewSportBack
+id imageviewUni
 id imvQuanHe
 id info
 id invisible
@@ -2128,6 +2143,7 @@ id linearRelationship
 id linearSmart
 id linearSmartRelationship
 id listMode
+id listViewUni
 id list_item
 id listviewBoi
 id listviewCooking
@@ -2361,6 +2377,9 @@ id textviewResultHealth
 id textviewResultMoney
 id textviewResultSmart
 id textviewTitle
+id textviewUni
+id textviewUniContent
+id textviewUniTitle
 id time
 id title
 id titleDividerNoCustom
@@ -2505,6 +2524,7 @@ layout dialog_notification
 layout dialog_out_of_money
 layout dialog_relationship
 layout dialog_tattoo
+layout dialog_university
 layout food_line
 layout material_chip_input_combo
 layout material_clock_display
@@ -2576,6 +2596,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout tuong_tac
+layout university_line
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
