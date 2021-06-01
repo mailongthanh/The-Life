@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imagePro"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@color/black"/>
+    <TextView
+        android:id="@+id/textviewProName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ten mon hang"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/imagePro"
+        android:textStyle="bold"
+        android:textColor="@color/Blue"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/textviewProDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mo ta mon an"
+        android:layout_below="@id/textviewProName"
+        android:layout_toRightOf="@id/imagePro"
+        android:layout_marginLeft="8dp"/>
+
+
+</RelativeLayout>

@@ -536,6 +536,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, RelationShip.class));
         overridePendingTransition(R.anim.enter, R.anim.exit);
     }
+    public void gotoAsset(View view)
+    {
+        startActivity(new Intent(MainActivity.this, Asset.class));
+        overridePendingTransition(R.anim.enter, R.anim.exit);
+    }
+
+
+
 
     void loadGame()
     {

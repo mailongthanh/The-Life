@@ -126,6 +126,7 @@
                         app:backgroundTint="@null"
                         android:layout_margin="2dp"
                         android:text="Trẻ con"
+                        android:textStyle="bold"
                         android:textColor="@color/Blue"/>
                     <Button
                         android:id="@+id/buttonAssets"
@@ -134,6 +135,8 @@
                         app:backgroundTint="@null"
                         android:layout_margin="2dp"
                         android:text="Tài sản"
+                        android:onClick="gotoAsset"
+                        android:textStyle="bold"
                         android:textColor="@color/Blue"/>
                     <!--<ImageButton
                         android:id="@+id/imageButtonAssets"
@@ -150,6 +153,7 @@
                         android:background="@drawable/custom_button_menu"
                         android:onClick="gotoRelationship"
                         android:text="Mối quan hệ"
+                        android:textStyle="bold"
                         android:textColor="@color/Blue"
                         app:backgroundTint="@null" />
 
@@ -160,6 +164,7 @@
                         android:background="@drawable/custom_button_menu"
                         android:onClick="gotoActivity"
                         android:text="Hoạt động"
+                        android:textStyle="bold"
                         android:textColor="@color/Blue"
                         app:backgroundTint="@null" />
                     <!--<ImageButton
@@ -205,7 +210,9 @@
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
                     android:text="Hạnh phúc"
-                    android:gravity="center_vertical"/>
+                    android:gravity="center_vertical"
+                    android:textColor="@color/Red"
+                    android:textStyle="bold"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -247,7 +254,9 @@
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
                     android:text="Sức khỏe"
-                    android:gravity="center_vertical"/>
+                    android:gravity="center_vertical"
+                    android:textColor="@color/Red"
+                    android:textStyle="bold"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -290,7 +299,9 @@
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
                     android:text="Thông minh"
-                    android:gravity="center_vertical"/>
+                    android:gravity="center_vertical"
+                    android:textColor="@color/Red"
+                    android:textStyle="bold"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -332,7 +343,9 @@
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
-                    android:text="Ngoại hình" />
+                    android:text="Ngoại hình"
+                    android:textColor="@color/Red"
+                    android:textStyle="bold"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -387,7 +400,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="10dp"
-            android:text="Noi dung" />
+            android:text="Noi dung"
+            android:textColor="@color/Blue"/>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

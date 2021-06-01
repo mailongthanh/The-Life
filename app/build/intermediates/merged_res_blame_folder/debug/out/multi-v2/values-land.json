@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-2\\files-2.1\\0b040ae6fd7360855475a012c5af81a6\\material-1.3.0\\res\\values-land\\values-land.xml",
-=======
-            "outputFile": "D:\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\44b21666f861b2b454523071d69d07d7\\appcompat-1.2.0\\res\\values-land\\values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\0b040ae6fd7360855475a012c5af81a6\\material-1.3.0\\res\\values-land\\values-land.xml",
->>>>>>> 1b3419cae02b35e5bf6a621dcbaa7bc1dd529ec2
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24,30",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,6 @@
                         "endColumns": "72,69,71,69,64,66,69,71,68,68,81,89,75,67,66,77,64,66,10,10,10",
                         "endOffsets": "332,402,474,544,609,676,746,818,887,956,1038,1128,1204,1272,1339,1417,1482,1549,1721,2116,2385"
                     }
-<<<<<<< HEAD
                 },
                 {
                     "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-2\\files-2.1\\44b21666f861b2b454523071d69d07d7\\appcompat-1.2.0\\res\\values-land\\values-land.xml",
@@ -49,8 +31,6 @@
                         "endColumns": "69,70,67",
                         "endOffsets": "120,191,259"
                     }
-=======
->>>>>>> 1b3419cae02b35e5bf6a621dcbaa7bc1dd529ec2
                 }
             ]
         }

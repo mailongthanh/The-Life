@@ -52,7 +52,54 @@
                   {"event": "Trước bình sữa mẹ pha, bạn khóc và nũng nịu muốn được bón sữa. \n\nBạn được bế lên bón sữa, tuy nhiên vị sữa hôm nay không hợp khẩu vị với bạn, bạn khóc nhưng vẫn bị ép uống", "assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0}
                 ]}
           ]}
-    ]
+
+    ],
+   [
+     {"title": "Kiến thức", "event": "Hôm nay bạn xem trên tivi, bạn biết được rằng: \n\ntrong hệ mặt trời bao gồm có mặt trời và 9 hành tinh quay xung quanh nó.Theo thứ tự sao Thủy, sao Kim, trái Đất, sao Hỏa, sao Mộc, sao Thổ, sao Thiên Vương, sao Hải Vương và sao Diêm Vương",
+       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+     {"title": "Đời sống", "event": "Hôm nay tivi đưa tin về tình hình dịch bệnh căng thẳng, khuyến cáo mọi người nên đeo khẩu trang nơi công cộng",
+     "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+     {"title": "Kiến thức","event": "Hôm nay bạn xem trên tivi, bạn biết được rằng: \n\ntốc độ trung bình của ánh sáng xấp xỉ 299792458 m/s",
+     "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+     {"title":"Đời sống", "event": "Hôm nay là một ngày đẹp trời, bố bạn đang cố dạy bạn tập đi \n\nTrước sự giúp đỡ của bố, bạn muốn làm gì ? ", "selection": true,
+       "select":[
+         {"content": "Hợp tác", "selection":false,
+           "event": [
+             { "event" :"Bố bạn nỗ lực giúp bạn tập đi, bạn cố gắng đứng lên, giữ thăng bằng bằng hai chân và cả cơ thể, sau đó bạn bước từng bước chập chững tiến về phía trước", "assets": 0, "happy": 5, "health": 5, "smart":5, "appearance": 0},
+             { "event" :"Bố bạn nỗ lực giúp bạn tập đi, bạn cố gắng đứng lên, nhưng rồi bạn lại ngã xuống, bạn bắt đầu khóc, sau đó bạn đứng dậy thêm vài lẫn nữa nhưng tất cả kết quả đều là vấp ngã", "assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0}
+           ]},
+         {"content": "Không hợp tác", "selection":false,
+           "event":[
+             { "event": "Bố bạn nỗ lực giúp bạn tập đi nhưng bạn không muốn, dù bố đã cố 'mua chuộc' bạn, nhưng bạn vẫn giữ thái độ không hợp tác", "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0},
+             { "event": "Bố bạn nỗ lực giúp bạn tập đi, nhưng bạn chỉ quan tâm đến đống đồ chơi trước mặt, bố đành từ bỏ", "assets": 0, "happy": -2, "health": 0, "smart":0, "appearance": 0}
+           ]}
+       ]}
+   ],
+   [],
+   [],
+   [
+     {"title":"Đời sống", "event": "Hôm nay là sinh nhật 5 tuổi của bạn, bạn được quyền lựa chọn 1 món quà \n\nBạn muốn được nhận quà gì ? ", "selection": true,
+       "select":[
+         {"content": "Gấu bông", "selection":false,
+           "event": [
+             { "event" :"Bạn muốn 1 bé gấu bông trong ngày sinh nhật của mình, và bạn đã có như mong đợi", "assets": 0, "happy": 10, "health": 0, "smart":0, "appearance": 0},
+             { "event" :"Bạn muốn 1 bé gấu bông trong ngày sinh nhật của mình. \n\nNhưng bố bạn bảo cửa hàng đã bán hết, bạn đành nhận 1 món quà mình không thích", "assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0}
+           ]},
+
+         {"content": "Robot biến hình tiên tiến", "selection":false,
+           "event":[
+             { "event": "Bạn muốn 1 mô hình robot trong ngày sinh nhật của mình, và bạn đã có như mong đợi", "assets": 0, "happy": 8, "health": 0, "smart":2, "appearance": 0},
+             { "event": "Bạn muốn 1 mô hình robot trong ngày sinh nhật của mình. \n\nNhưng bố bạn bảo cửa hàng đã bán hết, bạn đành nhận 1 món quà mình không thích", "assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0}
+           ]},
+         {"content": "Sách khoa học", "selection":false,
+           "event": [
+             {"event": "Bạn muốn 1 quyển sách khoa học trong ngày sinh nhật của mình, và bạn đã có như mong đợi", "assets": 0, "happy": 5, "health": 0, "smart":5, "appearance": 0},
+             {"event": "Bạn muốn 1 quyển sách khoa học trong ngày sinh nhật của mình. \n\nNhưng bố bạn bảo cửa hàng đã bán hết, bạn đành nhận 1 món quà mình không thích", "assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0}
+           ]}
+       ]},
+     {"title": "Kiến thức", "event": "Hôm nay bạn nghe trên báo đài, bạn biết được rằng: \n\nMột con gián mất đầu có thể sống sót trong vài tuần và cuối cùng nó sẽ chết vì đói.",
+       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+   ]
   ]
 
 }

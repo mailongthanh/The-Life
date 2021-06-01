@@ -18,6 +18,7 @@ public class SongKhac extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_song_khac);
+
         lvSongKhac = (ListView) findViewById((R.id.listviewSongKhac));
         arrSongKhac = new ArrayList<>();
         arrSongKhac.add(new Food("Cướp giật", "", R.drawable.knife, 0));
