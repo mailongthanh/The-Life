@@ -70,11 +70,6 @@ public class QuanHeAdapter extends BaseAdapter {
             holder.PbThanhQH    = (ProgressBar) convertView.findViewById(R.id.pbThanhQuanHe);
             holder.imgQuanhe    = convertView.findViewById(R.id.imvQuanHe);
 
-            //Gán giá trị
-            holder.tvTen.setText(myQuanHeList.get(position).getHoten());
-            holder.tvMoiQuanHe.setText("(" + myQuanHeList.get(position).getQuanHe() + ")");
-            holder.PbThanhQH.setProgress(myQuanHeList.get(position).getDoThanMat());
-            holder.imgQuanhe.setImageResource(myQuanHeList.get(position).getHinhAnh());
             convertView.setTag(holder);
         } else{
             holder = (ViewHolder) convertView.getTag();
@@ -84,7 +79,11 @@ public class QuanHeAdapter extends BaseAdapter {
         //ImageView ImgIcon = (ImageView) convertView.findViewById(R.id.ImvIcon);
         //ImgIcon.setImageResource(myQuanHeList.get(position).HinhAnh);
 
-
+        //Gán giá trị
+        holder.tvTen.setText(myQuanHeList.get(position).getHoten());
+        holder.tvMoiQuanHe.setText("(" + myQuanHeList.get(position).getQuanHe() + ")");
+        holder.PbThanhQH.setProgress(myQuanHeList.get(position).getDoThanMat());
+        holder.imgQuanhe.setImageResource(myQuanHeList.get(position).getHinhAnh());
 
         Animation anim = AnimationUtils.loadAnimation(myContext, R.anim.listview_scale);
         convertView.startAnimation(anim);

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="wrap_content"
+    android:layout_width="300dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:backgroundTintMode="@null">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+        <LinearLayout
+            android:gravity="center|bottom"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button_menu"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/dialog_event"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/custom_dialog"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:id="@+id/textviewDialogEventContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Một người bạn muốn làm quen với bạn"
+                    android:textAlignment="center"
+                    android:textColor="@color/Blue"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewNewFriend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/boy" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="2"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/textviewFriendName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Tên người bạn"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/Blue"/>
+                        <TextView
+                            android:id="@+id/textviewFriendAge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Tuổi người bạn"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <Button
+                        android:id="@+id/buttonDialogFriendAccept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Đồng ý"
+                        android:background="@drawable/custom_button_menu"
+                        app:backgroundTint="@null"
+                        android:layout_marginLeft="25sp"/>
+                    <Button
+                        android:id="@+id/buttonDialogFriendCancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Từ chối"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25sp"
+                        android:background="@drawable/custom_button_menu"
+                        app:backgroundTint="@null"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textviewDialogEventTitle"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:background="@drawable/custom_button_menu"
+        android:fontFamily="@font/anton"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Bạn mới"
+        android:textColor="@color/Blue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</FrameLayout>

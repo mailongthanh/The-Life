@@ -19,8 +19,32 @@ public class SaveGame {
         gson = new Gson();
     }
 
+    public  void saveEnglish(boolean english)
+    {
+        editor.putBoolean("english", english);
+        editor.commit();
+    }
+
+    public void saveDriving(boolean driving)
+    {
+        editor.putBoolean("driving", driving);
+        editor.commit();
+    }
+
+    public void saveNumberOfFriends(int number)
+    {
+        editor.putInt("allfiend", number);
+        editor.commit();
+    }
+
     public void saveJogging(int time) {
         editor.putInt("jogging", time);
+        editor.commit();
+    }
+
+    public void saveNewFriendInYear(int friend)
+    {
+        editor.putInt("friend", friend);
         editor.commit();
     }
 
@@ -88,21 +112,46 @@ public class SaveGame {
         editor.commit();
     }
 
+    public boolean getEnglish()
+    {
+        return preferences.getBoolean("english", false);
+    }
+
+    public boolean getDriving()
+    {
+        return preferences.getBoolean("driving", false);
+    }
+
+    public int getNumberOfFriends()
+    {
+        return preferences.getInt("allfriend", 0);
+    }
+
+    public int getNewFriendInYear()
+    {
+        return preferences.getInt("friend", 0);
+    }
+
     public int getJogging()
     {
         return preferences.getInt("jogging", 0);
     }
+
     public int getTuVi()
     {
         return preferences.getInt("Bói tử vi", 0);
     }
+
     public int getBoiSN()
     {
         return preferences.getInt("Bói công danh sự nghiệp", 0);
-    } public int getBoiTinh()
+    }
+
+    public int getBoiTinh()
     {
         return preferences.getInt("Bói tình duyên", 0);
     }
+
     public int getExercise()
     {
         return preferences.getInt("exercise", 0);

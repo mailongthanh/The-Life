@@ -9,8 +9,10 @@ import android.graphics.drawable.ColorDrawable;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -19,24 +21,28 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.RandomAccessFile;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class ActivitiesEvent {
     JSONObject jsonevent;
-    SaveGame savegame;
     Random random;
     Context context;
-    public ActivitiesEvent(String Json, SaveGame savegame, Context context) {
+    ArrayList<QuanHe> arrQuanHe;
+
+    public ActivitiesEvent(String Json, Context context) {
         try {
             jsonevent = new JSONObject(Json);
-            this.savegame = savegame;
             this.context = context;
+            arrQuanHe = MainActivity.saveGame.getRelationship();
         } catch (JSONException e) {
             e.printStackTrace();
         };
+
         random = new Random();
     }
-    void CreateDialog(String name,String titleEvent) throws JSONException {
+    public void CreateDialog(String name,String titleEvent) throws JSONException {
         JSONArray arrEvent = jsonevent.getJSONArray(name);
         AddDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())),titleEvent);
     }
@@ -63,10 +69,10 @@ public class ActivitiesEvent {
         String event = object.getString("event");
         txtContent.setText(event);
 
-        int happy = savegame.getHappy();
-        int health = savegame.getHealth();
-        int smart = savegame.getSmart();
-        int appearance = savegame.getAppearance();
+        int happy = MainActivity.saveGame.getHappy();
+        int health = MainActivity.saveGame.getHealth();
+        int smart = MainActivity.saveGame.getSmart();
+        int appearance = MainActivity.saveGame.getAppearance();
 
         int value = 0;
         value = object.getInt("happy");
@@ -74,16 +80,20 @@ public class ActivitiesEvent {
         {
             DialogResult.removeView(dialog.findViewById(R.id.linearHappy));
         } else {
-            txtHappy.setText(value + "");
+
+            String str = toString(value);
+
+            txtHappy.setText(str);
             happy += value;
         }
 
-        value =object.getInt("health");
+        value = object.getInt("health");
         if(value == 0)
         {
             DialogResult.removeView(dialog.findViewById(R.id.linearHealth));
         } else {
-            txtHealth.setText(value + "");
+            String str = toString(value);
+            txtHealth.setText(str);
             health += value;
         }
 
@@ -92,7 +102,8 @@ public class ActivitiesEvent {
         {
             DialogResult.removeView(dialog.findViewById(R.id.linearSmart));
         } else {
-            txtSmart.setText(value + "");
+            String str = toString(value);
+            txtSmart.setText(str);
             smart += value;
         }
 
@@ -101,7 +112,8 @@ public class ActivitiesEvent {
         {
             DialogResult.removeView(dialog.findViewById(R.id.linearAppearance));
         } else {
-            txtAppearance.setText(value + "");
+            String str = toString(value);
+            txtAppearance.setText(str);
             appearance += value;
         }
 
@@ -110,23 +122,113 @@ public class ActivitiesEvent {
         {
             DialogResult.removeView(dialog.findViewById(R.id.linearMoney));
         } else {
-            txtAssets.setText(String.format( "%,d",value*1000));
-            savegame.saveMoney(savegame.getMoney() + value);
+            String money = String.format( "%,d", value*1000);
+            if (value > 0)
+                money = "+" + money;
+            txtAssets.setText(money);
+            MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() + value);
             txtAssets.setText("$" + value);
         }
 
-        savegame.savePlayerInfo(happy,health,smart,appearance);
-        String contentHTML = savegame.getDetailActivity();
+        MainActivity.saveGame.savePlayerInfo(happy,health,smart,appearance);
+        String contentHTML = MainActivity.saveGame.getDetailActivity();
         contentHTML += event + "<br>";
-        savegame.saveDetailActivity(contentHTML);
+        MainActivity.saveGame.saveDetailActivity(contentHTML);
 
         btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
+                if (isNewFriend())
+                {
+                    newFriend();
+                }
             }
         });
 
         dialog.show();
+    }
+
+    boolean isNewFriend()
+    {
+        int friend = new Random().nextInt(10);
+        if (friend < 3 &&
+                MainActivity.saveGame.getNumberOfFriends() < MainActivity.arrFriend.size() &&
+        MainActivity.saveGame.getNewFriendInYear() < 3) // Khả năng có bạn mới là 30% :D
+            return true;
+        return false;
+    }
+
+    void newFriend()
+    {
+        Dialog dialog = new Dialog(context);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.setContentView(R.layout.dialog_new_friend);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        //Anh xa
+        TextView txtName = dialog.findViewById(R.id.textviewFriendName);
+        TextView txtAge = dialog.findViewById(R.id.textviewFriendAge);
+        ImageView imgAvatar = dialog.findViewById(R.id.imageViewNewFriend);
+        Button btnAccept = dialog.findViewById(R.id.buttonDialogFriendAccept);
+        Button btnCancel = dialog.findViewById(R.id.buttonDialogFriendCancel);
+
+        QuanHe friend = whoIsNewFriend();
+
+        txtName.setText(friend.getHoten());
+        txtAge.setText(friend.getTuoi() +" Tuổi");
+        imgAvatar.setImageResource(friend.getHinhAnh());
+
+        btnAccept.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                arrQuanHe.add(friend);
+                MainActivity.saveGame.saveRelationship(arrQuanHe);
+                MainActivity.createNotification(friend.getHinhAnh(),
+                        "Bạn đã đồng ý kết bạn với " + friend.getHoten(),
+                        context);
+                MainActivity.saveGame.saveNewFriendInYear(MainActivity.saveGame.getNewFriendInYear() + 1);
+                MainActivity.saveGame.saveNumberOfFriends(MainActivity.saveGame.getNumberOfFriends() + 1);
+                dialog.dismiss();
+            }
+        });
+
+        btnCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainActivity.createNotification(friend.getHinhAnh(),
+                        "Bạn đã từ chối kết bạn với " + friend.getHoten(),
+                        context);
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+    }
+
+    QuanHe whoIsNewFriend() // random ra nguoi ban moi (Nguoi ay la ai ?)
+    {
+        QuanHe friend = null;
+        Random random = new Random();
+
+        do {
+            int index = random.nextInt(MainActivity.arrFriend.size());
+            friend = MainActivity.arrFriend.get(index);
+        }
+        while (arrQuanHe.indexOf(friend) != -1);
+
+        return friend;
+    }
+
+    String toString(int value)
+    {
+        String str = null;
+        if (value > 0)
+            str = "+ " + value;
+        else if (value < 0)
+            str = "- " + (-1*value);
+
+        return str;
     }
 }

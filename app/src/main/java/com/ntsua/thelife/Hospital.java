@@ -45,7 +45,8 @@ public class Hospital extends AppCompatActivity {
 
     public void gotoMainMenu(View view)
     {
-        startActivity(new Intent(Hospital.this, HoatDong.class));
+        //startActivity(new Intent(Hospital.this, HoatDong.class));
         overridePendingTransition(R.anim.enter, R.anim.exit);
+        onBackPressed();
     }
 }

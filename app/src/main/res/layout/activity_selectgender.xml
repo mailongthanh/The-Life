@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hãy chọn giới tính"
-        android:textSize="5mm"
+        android:textSize="33sp"
         android:gravity="center">
     </TextView>
 

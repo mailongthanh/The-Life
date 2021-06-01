@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-2\\files-2.1\\0b040ae6fd7360855475a012c5af81a6\\material-1.3.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+=======
+            "outputFile": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\HOME\\.gradle\\caches\\transforms-2\\files-2.1\\2730d74d200c17936a122ce975a9aa70\\material-1.3.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+>>>>>>> 7aa7b485bbe809af3b97e6ceb7e97ee55f3594ef
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

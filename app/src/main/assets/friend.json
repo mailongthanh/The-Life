@@ -1,12 +1,26 @@
-{
-  "vi":[
+[
     {
-      "name": "Thành mập",
-      "gender": "Bê đê"
+      "name": "Nguyễn Thiện Sua",
+      "avatar": "boy"
     },
     {
-      "name": "Mập Thành",
-      "gender": "Bê đê"
-    }
-  ]
-}
+      "name": "Mai Long Thành",
+      "avatar": "girl"
+    },
+  {
+    "name": "Nguyễn Thanh Vũ",
+    "avatar": "boy"
+  },
+  {
+    "name": "Nguyễn Hiếu Nghĩa",
+    "avatar": "boy"
+  },
+  {
+    "name": "Hoàng Nhật Tiến",
+    "avatar": "boy"
+  },
+  {
+    "name": "Võ Thành Phát",
+    "avatar": "boy"
+  }
+]

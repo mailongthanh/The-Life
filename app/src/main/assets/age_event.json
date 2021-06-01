@@ -1,5 +1,4 @@
-{
- "age": [
+[
     [],
     [
       {"title":"Sức khoẻ", "event": "Hôm nay bố mẹ bạn quyết định đưa bạn vào bệnh viện địa phương để tiêm ngừa. \n \nĐứng trước mũi tiêm bạn sẽ làm gì?", "selection": true,
@@ -52,6 +51,7 @@
                   {"event": "Trước bình sữa mẹ pha, bạn khóc và nũng nịu muốn được bón sữa. \n\nBạn được bế lên bón sữa, tuy nhiên vị sữa hôm nay không hợp khẩu vị với bạn, bạn khóc nhưng vẫn bị ép uống", "assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0}
                 ]}
           ]}
+<<<<<<< HEAD
 
     ],
    [
@@ -103,3 +103,7 @@
   ]
 
 }
+=======
+    ]
+]
+>>>>>>> 7aa7b485bbe809af3b97e6ceb7e97ee55f3594ef

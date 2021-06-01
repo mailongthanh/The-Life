@@ -1,0 +1,66 @@
+{
+  "driving": [
+    {"question": "Khái niệm “đường bộ” được hiểu như thế nào là đúng? “Đường bộ” gồm",
+      "answers": [
+      "Đường bộ, cầu đường bộ",
+      "Hầm đường bộ, bến phà đường bộ",
+      "Đường, cầu đường bộ, hầm đường bộ, bến phà đường bộ và các công trình phụ trợ khác",
+      "Đường bộ, cầu đường bộ, Hầm đường bộ, bến phà đường bộ"
+    ],
+    "correct": 3},
+    {"question": "Người điều khiển phương tiện giao thông đường bộ mà trong cơ thể có chất ma túy có bị nghiêm cấm hay không?",
+      "answers": [
+      "Bị nghiêm cấm.",
+      "Không bị nghiêm cấm."
+    ],
+      "correct": 0},
+    {"question": "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo, đẩy các xe khác, vật khác khi tham gia giao thông không?",
+      "answers": [
+        "Được phép",
+        "Tùy trường hợp",
+        "Không được phép"
+      ],
+      "correct": 2},
+    {"question": "Bảo đảm trật tự an toàn giao thông đường bộ là trách nhiệm của ai?",
+      "answers": [
+        "Ngành giao thông vận tải và ngành công an",
+        "Cơ quan, tổ chức, cá nhân",
+        "Cảnh sát giao thông"
+      ],
+      "correct": 1}
+  ],
+  "english": [
+    {"question": "How does she often go to school? _________ foot.",
+      "answers": [
+        "by",
+        "in",
+        "on",
+        "at"
+      ],
+      "correct": 2},
+    {"question": "This test is _________ difficult that I can’t solve it.",
+      "answers": [
+        "too",
+        "enough",
+        "so",
+        "very"
+      ],
+      "correct": 2},
+    {"question": "Marry_________ guitar at the moment.",
+      "answers": [
+        "playing",
+        "is play",
+        "plays",
+        "play"
+      ],
+      "correct": 1},
+    {"question": "Is there________ rice left?",
+      "answers": [
+        "some",
+        "the",
+        "any",
+        "a"
+      ],
+      "correct": 2}
+  ]
+}

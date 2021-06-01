@@ -7,6 +7,14 @@
       "health": 0,
       "smart": 0,
       "appearance": 6
+    },
+    {
+      "event": "Sau qúa trình triệt lông, vì không dưỡng cẩn thận mà lỗ chân lông bạn nở to khiến bạn trông rất xấu",
+      "assets": -300,
+      "happy": -2,
+      "health": 0,
+      "smart": 0,
+      "appearance": -3
     }
   ],
   "Trị mụn": [
@@ -17,6 +25,14 @@
       "health": 0,
       "smart": 0,
       "appearance": 0
+    },
+    {
+      "event": "Sau quá trình trị mụn đắt tiền, bạn giờ đây đã có làn da mịn màng, láng bóng. Điều đó khiến bạn đẹp hơn, bạn trở nên rất vui và tự tin đối diện với mọi người",
+      "assets": -1500,
+      "happy": 2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 3
     }
   ],
   "Skin care": [
@@ -26,7 +42,14 @@
       "happy": -2,
       "health": 0,
       "smart": 0,
-      "appearance": -4}
+      "appearance": -4},
+    {
+      "event": "Sau quá trình skin care bạn có một làn da trắng sáng, mịn màng. Bạn rất hạnh phúc vì điều đó",
+      "assets": -800,
+      "happy": 2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 2}
   ],
   "Massage": [
     {
@@ -34,6 +57,14 @@
       "assets": -800,
       "happy": -1,
       "health": -2,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Sau khi massage xong. Cơ thể bạn như trút bỏ được mọi mệt mỏi sau một quãng thời gian dài làm việc",
+      "assets": -800,
+      "happy": 2,
+      "health": 3,
       "smart": 0,
       "appearance": 0
     }
@@ -46,6 +77,14 @@
       "health": 0,
       "smart": 0,
       "appearance": 1
+    },
+    {
+      "event": "Trong lúc xông hơi bạn ngủ quên, đến lúc ra khỏi phòng xông hơi thì nhìn bạn như con tôm luộc",
+      "assets": -600,
+      "happy":-2,
+      "health": -1,
+      "smart": 0,
+      "appearance": -2
     }
   ],
   "Ngâm chân thảo dược":[

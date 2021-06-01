@@ -10,13 +10,16 @@
     tools:context=".CreateName">
 
     <EditText
+        android:id="@+id/editextName"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/genderselect_button"
         android:gravity="center"
         android:hint="Tên của bạn là"
         android:inputType="text"
-        android:textSize="20dp"></EditText>
+        android:textSize="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
 
     <Button
         android:id="@+id/btn_create"

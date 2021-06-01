@@ -1733,6 +1733,8 @@ drawable custom_button_menu
 drawable custom_color
 drawable custom_dialog
 drawable custom_progressbar
+drawable custom_progressbar_low
+drawable custom_progressbar_medium
 drawable cutlery
 drawable dalieu
 drawable danang
@@ -2008,6 +2010,8 @@ id buttonDialogEventdiamond
 id buttonDialogEventdragon
 id buttonDialogEventsnake
 id buttonDialogEventsnow
+id buttonDialogFriendAccept
+id buttonDialogFriendCancel
 id buttonDialogRelationship_Oke
 id buttonInfant
 id buttonNotificationtOke
@@ -2078,6 +2082,7 @@ id easeIn
 id easeInOut
 id easeOut
 id edit_query
+id editextName
 id elastic
 id end
 id endToStart
@@ -2122,7 +2127,11 @@ id imageAvatarA
 id imageButtonMenu
 id imageCrime
 id imageFood
+<<<<<<< HEAD
 id imagePro
+=======
+id imageViewNewFriend
+>>>>>>> 7aa7b485bbe809af3b97e6ceb7e97ee55f3594ef
 id imagebuttonAddAge
 id imageviewAssetBack
 id imageviewFoodBack
@@ -2377,6 +2386,8 @@ id textviewDialogEventTitle
 id textviewDialogRelationshipContent
 id textviewDialogRelationshipTitle
 id textviewFoodName
+id textviewFriendAge
+id textviewFriendName
 id textviewJob
 id textviewMoney
 id textviewMqhA
@@ -2543,8 +2554,12 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_event
 layout dialog_event_result
+<<<<<<< HEAD
 layout dialog_hangnong
 layout dialog_muasam
+=======
+layout dialog_new_friend
+>>>>>>> 7aa7b485bbe809af3b97e6ceb7e97ee55f3594ef
 layout dialog_notification
 layout dialog_out_of_money
 layout dialog_relationship

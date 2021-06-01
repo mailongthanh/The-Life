@@ -68,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
     TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName, txtJob;
     SharedPreferences preferences;
     static public SaveGame saveGame;
+    static public  ArrayList<QuanHe> arrFriend;
+    ArrayList<QuanHe> arrRelationship;
     JSONArray arrJsonAge;
     JSONObject jsonResult, jsonAllJob, jsonJob;
     String contentHtml;
@@ -75,30 +77,32 @@ public class MainActivity extends AppCompatActivity {
     long currentTime = 0;
     Toast backToast;
 
+    int REQUEST_CODE_INIT = 123;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         AnhXa();
         //Test
+        //startActivityForResult(new Intent(MainActivity.this,  CreateName.class), REQUEST_CODE_INIT);
+
         try {
-            if (saveGame.getDetailActivity().equals(""))
-                init("Name", "vn");
-            else loadGame();
-            readEvent();
-            readJob();
-            changeWork();
+            if (saveGame.getDetailActivity().equals("")) {
+                startActivityForResult(new Intent(MainActivity.this, CreateName.class), REQUEST_CODE_INIT);
+            }
+            else {
+                loadGame();
+                readEvent();
+                //Toast.makeText(this, "hể", Toast.LENGTH_SHORT).show();
+                readJob();
+                readFriend();
+                changeWork();
+            }
         } catch (JSONException e) {
+
             e.printStackTrace();
         }
-
-        //(R.drawable.jogging, "Hôm nay bạn đã chạy bộ quá nhiều rồi", MainActivity.this);
-        //SpannableString s = new SpannableString(txtContent.getText().toString());
-        //s.setSpan(new RelativeSizeSpan(2f), 0, 3, 0);
-        //txtContent.setText(saveGame.getDetailActivity());
-        //saveGame.saveDetailActivity(txtContent.getText().toString());
-
-
         ibtnAddAge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -119,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
+        //createNotification(R.drawable.holding_hands, "Bạn đã có bằng tiếng anh rồi Bạn đã có bằng tiếng anh rồi Bạn đã có bằng tiếng anh rồi", this);
     }
 
     void dialogJob(JSONArray arrJob) throws JSONException {
@@ -141,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
                         dialog.dismiss();
                         //saveGame.saveSkill(saveGame.getSkill() + jsonResult.getInt("skill"));
                         //Toast.makeText(MainActivity.this, "" + saveGame.getSkill(), Toast.LENGTH_SHORT).show();
-                        dialogEventResult(object.getString("content"));
+                        dialogEventResult(object.getString("content"), false);
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -154,11 +158,14 @@ public class MainActivity extends AppCompatActivity {
     void doWork() throws JSONException {
         JSONArray arrJob = jsonJob.getJSONArray("work");
         dialogJob(arrJob);
+//        if (jsonJob == null)
+//            Toast.makeText(this, "null", Toast.LENGTH_SHORT).show();
     }
 
     void addAge() throws JSONException {
         //them tuoi
         int age = saveGame.getAge() + 1;
+
 
         //lay su kien tuoi
         JSONArray arrAge = arrJsonAge.getJSONArray(age);
@@ -177,8 +184,8 @@ public class MainActivity extends AppCompatActivity {
             dialogEvent(object, isSelection, title, event);
         else {
             jsonResult = object[0];
-            initNewAge();
-            dialogEventResult(title);
+            addAgeHTML(age);
+            dialogEventResult(title, true);
         }
     }
 
@@ -188,11 +195,10 @@ public class MainActivity extends AppCompatActivity {
         if (!isSelection[0]) {
             JSONArray arr = jsonResult.getJSONArray("event");
             jsonResult = arr.getJSONObject(new Random().nextInt(arr.length()));
-            //Luu tuoi
-            initNewAge();
-            //saveGame.saveAge(age);
+            int age = saveGame.getAge() + 1;
+            addAgeHTML(age);
             //Tao dialog hien thi ket qua cua event
-            dialogEventResult(title);
+            dialogEventResult(title, true);
             return;
         }
 
@@ -226,7 +232,7 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
     }
 
-    void dialogEventResult(String title) throws JSONException {
+    void dialogEventResult(String title, boolean isAgeEvent) throws JSONException {
         Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
@@ -258,7 +264,8 @@ public class MainActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearHappy));
         } else {
-            txtHappy.setText(value + "");
+            String str = toString(value);
+            txtHappy.setText(str);
             prbHappy.setProgress(prbHappy.getProgress() + value);
             this.txtHappy.setText(prbHappy.getProgress() + "%");
         }
@@ -267,7 +274,8 @@ public class MainActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearHealth));
         } else {
-            txtHealth.setText(value + "");
+            String str = toString(value);
+            txtHealth.setText(str);
             prbHealth.setProgress(prbHealth.getProgress() + value);
             this.txtHealth.setText(prbHealth.getProgress() + "%");
         }
@@ -276,7 +284,8 @@ public class MainActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearSmart));
         } else {
-            txtSmart.setText(value + "");
+            String str = toString(value);
+            txtSmart.setText(str);
             prbSmart.setProgress(prbSmart.getProgress() + value);
             this.txtSmart.setText(prbSmart.getProgress() + "%");
         }
@@ -285,7 +294,8 @@ public class MainActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearAppearance));
         } else {
-            txtAppearance.setText(value + "");
+            String str = toString(value);
+            txtAppearance.setText(str);
             prbAppearance.setProgress(prbAppearance.getProgress() + value);
             this.txtAppearance.setText(prbAppearance.getProgress() + "%");
         }
@@ -294,7 +304,8 @@ public class MainActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearMoney));
         } else {
-            txtAssets.setText(value + "");
+            String str = toString(value);
+            txtAssets.setText(str);
             money += value;
             this.txtMoney.setText(money + " VND");
             saveGame.saveMoney(money);
@@ -314,12 +325,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 dialog.dismiss();
                 try {
-                    jobEvent();
+                    if (isAgeEvent)
+                        initNewAge();
+                    else jobEvent();
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
             }
         });
+        changeProgressBackground(prbAppearance);
+        changeProgressBackground(prbHappy);
+        changeProgressBackground(prbHealth);
+        changeProgressBackground(prbSmart);
 
         dialog.show();
     }
@@ -331,7 +348,7 @@ public class MainActivity extends AppCompatActivity {
             jsonResult = arr.getJSONObject(new Random().nextInt(arr.length()));
             saveGame.saveSalary(jsonResult.getInt("salary"));
             //Tao dialog hien thi ket qua cua event
-            dialogEventResult(title);
+            dialogEventResult(title, false);
             return;
         }
 
@@ -376,7 +393,7 @@ public class MainActivity extends AppCompatActivity {
                     dialogJobEvent("Công việc");
                 } else {
                     saveGame.saveSalary(jsonResult.getInt("salary"));
-                    dialogEventResult("Công việc");
+                    dialogEventResult("Công việc", false);
                     //Toast.makeText(MainActivity.this, "error", Toast.LENGTH_SHORT).show();
                 }
                 break;
@@ -432,7 +449,7 @@ public class MainActivity extends AppCompatActivity {
         return dialog;
     }
 
-    public static void createNotification(int image, String content, Context context)
+    public static Dialog createNotification(int image, String content, Context context)
     {
         //Tao dialog
         Dialog dialog = new Dialog(context);
@@ -453,6 +470,11 @@ public class MainActivity extends AppCompatActivity {
         txtContent.setText(content);
         imageView.setImageResource(image);
 
+        //ViewGroup.LayoutParams layoutParams = txtContent.getLayoutParams();
+        //LinearLayout.LayoutParams paramsImage = new LinearLayout.LayoutParams(0, layoutParams.height);
+        //imageView.setLayoutParams(paramsImage);
+
+
         btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -461,6 +483,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         dialog.show();
+
+        return dialog;
     }
 
     void readEvent() throws JSONException {
@@ -477,8 +501,37 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        JSONObject object = new JSONObject(jsonEvent);
-        arrJsonAge = object.getJSONArray("age");
+        arrJsonAge = new JSONArray(jsonEvent);
+    }
+
+    void readFriend() throws JSONException {
+        String jsonEvent = null;
+        try {
+            InputStream inputStream = getAssets().open("friend.json");
+            int size = inputStream.available();
+            byte[] buffer = new byte[size];
+            inputStream.read(buffer);
+            inputStream.close();
+            jsonEvent = new String(buffer, "UTF-8");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        arrFriend = new ArrayList<>();
+        JSONArray jsonFriend;
+        jsonFriend = new JSONArray(jsonEvent);
+
+        for (int i=0; i<jsonFriend.length(); i++)
+        {
+            JSONObject object = jsonFriend.getJSONObject(i);
+            String name = object.getString("name");
+            int age = saveGame.getAge() + (new Random().nextInt(5) - 2);
+            String avatar = object.getString("avatar");
+
+            arrFriend.add(new QuanHe(name, age, new Random().nextInt(30) + 30,
+                    "Bạn bè", getResources().getIdentifier(avatar, "drawable", this.getPackageName())));
+        }
     }
 
     void readJob() throws JSONException {
@@ -495,6 +548,271 @@ public class MainActivity extends AppCompatActivity {
         }
 
         jsonAllJob = new JSONObject(jsonEvent);
+    }
+    public void gotoAsset(View view)
+    {
+        startActivity(new Intent(MainActivity.this, Asset.class));
+        overridePendingTransition(R.anim.enter, R.anim.exit);
+    }
+
+
+
+
+    void loadGame()
+    {
+        contentHtml = saveGame.getDetailActivity();
+        txtContent.setText(android.text.Html.fromHtml(contentHtml));
+        scrollView.post(new Runnable() {
+            @Override
+            public void run() {
+                scrollView.fullScroll(View.FOCUS_DOWN);
+            }
+        });
+
+
+        prbAppearance.setProgress(saveGame.getAppearance());
+        prbHappy.setProgress(saveGame.getHappy());
+        prbHealth.setProgress(saveGame.getHealth());
+        prbSmart.setProgress(saveGame.getSmart());
+
+        txtAppearance.setText(prbAppearance.getProgress() + "%");
+        txtHappy.setText(prbHappy.getProgress() + "%");
+        txtSmart.setText(prbSmart.getProgress() + "%");
+        txtHealth.setText(prbHealth.getProgress() + "%");
+
+        money = saveGame.getMoney();
+        txtMoney.setText(money + "VND");
+        txtName.setText(saveGame.getName());
+        txtJob.setText(saveGame.getJob());
+        arrRelationship = saveGame.getRelationship();
+
+        changeProgressBackground(prbAppearance);
+        changeProgressBackground(prbHappy);
+        changeProgressBackground(prbHealth);
+        changeProgressBackground(prbSmart);
+    }
+
+    void changeWork() throws JSONException {
+        switch (saveGame.getJob())
+        {
+            case "Lập trình viên":
+                jsonJob = jsonAllJob.getJSONObject("coder");
+                break;
+            case "Trẻ trâu":
+                jsonJob = jsonAllJob.getJSONObject("student");
+                break;
+        }
+
+    }
+
+    // init tam thoi
+    void init(String name, String gender) throws JSONException {
+        String json = null;
+        try {
+            InputStream inputStream = getAssets().open("parent.json");
+            int size = inputStream.available();
+            byte[] buffer = new byte[size];
+            inputStream.read(buffer);
+            inputStream.close();
+            json = new String(buffer, "UTF-8");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        JSONObject object = new JSONObject(json);
+        JSONArray arrFather = object.getJSONArray("father");
+        JSONArray arrMother = object.getJSONArray("mother");
+        JSONArray arrJob = object.getJSONArray("job");
+        Random random = new Random();
+
+        //Tao quan he Bo Me
+        String fatherName = arrFather.getString(random.nextInt(arrFather.length()));
+        int fatherAge = (random.nextInt(11) + 20);
+        QuanHe father = new QuanHe(fatherName, fatherAge, 100, "Bố", R.drawable.boy); //Thay hinh sau
+        String motherName = arrMother.getString(random.nextInt(arrMother.length()));
+        int motherAge = (random.nextInt(11) + 20);
+        QuanHe mother = new QuanHe(motherName, motherAge, 100, "Mẹ", R.drawable.girl); //Thay hinh sau
+
+        ArrayList<QuanHe> arrRelationship = new ArrayList<>();
+        arrRelationship.add(father);
+        arrRelationship.add(mother);
+        //Them cho vui
+        arrRelationship.add(new QuanHe("Trần Thanh Vũ", 19, 50, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Nguyễn Thiện Sua", 19, 50, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Nguyễn Hiếu Nghĩa", 19, 50, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Mai Long Thành", 19, 80, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Võ Thành Phát", 19, 20, "Bạn bè",R.drawable.boy));
+        arrRelationship.add(new QuanHe("Hoàng Nhật Tiến", 19, 50, "Bạn bè",R.drawable.boy));
+
+        saveGame.saveRelationship(arrRelationship);
+        this.arrRelationship = arrRelationship;
+        saveGame.saveNewFriendInYear(0);
+        saveGame.saveNumberOfFriends(0);
+
+        //Tao ngay sinh
+        Date date = Calendar.getInstance().getTime();
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+        contentHtml = "<h5> <font color=\"blue\">Tuổi 0</font></h5>" +
+                "Tôi tên " + name + " - " + gender + "<br>" +
+                "Sinh ngày " + format.format(date) + "<br>" +
+                "Bố tôi là " + fatherName + " - " +
+                arrJob.getString(random.nextInt(arrJob.length())) +
+                " (" + fatherAge + " tuổi )" + "<br>" +
+                "Mẹ tôi là " + motherName + " - " +
+                arrJob.getString(random.nextInt(arrJob.length())) +
+                " (" + motherAge + " tuổi )" + "<br>";
+        //Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
+        saveGame.saveAge(0);
+        saveGame.saveMoney(5000);
+        saveGame.saveDetailActivity(contentHtml);
+        saveGame.saveName(name);
+        saveGame.saveJob("Trẻ trâu");
+        saveGame.saveSkill(0);
+        saveGame.saveExercise(0);
+        saveGame.saveJogging(0);
+        saveGame.saveJogging(0);
+        txtJob.setText(saveGame.getJob());
+        txtMoney.setText("0 VND");
+        txtContent.setText(android.text.Html.fromHtml(contentHtml));
+        scrollView.post(new Runnable() {
+            @Override
+            public void run() {
+                scrollView.fullScroll(View.FOCUS_DOWN);
+            }
+        });
+        txtName.setText(name);
+
+        prbHealth.setProgress(100);
+        prbHappy.setProgress(100);
+        prbSmart.setProgress(30);
+        prbAppearance.setProgress(50);
+        changeProgressBackground(prbAppearance);
+        changeProgressBackground(prbHappy);
+        changeProgressBackground(prbHealth);
+        changeProgressBackground(prbSmart);
+
+        txtAppearance.setText(prbAppearance.getProgress() + "%");
+        txtHappy.setText(prbHappy.getProgress() + "%");
+        txtSmart.setText(prbSmart.getProgress() + "%");
+        txtHealth.setText(prbHealth.getProgress() + "%");
+        saveGame.savePlayerInfo(prbHappy.getProgress(), prbHealth.getProgress(), prbSmart.getProgress(), prbAppearance.getProgress());
+    }
+
+    void initNewAge()
+    {
+        //Toast.makeText(this, "new age", Toast.LENGTH_SHORT).show();
+        int age = saveGame.getAge() + 1;
+        //saveGame.saveAge(age);
+        saveGame.saveExercise(0);
+        saveGame.saveJogging(0);
+        saveGame.saveJogging(0);
+        saveGame.saveNewFriendInYear(0);
+
+
+        for (int i=0; i<arrRelationship.size(); i++)
+        {
+            QuanHe friend = arrRelationship.get(i);
+            friend.setTuoi(friend.getTuoi() + 1); // Them tuoi
+            if (friend.getQuanHe() == "Bạn bè")
+            {
+                friend.setDoThanMat(friend.getDoThanMat() - 20); //Giam moi quan he
+            }
+        }
+
+        saveGame.saveRelationship(arrRelationship);
+        dialogLostFriend(0);
+    }
+
+    void dialogLostFriend(int index) {
+        if (index == arrRelationship.size()) {
+            saveGame.saveRelationship(arrRelationship);
+            return;
+        }
+        QuanHe friend = arrRelationship.get(index);
+        if (friend.getDoThanMat() <= 0) {
+            Dialog dialog = createNotification(R.drawable.cancel, "Tình bạn giữa bạn và " + friend.getHoten() + " đã rạn nứt.", this);
+            Button btnOke       = dialog.findViewById(R.id.buttonNotificationtOke);
+            btnOke.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    arrRelationship.remove(index);
+                    saveGame.saveNumberOfFriends(saveGame.getNumberOfFriends() - 1);
+                    dialog.dismiss();
+                    dialogLostFriend(index);
+                }
+            });
+        }
+        else {
+            dialogLostFriend(index + 1);
+        }
+    }
+    void addAgeHTML(int age)
+    {
+        contentHtml += "<h5> <font color=\"blue\">Tuổi " + age + "</font></h5>";
+        txtContent.setText(android.text.Html.fromHtml(contentHtml));
+        scrollView.post(new Runnable() {
+            @Override
+            public void run() {
+                scrollView.fullScroll(View.FOCUS_DOWN);
+            }
+        });
+        saveGame.saveDetailActivity(contentHtml);
+    }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+        if (currentTime + 2000 > System.currentTimeMillis())
+        {
+            backToast.cancel();
+            this.finishAffinity();
+        }
+        else {
+            backToast = Toast.makeText(this, "Ấn lần nữa để thoát", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        currentTime = System.currentTimeMillis();
+    }
+
+    String toString(int value)
+    {
+        String str = null;
+        if (value > 0)
+            str = "+ " + value;
+        else if (value < 0)
+            str = "- " + (-1*value);
+        //Toast.makeText(context, str, Toast.LENGTH_SHORT).show();
+        return str;
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if (requestCode == REQUEST_CODE_INIT && resultCode == RESULT_OK && data != null)
+        {
+            String name = data.getStringExtra("name");
+            String gender = data.getStringExtra("gender");
+            try {
+                init(name, gender);
+                readEvent();
+                readJob();
+                readFriend();
+                changeWork();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    void changeProgressBackground(ProgressBar pb)
+    {
+        int progress = pb.getProgress();
+        if (progress >= 80 )
+            pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar));
+        else if (progress<80 && progress > 30)
+            pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar_medium));
+        else pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar_low));
+        //Toast.makeText(this, "a", Toast.LENGTH_SHORT).show();
     }
 
     private void AnhXa() {
@@ -535,179 +853,5 @@ public class MainActivity extends AppCompatActivity {
     {
         startActivity(new Intent(MainActivity.this, RelationShip.class));
         overridePendingTransition(R.anim.enter, R.anim.exit);
-    }
-    public void gotoAsset(View view)
-    {
-        startActivity(new Intent(MainActivity.this, Asset.class));
-        overridePendingTransition(R.anim.enter, R.anim.exit);
-    }
-
-
-
-
-    void loadGame()
-    {
-        contentHtml = saveGame.getDetailActivity();
-        txtContent.setText(android.text.Html.fromHtml(contentHtml));
-        scrollView.post(new Runnable() {
-            @Override
-            public void run() {
-                scrollView.fullScroll(View.FOCUS_DOWN);
-            }
-        });
-
-
-        prbAppearance.setProgress(saveGame.getAppearance());
-        prbHappy.setProgress(saveGame.getHappy());
-        prbHealth.setProgress(saveGame.getHealth());
-        prbSmart.setProgress(saveGame.getSmart());
-
-        txtAppearance.setText(prbAppearance.getProgress() + "%");
-        txtHappy.setText(prbHappy.getProgress() + "%");
-        txtSmart.setText(prbSmart.getProgress() + "%");
-        txtHealth.setText(prbHealth.getProgress() + "%");
-
-        money = saveGame.getMoney();
-        txtMoney.setText(money + "VND");
-        txtName.setText(saveGame.getName());
-        txtJob.setText(saveGame.getJob());
-
-    }
-
-    void changeWork() throws JSONException {
-        switch (saveGame.getJob())
-        {
-            case "Lập trình viên":
-                jsonJob = jsonAllJob.getJSONObject("coder");
-                break;
-            case "Trẻ trâu":
-                jsonJob = jsonAllJob.getJSONObject("student");
-                break;
-        }
-    }
-
-    // init tam thoi
-    void init(String name, String country) throws JSONException {
-        String json = null;
-        try {
-            InputStream inputStream = getAssets().open("parent.json");
-            int size = inputStream.available();
-            byte[] buffer = new byte[size];
-            inputStream.read(buffer);
-            inputStream.close();
-            json = new String(buffer, "UTF-8");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        JSONObject object = new JSONObject(json);
-        JSONObject vn = object.getJSONObject("vi");
-        JSONArray arrFather = vn.getJSONArray("father");
-        JSONArray arrMother = vn.getJSONArray("mother");
-        JSONArray arrJob = vn.getJSONArray("job");
-        Random random = new Random();
-
-        //Tao quan he Bo Me
-        String fatherName = arrFather.getString(random.nextInt(arrFather.length()));
-        int fatherAge = (random.nextInt(11) + 20);
-        QuanHe father = new QuanHe(fatherName, fatherAge, 100, "Bố", R.drawable.boy); //Thay hinh sau
-        String motherName = arrMother.getString(random.nextInt(arrMother.length()));
-        int motherAge = (random.nextInt(11) + 20);
-        QuanHe mother = new QuanHe(motherName, motherAge, 100, "Mẹ", R.drawable.girl); //Thay hinh sau
-
-        ArrayList<QuanHe> arrRelationship = new ArrayList<>();
-        arrRelationship.add(father);
-        arrRelationship.add(mother);
-        //Them cho vui
-        arrRelationship.add(new QuanHe("Trần Thanh Vũ", 19, 50, "Bạn bè",R.drawable.boy));
-        arrRelationship.add(new QuanHe("Nguyễn Thiện Sua", 19, 2, "Bạn bè",R.drawable.boy));
-        arrRelationship.add(new QuanHe("Nguyễn Hiếu Nghĩa", 19, 50, "Bạn bè",R.drawable.boy));
-        arrRelationship.add(new QuanHe("Mai Long Thành", 19, 80, "Bạn bè",R.drawable.boy));
-        arrRelationship.add(new QuanHe("Võ Thành Phát", 19, 2, "Bạn bè",R.drawable.boy));
-        arrRelationship.add(new QuanHe("Hoàng Nhật Tiến", 19, 0, "Bạn bè",R.drawable.boy));
-
-        saveGame.saveRelationship(arrRelationship);
-
-        //Tao ngay sinh
-        Date date = Calendar.getInstance().getTime();
-        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-        contentHtml = "<h5> <font color=\"blue\">Tuổi 0</font></h5>" +
-                "Tôi tên " + name + "<br>" +
-                "Sinh ngày " + format.format(date) + "<br>" +
-                "Bố tôi là " + fatherName + " - " +
-                arrJob.getString(random.nextInt(arrJob.length())) +
-                " (" + fatherAge + " tuổi )" + "<br>" +
-                "Mẹ tôi là " + motherName + " - " +
-                arrJob.getString(random.nextInt(arrJob.length())) +
-                " (" + motherAge + " tuổi )" + "<br>";
-        //Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
-        saveGame.saveAge(0);
-        saveGame.saveMoney(5000);
-        saveGame.saveDetailActivity(contentHtml);
-        saveGame.saveName(name);
-        saveGame.saveJob("Trẻ trâu");
-        saveGame.saveSkill(0);
-        saveGame.saveExercise(0);
-        saveGame.saveJogging(0);
-        saveGame.saveJogging(0);
-        txtJob.setText(saveGame.getJob());
-        txtMoney.setText("0 VND");
-        txtContent.setText(android.text.Html.fromHtml(contentHtml));
-        scrollView.post(new Runnable() {
-            @Override
-            public void run() {
-                scrollView.fullScroll(View.FOCUS_DOWN);
-            }
-        });
-        txtName.setText(name);
-
-        prbHealth.setProgress(100);
-        prbHappy.setProgress(100);
-        prbSmart.setProgress(33);
-        prbAppearance.setProgress(50);
-
-        txtAppearance.setText(prbAppearance.getProgress() + "%");
-        txtHappy.setText(prbHappy.getProgress() + "%");
-        txtSmart.setText(prbSmart.getProgress() + "%");
-        txtHealth.setText(prbHealth.getProgress() + "%");
-        saveGame.savePlayerInfo(prbHappy.getProgress(), prbHealth.getProgress(), prbSmart.getProgress(), prbAppearance.getProgress());
-    }
-
-    void initNewAge()
-    {
-        int age = saveGame.getAge() + 1;
-        saveGame.saveExercise(0);
-        saveGame.saveJogging(0);
-        saveGame.saveJogging(0);
-        addAgeHTML(age);
-    }
-
-    void addAgeHTML(int age)
-    {
-        contentHtml += "<h5> <font color=\"blue\">Tuổi " + age + "</font></h5>";
-        txtContent.setText(android.text.Html.fromHtml(contentHtml));
-        scrollView.post(new Runnable() {
-            @Override
-            public void run() {
-                scrollView.fullScroll(View.FOCUS_DOWN);
-            }
-        });
-        saveGame.saveDetailActivity(contentHtml);
-    }
-
-    @Override
-    public void onBackPressed() {
-        //super.onBackPressed();
-        if (currentTime + 2000 > System.currentTimeMillis())
-        {
-            backToast.cancel();
-            this.finishAffinity();
-
-        }
-        else {
-            backToast = Toast.makeText(this, "Ấn lần nữa để thoát", Toast.LENGTH_SHORT);
-            backToast.show();
-        }
-        currentTime = System.currentTimeMillis();
     }
 }

@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheLife">
+<<<<<<< HEAD
         <activity android:name=".Asset"></activity>
         <activity android:name=".Shopping" />
         <activity android:name=".BoiToan" />
+=======
+        <activity android:name=".BoiToan"/>
+>>>>>>> 7aa7b485bbe809af3b97e6ceb7e97ee55f3594ef
         <activity android:name=".MakeUp" />
         <activity android:name=".Cooking" />
         <activity android:name=".Startup" />
@@ -28,15 +32,22 @@
         <activity android:name=".SportActivity" />
         <activity android:name=".RelationShip" />
         <activity android:name=".FoodActivity" />
+<<<<<<< HEAD
         <activity android:name=".MainActivity" />
         <activity android:name=".SelectGender" />
         <activity android:name=".CreateName">
+=======
+        <activity android:name=".MainActivity">
+>>>>>>> 7aa7b485bbe809af3b97e6ceb7e97ee55f3594ef
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SelectGender"/>
+        <activity android:name=".CreateName"/>
+
 
         <meta-data
             android:name="preloaded_fonts"

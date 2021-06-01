@@ -40,7 +40,6 @@ public class MakeUp extends AppCompatActivity {
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
         random = new Random();
-        arrMakeUp = new ArrayList<Food>();
         lvMakeUp = (ListView) findViewById((R.id.listviewMakeUp));
         loadGame();
         arrMakeUp = new ArrayList<>();
@@ -54,7 +53,7 @@ public class MakeUp extends AppCompatActivity {
         adapter = new FoodAdapter(this, R.layout.food_line, arrMakeUp);
         lvMakeUp.setAdapter(adapter);
         jsonEvent = readEvent();
-        Activity = new ActivitiesEvent(jsonEvent,MainActivity.saveGame,MakeUp.this);
+        Activity = new ActivitiesEvent(jsonEvent,MakeUp.this);
 
         lvMakeUp.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -210,8 +209,9 @@ public class MakeUp extends AppCompatActivity {
     public void gotoMainMenu(View view)
     {
         //startActivity(new Intent(SportActivity.this, HoatDong.class));
-        finish();
+        //finish();
         overridePendingTransition(R.anim.enter, R.anim.exit);
+        onBackPressed();
     }
 
     @Override
