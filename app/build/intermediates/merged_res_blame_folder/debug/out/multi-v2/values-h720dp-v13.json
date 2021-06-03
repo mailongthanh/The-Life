@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "D:\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\f9db3af1d4b21c0f8eaed47c1558f861\\appcompat-1.2.0\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+=======
+            "outputFile": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\58cd43936856d4a1edea7db3fdacda42\\transformed\\appcompat-1.2.0\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

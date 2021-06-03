@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "D:\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\2730d74d200c17936a122ce975a9aa70\\material-1.3.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+=======
+            "outputFile": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\f816f1e5b3c2c515a288b8f8d6971daa\\transformed\\material-1.3.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +30,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\f9db3af1d4b21c0f8eaed47c1558f861\\appcompat-1.2.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+=======
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\58cd43936856d4a1edea7db3fdacda42\\transformed\\appcompat-1.2.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

@@ -33,7 +33,11 @@ public class Asset extends AppCompatActivity {
 
         arrAsset = new ArrayList<>();
         arrAsset = MainActivity.saveGame.getAsset();
+<<<<<<< HEAD
         if(arrAsset !=null)
+=======
+        if(arrAsset!=null)
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
         {
             tvThongbao.setText("Danh sách tài sản bạn có: ");
             adapter = new productAdapter(this,R.layout.food_line, arrAsset);

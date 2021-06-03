@@ -18,6 +18,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.TheLife" >
+<<<<<<< HEAD
         <activity android:name="com.ntsua.thelife.JobGiaoDuc" />
         <activity android:name="com.ntsua.thelife.JobYTe" />
         <activity android:name="com.ntsua.thelife.JobDienVien" />
@@ -33,6 +34,10 @@
         <activity android:name="com.ntsua.thelife.JobCaSi" />
         <activity android:name="com.ntsua.thelife.ChuyenViec" />
         <activity android:name="com.ntsua.thelife.Asset" />
+=======
+        <activity android:name="com.ntsua.thelife.Asset" >
+        </activity>
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
         <activity android:name="com.ntsua.thelife.Shopping" />
         <activity android:name="com.ntsua.thelife.BoiToan" />
         <activity android:name="com.ntsua.thelife.MakeUp" />

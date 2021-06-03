@@ -122,7 +122,7 @@ public class HoatDong extends AppCompatActivity {
         txtJob.setText(MainActivity.saveGame.getJob());
     }
     public void gotoMainMenu(View view) {
-        //startActivity(new Intent(HoatDong.this, MainActivity.class));
+        startActivity(new Intent(HoatDong.this, MainActivity.class));
         overridePendingTransition(R.anim.enter, R.anim.exit);
         onBackPressed();
     }

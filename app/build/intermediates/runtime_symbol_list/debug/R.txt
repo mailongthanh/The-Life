@@ -1757,7 +1757,10 @@ int drawable cutlery 0x7f080096
 int drawable dalieu 0x7f080097
 int drawable danang 0x7f080098
 int drawable dao 0x7f080099
+<<<<<<< HEAD
 int drawable daubep 0x7f080181
+=======
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int drawable degree 0x7f08009a
 int drawable dentist 0x7f08009b
 int drawable design_bottom_navigation_item_background 0x7f08009c
@@ -1769,22 +1772,29 @@ int drawable design_snackbar_background 0x7f0800a1
 int drawable devil 0x7f0800a2
 int drawable diamondv 0x7f0800a3
 int drawable dice 0x7f0800a4
+<<<<<<< HEAD
 int drawable dienvienchinh 0x7f080163
 int drawable dienviendongthe 0x7f080164
 int drawable dienvienphu 0x7f080165
 int drawable diva 0x7f08014e
+=======
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int drawable doctor 0x7f0800a5
 int drawable dog 0x7f0800a6
 int drawable dogrobber 0x7f0800a7
 int drawable dragon 0x7f0800a8
 int drawable drink 0x7f0800a9
+<<<<<<< HEAD
 int drawable editor 0x7f080166
 int drawable education 0x7f080146
+=======
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int drawable entertainment 0x7f0800aa
 int drawable eyesdoctor 0x7f0800ab
 int drawable factory 0x7f0800ac
 int drawable fast_food 0x7f0800ad
 int drawable film 0x7f0800ae
+<<<<<<< HEAD
 int drawable finance 0x7f080147
 int drawable fitness 0x7f0800af
 int drawable foot 0x7f0800b0
@@ -1792,14 +1802,23 @@ int drawable football 0x7f0800b1
 int drawable footballplayer 0x7f080148
 int drawable footballs 0x7f080153
 int drawable footballstar 0x7f080154
+=======
+int drawable fitness 0x7f0800af
+int drawable foot 0x7f0800b0
+int drawable football 0x7f0800b1
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int drawable fortunetelling 0x7f0800b2
 int drawable frame 0x7f0800b3
 int drawable fruits 0x7f0800b4
 int drawable gangster 0x7f0800b5
 int drawable genderselect_button 0x7f0800b6
+<<<<<<< HEAD
 int drawable giamdoc 0x7f080167
 int drawable girl 0x7f0800b7
 int drawable grab 0x7f080168
+=======
+int drawable girl 0x7f0800b7
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int drawable gradient_bg 0x7f0800b8
 int drawable gradient_bg_select 0x7f0800b9
 int drawable guitar 0x7f0800ba
@@ -1807,7 +1826,10 @@ int drawable gun 0x7f0800bb
 int drawable hacker 0x7f0800bc
 int drawable hamburger 0x7f0800bd
 int drawable handlove 0x7f0800be
+<<<<<<< HEAD
 int drawable hangrong 0x7f080169
+=======
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int drawable happy 0x7f0800bf
 int drawable heartbeat 0x7f0800c0
 int drawable helicopter 0x7f0800c1
@@ -1825,6 +1847,7 @@ int drawable ic_mtrl_checked_circle 0x7f0800cc
 int drawable ic_mtrl_chip_checked_black 0x7f0800cd
 int drawable ic_mtrl_chip_checked_circle 0x7f0800ce
 int drawable ic_mtrl_chip_close_circle 0x7f0800cf
+<<<<<<< HEAD
 int drawable idol 0x7f08014f
 int drawable insult 0x7f0800d0
 int drawable it 0x7f080149
@@ -1837,6 +1860,14 @@ int drawable laptop 0x7f0800d4
 int drawable laptrinhvien 0x7f08016a
 int drawable library 0x7f0800d5
 int drawable lieutenant 0x7f08016b
+=======
+int drawable insult 0x7f0800d0
+int drawable jogging 0x7f0800d1
+int drawable knife 0x7f0800d2
+int drawable korea 0x7f0800d3
+int drawable laptop 0x7f0800d4
+int drawable library 0x7f0800d5
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int drawable life_insurance 0x7f0800d6
 int drawable list_selector 0x7f0800d7
 int drawable lollipop 0x7f0800d8
@@ -1844,10 +1875,15 @@ int drawable lottery 0x7f0800d9
 int drawable love 0x7f0800da
 int drawable maimoi 0x7f0800db
 int drawable makeup 0x7f0800dc
+<<<<<<< HEAD
 int drawable marketing 0x7f08016c
 int drawable masion 0x7f0800dd
 int drawable massage 0x7f0800de
 int drawable masterchef 0x7f080183
+=======
+int drawable masion 0x7f0800dd
+int drawable massage 0x7f0800de
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int drawable matau 0x7f0800df
 int drawable material_cursor_drawable 0x7f0800e0
 int drawable material_ic_calendar_black_24dp 0x7f0800e1
@@ -1859,10 +1895,15 @@ int drawable material_ic_keyboard_arrow_previous_black_24dp 0x7f0800e6
 int drawable material_ic_keyboard_arrow_right_black_24dp 0x7f0800e7
 int drawable material_ic_menu_arrow_down_black_24dp 0x7f0800e8
 int drawable material_ic_menu_arrow_up_black_24dp 0x7f0800e9
+<<<<<<< HEAD
 int drawable medical 0x7f08014a
 int drawable mental_health 0x7f0800ea
 int drawable menu 0x7f0800eb
 int drawable minishop 0x7f08016d
+=======
+int drawable mental_health 0x7f0800ea
+int drawable menu 0x7f0800eb
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int drawable money 0x7f0800ec
 int drawable motorcycle 0x7f0800ed
 int drawable movie 0x7f0800ee
@@ -1876,7 +1917,10 @@ int drawable mtrl_popupmenu_background 0x7f0800f5
 int drawable mtrl_popupmenu_background_dark 0x7f0800f6
 int drawable mtrl_tabs_default_indicator 0x7f0800f7
 int drawable navigation_empty_icon 0x7f0800f8
+<<<<<<< HEAD
 int drawable newspaper 0x7f08014b
+=======
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int drawable noodle 0x7f0800f9
 int drawable notification_action_background 0x7f0800fa
 int drawable notification_bg 0x7f0800fb
@@ -1890,7 +1934,10 @@ int drawable notification_template_icon_bg 0x7f080102
 int drawable notification_template_icon_low_bg 0x7f080103
 int drawable notification_tile_bg 0x7f080104
 int drawable notify_panel_notification_icon_bg 0x7f080105
+<<<<<<< HEAD
 int drawable onlineshop 0x7f08016e
+=======
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int drawable painttool 0x7f080106
 int drawable pc 0x7f080107
 int drawable pho 0x7f080108
@@ -1902,11 +1949,16 @@ int drawable playground 0x7f08010d
 int drawable plus 0x7f08010e
 int drawable poison 0x7f08010f
 int drawable previous 0x7f080110
+<<<<<<< HEAD
 int drawable principal 0x7f08016f
 int drawable psychiatrist 0x7f080111
 int drawable quanlynhahang 0x7f080170
 int drawable racing 0x7f080112
 int drawable reporter 0x7f080171
+=======
+int drawable psychiatrist 0x7f080111
+int drawable racing 0x7f080112
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int drawable restaurant 0x7f080113
 int drawable rice_bowl 0x7f080114
 int drawable robber 0x7f080115
@@ -1914,6 +1966,7 @@ int drawable rowing 0x7f080116
 int drawable runningshoes 0x7f080117
 int drawable salad 0x7f080118
 int drawable saleman 0x7f080119
+<<<<<<< HEAD
 int drawable saler 0x7f080172
 int drawable seafood 0x7f08011a
 int drawable secretary 0x7f080173
@@ -1921,6 +1974,11 @@ int drawable service 0x7f08014c
 int drawable shopping 0x7f08011b
 int drawable simplehouse 0x7f08011c
 int drawable singer 0x7f08014d
+=======
+int drawable seafood 0x7f08011a
+int drawable shopping 0x7f08011b
+int drawable simplehouse 0x7f08011c
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int drawable skincare 0x7f08011d
 int drawable smartphones 0x7f08011e
 int drawable snake 0x7f08011f
@@ -1931,6 +1989,7 @@ int drawable sperm 0x7f080123
 int drawable sport 0x7f080124
 int drawable startup 0x7f080125
 int drawable steam 0x7f080126
+<<<<<<< HEAD
 int drawable substitution 0x7f080155
 int drawable supercar 0x7f080127
 int drawable supermarket 0x7f080174
@@ -1944,19 +2003,29 @@ int drawable taxidriver 0x7f080178
 int drawable taximanager 0x7f080179
 int drawable teacher 0x7f08017a
 int drawable tearoomsinger 0x7f080150
+=======
+int drawable supercar 0x7f080127
+int drawable surfing 0x7f080128
+int drawable sushi 0x7f080129
+int drawable tattoo 0x7f08012a
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int drawable tennis_racket 0x7f08012b
 int drawable test_custom_background 0x7f08012c
 int drawable thailand 0x7f08012d
 int drawable thanksgiving 0x7f08012e
 int drawable thelife 0x7f08012f
+<<<<<<< HEAD
 int drawable thuctapsinh 0x7f08017b
 int drawable tonggiamdoc 0x7f08017c
+=======
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int drawable tool 0x7f080130
 int drawable toolbox 0x7f080131
 int drawable tooltip_frame_dark 0x7f080132
 int drawable tooltip_frame_light 0x7f080133
 int drawable travel 0x7f080134
 int drawable triangle 0x7f080135
+<<<<<<< HEAD
 int drawable trienvong 0x7f080156
 int drawable trungsi 0x7f08017d
 int drawable tuvi 0x7f080136
@@ -1971,6 +2040,17 @@ int drawable wax 0x7f08013c
 int drawable weapon 0x7f08013d
 int drawable webcam 0x7f08013e
 int drawable wedding 0x7f080151
+=======
+int drawable tuvi 0x7f080136
+int drawable vehicle 0x7f080137
+int drawable vespa 0x7f080138
+int drawable volleyball 0x7f080139
+int drawable vovinam 0x7f08013a
+int drawable vungtau 0x7f08013b
+int drawable wax 0x7f08013c
+int drawable weapon 0x7f08013d
+int drawable webcam 0x7f08013e
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int drawable yoga 0x7f08013f
 int font anton 0x7f090000
 int id ALT 0x7f0a0000
@@ -2195,7 +2275,10 @@ int id imageButtonMenu 0x7f0a00da
 int id imageCrime 0x7f0a00db
 int id imageFood 0x7f0a00dc
 int id imagePro 0x7f0a00dd
+<<<<<<< HEAD
 int id imageView 0x7f0a022d
+=======
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int id imageViewNewFriend 0x7f0a00de
 int id imagebuttonAddAge 0x7f0a00df
 int id imageviewAssetBack 0x7f0a00e0
@@ -2238,6 +2321,7 @@ int id linearSmart 0x7f0a0104
 int id linearSmartRelationship 0x7f0a0105
 int id listMode 0x7f0a0106
 int id list_item 0x7f0a0107
+<<<<<<< HEAD
 int id listviewAmThuc 0x7f0a0220
 int id listviewAsset 0x7f0a0108
 int id listviewBaoChi 0x7f0a0221
@@ -2260,15 +2344,33 @@ int id listviewLove 0x7f0a0111
 int id listviewMakeUp 0x7f0a0112
 int id listviewPlayground 0x7f0a0113
 int id listviewQuanDoi 0x7f0a0229
+=======
+int id listviewAsset 0x7f0a0108
+int id listviewBoi 0x7f0a0109
+int id listviewCooking 0x7f0a010a
+int id listviewCrime 0x7f0a010b
+int id listviewDegree 0x7f0a010c
+int id listviewEntertainment 0x7f0a010d
+int id listviewFood 0x7f0a010e
+int id listviewHoatDong 0x7f0a010f
+int id listviewHospital 0x7f0a0110
+int id listviewLove 0x7f0a0111
+int id listviewMakeUp 0x7f0a0112
+int id listviewPlayground 0x7f0a0113
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int id listviewShopping 0x7f0a0114
 int id listviewSongKhac 0x7f0a0115
 int id listviewSports 0x7f0a0116
 int id listviewStartUp 0x7f0a0117
+<<<<<<< HEAD
 int id listviewTaiChinh 0x7f0a022a
 int id listviewTaiXe 0x7f0a022b
 int id listviewTravel 0x7f0a0118
 int id listviewViec 0x7f0a021f
 int id listviewYte 0x7f0a022c
+=======
+int id listviewTravel 0x7f0a0118
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 int id lvHangnong 0x7f0a0119
 int id lvmuasam 0x7f0a011a
 int id masked 0x7f0a011b

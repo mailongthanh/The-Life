@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_crime.xml.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\layout\\activity_crime.xml"
     },
@@ -110,6 +111,74 @@
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_chutichtapdoan.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\chutichtapdoan.png"
+=======
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_doctor.jpg.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\doctor.jpg"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_muasam.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\layout\\dialog_muasam.xml"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_hamburger.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\hamburger.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_acnet.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\acnet.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tool.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\tool.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_baseball.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\baseball.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tattoo.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\tattoo.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cancel.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\cancel.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_hospital.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\hospital.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\asset.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_crime.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\layout\\activity_crime.xml"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_drink.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\drink.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_plus.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\plus.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fitness.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\fitness.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_shopping.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\layout\\activity_shopping.xml"
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
@@ -120,6 +189,7 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\layout\\activity_startup.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_banhxeo.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\banhxeo.png"
     },
@@ -174,6 +244,38 @@
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_notification.xml.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\layout\\dialog_notification.xml"
+=======
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lottery.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\lottery.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_startup.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\startup.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bar.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\bar.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_snorkle.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\snorkle.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_quan_he.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\layout\\quan_he.xml"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fast_food.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\fast_food.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_phuquoc.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\phuquoc.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_holding_hands.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\holding_hands.png"
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_hiking.png.flat",
@@ -196,6 +298,7 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\weapon.png"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_player_info.xml.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\layout\\player_info.xml"
     },
@@ -382,6 +485,98 @@
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_blogger.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\blogger.png"
+=======
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_productline.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\layout\\productline.xml"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_makeup.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\makeup.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dentist.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\dentist.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_banhxeo.jpg.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\banhxeo.jpg"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_song_khac.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\layout\\activity_song_khac.xml"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_blooddonate.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\blooddonate.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_robber.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\robber.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_playground.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\playground.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sport.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\sport.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dao.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\dao.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_bg.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\gradient_bg.xml"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_entertainment.jpg.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\entertainment.jpg"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_psychiatrist.jpg.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\psychiatrist.jpg"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dogrobber.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\dogrobber.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_insult.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\insult.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ailatrieuphu.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\ailatrieuphu.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_progressbar_medium.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\custom_progressbar_medium.xml"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pizza.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\pizza.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_vungtau.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\vungtau.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fruits.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\fruits.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_laptop.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\laptop.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_list_selector.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\list_selector.xml"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_badminton.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\badminton.png"
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
@@ -396,6 +591,7 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\layout\\activity_modau.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bike.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\bike.png"
     },
@@ -438,6 +634,22 @@
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_diamondv.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\diamondv.png"
+=======
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_vovinam.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\vovinam.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_seafood.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\seafood.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dalieu.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\dalieu.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cutlery.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\cutlery.png"
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_america.png.flat",
@@ -488,12 +700,25 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\dalieu.png"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_makeup.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\makeup.png"
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_factory.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\factory.png"
+=======
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fortunetelling.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\fortunetelling.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_progressbar_low.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\custom_progressbar_low.xml"
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_principal.png.flat",
@@ -544,16 +769,26 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\guitar.png"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_baseball.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\baseball.png"
+=======
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_compliment.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\compliment.png"
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_progressbar_medium.xml.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\custom_progressbar_medium.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_drink.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\drink.png"
+=======
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_thanksgiving.png.flat",
@@ -576,6 +811,7 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\hongkong.png"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pickpocket.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\pickpocket.png"
     },
@@ -586,6 +822,18 @@
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_salad.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\salad.png"
+=======
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_hangnong.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\layout\\dialog_hangnong.xml"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_genderselect_button.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\genderselect_button.xml"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dragon.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\dragon.png"
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_job_am_thuc.xml.flat",
@@ -668,6 +916,7 @@
         "source": "D:\\The-Life\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sperm.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\sperm.png"
     },
@@ -682,14 +931,35 @@
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_badminton.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\badminton.png"
+=======
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_handlove.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\handlove.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_noodle.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\noodle.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_career.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\career.png"
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_doctor.jpg.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\doctor.jpg"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_jobsearch.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\jobsearch.png"
+=======
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_jogging.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\jogging.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_button_menu.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\custom_button_menu.xml"
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_button_menu.xml.flat",
@@ -780,6 +1050,7 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\movie.png"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_helicopter.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\helicopter.png"
     },
@@ -790,6 +1061,18 @@
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_colonel.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\colonel.png"
+=======
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_helicopter.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\helicopter.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_skincare.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\skincare.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_knife.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\knife.png"
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_communication.png.flat",
@@ -828,8 +1111,17 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\gradient_bg_select.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_crime.xml.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\layout\\crime.xml"
+=======
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_new_friend.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\layout\\dialog_new_friend.xml"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_previous.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\previous.png"
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_chunhahang.png.flat",
@@ -864,6 +1156,7 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\quanlynhahang.png"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\anim_dialog_exit.xml.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\anim\\dialog_exit.xml"
     },
@@ -874,6 +1167,18 @@
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_song_khac.xml.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\layout\\activity_song_khac.xml"
+=======
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_smartphones.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\smartphones.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_house.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\house.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_appearance.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\appearance.png"
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_footballs.png.flat",
@@ -964,6 +1269,7 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\waiter.png"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_taxiboss.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\taxiboss.png"
     },
@@ -974,6 +1280,18 @@
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_beer.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\beer.png"
+=======
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_hoat_dong.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\layout\\activity_hoat_dong.xml"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_relationship.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\layout\\relationship.xml"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame.xml.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\frame.xml"
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_progressbar_low.xml.flat",
@@ -1012,6 +1330,7 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\marketing.png"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dice.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\dice.png"
     },
@@ -1022,6 +1341,18 @@
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pho.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\pho.png"
+=======
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bike.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\bike.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_weapon.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\weapon.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_webcam.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\webcam.png"
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_job_cong_nghe.xml.flat",
@@ -1096,6 +1427,7 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\vehicle.png"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shopping.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\shopping.png"
     },
@@ -1106,12 +1438,25 @@
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_quan_he.xml.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\layout\\quan_he.xml"
+=======
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_runningshoes.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\runningshoes.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_book.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\book.png"
+    },
+    {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_film.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\film.png"
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fruits.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\fruits.png"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dog.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\dog.png"
     },
@@ -1262,5 +1607,9 @@
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_hero.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\hero.png"
+=======
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_hacker.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\hacker.png"
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
     }
 ]

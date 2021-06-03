@@ -2196,7 +2196,10 @@ id imageButtonMenu
 id imageCrime
 id imageFood
 id imagePro
+<<<<<<< HEAD
 id imageView
+=======
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
 id imageViewNewFriend
 id imagebuttonAddAge
 id imageviewAssetBack

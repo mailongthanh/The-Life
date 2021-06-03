@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheLife">
+<<<<<<< HEAD
         <activity android:name=".JobGiaoDuc"></activity>
         <activity android:name=".JobYTe" />
         <activity android:name=".JobDienVien" />
@@ -24,6 +25,12 @@
         <activity android:name=".JobCaSi" />
         <activity android:name=".ChuyenViec" />
         <activity android:name=".Asset" />
+=======
+
+        <activity android:name=".Asset">
+
+        </activity>
+>>>>>>> e06675f81cf3d5292eab780b78a860e55b3b4ea4
         <activity android:name=".Shopping" />
         <activity android:name=".BoiToan" />
         <activity android:name=".MakeUp" />
