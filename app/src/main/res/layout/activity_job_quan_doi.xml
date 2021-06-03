@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".JobQuanDoi">
+
+    <include android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/player_info"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:background="#007BFF">
+
+        <TextView
+            android:id="@+id/textviewTitle"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="QUÂN ĐỘI"
+            android:gravity="center"
+            android:fontFamily="@font/anton"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:textColor="@color/white" />
+        <ImageView
+            android:id="@+id/imageviewHoatDongBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/previous"
+            android:onClick="gotoMainMenu"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listviewQuanDoi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
