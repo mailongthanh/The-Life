@@ -38,10 +38,7 @@ public class SportActivity extends AppCompatActivity {
     String jsonEvent;
     ActivitiesEvent Activity;
     TextView txtName, txtJob, txtMoney;
-<<<<<<< HEAD
 
-=======
->>>>>>> 7aa7b485bbe809af3b97e6ceb7e97ee55f3594ef
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,10 +47,6 @@ public class SportActivity extends AppCompatActivity {
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
 
-<<<<<<< HEAD
-        lvSport = (ListView) findViewById((R.id.listviewSports));
-=======
->>>>>>> 7aa7b485bbe809af3b97e6ceb7e97ee55f3594ef
         random = new Random();
         lvSport = (ListView) findViewById((R.id.listviewSports));
         loadGame();

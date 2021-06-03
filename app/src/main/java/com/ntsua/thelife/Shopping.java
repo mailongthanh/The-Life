@@ -12,6 +12,7 @@ import android.view.Window;
 import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -131,7 +132,8 @@ public class Shopping extends AppCompatActivity {
                     loadGame();
                     arrAsset.add(arrProduct.get(position));
                     MainActivity.saveGame.saveAsset(arrAsset);
-                }
+                    Toast.makeText(Shopping.this, "Bạn đã mua thành công", Toast.LENGTH_SHORT).show();
+                } else createDialogOFM();
             }
         });
 
@@ -173,11 +175,29 @@ public class Shopping extends AppCompatActivity {
                     MainActivity.saveGame.saveAsset(arrAsset);
                     loadGame();
                     Toast.makeText(Shopping.this, "Bạn đã mua thành công", Toast.LENGTH_SHORT).show();
-                } else Toast.makeText(Shopping.this, "Bạn không đủ tiền", Toast.LENGTH_SHORT).show();
+                } else createDialogOFM();
             }
         });
 
         btnRoi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+    }
+
+    void createDialogOFM() {
+        Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.setContentView(R.layout.dialog_out_of_money);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        LinearLayout dialogResult = dialog.findViewById(R.id.dialog_event_result);
+        Button btnOke = dialog.findViewById(R.id.buttonDialogEventOke);
+        btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();

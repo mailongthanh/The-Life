@@ -33,7 +33,7 @@ public class Asset extends AppCompatActivity {
 
         arrAsset = new ArrayList<>();
         arrAsset = MainActivity.saveGame.getAsset();
-        if(arrAsset.size()!=0)
+        if(arrAsset!=null)
         {
             tvThongbao.setText("Danh sách tài sản bạn có: ");
             adapter = new productAdapter(this,R.layout.food_line, arrAsset);

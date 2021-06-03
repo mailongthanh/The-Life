@@ -51,16 +51,11 @@
                   {"event": "Trước bình sữa mẹ pha, bạn khóc và nũng nịu muốn được bón sữa. \n\nBạn được bế lên bón sữa, tuy nhiên vị sữa hôm nay không hợp khẩu vị với bạn, bạn khóc nhưng vẫn bị ép uống", "assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0}
                 ]}
           ]}
-<<<<<<< HEAD
 
     ],
    [
      {"title": "Kiến thức", "event": "Hôm nay bạn xem trên tivi, bạn biết được rằng: \n\ntrong hệ mặt trời bao gồm có mặt trời và 9 hành tinh quay xung quanh nó.Theo thứ tự sao Thủy, sao Kim, trái Đất, sao Hỏa, sao Mộc, sao Thổ, sao Thiên Vương, sao Hải Vương và sao Diêm Vương",
        "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
-     {"title": "Đời sống", "event": "Hôm nay tivi đưa tin về tình hình dịch bệnh căng thẳng, khuyến cáo mọi người nên đeo khẩu trang nơi công cộng",
-     "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
-     {"title": "Kiến thức","event": "Hôm nay bạn xem trên tivi, bạn biết được rằng: \n\ntốc độ trung bình của ánh sáng xấp xỉ 299792458 m/s",
-     "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
      {"title":"Đời sống", "event": "Hôm nay là một ngày đẹp trời, bố bạn đang cố dạy bạn tập đi \n\nTrước sự giúp đỡ của bố, bạn muốn làm gì ? ", "selection": true,
        "select":[
          {"content": "Hợp tác", "selection":false,
@@ -75,7 +70,12 @@
            ]}
        ]}
    ],
-   [],
+   [
+     {"title": "Đời sống", "event": "Hôm nay tivi đưa tin về tình hình dịch bệnh căng thẳng, khuyến cáo mọi người nên đeo khẩu trang nơi công cộng",
+       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+     {"title": "Kiến thức","event": "Hôm nay bạn xem trên tivi, bạn biết được rằng: \n\ntốc độ trung bình của ánh sáng xấp xỉ 299792458 m/s",
+       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0}
+   ],
    [],
    [
      {"title":"Đời sống", "event": "Hôm nay là sinh nhật 5 tuổi của bạn, bạn được quyền lựa chọn 1 món quà \n\nBạn muốn được nhận quà gì ? ", "selection": true,
@@ -99,11 +99,60 @@
        ]},
      {"title": "Kiến thức", "event": "Hôm nay bạn nghe trên báo đài, bạn biết được rằng: \n\nMột con gián mất đầu có thể sống sót trong vài tuần và cuối cùng nó sẽ chết vì đói.",
        "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
-   ]
-  ]
+   ],
+  [
+    {"title": "Giáo dục", "event": "Bạn bắt đầu học lớp 1 tại một trường tiểu học ở làng",
+    "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+    {"title": "Giáo dục", "event": "Bạn bắt đầu học lớp 1 tại một trường tiểu học ở huyện",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+    {"title": "Giáo dục", "event": "Bạn bắt đầu học lớp 1 tại một trường tiểu học ở tỉnh",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+  ],
+  [
+    {"title":"Đời sống", "event": "Bạn đang bị một đám ức hiếp trong lớp \n\nBạn muốn làm gì ? ", "selection": true,
+      "select":[
+        {"content": "Đấm trả", "selection":false,
+          "event": [
+            { "event" :"Bạn đấm trả lại bọn bắt nạt mình, chúng hứa là sẽ không bao giờ dám làm như vậy nữa", "assets": 0, "happy": 5, "health": -2, "smart":5, "appearance": 0},
+            { "event" :"bạn đấm trả lại bọn bắt nạt mình, nhưng tụi nó quá đông, bạn bị đấm nhiều hơn là được đấm ", "assets": 0, "happy": -5, "health": -2, "smart":0, "appearance": 0}
+          ]},
 
-}
-=======
-    ]
-]
->>>>>>> 7aa7b485bbe809af3b97e6ceb7e97ee55f3594ef
+        {"content": "Mách cô", "selection":false,
+          "event":[
+            { "event": "Bạn mách cô về việc bị đánh hội đồng, cô đã làm việc với phụ huynh và tụi nó hứa là sẽ không dám bắt nạt bạn nữa", "assets": 0, "happy": 10, "health": 0, "smart":5, "appearance": 0},
+            { "event": "Bạn mách cô về việc bị đánh hội đồng, tyu cô đã làm việc với phía phụ huynh, nhưng hầu như tụi nó không biết sợ là gì, \n\nBạn vẫn bị bắt nạt", "assets": 0, "happy": -5, "health": -3, "smart":0, "appearance": 0}
+          ]},
+        {"content": "Nịnh bợ", "selection":false,
+          "event": [
+            {"event": "Bạn nịnh bợ đứa cầm đầu trong băng, bạn được làm đàn em của nó, tuy nhiên kết cục bạn vẫn bị bắt nạt và là chân sai vặt", "assets": -10, "happy": -5, "health": 0, "smart":-5, "appearance": 0},
+            {"event": "Bạn nịnh bợ đứa cầm đầu trong băng, bạn được làm đàn em của nó, bạn bắt đầu làm những việc bất lương như bọn bắt nạt", "assets": 0, "happy": -5, "health": 0, "smart":-5, "appearance": -5}
+          ]}
+      ]},
+
+    {"title": "Kiến thức","event": "Hôm nay bạn nghe trên lớp ráo nhau rằng: \n\nCách gọi Oẳn tù tì thực chất chính là gọi One, Two, Three",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0}
+  ],
+  [],
+  [],
+  [
+    {"title":"Giáo dục", "event": "Cho một hình tam giác ABC vuông tại B, có cạnh AB = 3 cm, BC = 4cm \n\nChu vi hình tam giác là ? ", "selection": true,
+      "select":[
+        {"content": "A. 10cm", "selection":false,
+          "event": [
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, may là bạn vừa đủ số điểm để vào trường trung học ở làng", "assets": 0, "happy": 0, "health": 0, "smart":-5, "appearance": 0},
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, tuy nhiên nhờ nâng đỡ mà bạn vẫn được vào trường THCS ", "assets": 0, "happy": -5, "health": 0, "smart":-5, "appearance": 0}
+          ]},
+
+        {"content": "B. 11cm", "selection":false,
+          "event":[
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, may là bạn vừa đủ số điểm để vào trường trung học ở làng", "assets": 0, "happy": 0, "health": 0, "smart":-5, "appearance": 0},
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, tuy nhiên nhờ nâng đỡ mà bạn vẫn được vào trường THCS ", "assets": 0, "happy": -5, "health": 0, "smart":-5, "appearance": 0}
+          ]},
+        {"content": "C. 12cm", "selection":false,
+          "event": [
+            {"event": "Bạn đã chọn đáp án chính xác trong bài thi, bạn vào trường THCS với thành tích xuất sắc và một phần quà nho nhỏ", "assets": 100, "happy": 10, "health": 0, "smart":5, "appearance": 0},
+            {"event": "Bạn đã chọn đáp án chính xác trong bài thi, bạn là thủ khoa đầu vào của trường THCS ở tỉnh", "assets": 100, "happy": 10, "health": 0, "smart":5, "appearance": 0}
+          ]}
+      ]}
+  ]
+  ]

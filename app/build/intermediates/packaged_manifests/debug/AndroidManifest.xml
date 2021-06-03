@@ -18,7 +18,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.TheLife" >
-        <activity android:name="com.ntsua.thelife.Asset" />
+        <activity android:name="com.ntsua.thelife.Asset" >
+        </activity>
         <activity android:name="com.ntsua.thelife.Shopping" />
         <activity android:name="com.ntsua.thelife.BoiToan" />
         <activity android:name="com.ntsua.thelife.MakeUp" />
@@ -37,6 +38,8 @@
         <activity android:name="com.ntsua.thelife.SportActivity" />
         <activity android:name="com.ntsua.thelife.RelationShip" />
         <activity android:name="com.ntsua.thelife.FoodActivity" />
+        <activity android:name="com.ntsua.thelife.SelectGender" />
+        <activity android:name="com.ntsua.thelife.CreateName" />
         <activity android:name="com.ntsua.thelife.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,8 +47,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.ntsua.thelife.SelectGender" />
-        <activity android:name="com.ntsua.thelife.CreateName" />
 
         <meta-data
             android:name="preloaded_fonts"

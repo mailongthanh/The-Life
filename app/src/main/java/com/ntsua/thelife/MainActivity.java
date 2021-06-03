@@ -166,7 +166,6 @@ public class MainActivity extends AppCompatActivity {
         //them tuoi
         int age = saveGame.getAge() + 1;
 
-
         //lay su kien tuoi
         JSONArray arrAge = arrJsonAge.getJSONArray(age);
         Random random = new Random();
