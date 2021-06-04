@@ -26,14 +26,14 @@
         android:layout_height="match_parent"
         android:background="@drawable/custom_dialog"
         android:orientation="vertical"
-        android:padding="5dp">
+        >
 
         <TextView
             android:id="@+id/textviewDialogEventContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Đây là nội dung của sự kiện"
-            android:textSize="17sp"
+            android:textSize="18sp"
             android:padding="5dp"
             android:textColor="@color/Blue"
             android:layout_marginTop="10dp"
@@ -195,12 +195,12 @@
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button_menu"
             android:text="Đồng ý"
             android:textColor="@color/black"
-            android:background="@drawable/custom_button_menu"
-            app:backgroundTint="@null"
-            android:layout_marginBottom="5dp"/>
+            app:backgroundTint="@null" />
 
     </LinearLayout>
 

@@ -38,6 +38,7 @@ public class SportActivity extends AppCompatActivity {
     String jsonEvent;
     ActivitiesEvent Activity;
     TextView txtName, txtJob, txtMoney;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

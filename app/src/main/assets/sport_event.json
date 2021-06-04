@@ -1,14 +1,14 @@
 {
   "jogging": [
-    {"event": "Bạn đang chạy bộ ngoài công viên thì bị vấp té.Bạn bất ngờ gặp được người nổi tiếng đỡ bạn dậy.Bạn quên hết cả đau", "assets": 0, "happy": 3, "health": -1, "smart":0, "appearance": 0},
-    {"event": "Chạy bộ giúp bạn giảm mỡ.Trong một tháng, bạn giảm được 5cm vòng eo nhờ chạy bộ 30 phút hằng ngày", "assets": 0, "happy":0, "health": 5, "smart":0, "appearance": 3},
-    {"event": "Trong lúc chạy bộ bạn lỡ làm rớt mất bóp tiền chứa 1 triệu đồng, bạn rất buồn :((", "assets": -1000, "happy":-3, "health": 1, "smart":0, "appearance": 0},
-    {"event": "Một lần đang chạy bộ thì bạn nhặt được 500k.Thể thao đúng là mang lại thật nhiều lợi ích!!!", "assets": 500, "happy": 4, "health": 1, "smart":0, "appearance": 0}
+    {"event": "Bạn đang chạy bộ ngoài công viên thì bị vấp té. Bạn bất ngờ gặp được người nổi tiếng đỡ bạn dậy. Bạn quên hết cả đau", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Chạy bộ giúp bạn giảm mỡ. Trong một tháng, bạn giảm được 5cm vòng eo nhờ chạy bộ 30 phút hằng ngày", "assets": 0, "happy":0, "health": 5, "smart":0, "appearance": 3},
+    {"event": "Trong lúc chạy bộ bạn lỡ làm rớt mất bóp tiền chứa 1 triệu đồng, bạn rất buồn :((", "assets": -1000, "happy":-5, "health": 1, "smart":0, "appearance": 0},
+    {"event": "Một lần đang chạy bộ thì bạn nhặt được 500k. Thể thao đúng là mang lại thật nhiều lợi ích", "assets": 500, "happy": 4, "health": 1, "smart":0, "appearance": 0}
   ],
   "exercise": [
     {"event": "Sau 2 tháng dành ra 30 phút tập thể dục mỗi ngày, bạn giảm được 5kg và trở nên thon gọn", "assets": 0, "happy": 0, "health": 3, "smart":0, "appearance": 2},
     {"event": "Tập thể dục thật tuyệt vời nó khiến bạn trở nên vui vẻ và sảng khoải", "assets": 0, "happy": 2, "health": 2, "smart":0, "appearance": 0},
-    {"event": "Vào một hôm tập thể dục vì không khởi động kỹ mà bạn bị trật khớp vai", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
+    {"event": "Vào một hôm tập thể dục vì không khởi động kĩ mà bạn bị trật khớp vai", "assets": 0, "happy": -1, "health": -1, "smart":0, "appearance": 0}
   ],
   "football": [
     {"event": "Môn thể thao vua giúp bạn đoàn kết với những người anh em", "assets": -150, "happy": 3, "health": 1, "smart":0, "appearance": 0},

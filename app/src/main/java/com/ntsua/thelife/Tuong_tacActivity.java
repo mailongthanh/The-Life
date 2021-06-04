@@ -168,7 +168,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearHappyRelationship));
         } else {
-            txtHappy.setText(value + "");
+            toString(value, txtHappy);
             happy += value;
         }
         value = object.getInt("health"); //Toast.makeText(this, value + "", Toast.LENGTH_SHORT).show();
@@ -176,7 +176,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearHealthRelationship));
         } else {
-            txtHealth.setText(value + "");
+            toString(value, txtHealth);
             health += value;
         }
         value = object.getInt("smart");
@@ -184,7 +184,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearSmartRelationship));
         } else {
-            txtSmart.setText(value + "");
+            toString(value, txtSmart);
             smart += value;
         }
         value = object.getInt("appearance");
@@ -192,7 +192,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearAppearanceRelationship));
         } else {
-            txtAppearance.setText(value + "");
+            toString(value, txtAppearance);
             appearance += value;
         }
 
@@ -201,7 +201,14 @@ public class Tuong_tacActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearMoneyRelationship));
         } else {
-            txtAssets.setText(String.format( "%,d",value*1000));
+            String money = String.format( "%,d", value*1000);
+            if (value > 0)
+                money = "+ " + money;
+            else {
+                money = "- " + money;
+                txtAssets.setTextColor(Color.RED);
+            }
+            txtAssets.setText(money);
             MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() + value);
             txtMoney.setText(value + MainActivity.saveGame.getMoney() + " VND");
         }
@@ -287,4 +294,14 @@ public class Tuong_tacActivity extends AppCompatActivity {
         onBackPressed();
     };
 
+    void toString(int value, TextView txtResult)
+    {
+        String str = null;
+        if (value > 0)
+            txtResult.setText("+ " + value);
+        else if (value < 0) {
+            txtResult.setText("- " + (-1 * value));
+            txtResult.setTextColor(Color.RED);
+        }
+    }
 }

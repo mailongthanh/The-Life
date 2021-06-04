@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Asset">
+
+    <include android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/player_info"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:background="#007BFF">
+
+        <TextView
+            android:id="@+id/textviewTitle"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="TÀI SẢN"
+            android:gravity="center"
+            android:fontFamily="@font/anton"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageviewAssetBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:onClick="gotoMainMenu"
+            android:src="@drawable/previous" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvthongbao"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:textSize="15sp"
+        android:textColor="@color/Blue"
+        android:textStyle="bold"
+        android:text="Bạn không có gì cả">
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/listviewAsset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+</LinearLayout>

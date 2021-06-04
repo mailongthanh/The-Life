@@ -1,19 +1,10 @@
 package com.ntsua.thelife;
 
 import android.content.SharedPreferences;
-import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
@@ -108,6 +99,11 @@ public class SaveGame {
     public void saveRelationship(ArrayList<QuanHe> arrRelationship) {
         String json = gson.toJson(arrRelationship);
         editor.putString("relationship", json);
+        editor.commit();
+    }
+    public void saveAsset(ArrayList<product> arrAsset) {
+        String json = gson.toJson(arrAsset);
+        editor.putString("asset", json);
         editor.commit();
     }
 
@@ -221,5 +217,12 @@ public class SaveGame {
         Type type = new TypeToken<ArrayList<QuanHe>>() {}.getType();
         ArrayList<QuanHe> arrRelationship = gson.fromJson(json, type);
         return arrRelationship;
+    }
+
+    public ArrayList<product> getAsset(){
+        String json = preferences.getString("asset","");
+        Type type = new TypeToken<ArrayList<product>>() {}.getType();
+        ArrayList<product> arrAsset = gson.fromJson(json,type);
+        return arrAsset;
     }
 }
