@@ -1,0 +1,67 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="300dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/custom_button_menu"
+    android:backgroundTintMode="@null">
+
+    <TextView
+        android:id="@+id/textviewDialogEventTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:text="THÔNG BÁO"
+        android:fontFamily="@font/anton"
+        android:textColor="@color/Red"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/dialog_event_result"
+        android:layout_width="match_parent"
+        android:layout_height="193dp"
+        android:background="@drawable/custom_dialog"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/linearMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Đơn xin việc của bạn đã được chấp nhận, bạn được mời tham gia phỏng vấn"
+                android:textColor="@color/Blue" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@drawable/congrat" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonDialogEventOke"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/custom_button_menu"
+        android:text="Đồng ý"
+        android:textColor="@color/Red"
+        app:backgroundTint="@null" />
+
+</LinearLayout>

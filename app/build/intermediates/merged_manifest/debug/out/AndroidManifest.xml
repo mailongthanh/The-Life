@@ -19,6 +19,20 @@
         android:testOnly="true"
         android:theme="@style/Theme.TheLife" >
         <activity android:name="com.ntsua.thelife.Asset" />
+        <activity android:name="com.ntsua.thelife.JobGiaoDuc" />
+        <activity android:name="com.ntsua.thelife.JobYTe" />
+        <activity android:name="com.ntsua.thelife.JobDienVien" />
+        <activity android:name="com.ntsua.thelife.JobTaiChinh" />
+        <activity android:name="com.ntsua.thelife.JobCongNghe" />
+        <activity android:name="com.ntsua.thelife.JobDichVu" />
+        <activity android:name="com.ntsua.thelife.JobAmThuc" />
+        <activity android:name="com.ntsua.thelife.JobKinhDoanh" />
+        <activity android:name="com.ntsua.thelife.JobQuanDoi" />
+        <activity android:name="com.ntsua.thelife.JobBaoChi" />
+        <activity android:name="com.ntsua.thelife.JobTaiXe" />
+        <activity android:name="com.ntsua.thelife.JobCauThu" />
+        <activity android:name="com.ntsua.thelife.JobCaSi" />
+        <activity android:name="com.ntsua.thelife.ChuyenViec" />
         <activity android:name="com.ntsua.thelife.Shopping" />
         <activity android:name="com.ntsua.thelife.BoiToan" />
         <activity android:name="com.ntsua.thelife.MakeUp" />
@@ -37,9 +51,9 @@
         <activity android:name="com.ntsua.thelife.SportActivity" />
         <activity android:name="com.ntsua.thelife.RelationShip" />
         <activity android:name="com.ntsua.thelife.FoodActivity" />
-        <activity android:name="com.ntsua.thelife.MainActivity" />
         <activity android:name="com.ntsua.thelife.SelectGender" />
-        <activity android:name="com.ntsua.thelife.CreateName" >
+        <activity android:name="com.ntsua.thelife.CreateName" />
+        <activity android:name="com.ntsua.thelife.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
