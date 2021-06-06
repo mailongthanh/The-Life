@@ -109,7 +109,7 @@
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
   ],
   [
-    {"title":"Đời sống", "event": "Bạn đang bị một đám ức hiếp trong lớp \n\nBạn muốn làm gì ? ", "selection": true,
+    {"title":"Đời sống học đường", "event": "Bạn đang bị một đám ức hiếp trong lớp \n\nBạn muốn làm gì ? ", "selection": true,
       "select":[
         {"content": "Đấm trả", "selection":false,
           "event": [
@@ -120,7 +120,7 @@
         {"content": "Mách cô", "selection":false,
           "event":[
             { "event": "Bạn mách cô về việc bị đánh hội đồng, cô đã làm việc với phụ huynh và tụi nó hứa là sẽ không dám bắt nạt bạn nữa", "assets": 0, "happy": 10, "health": 0, "smart":5, "appearance": 0},
-            { "event": "Bạn mách cô về việc bị đánh hội đồng, tyu cô đã làm việc với phía phụ huynh, nhưng hầu như tụi nó không biết sợ là gì, \n\nBạn vẫn bị bắt nạt", "assets": 0, "happy": -5, "health": -3, "smart":0, "appearance": 0}
+            { "event": "Bạn mách cô về việc bị đánh hội đồng, tuy cô đã làm việc với phía phụ huynh, nhưng hầu như tụi nó không biết sợ là gì, \n\nBạn vẫn bị bắt nạt", "assets": 0, "happy": -5, "health": -3, "smart":0, "appearance": 0}
           ]},
         {"content": "Nịnh bợ", "selection":false,
           "event": [
@@ -133,25 +133,222 @@
       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0}
   ],
   [],
-  [],
   [
-    {"title":"Giáo dục", "event": "Cho một hình tam giác ABC vuông tại B, có cạnh AB = 3 cm, BC = 4cm \n\nChu vi hình tam giác là ? ", "selection": true,
+    {"title": "Bản tin thời sự", "event": "Một trận sóng thần không lường trước được đã tàn phá hoạt động kinh doanh ở Nhật Bản, giết chết 15.893 người và gây ra thiệt hại không thể phục hồi cho các khu vực xung quanh",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+    {"title": "Kiến thức","event": "Hôm nay bạn xem trên tivi, bạn biết được rằng: \n\nKhông bao gồm hình ảnh, chỉ riêng phần nội dung chữ của ngôn ngữ tiếng Anh trên wikipedia đã chiếm khoảng 14GB.",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0},
+    {"title": "Bản tin thời sự", "event": "\nTính tới thời điềm này, trên thế giới đã có tổng số ca nhiễm Covid lên tới 173.036.310 ca.",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+  ],
+  [
+    {"title":"Thi chuyển cấp", "event": "Cho một hình tam giác ABC vuông tại B, có cạnh AB = 3 cm, BC = 4cm \n\nChu vi hình tam giác là ? ", "selection": true,
       "select":[
         {"content": "A. 10cm", "selection":false,
           "event": [
-            { "event" :"Bạn đã chọn đáp án sai trong bài thi, may là bạn vừa đủ số điểm để vào trường trung học ở làng", "assets": 0, "happy": 0, "health": 0, "smart":-5, "appearance": 0},
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, may là bạn vừa đủ số điểm để vào trường trung học", "assets": 0, "happy": 0, "health": 0, "smart":-5, "appearance": 0},
             { "event" :"Bạn đã chọn đáp án sai trong bài thi, tuy nhiên nhờ nâng đỡ mà bạn vẫn được vào trường THCS ", "assets": 0, "happy": -5, "health": 0, "smart":-5, "appearance": 0}
           ]},
 
         {"content": "B. 11cm", "selection":false,
           "event":[
-            { "event" :"Bạn đã chọn đáp án sai trong bài thi, may là bạn vừa đủ số điểm để vào trường trung học ở làng", "assets": 0, "happy": 0, "health": 0, "smart":-5, "appearance": 0},
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, may là bạn vừa đủ số điểm để vào trường trung học ", "assets": 0, "happy": 0, "health": 0, "smart":-5, "appearance": 0},
             { "event" :"Bạn đã chọn đáp án sai trong bài thi, tuy nhiên nhờ nâng đỡ mà bạn vẫn được vào trường THCS ", "assets": 0, "happy": -5, "health": 0, "smart":-5, "appearance": 0}
           ]},
         {"content": "C. 12cm", "selection":false,
           "event": [
             {"event": "Bạn đã chọn đáp án chính xác trong bài thi, bạn vào trường THCS với thành tích xuất sắc và một phần quà nho nhỏ", "assets": 100, "happy": 10, "health": 0, "smart":5, "appearance": 0},
+            {"event": "Bạn đã chọn đáp án chính xác trong bài thi, bạn là thủ khoa đầu vào của trường THCS", "assets": 100, "happy": 10, "health": 0, "smart":5, "appearance": 0}
+          ]}
+      ]},
+    {"title":"Thi chuyển cấp", "event": "I_____my homework now \n\nĐiền từ thích hợp vào chỗ trống ? ", "selection": true,
+      "select":[
+        {"content": "A. do", "selection":false,
+          "event": [
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, may là bạn vừa đủ số điểm để vào trường trung học ở làng", "assets": 0, "happy": 0, "health": 0, "smart":-5, "appearance": 0},
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, tuy nhiên nhờ nâng đỡ mà bạn vẫn được vào trường THCS ", "assets": 0, "happy": -5, "health": 0, "smart":-5, "appearance": 0}
+          ]},
+
+        {"content": "B. am doing", "selection":false,
+          "event":[
+            {"event": "Bạn đã chọn đáp án chính xác trong bài thi, bạn vào trường THCS với thành tích xuất sắc và một phần quà nho nhỏ", "assets": 100, "happy": 10, "health": 0, "smart":5, "appearance": 0},
             {"event": "Bạn đã chọn đáp án chính xác trong bài thi, bạn là thủ khoa đầu vào của trường THCS ở tỉnh", "assets": 100, "happy": 10, "health": 0, "smart":5, "appearance": 0}
+          ]},
+        {"content": "C. does", "selection":false,
+          "event": [
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, may là bạn vừa đủ số điểm để vào trường trung học ở làng", "assets": 0, "happy": 0, "health": 0, "smart":-5, "appearance": 0},
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, tuy nhiên nhờ nâng đỡ mà bạn vẫn được vào trường THCS ", "assets": 0, "happy": -5, "health": 0, "smart":-5, "appearance": 0}
+          ]}
+      ]}
+  ],
+  [
+    {"title": "Giáo dục", "event": "Bạn bắt đầu học lớp 6 tại một trường THCS ở làng",
+    "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+    {"title": "Giáo dục", "event": "Bạn bắt đầu học lớp 6 tại một trường THCS ở huyện",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+    {"title": "Giáo dục", "event": "Bạn bắt đầu học lớp 6 tại một trường THCS ở tỉnh",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+  ],
+  [
+    {"title":"Đời sống", "event": "Vì một tai nạn, tình cờ bạn có cơ hội chạm môi một bạn nữ trong lớp \n\nBạn muốn làm gì ? ", "selection": true,
+      "select":[
+        {"content": "Tới luôn", "selection":false,
+          "event": [
+            { "event" :"Bạn lợi dụng cơ hội, chạm môi với một bạn nữ, tình cờ là cô bạn này cũng thích bạn", "assets": 0, "happy": 10, "health": 0, "smart":5, "appearance": 0},
+            { "event" :"Bạn lợi dụng cơ hội, chạm môi với một bạn nữ, tuy nhiên bạn nhận ra mắt bạn đã lầm, thực chất đối phương là thằng bạn thân của mình ", "assets": 0, "happy": -10, "health": 0, "smart":-5, "appearance": -5}
+          ]},
+
+        {"content": "Né tránh", "selection":false,
+          "event":[
+            { "event": "Đứng trước tình huống có lợi cho mình, nhưng bạn lại lãng tránh, bạn nhận ra rằng, đất nước còn chưa sánh vai với cường quốc năm châu, bạn phải cố gắng học tập, ý chí bạn cháy rực", "assets": 0, "happy": 10, "health": 0, "smart":10, "appearance": 5},
+            { "event": "Đứng trước tình huống có lợi cho mình, nhưng bạn lại lãng tránh, đối phương cảm thấy bạn có vấn đề về giới tính của mình", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": -10}
+          ]}
+      ]},
+
+    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một mẫu tin trên báo, bạn nhận ra rằng: \n\nBạn không thể cảm nhận bất kì mùi nào khi bạn ngủ. ",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0}
+  ],
+  [
+    {"title":"Đời sống học đường", "event": "Trên đường đến trường, bạn phát hiện một đám côn đồ đang vây quanh trấn lột bạn thân của mình \n\nBạn muốn làm gì ? ", "selection": true,
+      "select":[
+        {"content": "Giải cứu bạn mình", "selection":false,
+          "event": [
+            { "event" :"Bạn đấm trả lại bọn bắt nạt để giải cứu bạn mình, bọn nó tuy đông nhưng lại yếu ớt so với bạn, bạn đấm không trượt phát nào", "assets": 0, "happy": 5, "health": -5, "smart":0, "appearance": 10},
+            { "event" :"Bạn đấm trả lại bọn bắt nạt để giải cứu bạn mình, tuy cả hai đều có kết cục là bị đấm cho nhừ tử, nhưng cả hai đều bật cười sảng khoái", "assets": 0, "happy": 10, "health": -5, "smart":0, "appearance": 10}
+          ]},
+
+        {"content": "Chạy đi", "selection":false,
+          "event":[
+            { "event": "Bạn nhìn thấy bạn mình bị đánh hội đồng, bạn sợ liên luỵ nên chạy đi mất, tuy nhiên bạn vẫn bị phát hiện và ăn hành ngập mồm", "assets": -50, "happy": 0, "health": -10, "smart":-5, "appearance": 0},
+            { "event": "Bạn nhìn thấy bạn mình bị đánh hội đồng, bạn sợ chạy đi thật nhanh để nói với giáo viên, kết quả là tụi bắt nạt đều bị kỉ luật, chịu hình phạt thích đáng", "assets": 0, "happy": 5, "health": 0, "smart":10, "appearance": 5}
+          ]}
+      ]}
+  ],
+  [
+    {"title":"Thi tuyển sinh 10", "event": "Bàn tay ta làm nên tất cả\n\nCó sức người sỏi đá cũng thành công.\n\nHãy chỉ ra BPTT trong câu ? ", "selection": true,
+      "select":[
+        {"content": "A. Ẩn dụ", "selection":false,
+          "event": [
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, may là bạn vừa đủ số điểm để vào trường THPT", "assets": 0, "happy": -5, "health": 0, "smart":-10, "appearance": 0},
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, tuy nhiên nhờ nâng đỡ mà bạn vẫn được vào trường THPT ", "assets": 0, "happy": -5, "health": 0, "smart":-5, "appearance": 0}
+          ]},
+
+        {"content": "B. Nhân hoá", "selection":false,
+          "event":[
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, may là bạn vừa đủ số điểm để vào trường THPT ", "assets": 0, "happy": -5, "health": 0, "smart":-10, "appearance": 0},
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, tuy nhiên nhờ nâng đỡ mà bạn vẫn được vào trường THPT ", "assets": 0, "happy": -5, "health": 0, "smart":-5, "appearance": 0}
+          ]},
+        {"content": "C. Hoán dụ", "selection":false,
+          "event": [
+            {"event": "Bạn đã chọn đáp án chính xác trong bài thi, bạn vào trường THPT với thành tích xuất sắc và một phần quà nho nhỏ", "assets": 500, "happy": 10, "health": 0, "smart":5, "appearance": 0},
+            {"event": "Bạn đã chọn đáp án chính xác trong bài thi, bạn là thủ khoa đầu vào của trường THPT", "assets": 500, "happy": 10, "health": 0, "smart":5, "appearance": 0}
+          ]}
+      ]},
+    {"title":"Thi tuyển sinh 10", "event": "Giải phương trình: 2x^2 – 7x + 3 = 0  ? ", "selection": true,
+      "select":[
+        {"content": "A. x1 = 3, x2 = 0.5", "selection":false,
+          "event": [
+            {"event": "Bạn đã chọn đáp án chính xác trong bài thi, bạn vào trường THPT với thành tích xuất sắc và một phần quà nho nhỏ", "assets": 500, "happy": 10, "health": 0, "smart":5, "appearance": 0},
+            {"event": "Bạn đã chọn đáp án chính xác trong bài thi, bạn là thủ khoa đầu vào của trường THPT", "assets": 500, "happy": 10, "health": 0, "smart":5, "appearance": 0}
+          ]},
+
+        {"content": "B. x1 = 1, x2 = 3", "selection":false,
+          "event":[
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, may là bạn vừa đủ số điểm để vào trường THPT ", "assets": 0, "happy": 0, "health": 0, "smart":-5, "appearance": 0},
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, tuy nhiên nhờ nâng đỡ mà bạn vẫn được vào trường THPT ", "assets": 0, "happy": -5, "health": 0, "smart":-5, "appearance": 0}
+          ]},
+        {"content": "C. x1 = 0.5, x2 = 1", "selection":false,
+          "event": [
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, may là bạn vừa đủ số điểm để vào trường THPT ", "assets": 0, "happy": 0, "health": 0, "smart":-10, "appearance": 0},
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi, tuy nhiên nhờ nâng đỡ mà bạn vẫn được vào trường THPT ", "assets": 0, "happy": -5, "health": 0, "smart":-10, "appearance": 0}
+          ]}
+      ]}
+  ],
+  [
+    {"title": "Giáo dục", "event": "Bạn bắt đầu học lớp 10 tại một trường THPT ở làng",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+    {"title": "Giáo dục", "event": "Bạn bắt đầu học lớp 10 tại một trường THPT chuyên",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+    {"title": "Giáo dục", "event": "Bạn bắt đầu học lớp 10 tại một trường THPT học ở tỉnh",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+  ],
+  [],
+  [
+    {"title":"Thi THPTQG", "event": "The aroma of freshly baked bread in the morning has always_____ memories of his childhood home ? ", "selection": true,
+      "select":[
+        {"content": "A. Incited", "selection":false,
+          "event": [
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi THPTQG", "assets": 0, "happy": -5, "health": 0, "smart":-5, "appearance": 0}
+          ]},
+
+        {"content": "B. Instilled", "selection":false,
+          "event":[
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi THPTQG", "assets": 0, "happy": -5, "health": 0, "smart":-5, "appearance": 0}
+          ]},
+        {"content": "C. evoked", "selection":false,
+          "event": [
+            {"event": "Bạn đã chọn đáp án chính xác trong bài thi THPTQG", "assets": 0, "happy": 10, "health": 0, "smart":10, "appearance": 0}
+          ]}
+      ]},
+    {"title":"Thi THPTQG", "event": "Chọn ngẫu nhiên 2 số khác nhau từ 23 số nguyên dương đầu tiên. Xác xuất để hai số có tổng là một số chẵn ? ", "selection": true,
+      "select":[
+        {"content": "A. 12/23", "selection":false,
+          "event": [
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi THPTQG", "assets": 0, "happy": -5, "health": 0, "smart":-5, "appearance": 0}
+          ]},
+
+        {"content": "B. 11/23", "selection":false,
+          "event":[
+            {"event": "Bạn đã chọn đáp án chính xác trong bài thi THPTQG", "assets": 0, "happy": 10, "health": 0, "smart":10, "appearance": 0}
+          ]},
+        {"content": "C. 265/259", "selection":false,
+          "event": [
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi THPTQG", "assets": 0, "happy": -5, "health": 0, "smart":-5, "appearance": 0}
+          ]}
+      ]},
+    {"title":"Thi THPTQG", "event": "Este nào sau đây tác dụng với dd NaOH thu được ancol metylic? ", "selection": true,
+      "select":[
+        {"content": "A. HCOOCH3", "selection":false,
+          "event": [
+            {"event": "Bạn đã chọn đáp án chính xác trong bài thi THPTQG", "assets": 0, "happy": 10, "health": 0, "smart":10, "appearance": 0}
+          ]},
+
+        {"content": "B. HCOOC2H5", "selection":false,
+          "event":[
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi THPTQG", "assets": 0, "happy": -5, "health": 0, "smart":-5, "appearance": 0}
+          ]},
+        {"content": "C. CH3COOC2H5", "selection":false,
+          "event": [
+            { "event" :"Bạn đã chọn đáp án sai trong bài thi THPTQG", "assets": 0, "happy": -5, "health": 0, "smart":-5, "appearance": 0}
+          ]}
+      ]}
+  ],
+  [
+    {"title": "Bản tin thời sự", "event": "\nMột chi nhánh dữ liệu ở Hoa Kì đã khiến thông tin cá nhân của 125.479 cư dân bị rò rỉ trên dark web.",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một quyển sách hay, bạn biết được rằng: \n\nCác nhà khoa học cho rằng, các loài sinh vật sẽ sống đến khi quả tim của chúng đập đến nhịp thứ 1 tỷ. Tuy nhiên, nhờ sự phát triển của y học, loài người đang dần vượt qua giới hạn này.",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0},
+    {"title": "Bản tin thời sự", "event": "\n\nMột người phụ nữ 45 tuổi ở Singapore đã trúng giải độc đắc xổ số lần thứ ba, khiến cô ấy trở thành một trong những công dân giàu có nhất cả nước.",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+  ],
+  [
+    {"title":"Đời sống", "event": "Đang trên đường về thì bạn gặp ăn cướp núp sau một con hẻm \n Trước tình huống đó bạn muốn làm gì ? ", "selection": true,
+      "select":[
+        {"content": "Hét lớn", "selection":false,
+          "event": [
+            { "event" :"Đối diện với ăn cướp, bạn đã hét lớn để tìm kiếm sự giúp đỡ \nTuy nhiên xung quanh hầu như không có lấy một ai cả, bạn bị đâm một nhát đầy nguy kịch", "assets": 0, "happy": 5, "health": -100, "smart":0, "appearance": 0},
+            { "event" :"Đối diện với ăn cướp, bạn đã hét lớn để tìm kiếm sự giúp đỡ \nCuối cùng cũng có người tới giúp bạn, tên cướp chạy đi như tên lửa, nhưng đã bị chặn bởi cảnh sát, cuối cùng chịu mức phạt là 5 năm tù", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+          ]},
+
+        {"content": "Chống trả", "selection":false,
+          "event":[
+            { "event": "Đối diện với ăn cướp, bạn vơ được một cây dao gần đó, bạn đâm trả lại kẻ cướp, vô tình đâm phải chỗ hiểm, bạn bị buộc tội giết người", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+            { "event": "Đối diện với ăn cướp, bạn vơ được một cây dao gần đó, sau một hồi chống trả bạn đã giành phần thắng, bạn trói tên cướp và gọi cảnh sát. Cảnh sát khen thưởng bạn vì đã giúp đỡ phá án ", "assets": 1000, "happy": 10, "health": 0, "smart":0, "appearance": 10}
+          ]},
+        {"content": "Van xin", "selection":false,
+          "event": [
+            {"event": "Đối diện với ăn cướp, bạn van xin tha mạng, hứa là lấy hết số tiền hiện tại có trên người đưa cho hắn, hắn đồng ý tha cho bạn một mạng, do tên cướp trùm kín mặt và dùng công cụ đổi giọng nên bạn không nhận ra được hắn", "assets": -1000, "happy": -10, "health": 0, "smart":0, "appearance": 0},
+            {"event": "Đối diện với ăn cướp, bạn van xin tha mạng, tuy nhiên tên cướp không đồng ý vì bạn đã nhìn thấy hắn, hắn đâm bạn một nhát chí mạng, bạn kết thúc đời mình tại đây", "assets": 0, "happy": 0, "health": 0, "smart":-100, "appearance": 0}
           ]}
       ]}
   ]

@@ -2,63 +2,10 @@ com/ntsua/thelife/FoodAdapter.java
  com.ntsua.thelife.FoodAdapter
  com.ntsua.thelife.FoodAdapter$1
  com.ntsua.thelife.FoodAdapter$ViewHolder
-com/ntsua/thelife/product.java
- com.ntsua.thelife.product
-com/ntsua/thelife/HoatDongQHAdapter.java
- com.ntsua.thelife.HoatDongQHAdapter
- com.ntsua.thelife.HoatDongQHAdapter$1
- com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
-com/ntsua/thelife/HoatDongQH.java
- com.ntsua.thelife.HoatDongQH
-com/ntsua/thelife/CrimeAdapter.java
- com.ntsua.thelife.CrimeAdapter
- com.ntsua.thelife.CrimeAdapter$1
- com.ntsua.thelife.CrimeAdapter$ViewHolder
-com/ntsua/thelife/BuildConfig.java
- com.ntsua.thelife.BuildConfig
-com/ntsua/thelife/Cooking.java
- com.ntsua.thelife.Cooking
-com/ntsua/thelife/QuanHeAdapter.java
- com.ntsua.thelife.QuanHeAdapter
- com.ntsua.thelife.QuanHeAdapter$1
- com.ntsua.thelife.QuanHeAdapter$ViewHolder
-com/ntsua/thelife/Modau.java
- com.ntsua.thelife.Modau
-com/ntsua/thelife/WeaponAdapter.java
- com.ntsua.thelife.WeaponAdapter
- com.ntsua.thelife.WeaponAdapter$1
- com.ntsua.thelife.WeaponAdapter$ViewHolder
-com/ntsua/thelife/SaveGame.java
- com.ntsua.thelife.SaveGame
- com.ntsua.thelife.SaveGame$1
- com.ntsua.thelife.SaveGame$2
-com/ntsua/thelife/CreateName.java
- com.ntsua.thelife.CreateName
- com.ntsua.thelife.CreateName$1
-com/ntsua/thelife/productAdapter.java
- com.ntsua.thelife.productAdapter
- com.ntsua.thelife.productAdapter$1
- com.ntsua.thelife.productAdapter$ViewHolder
-com/ntsua/thelife/QuanHe.java
- com.ntsua.thelife.QuanHe
-com/ntsua/thelife/Food.java
- com.ntsua.thelife.Food
-com/ntsua/thelife/SelectGender.java
- com.ntsua.thelife.SelectGender
- com.ntsua.thelife.SelectGender$1
- com.ntsua.thelife.SelectGender$2
- com.ntsua.thelife.SelectGender$3
-com/ntsua/thelife/Love.java
- com.ntsua.thelife.Love
-com/ntsua/thelife/Asset.java
- com.ntsua.thelife.Asset
 com/ntsua/thelife/Startup.java
  com.ntsua.thelife.Startup
-com/ntsua/thelife/ActivitiesEvent.java
- com.ntsua.thelife.ActivitiesEvent
- com.ntsua.thelife.ActivitiesEvent$1
- com.ntsua.thelife.ActivitiesEvent$2
- com.ntsua.thelife.ActivitiesEvent$3
+com/ntsua/thelife/HoatDongQH.java
+ com.ntsua.thelife.HoatDongQH
 com/ntsua/thelife/SportActivity.java
  com.ntsua.thelife.SportActivity
  com.ntsua.thelife.SportActivity$1
@@ -68,20 +15,8 @@ com/ntsua/thelife/Degree.java
  com.ntsua.thelife.Degree$1
  com.ntsua.thelife.Degree$2
  com.ntsua.thelife.Degree$3
-com/ntsua/thelife/MakeUp.java
- com.ntsua.thelife.MakeUp
- com.ntsua.thelife.MakeUp$1
- com.ntsua.thelife.MakeUp$2
- com.ntsua.thelife.MakeUp$3
-com/ntsua/thelife/RelationShip.java
- com.ntsua.thelife.RelationShip
- com.ntsua.thelife.RelationShip$1
-com/ntsua/thelife/Hospital.java
- com.ntsua.thelife.Hospital
-com/ntsua/thelife/BoiToan.java
- com.ntsua.thelife.BoiToan
- com.ntsua.thelife.BoiToan$1
- com.ntsua.thelife.BoiToan$2
+com/ntsua/thelife/SongKhac.java
+ com.ntsua.thelife.SongKhac
 com/ntsua/thelife/FoodActivity.java
  com.ntsua.thelife.FoodActivity
  com.ntsua.thelife.FoodActivity$1
@@ -93,23 +28,36 @@ com/ntsua/thelife/Tuong_tacActivity.java
  com.ntsua.thelife.Tuong_tacActivity$1
  com.ntsua.thelife.Tuong_tacActivity$2
  com.ntsua.thelife.Tuong_tacActivity$3
-com/ntsua/thelife/Travel.java
- com.ntsua.thelife.Travel
 com/ntsua/thelife/Playground.java
  com.ntsua.thelife.Playground
-com/ntsua/thelife/Entertainment.java
- com.ntsua.thelife.Entertainment
-com/ntsua/thelife/HoatDong.java
- com.ntsua.thelife.HoatDong
- com.ntsua.thelife.HoatDong$1
-com/ntsua/thelife/Shopping.java
- com.ntsua.thelife.Shopping
- com.ntsua.thelife.Shopping$1
- com.ntsua.thelife.Shopping$2
- com.ntsua.thelife.Shopping$3
- com.ntsua.thelife.Shopping$4
- com.ntsua.thelife.Shopping$5
- com.ntsua.thelife.Shopping$6
+com/ntsua/thelife/RelationShip.java
+ com.ntsua.thelife.RelationShip
+ com.ntsua.thelife.RelationShip$1
+com/ntsua/thelife/productAdapter.java
+ com.ntsua.thelife.productAdapter
+ com.ntsua.thelife.productAdapter$1
+ com.ntsua.thelife.productAdapter$ViewHolder
+com/ntsua/thelife/QuanHe.java
+ com.ntsua.thelife.QuanHe
+com/ntsua/thelife/Love.java
+ com.ntsua.thelife.Love
+com/ntsua/thelife/SelectGender.java
+ com.ntsua.thelife.SelectGender
+ com.ntsua.thelife.SelectGender$1
+ com.ntsua.thelife.SelectGender$2
+ com.ntsua.thelife.SelectGender$3
+com/ntsua/thelife/Asset.java
+ com.ntsua.thelife.Asset
+com/ntsua/thelife/ActivitiesEvent.java
+ com.ntsua.thelife.ActivitiesEvent
+ com.ntsua.thelife.ActivitiesEvent$1
+ com.ntsua.thelife.ActivitiesEvent$2
+ com.ntsua.thelife.ActivitiesEvent$3
+com/ntsua/thelife/MakeUp.java
+ com.ntsua.thelife.MakeUp
+ com.ntsua.thelife.MakeUp$1
+ com.ntsua.thelife.MakeUp$2
+ com.ntsua.thelife.MakeUp$3
 com/ntsua/thelife/MainActivity.java
  com.ntsua.thelife.MainActivity
  com.ntsua.thelife.MainActivity$1
@@ -125,5 +73,51 @@ com/ntsua/thelife/MainActivity.java
  com.ntsua.thelife.MainActivity$7
  com.ntsua.thelife.MainActivity$8
  com.ntsua.thelife.MainActivity$9
-com/ntsua/thelife/SongKhac.java
- com.ntsua.thelife.SongKhac
+com/ntsua/thelife/Hospital.java
+ com.ntsua.thelife.Hospital
+com/ntsua/thelife/BoiToan.java
+ com.ntsua.thelife.BoiToan
+ com.ntsua.thelife.BoiToan$1
+ com.ntsua.thelife.BoiToan$2
+com/ntsua/thelife/QuanHeAdapter.java
+ com.ntsua.thelife.QuanHeAdapter
+ com.ntsua.thelife.QuanHeAdapter$1
+ com.ntsua.thelife.QuanHeAdapter$ViewHolder
+com/ntsua/thelife/Modau.java
+ com.ntsua.thelife.Modau
+com/ntsua/thelife/Travel.java
+ com.ntsua.thelife.Travel
+com/ntsua/thelife/SaveGame.java
+ com.ntsua.thelife.SaveGame
+ com.ntsua.thelife.SaveGame$1
+ com.ntsua.thelife.SaveGame$2
+com/ntsua/thelife/BuildConfig.java
+ com.ntsua.thelife.BuildConfig
+com/ntsua/thelife/Food.java
+ com.ntsua.thelife.Food
+com/ntsua/thelife/CreateName.java
+ com.ntsua.thelife.CreateName
+ com.ntsua.thelife.CreateName$1
+com/ntsua/thelife/Entertainment.java
+ com.ntsua.thelife.Entertainment
+com/ntsua/thelife/Cooking.java
+ com.ntsua.thelife.Cooking
+com/ntsua/thelife/CrimeAdapter.java
+ com.ntsua.thelife.CrimeAdapter
+ com.ntsua.thelife.CrimeAdapter$1
+ com.ntsua.thelife.CrimeAdapter$ViewHolder
+com/ntsua/thelife/HoatDongQHAdapter.java
+ com.ntsua.thelife.HoatDongQHAdapter
+ com.ntsua.thelife.HoatDongQHAdapter$1
+ com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
+com/ntsua/thelife/HoatDong.java
+ com.ntsua.thelife.HoatDong
+ com.ntsua.thelife.HoatDong$1
+com/ntsua/thelife/Shopping.java
+ com.ntsua.thelife.Shopping
+ com.ntsua.thelife.Shopping$1
+ com.ntsua.thelife.Shopping$2
+ com.ntsua.thelife.Shopping$3
+ com.ntsua.thelife.Shopping$4
+ com.ntsua.thelife.Shopping$5
+ com.ntsua.thelife.Shopping$6
