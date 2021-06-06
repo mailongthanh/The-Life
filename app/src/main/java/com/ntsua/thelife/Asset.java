@@ -33,7 +33,7 @@ public class Asset extends AppCompatActivity {
 
         arrAsset = new ArrayList<>();
         arrAsset = MainActivity.saveGame.getAsset();
-        if(arrAsset!=null)
+        if(arrAsset != null)
         {
             tvThongbao.setText("");
             adapter = new productAdapter(this,R.layout.productline, arrAsset);

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.app.LauncherActivity;
 import android.app.UiAutomation;
 import android.content.ComponentName;
 import android.content.Context;
@@ -15,6 +16,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -34,6 +36,7 @@ import android.widget.DatePicker;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -45,6 +48,7 @@ import com.google.gson.JsonObject;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -100,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
                 changeWork();
             }
         } catch (JSONException e) {
-
             e.printStackTrace();
         }
         ibtnAddAge.setOnClickListener(new View.OnClickListener() {
@@ -124,6 +127,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         //createNotification(R.drawable.holding_hands, "Bạn đã có bằng tiếng anh rồi Bạn đã có bằng tiếng anh rồi Bạn đã có bằng tiếng anh rồi", this);
+
+        //dialogUniversity();
+
     }
 
     void dialogJob(JSONArray arrJob) throws JSONException {
@@ -166,6 +172,10 @@ public class MainActivity extends AppCompatActivity {
         //them tuoi
         int age = saveGame.getAge() + 1;
 
+        if (age == 18)
+        {
+            dialogUniversity();
+        }
         //lay su kien tuoi
         JSONArray arrAge = arrJsonAge.getJSONArray(age);
         Random random = new Random();
@@ -263,8 +273,7 @@ public class MainActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearHappy));
         } else {
-            String str = toString(value);
-            txtHappy.setText(str);
+            toString(value, txtHappy);
             prbHappy.setProgress(prbHappy.getProgress() + value);
             this.txtHappy.setText(prbHappy.getProgress() + "%");
         }
@@ -273,8 +282,7 @@ public class MainActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearHealth));
         } else {
-            String str = toString(value);
-            txtHealth.setText(str);
+            toString(value, txtHealth);
             prbHealth.setProgress(prbHealth.getProgress() + value);
             this.txtHealth.setText(prbHealth.getProgress() + "%");
         }
@@ -283,8 +291,7 @@ public class MainActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearSmart));
         } else {
-            String str = toString(value);
-            txtSmart.setText(str);
+            toString(value, txtSmart);
             prbSmart.setProgress(prbSmart.getProgress() + value);
             this.txtSmart.setText(prbSmart.getProgress() + "%");
         }
@@ -293,8 +300,7 @@ public class MainActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearAppearance));
         } else {
-            String str = toString(value);
-            txtAppearance.setText(str);
+            toString(value, txtAppearance);
             prbAppearance.setProgress(prbAppearance.getProgress() + value);
             this.txtAppearance.setText(prbAppearance.getProgress() + "%");
         }
@@ -303,8 +309,7 @@ public class MainActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearMoney));
         } else {
-            String str = toString(value);
-            txtAssets.setText(str);
+            toString(value, txtAssets);
             money += value;
             this.txtMoney.setText(money + " VND");
             saveGame.saveMoney(money);
@@ -375,6 +380,78 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
     }
 
+    void dialogJobEventWithAsset(String title) throws JSONException {
+        //Tao dialog asset
+        Dialog dialog = createAssetDialog();
+
+        //Anh xa
+        TextView txtContent = dialog.findViewById(R.id.textviewAssetContent);
+        ImageView imgAsset = dialog.findViewById(R.id.imageviewAsset);
+        TextView txtAssetName = dialog.findViewById(R.id.textviewAsset);
+        Button btnAccept = dialog.findViewById(R.id.buttonAssetAccept);
+        Button btnCancel = dialog.findViewById(R.id.buttonAssetCancel);
+
+        int imageID = getResources().getIdentifier(jsonResult.getString("asset"), "drawable", this.getPackageName());
+        //Gan gia tri
+        txtContent.setText(jsonResult.getString("event"));
+        imgAsset.setImageResource(imageID);
+        txtAssetName.setText(jsonResult.getString("name"));
+
+        JSONArray arrSelect = jsonResult.getJSONArray("select");
+
+        //Kiem tra xem co so huu do vat nay hay chua
+        boolean isOwn = false;
+        ArrayList<product> arrProduct = saveGame.getAsset();
+        if (arrProduct != null) {
+            for (int i = 0; i < arrProduct.size(); i++) {
+                if (imageID == arrProduct.get(i).getImage()) //Trung ID hinh la so huu
+                {
+                    isOwn = true;
+                    break;
+                }
+            }
+        }
+        if (!isOwn)
+            btnAccept.setBackgroundResource(R.drawable.list_item_unable);
+        else btnAccept.setBackgroundResource(R.drawable.custom_button_menu);
+
+        boolean finalIsOwn = isOwn;
+        btnAccept.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!finalIsOwn)
+                    createNotification(R.drawable.cancel, "Bạn đã sở hữu mòn đồ này đâu mà đồng ý!!!", MainActivity.this);
+                else {
+                    try {
+                        JSONArray arr = arrSelect.getJSONArray(0);
+                        jsonResult = arr.getJSONObject(new Random().nextInt(arr.length()));
+                        dialogEventResult(title, false);
+                        dialog.dismiss();
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
+
+        btnCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                JSONArray arr = null;
+                try {
+                    arr = arrSelect.getJSONArray(1);
+                    jsonResult = arr.getJSONObject(new Random().nextInt(arr.length()));
+                    dialogEventResult(title, false);
+                    dialog.dismiss();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        dialog.show();
+    }
+
     void jobEvent() throws JSONException {
         int currentSkill = saveGame.getSkill();
         int addSkill = jsonResult.getInt("skill");
@@ -388,7 +465,9 @@ public class MainActivity extends AppCompatActivity {
             int require = jsonResult.getInt("require");
             if (currentSkill < require && currentSkill + addSkill >= require)
             {
-                if (jsonResult.getBoolean("selection")) {
+                if (!jsonResult.getString("asset").equals(""))
+                    dialogJobEventWithAsset("Công Việc");
+                else if (jsonResult.getBoolean("selection")) {
                     dialogJobEvent("Công việc");
                 } else {
                     saveGame.saveSalary(jsonResult.getInt("salary"));
@@ -416,6 +495,28 @@ public class MainActivity extends AppCompatActivity {
         dialogCustom.addView(btn);
 
         return btn;
+    }
+
+    Dialog createAssetDialog(){
+        //Dinh dang dialog
+        Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_job_asset);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogEventAnimation;
+        dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
+            @Override
+            public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_BACK)
+                {
+                    return true;
+                }
+                return false;
+            }
+        });
+
+        return dialog;
     }
 
     Dialog createDialog(String title, String event){
@@ -662,7 +763,7 @@ public class MainActivity extends AppCompatActivity {
                 " (" + motherAge + " tuổi )" + "<br>";
         //Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
         saveGame.saveAge(0);
-        saveGame.saveMoney(5000);
+        saveGame.saveMoney(50000);
         saveGame.saveDetailActivity(contentHtml);
         saveGame.saveName(name);
         saveGame.saveJob("Trẻ trâu");
@@ -773,15 +874,15 @@ public class MainActivity extends AppCompatActivity {
         currentTime = System.currentTimeMillis();
     }
 
-    String toString(int value)
+    void toString(int value, TextView txtResult)
     {
         String str = null;
         if (value > 0)
-            str = "+ " + value;
-        else if (value < 0)
-            str = "- " + (-1*value);
-        //Toast.makeText(context, str, Toast.LENGTH_SHORT).show();
-        return str;
+            txtResult.setText("+ " + value);
+        else if (value < 0) {
+            txtResult.setText("- " + (-1 * value));
+            txtResult.setTextColor(Color.RED);
+        }
     }
 
     @Override
@@ -792,10 +893,13 @@ public class MainActivity extends AppCompatActivity {
             String gender = data.getStringExtra("gender");
             try {
                 init(name, gender);
-                readEvent();
                 readJob();
-                readFriend();
                 changeWork();
+                //Toast.makeText(this, "Changed", Toast.LENGTH_SHORT).show();
+                readEvent();
+                //Toast.makeText(this, "Event", Toast.LENGTH_SHORT).show();
+                readFriend();
+                //Toast.makeText(this, "Friend", Toast.LENGTH_SHORT).show();
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -812,6 +916,47 @@ public class MainActivity extends AppCompatActivity {
             pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar_medium));
         else pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar_low));
         //Toast.makeText(this, "a", Toast.LENGTH_SHORT).show();
+    }
+
+    void dialogUniversity()
+    {
+        Dialog dialog = new Dialog(this);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.setContentView(R.layout.dialog_university);
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogResultAnimation;
+
+        //Anh xa
+        ListView lvUni = dialog.findViewById(R.id.listViewUni);
+        ArrayList<University> arrUniversity = new ArrayList<>();
+
+        arrUniversity.add(new University(R.drawable.angiang, "Đại học An Giang", 40));
+        arrUniversity.add(new University(R.drawable.uit, "Đại học Công nghệ Thông tin", 60));
+        arrUniversity.add(new University(R.drawable.fpt, "Đại học FPT", 40));
+        arrUniversity.add(new University(R.drawable.bachkhoa, "Đại học Bách Khoa", 60));
+        arrUniversity.add(new University(R.drawable.hoasen, "Đại học Hoa Sen", 50));
+        arrUniversity.add(new University(R.drawable.yduoc, "Đại học Y Dược", 55));
+        arrUniversity.add(new University(R.drawable.cantho, "Đại học Cần Thơ", 45));
+        arrUniversity.add(new University(R.drawable.rmit, "Đại học RMIT", 55));
+        arrUniversity.add(new University(R.drawable.ngoaithuong, "Đại học Ngoại thương", 55));
+        arrUniversity.add(new University(R.drawable.kinhte, "Đại học Kinh tế", 55));
+        arrUniversity.add(new University(R.drawable.supham, "Đại học Sư phạm", 45));
+        arrUniversity.add(new University(R.drawable.suphamkithuat, "Đại học Sư phạm Kĩ thuật", 55));
+        arrUniversity.add(new University(R.drawable.tonducthang, "Đại học Tôn Đức Thắng", 55));
+
+        UniversityAdapter adapter = new UniversityAdapter(this, R.layout.university_line, arrUniversity);
+        lvUni.setAdapter(adapter);
+
+//        for (int i=0; i<5; i++)
+//        {
+//            if (arrUniversity.get(i).getScore() < 55)
+//            {
+//                lvUni.getChildAt(i).setBackgroundColor(Color.RED);//R.drawable.list_item_unable);
+//            }
+//        }
+
+        dialog.show();
     }
 
     private void AnhXa() {

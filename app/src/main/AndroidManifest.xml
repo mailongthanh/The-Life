@@ -9,10 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheLife">
-
-        <activity android:name=".Asset">
-
-        </activity>
+        <activity android:name=".Asset"></activity>
+        <activity android:name=".JobGiaoDuc"></activity>
+        <activity android:name=".JobYTe" />
+        <activity android:name=".JobDienVien" />
+        <activity android:name=".JobTaiChinh" />
+        <activity android:name=".JobCongNghe" />
+        <activity android:name=".JobDichVu" />
+        <activity android:name=".JobAmThuc" />
+        <activity android:name=".JobKinhDoanh" />
+        <activity android:name=".JobQuanDoi" />
+        <activity android:name=".JobBaoChi" />
+        <activity android:name=".JobTaiXe" />
+        <activity android:name=".JobCauThu" />
+        <activity android:name=".JobCaSi" />
+        <activity android:name=".ChuyenViec" />
         <activity android:name=".Shopping" />
         <activity android:name=".BoiToan" />
         <activity android:name=".MakeUp" />
@@ -32,7 +43,7 @@
         <activity android:name=".RelationShip" />
         <activity android:name=".FoodActivity" />
         <activity android:name=".SelectGender" />
-        <activity android:name=".CreateName" />
+        <activity android:name=".CreateName"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

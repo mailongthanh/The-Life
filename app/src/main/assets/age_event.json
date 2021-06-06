@@ -51,7 +51,6 @@
                   {"event": "Trước bình sữa mẹ pha, bạn khóc và nũng nịu muốn được bón sữa. \n\nBạn được bế lên bón sữa, tuy nhiên vị sữa hôm nay không hợp khẩu vị với bạn, bạn khóc nhưng vẫn bị ép uống", "assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0}
                 ]}
           ]}
-
     ],
    [
      {"title": "Kiến thức", "event": "Hôm nay bạn xem trên tivi, bạn biết được rằng: \n\ntrong hệ mặt trời bao gồm có mặt trời và 9 hành tinh quay xung quanh nó.Theo thứ tự sao Thủy, sao Kim, trái Đất, sao Hỏa, sao Mộc, sao Thổ, sao Thiên Vương, sao Hải Vương và sao Diêm Vương",
@@ -352,4 +351,4 @@
           ]}
       ]}
   ]
-  ]
+]

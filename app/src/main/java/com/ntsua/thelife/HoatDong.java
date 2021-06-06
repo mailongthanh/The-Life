@@ -42,10 +42,11 @@ public class HoatDong extends AppCompatActivity {
         arrHoatDong.add(new Food("Bằng cấp", "", R.drawable.degree, 0));
         arrHoatDong.add(new Food("Ăn uống", "", R.drawable.cutlery, 0));
         arrHoatDong.add(new Food("Du lịch", "", R.drawable.travel, 0));
-        arrHoatDong.add(new Food("Xem bói", "", R.drawable.fortunetelling, 0));
+        arrHoatDong.add(new Food("Xem bói", "", R.drawable.clairvoyance, 0));
         arrHoatDong.add(new Food("Giải trí", "", R.drawable.entertainment, 0));
         arrHoatDong.add(new Food("Thể thao", "", R.drawable.sport, 0));
         arrHoatDong.add(new Food("Mua sắm","",R.drawable.shopping,0));
+        arrHoatDong.add(new Food("Xin việc","",R.drawable.jobsearch,0));
         adapter = new FoodAdapter(this, R.layout.food_line, arrHoatDong);
         lvHoatDong.setAdapter(adapter);
         lvHoatDong.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -106,6 +107,10 @@ public class HoatDong extends AppCompatActivity {
                 if(position == 13){
                     Intent myintent = new Intent(view.getContext(), Shopping.class);
                     startActivityForResult(myintent,13);
+                }
+                if(position == 14){
+                    Intent myintent = new Intent(view.getContext(), ChuyenViec.class);
+                    startActivityForResult(myintent,14);
                 }
                 overridePendingTransition(R.anim.enter, R.anim.exit);
             }

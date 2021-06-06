@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/custom_dialog">
+
+    <ImageView
+        android:id="@+id/imageviewUni"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:src="@drawable/boy"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/textviewUni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ten truong dai hoc"
+        android:textSize="18dp"
+        android:textColor="@color/Blue"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/imageviewUni"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

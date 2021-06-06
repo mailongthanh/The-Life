@@ -1,0 +1,483 @@
+{
+  "Đám cưới": [
+    {"question": "Ô vui quá xá bà con ơi,\nNhà trai thì .... bên gái kém gì đâu.\nNgày xuân ta hát câu bền lâu,\nTa hát khúc sum vầy cho ngất ngây trời mây\n Ngày xuân vui cưới-Hãy điền vào chỗ trống:",
+      "answers": [
+        "vui quá",
+        "buồn rầu",
+        "hăng hái",
+        "duyên dáng"
+      ],
+      "correct": 2},
+    {"question": "Nắm tay anh thật chặt, giữ tay anh thật lâu\nHứa với anh một câu sẽ đi chọn tới cuối con đường\nĐến khi tim ngừng đập và .......\nVì em yêu ơi xin em hãy cứ tin\n Nắm lấy tay anh-Tuấn Hưng-Hãy điền vào chỗ trống:",
+      "answers": [
+        "đôi chân ngừng đi",
+        "tiếng yêu cất lời",
+        "duyên mặn hương nồng"
+      ],
+      "correct": 0},
+    {"question": "Làm vợ anh nhé\nAnh có một .... đủ rộng\nMột vòng tay ấm\nMột trái tim luôn thấu hiểu em\nLàm vợ anh nhé-Chi Dân-Điền vào chỗ trống:",
+      "answers": [
+        "Tấm lòng",
+        "Bờ vai",
+        "Bàn chân"
+      ],
+      "correct": 1}
+  ],
+  "Phòng trà": [
+    {"question": "Bài hát nào sau đây của ca sĩ Quang Lê?",
+      "answers": [
+        "Về đâu mái tóc người thương",
+        "Chuyện ba mùa mưa",
+        "Đồi thông hai mộ"
+      ],
+      "correct": 0},
+    {"question": "Đàn tranh có mấy dây?",
+      "answers": [
+        "3 dây",
+        "1 dây",
+        "16 dây",
+        "14 dây"
+      ],
+      "correct": 2},
+    {"question": "Bài hát nào sau đây của ca sĩ Sơn Tùng MTP?",
+      "answers": [
+        "Chắc ai đó sẽ về",
+        "Dấu mưa",
+        "Nàng thơ"
+      ],
+      "correct": 0}
+  ],
+  "Thần tượng": [
+    {"question": "Bài hát nào sau đây của nhóm nhạc BTS ?",
+      "answers": [
+        "Về đâu mái tóc người thương",
+        "Fake love",
+        "Love the way you like",
+        "Perfect"
+      ],
+      "correct": 1},
+    {"question": "Nhóm nhạc BlackPink có mấy thành viên ?",
+      "answers": [
+        "4",
+        "5",
+        "2",
+        "3"
+      ],
+      "correct": 0},
+    {"question": "Nhà tuyển dụng hỏi bạn, những yếu tố nào để tạo nên một thần tượng, bạn sẽ trả lời là:",
+      "answers": [
+        "sắc đẹp",
+        "giọng hát",
+        "nhảy đẹp",
+        "Cả 3 yếu tố trên"
+      ],
+      "correct": 3}
+  ],
+  "DIVA": [
+    {"question": " Ca khúc nào dưới đây của ca sĩ Adele?",
+      "answers": [
+        "Hello",
+        "Hello it's me",
+        "Hello, can you hear me?",
+        "Holle"
+      ],
+      "correct": 0},
+    {"question": " Ca khúc nào dưới đây của The Chainsmokers?",
+      "answers": [
+        "Close",
+        "Close up",
+        "Open",
+        "Closer"
+      ],
+      "correct": 3},
+    {"question": "Ca khúc nào dưới đây của DIVA Beyonce ",
+      "answers": [
+        "Halo",
+        "Hello",
+        "Symphony",
+        "Hold on"
+      ],
+      "correct": 0},
+    {"question": "I found a love for me\nDarling just dive right in\nAnd follow my lead\nWell I found a girl ... and sweet?\nPerfect-Edsheeran Điền vào chỗ trống:",
+      "answers": [
+        "ugly",
+        "beautiful",
+        "wonderful",
+        "amazing"
+      ],
+      "correct": 1},
+    {"question": "Ca khúc nào dưới đây của DIVA Whitney Houston?",
+      "answers": [
+        "Sorry",
+        "Rolling in the deep",
+        "I will always love you",
+        "Halo"
+      ],
+      "correct": 2}
+  ],
+  "Cầu thủ": [
+    {"question": "Đội tuyển nào vô địch World Cup nhiều lần nhất?",
+      "answers": [
+        "Brazil",
+        "Pháp",
+        "Bồ Đào Nha",
+        "Việt Nam"
+      ],
+      "correct": 0},
+    {"question": "Ronaldo thi đấu cho CLB nào trước khi chuyển tới Manchester United?",
+      "answers": [
+        "Real Madrid",
+        "Sporting Lisbon",
+        "Chelsea",
+        "HANOI FC"
+      ],
+      "correct": 1},
+    {"question": "CLB nào có nhiều chức vô địch Champions League nhất?",
+      "answers": [
+        "Real Madrid",
+        "Manchester United",
+        "Liverpool",
+        "Barcelona"
+      ],
+      "correct": 0},
+    {"question": "Trong một trận đấu bóng đá quốc tế, mỗi đội có 11 cầu thủ ra sân. Một trong 2 đội sẽ bị xử thua khi không có đủ tối thiểu bao nhiêu cầu thủ ra sân?",
+      "answers": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct": 1},
+    {"question": "Trong trận bóng đá quốc tế do Fifa tổ chức, thời gian nghỉ giữa 2 hiệp chính là bao nhiêu phút?",
+      "answers": [
+        "5 phút",
+        "15 phút",
+        "25 phút",
+        "10 phút"
+      ],
+      "correct": 1},
+    {"question": "Trong bóng đá, khi cầu thủ đối phương thực hiện quả đá phạt đền, các cầu thủ còn lại không được đứng ở vị trí nào?",
+      "answers": [
+        "Ngoài khu phạt đền.",
+        "Phía sau điểm phạt đền",
+        "Cách xa điểm phạt đến tối thiểu 9m15.",
+        "Ngang hàng với trọng tài chính"
+      ],
+      "correct": 3},
+    {"question": "Trong một trấn bóng đá quốc tế do Fifa tổ chức, bắt buộc phải có tối thiểu bao nhiêu trọng tài?",
+      "answers": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ],
+      "correct": 2}
+  ],
+  "Ẩm thực": [
+    {"question": "Bánh Pía là đặc sản của tỉnh nào sau đây?",
+      "answers": [
+        "An Giang",
+        "Bạc Liêu",
+        "Sóc Trăng",
+        "Kiên Giang"
+      ],
+      "correct": 2},
+    {"question": "Bánh tráng nướng là món ăn nổi tiếng nhất ở địa phương nào?",
+      "answers": [
+        "Bình Dương",
+        "Đồng Nai",
+        "Đà Lạt",
+        "Tây Nguyên"
+      ],
+      "correct": 2},
+    {"question": "U Minh nổi tiếng với món đặc sản nào sau đây? ",
+      "answers": [
+        "Cá Lăng Nướng Than",
+        "Lẩu mắm",
+        "Vịt quay",
+        "Cua rang muối"
+      ],
+      "correct": 1},
+    {"question": "Món bánh xèo là đặc sản nổi tiếng của địa phương nào dưới đây?",
+      "answers": [
+        "Đồng Nai",
+        "Bình Thuận",
+        "Tp.HCM",
+        "Tây Ninh"
+      ],
+      "correct": 1},
+    {"question": "Nói đến Đà Nẵng thì đặc sản đầu tiên phải kể đến đó chính là:",
+      "answers": [
+        "Bún chả cá",
+        "Bún riêu cua",
+        "Hủ tiếu sa tế",
+        "Hủ tiếu hoành thánh"
+      ],
+      "correct": 0}
+  ],
+  "Tài chính": [
+    {"question": "Thông thường công ty cổ phần được sở hữu bởi:",
+      "answers": [
+        "Các nhà quản lý chính của công ty",
+        "Các cổ đông",
+        "Hội đồng quản trị",
+        "Tất cả đều đúng"
+      ],
+      "correct": 1},
+    {"question": " Trong một tình huống marketing cụ thể thì marketing là công việc của:",
+      "answers": [
+        "Người bán",
+        "Người mua",
+        "Đồng thời của cả người bán và người mua",
+        "Bên nào tích cực hơn trong việc tìm cách trao đổi với bên kia."
+      ],
+      "correct": 3},
+    {"question": "Có thể nói rằng:",
+      "answers": [
+        "Marketing và bán hàng là 2 thuật ngữ đồng nghĩa.",
+        "Marketing và bán hàng là 2 thuật ngữ khác biệt nhau.",
+        "Bán hàng bao gồm cả Marketing",
+        "Marketing bao gồm cả hoạt động bán hàng."
+      ],
+      "correct": 3}
+  ],
+  "Tài xế": [
+    {"question": "Khi lái xe trên đường cao tốc, bạn thường lái:",
+      "answers": [
+        "Thường sẽ lái cao hơn tốc độ cho phép",
+        "Đúng hay dưới tốc độ cho phép"
+      ],
+      "correct": 1},
+    {"question": "Khi giao thức ăn cho Khách hàng, bạn có nên giao hàng bằng 2 tay không?",
+      "answers": [
+        "Không",
+        "Có"
+      ],
+      "correct": 1},
+    {"question": "Bạn được người thân trong nhà ra giá 5.000.000 VNĐ để mượn tài khoản Grab Rider chạy 2 tháng, bạn có cho mượn không?",
+      "answers": [
+        "Không",
+        "CÓ"
+      ],
+      "correct": 0},
+    {"question": "Bạn nhận được một cuộc gọi từ Công ty về việc Khách hàng A khiếu nại bạn thô lỗ với họ. Sau khi suy xét, Công ty quyết định tạm ngưng hoạt động với bạn 5 ngày, bạn hiện có số điện thoại Khách hàng, bạn nghĩ rằng mình có nên gọi để hỏi Khách hàng lý do không?",
+      "answers": [
+        "Có",
+        "Không"
+      ],
+      "correct": 0}
+  ],
+  "Y tế": [
+    {"question": "Con người ta khát nước vì:",
+      "answers": [
+        "Lượng nước giảm",
+        "Nồng độ muối giảm",
+        "Lượng nước giảm, nồng độ muối tăng",
+        "Lượng nước giảm, nồng độ muối giảm"
+      ],
+      "correct": 2},
+    {"question": "Bệnh truyền nhiễm là",
+      "answers": [
+        "Bệnh lây truyền trực tiếp hoặc gián tiếp từ người hoặc từ động vật sang người do tác nhân gây bệnh truyền nhiễm",
+        "Bệnh lây truyền trực tiếp từ người hoặc từ động vật sang người do tác nhân gây bệnh truyền nhiễm",
+        "Bệnh lây truyền trực tiếp hoặc gián tiếp từ người sang người do tác nhân gây bệnh truyền nhiễm"
+      ],
+      "correct": 0},
+    {"question": "Bệnh viện có các nhiệm vụ nào dưới đây?",
+      "answers": [
+        "Khám bệnh, chữa bệnh; Đào tạo cán bộ; Nghiên cứu khoa học;  Phòng bệnh; Hợp tác quốc tế; Quản lý kinh tế trong bệnh viện",
+        "Khám bệnh, chữa bệnh; Đào tạo cán bộ;; Chỉ đạo tuyến; Phòng bệnh; Hợp tác quốc tế; Quản lý kinh tế trong bệnh viện",
+        "Khám bệnh, chữa bệnh; Đào tạo cán bộ; Nghiên cứu khoa học; Chỉ đạo tuyến;  Phòng bệnh; Hợp tác quốc tế; Quản lý kinh tế trong bệnh viện"
+      ],
+      "correct": 2}
+  ], "Quân đội": [
+  {"question": "Tổ chức cao nhất trong hệ thống tổ chức quân đội là cơ quan nào?",
+    "answers": [
+      "Bộ Quốc phòng",
+      "Bộ Tổng Tham mưu",
+      "Tổng cục chính trị",
+      "Quân khu, quân đoàn"
+    ],
+    "correct": 0},
+  {"question": "Quân đội nhân dân Việt Nam gồm lực lượng nào?",
+    "answers": [
+      "Bộ đội chủ lực và bộ đội địa phương",
+      "Bộ đội chủ lực; Bộ đội địa phương; Bộ đội Biên phòng",
+      "Bộ đội chủ lực, bộ đội địa phương và dân quân tự vệ",
+      "Bộ đội chủ lực, bộ đội địa phương, bộ đội quân khu"
+    ],
+    "correct": 1},
+  {"question": "Người chỉ huy và điều hành cao nhất trong quân đội là ai ?",
+    "answers": [
+      "Cục trưởng Cục Tác chiến",
+      "Tư lệnh các đơn vị chiến đấu của quân đội",
+      "Đại tướng, Thứ trưởng Bộ Quốc phòng",
+      "Bộ trưởng Bộ Quốc phòng"
+    ],
+    "correct": 3}
+],
+  "Kinh doanh": [
+    {"question": "Hình thức kinh doanh quốc tế bao gồm",
+      "answers": [
+        "Xuất nhập khẩu hàng hóa, dịch vụ",
+        "Đầu tư trực tiếp nước ngoài FDI",
+        "Liên doanh, liên kết đầu tư",
+        "Cả 3 đều đúng"
+      ],
+      "correct": 3},
+    {"question": "Tất cả hàng hóa, dịch vụ mua từ nước ngoài gọi là:",
+      "answers": [
+        "Sản phẩm nội địa",
+        "Sản phẩm xuất khẩu",
+        "Sản phẩm quốc gia",
+        "Sản phẩm nhập khẩu"
+      ],
+      "correct": 3},
+    {"question": "Bất kì một giao dịch thương mại nào diễn ra qua biên giới của hai hay nhiều quốc gia gọi là:",
+      "answers": [
+        "Xuất khẩu",
+        "Thương mại điện tử",
+        "Kinh doanh quốc tế",
+        "Nhập khẩu"
+      ],
+      "correct": 2}
+  ],
+  "Diễn viên": [
+    {"question": "Năm nào bộ phim Iron Man đầu tiên được phát hành, khởi động Vũ trụ Điện ảnh Marvel?",
+      "answers": [
+        "2005",
+        "2008",
+        "2010",
+        "2012"
+      ],
+      "correct": 1},
+    {"question": "Bộ phim hoạt hình nào có nhân vật chính là một chàng phóng viên nhỏ tuổi khám phá nhiều vụ án cùng với chú chó nhỏ của mình?",
+      "answers": [
+        "Oggy",
+        "Doraemon",
+        "Nobita",
+        "Tintin"
+      ],
+      "correct": 3},
+    {"question": "Giải thưởng điện ảnh và truyền hình BAFTA là của nước nào?",
+      "answers": [
+        "Hoa Kỳ",
+        "Ấn Độ",
+        "Anh",
+        "Ý"
+      ],
+      "correct": 2},
+    {"question": "Đây là giải thưởng điện ảnh nào?\n\n- Lễ trao giải thưởng này được tiến hành ở nhà hát Abracadabra thành phố Santa Monica, Califorrnia.\n\n- Giải thưởng này có từ năm 1980\n\n-  Là giải trao cho tác phẩm điện ảnh tồi nhất, là đối trọng của giải Oscar",
+      "answers": [
+        "Giải Mâm Xôi Vàng",
+        "Giải Cánh Diều Vàng",
+        "Giải Bàn Chân Vàng",
+        "Giải Bông Sen Vàng"
+      ],
+      "correct": 0}
+  ],
+  "Công nghệ": [
+    {"question": "Thiết bị nào sau đây dùng để kết nối mạng?",
+      "answers": [
+        "Ram",
+        "Rom",
+        "Router",
+        "CPU"
+      ],
+      "correct": 2},
+    {"question": "Hệ thống nhớ của máy tính bao gồm:",
+      "answers": [
+        "Bộ nhớ trong, Bộ nhớ ngoài",
+        "Cache, Bộ nhớ ngoài",
+        "Bộ nhớ ngoài, ROM",
+        "Đĩa quang, Bộ nhớ trong"
+      ],
+      "correct": 0},
+    {"question": "Phần mềm nào có thể soạn thảo văn bản với nội dung và định dạng như sau:\n\n\"Công cha như núi Thái Sơn\nNghĩa mẹ như nước trong nguồn chảy ra.",
+      "answers": [
+        "Notepad",
+        "Microsoft Word",
+        "WordPad",
+        "Tất cả đều đúng"
+      ],
+      "correct": 3}
+  ],
+  "Báo chí": [
+    {"question": "Đối với các bài viết trong một tờ báo, nhận định nào sau đây là đúng?",
+      "answers": [
+        "Không có sự phân biệt rõ ràng đặc điểm phong cách của các bài viết.",
+        "Tùy theo thể loại, các bài viết có thể mang đặc trưng phong cách khác nhau",
+        "Tất cả đều mang đặc điểm của phong cách ngôn ngữ báo chí",
+        "Có một sự hòa trộn các phong cách khác nhau trong mỗi bài viết"
+      ],
+      "correct": 1},
+    {"question": "Về bố cục, bài báo nên được trình bày như thế nào?",
+      "answers": [
+        "Rõ ràng, hợp lo gic, dễ tiếp thu.",
+        "Bí hiểm, gây tò mò, thu hút sự chú ý.",
+        "Mập mờ, dẫn đến tình trạng hiểu nước đôi.",
+        "Thể hiện được tính chiến đấu của báo chí."
+      ],
+      "correct": 0},
+    {"question": "Cách viết tắt, viết theo những kí tự đặc biệt thường được các bạn trẻ dùng khi “chat” với nhau hiện nay nên hiểu như thế nào?",
+      "answers": [
+        "Cách viết phù hợp với đặc điểm phong cách báo điện tử, nên khuyến khích.",
+        "Cách viết có tính cá nhân, thử nghiệm, là dấu hiệu ngôn ngữ của cư dân trẻ trên mạng.",
+        "Những cố gắng làm thay đổi tiếng Việt theo hướng hiện đại.",
+        "Lỗi viết kì quặc, cần bị nghiêm cấm vì chúng ảnh hưởng đến sự trong sáng của tiếng Việt."
+      ],
+      "correct": 1}
+  ],
+  "Giáo dục": [
+    {"question": "Theo Luật Giáo dục 2005, Chọn cụm từ sau điền vào chỗ trống: “Giáo dục phổ thông không bao gồm giáo dục:”",
+      "answers": [
+        "THPT",
+        "Mầm non",
+        "Tiểu học",
+        "THCS"
+      ],
+      "correct": 1},
+    {"question": " Điều 2 Mục tiêu giáo dục là? Điền từ còn thiếu vào chỗ trống: “ Mục tiêu giáo dục là đào tạo con người Việt Nam,………………….., có đạo đức, tri thức, sức khỏe, thẩm mĩ và nghề nghiệp, trung thành với lí tưởng độc lập dân tộc và CNXH; hình thành và bồi dưỡng nhân cách, phẩm chất và năng lực của công dân, đáp ứng yêu cầu của sự nghiệp xây dựng và bảo vệ Tổ quốc”",
+      "answers": [
+        "phát triển toàn diện",
+        "phát triển",
+        "phát triển không ngừng",
+        "hội nhập"
+      ],
+      "correct": 0},
+    {"question": " Theo Luật Giáo dục 2005 và luật sửa đổi bổ sung năm 2009, tổ chức loại hình nhà trường nào sau đây không trong hệ thống giáo dục quốc dân:",
+      "answers": [
+        "Trường dân lập",
+        "Trường tư thục",
+        "Trường bán công",
+        "Trường công lập"
+      ],
+      "correct": 2}
+  ],
+  "Dịch vụ": [
+    {"question": "Trong kinh doanh dịch vụ, chất lượng dịch vụ phần lớn được tạo ra bởi:",
+      "answers": [
+        "Khách hàng",
+        "Nhân viên cung ứng",
+        "Doanh nghiệp",
+        "Các trung gian"
+      ],
+      "correct": 1},
+    {"question": "Điều gì tạo nên sự kỳ vọng của khách hàng",
+      "answers": [
+        "Kinh nghiệm tiêu dùng",
+        "Tâm lý cá nhân",
+        "Thông tin truyền miệng",
+        "Cả 3 câu trên"
+      ],
+      "correct": 3},
+    {"question": "Duy trì mối quan hệ khách hàng sẽ:",
+      "answers": [
+        "Mang lại lợi ích cho công ty",
+        "Mang lại lợi ích cho khách hàng",
+        "Cả 2 đều đúng",
+        "Cả 2 đều sai"
+      ],
+      "correct": 2}
+  ]
+}

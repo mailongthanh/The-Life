@@ -79,7 +79,7 @@ public class Degree extends AppCompatActivity {
                                 //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
                                 JSONArray arrEnglish = jsonDegree.getJSONArray("english");
                                 JSONArray arrQuestion = chooseQuestion(arrEnglish);
-                                dialogEvent(arrQuestion, 0);
+                                dialogEvent(arrQuestion, 0, "english");
                                 MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() - arrDegree.get(position).getPrice());
                                 txtMoney.setText(MainActivity.saveGame.getMoney() + " VND");
                             } catch (JSONException e) {
@@ -96,7 +96,7 @@ public class Degree extends AppCompatActivity {
                                 //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
                                 JSONArray arrDriving = jsonDegree.getJSONArray("driving");
                                 JSONArray arrQuestion = chooseQuestion(arrDriving);
-                                dialogEvent(arrQuestion, 0);
+                                dialogEvent(arrQuestion, 0, "driving");
                                 MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() - arrDegree.get(position).getPrice());
                                 txtMoney.setText(MainActivity.saveGame.getMoney() + " VND");
                             } catch (JSONException e) {
@@ -109,11 +109,11 @@ public class Degree extends AppCompatActivity {
         });
     }
 
-    void dialogEvent(JSONArray arrQuestion, int index) throws JSONException
+    void dialogEvent(JSONArray arrQuestion, int index, String field) throws JSONException
     {
         if (index == 2)
         {
-            dialogResult(true);
+            dialogResult(true, field);
             return;
         }
 
@@ -131,12 +131,12 @@ public class Degree extends AppCompatActivity {
                 public void onClick(View v) {
                     if (finalI == correctAnswer) {
                         try {
-                            dialogEvent(arrQuestion, index + 1);
+                            dialogEvent(arrQuestion, index + 1, field);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
                     }
-                    else dialogResult(false);
+                    else dialogResult(false, field);
                     dialog.dismiss();
                 }
             });
@@ -144,11 +144,19 @@ public class Degree extends AppCompatActivity {
         dialog.show();
     }
 
-    void dialogResult(boolean result)
+    void dialogResult(boolean result, String field)
     {
         if (result) {
             MainActivity.createNotification(R.drawable.holding_hands, "Bạn xuất sắc quá đi mất, trả lời đúng tất cả. Chúc mừng đã thi đạt", Degree.this);
-            MainActivity.saveGame.saveEnglish(true);
+            switch (field)
+            {
+                case "english":
+                    MainActivity.saveGame.saveEnglish(true);
+                    break;
+                case "driving":
+                    MainActivity.saveGame.saveDriving(true);
+                    break;
+            }
         }
         else MainActivity.createNotification(R.drawable.cancel, "Trả lời sai bét, thi trượt mất rồi", Degree.this);
     }

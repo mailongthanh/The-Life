@@ -80,10 +80,7 @@ public class ActivitiesEvent {
         {
             DialogResult.removeView(dialog.findViewById(R.id.linearHappy));
         } else {
-
-            String str = toString(value);
-
-            txtHappy.setText(str);
+            toString(value, txtHappy);
             happy += value;
         }
 
@@ -92,8 +89,7 @@ public class ActivitiesEvent {
         {
             DialogResult.removeView(dialog.findViewById(R.id.linearHealth));
         } else {
-            String str = toString(value);
-            txtHealth.setText(str);
+            toString(value, txtHealth);
             health += value;
         }
 
@@ -102,8 +98,7 @@ public class ActivitiesEvent {
         {
             DialogResult.removeView(dialog.findViewById(R.id.linearSmart));
         } else {
-            String str = toString(value);
-            txtSmart.setText(str);
+            toString(value, txtSmart);
             smart += value;
         }
 
@@ -112,8 +107,7 @@ public class ActivitiesEvent {
         {
             DialogResult.removeView(dialog.findViewById(R.id.linearAppearance));
         } else {
-            String str = toString(value);
-            txtAppearance.setText(str);
+            toString(value, txtAppearance);
             appearance += value;
         }
 
@@ -124,7 +118,11 @@ public class ActivitiesEvent {
         } else {
             String money = String.format( "%,d", value*1000);
             if (value > 0)
-                money = "+" + money;
+                money = "+ " + money;
+            else {
+                money = "- " + money;
+                txtAssets.setTextColor(Color.RED);
+            }
             txtAssets.setText(money);
             MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() + value);
             txtAssets.setText("$" + value);
@@ -220,15 +218,14 @@ public class ActivitiesEvent {
 
         return friend;
     }
-
-    String toString(int value)
+    void toString(int value, TextView txtResult)
     {
         String str = null;
         if (value > 0)
-            str = "+ " + value;
-        else if (value < 0)
-            str = "- " + (-1*value);
-
-        return str;
+            txtResult.setText("+ " + value);
+        else if (value < 0) {
+            txtResult.setText("- " + (-1 * value));
+            txtResult.setTextColor(Color.RED);
+        }
     }
 }

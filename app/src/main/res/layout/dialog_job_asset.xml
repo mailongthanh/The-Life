@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="wrap_content"
+    android:layout_width="300dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:backgroundTintMode="@null">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp">
+        <LinearLayout
+            android:gravity="center|bottom"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button_menu"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/dialog_event"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/custom_dialog"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textviewAssetContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Đây là nội dung của sự kiện"
+                    android:textAlignment="center"
+                    android:textColor="@color/Blue"
+                    android:textSize="17sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Yêu cầu"
+                    android:textAlignment="center"
+                    android:textColor="@color/Blue"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/custom_dialog"
+                    android:padding="7dp">
+
+                    <ImageView
+                        android:id="@+id/imageviewAsset"
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/uit"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/textviewAsset"
+                        android:layout_weight="6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ten do vat"
+                        android:textSize="18dp"
+                        android:textColor="@color/Blue"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_centerVertical="true"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <Button
+                        android:id="@+id/buttonAssetAccept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Đồng ý"
+                        android:background="@drawable/custom_button_menu"
+                        app:backgroundTint="@null"
+                        android:layout_marginLeft="25sp"/>
+                    <Button
+                        android:id="@+id/buttonAssetCancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Từ chối"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25sp"
+                        android:background="@drawable/custom_button_menu"
+                        app:backgroundTint="@null"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textviewDialogAssetTitle"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:background="@drawable/custom_button_menu"
+        android:fontFamily="@font/anton"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Công việc"
+        android:textColor="@color/Blue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</FrameLayout>
