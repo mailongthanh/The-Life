@@ -1902,11 +1902,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-<<<<<<< HEAD
-drawable otl
-=======
 drawable onlineshop
->>>>>>> 0b407e158b3d9d9be2f7825900e281d231ca0839
+drawable otl
 drawable painttool
 drawable payment
 drawable pc
