@@ -619,8 +619,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         arrFriend = new ArrayList<>();
-        JSONArray jsonFriend;
-        jsonFriend = new JSONArray(jsonEvent);
+        JSONArray jsonFriend = new JSONArray(jsonEvent);
 
         for (int i=0; i<jsonFriend.length(); i++)
         {
@@ -629,8 +628,13 @@ public class MainActivity extends AppCompatActivity {
             int age = saveGame.getAge() + (new Random().nextInt(5) - 2);
             String avatar = object.getString("avatar");
 
+            boolean isBoy = false;
+            if (object.getString("gender").equals("boy")) {
+                isBoy = true;
+            }
+
             arrFriend.add(new QuanHe(name, age, new Random().nextInt(30) + 30,
-                    "Bạn bè", getResources().getIdentifier(avatar, "drawable", this.getPackageName())));
+                    NameOfRelationship.Friend, getResources().getIdentifier(avatar, "drawable", this.getPackageName()), isBoy));
         }
     }
 
@@ -706,7 +710,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // init tam thoi
-    void init(String name, String gender) throws JSONException {
+    void init(String name, boolean isBoy) throws JSONException {
         String json = null;
         try {
             InputStream inputStream = getAssets().open("parent.json");
@@ -728,27 +732,32 @@ public class MainActivity extends AppCompatActivity {
         //Tao quan he Bo Me
         String fatherName = arrFather.getString(random.nextInt(arrFather.length()));
         int fatherAge = (random.nextInt(11) + 20);
-        QuanHe father = new QuanHe(fatherName, fatherAge, 100, "Bố", R.drawable.boy); //Thay hinh sau
+        QuanHe father = new QuanHe(fatherName, fatherAge, 100, NameOfRelationship.Dad, R.drawable.boy, true); //Thay hinh sau
         String motherName = arrMother.getString(random.nextInt(arrMother.length()));
         int motherAge = (random.nextInt(11) + 20);
-        QuanHe mother = new QuanHe(motherName, motherAge, 100, "Mẹ", R.drawable.girl); //Thay hinh sau
+        QuanHe mother = new QuanHe(motherName, motherAge, 100, NameOfRelationship.Mom, R.drawable.girl, false); //Thay hinh sau
 
         ArrayList<QuanHe> arrRelationship = new ArrayList<>();
         arrRelationship.add(father);
         arrRelationship.add(mother);
         //Them cho vui
-        arrRelationship.add(new QuanHe("Trần Thanh Vũ", 19, 50, "Bạn bè",R.drawable.boy));
-        arrRelationship.add(new QuanHe("Nguyễn Thiện Sua", 19, 50, "Bạn bè",R.drawable.boy));
-        arrRelationship.add(new QuanHe("Nguyễn Hiếu Nghĩa", 19, 50, "Bạn bè",R.drawable.boy));
-        arrRelationship.add(new QuanHe("Mai Long Thành", 19, 80, "Bạn bè",R.drawable.boy));
-        arrRelationship.add(new QuanHe("Võ Thành Phát", 19, 20, "Bạn bè",R.drawable.boy));
-        arrRelationship.add(new QuanHe("Hoàng Nhật Tiến", 19, 50, "Bạn bè",R.drawable.boy));
+//        arrRelationship.add(new QuanHe("Trần Thanh Vũ", 19, 50, NameOfRelationship.Friend,R.drawable.boy, true));
+//        arrRelationship.add(new QuanHe("Nguyễn Thiện Sua", 19, 50, NameOfRelationship.Friend, R.drawable.boy, true));
+//        arrRelationship.add(new QuanHe("Nguyễn Hiếu Nghĩa", 19, 50, NameOfRelationship.Friend, R.drawable.boy, true));
+//        arrRelationship.add(new QuanHe("Mai Long Thành", 19, 80, NameOfRelationship.Friend, R.drawable.boy, true));
+//        arrRelationship.add(new QuanHe("Võ Thành Phát", 19, 20, NameOfRelationship.Friend, R.drawable.boy, true));
+//        arrRelationship.add(new QuanHe("Hoàng Nhật Tiến", 19, 50, NameOfRelationship.Friend, R.drawable.boy, true));
+          arrRelationship.add(new QuanHe("Crush", 19, 90, NameOfRelationship.Friend, R.drawable.boy, true));
 
         saveGame.saveRelationship(arrRelationship);
         this.arrRelationship = arrRelationship;
         saveGame.saveNewFriendInYear(0);
         saveGame.saveNumberOfFriends(0);
+        saveGame.saveNumberOfGirlFriend(0);
 
+        String gender = "Nữ";
+        if (isBoy)
+            gender = "Nam";
         //Tao ngay sinh
         Date date = Calendar.getInstance().getTime();
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
@@ -762,6 +771,8 @@ public class MainActivity extends AppCompatActivity {
                 arrJob.getString(random.nextInt(arrJob.length())) +
                 " (" + motherAge + " tuổi )" + "<br>";
         //Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
+
+        saveGame.saveGender(isBoy);
         saveGame.saveAge(0);
         saveGame.saveMoney(50000);
         saveGame.saveDetailActivity(contentHtml);
@@ -813,7 +824,7 @@ public class MainActivity extends AppCompatActivity {
         {
             QuanHe friend = arrRelationship.get(i);
             friend.setTuoi(friend.getTuoi() + 1); // Them tuoi
-            if (friend.getQuanHe() == "Bạn bè")
+            if (friend.getQuanHe() == NameOfRelationship.Friend)
             {
                 friend.setDoThanMat(friend.getDoThanMat() - 20); //Giam moi quan he
             }
@@ -890,9 +901,10 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == REQUEST_CODE_INIT && resultCode == RESULT_OK && data != null)
         {
             String name = data.getStringExtra("name");
-            String gender = data.getStringExtra("gender");
+            boolean isboy = data.getBooleanExtra("gender", false);
+
             try {
-                init(name, gender);
+                init(name, isboy);
                 readJob();
                 changeWork();
                 //Toast.makeText(this, "Changed", Toast.LENGTH_SHORT).show();
@@ -999,3 +1011,4 @@ public class MainActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 }
+

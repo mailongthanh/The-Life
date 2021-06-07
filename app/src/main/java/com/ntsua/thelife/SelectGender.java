@@ -13,7 +13,7 @@ public class SelectGender extends AppCompatActivity {
     private EditText edtName;
     private Button btn_SelectNam;
     private Button btn_SelectNu;
-    String gender;
+    boolean isBoy = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class SelectGender extends AppCompatActivity {
         btn_SelectNam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gender = "Nam";
+                isBoy = true;
                 gotoMain();
             }
         });
@@ -42,7 +42,7 @@ public class SelectGender extends AppCompatActivity {
         btn_SelectNu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               gender = "Nữ";
+               isBoy = false;
                gotoMain();
             }
         });
@@ -51,7 +51,7 @@ public class SelectGender extends AppCompatActivity {
     void gotoMain()
     {
         Intent intent = new Intent();
-        intent.putExtra("gender", gender);
+        intent.putExtra("gender", isBoy);
         setResult(RESULT_OK, intent);
         finish();
     }

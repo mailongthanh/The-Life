@@ -1,4 +1,4 @@
-#Fri Jun 04 15:07:05 ICT 2021
+#Mon Jun 07 14:45:46 ICT 2021
 base.0=D\:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

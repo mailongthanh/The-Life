@@ -82,10 +82,11 @@ public class RelationShip extends AppCompatActivity {
 
         bundle.putString("hoten",MangQuanHe.get(i).getHoten());
         bundle.putInt("tuoi", MangQuanHe.get(i).getTuoi());
-        bundle.putString("quanhe",MangQuanHe.get(i).getQuanHe());
+        bundle.putSerializable("quanhe",MangQuanHe.get(i).getQuanHe());
         bundle.putInt("dothanmat",MangQuanHe.get(i).getDoThanMat());
         bundle.putInt("hinhanh",MangQuanHe.get(i).getHinhAnh());
         bundle.putInt("position", i);
+        //Toast.makeText(this, "" + i, Toast.LENGTH_SHORT).show();
 
         intent.putExtra("BUN",bundle);
 

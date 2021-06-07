@@ -1,26 +1,142 @@
 [
     {
       "name": "Nguyễn Thiện Sua",
-      "avatar": "boy"
+      "avatar": "boy",
+      "gender": "boy"
     },
     {
       "name": "Mai Long Thành",
-      "avatar": "girl"
+      "avatar": "girl",
+      "gender": "girl"
     },
   {
-    "name": "Nguyễn Thanh Vũ",
-    "avatar": "boy"
+    "name": "Trần Thanh Vũ",
+    "avatar": "boy",
+    "gender": "boy"
   },
   {
     "name": "Nguyễn Hiếu Nghĩa",
-    "avatar": "boy"
+    "avatar": "boy",
+    "gender": "boy"
   },
   {
     "name": "Hoàng Nhật Tiến",
-    "avatar": "boy"
+    "avatar": "boy",
+    "gender": "boy"
   },
   {
     "name": "Võ Thành Phát",
-    "avatar": "boy"
+    "avatar": "boy",
+    "gender": "boy"
+  },
+  {
+    "name": "Lê Ái Nhi",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Lý Bảo Hân",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Võ Cẩm Nhung",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Nguyễn Dạ Thảo",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Huỳnh Đan Thư",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Huỳnh Diệp Anh",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Nguyễn Gia Hân",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Lâm Hạ Vy",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Trần Kỳ Anh",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Bùi Lan Khuê",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Lâm Lệ Băng",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Trần Linh San",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Huỳnh Mai Vy",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Trương Minh Uyên",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Nguyễn Minh Trang",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Bùi Đoàn Như Quỳnh",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Nguyễn Ngân Anh",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Nguyễn Ngọc Dung",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Dương Ngọc Vy",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Lê Nhật Linh",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Lâm Quế Anh",
+    "avatar": "girl",
+    "gender": "girl"
+  },
+  {
+    "name": "Mai Trúc Ly",
+    "avatar": "girl",
+    "gender": "girl"
   }
 ]

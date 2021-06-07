@@ -47,7 +47,6 @@
                 android:layout_weight="8"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
                 android:gravity="center"
                 android:text=" Nội dung thông báhôdung thông "
                 android:textColor="@color/Blue"

@@ -8,8 +8,9 @@ public class QuanHe implements Serializable {
     private String Hoten;
     private int Tuoi;
     private int DoThanMat;
-    private String QuanHe;
+    private NameOfRelationship QuanHe;
     public int HinhAnh;
+    private boolean isBoy;
 
     public void setHinhAnh(int hinhAnh) { HinhAnh = hinhAnh; }
 
@@ -39,19 +40,28 @@ public class QuanHe implements Serializable {
         DoThanMat = doThanMat;
     }
 
-    public String getQuanHe() {
+    public NameOfRelationship getQuanHe() {
         return QuanHe;
     }
 
-    public void setQuanHe(String quanHe) {
+    public void setQuanHe(NameOfRelationship quanHe) {
         QuanHe = quanHe;
     }
 
-    public QuanHe(String hoten, int tuoi, int doThanMat, String quanhe, int hinhAnh) {
+    public boolean isBoy() {
+        return isBoy;
+    }
+
+    public void setBoy(boolean boy) {
+        isBoy = boy;
+    }
+
+    public QuanHe(String hoten, int tuoi, int doThanMat, NameOfRelationship quanhe, int hinhAnh, boolean isBoy) {
         Hoten = hoten;
         Tuoi = tuoi;
         DoThanMat = doThanMat;
         QuanHe = quanhe;
         HinhAnh = hinhAnh;
+        this.isBoy = isBoy;
     }
 }

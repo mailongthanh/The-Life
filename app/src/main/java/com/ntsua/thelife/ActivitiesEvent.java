@@ -188,6 +188,8 @@ public class ActivitiesEvent {
                         context);
                 MainActivity.saveGame.saveNewFriendInYear(MainActivity.saveGame.getNewFriendInYear() + 1);
                 MainActivity.saveGame.saveNumberOfFriends(MainActivity.saveGame.getNumberOfFriends() + 1);
+                if (!friend.isBoy())
+                    MainActivity.saveGame.saveNumberOfGirlFriend(MainActivity.saveGame.getNumberOfGirlFriend() + 1);
                 dialog.dismiss();
             }
         });
@@ -214,10 +216,21 @@ public class ActivitiesEvent {
             int index = random.nextInt(MainActivity.arrFriend.size());
             friend = MainActivity.arrFriend.get(index);
         }
-        while (arrQuanHe.indexOf(friend) != -1);
+        while (checkFriend(friend));
 
         return friend;
     }
+
+    boolean checkFriend(QuanHe friend)
+    {
+        for (int i=0; i<arrQuanHe.size(); i++)
+        {
+            if (friend.getHoten().equals(arrQuanHe.get(i).getHoten()))
+                return true;
+        }
+        return false;
+    }
+
     void toString(int value, TextView txtResult)
     {
         String str = null;
