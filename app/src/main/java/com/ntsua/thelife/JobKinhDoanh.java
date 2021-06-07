@@ -38,7 +38,7 @@ public class JobKinhDoanh extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_job_ca_si);
+        setContentView(R.layout.activity_job_kinh_doanh);
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
@@ -49,7 +49,7 @@ public class JobKinhDoanh extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        lvCaSi = (ListView) findViewById((R.id.listviewCaSi));
+        lvCaSi = (ListView) findViewById((R.id.listviewKinhDoanh));
         arrCaSi = new ArrayList<>();
         arrCaSi.add(new Food("Bán hàng rong", "Thu nhập 8 triệu/ 1 năm", R.drawable.hangrong, 8));
         arrCaSi.add(new Food("Chủ shop online", "Thu nhập 20 triệu/ 1 năm", R.drawable.onlineshop, 20));
@@ -178,7 +178,7 @@ public class JobKinhDoanh extends AppCompatActivity {
         }
         arrQuestion.put(arrEnglish.getJSONObject(second));
         int third = second;
-        while (second == third)
+        while (second == third || third == first)
         {
             third = random.nextInt(arrEnglish.length());
         }

@@ -36,11 +36,10 @@
 
             <ImageView
                 android:id="@+id/imageviewNotification"
+                android:layout_width="21dp"
+                android:layout_height="43dp"
                 android:layout_weight="2"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/jogging"
-                android:scaleType="fitCenter"/>
+                android:src="@drawable/jogging" />
 
             <TextView
                 android:id="@+id/textviewNotificationContent"
@@ -48,7 +47,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text=" Nội dung thông báhôdung thông "
+                android:text=" Nội dung thông báo"
                 android:textColor="@color/Blue"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -62,6 +61,7 @@
             android:layout_marginBottom="5dp"
             android:background="@drawable/custom_button_menu"
             android:text="Đồng ý"
+            android:textColor="@color/Blue"
             app:backgroundTint="@null" />
 
     </LinearLayout>

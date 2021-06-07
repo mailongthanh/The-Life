@@ -132,14 +132,44 @@ public class Tuong_tacActivity extends AppCompatActivity {
                         }
                         break;
                     case "Hành hung":
+                        try {
+                            JSONArray arrEvent = jsonRelationship.getJSONArray("assault");
+                            createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())), "Hành hung");
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
                         break;
                     case "Khen ngợi":
+                        try {
+                            JSONArray arrEvent = jsonRelationship.getJSONArray("praise");
+                            createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())), "Khen ngợi");
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
                         break;
                     case "Đàm đạo":
+                        try {
+                            JSONArray arrEvent = jsonRelationship.getJSONArray("talk");
+                            createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())), "Đàm đạo");
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
                         break;
                     case "Xúc phạm":
+                        try {
+                            JSONArray arrEvent = jsonRelationship.getJSONArray("offense");
+                            createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())), "Xúc phạm");
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
                         break;
                     case "Rủ xem phim":
+                        try {
+                            JSONArray arrEvent = jsonRelationship.getJSONArray("movie");
+                            createDialog(arrEvent.getJSONObject(random.nextInt(arrEvent.length())), "Rủ xem phim");
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
                         break;
                     case "Tỏ tình":
                         if (MainActivity.saveGame.getDating())

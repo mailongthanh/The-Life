@@ -401,7 +401,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Kiem tra xem co so huu do vat nay hay chua
         boolean isOwn = false;
-        ArrayList<product> arrProduct = saveGame.getAsset();
+        ArrayList<Food> arrProduct = saveGame.getAsset();
         if (arrProduct != null) {
             for (int i = 0; i < arrProduct.size(); i++) {
                 if (imageID == arrProduct.get(i).getImage()) //Trung ID hinh la so huu

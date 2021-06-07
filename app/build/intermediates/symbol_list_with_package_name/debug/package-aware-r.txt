@@ -454,8 +454,10 @@ attr fontVariationSettings
 attr fontWeight
 attr foregroundInsidePadding
 attr framePosition
+attr freezesAnimation
 attr gapBetweenBars
 attr gestureInsetBottomIgnored
+attr gifSource
 attr goIcon
 attr graph
 attr haloColor
@@ -499,6 +501,7 @@ attr initialActivityCount
 attr insetForeground
 attr isLightTheme
 attr isMaterialTheme
+attr isOpaque
 attr itemBackground
 attr itemFillColor
 attr itemHorizontalPadding
@@ -1900,7 +1903,9 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable onlineshop
+drawable otl
 drawable painttool
+drawable payment
 drawable pc
 drawable pho
 drawable phuquoc
@@ -2498,7 +2503,6 @@ id textviewNameA
 id textviewNameRelationship
 id textviewNotificationContent
 id textviewNotificationTitle
-id textviewProDescription
 id textviewProName
 id textviewRelationship
 id textviewRelationshipTitle
@@ -3645,6 +3649,8 @@ styleable ForegroundLinearLayout android_foreground android_foregroundGravity fo
 styleable Fragment android_name android_id android_tag
 styleable FragmentContainerView android_name android_tag
 styleable FragmentNavigator android_name
+styleable GifTextureView gifSource isOpaque
+styleable GifView freezesAnimation
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 styleable ImageFilterView altSrc brightness contrast crossfade overlay round roundPercent saturation warmth

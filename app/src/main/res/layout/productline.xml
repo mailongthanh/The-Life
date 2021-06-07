@@ -14,19 +14,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ten mon hang"
-        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/imagePro"
         android:textStyle="bold"
         android:textColor="@color/Blue"
         android:textSize="18sp"/>
-    <TextView
-        android:id="@+id/textviewProDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mo ta mon an"
-        android:layout_below="@id/textviewProName"
-        android:layout_toRightOf="@id/imagePro"
-        android:layout_marginLeft="8dp"/>
 
 
 </RelativeLayout>

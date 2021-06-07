@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class Asset extends AppCompatActivity {
 
     ListView lvAsset;
-    ArrayList<product> arrAsset;
+    ArrayList<Food> arrAsset;
     productAdapter adapter;
     TextView txtMoney, txtName, txtJob;
 
@@ -35,8 +35,8 @@ public class Asset extends AppCompatActivity {
         arrAsset = MainActivity.saveGame.getAsset();
         if(arrAsset != null)
         {
-            tvThongbao.setText("Danh sách tài sản bạn có: ");
-            adapter = new productAdapter(this,R.layout.food_line, arrAsset);
+            tvThongbao.setText("");
+            adapter = new productAdapter(this,R.layout.productline, arrAsset);
             lvAsset.setAdapter(adapter);
         }
   }

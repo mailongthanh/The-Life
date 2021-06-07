@@ -119,7 +119,7 @@ public class SaveGame {
         editor.putString("relationship", json);
         editor.commit();
     }
-    public void saveAsset(ArrayList<product> arrAsset) {
+    public void saveAsset(ArrayList<Food> arrAsset) {
         String json = gson.toJson(arrAsset);
         editor.putString("asset", json);
         editor.commit();
@@ -249,10 +249,10 @@ public class SaveGame {
         return arrRelationship;
     }
 
-    public ArrayList<product> getAsset(){
+    public ArrayList<Food> getAsset(){
         String json = preferences.getString("asset","");
-        Type type = new TypeToken<ArrayList<product>>() {}.getType();
-        ArrayList<product> arrAsset = gson.fromJson(json,type);
+        Type type = new TypeToken<ArrayList<Food>>() {}.getType();
+        ArrayList<Food> arrAsset = gson.fromJson(json,type);
         return arrAsset;
     }
 }

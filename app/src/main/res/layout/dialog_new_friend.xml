@@ -96,6 +96,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:text="Đồng ý"
+                        android:textColor="@color/Blue"
                         android:background="@drawable/custom_button_menu"
                         app:backgroundTint="@null"
                         android:layout_marginLeft="25sp"/>
@@ -104,6 +105,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:text="Từ chối"
+                        android:textColor="@color/Blue"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="25sp"
                         android:background="@drawable/custom_button_menu"

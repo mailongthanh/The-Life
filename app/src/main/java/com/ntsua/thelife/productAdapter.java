@@ -19,9 +19,9 @@ public class productAdapter extends BaseAdapter {
 
     Context mycontext;
     int mylayout;
-    ArrayList<product> arrPro;
+    ArrayList<Food> arrPro;
 
-    public productAdapter(Context mycontext, int mylayout, ArrayList<product> arrPro) {
+    public productAdapter(Context mycontext, int mylayout, ArrayList<Food> arrPro) {
         this.mycontext = mycontext;
         this.mylayout = mylayout;
         this.arrPro = arrPro;
@@ -58,9 +58,8 @@ public class productAdapter extends BaseAdapter {
             convertView = inflater.inflate(mylayout, null);
 
             holder = new ViewHolder();
-            holder.imgProduct = (ImageView) convertView.findViewById(R.id.imageFood);
-            holder.tvDescription = (TextView) convertView.findViewById(R.id.textviewDescription);
-            holder.tvTen = (TextView) convertView.findViewById(R.id.textviewFoodName);
+            holder.imgProduct = (ImageView) convertView.findViewById(R.id.imagePro);
+            holder.tvTen = (TextView) convertView.findViewById(R.id.textviewProName);
 
 
             convertView.setTag(holder);
@@ -69,8 +68,7 @@ public class productAdapter extends BaseAdapter {
         }
 
         holder.imgProduct.setImageResource(arrPro.get(position).getImage());
-        holder.tvTen.setText(arrPro.get(position).getProname());
-        holder.tvDescription.setText(arrPro.get(position).getDescription());
+        holder.tvTen.setText(arrPro.get(position).getFoodName());
 
         Animation anim = AnimationUtils.loadAnimation(mycontext, R.anim.listview_scale);
         convertView.startAnimation(anim);

@@ -1,23 +1,23 @@
 [
     {
-        "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_createname.xml.flat",
-        "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\layout\\activity_createname.xml"
+        "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_hangnong.xml.flat",
+        "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\layout\\dialog_hangnong.xml"
     },
     {
         "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_tattoo.xml.flat",
         "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\layout\\dialog_tattoo.xml"
     },
     {
-        "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_hangnong.xml.flat",
-        "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\layout\\dialog_hangnong.xml"
-    },
-    {
-        "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_boss.png.flat",
-        "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\boss.png"
+        "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_createname.xml.flat",
+        "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\layout\\activity_createname.xml"
     },
     {
         "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_thuctapsinh.png.flat",
         "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\thuctapsinh.png"
+    },
+    {
+        "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_boss.png.flat",
+        "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\boss.png"
     },
     {
         "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_movie.png.flat",
@@ -44,12 +44,12 @@
         "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\skincare.png"
     },
     {
-        "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tuvi.png.flat",
-        "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\tuvi.png"
-    },
-    {
         "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_wax.png.flat",
         "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\wax.png"
+    },
+    {
+        "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tuvi.png.flat",
+        "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\tuvi.png"
     },
     {
         "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_it.png.flat",
@@ -68,12 +68,12 @@
         "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\travel.png"
     },
     {
-        "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_smartphones.png.flat",
-        "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\smartphones.png"
-    },
-    {
         "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_supercar.png.flat",
         "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\supercar.png"
+    },
+    {
+        "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_smartphones.png.flat",
+        "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\smartphones.png"
     },
     {
         "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_job_accept.xml.flat",
@@ -108,12 +108,12 @@
         "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\carrobber.png"
     },
     {
-        "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_girl.png.flat",
-        "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\girl.png"
-    },
-    {
         "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_girl.png.flat",
+        "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\girl.png"
     },
     {
         "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_chuyengiaamthuc.png.flat",
@@ -416,6 +416,10 @@
         "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\vungtau.png"
     },
     {
+        "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_payment.png.flat",
+        "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\payment.png"
+    },
+    {
         "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_casino.png.flat",
         "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\casino.png"
     },
@@ -482,6 +486,10 @@
     {
         "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tonggiamdoc.png.flat",
         "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\tonggiamdoc.png"
+    },
+    {
+        "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_otl.gif.flat",
+        "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\otl.gif"
     },
     {
         "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bike.png.flat",
@@ -1084,12 +1092,12 @@
         "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\finance.png"
     },
     {
-        "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_boss3.png.flat",
-        "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\boss3.png"
-    },
-    {
         "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_bg.xml.flat",
         "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\gradient_bg.xml"
+    },
+    {
+        "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_boss3.png.flat",
+        "source": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\src\\main\\res\\drawable\\boss3.png"
     },
     {
         "merged": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_handlove.png.flat",
