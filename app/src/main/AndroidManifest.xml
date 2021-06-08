@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheLife">
+        <activity android:name=".AiLaTrieuPhu_ing"/>
+        <activity android:name=".AiLaTrieuPhu" />
         <activity android:name=".Asset"></activity>
         <activity android:name=".JobGiaoDuc"></activity>
         <activity android:name=".JobYTe" />
