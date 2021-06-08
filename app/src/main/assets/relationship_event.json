@@ -64,7 +64,7 @@
       "assets": 100, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": 15},
     {"event": "Bạn rủ @ đi xem phim, @ không đồng ý mà còn nói bạn rảnh quá không có gì làm à",
       "assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0, "relationship": -10},
-    {"event": "Bạn rủ @ đi xem phim mà cả 2 cùng thích, phim hôm đó rất hay và cả 2 bạn đều vui và hạnh phúc",
+    {"event": "Bạn rủ @ đi xem phim mà cả 2 cùng thích, phim hôm đó rất hay, cả 2 bạn đều vui và hạnh phúc",
       "assets": 0, "happy": 10, "health": 0, "smart":0, "appearance": 0, "relationship": 15}
   ]
 }

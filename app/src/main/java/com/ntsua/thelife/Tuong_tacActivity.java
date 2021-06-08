@@ -2,7 +2,9 @@ package com.ntsua.thelife;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -44,7 +46,8 @@ public class Tuong_tacActivity extends AppCompatActivity {
     int position;
     QuanHe quanHe;
     NameOfRelationship nameOfRelationship;
-
+    View view;
+    HoatDongQHAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,7 +89,6 @@ public class Tuong_tacActivity extends AppCompatActivity {
         MangTuongTac.add(new HoatDongQH(R.drawable.communication, "Đàm đạo", "Đàm đạo chuyện thế gian"));
         MangTuongTac.add(new HoatDongQH(R.drawable.insult, "Xúc phạm", "Giết người bằng lời nói"));
         MangTuongTac.add(new HoatDongQH(R.drawable.film, "Rủ xem phim", "Phimcuzzzzz.net"));
-
         if (quanHe.getQuanHe() == NameOfRelationship.Friend)
             MangTuongTac.add(new HoatDongQH(R.drawable.love, "Tỏ tình", "Mày yêu tao không để tao còn tán con khác"));
 
@@ -94,8 +96,10 @@ public class Tuong_tacActivity extends AppCompatActivity {
             MangTuongTac.add(new HoatDongQH(R.drawable.love, "Chia tay", "Cảm thấy đối phương không còn như xưa"));
             MangTuongTac.add(new HoatDongQH(R.drawable.love, "Cầu hôn", "Sau này ngồi cùng bàn thờ"));
         }
-
-        HoatDongQHAdapter adapter = new HoatDongQHAdapter(
+        if (quanHe.getQuanHe() == NameOfRelationship.Wife || quanHe.getQuanHe() == NameOfRelationship.Husband) {
+            MangTuongTac.add(new HoatDongQH(R.drawable.love, "Chia tay", "Cảm thấy đối phương không còn như xưa"));
+        }
+        adapter = new HoatDongQHAdapter(
                 Tuong_tacActivity.this,
                 R.layout.tuong_tac,
                 MangTuongTac
@@ -179,28 +183,106 @@ public class Tuong_tacActivity extends AppCompatActivity {
                             return;
                         }
                         if (isSuccess()) {
-                            Toast.makeText(Tuong_tacActivity.this, "Success", Toast.LENGTH_SHORT).show();
+                            createDialogOFM();
                             arrQuanHe.get(position).setQuanHe(NameOfRelationship.GirlFriend);
                             if (!MainActivity.saveGame.getGender())
                                 arrQuanHe.get(position).setQuanHe(NameOfRelationship.BoyFriend);
                             MainActivity.saveGame.saveRelationship(arrQuanHe);
                             MainActivity.saveGame.saveDating(true);
+                            recreateListview();
                         }
                         else {
-                            Toast.makeText(Tuong_tacActivity.this, "Fail", Toast.LENGTH_SHORT).show();
+                            createDialog();
                         }
                         break;
                     case "Chia tay":
-                        Toast.makeText(Tuong_tacActivity.this, "NYC", Toast.LENGTH_SHORT).show();
+                        if(chiatay()==true)
+                        {
+                            createDialogOFM();
+                            arrQuanHe.get(position).setQuanHe(NameOfRelationship.Friend);
+                            MainActivity.saveGame.saveRelationship(arrQuanHe);
+                            MainActivity.saveGame.saveDating(false);
+                            recreateListview();
+                        }
+                        else
+                        {
+                            createDialog();
+                        }
                         break;
                     case "Cầu hôn":
-                        Toast.makeText(Tuong_tacActivity.this, "Ten ten ten ten", Toast.LENGTH_SHORT).show();
+                        if(CauHonSuccess()==true)
+                            {
+                                createDialogOFM();
+                                arrQuanHe.get(position).setQuanHe(NameOfRelationship.Wife);
+                                if (!MainActivity.saveGame.getGender())
+                                    arrQuanHe.get(position).setQuanHe(NameOfRelationship.Husband);
+                                MainActivity.saveGame.saveRelationship(arrQuanHe);
+                                MainActivity.saveGame.saveDating(true);
+                                recreateListview();
+                            }
+                        else{
+                                createDialog();
+                        }
                         break;
                 }
             }
         });
     }
+    void recreateListview()
+    {
+        MangTuongTac.clear();
+        MangTuongTac.add(new HoatDongQH(R.drawable.money, "Xin tiền", "Không làm mà vẫn có ăn"));
+        MangTuongTac.add(new HoatDongQH(R.drawable.assualt, "Hành hung", "Một chuỳ vào đầu"));
+        MangTuongTac.add(new HoatDongQH(R.drawable.compliment, "Khen ngợi", "Thảo mai khen ngợi"));
+        MangTuongTac.add(new HoatDongQH(R.drawable.communication, "Đàm đạo", "Đàm đạo chuyện thế gian"));
+        MangTuongTac.add(new HoatDongQH(R.drawable.insult, "Xúc phạm", "Giết người bằng lời nói"));
+        MangTuongTac.add(new HoatDongQH(R.drawable.film, "Rủ xem phim", "Phimcuzzzzz.net"));
+        if (quanHe.getQuanHe() == NameOfRelationship.Friend)
+        {
+            MangTuongTac.add(new HoatDongQH(R.drawable.love, "Tỏ tình", "Mày yêu tao không để tao còn tán con khác"));
+        }
+        if (quanHe.getQuanHe() == NameOfRelationship.Wife||quanHe.getQuanHe() == NameOfRelationship.Husband)
+        {
+            MangTuongTac.add(new HoatDongQH(R.drawable.love, "Chia tay", "Cảm thấy đối phương không còn như xưa"));
+        }
+        if (quanHe.getQuanHe() == NameOfRelationship.BoyFriend || quanHe.getQuanHe() == NameOfRelationship.GirlFriend) {
+            MangTuongTac.add(new HoatDongQH(R.drawable.love, "Chia tay", "Cảm thấy đối phương không còn như xưa"));
+            MangTuongTac.add(new HoatDongQH(R.drawable.love, "Cầu hôn", "Sau này ngồi cùng bàn thờ"));
+        }
+        adapter.notifyDataSetChanged();
+    }
+    void createDialogOFM() {
+        Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.setContentView(R.layout.layout_kethonthanhcong);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Button btnOke = dialog.findViewById(R.id.buttonDialogEventOke);
+        btnOke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
 
+        dialog.show();
+    }
+    void createDialog() {
+        Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.setContentView(R.layout.layout_kethonthatbai);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Button btnOke = dialog.findViewById(R.id.buttonDialogEventOke);
+        btnOke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+    }
     void createDialog(JSONObject object, String titleEvent) throws JSONException {
         //Tao dialog
         Dialog dialog = new Dialog(this);
@@ -352,6 +434,20 @@ public class Tuong_tacActivity extends AppCompatActivity {
         if (ability > 100 - fail) //Nằm trong khoảng lớn fail đến 100
             return false; // :((
         else  return true; //=))
+    }
+    boolean CauHonSuccess()
+    {
+        int success = pbqhanhe.getProgress();
+        if (success ==100)
+            return true;
+        else  return false;
+    }
+    boolean chiatay()
+    {
+        int success = pbqhanhe.getProgress();
+        if (success <=30)
+            return true;
+        else  return false;
     }
 
     private void loadGame() {

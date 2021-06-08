@@ -1740,6 +1740,7 @@ drawable career
 drawable carrobber
 drawable cashier
 drawable casino
+drawable cauhon
 drawable chef
 drawable chungcu
 drawable chunhahang
@@ -1817,6 +1818,7 @@ drawable hamburger
 drawable handlove
 drawable hangrong
 drawable happy
+drawable happylove
 drawable heartbeat
 drawable helicopter
 drawable hero
@@ -1927,6 +1929,7 @@ drawable rmit
 drawable robber
 drawable rowing
 drawable runningshoes
+drawable sad
 drawable salad
 drawable saleman
 drawable saler
@@ -2658,6 +2661,7 @@ layout activity_sport
 layout activity_startup
 layout activity_travel
 layout activity_tuong_tac
+layout breakup
 layout crime
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2686,8 +2690,11 @@ layout dialog_notification
 layout dialog_out_of_money
 layout dialog_relationship
 layout dialog_tattoo
+layout dialog_totinhthanhcong
 layout dialog_university
 layout food_line
+layout layout_kethonthanhcong
+layout layout_kethonthatbai
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider

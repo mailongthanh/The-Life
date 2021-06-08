@@ -22,9 +22,12 @@ com/ntsua/thelife/JobDienVien.java
  com.ntsua.thelife.JobDienVien$2
  com.ntsua.thelife.JobDienVien$3
  com.ntsua.thelife.JobDienVien$4
-com/ntsua/thelife/RelationShip.java
- com.ntsua.thelife.RelationShip
- com.ntsua.thelife.RelationShip$1
+com/ntsua/thelife/JobQuanDoi.java
+ com.ntsua.thelife.JobQuanDoi
+ com.ntsua.thelife.JobQuanDoi$1
+ com.ntsua.thelife.JobQuanDoi$2
+ com.ntsua.thelife.JobQuanDoi$3
+ com.ntsua.thelife.JobQuanDoi$4
 com/ntsua/thelife/productAdapter.java
  com.ntsua.thelife.productAdapter
  com.ntsua.thelife.productAdapter$1
@@ -123,11 +126,11 @@ com/ntsua/thelife/JobKinhDoanh.java
  com.ntsua.thelife.JobKinhDoanh$2
  com.ntsua.thelife.JobKinhDoanh$3
  com.ntsua.thelife.JobKinhDoanh$4
-com/ntsua/thelife/Tuong_tacActivity.java
- com.ntsua.thelife.Tuong_tacActivity
- com.ntsua.thelife.Tuong_tacActivity$1
- com.ntsua.thelife.Tuong_tacActivity$2
- com.ntsua.thelife.Tuong_tacActivity$3
+com/ntsua/thelife/ActivitiesEvent.java
+ com.ntsua.thelife.ActivitiesEvent
+ com.ntsua.thelife.ActivitiesEvent$1
+ com.ntsua.thelife.ActivitiesEvent$2
+ com.ntsua.thelife.ActivitiesEvent$3
 com/ntsua/thelife/JobDichVu.java
  com.ntsua.thelife.JobDichVu
  com.ntsua.thelife.JobDichVu$1
@@ -205,14 +208,13 @@ com/ntsua/thelife/HoatDongQHAdapter.java
  com.ntsua.thelife.HoatDongQHAdapter
  com.ntsua.thelife.HoatDongQHAdapter$1
  com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
-com/ntsua/thelife/ActivitiesEvent.java
- com.ntsua.thelife.ActivitiesEvent
- com.ntsua.thelife.ActivitiesEvent$1
- com.ntsua.thelife.ActivitiesEvent$2
- com.ntsua.thelife.ActivitiesEvent$3
-com/ntsua/thelife/JobQuanDoi.java
- com.ntsua.thelife.JobQuanDoi
- com.ntsua.thelife.JobQuanDoi$1
- com.ntsua.thelife.JobQuanDoi$2
- com.ntsua.thelife.JobQuanDoi$3
- com.ntsua.thelife.JobQuanDoi$4
+com/ntsua/thelife/RelationShip.java
+ com.ntsua.thelife.RelationShip
+ com.ntsua.thelife.RelationShip$1
+com/ntsua/thelife/Tuong_tacActivity.java
+ com.ntsua.thelife.Tuong_tacActivity
+ com.ntsua.thelife.Tuong_tacActivity$1
+ com.ntsua.thelife.Tuong_tacActivity$2
+ com.ntsua.thelife.Tuong_tacActivity$3
+ com.ntsua.thelife.Tuong_tacActivity$4
+ com.ntsua.thelife.Tuong_tacActivity$5
