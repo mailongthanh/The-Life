@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -34,6 +35,17 @@ public class Playground extends AppCompatActivity {
         arrPlayground.add(new Food("Casino", "", R.drawable.casino, 0));
         adapter = new FoodAdapter(this, R.layout.food_line, arrPlayground);
         lvPlayground.setAdapter(adapter);
+
+        lvPlayground.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (position == 1) {
+                    Intent myintent = new Intent(Playground.this, AiLaTrieuPhu.class);
+                    startActivityForResult(myintent, 0);
+                }
+                overridePendingTransition(R.anim.enter, R.anim.exit);
+            }
+        });
     }
 
     private void loadGame() {
