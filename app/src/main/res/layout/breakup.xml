@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="wrap_content"
+    android:layout_width="300dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:backgroundTintMode="@null">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp">
+        <LinearLayout
+            android:gravity="center|bottom"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button_menu"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/dialog_event"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/custom_dialog"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textviewAssetContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Bạn đã tỏ tình thành công"
+                    android:textAlignment="center"
+                    android:textColor="@color/Blue"
+                    android:textSize="17sp" />
+
+
+                <pl.droidsonroids.gif.GifTextView
+                    android:layout_width="267dp"
+                    android:layout_height="124dp"
+                    android:background="@drawable/happylove"
+                    android:padding="5dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <Button
+                        android:id="@+id/buttonAssetAccept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="25sp"
+                        android:layout_marginEnd="83dp"
+                        android:layout_marginRight="83dp"
+                        android:background="@drawable/custom_button_menu"
+                        android:text="Đồng ý"
+                        app:backgroundTint="@null" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textviewDialogAssetTitle"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:background="@drawable/custom_button_menu"
+        android:fontFamily="@font/anton"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Thông báo"
+        android:textColor="@color/Red"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</FrameLayout>

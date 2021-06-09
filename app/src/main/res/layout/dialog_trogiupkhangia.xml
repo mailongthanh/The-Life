@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/altp_btn">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="KHÁN GIẢ ĐÃ TRẢ LỜI"
+        />
+    <TextView
+        android:id="@+id/txvChonA"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="A : 30%"
+        />
+    <TextView
+        android:id="@+id/txvChonB"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="A : 30%"
+        />
+    <TextView
+        android:id="@+id/txvChonC"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="A : 30%"
+        />
+    <TextView
+        android:id="@+id/txvChonD"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="A : 30%"
+        />
+
+
+</LinearLayout>
