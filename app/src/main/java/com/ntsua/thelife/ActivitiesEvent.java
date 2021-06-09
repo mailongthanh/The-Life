@@ -1,5 +1,6 @@
 package com.ntsua.thelife;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -14,9 +15,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -136,6 +140,10 @@ public class ActivitiesEvent {
         btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Cap nhat lai tien hien thi
+                Activity activity = (Activity) context;
+                TextView txtMoney = activity.findViewById(R.id.textviewMoney);
+                txtMoney.setText(MainActivity.saveGame.getMoney() + " VND");
                 dialog.dismiss();
                 if (isNewFriend())
                 {

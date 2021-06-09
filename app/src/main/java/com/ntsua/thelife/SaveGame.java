@@ -255,4 +255,17 @@ public class SaveGame {
         ArrayList<Food> arrAsset = gson.fromJson(json,type);
         return arrAsset;
     }
+
+    public void saveSick(Sick[] arrSick) {
+        String json = gson.toJson(arrSick);
+        editor.putString("sick", json);
+        editor.commit();
+    }
+
+    public Sick[] getSick(){
+        String json = preferences.getString("sick","");
+        Type type = new TypeToken<Sick[]>() {}.getType();
+        Sick[] arrSick = gson.fromJson(json,type);
+        return arrSick;
+    }
 }

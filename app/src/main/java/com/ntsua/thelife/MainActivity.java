@@ -345,6 +345,20 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
     }
 
+    void checkMySelf()
+    {
+        if (prbHealth.getProgress() <= 0)
+        {
+            createNotification(R.drawable.cancel, "Bạn đã qua đời vì sức khỏe quá yếu", this);
+            //gọi acitvity died
+            return;
+        }
+        if (prbHappy.getProgress() < 30)
+        {
+            createNotification(R.drawable.heartbeat, "Bạn có dâu hiệu bị trầm cảm, tốt nhất nên đến bác sĩ để chưa trị", this);
+        }
+    }
+
     void dialogJobEvent(String title) throws JSONException {
         //Toast.makeText(this, "ssdfsgsdgsdgd", Toast.LENGTH_LONG).show();
         if (!jsonResult.getBoolean("selection")) {
@@ -807,6 +821,14 @@ public class MainActivity extends AppCompatActivity {
         txtSmart.setText(prbSmart.getProgress() + "%");
         txtHealth.setText(prbHealth.getProgress() + "%");
         saveGame.savePlayerInfo(prbHappy.getProgress(), prbHealth.getProgress(), prbSmart.getProgress(), prbAppearance.getProgress());
+
+        Sick[] arrSick = new Sick[4];
+        arrSick[0] = new Sick(false, "đau răng");
+        arrSick[1] = new Sick(false, "đau mắt đỏ");
+        arrSick[2] = new Sick(false, "tai mũi họng");
+        arrSick[3] = new Sick(false, "mẫn ngứa do dị ứng với đồ ăn");
+
+        saveGame.saveSick(arrSick);
     }
 
     void initNewAge()
@@ -817,8 +839,17 @@ public class MainActivity extends AppCompatActivity {
         saveGame.saveExercise(0);
         saveGame.saveJogging(0);
         saveGame.saveJogging(0);
+        saveGame.saveLibrary(0);
         saveGame.saveNewFriendInYear(0);
 
+        int health = saveGame.getHealth();
+        if (prbHappy.getProgress() < 30)
+        {
+            health -= (30 - prbHappy.getProgress());
+        }
+        health -= (int) (saveGame.getAge() / 4);
+        saveGame.savePlayerInfo(saveGame.getHappy(), health, saveGame.getSmart(), saveGame.getAppearance());
+        prbHealth.setProgress(health);
 
         for (int i=0; i<arrRelationship.size(); i++)
         {
