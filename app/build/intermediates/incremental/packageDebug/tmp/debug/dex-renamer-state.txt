@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-#Fri Jun 04 16:10:19 ICT 2021
+#Sun Jun 06 18:02:07 ICT 2021
 base.0=D\:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
-=======
-#Fri Jun 04 15:07:05 ICT 2021
-base.0=D\:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
->>>>>>> 0b407e158b3d9d9be2f7825900e281d231ca0839
 renamed.0=classes.dex
-path.0=classes.dex
