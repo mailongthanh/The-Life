@@ -1,0 +1,62 @@
+{
+    "bar":[
+      {"title":"Bar",
+        "event": "Nhạc sôi động, mọi người nhảy cuồng nhiệt, bạn làm gì ?", "selection": true,
+      "select":[
+        {"content": "Uống rượu và ngồi ngắm", "selection":false,
+          "event": [
+            { "event" :"Bạn được một buổi tối mãn nhãn", "assets": -1000, "happy": 5, "health": 0, "smart":0, "appearance": 0},
+            { "event" :"Một cô gái lại tát bạn một cái vì nghĩ bạn liếc mắt đưa tình với cô ấy, chả hiểu kiểu gì", "assets": -1000, "happy": -3, "health": 0, "smart":0, "appearance": -2}
+          ]},
+        {"content": "Vào nhảy chung cho vui", "selection":true, "event": "Bạn vô tình giẫm phải chân một anh chàng cao to, anh ấy cho bạn một đấm\n ây da, bạn làm gì đây ?",
+          "select": [
+            {"content": "Đấm lại", "selection":false,
+              "event": [
+                {"event": "Bạn và hắn đánh nhau, bạn knockout hắn không tưởng", "assets": -1000, "happy": 5, "health": 0, "smart":0, "appearance": -2},
+                {"event": "Đó có lẽ là một trong những quyết định sai lầm nhất của bạn...\nBạn bị đánh suýt quên đường về nhà", "assets": -1000, "happy": -5, "health": -5, "smart":0, "appearance": -5}
+              ]},
+            {"content": "Bỏ chạy thật nhanh", "selection":false,
+              "event": [
+                {"event": "Bạn nghĩ chạy nhanh là thoát? Tên này thù dai đấm bạn thêm cái nữa mới thôi", "assets": -1000, "happy": -2, "health": 0, "smart":0, "appearance": -2},
+                {"event": "Mọi người cười bạn, bạn chạy một mạch dám nhìn ai", "assets": -1000, "happy": -10, "health": 0, "smart":0, "appearance": -1}
+              ]},
+            {"content": "Xin lỗi", "selection":false,
+              "event": [
+                {"event": "Tên này chấp nhận và mọi chuyện qua đi, bạn vẫn còn đau vì cú đấm", "assets": -1000, "happy": -3, "health": 0, "smart":0, "appearance": -1},
+                {"event": "Hắn không chịu và định gây sự tiếp, thế là bị bảo vệ ở đây đánh cho bầm dập, đáng đời", "assets": -1000, "happy": 5, "health": 0, "smart":0, "appearance": -1}
+              ]}
+          ]}
+      ]},
+      {"title":"Bar", "event": "Bạn thấy có người dùng hàng trắng trong đây, ây da làm gì đây !?", "selection": true,
+        "select":[
+          {"content": "Báo cảnh sát", "selection":false,
+            "event": [
+              { "event" :"Cảnh sát ập đến tóm gọn cả lũ, bạn được vinh dự nhận bằng khen", "assets": 0, "happy": 10, "health": 0, "smart":2, "appearance": 0},
+              { "event" :"Bọn chúng phát hiện ý đồ của bạn là đánh bạn cho tơi tả, tưởng chết luôn rồi", "assets": 0, "happy": -8, "health": 0, "smart":-3, "appearance": -15}
+            ]},
+          {"content": "Im lặng và xem như chưa có gì xảy ra, tiếp tục vui chơi", "selection":false,
+            "event":[
+              { "event": "Công an ập đến và bắt luôn bạn về đồn để phục vụ điều tra", "assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0},
+              { "event": "Bạn im lặng, ai cũng im, thế là coi như chưa thấy gì", "assets": -1000, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+            ]}
+      ]}
+    ],
+   "film":[
+     {"title": "Film", "event": "Phim hôm nay dở tệ, bạn chán nản ra về",
+       "selection":false,"assets": -90, "happy": -5, "health": 0, "smart":0, "appearance": 0},
+     {"title": "Film", "event": "Phim hôm nay quá hay, bạn học được rất nhiều thứ về nó",
+       "selection":false,"assets": -90, "happy": 5, "health": 0, "smart":3, "appearance": 0},
+     {"title": "Film", "event": "Phim hôm nay hay tuyệt, tiết là không có ai đi xem chung với bạn",
+       "selection":false,"assets": -90, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+   ],
+   "library":[
+     {"title": "Đọc sách", "event": "Hôm nay bạn đọc tiếp thu được nhiều thứ, không uổng công lặn lội vào thư viện",
+       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":5, "appearance": 0},
+     {"title": "Đọc sách", "event": "Chị quản lí thư viện khen bạn chăm hỏi hỏi và chăm đọc sách, phổng mũi chứ chằng chơi, hì",
+       "selection": false,"assets": 0, "happy": 5, "health": 0, "smart":5, "appearance": 0},
+     {"title": "Đọc sách","event": "Hôm nay vào thư viện mà tìm mãi không được quyển sách cần đọc",
+       "selection": false,"assets": 0, "happy": -2, "health": 0, "smart":3, "appearance": 0},
+     {"title": "Lãng trí","event": "Bạn quên rằng hôm nay thư viện đóng cửa",
+       "selection": false,"assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0}
+   ]
+}

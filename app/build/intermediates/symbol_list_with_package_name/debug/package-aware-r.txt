@@ -1687,6 +1687,13 @@ drawable addage
 drawable ailatrieuphu
 drawable airplane
 drawable alcohol
+drawable altp_5050
+drawable altp_btn
+drawable altp_btn_right
+drawable altp_btn_selected
+drawable altp_cauhoikhac
+drawable altp_hoikhangia
+drawable altp_logo
 drawable america
 drawable angiang
 drawable appearance
@@ -1740,6 +1747,7 @@ drawable career
 drawable carrobber
 drawable cashier
 drawable casino
+drawable cauhon
 drawable chef
 drawable chungcu
 drawable chunhahang
@@ -1817,6 +1825,7 @@ drawable hamburger
 drawable handlove
 drawable hangrong
 drawable happy
+drawable happylove
 drawable heartbeat
 drawable helicopter
 drawable hero
@@ -1927,6 +1936,7 @@ drawable rmit
 drawable robber
 drawable rowing
 drawable runningshoes
+drawable sad
 drawable salad
 drawable saleman
 drawable saler
@@ -2294,6 +2304,7 @@ id listviewTaiXe
 id listviewTravel
 id listviewViec
 id listviewYte
+id lsvTienThuong
 id lvHangnong
 id lvmuasam
 id masked
@@ -2548,6 +2559,17 @@ id txtAppearance
 id txtHappy
 id txtHealth
 id txtSmart
+id txvCauHoi
+id txvCauTL1
+id txvCauTL2
+id txvCauTL3
+id txvCauTL4
+id txvChonA
+id txvChonB
+id txvChonC
+id txvChonD
+id txvThuaGame
+id txvTienThuong
 id unchecked
 id uniform
 id unlabeled
@@ -2622,6 +2644,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_ailatrieuphu
+layout activity_ailatrieuphu_ing
 layout activity_asset
 layout activity_boi_toan
 layout activity_chuyen_viec
@@ -2658,6 +2682,7 @@ layout activity_sport
 layout activity_startup
 layout activity_travel
 layout activity_tuong_tac
+layout breakup
 layout crime
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2686,8 +2711,18 @@ layout dialog_notification
 layout dialog_out_of_money
 layout dialog_relationship
 layout dialog_tattoo
+<<<<<<< HEAD
+layout dialog_totinhthanhcong
 layout dialog_university
 layout food_line
+layout layout_kethonthanhcong
+layout layout_kethonthatbai
+=======
+layout dialog_trogiupkhangia
+layout dialog_university
+layout food_line
+layout item_altp_tienthuong
+>>>>>>> 119f498b583592cb037bd5cc8670982cf4081cd6
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider

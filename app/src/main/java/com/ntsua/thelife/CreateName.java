@@ -41,7 +41,7 @@ public class CreateName extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if (requestCode == 123 && resultCode == RESULT_OK && data != null)
         {
-            String gender = data.getStringExtra("gender");
+            boolean gender = data.getBooleanExtra("gender", false);
             Intent intent = new Intent();
             intent.putExtra("gender", gender);
 

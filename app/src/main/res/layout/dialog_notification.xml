@@ -45,8 +45,8 @@
                 android:id="@+id/textviewNotificationContent"
                 android:layout_weight="8"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text=" Nội dung thông báo"
                 android:textColor="@color/Blue"
                 android:textSize="16sp" />

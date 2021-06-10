@@ -12,11 +12,59 @@
       "assets": 100, "happy": 3, "health": 0, "smart":0, "appearance": 0, "relationship": 5}
   ],
   "assault": [
-    {"event": "",
-      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": 0}
+    {"event": "Bạn dùng chai thủy tinh đập vào đầu @",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": -50},
+    {"event": "Bạn đấm vào mặt @, @ tức giận phản kháng đấm lại bạn, bạn bị gẫy 2 cái răng",
+      "assets": 0, "happy": -5, "health": -10, "smart":0, "appearance": -5, "relationship": -40},
+    {"event": "Bạn dùng gậy bóng chày đập lên đầu @",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": -30},
+    {"event": "Bạn tán vào mặt của @",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": -30},
+    {"event": "Bạn bốp cổ @, @ suýt chết",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": -90}
   ],
-  "praise": [],
-  "talk": [],
-  "offense": [],
-  "movie": []
+  "praise": [
+    {"event": "Bạn khen @ hôm nay trông thật đẹp, @ hạnh phúc, cảm ơn vì lời khen của bạn",
+      "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "relationship": 10},
+    {"event": "Hôm nay @ làm một món ăn cho bạn, bạn ăn xong và khen món ăn của @ rất ngon. @ rất vui.",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": 10},
+    {"event": "Hôm nay @ hỏi bạn thấy bộ quần áo mới của @ như thế nào, bạn khen bộ quần áo của @ rất sành điệu, hợp thời trang",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": 15},
+    {"event": "Bạn khen kiểu tóc mới của @ rất đẹp và phù hợp với khuôn mặt",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": 10},
+    {"event": "Hôm nay @ phải làm việc rất nhiều, bạn động viên @ và nói rằng bạn tin @ sẽ có thể hoàn thành được nó",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": 20}
+  ],
+  "talk": [
+    {"event": "Bạn trò chuyện với @ về một cuốn sách mới mà bạn mới mua được. Nhờ có bạn mà @ tìm được ra thú vui mới trong việc đọc sách",
+      "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "relationship": 20},
+    {"event": "@ đang rất buồn vì hôm nay @ gặp phải điều không may mắn, bạn tới và tâm sự với @ một cách chân thành. @ cảm ơn và cảm thấy giải tỏa sau cuộc nói chuyện",
+      "assets": 0, "happy": 2, "health": 0, "smart":0, "appearance": 0, "relationship": 30},
+    {"event": "@ kể cho bạn một câu chuyện buồn. Trong lúc nói chuyện bạn bỗng nhớ tới một video hài trên mạng khiến bạn bật cười. @ tức giận bỏ về và chửi bạn vô duyên",
+      "assets": 0, "happy": -3, "health": 0, "smart":0, "appearance": 0, "relationship": -5},
+    {"event": "@ và bạn đang trò chuyện về một vấn đề trên mạng. Bổng nhiên bạn nói một câu hài hước, khiến cả hai có một tràng cười sảng khoái",
+      "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0, "relationship": 5}
+  ],
+  "offense": [
+    {"event": "Bạn thấy @ hôm nay mặc một bộ đồ đầy màu sắc, bạn bật cười và nói @ mặc đồ như một anh hề",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": -15},
+    {"event": "@ thắc mắc về một vấn đề và @ hỏi bạn. Bạn giải thích @ nhiều lần nhưng @ vẫn không hiểu. Vì tức giận mà bạn nói @ bị thiểu năng. @ rất buồn và tủi thân",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": -30},
+    {"event": "@ và bạn hôm nay vì mâu thuẫn mà cãi nhau. Trong lúc tức giận, vì không kiềm chế mà bạn đã xúc phạm @ rất nhiều.",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": -30},
+    {"event": "@ hôm nay vừa đổi một kiểu tóc mới. Bạn vì không ý tứ mà đã nói tóc @ là ĐẦU CẮT MOI",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": -10}
+  ],
+  "movie": [
+    {"event": "Bạn rủ @ đi xem phim, @ đồng ý và rất vui vì lời mời của bạn.",
+    "assets": 0, "happy": 2, "health": 0, "smart":0, "appearance": 0, "relationship": 15},
+    {"event": "Bạn rủ @ đi xem phim, @ không đồng ý vì hôm nay @ rất bận.",
+      "assets": 0, "happy": -2, "health": 0, "smart":0, "appearance": 0, "relationship": 0},
+    {"event": "Bạn rủ @ đi xem phim, @ đồng ý và thậm chí còn bao vé phim cho bạn",
+      "assets": 100, "happy": 0, "health": 0, "smart":0, "appearance": 0, "relationship": 15},
+    {"event": "Bạn rủ @ đi xem phim, @ không đồng ý mà còn nói bạn rảnh quá không có gì làm à",
+      "assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0, "relationship": -10},
+    {"event": "Bạn rủ @ đi xem phim mà cả 2 cùng thích, phim hôm đó rất hay, cả 2 bạn đều vui và hạnh phúc",
+      "assets": 0, "happy": 10, "health": 0, "smart":0, "appearance": 0, "relationship": 15}
+  ]
 }

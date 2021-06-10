@@ -340,7 +340,6 @@
             { "event" :"Đối diện với ăn cướp, bạn đã hét lớn để tìm kiếm sự giúp đỡ \nTuy nhiên xung quanh hầu như không có lấy một ai cả, bạn bị đâm một nhát đầy nguy kịch", "assets": 0, "happy": 5, "health": -100, "smart":0, "appearance": 0},
             { "event" :"Đối diện với ăn cướp, bạn đã hét lớn để tìm kiếm sự giúp đỡ \nCuối cùng cũng có người tới giúp bạn, tên cướp chạy đi như tên lửa, nhưng đã bị chặn bởi cảnh sát, cuối cùng chịu mức phạt là 5 năm tù", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
           ]},
-
         {"content": "Chống trả", "selection":false,
           "event":[
             { "event": "Đối diện với ăn cướp, bạn vơ được một cây dao gần đó, bạn đâm trả lại kẻ cướp, vô tình đâm phải chỗ hiểm, bạn bị buộc tội giết người", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},

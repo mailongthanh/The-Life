@@ -81,7 +81,7 @@ public class QuanHeAdapter extends BaseAdapter {
 
         //Gán giá trị
         holder.tvTen.setText(myQuanHeList.get(position).getHoten());
-        holder.tvMoiQuanHe.setText("(" + myQuanHeList.get(position).getQuanHe() + ")");
+        holder.tvMoiQuanHe.setText("(" + myQuanHeList.get(position).getQuanHe().toString() + ")");
         holder.PbThanhQH.setProgress(myQuanHeList.get(position).getDoThanMat());
         holder.imgQuanhe.setImageResource(myQuanHeList.get(position).getHinhAnh());
 

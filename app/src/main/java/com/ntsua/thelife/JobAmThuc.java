@@ -38,7 +38,7 @@ public class JobAmThuc extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_job_ca_si);
+        setContentView(R.layout.activity_job_am_thuc);
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
@@ -49,7 +49,7 @@ public class JobAmThuc extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        lvCaSi = (ListView) findViewById((R.id.listviewCaSi));
+        lvCaSi = (ListView) findViewById((R.id.listviewAmThuc));
         arrCaSi = new ArrayList<>();
         arrCaSi.add(new Food("Phụ bếp", "Thu nhập 6 triệu/ 1 năm", R.drawable.kitchenhelper, 6));
         arrCaSi.add(new Food("Đầu bếp", "Thu nhập 20 triệu/ 1 năm", R.drawable.daubep, 20));

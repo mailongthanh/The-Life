@@ -50,7 +50,7 @@ public class JobCaSi extends AppCompatActivity {
 
         lvCaSi = (ListView) findViewById((R.id.listviewCaSi));
         arrCaSi = new ArrayList<>();
-        arrCaSi.add(new Food("Ca sĩ đám cưới", "Thu nhập 8 triệu/ 1 năm", R.drawable.wedding, 8));
+        arrCaSi.add(new Food("Ca sĩ đám cưới", "Thu nhập 8 triệu/ 1 năm", R.drawable.cauhon, 8));
         arrCaSi.add(new Food("Ca sĩ phòng trà", "Thu nhập 10 triệu/ 1 năm", R.drawable.tearoomsinger, 10));
         arrCaSi.add(new Food("Ca sĩ thần tượng", "Thu nhập 50 triệu/ 1 năm", R.drawable.idol, 50));
         arrCaSi.add(new Food("DIVA", "Thu nhập 100 triệu/ 1 năm", R.drawable.diva, 100));
@@ -207,7 +207,7 @@ public class JobCaSi extends AppCompatActivity {
         }
         arrQuestion.put(arrEnglish.getJSONObject(second));
         int third = second;
-        while (second == third)
+        while (second == third || third == first)
         {
             third = random.nextInt(arrEnglish.length());
         }

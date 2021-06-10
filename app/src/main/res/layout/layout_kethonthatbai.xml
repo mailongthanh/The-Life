@@ -1,0 +1,88 @@
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="300dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/custom_button_menu"
+    android:backgroundTintMode="@null">
+
+    <TextView
+        android:id="@+id/textviewDialogEventTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:text="CHIA BUỒN"
+        android:fontFamily="@font/anton"
+        android:textColor="@color/Red"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/dialog_event_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_dialog"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/linearMoney"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="3dp">
+
+
+            <TextView
+                android:layout_width="73dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:includeFontPadding="true"
+                android:text="BẠN BỊ"
+                android:textAlignment="center"
+                android:textColor="@color/Blue"
+                android:textSize="24sp"
+                android:textStyle="italic|bold" />
+
+            <pl.droidsonroids.gif.GifTextView
+                android:layout_width="108dp"
+                android:layout_height="120dp"
+
+                android:background="@drawable/sad" />
+
+            <TextView
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:layout_gravity="center_vertical"
+                android:includeFontPadding="true"
+                android:text="TỪ CHỐI"
+                android:textAlignment="center"
+                android:textColor="@color/Blue"
+                android:textSize="24sp"
+                android:textStyle="italic|bold" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/buttonDialogEventOke"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/custom_button_menu"
+            android:text="Đồng ý"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+
+</LinearLayout>

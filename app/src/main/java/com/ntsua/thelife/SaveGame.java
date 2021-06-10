@@ -19,6 +19,12 @@ public class SaveGame {
         gson = new Gson();
     }
 
+    public void saveDating(boolean isDating)
+    {
+        editor.putBoolean("dating", isDating);
+        editor.commit();
+    }
+
     public  void saveEnglish(boolean english)
     {
         editor.putBoolean("english", english);
@@ -33,7 +39,7 @@ public class SaveGame {
 
     public void saveNumberOfFriends(int number)
     {
-        editor.putInt("allfiend", number);
+        editor.putInt("allfriend", number);
         editor.commit();
     }
 
@@ -83,6 +89,12 @@ public class SaveGame {
         editor.commit();
     }
 
+    public void saveGender(boolean isBoy)
+    {
+        editor.putBoolean("gender", isBoy);
+        editor.commit();
+    }
+
     public void savePlayerInfo(int happy, int health, int smart, int appearance) {
         editor.putInt("happy", happy);
         editor.putInt("health", health);
@@ -93,6 +105,12 @@ public class SaveGame {
 
     public void saveDetailActivity(String s) {
         editor.putString("detail", s);
+        editor.commit();
+    }
+
+    public void saveNumberOfGirlFriend(int number)
+    {
+        editor.putInt("girl", number);
         editor.commit();
     }
 
@@ -110,6 +128,11 @@ public class SaveGame {
     public void saveJob(String job) {
         editor.putString("job", job);
         editor.commit();
+    }
+
+    public boolean getDating()
+    {
+        return preferences.getBoolean("dating", false);
     }
 
     public boolean getEnglish()
@@ -171,6 +194,8 @@ public class SaveGame {
         return preferences.getString("name", "NoName");
     }
 
+    public boolean getGender() { return preferences.getBoolean("gender", false);}
+
     public int getHappy()
     {
         return  preferences.getInt("happy", 0);
@@ -212,6 +237,11 @@ public class SaveGame {
         return preferences.getInt("skill", 0);
     }
 
+    public int getNumberOfGirlFriend()
+    {
+        return preferences.getInt("girl", 999);
+    }
+
     public ArrayList<QuanHe> getRelationship(){
         String json = preferences.getString("relationship", "");
         Type type = new TypeToken<ArrayList<QuanHe>>() {}.getType();
@@ -224,5 +254,18 @@ public class SaveGame {
         Type type = new TypeToken<ArrayList<Food>>() {}.getType();
         ArrayList<Food> arrAsset = gson.fromJson(json,type);
         return arrAsset;
+    }
+
+    public void saveSick(Sick[] arrSick) {
+        String json = gson.toJson(arrSick);
+        editor.putString("sick", json);
+        editor.commit();
+    }
+
+    public Sick[] getSick(){
+        String json = preferences.getString("sick","");
+        Type type = new TypeToken<Sick[]>() {}.getType();
+        Sick[] arrSick = gson.fromJson(json,type);
+        return arrSick;
     }
 }
