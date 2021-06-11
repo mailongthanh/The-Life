@@ -46,7 +46,6 @@ public class SportActivity extends AppCompatActivity {
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
-
         random = new Random();
         lvSport = (ListView) findViewById((R.id.listviewSports));
         loadGame();

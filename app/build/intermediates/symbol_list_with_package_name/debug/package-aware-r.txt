@@ -2711,18 +2711,13 @@ layout dialog_notification
 layout dialog_out_of_money
 layout dialog_relationship
 layout dialog_tattoo
-<<<<<<< HEAD
 layout dialog_totinhthanhcong
-layout dialog_university
-layout food_line
-layout layout_kethonthanhcong
-layout layout_kethonthatbai
-=======
 layout dialog_trogiupkhangia
 layout dialog_university
 layout food_line
 layout item_altp_tienthuong
->>>>>>> 119f498b583592cb037bd5cc8670982cf4081cd6
+layout layout_kethonthanhcong
+layout layout_kethonthatbai
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
