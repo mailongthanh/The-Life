@@ -332,7 +332,11 @@
   ],
   [
     {"title": "Bản tin thời sự", "event": "\n\nkhu vực từ Đà Nẵng đến Bình Thuận tiếp tục có nắng nóng, có nơi nắng nóng gay gắt với nhiệt độ cao nhất phổ biến 35-37 độ C, có nơi trên 38 độ C.",
+<<<<<<< HEAD
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
+=======
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+>>>>>>> c51113a831386ff2bd4368b14d00095d60b86dcf
     {"title":"Đời sống", "event": "Đang trên đường về thì bạn gặp ăn cướp núp sau một con hẻm \n Trước tình huống đó bạn muốn làm gì ? ", "selection": true,
       "select":[
         {"content": "Hét lớn", "selection":false,
@@ -352,26 +356,42 @@
           ]}
       ]},
     {"title": "Kiến thức","event": "Hôm nay bạn đọc được một bài viết hay trên mạng, bạn học được rằng: \n\nNếu con người đứng tại thiên hà M100 cách Trái Đất 55 triệu năm ánh sáng và dùng một thiết bị quan sát tối tân để nhìn về Trái Đất, sẽ chỉ nhìn thấy được những hình ảnh trong giai đoạn khủng long tuyệt chủng.",
+<<<<<<< HEAD
       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""}
+=======
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0}
+>>>>>>> c51113a831386ff2bd4368b14d00095d60b86dcf
   ],
   [],
   [
     {"title": "Bản tin thời sự", "event": "\n\nMột vụ xả súng tại bang Florida, Mỹ, đã khiến 10 người thiệt mạng và 20 trường hợp khác bị thương",
+<<<<<<< HEAD
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
     {"title": "Bản tin thời sự", "event": "\n\nTheo nhận định Giám đốc khu vực châu Á - Thái Bình Dương thuộc Hội Chữ thập Đỏ và Trăng lưỡi liềm Đỏ quốc tế, tỷ lệ mắc Covid-19 đã ở mức báo động đỏ tại các quốc gia Đông Nam Á ",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
+=======
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+    {"title": "Bản tin thời sự", "event": "\n\nTheo nhận định Giám đốc khu vực châu Á - Thái Bình Dương thuộc Hội Chữ thập Đỏ và Trăng lưỡi liềm Đỏ quốc tế, tỷ lệ mắc Covid-19 đã ở mức báo động đỏ tại các quốc gia Đông Nam Á ",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+>>>>>>> c51113a831386ff2bd4368b14d00095d60b86dcf
   ],
   [
     {"title":"Đời sống", "event": "Đang trên đường về thì bạn gặp một người tàn tật đang xin tiền \n Trước tình huống đó bạn muốn làm gì ? ", "selection": true,
       "select":[
         {"content": "Cho tiền", "selection":false,
           "event": [
+<<<<<<< HEAD
             { "event" :"Bạn quyết định giúp người thiếu may mắn một ít tiền, ngạc nhiên thay đây là một nhóm đang khảo sát về lòng tốt con người, bạn được một phần quà cho lòng tốt của mình", "assets": 1000, "happy": 5, "health": 0, "smart":0, "appearance": 10, "sick": ""},
             { "event" :"Bạn quyết định giúp người thiếu may mắn một ít tiền, sau khi đi được một đoạn thì bạn phát hiện người bạn vừa gặp hoàn toàn khoẻ mạnh, bạn nhận ra mình đã bị lừa", "assets": -100, "happy": -3, "health": 0, "smart":0, "appearance": 0, "sick": ""}
+=======
+            { "event" :"Bạn quyết định giúp người thiếu may mắn một ít tiền, ngạc nhiên thay đây là một nhóm đang khảo sát về lòng tốt con người, bạn được một phần quà cho lòng tốt của mình", "assets": 1000, "happy": 5, "health": 0, "smart":0, "appearance": 10},
+            { "event" :"Bạn quyết định giúp người thiếu may mắn một ít tiền, sau khi đi được một đoạn thì bạn phát hiện người bạn vừa gặp hoàn toàn khoẻ mạnh, bạn nhận ra mình đã bị lừa", "assets": -100, "happy": -3, "health": 0, "smart":0, "appearance": 0}
+>>>>>>> c51113a831386ff2bd4368b14d00095d60b86dcf
           ]},
 
         {"content": "Phớt lờ", "selection":false,
           "event":[
+<<<<<<< HEAD
             { "event": "Bạn quyết định phớt lờ người tàn tật, tối hôm đó bạn xem tin tức và nhận ra rằng người lúc sáng bạn gặp đã chết vì thiếu ăn. \n\nBạn cảm thấy ân hận vô cùng", "assets": 0, "happy": -30, "health": 0, "smart":0, "appearance": 0, "sick": ""},
             { "event": "Bạn quyết định phớt lờ người tàn tật, tối hôm đó bạn xem tin tức và nhận ra rằng người lúc sáng bạn gặp cầm đầu đường dây lừa đảo. \n\nBạn cảm thấy bản thân thật sáng suốt", "assets": 0, "happy": 5, "health": 0, "smart":10, "appearance": 0, "sick": ""}
           ]}
@@ -390,18 +410,44 @@
       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""},
     {"title": "Bản tin thời sự", "event": "\n\n Một cuộc tấn công khủng bố ở Israel đã cướp đi sinh mạng của hơn 1239 người vô tội",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
+=======
+            { "event": "Bạn quyết định phớt lờ người tàn tật, tối hôm đó bạn xem tin tức và nhận ra rằng người lúc sáng bạn gặp đã chết vì thiếu ăn. \n\nBạn cảm thấy ân hận vô cùng", "assets": 0, "happy": -30, "health": 0, "smart":0, "appearance": 0},
+            { "event": "Bạn quyết định phớt lờ người tàn tật, tối hôm đó bạn xem tin tức và nhận ra rằng người lúc sáng bạn gặp cầm đầu đường dây lừa đảo. \n\nBạn cảm thấy bản thân thật sáng suốt", "assets": 0, "happy": 5, "health": 0, "smart":10, "appearance": 0}
+          ]}
+      ]},
+    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một quyển sách hay, bạn biết được rằng: \n\nDạ dày và thực quản của con người có tới hơn 100 triệu tế bào thần kinh, nhiều hơn cả tế bào thần kinh trong não loài mèo. Chính vì vậy, chúng được coi là \"bộ não thứ hai\" của con người.",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0}
+  ],
+  [
+    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một bài báo hay, bạn biết được rằng: \n\nVì biến đổi khí hậu, nhiệt độ Trái Đất tăng lên nên có thể đến năm 2050, cây cacao không thể tồn tại được nữa. Điều này có nghĩa là có thể sẽ không có trái cacao để làm nên chocolate.",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0},
+    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một bài báo hay, bạn biết được rằng: \n\nChúng ta thường nghe nói một ai đó dị ứng với mèo nhưng có một sự thật mà ít được nhắc tới là mèo cũng có thể bị dị ứng với con người",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0}
+  ],
+  [
+    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một bài báo hay, bạn biết được rằng: \n\nBụi trong nhà không phải từ tế bào chết trong cơ thể người ra như nhiều người vẫn lầm tưởng, thực tế chúng do chính con người mang từ ngoài đường về.",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0},
+    {"title": "Bản tin thời sự", "event": "\n\n Một cuộc tấn công khủng bố ở Israel đã cướp đi sinh mạng của hơn 1239 người vô tội",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+>>>>>>> c51113a831386ff2bd4368b14d00095d60b86dcf
   ],
   [
     {"title":"Đời sống", "event": "Đang trên đường về thì bạn gặp một người tàn tật đang xin tiền \n Trước tình huống đó bạn muốn làm gì ? ", "selection": true,
       "select":[
         {"content": "Cho tiền", "selection":false,
           "event": [
+<<<<<<< HEAD
             { "event" :"Bạn quyết định giúp người thiếu may mắn một ít tiền, ngạc nhiên thay đây là một nhóm đang khảo sát về lòng tốt con người, bạn được một phần quà cho lòng tốt của mình", "assets": 1000, "happy": 5, "health": 0, "smart":0, "appearance": 10, "sick": ""},
             { "event" :"Bạn quyết định giúp người thiếu may mắn một ít tiền, sau khi đi được một đoạn thì bạn phát hiện người bạn vừa gặp hoàn toàn khoẻ mạnh, bạn nhận ra mình đã bị lừa", "assets": -100, "happy": -3, "health": 0, "smart":0, "appearance": 0, "sick": ""}
+=======
+            { "event" :"Bạn quyết định giúp người thiếu may mắn một ít tiền, ngạc nhiên thay đây là một nhóm đang khảo sát về lòng tốt con người, bạn được một phần quà cho lòng tốt của mình", "assets": 1000, "happy": 5, "health": 0, "smart":0, "appearance": 10},
+            { "event" :"Bạn quyết định giúp người thiếu may mắn một ít tiền, sau khi đi được một đoạn thì bạn phát hiện người bạn vừa gặp hoàn toàn khoẻ mạnh, bạn nhận ra mình đã bị lừa", "assets": -100, "happy": -3, "health": 0, "smart":0, "appearance": 0}
+>>>>>>> c51113a831386ff2bd4368b14d00095d60b86dcf
           ]},
 
         {"content": "Phớt lờ", "selection":false,
           "event":[
+<<<<<<< HEAD
             { "event": "Bạn quyết định phớt lờ người tàn tật, tối hôm đó bạn xem tin tức và nhận ra rằng người lúc sáng bạn gặp đã chết vì thiếu ăn. \n\nBạn cảm thấy ân hận vô cùng", "assets": 0, "happy": -30, "health": 0, "smart":0, "appearance": 0, "sick": ""},
             { "event": "Bạn quyết định phớt lờ người tàn tật, tối hôm đó bạn xem tin tức và nhận ra rằng người lúc sáng bạn gặp cầm đầu đường dây lừa đảo. \n\nBạn cảm thấy bản thân thật sáng suốt", "assets": 0, "happy": 5, "health": 0, "smart":10, "appearance": 0, "sick": ""}
           ]}
@@ -420,27 +466,59 @@
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
     {"title": "Kiến thức","event": "Hôm nay bạn nghe được một điều thú vị, bạn biết được rằng: \n\nNếu như mắt của con người là một chiếc camera thì độ phân giải của nó khoảng 576 megapixel",
       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""}
+=======
+            { "event": "Bạn quyết định phớt lờ người tàn tật, tối hôm đó bạn xem tin tức và nhận ra rằng người lúc sáng bạn gặp đã chết vì thiếu ăn. \n\nBạn cảm thấy ân hận vô cùng", "assets": 0, "happy": -30, "health": 0, "smart":0, "appearance": 0},
+            { "event": "Bạn quyết định phớt lờ người tàn tật, tối hôm đó bạn xem tin tức và nhận ra rằng người lúc sáng bạn gặp cầm đầu đường dây lừa đảo. \n\nBạn cảm thấy bản thân thật sáng suốt", "assets": 0, "happy": 5, "health": 0, "smart":10, "appearance": 0}
+          ]}
+      ]},
+    {"title": "Sức khoẻ","event": "Bạn đã bị cảm lạnh",
+      "selection": false,"assets": 0, "happy": 0, "health": -10, "smart":3, "appearance": 0}
+  ],
+  [
+    {"title": "Sức khoẻ","event": "Bạn đã bị sốt xuất huyết, nhanh chóng gặp bác sĩ dể điều trị",
+      "selection": false,"assets": 0, "happy": 0, "health": -30, "smart":0, "appearance": 0},
+    {"title": "Đời sống","event": "Bạn bị kẻ gian móc túi khi mua sắm tại một siêu thị gần chỗ ở",
+      "selection": false,"assets": -500, "happy": -3, "health": 0, "smart":0, "appearance": 0}
+  ],
+  [
+    {"title": "Bản tin thời sự", "event": "\n\n\nMột bức tượng được tạo ra bởi nghệ sĩ nổi tiếng thế giới, Jakiliam, đã vỡ vụn ngay sau khi được mua với giá 500 triệu tại một cuộc đấu giá nghệ thuật ở Mỹ.",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+    {"title": "Kiến thức","event": "Hôm nay bạn nghe được một điều thú vị, bạn biết được rằng: \n\nNếu như mắt của con người là một chiếc camera thì độ phân giải của nó khoảng 576 megapixel",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0}
+>>>>>>> c51113a831386ff2bd4368b14d00095d60b86dcf
   ],
   [],
   [], //30
   [],
   [
     {"title": "Bản tin thời sự", "event": "\n\nMột cơn sóng thần cao chót vót ập vào bờ biển của Nhật Bản. Hơn 170 người không thể thoát ra khỏi",
+<<<<<<< HEAD
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
     {"title": "Sức khoẻ","event": "Bạn đã bị đau mỏi lưng",
       "selection": false,"assets": 0, "happy": 0, "health": -10, "smart":0, "appearance": 0, "sick": ""}
+=======
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+    {"title": "Sức khoẻ","event": "Bạn đã bị đau mỏi lưng",
+      "selection": false,"assets": 0, "happy": 0, "health": -10, "smart":0, "appearance": 0}
+>>>>>>> c51113a831386ff2bd4368b14d00095d60b86dcf
   ],
   [
     {"title":"Đời sống", "event": "Đang trên đường đi mua sắm thì bạn gặp một đứa nhỏ mời bạn vé số, \n\nTrước tình huống đó bạn muốn làm gì ? ", "selection": true,
       "select":[
         {"content": "Mua giúp", "selection":false,
           "event": [
+<<<<<<< HEAD
             { "event" :"Bạn quyết định mua giúp đứa bé bán vé số, tối hôm đó bạn xem kết quả xổ số, bạn trúng được giải 4", "assets": 3000, "happy": 10, "health": 0, "smart":0, "appearance": 10, "sick": ""},
             { "event" :"Bạn quyết định mua giúp đứa bé bán vé số, tối hôm đó bạn xem kết quả xổ số, bạn không trúng được giải nào", "assets": -50, "happy": -3, "health": 0, "smart":0, "appearance": 0, "sick": ""}
+=======
+            { "event" :"Bạn quyết định mua giúp đứa bé bán vé số, tối hôm đó bạn xem kết quả xổ số, bạn trúng được giải 4", "assets": 3000, "happy": 10, "health": 0, "smart":0, "appearance": 10},
+            { "event" :"Bạn quyết định mua giúp đứa bé bán vé số, tối hôm đó bạn xem kết quả xổ số, bạn không trúng được giải nào", "assets": -50, "happy": -3, "health": 0, "smart":0, "appearance": 0}
+>>>>>>> c51113a831386ff2bd4368b14d00095d60b86dcf
           ]},
 
         {"content": "Phớt lờ", "selection":false,
           "event":[
+<<<<<<< HEAD
             { "event": "Bạn quyết định phớt lờ đứa bé, tối hôm đó xem kết quả xổ số, bạn nhận ra mình đã bỏ qua tờ vé trúng giải độc đắc \n\nBạn cảm thấy hối hận vô cùng", "assets": 0, "happy": -20, "health": 0, "smart":0, "appearance": 0, "sick": ""},
             { "event": "Bạn quyết định phớt lờ đứa bé", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
           ]}
@@ -455,5 +533,21 @@
       "selection": false,"assets": 0, "happy": 0, "health": -30, "smart":0, "appearance": 0, "sick": "trĩ"},
     {"title": "Bản tin thời sự", "event": "\n\n\nMáy tính ở Mỹ phát triển đến mức tự có nhận thức, đã vung lên tấn công công nhân tại. Trận chiến sau đó cướp đi sinh mạng của 150 con người và tiêu diệt 50 robot.",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
+=======
+            { "event": "Bạn quyết định phớt lờ đứa bé, tối hôm đó xem kết quả xổ số, bạn nhận ra mình đã bỏ qua tờ vé trúng giải độc đắc \n\nBạn cảm thấy hối hận vô cùng", "assets": 0, "happy": -20, "health": 0, "smart":0, "appearance": 0},
+            { "event": "Bạn quyết định phớt lờ đứa bé", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+          ]}
+      ]},
+    {"title": "Bản tin thời sự", "event": "\n\nViệt nam lần đầu tiên phóng thành công tàu Chú Cuội đưa người lên mặt trăng, đặt viên gạch đầu cho con đường theo đuổi vũ trụ cùng các cường quốc khác",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+    {"title": "Bản tin thời sự", "event": "\n\nMột nhà máy sản xuất chất nổ ở Trung Quốc phát nổ giết chết hơn 1000 công nhân và làm chết hơn 50 người gần đó",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+  ],
+  [
+    {"title": "Sức khoẻ","event": "Bạn đã bị trĩ, nhanh chóng đến bệnh viện điều trị",
+      "selection": false,"assets": 0, "happy": 0, "health": -30, "smart":0, "appearance": 0},
+    {"title": "Bản tin thời sự", "event": "\n\n\nMáy tính ở Mỹ phát triển đến mức tự có nhận thức, đã vung lên tấn công công nhân tại. Trận chiến sau đó cướp đi sinh mạng của 150 con người và tiêu diệt 50 robot.",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+>>>>>>> c51113a831386ff2bd4368b14d00095d60b86dcf
   ]
 ]
