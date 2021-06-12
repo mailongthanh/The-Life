@@ -1,0 +1,30 @@
+{
+  "nhasi": [
+    {"event": "Hết bệnh", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true},
+    {"event": "Hết bệnh", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true},
+    {"event": "Không hết", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": false},
+    {"event": "Không hết", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": false}
+  ],
+ "mat": [
+   {"event": "Het", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true},
+   {"event": "Het", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true}
+ ],
+  "taimuihong": [
+    {"event": "", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true}
+  ],
+  "dalieu": [
+    {"event": "", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true}
+  ],
+  "camsot": [
+    {"event": "", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true}
+  ],
+  "tri": [
+    {"event": "", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true}
+  ],
+  "sotxuathuyet": [
+    {"event": "", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true}
+  ],
+  "tamly": [
+    {"event": "", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": false}
+  ]
+}

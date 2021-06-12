@@ -83,22 +83,6 @@ public class Tuong_tacActivity extends AppCompatActivity {
         MangTuongTac = new ArrayList<HoatDongQH>();
         random = new Random();
 
-        MangTuongTac.add(new HoatDongQH(R.drawable.money, "Xin tiền", "Không làm mà vẫn có ăn"));
-        MangTuongTac.add(new HoatDongQH(R.drawable.assualt, "Hành hung", "Một chuỳ vào đầu"));
-        MangTuongTac.add(new HoatDongQH(R.drawable.compliment, "Khen ngợi", "Thảo mai khen ngợi"));
-        MangTuongTac.add(new HoatDongQH(R.drawable.communication, "Đàm đạo", "Đàm đạo chuyện thế gian"));
-        MangTuongTac.add(new HoatDongQH(R.drawable.insult, "Xúc phạm", "Giết người bằng lời nói"));
-        MangTuongTac.add(new HoatDongQH(R.drawable.film, "Rủ xem phim", "Phimcuzzzzz.net"));
-        if (quanHe.getQuanHe() == NameOfRelationship.Friend)
-            MangTuongTac.add(new HoatDongQH(R.drawable.love, "Tỏ tình", "Mày yêu tao không để tao còn tán con khác"));
-
-        if (quanHe.getQuanHe() == NameOfRelationship.BoyFriend || quanHe.getQuanHe() == NameOfRelationship.GirlFriend) {
-            MangTuongTac.add(new HoatDongQH(R.drawable.love, "Chia tay", "Cảm thấy đối phương không còn như xưa"));
-            MangTuongTac.add(new HoatDongQH(R.drawable.love, "Cầu hôn", "Sau này ngồi cùng bàn thờ"));
-        }
-        if (quanHe.getQuanHe() == NameOfRelationship.Wife || quanHe.getQuanHe() == NameOfRelationship.Husband) {
-            MangTuongTac.add(new HoatDongQH(R.drawable.love, "Chia tay", "Cảm thấy đối phương không còn như xưa"));
-        }
         adapter = new HoatDongQHAdapter(
                 Tuong_tacActivity.this,
                 R.layout.tuong_tac,
@@ -107,9 +91,9 @@ public class Tuong_tacActivity extends AppCompatActivity {
 
         lvTuongTac.setAdapter(adapter);
 
+        recreateListview();
         //Read Event
         readEvent();
-
         //Load game
         loadGame();
 
@@ -118,7 +102,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
         lvTuongTac.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int index, long id) {
-
+                quanHe  = MainActivity.saveGame.getRelationship().get(position);
                 switch (MangTuongTac.get(index).TenHoatDong)
                 {
                     case "Xin tiền":
@@ -179,11 +163,12 @@ public class Tuong_tacActivity extends AppCompatActivity {
                         if (MainActivity.saveGame.getDating())
                         {
                             MainActivity.createNotification(R.drawable.cancel,
-                                    "Đừng có mà bắt cá hai tay", Tuong_tacActivity.this);
+                                    "Đừng có mà bắt cá hai tay",
+                                    Tuong_tacActivity.this);
                             return;
                         }
                         if (isSuccess()) {
-                            createDialogOFM();
+                            createDialogOFM(R.layout.dialog_totinhthanhcong);
                             arrQuanHe.get(position).setQuanHe(NameOfRelationship.GirlFriend);
                             if (!MainActivity.saveGame.getGender())
                                 arrQuanHe.get(position).setQuanHe(NameOfRelationship.BoyFriend);
@@ -196,23 +181,25 @@ public class Tuong_tacActivity extends AppCompatActivity {
                         }
                         break;
                     case "Chia tay":
-                        if(chiatay()==true)
-                        {
-                            createDialogOFM();
-                            arrQuanHe.get(position).setQuanHe(NameOfRelationship.Friend);
-                            MainActivity.saveGame.saveRelationship(arrQuanHe);
-                            MainActivity.saveGame.saveDating(false);
-                            recreateListview();
-                        }
-                        else
-                        {
-                            createDialog();
+                        try {
+                            JSONArray arrObject = jsonRelationship.getJSONArray("breakup");
+                            JSONObject object = arrObject.getJSONObject(random.nextInt(arrQuanHe.size()));
+                            if(object.getBoolean("result"))
+                            {
+                                arrQuanHe.get(position).setQuanHe(NameOfRelationship.Friend);
+                                MainActivity.saveGame.saveRelationship(arrQuanHe);
+                                MainActivity.saveGame.saveDating(false);
+                                recreateListview();
+                            }
+                            createDialog(object, "Chia tay");
+                        } catch (JSONException e) {
+                            e.printStackTrace();
                         }
                         break;
                     case "Cầu hôn":
-                        if(CauHonSuccess()==true)
+                        if(CauHonSuccess())
                             {
-                                createDialogOFM();
+                                createDialogOFM(R.layout.layout_kethonthanhcong);
                                 arrQuanHe.get(position).setQuanHe(NameOfRelationship.Wife);
                                 if (!MainActivity.saveGame.getGender())
                                     arrQuanHe.get(position).setQuanHe(NameOfRelationship.Husband);
@@ -237,6 +224,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
         MangTuongTac.add(new HoatDongQH(R.drawable.communication, "Đàm đạo", "Đàm đạo chuyện thế gian"));
         MangTuongTac.add(new HoatDongQH(R.drawable.insult, "Xúc phạm", "Giết người bằng lời nói"));
         MangTuongTac.add(new HoatDongQH(R.drawable.film, "Rủ xem phim", "Phimcuzzzzz.net"));
+        quanHe  = MainActivity.saveGame.getRelationship().get(position);
         if (quanHe.getQuanHe() == NameOfRelationship.Friend)
         {
             MangTuongTac.add(new HoatDongQH(R.drawable.love, "Tỏ tình", "Mày yêu tao không để tao còn tán con khác"));
@@ -250,12 +238,13 @@ public class Tuong_tacActivity extends AppCompatActivity {
             MangTuongTac.add(new HoatDongQH(R.drawable.love, "Cầu hôn", "Sau này ngồi cùng bàn thờ"));
         }
         adapter.notifyDataSetChanged();
+        txtquanhe.setText(quanHe.getQuanHe().toString());
     }
-    void createDialogOFM() {
+    void createDialogOFM(int id) {
         Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setCanceledOnTouchOutside(false);
-        dialog.setContentView(R.layout.layout_kethonthanhcong);
+        dialog.setContentView(id);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         Button btnOke = dialog.findViewById(R.id.buttonDialogEventOke);
         btnOke.setOnClickListener(new View.OnClickListener() {
@@ -380,7 +369,13 @@ public class Tuong_tacActivity extends AppCompatActivity {
         {
             dialogResult.removeView(dialog.findViewById(R.id.linearRelationship));
         } else {
-            txtRelationship.setText(value + "");
+            String thanmat = value + "";
+            if (value > 0)
+                thanmat = "+ " + thanmat;
+            else {
+                txtAssets.setTextColor(Color.RED);
+            }
+            txtRelationship.setText(thanmat);
 
             dothanmat += value;
             if (dothanmat < 0)
@@ -400,7 +395,8 @@ public class Tuong_tacActivity extends AppCompatActivity {
         btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (pbqhanhe.getProgress() <= 0 && nameOfRelationship == NameOfRelationship.Friend)
+                if (pbqhanhe.getProgress() <= 0 && nameOfRelationship == NameOfRelationship.Friend
+                        || pbqhanhe.getProgress() <= 30 && (nameOfRelationship == NameOfRelationship.BoyFriend || nameOfRelationship == NameOfRelationship.GirlFriend))
                     breakFriend();
                 dialog.dismiss();
             }
@@ -411,15 +407,17 @@ public class Tuong_tacActivity extends AppCompatActivity {
 
     void breakFriend()
     {
-        Dialog dialog = MainActivity.createNotification(R.drawable.cancel, "Tình bạn giữa bạn và " + txthoten.getText() + " đã đổ vỡ.", this);
+        Dialog dialog = MainActivity.createNotification(R.drawable.cancel, "Mối quan hệ giữa bạn và " + txthoten.getText() + " đã đổ vỡ.", this);
         Button btnOke  = dialog.findViewById(R.id.buttonNotificationtOke);
         ArrayList<QuanHe> arrQuanHe = MainActivity.saveGame.getRelationship();
+        if (nameOfRelationship == NameOfRelationship.BoyFriend || nameOfRelationship == NameOfRelationship.GirlFriend)
+            MainActivity.saveGame.saveDating(false);
+        arrQuanHe.remove(position);
+        MainActivity.saveGame.saveNumberOfFriends(MainActivity.saveGame.getNumberOfFriends() - 1);
+        MainActivity.saveGame.saveRelationship(arrQuanHe);
         btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                arrQuanHe.remove(position);
-                MainActivity.saveGame.saveNumberOfFriends(MainActivity.saveGame.getNumberOfFriends() - 1);
-                MainActivity.saveGame.saveRelationship(arrQuanHe);
                 onBackPressed();
             }
         });
@@ -439,13 +437,6 @@ public class Tuong_tacActivity extends AppCompatActivity {
     {
         int success = pbqhanhe.getProgress();
         if (success ==100)
-            return true;
-        else  return false;
-    }
-    boolean chiatay()
-    {
-        int success = pbqhanhe.getProgress();
-        if (success <=30)
             return true;
         else  return false;
     }

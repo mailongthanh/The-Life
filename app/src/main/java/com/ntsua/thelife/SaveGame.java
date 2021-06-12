@@ -256,16 +256,16 @@ public class SaveGame {
         return arrAsset;
     }
 
-    public void saveSick(Sick[] arrSick) {
+    public void saveSick(ArrayList<Sick> arrSick) {
         String json = gson.toJson(arrSick);
         editor.putString("sick", json);
         editor.commit();
     }
 
-    public Sick[] getSick(){
+    public ArrayList<Sick> getSick(){
         String json = preferences.getString("sick","");
-        Type type = new TypeToken<Sick[]>() {}.getType();
-        Sick[] arrSick = gson.fromJson(json,type);
+        Type type = new TypeToken<ArrayList<Sick>>() {}.getType();
+        ArrayList<Sick> arrSick = gson.fromJson(json,type);
         return arrSick;
     }
 }
