@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -31,6 +32,7 @@ public class Hospital extends AppCompatActivity {
     FoodAdapter adapter;
     ArrayList<Food> arrHospital;
     TextView txtName, txtJob, txtMoney;
+    ImageView imgAvatar;
     ArrayList<Sick> arrSick;
     JSONObject jsonSick;
 
@@ -42,6 +44,7 @@ public class Hospital extends AppCompatActivity {
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
+        imgAvatar = findViewById(R.id.imageAvatar);
         loadGame();
 
         lvHospital = (ListView) findViewById((R.id.listviewHospital));
@@ -236,6 +239,7 @@ public class Hospital extends AppCompatActivity {
         txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
         txtJob.setText(MainActivity.saveGame.getJob());
         arrSick = MainActivity.saveGame.getSick();
+        imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());
         try {
             readEvent();
         } catch (JSONException e) {

@@ -38,6 +38,7 @@ public class SportActivity extends AppCompatActivity {
     String jsonEvent;
     ActivitiesEvent Activity;
     TextView txtName, txtJob, txtMoney;
+    ImageView imgAvatar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,7 @@ public class SportActivity extends AppCompatActivity {
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
+        imgAvatar = findViewById(R.id.imageAvatar);
         random = new Random();
         lvSport = (ListView) findViewById((R.id.listviewSports));
         loadGame();
@@ -304,6 +306,7 @@ public class SportActivity extends AppCompatActivity {
         txtName.setText(MainActivity.saveGame.getName());
         txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
         txtJob.setText(MainActivity.saveGame.getJob());
+        imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());
     }
 
     String readEvent()

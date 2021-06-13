@@ -19,6 +19,17 @@ public class SaveGame {
         gson = new Gson();
     }
 
+    public void saveAvatar(int id)
+    {
+        editor.putInt("avatar", id);
+        editor.commit();
+    }
+
+    public int getAvatar()
+    {
+        return preferences.getInt("avatar", 0);
+    }
+
     public void saveDating(boolean isDating)
     {
         editor.putBoolean("dating", isDating);

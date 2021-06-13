@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -15,6 +16,7 @@ public class Travel extends AppCompatActivity {
     FoodAdapter adapter;
     ArrayList<Food> arrTravel;
     TextView txtName, txtJob, txtMoney;
+    ImageView imgAvatar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,7 @@ public class Travel extends AppCompatActivity {
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
+        imgAvatar = findViewById(R.id.imageAvatar);
         loadGame();
 
         lvTravel = (ListView) findViewById((R.id.listviewTravel));
@@ -43,6 +46,7 @@ public class Travel extends AppCompatActivity {
         txtName.setText(MainActivity.saveGame.getName());
         txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
         txtJob.setText(MainActivity.saveGame.getJob());
+        imgAvatar = findViewById(R.id.imageAvatar);
     }
 
     public void gotoMainMenu(View view)

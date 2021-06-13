@@ -4,15 +4,6 @@ com/ntsua/thelife/AiLaTrieuPhu_TienThuongAdapter.java
  com.ntsua.thelife.AiLaTrieuPhu_TienThuongAdapter
 com/ntsua/thelife/University.java
  com.ntsua.thelife.University
-com/ntsua/thelife/AiLaTrieuPhu_ing.java
- com.ntsua.thelife.AiLaTrieuPhu_ing
- com.ntsua.thelife.AiLaTrieuPhu_ing$1
- com.ntsua.thelife.AiLaTrieuPhu_ing$2
- com.ntsua.thelife.AiLaTrieuPhu_ing$2$1
-com/ntsua/thelife/CrimeAdapter.java
- com.ntsua.thelife.CrimeAdapter
- com.ntsua.thelife.CrimeAdapter$1
- com.ntsua.thelife.CrimeAdapter$ViewHolder
 com/ntsua/thelife/Food.java
  com.ntsua.thelife.Food
 com/ntsua/thelife/BuildConfig.java
@@ -21,10 +12,6 @@ com/ntsua/thelife/AiLaTrieuPhu_Dialog_KhanGia.java
  com.ntsua.thelife.AiLaTrieuPhu_Dialog_KhanGia
 com/ntsua/thelife/NameOfRelationship.java
  com.ntsua.thelife.NameOfRelationship
-com/ntsua/thelife/HoatDongQHAdapter.java
- com.ntsua.thelife.HoatDongQHAdapter
- com.ntsua.thelife.HoatDongQHAdapter$1
- com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
 com/ntsua/thelife/AiLaTrieuPhu_CauHoi.java
  com.ntsua.thelife.AiLaTrieuPhu_CauHoi
 com/ntsua/thelife/productAdapter.java
@@ -52,17 +39,35 @@ com/ntsua/thelife/Modau.java
  com.ntsua.thelife.Modau
 com/ntsua/thelife/Sick.java
  com.ntsua.thelife.Sick
+com/ntsua/thelife/SaveGame.java
+ com.ntsua.thelife.SaveGame
+ com.ntsua.thelife.SaveGame$1
+ com.ntsua.thelife.SaveGame$2
+ com.ntsua.thelife.SaveGame$3
+com/ntsua/thelife/CreateName.java
+ com.ntsua.thelife.CreateName
+ com.ntsua.thelife.CreateName$1
+com/ntsua/thelife/CrimeAdapter.java
+ com.ntsua.thelife.CrimeAdapter
+ com.ntsua.thelife.CrimeAdapter$1
+ com.ntsua.thelife.CrimeAdapter$ViewHolder
+com/ntsua/thelife/SongKhac.java
+ com.ntsua.thelife.SongKhac
+com/ntsua/thelife/HoatDongQHAdapter.java
+ com.ntsua.thelife.HoatDongQHAdapter
+ com.ntsua.thelife.HoatDongQHAdapter$1
+ com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
+com/ntsua/thelife/ALTP_QLDBCauHoi.java
+ com.ntsua.thelife.ALTP_QLDBCauHoi
 com/ntsua/thelife/FoodAdapter.java
  com.ntsua.thelife.FoodAdapter
  com.ntsua.thelife.FoodAdapter$1
  com.ntsua.thelife.FoodAdapter$ViewHolder
-com/ntsua/thelife/CreateName.java
- com.ntsua.thelife.CreateName
- com.ntsua.thelife.CreateName$1
-com/ntsua/thelife/SongKhac.java
- com.ntsua.thelife.SongKhac
-com/ntsua/thelife/ALTP_QLDBCauHoi.java
- com.ntsua.thelife.ALTP_QLDBCauHoi
+com/ntsua/thelife/AiLaTrieuPhu_ing.java
+ com.ntsua.thelife.AiLaTrieuPhu_ing
+ com.ntsua.thelife.AiLaTrieuPhu_ing$1
+ com.ntsua.thelife.AiLaTrieuPhu_ing$2
+ com.ntsua.thelife.AiLaTrieuPhu_ing$2$1
 com/ntsua/thelife/HoatDong.java
  com.ntsua.thelife.HoatDong
  com.ntsua.thelife.HoatDong$1
@@ -198,11 +203,6 @@ com/ntsua/thelife/BoiToan.java
  com.ntsua.thelife.BoiToan$2
 com/ntsua/thelife/Travel.java
  com.ntsua.thelife.Travel
-com/ntsua/thelife/SaveGame.java
- com.ntsua.thelife.SaveGame
- com.ntsua.thelife.SaveGame$1
- com.ntsua.thelife.SaveGame$2
- com.ntsua.thelife.SaveGame$3
 com/ntsua/thelife/Entertainment.java
  com.ntsua.thelife.Entertainment
  com.ntsua.thelife.Entertainment$1

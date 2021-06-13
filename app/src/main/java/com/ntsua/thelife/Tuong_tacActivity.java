@@ -37,7 +37,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
     ArrayList<HoatDongQH> MangTuongTac;
     ArrayList<QuanHe> arrQuanHe;
     TextView txthoten, txttuoi, txtquanhe, txtName, txtJob, txtMoney;
-    ImageView hinhanh;
+    ImageView hinhanh, imgAvatar;
     ProgressBar pbqhanhe;
     int dothanmat;
     Bundle bundle;
@@ -57,6 +57,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
         txttuoi = findViewById(R.id.tvTuoi);
         txtquanhe = findViewById(R.id.TvQuanHe);
         hinhanh = findViewById(R.id.imageAvatarA);
+        imgAvatar = findViewById(R.id.imageAvatar);
         pbqhanhe = findViewById(R.id.pbThanhQuanHeA);
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
@@ -103,6 +104,13 @@ public class Tuong_tacActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int index, long id) {
                 quanHe  = MainActivity.saveGame.getRelationship().get(position);
+                if (quanHe.getInteraction() > 5)
+                {
+                    MainActivity.createNotification(R.drawable.cancel,
+                            "Hôm nay bạn đã tương tác với " + getName(quanHe.getHoten()) + " quá nhiều, hãy để người ta nghỉ ngơi",
+                            Tuong_tacActivity.this);
+                    return;
+                }
                 switch (MangTuongTac.get(index).TenHoatDong)
                 {
                     case "Xin tiền":
@@ -302,7 +310,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
         txtNameActivity.setText(titleEvent);
         String event = "";
         if (nameOfRelationship == NameOfRelationship.Friend)
-            event = object.getString("event").replaceAll( "@", bundle.getString("hoten"));
+            event = object.getString("event").replaceAll( "@",getName(bundle.getString("hoten")));
         else
             event = object.getString("event").replaceAll( "@", nameOfRelationship.toString());
         txtContent.setText(event);
@@ -385,6 +393,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
             pbqhanhe.setProgress(dothanmat);
 
             arrQuanHe.get(position).setDoThanMat(dothanmat);
+            arrQuanHe.get(position).setInteraction(arrQuanHe.get(position).getInteraction() + 1);
             MainActivity.saveGame.saveRelationship(arrQuanHe);
         }
 
@@ -446,6 +455,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
         txtMoney.setText(MainActivity.saveGame.getMoney() + " VND");
         txtJob.setText(MainActivity.saveGame.getJob());
         arrQuanHe = MainActivity.saveGame.getRelationship();
+        imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());
     }
 
     void readEvent()
@@ -480,5 +490,11 @@ public class Tuong_tacActivity extends AppCompatActivity {
             txtResult.setText("- " + (-1 * value));
             txtResult.setTextColor(Color.RED);
         }
+    }
+
+    String getName(String name)
+    {
+        int space = name.indexOf(" ");
+        return name.substring(space + 1);
     }
 }

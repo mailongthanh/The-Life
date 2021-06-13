@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,6 +18,7 @@ public class Asset extends AppCompatActivity {
     ArrayList<Food> arrAsset;
     productAdapter adapter;
     TextView txtMoney, txtName, txtJob;
+    ImageView imgAvatar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,7 @@ public class Asset extends AppCompatActivity {
         txtMoney = findViewById(R.id.textviewMoney);
         txtJob = findViewById(R.id.textviewJob);
         txtName = findViewById(R.id.textviewName);
+        imgAvatar = findViewById(R.id.imageAvatar);
         loadGame();
 
         TextView tvThongbao = findViewById(R.id.tvthongbao);
@@ -45,6 +48,7 @@ public class Asset extends AppCompatActivity {
         txtName.setText(MainActivity.saveGame.getName());
         txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
         txtJob.setText(MainActivity.saveGame.getJob());
+        imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());
     }
 
     public void gotoMainMenu(View view)

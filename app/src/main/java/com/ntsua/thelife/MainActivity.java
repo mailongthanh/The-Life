@@ -65,7 +65,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnActivity, btnRelationship, btnWork, btnAssets;;
+    Button btnActivity, btnRelationship, btnWork, btnAssets;
+    ImageView imgAvatar;
     ImageButton ibtnAddAge;
     ProgressBar prbHappy, prbHealth, prbSmart, prbAppearance;
     ScrollView scrollView;
@@ -182,12 +183,12 @@ public class MainActivity extends AppCompatActivity {
         //Toast.makeText(this, arrAge.length() + " - " + age, Toast.LENGTH_SHORT).show();
         if (arrAge.length() == 0)
         {
-            createNotification(R.drawable.boy, "Năm nay không có sự kiện gì đặc biệt",this);
+            createNotification(saveGame.getAvatar(), "Năm nay không có sự kiện gì đặc biệt",this);
             initNewAge();
             addAgeHTML(age);
-            String contentHtml = saveGame.getDetailActivity();
-            txtContent.setText(android.text.Html.fromHtml(contentHtml));
+            contentHtml = saveGame.getDetailActivity();
             contentHtml += "Năm nay không có sự kiện gì đặc biệt<br>";
+            txtContent.setText(android.text.Html.fromHtml(contentHtml));
             saveGame.saveDetailActivity(contentHtml);
             return;
         }
@@ -725,6 +726,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        imgAvatar.setImageResource(saveGame.getAvatar());
         prbAppearance.setProgress(saveGame.getAppearance());
         prbHappy.setProgress(saveGame.getHappy());
         prbHealth.setProgress(saveGame.getHealth());
@@ -824,6 +826,11 @@ public class MainActivity extends AppCompatActivity {
         //Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
 
         saveGame.saveGender(isBoy);
+        int avatarID = getResources().getIdentifier("boy_0", "drawable", getPackageName());
+        if (!isBoy)
+            avatarID = getResources().getIdentifier("girl_0", "drawable", getPackageName());
+        imgAvatar.setImageResource(avatarID);
+        saveGame.saveAvatar(avatarID);
         saveGame.saveAge(0);
         saveGame.saveMoney(50000);
         saveGame.saveDetailActivity(contentHtml);
@@ -896,6 +903,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i=0; i<arrRelationship.size(); i++)
         {
             QuanHe friend = arrRelationship.get(i);
+            friend.setInteraction(0);
             friend.setTuoi(friend.getTuoi() + 1); // Them tuoi
             if (friend.getQuanHe() == NameOfRelationship.Friend ||
                     friend.getQuanHe() == NameOfRelationship.GirlFriend ||
@@ -906,7 +914,41 @@ public class MainActivity extends AppCompatActivity {
         }
 
         saveGame.saveRelationship(arrRelationship);
+        setAvatar();
         dialogLostFriend(0);
+    }
+
+    void setAvatar()
+    {
+        int age = saveGame.getAge();
+        String avatarName = "";
+
+        if (saveGame.getGender()) //Boy
+        {
+            if (age == 2)  avatarName = "boy";
+            else if (age == 5){ avatarName = "boy_2";}
+            else if (age == 10){ avatarName = "boy_3";}
+            else if (age == 15){ avatarName = "boy_4";}
+            else if (age == 20){ avatarName = "boy_5";}
+            else if (age == 30){ avatarName = "boy_6";}
+            else if (age == 40){ avatarName = "boy_7";}
+            else if (age >= 60){ avatarName = "boy_8";}
+        } else {
+            if (age == 2)  avatarName = "girl";
+            else if (age == 5){ avatarName = "girl_2";}
+            else if (age == 10){ avatarName = "girl_3";}
+            else if (age == 15){ avatarName = "girl_4";}
+            else if (age == 20){ avatarName = "girl_5";}
+            else if (age == 30){ avatarName = "girl_6";}
+            else if (age == 40){ avatarName = "girl_7";}
+            else if (age >= 60){ avatarName = "girl_8";}
+        }
+
+        if (avatarName.equals(""))
+            return;
+        int id = getResources().getIdentifier(avatarName, "drawable", getPackageName());
+        saveGame.saveAvatar(id);
+        imgAvatar.setImageResource(id);
     }
 
     void dialogLostFriend(int index) {
@@ -1050,6 +1092,7 @@ public class MainActivity extends AppCompatActivity {
         btnRelationship = (Button) findViewById(R.id.buttonRelationship);
         btnActivity = (Button) findViewById(R.id.buttonActivity);
 
+        imgAvatar = findViewById(R.id.imageAvatar);
         txtContent = findViewById(R.id.textViewDetail);
         txtAppearance = findViewById(R.id.txtAppearance);
         txtHappy = findViewById(R.id.txtHappy);

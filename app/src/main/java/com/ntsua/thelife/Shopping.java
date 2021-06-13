@@ -12,6 +12,7 @@ import android.view.Window;
 import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -27,6 +28,7 @@ public class Shopping extends AppCompatActivity {
     ArrayList<Food> arrAsset;
     FoodAdapter adapter;
     TextView txtMoney, txtJob, txtName;
+    ImageView imgAvatar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,7 @@ public class Shopping extends AppCompatActivity {
         txtMoney = findViewById(R.id.textviewMoney);
         txtJob = findViewById(R.id.textviewJob);
         txtName = findViewById(R.id.textviewName);
+        imgAvatar = findViewById(R.id.imageAvatar);
         loadGame();
 
         lvShopping = findViewById(R.id.listviewShopping);
@@ -104,6 +107,7 @@ public class Shopping extends AppCompatActivity {
         txtName.setText(MainActivity.saveGame.getName());
         txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
         txtJob.setText(MainActivity.saveGame.getJob());
+        imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());
     }
 
     private void CreateDialogHangNong(ArrayList<Food> arrProduct,String text)

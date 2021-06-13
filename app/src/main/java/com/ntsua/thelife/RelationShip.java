@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,6 +20,7 @@ public class RelationShip extends AppCompatActivity {
     ListView lvQuanHe;
     ArrayList<QuanHe> MangQuanHe;
     TextView txtName, txtJob, txtMoney;
+    ImageView imgAvatar;
     QuanHeAdapter adapter;
 
     @Override
@@ -29,6 +31,7 @@ public class RelationShip extends AppCompatActivity {
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
+        imgAvatar = findViewById(R.id.imageAvatar);
         lvQuanHe = (ListView) findViewById(R.id.ListViewQuanHe);
         MangQuanHe = new ArrayList<>();
 //        MangQuanHe.add(new QuanHe("Trần Thanh Vũ", 19, 50, "Bạn bè",R.drawable.boy));
@@ -68,6 +71,7 @@ public class RelationShip extends AppCompatActivity {
         txtName.setText(MainActivity.saveGame.getName());
         txtMoney.setText(MainActivity.saveGame.getMoney() + " VND");
         txtJob.setText(MainActivity.saveGame.getJob());
+        imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());
     }
 
     public void gotoMainMenu(View view) {
