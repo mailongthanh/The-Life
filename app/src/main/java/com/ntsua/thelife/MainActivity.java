@@ -159,6 +159,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
+        Button btn = addButton(dialogCustom, "Bỏ qua");
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
         dialog.show();
     }
 
@@ -867,13 +874,13 @@ public class MainActivity extends AppCompatActivity {
         saveGame.savePlayerInfo(prbHappy.getProgress(), prbHealth.getProgress(), prbSmart.getProgress(), prbAppearance.getProgress());
 
         ArrayList<Sick> arrSick = new ArrayList<>();
-        arrSick.add( new Sick(true, "đau răng", "Nha sĩ", "nhasi"));
-        arrSick.add(  new Sick(true, "đau mắt", "Bác sĩ mắt", "mat"));
-        arrSick.add(  new Sick(false, "tai mũi họng", "Bác sĩ tai mũi họng", "taimuihong"));
-        arrSick.add(  new Sick(false, "mẫn ngứa", "Bác sĩ da liễu", "dalieu"));
-        arrSick.add(  new Sick(false, "cảm","Bác sĩ cảm sốt", "camsot"));
-        arrSick.add(  new Sick(false, "trĩ", "Bác sĩ trĩ", "tri"));
-        arrSick.add(  new Sick(false, "sốt xuất huyết", "Bác sĩ cảm sốt", "sotxuathuyet"));
+        arrSick.add( new Sick(false, "đau răng", "Nha sĩ", "nhasi", 10));
+        arrSick.add(  new Sick(false, "đau mắt", "Bác sĩ mắt", "mat", 10));
+        arrSick.add(  new Sick(false, "tai mũi họng", "Bác sĩ tai mũi họng", "taimuihong", 100));
+        arrSick.add(  new Sick(false, "mẫn ngứa", "Bác sĩ da liễu", "dalieu", 10));
+        arrSick.add(  new Sick(false, "cảm","Bác sĩ cảm sốt", "camsot", 20));
+        arrSick.add(  new Sick(false, "trĩ", "Bác sĩ trĩ", "tri", 30));
+        arrSick.add(  new Sick(false, "sốt xuất huyết", "Bác sĩ cảm sốt", "sotxuathuyet", 100));
 
         saveGame.saveSick(arrSick);
     }
@@ -889,16 +896,7 @@ public class MainActivity extends AppCompatActivity {
         saveGame.saveLibrary(0);
         saveGame.saveNewFriendInYear(0);
 
-        int health = saveGame.getHealth();
-        if (prbHappy.getProgress() < 30)
-        {
-            health -= (30 - prbHappy.getProgress());
-        }
-        health -= (int) (saveGame.getAge() / 4);
-        saveGame.savePlayerInfo(saveGame.getHappy(), health, saveGame.getSmart(), saveGame.getAppearance());
-        prbHealth.setProgress(health);
-        txtHealth.setText(prbHealth.getProgress() + "%");
-        changeProgressBackground(prbHealth);
+
 
         for (int i=0; i<arrRelationship.size(); i++)
         {
@@ -916,6 +914,28 @@ public class MainActivity extends AppCompatActivity {
         saveGame.saveRelationship(arrRelationship);
         setAvatar();
         dialogLostFriend(0);
+
+        //xet suc khoe
+        int health = saveGame.getHealth();
+        if (prbHappy.getProgress() < 30) //Kiem tra xem co van de ve tam li hay khong (happy<30)
+        {
+            health -= (30 - prbHappy.getProgress());
+        }
+        health -= (int) (saveGame.getAge() / 4); //Tru suc khoe theo do tuoi, tuoi cang cao tru cang nhieu
+
+        ArrayList<Sick> arrSick = saveGame.getSick(); //Kiem tra co benh ma khong chua hay khong
+        for (int i=0; i<arrSick.size(); i++)
+        {
+            if (arrSick.get(i).isSick())
+            {
+                health -= arrSick.get(i).getHealth();
+            }
+        }
+        //Luu suc khoe lai
+        saveGame.savePlayerInfo(saveGame.getHappy(), health, saveGame.getSmart(), saveGame.getAppearance());
+        prbHealth.setProgress(health);
+        txtHealth.setText(prbHealth.getProgress() + "%");
+        changeProgressBackground(prbHealth);
     }
 
     void setAvatar()

@@ -5,12 +5,14 @@ public class Sick {
     private String SickName;
     private String docter;
     private String json;
+    private int health; //Sức khỏe bị trừ mỗi năm nếu có bệnh mà không chữa
 
-    public Sick(boolean isSick, String sickName, String docter, String json) {
+    public Sick(boolean isSick, String sickName, String docter, String json, int health) {
         this.isSick = isSick;
         SickName = sickName;
         this.docter = docter;
         this.json = json;
+        this.health = health;
     }
 
     public boolean isSick() {
@@ -43,5 +45,13 @@ public class Sick {
 
     public void setJson(String json) {
         this.json = json;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
     }
 }
