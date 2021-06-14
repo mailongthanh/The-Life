@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -18,6 +19,7 @@ public class HoatDong extends AppCompatActivity {
     FoodAdapter adapter;
     ArrayList<Food> arrHoatDong;
     TextView txtName, txtJob, txtMoney;
+    ImageView imgAvatar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,7 @@ public class HoatDong extends AppCompatActivity {
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
         lvHoatDong = (ListView) findViewById((R.id.listviewHoatDong));
+        imgAvatar = findViewById(R.id.imageAvatar);
 
         loadGame();
         arrHoatDong = new ArrayList<>();
@@ -120,6 +123,7 @@ public class HoatDong extends AppCompatActivity {
         txtName.setText(MainActivity.saveGame.getName());
         txtMoney.setText(MainActivity.saveGame.getMoney() + " VND");
         txtJob.setText(MainActivity.saveGame.getJob());
+        imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());
     }
     public void gotoMainMenu(View view) {
         startActivity(new Intent(HoatDong.this, MainActivity.class));

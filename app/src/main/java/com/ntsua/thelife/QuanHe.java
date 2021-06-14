@@ -11,6 +11,15 @@ public class QuanHe implements Serializable {
     private NameOfRelationship QuanHe;
     public int HinhAnh;
     private boolean isBoy;
+    private int interaction;
+
+    public int getInteraction() {
+        return interaction;
+    }
+
+    public void setInteraction(int interaction) {
+        this.interaction = interaction;
+    }
 
     public void setHinhAnh(int hinhAnh) { HinhAnh = hinhAnh; }
 
@@ -63,5 +72,6 @@ public class QuanHe implements Serializable {
         QuanHe = quanhe;
         HinhAnh = hinhAnh;
         this.isBoy = isBoy;
+        interaction = 0;
     }
 }

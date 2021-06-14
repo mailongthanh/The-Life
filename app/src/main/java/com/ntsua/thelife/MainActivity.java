@@ -66,7 +66,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnActivity, btnRelationship, btnWork, btnAssets;;
+    Button btnActivity, btnRelationship, btnWork, btnAssets;
+    ImageView imgAvatar;
     ImageButton ibtnAddAge;
     ProgressBar prbHappy, prbHealth, prbSmart, prbAppearance;
     ScrollView scrollView;
@@ -181,6 +182,17 @@ public class MainActivity extends AppCompatActivity {
         JSONArray arrAge = arrJsonAge.getJSONArray(age);
         Random random = new Random();
         //Toast.makeText(this, arrAge.length() + " - " + age, Toast.LENGTH_SHORT).show();
+        if (arrAge.length() == 0)
+        {
+            createNotification(saveGame.getAvatar(), "Năm nay không có sự kiện gì đặc biệt",this);
+            initNewAge();
+            addAgeHTML(age);
+            contentHtml = saveGame.getDetailActivity();
+            contentHtml += "Năm nay không có sự kiện gì đặc biệt<br>";
+            txtContent.setText(android.text.Html.fromHtml(contentHtml));
+            saveGame.saveDetailActivity(contentHtml);
+            return;
+        }
         final JSONObject[] object = {arrAge.getJSONObject(random.nextInt(arrAge.length()))};
 
         final String[] event = {object[0].getString("event")};
@@ -243,6 +255,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void dialogEventResult(String title, boolean isAgeEvent) throws JSONException {
+        //Toast.makeText(this, "hey", Toast.LENGTH_SHORT).show();
         Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
@@ -328,6 +341,7 @@ public class MainActivity extends AppCompatActivity {
         btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                checkMySelf();
                 dialog.dismiss();
                 try {
                     if (isAgeEvent)
@@ -344,6 +358,30 @@ public class MainActivity extends AppCompatActivity {
         changeProgressBackground(prbSmart);
 
         dialog.show();
+
+        //Kiem tra co bi benh hay khong
+        String sick  = jsonResult.getString("sick");
+        if (!sick.equals("")) //Co benh
+        {
+            ArrayList<Sick> arrSick = saveGame.getSick();
+            int index = -1;
+            for (int i=0; i<arrSick.size(); i++)
+            {
+                if (arrSick.get(i).getSickName().equals(sick))
+                {
+                    index = i;
+                    break;
+                }
+            }
+            if (index == -1)
+            {
+                Toast.makeText(this, "cant find sick name", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            arrSick.get(index).setSick(true);
+            saveGame.saveSick(arrSick);
+        }
+
     }
 
     void checkMySelf()
@@ -356,7 +394,7 @@ public class MainActivity extends AppCompatActivity {
         }
         if (prbHappy.getProgress() < 30)
         {
-            createNotification(R.drawable.heartbeat, "Bạn có dâu hiệu bị trầm cảm, tốt nhất nên đến bác sĩ để chưa trị", this);
+            createNotification(R.drawable.heartbeat, "Bạn có dấu hiệu bị trầm cảm, tốt nhất nên đến bác sĩ để chưa trị", this);
         }
     }
 
@@ -713,6 +751,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        imgAvatar.setImageResource(saveGame.getAvatar());
         prbAppearance.setProgress(saveGame.getAppearance());
         prbHappy.setProgress(saveGame.getHappy());
         prbHealth.setProgress(saveGame.getHealth());
@@ -812,6 +851,11 @@ public class MainActivity extends AppCompatActivity {
         //Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
 
         saveGame.saveGender(isBoy);
+        int avatarID = getResources().getIdentifier("boy_0", "drawable", getPackageName());
+        if (!isBoy)
+            avatarID = getResources().getIdentifier("girl_0", "drawable", getPackageName());
+        imgAvatar.setImageResource(avatarID);
+        saveGame.saveAvatar(avatarID);
         saveGame.saveAge(0);
         saveGame.saveMoney(50000);
         saveGame.saveDetailActivity(contentHtml);
@@ -833,7 +877,7 @@ public class MainActivity extends AppCompatActivity {
         txtName.setText(name);
 
         prbHealth.setProgress(100);
-        prbHappy.setProgress(100);
+        prbHappy.setProgress(80);
         prbSmart.setProgress(30);
         prbAppearance.setProgress(50);
         changeProgressBackground(prbAppearance);
@@ -847,11 +891,14 @@ public class MainActivity extends AppCompatActivity {
         txtHealth.setText(prbHealth.getProgress() + "%");
         saveGame.savePlayerInfo(prbHappy.getProgress(), prbHealth.getProgress(), prbSmart.getProgress(), prbAppearance.getProgress());
 
-        Sick[] arrSick = new Sick[4];
-        arrSick[0] = new Sick(false, "đau răng");
-        arrSick[1] = new Sick(false, "đau mắt đỏ");
-        arrSick[2] = new Sick(false, "tai mũi họng");
-        arrSick[3] = new Sick(false, "mẫn ngứa do dị ứng với đồ ăn");
+        ArrayList<Sick> arrSick = new ArrayList<>();
+        arrSick.add( new Sick(true, "đau răng", "Nha sĩ", "nhasi"));
+        arrSick.add(  new Sick(true, "đau mắt", "Bác sĩ mắt", "mat"));
+        arrSick.add(  new Sick(false, "tai mũi họng", "Bác sĩ tai mũi họng", "taimuihong"));
+        arrSick.add(  new Sick(false, "mẫn ngứa", "Bác sĩ da liễu", "dalieu"));
+        arrSick.add(  new Sick(false, "cảm","Bác sĩ cảm sốt", "camsot"));
+        arrSick.add(  new Sick(false, "trĩ", "Bác sĩ trĩ", "tri"));
+        arrSick.add(  new Sick(false, "sốt xuất huyết", "Bác sĩ cảm sốt", "sotxuathuyet"));
 
         saveGame.saveSick(arrSick);
     }
@@ -860,7 +907,7 @@ public class MainActivity extends AppCompatActivity {
     {
         //Toast.makeText(this, "new age", Toast.LENGTH_SHORT).show();
         int age = saveGame.getAge() + 1;
-        //saveGame.saveAge(age);
+        saveGame.saveAge(age);
         saveGame.saveExercise(0);
         saveGame.saveJogging(0);
         saveGame.saveJogging(0);
@@ -875,19 +922,58 @@ public class MainActivity extends AppCompatActivity {
         health -= (int) (saveGame.getAge() / 4);
         saveGame.savePlayerInfo(saveGame.getHappy(), health, saveGame.getSmart(), saveGame.getAppearance());
         prbHealth.setProgress(health);
+        txtHealth.setText(prbHealth.getProgress() + "%");
+        changeProgressBackground(prbHealth);
 
         for (int i=0; i<arrRelationship.size(); i++)
         {
             QuanHe friend = arrRelationship.get(i);
+            friend.setInteraction(0);
             friend.setTuoi(friend.getTuoi() + 1); // Them tuoi
-            if (friend.getQuanHe() == NameOfRelationship.Friend)
+            if (friend.getQuanHe() == NameOfRelationship.Friend ||
+                    friend.getQuanHe() == NameOfRelationship.GirlFriend ||
+                    friend.getQuanHe() == NameOfRelationship.BoyFriend)
             {
-                friend.setDoThanMat(friend.getDoThanMat() - 20); //Giam moi quan he
+                arrRelationship.get(i).setDoThanMat(friend.getDoThanMat() - 20); //Giam moi quan he
             }
         }
 
         saveGame.saveRelationship(arrRelationship);
+        setAvatar();
         dialogLostFriend(0);
+    }
+
+    void setAvatar()
+    {
+        int age = saveGame.getAge();
+        String avatarName = "";
+
+        if (saveGame.getGender()) //Boy
+        {
+            if (age == 2)  avatarName = "boy";
+            else if (age == 5){ avatarName = "boy_2";}
+            else if (age == 10){ avatarName = "boy_3";}
+            else if (age == 15){ avatarName = "boy_4";}
+            else if (age == 20){ avatarName = "boy_5";}
+            else if (age == 30){ avatarName = "boy_6";}
+            else if (age == 40){ avatarName = "boy_7";}
+            else if (age >= 60){ avatarName = "boy_8";}
+        } else {
+            if (age == 2)  avatarName = "girl";
+            else if (age == 5){ avatarName = "girl_2";}
+            else if (age == 10){ avatarName = "girl_3";}
+            else if (age == 15){ avatarName = "girl_4";}
+            else if (age == 20){ avatarName = "girl_5";}
+            else if (age == 30){ avatarName = "girl_6";}
+            else if (age == 40){ avatarName = "girl_7";}
+            else if (age >= 60){ avatarName = "girl_8";}
+        }
+
+        if (avatarName.equals(""))
+            return;
+        int id = getResources().getIdentifier(avatarName, "drawable", getPackageName());
+        saveGame.saveAvatar(id);
+        imgAvatar.setImageResource(id);
     }
 
     void dialogLostFriend(int index) {
@@ -897,13 +983,13 @@ public class MainActivity extends AppCompatActivity {
         }
         QuanHe friend = arrRelationship.get(index);
         if (friend.getDoThanMat() <= 0) {
-            Dialog dialog = createNotification(R.drawable.cancel, "Tình bạn giữa bạn và " + friend.getHoten() + " đã rạn nứt.", this);
+            Dialog dialog = createNotification(R.drawable.cancel, "Môi quan hệ giữa bạn và " + friend.getHoten() + " đã đổ vỡ.", this);
             Button btnOke       = dialog.findViewById(R.id.buttonNotificationtOke);
+            arrRelationship.remove(index);
+            saveGame.saveNumberOfFriends(saveGame.getNumberOfFriends() - 1);
             btnOke.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    arrRelationship.remove(index);
-                    saveGame.saveNumberOfFriends(saveGame.getNumberOfFriends() - 1);
                     dialog.dismiss();
                     dialogLostFriend(index);
                 }
@@ -1031,6 +1117,7 @@ public class MainActivity extends AppCompatActivity {
         btnRelationship = (Button) findViewById(R.id.buttonRelationship);
         btnActivity = (Button) findViewById(R.id.buttonActivity);
 
+        imgAvatar = findViewById(R.id.imageAvatar);
         txtContent = findViewById(R.id.textViewDetail);
         txtAppearance = findViewById(R.id.txtAppearance);
         txtHappy = findViewById(R.id.txtHappy);

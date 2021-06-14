@@ -1,0 +1,452 @@
+{
+  "Nhà hàng": [
+    {
+      "event": "Bạn đi ăn nhà hàng và bốc thăm trúng voucher giảm 50% cho bữa ăn.",
+      "assets": -500,
+      "happy": 3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Bạn ăn mặc xuề xòa vào nhà hàng nên nhân viên khinh bạn ra mặt. Nóng máu nên lúc tính tiền bạn tip cho bồi tận 500k dằn mặt. Nghĩ lại lúc đó bạn thấy mình khá ngu.",
+      "assets": -1500,
+      "happy": -2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Hôm nay trong lúc đang ăn ở nhà hàng thì bồi bàn vô tình làm đổ thức ăn lên người bạn. Để bồi thường thiệt hại, chủ nhà hàng đã miễn phí bữa ăn đó cho bạn đồng thời khuyễn mãi cho bạn thêm 2 món",
+      "assets": 0,
+      "happy": 5,
+      "health": 1,
+      "smart": 0,
+      "appearance": -1,
+      "sick": ""
+    },
+    {
+      "event":"Vì mới nhận lương nên bạn rủ người bạn cùng đi ăn nhà hàng với mình. Đó là một bữa ăn ngon miệng và 2 người đã trò chuyện rất vui",
+      "assets": -1000,
+      "happy": 4,
+      "health": 1,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event":"Bạn là khách hàng thứ 1 triệu của nhà hàng nên được tặng cho một món ăn miễn phí. Bạn rất vui",
+      "assets": -1000,
+      "happy": 7,
+      "health": 1,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+  ],
+  "Nước ép trái cây": [
+    {
+      "event": "Vừa làm ly nước ép cam thì bạn nghe mùi gì đó không ổn. Tối đó bạn phải vô ra nhà vệ sinh liên tục vì bị đau bụng. Bạn cạch luôn quán",
+      "assets": -20,
+      "happy": -3,
+      "health": -2,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Hôm nay bạn đi uống nước ép thì chủ quán giới thiệu bạn một loại nước mới và muốn bạn dùng thử. Sau khi nhấp một ngụm thì bạn đi về và bỏ luôn ly nước vì quá dở",
+      "assets": -20,
+      "happy": -2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Trời hôm nay quá nóng, nên bạn mời bạn mình đi uống tí nước ép trái cây cho đẹp da. Hôm đó bạn và bạn của mình trò chuyện rất vui còn đồ uống thì rất ngon",
+      "assets": -20,
+      "happy": 5,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event":"Bạn vô quán nước và kêu một ly nước ép cam mà chủ quán lại đem cho bạn một ly nước ép dâu. Bạn lên mạng bóc phốt, chủ quán quá sợ nên cho bạn uống free một tuần liền",
+      "assets": 0,
+      "happy": 4,
+      "health": 1,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+  ],
+  "Trà sữa": [
+    {
+      "event": "Bạn uống trà sữa lề đường và cảm thấy ngon hơn cả Gongcha. Bạn thấy rằng : đâu phải cứ đắt mới ngon",
+      "assets": -50,
+      "happy": 3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Hôm nay chơi sang, bạn vào StarBuck và mua một ly trà sữa max size. Quán tính bạn tận 300k.",
+      "assets": -300,
+      "happy": -0,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Bạn là vị khách thứ 100 của quán trà sữa mới mở. Chủ quán tặng bạn voucher uống ở quán miễn phí 1 tháng",
+      "assets": 0,
+      "happy": 10,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event":"Hôm nay để đổi khẩu vị bạn vào quán GongCha để uống trà sữa. Trà sữa của quán tuy mắc nhưng uống rất chất lượng",
+      "assets": -50,
+      "happy": 0,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event":"Vì muốn tiết kiệm ít tiền nên nay bạn uống trà sữa ở lề đường. Khi uống hết ly mở nắp ra để hút trân châu thì bạn thấy nguyên một con gián chết trong đấy.",
+      "assets": -50,
+      "happy": -7,
+      "health": -7,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+  ],
+  "Cà phê": [
+    {
+      "event": "Vào quán coffee, bạn gọi một ly capuchino mà quán lại đem ra latte. Bạn lên mạng bóc phốt, chủ quán sợ quá cho bạn uống free một tuần liền",
+      "assets": 0,
+      "happy": 3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Phục vụ bưng ly cà phê đổ hết lên người bạn. Quản lý xin lỗi ríu rít và free món cho bạn, còn tặng kèm voucher giảm 50%",
+      "assets": 0,
+      "happy": 2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Hôm nay đi uống cà phê bạn được nhân viên giới thiệu một loại cà phê mới tuy mắc nhưng rất ngon. Bạn muốn trải nghiệm thử nên đã đặt uống. Vừa mới nhấp một miếng thì bạn muốn nôn ra vì nó cực đắng và quá dở",
+      "assets": -100,
+      "happy": -2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event":"Bạn vào quán coffee và gọi ra một ly đen đá không đường. Bạn ngồi nhâm nhi ly cà phê và thưởng thức giai điệu của bản nhạc quán đang mở",
+      "assets": -15,
+      "happy": 2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+  ],
+  "Rượu": [
+    {
+      "event": "Bạn của bạn mới tậu được một chai rượu Vodka mới nhập ở bên Nga về và muốn bạn dùng thử. Tối hôm đó bạn ngủ lại luôn ở nhà bạn vì rượu quá mạnh khiến bạn say quên lối về",
+      "assets": -300,
+      "happy": 0,
+      "health": -2,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Hôm đó bạn cùng bạn mình vào quán rượu để uống. Cả hai trong lúc uống quá say đã xảy ra mâu thuẫn đánh nhau vỡ đầu",
+      "assets": -300,
+      "happy": -2,
+      "health": -2,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+  ],
+  "Bia": [
+    {
+      "event": "Trời nóng, bạn rủ đứa bạn làm ly bia hơi cho mát. Hôm sau đi ngang thấy quán đóng cửa do nhập bia giả bên Trung Quốc",
+      "assets": -200,
+      "happy": -3,
+      "health": -3,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Bạn được giới thiệu 1 quán nhậu bình dân trong hẻm. Quán có bia ngon lại rẻ. Bạn dự định sẽ quay lại đây nhiều lần nữa",
+      "assets": -200,
+      "happy": 2,
+      "health": -1,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+  ],
+  "Hamburger": [
+    {
+      "event": "Bạn vào KFC và kêu một cái Hamburger Bò ăn cho lạ miệng và đỡ ngán cơm. Bánh Hamburger rất ngon",
+      "assets": -45,
+      "happy": 3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Vì lười nấu cơm mà bạn đã đặt Grab một cái hamburger Tôm. Chả biết sao khi khui hộp bánh ra thì bạn chỉ thấy vỏ bánh và salad, còn miếng Tôm thì không thấy",
+      "assets": -45,
+      "happy": -3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+  ],
+  "Bánh mì": [
+    {
+      "event": "Bạn ra xe bánh mì gần nhà mua một ổ bánh mì dồi đầy đủ. Bánh mì giòn và rất ngon",
+      "assets": -15,
+      "happy": 3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Bạn mua một ổ bành mì. Sau khi ăn hết đọc tờ giấy gói bánh thì thấy thông tin của người bạn học chung lớp 5 đang bị truy nã",
+      "assets": -15,
+      "happy": 0,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+  ],
+  "Mỳ": [
+    {
+      "event": "Món mỳ spaghetti mà bạn ăn gần nhà rất ngon. Ông chủ quán còn bỏ rất nhiều đồ ăn kèm cho bạn",
+      "assets": -35,
+      "happy": 3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Vì ngán cơm nhà nên hôm nay bạn ra quán và gọi một tô mỳ hoành thánh. Bạn thấy tô mỳ rất ngon, hoành thánh thì được làm rất chất lượng. Chắc chắn bạn sẽ ghé quán một lần nữa.",
+      "assets": -35,
+      "happy": 2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+  ],
+  "Trái cây": [
+    {
+      "event": "Vì ăn quá khô khan nên hôm nay bạn mua một ít trái cây để ăn cho đẹp da. Sau khi ăn xong bạn thấy cơ thể của mình như được thanh lọc",
+      "assets": -60,
+      "happy": 3,
+      "health": 3,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Trời nóng, bạn rủ bạn của mình đi ăn trái cây tô. Chủ quán vì vô ý mà đổ quá nhiều nước dừa vào tô trái cây. Tối đó, bạn và bạn của mình cùng nhau ngồi tâm sự trong nhà vệ sinh",
+      "assets": -60,
+      "happy": -2,
+      "health": -2,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+  ],
+  "Pizza": [
+    {
+      "event": "Nghe tin quán PizzaHut hôm nay đang sale 50% một cái bánh pizza. Bạn vội vã đi mua tận 5 cái để để dành ăn qua ngày",
+      "assets": -375,
+      "happy": 0,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Bạn vào ăn Pizza thì gặp nhà kia dẫn con đi ăn, quậy nhặng xị cả cửa hàng. Bạn bực mình lườm nó một phát muốn đứt cổ. Nó khóc ré. Còn bạn vui trong lòng :v",
+      "assets": -150,
+      "happy": 2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+  ],
+  "Lẩu": [
+    {
+      "event": "Đám bạn học trường cũ rủ bạn đi ăn lẩu chay. Các bạn hôm đó rất vui khi ngồi vừa ăn vừa tâm sự những kỷ niệm cũ, còn nồi lẩu thì rất ngon",
+      "assets": -250,
+      "happy": 3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Bạn rủ bạn của bạn đi ăn lẩu thái. Lẩu rất ngon. Tuy nhiên, hôm sau đi ngang qua quán thì nghe tin quán đóng cửa vì nhập tôm lậu",
+      "assets": -250,
+      "happy": -2,
+      "health": -3,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+  ],
+  "Cơm": [
+    {
+      "event": "Quán cơm tắm hôm nay bạn ăn bỗng nhiên hào phóng cho bạn thêm một miếng sườn trong dĩa cơm. Bạn cảm thấy khá vui",
+      "assets": -25,
+      "happy": 3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Bạn hôm nay chăm chỉ. Tự đi mua đồ ở ngoài rồi về nhà nấu cơm. Cơm ăn rất ngon vì đó là công sức mà bạn đã bỏ ra để làm",
+      "assets": -25,
+      "happy": 5,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+  ],
+  "Hải sản": [
+    {
+      "event": "Hôm nay đi ăn hải sản. Giá hơi mắc nhưng bù lại đồ ăn ngon và tươi",
+      "assets": -500,
+      "happy": 3,
+      "health": 2,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Được người quen giới thiệu quán hải sản ngon mà rẻ nên bạn đi ăn thử. Quán tuy sập sệ nhưng đồ ăn thì best của best",
+      "assets": -500,
+      "happy": 0,
+      "health": 2,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+  ],
+  "Gà": [
+    {
+      "event": "Bạn vào Tiệm KFC và gọi ra một dĩa gà rán với 5 cái đùi Gà. Bạn ăn đến no nê",
+      "assets": -150,
+      "happy": 0,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Bạn vào siêu thị và mua một con gà nướng. Một mình bạn xơi tái cả một con gà đấy",
+      "assets": -150,
+      "happy": 0,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+  ],
+  "Rau củ": [
+    {
+      "event": "Bạn đi mua một bó rau ở ngoài chợ để về nấu canh. Do không lựa nên sau khi lặt rau từ một bó rau trở thành vài cộng vì sâu",
+      "assets": -30,
+      "happy": -2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Hôm nay ngày chay nên bạn muốn ăn thanh tịnh. Bạn mua rau củ ở trong siêu thị rồi về nhà tự nấu lên ăn. Ăn xong bạn cảm thấy cơ thể nhẹ nhàng, khỏe khoắn",
+      "assets": -30,
+      "happy": 2,
+      "health": 3,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+  ],
+  "Kẹo": [
+    {
+      "event": "Bạn được người hàng xóm gần nhà biếu cho một hộp kẹo chất lượng từ bên nước ngoài về. Kẹo tuyệt ngon và chất lượng",
+      "assets": -5,
+      "happy": 2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Vô siêu thị bạn thấy một hộp kẹo khá bắt mắt nên quyết định mua về. Về mở ra ăn thử thì kẹo quá dở. Bạn nhận ra rằng tốt gỗ hơn tốt nước sơn",
+      "assets": -5,
+      "happy": -2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+  ],
+  "Thức ăn nhanh": [
+    {
+      "event": "Vào tiệm thức ăn nhanh thì bạn gặp ngay thằng bạn cũ cũng đang ăn. Bạn được nó bao luôn cả phần ăn của mình",
+      "assets": 0,
+      "happy": 3,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    },
+    {
+      "event": "Bạn vào lotteria để ăn gà rán. Lúc ăn xong thì bạn được nhân viên tặng cho một voucher giảm giá 50%",
+      "assets": -50,
+      "happy": 2,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0,
+      "sick": ""
+    }
+]
+}
