@@ -1773,6 +1773,7 @@ drawable dalieu
 drawable danang
 drawable dao
 drawable daubep
+drawable death
 drawable degree
 drawable dentist
 drawable design_bottom_navigation_item_background
@@ -1802,6 +1803,7 @@ drawable fast_food
 drawable film
 drawable finance
 drawable fitness
+drawable flowers
 drawable foot
 drawable football
 drawable footballplayer
@@ -1977,6 +1979,7 @@ drawable thailand
 drawable thanksgiving
 drawable thelife
 drawable thuctapsinh
+drawable tombstone
 drawable tonducthang
 drawable tonggiamdoc
 drawable tool
@@ -2238,6 +2241,7 @@ id imageviewNotification
 id imageviewShoppingBack
 id imageviewSportBack
 id imageviewUni
+id imvBoy
 id imvGangster
 id imvQuanHe
 id imvSaleman
@@ -2405,6 +2409,7 @@ id right
 id rightToLeft
 id right_icon
 id right_side
+id rip
 id rounded
 id row_index_key
 id save_non_transition_alpha
@@ -2553,6 +2558,12 @@ id tvHoTen
 id tvHoatDong
 id tvMoiQuanHe
 id tvMucquanhe
+id tvNgaysinh
+id tvNghenghiep
+id tvNoiDung
+id tvQuequan
+id tvTaisan
+id tvTen
 id tvTuoi
 id tvthongbao
 id txtAppearance
@@ -2700,6 +2711,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_death
 layout dialog_event
 layout dialog_event_result
 layout dialog_hangnong
@@ -2711,18 +2723,13 @@ layout dialog_notification
 layout dialog_out_of_money
 layout dialog_relationship
 layout dialog_tattoo
-<<<<<<< HEAD
 layout dialog_totinhthanhcong
-layout dialog_university
-layout food_line
-layout layout_kethonthanhcong
-layout layout_kethonthatbai
-=======
 layout dialog_trogiupkhangia
 layout dialog_university
 layout food_line
 layout item_altp_tienthuong
->>>>>>> 119f498b583592cb037bd5cc8670982cf4081cd6
+layout layout_kethonthanhcong
+layout layout_kethonthatbai
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider

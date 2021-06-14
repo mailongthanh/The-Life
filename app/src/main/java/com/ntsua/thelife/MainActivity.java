@@ -20,6 +20,7 @@ import android.media.Image;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.provider.ContactsContract;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
@@ -464,6 +465,30 @@ public class MainActivity extends AppCompatActivity {
         });
 
         dialog.show();
+    }
+
+    void DialogDeath()
+    {
+            Dialog dialog = new Dialog(this);
+            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            dialog.setContentView(R.layout.dialog_death);
+            dialog.setCanceledOnTouchOutside(false);
+            dialog.getWindow().getAttributes().windowAnimations = R.style.DialogResultAnimation;
+
+            //Ánh xạ
+            ImageView imvavatar = findViewById(R.id.imvBoy);
+            ImageView imvflower = findViewById(R.id.imvFlower);
+            TextView tvname = findViewById(R.id.tvTen);
+            TextView tvage = findViewById(R.id.tvTuoi);
+            TextView tvborn = findViewById(R.id.tvNgaysinh);
+            TextView tvcountry = findViewById(R.id.tvQuequan);
+            TextView tvjob = findViewById(R.id.tvNghenghiep);
+            TextView tvasset = findViewById(R.id.tvTaisan);
+            TextView tvcontent = findViewById(R.id.tvNoiDung);
+
+            //Gán giá trị
+            dialog.show();
     }
 
     void jobEvent() throws JSONException {
