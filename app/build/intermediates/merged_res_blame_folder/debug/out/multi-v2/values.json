@@ -1,42 +1,59 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "D:\\The-Life\\app\\src\\main\\res\\values\\preloaded_fonts.xml",
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-3\\e5c0b7036f5a5fa96492b42e84a659d4\\transformed\\jetified-android-gif-drawable-1.1.17\\res\\values\\values.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "156"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,211",
+                        "endColumns": "155,106",
+                        "endOffsets": "206,313"
                     },
                     "to": {
-                        "startLines": "16",
-                        "startColumns": "4",
-                        "startOffsets": "3667",
-                        "endLines": "18",
-                        "endColumns": "12",
-                        "endOffsets": "3764"
+                        "startLines": "6582,6583",
+                        "startColumns": "4,4",
+                        "startOffsets": "430337,430493",
+                        "endColumns": "155,106",
+                        "endOffsets": "430488,430595"
                     }
                 },
                 {
-                    "source": "D:\\The-Life\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\src\\main\\res\\values\\dimens.xml",
                     "from": {
-                        "startLines": "1,4,9,10,6,7,5,2",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "17,191,411,482,323,362,256,64",
-                        "endColumns": "45,63,69,82,37,45,65,69",
-                        "endOffsets": "58,250,476,560,356,403,317,129"
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endColumns": "41",
+                        "endOffsets": "54"
                     },
                     "to": {
-                        "startLines": "1073,1086,1087,1088,1144,1150,1152,1154",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "65340,66798,66862,66932,76206,77046,77145,77282",
-                        "endColumns": "45,63,69,82,37,45,65,69",
-                        "endOffsets": "65381,66857,66927,67010,76239,77087,77206,77347"
+                        "startLines": "675",
+                        "startColumns": "4",
+                        "startOffsets": "39983",
+                        "endColumns": "41",
+                        "endOffsets": "40020"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\src\\main\\res\\values\\font_certs.xml",
+                    "from": {
+                        "startLines": "2,6,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "57,263,1993",
+                        "endLines": "5,10,15",
+                        "endColumns": "12,19,19",
+                        "endOffsets": "257,1987,3582"
+                    },
+                    "to": {
+                        "startLines": "2,6,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "150,352,2077",
+                        "endLines": "5,10,15",
+                        "endColumns": "12,19,19",
+                        "endOffsets": "347,2072,3662"
                     }
                 },
                 {
@@ -78,23 +95,6 @@
                     }
                 },
                 {
-                    "source": "D:\\The-Life\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "12,10,13,9,11,7,2,3,4,5,6,8",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "497,418,537,377,458,291,57,105,151,199,245,334",
-                        "endColumns": "38,38,38,39,37,41,46,44,46,44,44,41",
-                        "endOffsets": "531,452,571,412,491,328,99,145,193,239,285,371"
-                    },
-                    "to": {
-                        "startLines": "409,410,411,412,413,427,515,516,517,528,529,532",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "22284,22323,22362,22401,22441,23459,29452,29499,29544,30288,30333,30499",
-                        "endColumns": "38,38,38,39,37,41,46,44,46,44,44,41",
-                        "endOffsets": "22318,22357,22396,22436,22474,23496,29494,29539,29586,30328,30373,30536"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-3\\2ca6fcaeaef0b3a4d9e73c1f88bc7c53\\transformed\\navigation-fragment-2.3.3\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,6,9",
@@ -111,6 +111,23 @@
                         "endLines": "983,6390,6581,7156",
                         "endColumns": "56,24,24,24",
                         "endOffsets": "60004,419496,430332,465366"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "12,10,13,9,11,7,2,3,4,5,6,8",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "497,418,537,377,458,291,57,105,151,199,245,334",
+                        "endColumns": "38,38,38,39,37,41,46,44,46,44,44,41",
+                        "endOffsets": "531,452,571,412,491,328,99,145,193,239,285,371"
+                    },
+                    "to": {
+                        "startLines": "409,410,411,412,413,427,515,516,517,528,529,532",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "22284,22323,22362,22401,22441,23459,29452,29499,29544,30288,30333,30499",
+                        "endColumns": "38,38,38,39,37,41,46,44,46,44,44,41",
+                        "endOffsets": "22318,22357,22396,22436,22474,23496,29494,29539,29586,30328,30373,30536"
                     }
                 },
                 {
@@ -150,20 +167,22 @@
                     }
                 },
                 {
-                    "source": "D:\\The-Life\\app\\src\\main\\res\\values\\dimens.xml",
+                    "source": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\src\\main\\res\\values\\themes.xml",
                     "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endColumns": "41",
-                        "endOffsets": "54"
+                        "startLines": "2,22,17,24",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "102,1047,886,1146",
+                        "endLines": "15,22,20,24",
+                        "endColumns": "12,95,12,85",
+                        "endOffsets": "878,1138,1039,1227"
                     },
                     "to": {
-                        "startLines": "675",
-                        "startColumns": "4",
-                        "startOffsets": "39983",
-                        "endColumns": "41",
-                        "endOffsets": "40020"
+                        "startLines": "3800,3814,3815,3819",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "254425,255191,255286,255441",
+                        "endLines": "3813,3814,3818,3819",
+                        "endColumns": "12,94,12,84",
+                        "endOffsets": "255186,255281,255436,255521"
                     }
                 },
                 {
@@ -243,22 +262,20 @@
                     }
                 },
                 {
-                    "source": "D:\\The-Life\\app\\src\\main\\res\\values\\themes.xml",
+                    "source": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "2,22,17,24",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "102,1047,886,1146",
-                        "endLines": "15,22,20,24",
-                        "endColumns": "12,95,12,85",
-                        "endOffsets": "878,1138,1039,1227"
+                        "startLines": "1,4,9,10,6,7,5,2",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "17,191,411,482,323,362,256,64",
+                        "endColumns": "45,63,69,82,37,45,65,69",
+                        "endOffsets": "58,250,476,560,356,403,317,129"
                     },
                     "to": {
-                        "startLines": "3800,3814,3815,3819",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "254425,255191,255286,255441",
-                        "endLines": "3813,3814,3818,3819",
-                        "endColumns": "12,94,12,84",
-                        "endOffsets": "255186,255281,255436,255521"
+                        "startLines": "1073,1086,1087,1088,1144,1150,1152,1154",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "65340,66798,66862,66932,76206,77046,77145,77282",
+                        "endColumns": "45,63,69,82,37,45,65,69",
+                        "endOffsets": "65381,66857,66927,67010,76239,77087,77206,77347"
                     }
                 },
                 {
@@ -300,22 +317,22 @@
                     }
                 },
                 {
-                    "source": "D:\\The-Life\\app\\src\\main\\res\\values\\font_certs.xml",
+                    "source": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\src\\main\\res\\values\\preloaded_fonts.xml",
                     "from": {
-                        "startLines": "2,6,11",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "57,263,1993",
-                        "endLines": "5,10,15",
-                        "endColumns": "12,19,19",
-                        "endOffsets": "257,1987,3582"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "156"
                     },
                     "to": {
-                        "startLines": "2,6,11",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "150,352,2077",
-                        "endLines": "5,10,15",
-                        "endColumns": "12,19,19",
-                        "endOffsets": "347,2072,3662"
+                        "startLines": "16",
+                        "startColumns": "4",
+                        "startOffsets": "3667",
+                        "endLines": "18",
+                        "endColumns": "12",
+                        "endOffsets": "3764"
                     }
                 },
                 {
@@ -412,7 +429,7 @@
                     }
                 },
                 {
-                    "source": "D:\\The-Life\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "2,6",
                         "startColumns": "4,4",
@@ -428,23 +445,6 @@
                         "endLines": "3069,3073",
                         "endColumns": "12,12",
                         "endOffsets": "202801,203005"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-3\\d7e17f596d8ec0082c934c76957c7447\\transformed\\jetified-android-gif-drawable-1.1.17\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,211",
-                        "endColumns": "155,106",
-                        "endOffsets": "206,313"
-                    },
-                    "to": {
-                        "startLines": "6582,6583",
-                        "startColumns": "4,4",
-                        "startOffsets": "430337,430493",
-                        "endColumns": "155,106",
-                        "endOffsets": "430488,430595"
                     }
                 }
             ]

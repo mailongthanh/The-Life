@@ -1,4 +1,4 @@
-#Tue Jun 15 13:59:26 ICT 2021
-base.0=D\:\\The-Life\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Tue Jun 15 14:44:08 ICT 2021
+base.0=C\:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
