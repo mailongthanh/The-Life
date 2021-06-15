@@ -1,5 +1,6 @@
 package com.ntsua.thelife;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -216,5 +217,8 @@ public class AiLaTrieuPhu_ing extends AppCompatActivity {
     }
 
 
-
+    public void btn_close(View view) {
+        Intent i = new Intent(this,AiLaTrieuPhu.class);
+        startActivity(i);
+    }
 }

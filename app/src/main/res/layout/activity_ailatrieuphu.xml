@@ -58,12 +58,13 @@
                 android:background="#FFEB3B"/>
 
             <Button
+                android:onClick="btn_quitgame"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
                 android:background="@drawable/altp_btn"
-                android:text="Hướng Dẫn"
+                android:text="Thoát trò chơi"
                 android:textColor="#fff"
                 android:textSize="22sp"
                 android:textStyle="bold"

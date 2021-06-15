@@ -20,12 +20,12 @@
         "source": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\src\\main\\res\\layout\\activity_food.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_girl_0.png.flat",
-        "source": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\src\\main\\res\\drawable\\girl_0.png"
-    },
-    {
         "merged": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_baseball.png.flat",
         "source": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\src\\main\\res\\drawable\\baseball.png"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_girl_0.png.flat",
+        "source": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\src\\main\\res\\drawable\\girl_0.png"
     },
     {
         "merged": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_snowflakes.png.flat",
@@ -38,6 +38,10 @@
     {
         "merged": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rowing.png.flat",
         "source": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\src\\main\\res\\drawable\\rowing.png"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_altp_close.png.flat",
+        "source": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\src\\main\\res\\drawable\\altp_close.png"
     },
     {
         "merged": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan8\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_tuong_tac.xml.flat",

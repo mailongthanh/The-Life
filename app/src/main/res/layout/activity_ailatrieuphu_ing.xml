@@ -24,11 +24,11 @@
                     android:orientation="horizontal"
                     android:gravity="center">
                     <ImageView
-                        android:onClick="btn_5050"
+                        android:onClick="btn_close"
                         android:padding="8dp"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/altp_5050"
+                        android:src="@drawable/altp_close"
                         app:tint="#fff"
                         android:layout_marginRight="20dp"/>
                     <ImageView
@@ -52,9 +52,11 @@
                         app:tint="#fff"
                         android:layout_marginLeft="20dp"/>
                     <ImageView
+                        android:onClick="btn_5050"
                         android:padding="8dp"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:src="@drawable/altp_5050"
                         app:tint="#fff"
                         android:layout_marginLeft="20dp"/>
                 </LinearLayout>

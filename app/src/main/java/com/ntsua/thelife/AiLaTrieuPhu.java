@@ -18,4 +18,9 @@ public class AiLaTrieuPhu extends AppCompatActivity {
         Intent i = new Intent(this,AiLaTrieuPhu_ing.class);
         startActivity(i);
     }
+
+    public void btn_quitgame(View view) {
+        Intent i = new Intent(this,Playground.class);
+        startActivity(i);
+    }
 }

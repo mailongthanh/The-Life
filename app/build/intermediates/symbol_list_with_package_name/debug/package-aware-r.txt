@@ -1692,6 +1692,7 @@ drawable altp_btn
 drawable altp_btn_right
 drawable altp_btn_selected
 drawable altp_cauhoikhac
+drawable altp_close
 drawable altp_hoikhangia
 drawable altp_logo
 drawable america
