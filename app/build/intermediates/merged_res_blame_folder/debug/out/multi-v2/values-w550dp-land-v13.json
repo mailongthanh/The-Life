@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w550dp-land-v13\\values-w550dp-land-v13.xml",
+            "outputFile": "D:\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w550dp-land-v13\\values-w550dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\f816f1e5b3c2c515a288b8f8d6971daa\\transformed\\material-1.3.0\\res\\values-w550dp-land-v13\\values-w550dp-land-v13.xml",
-=======
-            "outputFile": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w550dp-land-v13\\values-w550dp-land-v13.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\HOME\\.gradle\\caches\\transforms-3\\f816f1e5b3c2c515a288b8f8d6971daa\\transformed\\material-1.3.0\\res\\values-w550dp-land-v13\\values-w550dp-land-v13.xml",
->>>>>>> df18d8afeaaaa9476ff3b80922d834fdb43471ef
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-3\\f816f1e5b3c2c515a288b8f8d6971daa\\transformed\\material-1.3.0\\res\\values-w550dp-land-v13\\values-w550dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

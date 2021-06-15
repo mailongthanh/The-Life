@@ -72,6 +72,15 @@ public class JobTaiChinh extends AppCompatActivity {
                             e.printStackTrace();
                         }
                         break;
+                    case 1:
+                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobTaiChinh.this);
+                        break;
+                    case 2:
+                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobTaiChinh.this);
+                        break;
+                    case 3:
+                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobTaiChinh.this);
+                        break;
                 }
             }
         });

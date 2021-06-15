@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "D:\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\58cd43936856d4a1edea7db3fdacda42\\transformed\\appcompat-1.2.0\\res\\values-v24\\values-v24.xml",
-=======
-            "outputFile": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\HOME\\.gradle\\caches\\transforms-3\\58cd43936856d4a1edea7db3fdacda42\\transformed\\appcompat-1.2.0\\res\\values-v24\\values-v24.xml",
->>>>>>> df18d8afeaaaa9476ff3b80922d834fdb43471ef
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-3\\58cd43936856d4a1edea7db3fdacda42\\transformed\\appcompat-1.2.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

@@ -8,12 +8,9 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
-<<<<<<< HEAD
 import android.view.Window;
 import android.widget.AdapterView;
-=======
 import android.widget.ImageView;
->>>>>>> df18d8afeaaaa9476ff3b80922d834fdb43471ef
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
