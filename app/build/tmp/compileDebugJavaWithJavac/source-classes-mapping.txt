@@ -86,6 +86,8 @@ com/ntsua/thelife/JobTaiChinh.java
  com.ntsua.thelife.JobTaiChinh$4
 com/ntsua/thelife/Startup.java
  com.ntsua.thelife.Startup
+ com.ntsua.thelife.Startup$1
+ com.ntsua.thelife.Startup$2
 com/ntsua/thelife/ALTP_QLDBCauHoi.java
  com.ntsua.thelife.ALTP_QLDBCauHoi
 com/ntsua/thelife/FoodAdapter.java
@@ -173,7 +175,6 @@ com/ntsua/thelife/SelectGender.java
  com.ntsua.thelife.SelectGender$3
 com/ntsua/thelife/Asset.java
  com.ntsua.thelife.Asset
- com.ntsua.thelife.Asset$1
 com/ntsua/thelife/MainActivity.java
  com.ntsua.thelife.MainActivity
  com.ntsua.thelife.MainActivity$1

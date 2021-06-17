@@ -1716,6 +1716,7 @@ drawable beer
 drawable bibimbap
 drawable bike
 drawable binhnhat
+drawable bistro
 drawable blogger
 drawable blooddonate
 drawable boat
@@ -1765,6 +1766,7 @@ drawable chuyengiaamthuc
 drawable chuyengiacongnghe
 drawable clairvoyance
 drawable coffee
+drawable coffeeshop
 drawable colonel
 drawable communication
 drawable company
@@ -1962,7 +1964,9 @@ drawable saler
 drawable seafood
 drawable secretary
 drawable service
+drawable sharktank
 drawable shopping
+drawable shops
 drawable simplehouse
 drawable singer
 drawable skincare
@@ -1975,6 +1979,7 @@ drawable sperm
 drawable sport
 drawable startup
 drawable steam
+drawable store
 drawable substitution
 drawable supercar
 drawable supermarket
