@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rip"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:background="@drawable/death">
+
+        <ImageView
+            android:id="@+id/imvBoy"
+            android:layout_width="57dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="145dp"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="58dp"
+            android:layout_marginEnd="148dp"
+            android:layout_marginRight="148dp"
+            android:src="@drawable/boy">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imvBoy"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="Nguyễn Văn D"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvTuoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvTen"
+            android:text="Hưởng thọ: 50 tuổi"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvNgaysinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTuoi"
+            android:layout_marginTop="2dp"
+            android:text="Ngày sinh: 01/01/1900"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvQuequan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNgaysinh"
+            android:layout_marginTop="2dp"
+            android:text="Quê quán: An Giang"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvNghenghiep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvQuequan"
+            android:layout_marginTop="2dp"
+            android:text="Nghề nghiệp: thất nghiệp"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvTaisan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNghenghiep"
+            android:layout_marginTop="2dp"
+            android:text="Tài sản để lại: 3 tỷ"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvNoiDung"
+            android:layout_width="138dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/tvTaisan"
+            android:layout_marginTop="2dp"
+            android:text="Qua đời vì nghèo khó, thiếu cái ăn cái mặc"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imvFlower"
+            android:layout_width="102dp"
+            android:layout_height="99dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="22dp"
+            android:src="@drawable/flowers">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:text="Ấn vào hoa để bày tỏ lòng thành kính"
+        android:textColor="@color/white"
+        android:textSize="17dp"/>
+
+
+</RelativeLayout>

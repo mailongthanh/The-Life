@@ -252,6 +252,8 @@ public class Entertainment extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
+                if (MainActivity.saveGame.getHealth() < 0)
+                    MainActivity.checkMySelf(Entertainment.this, "\"Qua đời vì sức khỏe yếu kéo dài, không chịu nổi những biến cố trong cuộc sống\"");
             }
         });
 
