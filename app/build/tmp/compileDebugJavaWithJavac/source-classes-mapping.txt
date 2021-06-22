@@ -1,11 +1,16 @@
-com/ntsua/thelife/HoatDong.java
- com.ntsua.thelife.HoatDong
- com.ntsua.thelife.HoatDong$1
+com/ntsua/thelife/JobQuanDoi.java
+ com.ntsua.thelife.JobQuanDoi
+ com.ntsua.thelife.JobQuanDoi$1
+ com.ntsua.thelife.JobQuanDoi$2
+ com.ntsua.thelife.JobQuanDoi$3
+ com.ntsua.thelife.JobQuanDoi$4
 com/ntsua/thelife/AiLaTrieuPhu_TienThuongAdapter.java
  com.ntsua.thelife.AiLaTrieuPhu_TienThuongAdapter
-com/ntsua/thelife/CrimeActivity.java
- com.ntsua.thelife.CrimeActivity
- com.ntsua.thelife.CrimeActivity$1
+com/ntsua/thelife/ActivitiesEvent.java
+ com.ntsua.thelife.ActivitiesEvent
+ com.ntsua.thelife.ActivitiesEvent$1
+ com.ntsua.thelife.ActivitiesEvent$2
+ com.ntsua.thelife.ActivitiesEvent$3
 com/ntsua/thelife/JobBaoChi.java
  com.ntsua.thelife.JobBaoChi
  com.ntsua.thelife.JobBaoChi$1
@@ -239,14 +244,9 @@ com/ntsua/thelife/HoatDongQHAdapter.java
  com.ntsua.thelife.HoatDongQHAdapter
  com.ntsua.thelife.HoatDongQHAdapter$1
  com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
-com/ntsua/thelife/ActivitiesEvent.java
- com.ntsua.thelife.ActivitiesEvent
- com.ntsua.thelife.ActivitiesEvent$1
- com.ntsua.thelife.ActivitiesEvent$2
- com.ntsua.thelife.ActivitiesEvent$3
-com/ntsua/thelife/JobQuanDoi.java
- com.ntsua.thelife.JobQuanDoi
- com.ntsua.thelife.JobQuanDoi$1
- com.ntsua.thelife.JobQuanDoi$2
- com.ntsua.thelife.JobQuanDoi$3
- com.ntsua.thelife.JobQuanDoi$4
+com/ntsua/thelife/HoatDong.java
+ com.ntsua.thelife.HoatDong
+ com.ntsua.thelife.HoatDong$1
+com/ntsua/thelife/CrimeActivity.java
+ com.ntsua.thelife.CrimeActivity
+ com.ntsua.thelife.CrimeActivity$1
