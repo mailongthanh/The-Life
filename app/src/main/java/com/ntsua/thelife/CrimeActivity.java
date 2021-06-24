@@ -47,7 +47,10 @@ public class CrimeActivity extends AppCompatActivity {
         lvCrime.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(arrCrime.get(position).getFoodName()=="Móc túi")
+                {
 
+                }
             }
         });
     }

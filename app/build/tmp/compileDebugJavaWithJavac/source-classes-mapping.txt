@@ -10,6 +10,29 @@ com/ntsua/thelife/Food.java
  com.ntsua.thelife.Food
 com/ntsua/thelife/BuildConfig.java
  com.ntsua.thelife.BuildConfig
+com/ntsua/thelife/JobQuanDoi.java
+ com.ntsua.thelife.JobQuanDoi
+ com.ntsua.thelife.JobQuanDoi$1
+ com.ntsua.thelife.JobQuanDoi$2
+ com.ntsua.thelife.JobQuanDoi$3
+ com.ntsua.thelife.JobQuanDoi$4
+com/ntsua/thelife/ActivitiesEvent.java
+ com.ntsua.thelife.ActivitiesEvent
+ com.ntsua.thelife.ActivitiesEvent$1
+ com.ntsua.thelife.ActivitiesEvent$2
+ com.ntsua.thelife.ActivitiesEvent$3
+com/ntsua/thelife/JobBaoChi.java
+ com.ntsua.thelife.JobBaoChi
+ com.ntsua.thelife.JobBaoChi$1
+ com.ntsua.thelife.JobBaoChi$2
+ com.ntsua.thelife.JobBaoChi$3
+ com.ntsua.thelife.JobBaoChi$4
+com/ntsua/thelife/JobCaSi.java
+ com.ntsua.thelife.JobCaSi
+ com.ntsua.thelife.JobCaSi$1
+ com.ntsua.thelife.JobCaSi$2
+ com.ntsua.thelife.JobCaSi$3
+ com.ntsua.thelife.JobCaSi$4
 com/ntsua/thelife/AiLaTrieuPhu_Dialog_KhanGia.java
  com.ntsua.thelife.AiLaTrieuPhu_Dialog_KhanGia
 com/ntsua/thelife/NameOfRelationship.java
@@ -68,9 +91,10 @@ com/ntsua/thelife/AiLaTrieuPhu_ing.java
  com.ntsua.thelife.AiLaTrieuPhu_ing$1
  com.ntsua.thelife.AiLaTrieuPhu_ing$2
  com.ntsua.thelife.AiLaTrieuPhu_ing$2$1
-com/ntsua/thelife/HoatDong.java
- com.ntsua.thelife.HoatDong
- com.ntsua.thelife.HoatDong$1
+com/ntsua/thelife/Startup.java
+ com.ntsua.thelife.Startup
+ com.ntsua.thelife.Startup$1
+ com.ntsua.thelife.Startup$2
 com/ntsua/thelife/JobYTe.java
  com.ntsua.thelife.JobYTe
  com.ntsua.thelife.JobYTe$1
@@ -94,9 +118,8 @@ com/ntsua/thelife/FoodActivity.java
  com.ntsua.thelife.FoodActivity
  com.ntsua.thelife.FoodActivity$1
  com.ntsua.thelife.FoodActivity$2
-com/ntsua/thelife/CrimeActivity.java
- com.ntsua.thelife.CrimeActivity
- com.ntsua.thelife.CrimeActivity$1
+com/ntsua/thelife/Cooking.java
+ com.ntsua.thelife.Cooking
 com/ntsua/thelife/JobGiaoDuc.java
  com.ntsua.thelife.JobGiaoDuc
  com.ntsua.thelife.JobGiaoDuc$1
@@ -116,18 +139,6 @@ com/ntsua/thelife/Tuong_tacActivity.java
  com.ntsua.thelife.Tuong_tacActivity$3
  com.ntsua.thelife.Tuong_tacActivity$4
  com.ntsua.thelife.Tuong_tacActivity$5
-com/ntsua/thelife/JobBaoChi.java
- com.ntsua.thelife.JobBaoChi
- com.ntsua.thelife.JobBaoChi$1
- com.ntsua.thelife.JobBaoChi$2
- com.ntsua.thelife.JobBaoChi$3
- com.ntsua.thelife.JobBaoChi$4
-com/ntsua/thelife/JobCaSi.java
- com.ntsua.thelife.JobCaSi
- com.ntsua.thelife.JobCaSi$1
- com.ntsua.thelife.JobCaSi$2
- com.ntsua.thelife.JobCaSi$3
- com.ntsua.thelife.JobCaSi$4
 com/ntsua/thelife/JobDichVu.java
  com.ntsua.thelife.JobDichVu
  com.ntsua.thelife.JobDichVu$1
@@ -239,20 +250,9 @@ com/ntsua/thelife/JobCauThu.java
  com.ntsua.thelife.JobCauThu$2
  com.ntsua.thelife.JobCauThu$3
  com.ntsua.thelife.JobCauThu$4
-com/ntsua/thelife/Cooking.java
- com.ntsua.thelife.Cooking
-com/ntsua/thelife/ActivitiesEvent.java
- com.ntsua.thelife.ActivitiesEvent
- com.ntsua.thelife.ActivitiesEvent$1
- com.ntsua.thelife.ActivitiesEvent$2
- com.ntsua.thelife.ActivitiesEvent$3
-com/ntsua/thelife/Startup.java
- com.ntsua.thelife.Startup
- com.ntsua.thelife.Startup$1
- com.ntsua.thelife.Startup$2
-com/ntsua/thelife/JobQuanDoi.java
- com.ntsua.thelife.JobQuanDoi
- com.ntsua.thelife.JobQuanDoi$1
- com.ntsua.thelife.JobQuanDoi$2
- com.ntsua.thelife.JobQuanDoi$3
- com.ntsua.thelife.JobQuanDoi$4
+com/ntsua/thelife/HoatDong.java
+ com.ntsua.thelife.HoatDong
+ com.ntsua.thelife.HoatDong$1
+com/ntsua/thelife/CrimeActivity.java
+ com.ntsua.thelife.CrimeActivity
+ com.ntsua.thelife.CrimeActivity$1
