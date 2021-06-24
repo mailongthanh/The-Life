@@ -558,7 +558,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (!finalIsOwn)
-                    createNotification(R.drawable.cancel, "Bạn đã sở hữu mòn đồ này đâu mà đồng ý!!!", MainActivity.this);
+                    createNotification(R.drawable.cancel, "Bạn đã sở hữu món đồ này đâu mà đồng ý!!!", MainActivity.this);
                 else {
                     try {
                         JSONArray arr = arrSelect.getJSONArray(0);
@@ -978,6 +978,24 @@ public class MainActivity extends AppCompatActivity {
         saveGame.saveJogging(0);
         saveGame.saveLibrary(0);
         saveGame.saveNewFriendInYear(0);
+        saveGame.saveNhaHang(0);
+        saveGame.saveNuocEp(0);
+        saveGame.saveTraSua(0);
+        saveGame.saveCaPhe(0);
+        saveGame.saveRuou(0);
+        saveGame.saveBia(0);
+        saveGame.saveHamBurGer(0);
+        saveGame.saveBanhMi(0);
+        saveGame.saveMy(0);
+        saveGame.saveTraiCay(0);
+        saveGame.savePizza(0);
+        saveGame.saveLau(0);
+        saveGame.saveCom(0);
+        saveGame.saveHaiSan(0);
+        saveGame.saveGa(0);
+        saveGame.saveRauCu(0);
+        saveGame.saveKeo(0);
+        saveGame.saveFastFood(0);
 
         for (int i=0; i<arrRelationship.size(); i++)
         {

@@ -108,7 +108,7 @@
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
   ],
   [
-    {"title":"Đời sống học đường", "event": "Bạn đang bị một đám ức hiếp trong lớp \n\nBạn muốn làm gì ? ", "selection": true,
+    {"title":"Học đường", "event": "Bạn đang bị một đám ức hiếp trong lớp \n\nBạn muốn làm gì ? ", "selection": true,
       "select":[
         {"content": "Đấm trả", "selection":false,
           "event": [

@@ -72,35 +72,44 @@ public class JobCaSi extends AppCompatActivity {
                                 e.printStackTrace();
                             }
                         break;
-                    case 1:
-                            try {
+                    //case 1:
+                            //try {
                                 //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
-                                JSONArray arrDriving = jsonCaSi.getJSONArray("Phòng trà");
-                                JSONArray arrQuestion = chooseQuestion(arrDriving);
-                                dialogEvent(arrQuestion, 0);
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
+                               // JSONArray arrDriving = jsonCaSi.getJSONArray("Phòng trà");
+                                //JSONArray arrQuestion = chooseQuestion(arrDriving);
+                                //dialogEvent(arrQuestion, 0);
+                            //} catch (JSONException e) {
+                               // e.printStackTrace();
+                            //}
+                        //break;
+                    //case 2:
+                        //try {
+                            //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
+                            //JSONArray arrDriving = jsonCaSi.getJSONArray("Thần tượng");
+                            //JSONArray arrQuestion = chooseQuestion(arrDriving);
+                            //dialogEvent(arrQuestion, 0);
+                        //} catch (JSONException e) {
+                            //e.printStackTrace();
+                       // }
+                        //break;
+                    //case 3:
+                        //try {
+                            //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
+                            //JSONArray arrDriving = jsonCaSi.getJSONArray("DIVA");
+                            //JSONArray arrQuestion = chooseQuestion(arrDriving);
+                            //dialogEvent(arrQuestion, 0);
+                        //} catch (JSONException e) {
+                          //  e.printStackTrace();
+                        //}
+                       // break;
+                    case 1:
+                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCaSi.this);
                         break;
                     case 2:
-                        try {
-                            //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
-                            JSONArray arrDriving = jsonCaSi.getJSONArray("Thần tượng");
-                            JSONArray arrQuestion = chooseQuestion(arrDriving);
-                            dialogEvent(arrQuestion, 0);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
+                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCaSi.this);
                         break;
                     case 3:
-                        try {
-                            //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
-                            JSONArray arrDriving = jsonCaSi.getJSONArray("DIVA");
-                            JSONArray arrQuestion = chooseQuestion(arrDriving);
-                            dialogEvent(arrQuestion, 0);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
+                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCaSi.this);
                         break;
                 }
             }

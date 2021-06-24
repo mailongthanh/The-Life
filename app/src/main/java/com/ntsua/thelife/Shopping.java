@@ -58,23 +58,26 @@ public class Shopping extends AppCompatActivity {
                 if(arrShopping.get(position).getFoodName() == "Phương tiện đi lại")
                 {
                     ArrayList<Food> arrVehicle = new ArrayList<>();
-                    arrVehicle.add(new Food("Siêu xe","Tốc độ cao hơn, mẫu mã đẹp hơn nhưng mỗi tháng tốn thêm 1 khoảng nhiều chi phí bảo quản. GIÁ 1.200.000.000 VND",R.drawable.supercar,1200000));
-                    arrVehicle.add(new Food("Ô tô","Tốc độ cao, mẫu mã bình thường, mỗi tháng tốn thêm 1 khoản trung bình chi phí bảo quản. GIÁ 120.000.000 VND",R.drawable.car,120000));
-                    arrVehicle.add(new Food("Vespa","Tốc độ trung bình, mẫu mã bình thường, mỗi tháng tốn thêm 1 khoản ít chi phí bảo quản. GIÁ 30.000.000 VND",R.drawable.vespa,30000));
-                    arrVehicle.add(new Food("Xe thể thao","Tốc độ cao, mẫu mã đẹp, mỗi tháng tốn thêm 1 khoản trung bình chi phí bảo quản. GIÁ 90.000.000 VND",R.drawable.motorcycle,90000));
-                    arrVehicle.add(new Food("Trực thăng","Di chuyển trên không, mỗi tháng tốn thêm 1 khoảng trung bình chi phí bảo quản. GIÁ 1.500.000.000 VND",R.drawable.helicopter,1500000));
-                    arrVehicle.add(new Food("Máy bay","Di chuyển trên không, mỗi tháng tốn thêm 1 khoảng nhiều chi phí bảo quản. GIÁ 2.000.000.000 VND",R.drawable.airplane,2000000));
-                    arrVehicle.add(new Food("Tàu","Di chuyển trên mặt nước, mỗi tháng tốn thêm 1 khoảng nhiều chi phí bảo quản. GIÁ 2.000.000.000 VND",R.drawable.boat,2000000));
+                    arrVehicle.add(new Food("Siêu xe","Tốc độ cao hơn, mẫu mã đẹp hơn nhưng mỗi tháng tốn thêm 1 khoảng nhiều chi phí bảo quản. GIÁ 1 tỷ 2 VND",R.drawable.supercar,1200000));
+                    arrVehicle.add(new Food("Ô tô","Tốc độ cao, mẫu mã bình thường, mỗi tháng tốn thêm 1 khoản trung bình chi phí bảo quản. GIÁ 120 triệu VND",R.drawable.car,120000));
+                    arrVehicle.add(new Food("Vespa","Tốc độ trung bình, mẫu mã bình thường, mỗi tháng tốn thêm 1 khoản ít chi phí bảo quản. GIÁ 30 triệu VND",R.drawable.vespa,30000));
+                    arrVehicle.add(new Food("Xe thể thao","Tốc độ cao, mẫu mã đẹp, mỗi tháng tốn thêm 1 khoản trung bình chi phí bảo quản. GIÁ 90 triệu VND",R.drawable.motorcycle,90000));
+                    arrVehicle.add(new Food("Trực thăng","Di chuyển trên không, mỗi tháng tốn thêm 1 khoảng trung bình chi phí bảo quản. GIÁ 1 tỷ 5 VND",R.drawable.helicopter,1500000));
+                    arrVehicle.add(new Food("Máy bay","Di chuyển trên không, mỗi tháng tốn thêm 1 khoảng nhiều chi phí bảo quản. GIÁ 2 tỷ VND",R.drawable.airplane,2000000));
+                    arrVehicle.add(new Food("Tàu","Di chuyển trên mặt nước, mỗi tháng tốn thêm 1 khoảng nhiều chi phí bảo quản. GIÁ 2 tỷ VND",R.drawable.boat,2000000));
                     CreateDialogMuaSam(arrVehicle,"SHOP PHƯƠNG TIỆN");
                 }
                 if(arrShopping.get(position).getFoodName() == "Bất động sản")
                 {
                     ArrayList<Food> arrHouse = new ArrayList<>();
-                    arrHouse.add(new Food("Chung cư","Mua căn hộ có sẵn trong chung cư, mỗi tháng tốn thêm 1 khoản ít chi phí bảo quản. GIÁ 500.000.000 VND",R.drawable.chungcu,500000));
-                    arrHouse.add(new Food("Nhà ở","Cung cấp chỗ che mưa gió, mỗi tháng tốn thêm 1 khoảng trung bình chi phí bảo quản. GIÁ 5.000.000.000 VND",R.drawable.simplehouse,5000000));
-                    arrHouse.add(new Food("Vinh thự","Thiết kế sang trọng, hiện đại, mỗi tháng tốn thêm 1 khoản nhiều chi phí bảo quản. GIÁ 50.000.000.000 VND",R.drawable.masion,50000000));
-                    arrHouse.add(new Food("Công ty","Công ty tư nhân, mỗi tháng tăng thêm thu nhập, tốn thêm 1 khoản nhiều chi phí bảo quản. GIÁ 100.000.000.000 VND",R.drawable.company,100000000));
-                    arrHouse.add(new Food("Nhà máy","Nhà máy sản xuất, mỗi tháng tăng thêm thu nhập, tốn thêm 1 khoản nhiều chi phí bảo quản. GIÁ 150.000.000.000 VND",R.drawable.factory,150000000));
+                    arrHouse.add(new Food("Cửa hàng nhỏ","Cửa hàng buôn bán nhỏ, giày dép quần áo,... GIÁ 3 tỷ VND",R.drawable.store,3000000));
+                    arrHouse.add(new Food("Quán cà phê","Cung cấp các loại thức uống như cà phê, trà sữa, cappuchiano,... GIÁ 5 tỷ VND",R.drawable.coffeeshop,5000000));
+                    arrHouse.add(new Food("Quán ăn","Bán cơm, bán cháo, bán bún,... GIÁ 4 tỷ VND",R.drawable.bistro,4000000));
+                    arrHouse.add(new Food("Chung cư","Mua căn hộ có sẵn trong chung cư, mỗi tháng tốn thêm 1 khoản ít chi phí bảo quản. GIÁ 500 triệu VND",R.drawable.chungcu,500000));
+                    arrHouse.add(new Food("Nhà ở","Cung cấp chỗ che mưa gió, mỗi tháng tốn thêm 1 khoảng trung bình chi phí bảo quản. GIÁ 5 tỷ VND",R.drawable.simplehouse,5000000));
+                    arrHouse.add(new Food("Vinh thự","Thiết kế sang trọng, hiện đại, mỗi tháng tốn thêm 1 khoản nhiều chi phí bảo quản. GIÁ 50 tỷ VND",R.drawable.masion,50000000));
+                    arrHouse.add(new Food("Công ty","Công ty tư nhân, mỗi tháng tăng thêm thu nhập, tốn thêm 1 khoản nhiều chi phí bảo quản. GIÁ 100 tỷ VND",R.drawable.company,100000000));
+                    arrHouse.add(new Food("Nhà máy","Nhà máy sản xuất, mỗi tháng tăng thêm thu nhập, tốn thêm 1 khoản nhiều chi phí bảo quản. GIÁ 150 tỷ VND",R.drawable.factory,150000000));
                     CreateDialogMuaSam(arrHouse,"MUA BÁN ĐẤT");
                 }
                 if(arrShopping.get(position).getFoodName() == "Công cụ")
