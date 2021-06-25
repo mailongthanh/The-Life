@@ -71,7 +71,7 @@ public class UniversityAdapter extends BaseAdapter {
 
         Animation anim = AnimationUtils.loadAnimation(context, R.anim.listview_scale);
         convertView.startAnimation(anim);
-        if (university.getScore() > MainActivity.saveGame.getSmart())
+        if (university.getRequire() > MainActivity.saveGame.getSmart())
             convertView.setBackgroundResource(R.drawable.list_item_unable);
         else convertView.setBackgroundResource(R.drawable.custom_dialog);
 

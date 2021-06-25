@@ -26,7 +26,7 @@
     ],
     "event": [
       {"require": 5, "event": "Bạn được rủ đi phượt với bạn bè, bạn cần có siêu siêu super xe để đi",
-        "asset": "gun", "name": "Súng",
+        "asset": "gun", "name": "Súng", "newjob": "",
         "selection":false, "select":[
           [
             {"event": "Té xe siêu xe", "salary": 0, "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0},
@@ -40,10 +40,10 @@
           ]
       ]},
       {"require": 10, "event": "Bạn được bố mẹ thưởng nóng 100k vì đạt được điểm 10 cuối kì.",
-        "asset": "",
+        "asset": "", "newjob": "",
         "selection":false, "salary": 0, "assets": 100, "happy": 3, "health": 0, "smart":0, "appearance": 0},
       {"require": 20, "event": "Bạn được bố mẹ cho đi du lịch vì thành tích học tập xuất sắc. Bạn muốn đi đâu ?",
-        "asset": "PT02",
+        "asset": "PT02", "newjob": "",
         "selection":true, "select":[
         {"content":"Hà Nội", "selection": false,
           "event":[
@@ -64,7 +64,7 @@
             {"event":"Sài Gòn", "salary": 0, "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0}
           ]}
       ]},
-      {"require": 30, "event": "Thành tích học tập của bạn đứng top trong trường",
+      {"require": 30, "event": "Thành tích học tập của bạn đứng top trong trường", "newjob": "",
         "selection":false, "salary": 0, "assets": 0, "happy": 0, "health": 5, "smart":0, "appearance": 0}
     ]
   },

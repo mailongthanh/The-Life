@@ -56,7 +56,7 @@ public class Entertainment extends AppCompatActivity {
         lvEntertainment = (ListView) findViewById((R.id.listviewEntertainment));
         arrEntertainment = new ArrayList<>();
         arrEntertainment.add(new Food("Bar", "1 triệu", R.drawable.bar, 1000));
-        arrEntertainment.add(new Food("Đi xem phim", "80 nghìn", R.drawable.movie, 80));
+        arrEntertainment.add(new Food("Đi xem phim", "90 nghìn", R.drawable.movie, 80));
         arrEntertainment.add(new Food("Thư viện", "Free", R.drawable.library, 0));
         adapter = new FoodAdapter(this, R.layout.food_line, arrEntertainment);
         lvEntertainment.setAdapter(adapter);
@@ -252,6 +252,8 @@ public class Entertainment extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
+                if (MainActivity.saveGame.getHealth() < 0)
+                    MainActivity.checkMySelf(Entertainment.this, "\"Qua đời vì sức khỏe yếu kéo dài, không chịu nổi những biến cố trong cuộc sống\"");
             }
         });
 

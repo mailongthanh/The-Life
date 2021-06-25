@@ -32,6 +32,7 @@ anim dialog_exit
 anim dialog_fade
 anim enter
 anim exit
+anim flower
 anim fragment_close_enter
 anim fragment_close_exit
 anim fragment_fade_enter

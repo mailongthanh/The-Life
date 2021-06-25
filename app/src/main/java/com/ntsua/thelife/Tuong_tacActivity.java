@@ -404,6 +404,8 @@ public class Tuong_tacActivity extends AppCompatActivity {
         btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (MainActivity.saveGame.getHealth() < 0)
+                    MainActivity.checkMySelf(Tuong_tacActivity.this, "\"Qua đời vì sức khỏe yếu kéo dài, không chịu nổi những biến cố trong cuộc sống\"");
                 if (pbqhanhe.getProgress() <= 0 && nameOfRelationship == NameOfRelationship.Friend
                         || pbqhanhe.getProgress() <= 30 && (nameOfRelationship == NameOfRelationship.BoyFriend || nameOfRelationship == NameOfRelationship.GirlFriend))
                     breakFriend();

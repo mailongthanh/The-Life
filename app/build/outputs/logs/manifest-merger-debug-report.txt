@@ -1,346 +1,346 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
-MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\HP\.gradle\caches\transforms-3\41402b38008d114c28bf22ecf2366e3f\transformed\jetified-android-gif-drawable-1.1.17\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.navigation:navigation-ui:2.3.3] C:\Users\HP\.gradle\caches\transforms-3\e6347897547d6a2abeabc20d0c5d1536\transformed\navigation-ui-2.3.3\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.material:material:1.3.0] C:\Users\HP\.gradle\caches\transforms-3\f816f1e5b3c2c515a288b8f8d6971daa\transformed\material-1.3.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\HP\.gradle\caches\transforms-3\de8110cf61235ca220c1425615edcdd3\transformed\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\HP\.gradle\caches\transforms-3\58cd43936856d4a1edea7db3fdacda42\transformed\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-fragment:2.3.3] C:\Users\HP\.gradle\caches\transforms-3\2ca6fcaeaef0b3a4d9e73c1f88bc7c53\transformed\navigation-fragment-2.3.3\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\9b4ca745e595de12e92d9afbe16ebef3\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\HP\.gradle\caches\transforms-3\0adfbe46f1f46ca91aa41111b9b8391c\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\43c1a72abd2458ce83dccf5316a3c81d\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\58c67535187bbeb24bd74e1220447b9d\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\8198b8dbfa8e422ebacbf2fc6ec121e3\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\b23fdcee76bb811e4bdc1820adc7f4ef\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\d9e9367f0d6b3ce4f9646dc48c6ea681\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\4f8597a490042cb7a2445d6c201e5fa4\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\HP\.gradle\caches\transforms-3\efdf2af0d09c3c43505b045fbd5238e0\transformed\fragment-1.2.4\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\HP\.gradle\caches\transforms-3\fb5d46379eea86e89a331adc0f971c36\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.transition:transition:1.3.0] C:\Users\HP\.gradle\caches\transforms-3\d0b53a876826544b73489d13e0ee56c5\transformed\transition-1.3.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\768b435d4c32cf991f766b38d06f01d4\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\04e179d593173158c1326c9c795103ea\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\4022c5dd115538b78423fc4bfbf57e19\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\2945c1f8c12b7ea705a2aa7000d1d574\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\dc7f17abacfaaaa1c8b54c8f9a074447\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-runtime:2.3.3] C:\Users\HP\.gradle\caches\transforms-3\6eabb80fdebc3f236b91dd264730090c\transformed\navigation-runtime-2.3.3\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\01dce207a4107206caaf47f99339f354\transformed\jetified-activity-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-common:2.3.3] C:\Users\HP\.gradle\caches\transforms-3\d573c1af7de444b01a908673f198e337\transformed\navigation-common-2.3.3\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.3.1] C:\Users\HP\.gradle\caches\transforms-3\0ac091b6f9a2dee0e999ee1a77b495bc\transformed\core-1.3.1\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\60f5157ea9e608ba0d901ea01668d4a8\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\HP\.gradle\caches\transforms-3\e514ae24e8f612d05065d276b93cd630\transformed\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\HP\.gradle\caches\transforms-3\d2815d04ea7d4a1837e36dac16c1ca4a\transformed\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\b9906659d0d96fb43a251c06330b82ae\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\HP\.gradle\caches\transforms-3\86970119f7686591b1fda27d134728c8\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\6640915d742d4d26662acbf18c01209d\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\a86e22fe3a6832d3890d46fff8c0cd45\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\09c9035e8a71229692e9647749796514\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\09b84b55f0b757fcbe8a9e44f24ff434\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\HP\.gradle\caches\transforms-3\13ce31b8dfc952dc36f924e28f5b31ee\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\HP\.gradle\caches\transforms-3\5b5089cee9c02b6e0672ea6daeb8c674\transformed\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\HP\.gradle\caches\transforms-3\00fb337b0f7ee6dcbdb275c584deee86\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\863c5cc7e7b3acc6c54124da025c5510\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\HOME\.gradle\caches\transforms-3\b161d7a65d3e020b4424e43d3fe4b1ba\transformed\jetified-android-gif-drawable-1.1.17\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.navigation:navigation-ui:2.3.3] C:\Users\HOME\.gradle\caches\transforms-3\e6347897547d6a2abeabc20d0c5d1536\transformed\navigation-ui-2.3.3\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\HOME\.gradle\caches\transforms-3\f816f1e5b3c2c515a288b8f8d6971daa\transformed\material-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\HOME\.gradle\caches\transforms-3\de8110cf61235ca220c1425615edcdd3\transformed\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\HOME\.gradle\caches\transforms-3\58cd43936856d4a1edea7db3fdacda42\transformed\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment:2.3.3] C:\Users\HOME\.gradle\caches\transforms-3\2ca6fcaeaef0b3a4d9e73c1f88bc7c53\transformed\navigation-fragment-2.3.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\9b4ca745e595de12e92d9afbe16ebef3\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\HOME\.gradle\caches\transforms-3\0adfbe46f1f46ca91aa41111b9b8391c\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\43c1a72abd2458ce83dccf5316a3c81d\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\58c67535187bbeb24bd74e1220447b9d\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\8198b8dbfa8e422ebacbf2fc6ec121e3\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\b23fdcee76bb811e4bdc1820adc7f4ef\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\d9e9367f0d6b3ce4f9646dc48c6ea681\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\4f8597a490042cb7a2445d6c201e5fa4\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\HOME\.gradle\caches\transforms-3\efdf2af0d09c3c43505b045fbd5238e0\transformed\fragment-1.2.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\HOME\.gradle\caches\transforms-3\fb5d46379eea86e89a331adc0f971c36\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.3.0] C:\Users\HOME\.gradle\caches\transforms-3\d0b53a876826544b73489d13e0ee56c5\transformed\transition-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\768b435d4c32cf991f766b38d06f01d4\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\04e179d593173158c1326c9c795103ea\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\4022c5dd115538b78423fc4bfbf57e19\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\2945c1f8c12b7ea705a2aa7000d1d574\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\dc7f17abacfaaaa1c8b54c8f9a074447\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.3.3] C:\Users\HOME\.gradle\caches\transforms-3\6eabb80fdebc3f236b91dd264730090c\transformed\navigation-runtime-2.3.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\01dce207a4107206caaf47f99339f354\transformed\jetified-activity-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.3.3] C:\Users\HOME\.gradle\caches\transforms-3\d573c1af7de444b01a908673f198e337\transformed\navigation-common-2.3.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.3.1] C:\Users\HOME\.gradle\caches\transforms-3\0ac091b6f9a2dee0e999ee1a77b495bc\transformed\core-1.3.1\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\60f5157ea9e608ba0d901ea01668d4a8\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\HOME\.gradle\caches\transforms-3\e514ae24e8f612d05065d276b93cd630\transformed\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\HOME\.gradle\caches\transforms-3\d2815d04ea7d4a1837e36dac16c1ca4a\transformed\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\b9906659d0d96fb43a251c06330b82ae\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\HOME\.gradle\caches\transforms-3\86970119f7686591b1fda27d134728c8\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\6640915d742d4d26662acbf18c01209d\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\a86e22fe3a6832d3890d46fff8c0cd45\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\09c9035e8a71229692e9647749796514\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\09b84b55f0b757fcbe8a9e44f24ff434\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\HOME\.gradle\caches\transforms-3\13ce31b8dfc952dc36f924e28f5b31ee\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\HOME\.gradle\caches\transforms-3\5b5089cee9c02b6e0672ea6daeb8c674\transformed\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\HOME\.gradle\caches\transforms-3\00fb337b0f7ee6dcbdb275c584deee86\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\863c5cc7e7b3acc6c54124da025c5510\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
+INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
 	package
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:3:5-32
-		INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
-		INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:3:5-32
+		INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
-		INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
+		INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
-		INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:2:1-62:12
+		INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:5:5-60:19
-MERGED from [com.google.android.material:material:1.3.0] C:\Users\HP\.gradle\caches\transforms-3\f816f1e5b3c2c515a288b8f8d6971daa\transformed\material-1.3.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.3.0] C:\Users\HP\.gradle\caches\transforms-3\f816f1e5b3c2c515a288b8f8d6971daa\transformed\material-1.3.0\AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\HP\.gradle\caches\transforms-3\de8110cf61235ca220c1425615edcdd3\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\HP\.gradle\caches\transforms-3\de8110cf61235ca220c1425615edcdd3\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
-MERGED from [androidx.core:core:1.3.1] C:\Users\HP\.gradle\caches\transforms-3\0ac091b6f9a2dee0e999ee1a77b495bc\transformed\core-1.3.1\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.3.1] C:\Users\HP\.gradle\caches\transforms-3\0ac091b6f9a2dee0e999ee1a77b495bc\transformed\core-1.3.1\AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\60f5157ea9e608ba0d901ea01668d4a8\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\60f5157ea9e608ba0d901ea01668d4a8\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:5:5-60:19
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\HOME\.gradle\caches\transforms-3\f816f1e5b3c2c515a288b8f8d6971daa\transformed\material-1.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\HOME\.gradle\caches\transforms-3\f816f1e5b3c2c515a288b8f8d6971daa\transformed\material-1.3.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\HOME\.gradle\caches\transforms-3\de8110cf61235ca220c1425615edcdd3\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\HOME\.gradle\caches\transforms-3\de8110cf61235ca220c1425615edcdd3\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.3.1] C:\Users\HOME\.gradle\caches\transforms-3\0ac091b6f9a2dee0e999ee1a77b495bc\transformed\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] C:\Users\HOME\.gradle\caches\transforms-3\0ac091b6f9a2dee0e999ee1a77b495bc\transformed\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\60f5157ea9e608ba0d901ea01668d4a8\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\60f5157ea9e608ba0d901ea01668d4a8\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.3.1] C:\Users\HP\.gradle\caches\transforms-3\0ac091b6f9a2dee0e999ee1a77b495bc\transformed\core-1.3.1\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.3.1] C:\Users\HOME\.gradle\caches\transforms-3\0ac091b6f9a2dee0e999ee1a77b495bc\transformed\core-1.3.1\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:7:9-37
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:7:9-37
 	android:allowBackup
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:11:9-45
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:11:9-45
 activity#com.ntsua.thelife.AiLaTrieuPhu_ing
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:12:9-53
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:12:9-53
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:12:19-51
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:12:19-51
 activity#com.ntsua.thelife.AiLaTrieuPhu
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:13:9-50
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:13:9-50
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:13:19-47
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:13:19-47
 activity#com.ntsua.thelife.Asset
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:14:9-52
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:14:9-52
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:14:19-40
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:14:19-40
 activity#com.ntsua.thelife.JobGiaoDuc
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:15:9-57
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:15:9-57
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:15:19-45
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:15:19-45
 activity#com.ntsua.thelife.JobYTe
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:16:9-44
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:16:9-44
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:16:19-41
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:16:19-41
 activity#com.ntsua.thelife.JobDienVien
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:17:9-49
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:17:9-49
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:17:19-46
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:17:19-46
 activity#com.ntsua.thelife.JobTaiChinh
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:18:9-49
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:18:9-49
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:18:19-46
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:18:19-46
 activity#com.ntsua.thelife.JobCongNghe
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:19:9-49
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:19:9-49
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:19:19-46
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:19:19-46
 activity#com.ntsua.thelife.JobDichVu
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:20:9-47
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:20:9-47
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:20:19-44
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:20:19-44
 activity#com.ntsua.thelife.JobAmThuc
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:21:9-47
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:21:9-47
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:21:19-44
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:21:19-44
 activity#com.ntsua.thelife.JobKinhDoanh
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:22:9-50
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:22:9-50
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:22:19-47
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:22:19-47
 activity#com.ntsua.thelife.JobQuanDoi
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:23:9-48
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:23:9-48
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:23:19-45
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:23:19-45
 activity#com.ntsua.thelife.JobBaoChi
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:24:9-47
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:24:9-47
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:24:19-44
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:24:19-44
 activity#com.ntsua.thelife.JobTaiXe
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:25:9-46
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:25:9-46
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:25:19-43
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:25:19-43
 activity#com.ntsua.thelife.JobCauThu
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:26:9-47
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:26:9-47
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:26:19-44
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:26:19-44
 activity#com.ntsua.thelife.JobCaSi
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:27:9-45
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:27:9-45
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:27:19-42
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:27:19-42
 activity#com.ntsua.thelife.ChuyenViec
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:28:9-48
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:28:9-48
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:28:19-45
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:28:19-45
 activity#com.ntsua.thelife.Shopping
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:29:9-46
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:29:9-46
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:29:19-43
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:29:19-43
 activity#com.ntsua.thelife.BoiToan
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:30:9-45
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:30:9-45
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:30:19-42
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:30:19-42
 activity#com.ntsua.thelife.MakeUp
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:31:9-44
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:31:9-44
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:31:19-41
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:31:19-41
 activity#com.ntsua.thelife.Cooking
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:32:9-45
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:32:9-45
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:32:19-42
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:32:19-42
 activity#com.ntsua.thelife.Startup
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:33:9-45
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:33:9-45
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:33:19-42
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:33:19-42
 activity#com.ntsua.thelife.Hospital
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:34:9-46
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:34:9-46
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:34:19-43
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:34:19-43
 activity#com.ntsua.thelife.SongKhac
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:35:9-46
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:35:9-46
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:35:19-43
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:35:19-43
 activity#com.ntsua.thelife.Travel
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:36:9-44
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:36:9-44
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:36:19-41
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:36:19-41
 activity#com.ntsua.thelife.Entertainment
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:37:9-51
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:37:9-51
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:37:19-48
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:37:19-48
 activity#com.ntsua.thelife.Degree
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:38:9-44
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:38:9-44
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:38:19-41
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:38:19-41
 activity#com.ntsua.thelife.Love
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:39:9-42
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:39:9-42
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:39:19-39
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:39:19-39
 activity#com.ntsua.thelife.Playground
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:40:9-48
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:40:9-48
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:40:19-45
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:40:19-45
 activity#com.ntsua.thelife.HoatDong
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:41:9-46
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:41:9-46
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:41:19-43
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:41:19-43
 activity#com.ntsua.thelife.CrimeActivity
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:42:9-51
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:42:9-51
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:42:19-48
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:42:19-48
 activity#com.ntsua.thelife.Tuong_tacActivity
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:43:9-55
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:43:9-55
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:43:19-52
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:43:19-52
 activity#com.ntsua.thelife.SportActivity
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:44:9-51
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:44:9-51
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:44:19-48
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:44:19-48
 activity#com.ntsua.thelife.RelationShip
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:45:9-50
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:45:9-50
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:45:19-47
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:45:19-47
 activity#com.ntsua.thelife.FoodActivity
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:46:9-50
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:46:9-50
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:46:19-47
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:46:19-47
 activity#com.ntsua.thelife.SelectGender
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:47:9-50
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:47:9-50
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:47:19-47
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:47:19-47
 activity#com.ntsua.thelife.CreateName
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:48:9-47
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:48:9-47
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:48:19-45
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:48:19-45
 activity#com.ntsua.thelife.MainActivity
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:49:9-55:20
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:49:9-55:20
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:49:19-47
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:49:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:50:13-54:29
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:50:13-54:29
 action#android.intent.action.MAIN
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:51:17-69
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:51:17-69
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:51:25-66
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:51:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:53:17-77
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:53:17-77
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:53:27-74
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:53:27-74
 meta-data#preloaded_fonts
-ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:57:9-59:57
+ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:57:9-59:57
 	android:resource
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:59:13-54
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:59:13-54
 	android:name
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:58:13-43
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml:58:13-43
 uses-sdk
-INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
-INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
-MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\HP\.gradle\caches\transforms-3\41402b38008d114c28bf22ecf2366e3f\transformed\jetified-android-gif-drawable-1.1.17\AndroidManifest.xml:7:5-9:41
-MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\HP\.gradle\caches\transforms-3\41402b38008d114c28bf22ecf2366e3f\transformed\jetified-android-gif-drawable-1.1.17\AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.navigation:navigation-ui:2.3.3] C:\Users\HP\.gradle\caches\transforms-3\e6347897547d6a2abeabc20d0c5d1536\transformed\navigation-ui-2.3.3\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-ui:2.3.3] C:\Users\HP\.gradle\caches\transforms-3\e6347897547d6a2abeabc20d0c5d1536\transformed\navigation-ui-2.3.3\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.material:material:1.3.0] C:\Users\HP\.gradle\caches\transforms-3\f816f1e5b3c2c515a288b8f8d6971daa\transformed\material-1.3.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.3.0] C:\Users\HP\.gradle\caches\transforms-3\f816f1e5b3c2c515a288b8f8d6971daa\transformed\material-1.3.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\HP\.gradle\caches\transforms-3\de8110cf61235ca220c1425615edcdd3\transformed\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\HP\.gradle\caches\transforms-3\de8110cf61235ca220c1425615edcdd3\transformed\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\HP\.gradle\caches\transforms-3\58cd43936856d4a1edea7db3fdacda42\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\HP\.gradle\caches\transforms-3\58cd43936856d4a1edea7db3fdacda42\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-fragment:2.3.3] C:\Users\HP\.gradle\caches\transforms-3\2ca6fcaeaef0b3a4d9e73c1f88bc7c53\transformed\navigation-fragment-2.3.3\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-fragment:2.3.3] C:\Users\HP\.gradle\caches\transforms-3\2ca6fcaeaef0b3a4d9e73c1f88bc7c53\transformed\navigation-fragment-2.3.3\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\9b4ca745e595de12e92d9afbe16ebef3\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\9b4ca745e595de12e92d9afbe16ebef3\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\HP\.gradle\caches\transforms-3\0adfbe46f1f46ca91aa41111b9b8391c\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\HP\.gradle\caches\transforms-3\0adfbe46f1f46ca91aa41111b9b8391c\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\43c1a72abd2458ce83dccf5316a3c81d\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\43c1a72abd2458ce83dccf5316a3c81d\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\58c67535187bbeb24bd74e1220447b9d\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\58c67535187bbeb24bd74e1220447b9d\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\8198b8dbfa8e422ebacbf2fc6ec121e3\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\8198b8dbfa8e422ebacbf2fc6ec121e3\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\b23fdcee76bb811e4bdc1820adc7f4ef\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\b23fdcee76bb811e4bdc1820adc7f4ef\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\d9e9367f0d6b3ce4f9646dc48c6ea681\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\d9e9367f0d6b3ce4f9646dc48c6ea681\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\4f8597a490042cb7a2445d6c201e5fa4\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\4f8597a490042cb7a2445d6c201e5fa4\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\HP\.gradle\caches\transforms-3\efdf2af0d09c3c43505b045fbd5238e0\transformed\fragment-1.2.4\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\HP\.gradle\caches\transforms-3\efdf2af0d09c3c43505b045fbd5238e0\transformed\fragment-1.2.4\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\HP\.gradle\caches\transforms-3\fb5d46379eea86e89a331adc0f971c36\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\HP\.gradle\caches\transforms-3\fb5d46379eea86e89a331adc0f971c36\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.3.0] C:\Users\HP\.gradle\caches\transforms-3\d0b53a876826544b73489d13e0ee56c5\transformed\transition-1.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.3.0] C:\Users\HP\.gradle\caches\transforms-3\d0b53a876826544b73489d13e0ee56c5\transformed\transition-1.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\768b435d4c32cf991f766b38d06f01d4\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\768b435d4c32cf991f766b38d06f01d4\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\04e179d593173158c1326c9c795103ea\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\04e179d593173158c1326c9c795103ea\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\4022c5dd115538b78423fc4bfbf57e19\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\4022c5dd115538b78423fc4bfbf57e19\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\2945c1f8c12b7ea705a2aa7000d1d574\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\2945c1f8c12b7ea705a2aa7000d1d574\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\dc7f17abacfaaaa1c8b54c8f9a074447\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\dc7f17abacfaaaa1c8b54c8f9a074447\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-runtime:2.3.3] C:\Users\HP\.gradle\caches\transforms-3\6eabb80fdebc3f236b91dd264730090c\transformed\navigation-runtime-2.3.3\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime:2.3.3] C:\Users\HP\.gradle\caches\transforms-3\6eabb80fdebc3f236b91dd264730090c\transformed\navigation-runtime-2.3.3\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\01dce207a4107206caaf47f99339f354\transformed\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\01dce207a4107206caaf47f99339f354\transformed\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common:2.3.3] C:\Users\HP\.gradle\caches\transforms-3\d573c1af7de444b01a908673f198e337\transformed\navigation-common-2.3.3\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common:2.3.3] C:\Users\HP\.gradle\caches\transforms-3\d573c1af7de444b01a908673f198e337\transformed\navigation-common-2.3.3\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.3.1] C:\Users\HP\.gradle\caches\transforms-3\0ac091b6f9a2dee0e999ee1a77b495bc\transformed\core-1.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.3.1] C:\Users\HP\.gradle\caches\transforms-3\0ac091b6f9a2dee0e999ee1a77b495bc\transformed\core-1.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\60f5157ea9e608ba0d901ea01668d4a8\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\HP\.gradle\caches\transforms-3\60f5157ea9e608ba0d901ea01668d4a8\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\HP\.gradle\caches\transforms-3\e514ae24e8f612d05065d276b93cd630\transformed\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\HP\.gradle\caches\transforms-3\e514ae24e8f612d05065d276b93cd630\transformed\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\HP\.gradle\caches\transforms-3\d2815d04ea7d4a1837e36dac16c1ca4a\transformed\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\HP\.gradle\caches\transforms-3\d2815d04ea7d4a1837e36dac16c1ca4a\transformed\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\b9906659d0d96fb43a251c06330b82ae\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\b9906659d0d96fb43a251c06330b82ae\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\HP\.gradle\caches\transforms-3\86970119f7686591b1fda27d134728c8\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\HP\.gradle\caches\transforms-3\86970119f7686591b1fda27d134728c8\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\6640915d742d4d26662acbf18c01209d\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\6640915d742d4d26662acbf18c01209d\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\a86e22fe3a6832d3890d46fff8c0cd45\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\a86e22fe3a6832d3890d46fff8c0cd45\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\09c9035e8a71229692e9647749796514\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\09c9035e8a71229692e9647749796514\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\09b84b55f0b757fcbe8a9e44f24ff434\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\09b84b55f0b757fcbe8a9e44f24ff434\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\HP\.gradle\caches\transforms-3\13ce31b8dfc952dc36f924e28f5b31ee\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\HP\.gradle\caches\transforms-3\13ce31b8dfc952dc36f924e28f5b31ee\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\HP\.gradle\caches\transforms-3\5b5089cee9c02b6e0672ea6daeb8c674\transformed\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\HP\.gradle\caches\transforms-3\5b5089cee9c02b6e0672ea6daeb8c674\transformed\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\HP\.gradle\caches\transforms-3\00fb337b0f7ee6dcbdb275c584deee86\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\HP\.gradle\caches\transforms-3\00fb337b0f7ee6dcbdb275c584deee86\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\863c5cc7e7b3acc6c54124da025c5510\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\863c5cc7e7b3acc6c54124da025c5510\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
-INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
-INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
+INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml
+INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\HOME\.gradle\caches\transforms-3\b161d7a65d3e020b4424e43d3fe4b1ba\transformed\jetified-android-gif-drawable-1.1.17\AndroidManifest.xml:7:5-9:41
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\HOME\.gradle\caches\transforms-3\b161d7a65d3e020b4424e43d3fe4b1ba\transformed\jetified-android-gif-drawable-1.1.17\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.navigation:navigation-ui:2.3.3] C:\Users\HOME\.gradle\caches\transforms-3\e6347897547d6a2abeabc20d0c5d1536\transformed\navigation-ui-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.3] C:\Users\HOME\.gradle\caches\transforms-3\e6347897547d6a2abeabc20d0c5d1536\transformed\navigation-ui-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\HOME\.gradle\caches\transforms-3\f816f1e5b3c2c515a288b8f8d6971daa\transformed\material-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\HOME\.gradle\caches\transforms-3\f816f1e5b3c2c515a288b8f8d6971daa\transformed\material-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\HOME\.gradle\caches\transforms-3\de8110cf61235ca220c1425615edcdd3\transformed\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\HOME\.gradle\caches\transforms-3\de8110cf61235ca220c1425615edcdd3\transformed\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\HOME\.gradle\caches\transforms-3\58cd43936856d4a1edea7db3fdacda42\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\HOME\.gradle\caches\transforms-3\58cd43936856d4a1edea7db3fdacda42\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.3] C:\Users\HOME\.gradle\caches\transforms-3\2ca6fcaeaef0b3a4d9e73c1f88bc7c53\transformed\navigation-fragment-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.3] C:\Users\HOME\.gradle\caches\transforms-3\2ca6fcaeaef0b3a4d9e73c1f88bc7c53\transformed\navigation-fragment-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\9b4ca745e595de12e92d9afbe16ebef3\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\9b4ca745e595de12e92d9afbe16ebef3\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\HOME\.gradle\caches\transforms-3\0adfbe46f1f46ca91aa41111b9b8391c\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\HOME\.gradle\caches\transforms-3\0adfbe46f1f46ca91aa41111b9b8391c\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\43c1a72abd2458ce83dccf5316a3c81d\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\43c1a72abd2458ce83dccf5316a3c81d\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\58c67535187bbeb24bd74e1220447b9d\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\58c67535187bbeb24bd74e1220447b9d\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\8198b8dbfa8e422ebacbf2fc6ec121e3\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\8198b8dbfa8e422ebacbf2fc6ec121e3\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\b23fdcee76bb811e4bdc1820adc7f4ef\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\b23fdcee76bb811e4bdc1820adc7f4ef\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\d9e9367f0d6b3ce4f9646dc48c6ea681\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\d9e9367f0d6b3ce4f9646dc48c6ea681\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\4f8597a490042cb7a2445d6c201e5fa4\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\4f8597a490042cb7a2445d6c201e5fa4\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\HOME\.gradle\caches\transforms-3\efdf2af0d09c3c43505b045fbd5238e0\transformed\fragment-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\HOME\.gradle\caches\transforms-3\efdf2af0d09c3c43505b045fbd5238e0\transformed\fragment-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\HOME\.gradle\caches\transforms-3\fb5d46379eea86e89a331adc0f971c36\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\HOME\.gradle\caches\transforms-3\fb5d46379eea86e89a331adc0f971c36\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] C:\Users\HOME\.gradle\caches\transforms-3\d0b53a876826544b73489d13e0ee56c5\transformed\transition-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] C:\Users\HOME\.gradle\caches\transforms-3\d0b53a876826544b73489d13e0ee56c5\transformed\transition-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\768b435d4c32cf991f766b38d06f01d4\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\768b435d4c32cf991f766b38d06f01d4\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\04e179d593173158c1326c9c795103ea\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\04e179d593173158c1326c9c795103ea\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\4022c5dd115538b78423fc4bfbf57e19\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\4022c5dd115538b78423fc4bfbf57e19\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\2945c1f8c12b7ea705a2aa7000d1d574\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\2945c1f8c12b7ea705a2aa7000d1d574\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\dc7f17abacfaaaa1c8b54c8f9a074447\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\dc7f17abacfaaaa1c8b54c8f9a074447\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.3.3] C:\Users\HOME\.gradle\caches\transforms-3\6eabb80fdebc3f236b91dd264730090c\transformed\navigation-runtime-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.3] C:\Users\HOME\.gradle\caches\transforms-3\6eabb80fdebc3f236b91dd264730090c\transformed\navigation-runtime-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\01dce207a4107206caaf47f99339f354\transformed\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\01dce207a4107206caaf47f99339f354\transformed\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.3] C:\Users\HOME\.gradle\caches\transforms-3\d573c1af7de444b01a908673f198e337\transformed\navigation-common-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.3] C:\Users\HOME\.gradle\caches\transforms-3\d573c1af7de444b01a908673f198e337\transformed\navigation-common-2.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] C:\Users\HOME\.gradle\caches\transforms-3\0ac091b6f9a2dee0e999ee1a77b495bc\transformed\core-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] C:\Users\HOME\.gradle\caches\transforms-3\0ac091b6f9a2dee0e999ee1a77b495bc\transformed\core-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\60f5157ea9e608ba0d901ea01668d4a8\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\HOME\.gradle\caches\transforms-3\60f5157ea9e608ba0d901ea01668d4a8\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\HOME\.gradle\caches\transforms-3\e514ae24e8f612d05065d276b93cd630\transformed\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\HOME\.gradle\caches\transforms-3\e514ae24e8f612d05065d276b93cd630\transformed\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\HOME\.gradle\caches\transforms-3\d2815d04ea7d4a1837e36dac16c1ca4a\transformed\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\HOME\.gradle\caches\transforms-3\d2815d04ea7d4a1837e36dac16c1ca4a\transformed\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\b9906659d0d96fb43a251c06330b82ae\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\b9906659d0d96fb43a251c06330b82ae\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\HOME\.gradle\caches\transforms-3\86970119f7686591b1fda27d134728c8\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\HOME\.gradle\caches\transforms-3\86970119f7686591b1fda27d134728c8\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\6640915d742d4d26662acbf18c01209d\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\6640915d742d4d26662acbf18c01209d\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\a86e22fe3a6832d3890d46fff8c0cd45\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\a86e22fe3a6832d3890d46fff8c0cd45\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\09c9035e8a71229692e9647749796514\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\09c9035e8a71229692e9647749796514\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\09b84b55f0b757fcbe8a9e44f24ff434\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\09b84b55f0b757fcbe8a9e44f24ff434\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\HOME\.gradle\caches\transforms-3\13ce31b8dfc952dc36f924e28f5b31ee\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\HOME\.gradle\caches\transforms-3\13ce31b8dfc952dc36f924e28f5b31ee\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\HOME\.gradle\caches\transforms-3\5b5089cee9c02b6e0672ea6daeb8c674\transformed\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\HOME\.gradle\caches\transforms-3\5b5089cee9c02b6e0672ea6daeb8c674\transformed\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\HOME\.gradle\caches\transforms-3\00fb337b0f7ee6dcbdb275c584deee86\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\HOME\.gradle\caches\transforms-3\00fb337b0f7ee6dcbdb275c584deee86\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\863c5cc7e7b3acc6c54124da025c5510\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\HOME\.gradle\caches\transforms-3\863c5cc7e7b3acc6c54124da025c5510\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml
+INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
-		INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
-		ADDED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
-		INJECTED from D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml
+		ADDED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Study\University\Sophomore\HK2\Nhap mon di dong\The-Life\app\src\main\AndroidManifest.xml

@@ -19,6 +19,17 @@ public class SaveGame {
         gson = new Gson();
     }
 
+    public void saveBirthDay(String day)
+    {
+        editor.putString("birth", day);
+        editor.commit();
+    }
+
+    public String getBirthDay()
+    {
+        return preferences.getString("birth", "0/0/0");
+    }
+
     public void saveAvatar(int id)
     {
         editor.putInt("avatar", id);

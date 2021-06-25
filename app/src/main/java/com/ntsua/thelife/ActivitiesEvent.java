@@ -145,7 +145,9 @@ public class ActivitiesEvent {
                 TextView txtMoney = activity.findViewById(R.id.textviewMoney);
                 txtMoney.setText(MainActivity.saveGame.getMoney() + " VND");
                 dialog.dismiss();
-                if (isNewFriend())
+                if (MainActivity.saveGame.getHealth() <= 0)
+                    MainActivity.checkMySelf(context, "\"Qua đời vì sức khỏe yếu kéo dài, không chịu nổi những biến cố trong cuộc sống\"");
+                else if (isNewFriend())
                 {
                     newFriend();
                 }

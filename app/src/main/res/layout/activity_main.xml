@@ -93,7 +93,7 @@
                 android:layout_below="@id/textviewMoney"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="10dp"
-                android:text="Bank Balance" />
+                android:text="Tài khoản" />
         </RelativeLayout>
     </LinearLayout>
 

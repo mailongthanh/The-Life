@@ -14,6 +14,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.drawable.Animatable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.media.Image;
@@ -31,6 +32,8 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -131,7 +134,8 @@ public class MainActivity extends AppCompatActivity {
         //createNotification(R.drawable.holding_hands, "Bạn đã có bằng tiếng anh rồi Bạn đã có bằng tiếng anh rồi Bạn đã có bằng tiếng anh rồi", this);
 
         //dialogUniversity();
-
+//        saveGame.saveAge(17);
+//        saveGame.savePlayerInfo(100, 100, 60, 100);
     }
 
     void dialogJob(JSONArray arrJob) throws JSONException {
@@ -160,6 +164,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
+        Button btn = addButton(dialogCustom, "Bỏ qua");
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
         dialog.show();
     }
 
@@ -176,8 +187,16 @@ public class MainActivity extends AppCompatActivity {
 
         if (age == 18)
         {
+            addAgeHTML(18);
             dialogUniversity();
+            return;
         }
+//        if (age == 6)
+//        {
+//            saveGame.saveJob("Học sinh");
+//            //Change work
+//            txtContent.setText("Học sinh");
+//        }
         //lay su kien tuoi
         JSONArray arrAge = arrJsonAge.getJSONArray(age);
         Random random = new Random();
@@ -339,10 +358,11 @@ public class MainActivity extends AppCompatActivity {
         btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                checkMySelf();
                 dialog.dismiss();
                 try {
-                    if (isAgeEvent)
+                    if (saveGame.getHealth() <= 0)
+                        checkMySelf(MainActivity.this, "\"Qua đời vì sức khỏe yếu kéo dài, không chịu nổi những biến cố trong cuộc sống\"");
+                    else if (isAgeEvent)
                         initNewAge();
                     else jobEvent();
                 } catch (JSONException e) {
@@ -382,19 +402,84 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    void checkMySelf()
+    static public void checkMySelf(Context context, String content)
     {
-        if (prbHealth.getProgress() <= 0)
+        if (saveGame.getHealth() <= 0)
         {
-            createNotification(R.drawable.cancel, "Bạn đã qua đời vì sức khỏe quá yếu", this);
+            Dialog dialog = createNotification(R.drawable.cancel, "Bạn đã qua đời vì sức khỏe quá yếu", context);
             //gọi acitvity died
+            Button btn = dialog.findViewById(R.id.buttonNotificationtOke);
+            btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    dialog.dismiss();
+                    Dialog death = new Dialog(context);
+                    death.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                    death.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                    death.setContentView(R.layout.dialog_death);
+                    death.setCanceledOnTouchOutside(false);
+                    death.getWindow().getAttributes().windowAnimations = R.style.DialogResultAnimation;
+                    death.setOnKeyListener(new DialogInterface.OnKeyListener() {
+                        @Override
+                        public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
+                            if (keyCode == KeyEvent.KEYCODE_BACK)
+                            {
+                                return true;
+                            }
+                            return false;
+                        }
+                    });
+
+                    //Ánh xạ
+                    ImageView imgAvatar = death.findViewById(R.id.imvBoy);
+                    ImageView imgFlower = death.findViewById(R.id.imvFlower);
+                    TextView txtName = death.findViewById(R.id.tvTen);
+                    TextView txtAge = death.findViewById(R.id.tvTuoi);
+                    TextView txtBorn = death.findViewById(R.id.tvNgaysinh);
+                    TextView txtCountry = death.findViewById(R.id.tvQuequan);
+                    TextView txtJob = death.findViewById(R.id.tvNghenghiep);
+                    TextView txtAsset = death.findViewById(R.id.tvTaisan);
+                    TextView txtContent = death.findViewById(R.id.tvNoiDung);
+
+                    //Gán giá trị
+                    imgAvatar.setImageResource(saveGame.getAvatar());
+                    txtName.setText(saveGame.getName());
+                    txtAge.setText("Hưởng thọ: " + saveGame.getAge() + " tuổi");
+                    txtBorn.setText("Ngày sinh: " + saveGame.getBirthDay());
+                    txtCountry.setText("Quê quá: Vietnam");
+                    txtJob.setText("Nghề nghiệp: " + saveGame.getJob());
+                    txtAsset.setText("Số tiền để lại: " + String.format( "%,d", saveGame.getMoney()*1000) + " VND");
+                    txtContent.setText(content);
+                    saveGame.saveDetailActivity(""); //Reset hoat dong
+
+                    imgFlower.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            //Hieu ung
+                            Animation anim = AnimationUtils.loadAnimation(context, R.anim.flower);
+                            v.startAnimation(anim);
+
+                            Handler handler = new Handler();
+                            handler.postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    context.startActivity(new Intent(context, MainActivity.class));
+                                }
+                            }, 2300);
+                        }
+                    });
+
+                    death.show();
+                }
+            });
             return;
         }
-        if (prbHappy.getProgress() < 30)
+        if (saveGame.getHappy() < 30)
         {
-            createNotification(R.drawable.heartbeat, "Bạn có dấu hiệu bị trầm cảm, tốt nhất nên đến bác sĩ để chưa trị", this);
+            createNotification(R.drawable.heartbeat, "Bạn có dấu hiệu bị trầm cảm, tốt nhất nên đến bác sĩ để chưa trị", context);
         }
     }
+
 
     void dialogJobEvent(String title) throws JSONException {
         //Toast.makeText(this, "ssdfsgsdgsdgd", Toast.LENGTH_LONG).show();
@@ -471,7 +556,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (!finalIsOwn)
-                    createNotification(R.drawable.cancel, "Bạn đã sở hữu mòn đồ này đâu mà đồng ý!!!", MainActivity.this);
+                    createNotification(R.drawable.cancel, "Bạn đã sở hữu món đồ này đâu mà đồng ý!!!", MainActivity.this);
                 else {
                     try {
                         JSONArray arr = arrSelect.getJSONArray(0);
@@ -503,29 +588,7 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
     }
 
-    void DialogDeath()
-    {
-            Dialog dialog = new Dialog(this);
-            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            dialog.setContentView(R.layout.dialog_death);
-            dialog.setCanceledOnTouchOutside(false);
-            dialog.getWindow().getAttributes().windowAnimations = R.style.DialogResultAnimation;
 
-            //Ánh xạ
-            ImageView imvavatar = findViewById(R.id.imvBoy);
-            ImageView imvflower = findViewById(R.id.imvFlower);
-            TextView tvname = findViewById(R.id.tvTen);
-            TextView tvage = findViewById(R.id.tvTuoi);
-            TextView tvborn = findViewById(R.id.tvNgaysinh);
-            TextView tvcountry = findViewById(R.id.tvQuequan);
-            TextView tvjob = findViewById(R.id.tvNghenghiep);
-            TextView tvasset = findViewById(R.id.tvTaisan);
-            TextView tvcontent = findViewById(R.id.tvNoiDung);
-
-            //Gán giá trị
-            dialog.show();
-    }
 
     void jobEvent() throws JSONException {
         int currentSkill = saveGame.getSkill();
@@ -710,9 +773,11 @@ public class MainActivity extends AppCompatActivity {
             arrFriend.add(new QuanHe(name, age, new Random().nextInt(30) + 30,
                     NameOfRelationship.Friend, getResources().getIdentifier(avatar, "drawable", this.getPackageName()), isBoy));
         }
+        setPeopleAvatar(arrFriend);
     }
 
     void readJob() throws JSONException {
+
         String jsonEvent = null;
         try {
             InputStream inputStream = getAssets().open("job.json");
@@ -778,7 +843,6 @@ public class MainActivity extends AppCompatActivity {
                 jsonJob = jsonAllJob.getJSONObject("student");
                 break;
         }
-
     }
 
     // init tam thoi
@@ -804,10 +868,10 @@ public class MainActivity extends AppCompatActivity {
         //Tao quan he Bo Me
         String fatherName = arrFather.getString(random.nextInt(arrFather.length()));
         int fatherAge = (random.nextInt(11) + 20);
-        QuanHe father = new QuanHe(fatherName, fatherAge, 100, NameOfRelationship.Dad, R.drawable.boy, true); //Thay hinh sau
+        QuanHe father = new QuanHe(fatherName, fatherAge, 100, NameOfRelationship.Dad, R.drawable.boy_5, true); //Thay hinh sau
         String motherName = arrMother.getString(random.nextInt(arrMother.length()));
         int motherAge = (random.nextInt(11) + 20);
-        QuanHe mother = new QuanHe(motherName, motherAge, 100, NameOfRelationship.Mom, R.drawable.girl, false); //Thay hinh sau
+        QuanHe mother = new QuanHe(motherName, motherAge, 100, NameOfRelationship.Mom, R.drawable.girl_5, false); //Thay hinh sau
 
         ArrayList<QuanHe> arrRelationship = new ArrayList<>();
         arrRelationship.add(father);
@@ -851,6 +915,7 @@ public class MainActivity extends AppCompatActivity {
         imgAvatar.setImageResource(avatarID);
         saveGame.saveAvatar(avatarID);
         saveGame.saveAge(0);
+        saveGame.saveBirthDay(format.format(date));
         saveGame.saveMoney(50000);
         saveGame.saveDetailActivity(contentHtml);
         saveGame.saveName(name);
@@ -887,13 +952,13 @@ public class MainActivity extends AppCompatActivity {
         saveGame.savePlayerInfo(prbHappy.getProgress(), prbHealth.getProgress(), prbSmart.getProgress(), prbAppearance.getProgress());
 
         ArrayList<Sick> arrSick = new ArrayList<>();
-        arrSick.add( new Sick(true, "đau răng", "Nha sĩ", "nhasi"));
-        arrSick.add(  new Sick(true, "đau mắt", "Bác sĩ mắt", "mat"));
-        arrSick.add(  new Sick(false, "tai mũi họng", "Bác sĩ tai mũi họng", "taimuihong"));
-        arrSick.add(  new Sick(false, "mẫn ngứa", "Bác sĩ da liễu", "dalieu"));
-        arrSick.add(  new Sick(false, "cảm","Bác sĩ cảm sốt", "camsot"));
-        arrSick.add(  new Sick(false, "trĩ", "Bác sĩ trĩ", "tri"));
-        arrSick.add(  new Sick(false, "sốt xuất huyết", "Bác sĩ cảm sốt", "sotxuathuyet"));
+        arrSick.add( new Sick(false, "đau răng", "Nha sĩ", "nhasi", 10));
+        arrSick.add(  new Sick(false, "đau mắt", "Bác sĩ mắt", "mat", 10));
+        arrSick.add(  new Sick(false, "tai mũi họng", "Bác sĩ tai mũi họng", "taimuihong", 100));
+        arrSick.add(  new Sick(false, "mẫn ngứa", "Bác sĩ da liễu", "dalieu", 10));
+        arrSick.add(  new Sick(false, "cảm","Bác sĩ cảm sốt", "camsot", 20));
+        arrSick.add(  new Sick(false, "trĩ", "Bác sĩ trĩ", "tri", 30));
+        arrSick.add(  new Sick(false, "sốt xuất huyết", "Bác sĩ cảm sốt", "sotxuathuyet", 100));
 
         saveGame.saveSick(arrSick);
     }
@@ -926,6 +991,7 @@ public class MainActivity extends AppCompatActivity {
         saveGame.saveRauCu(0);
         saveGame.saveKeo(0);
         saveGame.saveFastFood(0);
+<<<<<<< HEAD
         saveGame.saveCrime(0);
         int health = saveGame.getHealth();
         if (prbHappy.getProgress() < 30)
@@ -937,6 +1003,8 @@ public class MainActivity extends AppCompatActivity {
         prbHealth.setProgress(health);
         txtHealth.setText(prbHealth.getProgress() + "%");
         changeProgressBackground(prbHealth);
+=======
+>>>>>>> da99362ed0277c2cb239de6cdf15e95b85e4a24a
 
         for (int i=0; i<arrRelationship.size(); i++)
         {
@@ -950,10 +1018,89 @@ public class MainActivity extends AppCompatActivity {
                 arrRelationship.get(i).setDoThanMat(friend.getDoThanMat() - 20); //Giam moi quan he
             }
         }
-
+        setPeopleAvatar(arrRelationship);
         saveGame.saveRelationship(arrRelationship);
+
+        for (int i=0; i<arrFriend.size(); i++)
+        {
+            arrFriend.get(i).setTuoi(arrFriend.get(i).getTuoi() + 1);
+        }
+        setPeopleAvatar(arrFriend);
+
         setAvatar();
         dialogLostFriend(0);
+
+        //xet suc khoe
+        int health = saveGame.getHealth();
+        if (prbHappy.getProgress() < 30) //Kiem tra xem co van de ve tam li hay khong (happy<30)
+        {
+            health -= (30 - prbHappy.getProgress());
+        }
+        health -= (int) (saveGame.getAge() / 4); //Tru suc khoe theo do tuoi, tuoi cang cao tru cang nhieu
+        String reason = "";
+        if (health <=0 )
+            reason = "\"Qua đời vì tuổi già sức yếu\"";
+        else {
+            ArrayList<Sick> arrSick = saveGame.getSick(); //Kiem tra co benh ma khong chua hay khong
+            for (int i = 0; i < arrSick.size(); i++) {
+                if (arrSick.get(i).isSick()) {
+                    health -= arrSick.get(i).getHealth();
+                }
+            }
+            if (health <=0 )
+                reason = "\"Qua đời vì sức khỏe yếu kéo dài, bệnh tật không được chữa trị kịp thời\"";
+        }
+        //Luu suc khoe lai
+        saveGame.savePlayerInfo(saveGame.getHappy(), health, saveGame.getSmart(), saveGame.getAppearance());
+        prbHealth.setProgress(health);
+        txtHealth.setText(prbHealth.getProgress() + "%");
+        changeProgressBackground(prbHealth);
+        checkMySelf(this, reason);
+    }
+
+    void setPeopleAvatar(ArrayList<QuanHe> array)
+    {
+        for (int i=0; i<array.size(); i++) {
+            QuanHe quanHe = array.get(i);
+            int id = quanHe.HinhAnh;
+            if (quanHe.isBoy()) //Boy
+            {
+                if (quanHe.getTuoi() >= 60) id = R.drawable.boy_8;
+                else if (quanHe.getTuoi() >= 40) {
+                    id = R.drawable.boy_7;
+                } else if (quanHe.getTuoi() >= 30) {
+                    id = R.drawable.boy_6;
+                } else if (quanHe.getTuoi() >= 20) {
+                    id = R.drawable.boy_5;
+                } else if (quanHe.getTuoi() >= 15) {
+                    id = R.drawable.boy_4;
+                } else if (quanHe.getTuoi() >= 10) {
+                    id = R.drawable.boy_3;
+                } else if (quanHe.getTuoi() >= 5) {
+                    id = R.drawable.boy_2;
+                } else if (quanHe.getTuoi() >= 2) {
+                    id = R.drawable.boy;
+                }
+            } else {
+                if (quanHe.getTuoi() >= 60) id = R.drawable.girl_8;
+                else if (quanHe.getTuoi() >= 40) {
+                    id = R.drawable.girl_7;
+                } else if (quanHe.getTuoi() >= 30) {
+                    id = R.drawable.girl_6;
+                } else if (quanHe.getTuoi() >= 20) {
+                    id = R.drawable.girl_5;
+                } else if (quanHe.getTuoi() >= 15) {
+                    id = R.drawable.girl_4;
+                } else if (quanHe.getTuoi() >= 10) {
+                    id = R.drawable.girl_3;
+                } else if (quanHe.getTuoi() >= 5) {
+                    id = R.drawable.girl_2;
+                } else if (quanHe.getTuoi() >= 2) {
+                    id = R.drawable.girl;
+                }
+            }
+            quanHe.setHinhAnh(id);
+        }
     }
 
     void setAvatar()
@@ -1098,30 +1245,40 @@ public class MainActivity extends AppCompatActivity {
         ListView lvUni = dialog.findViewById(R.id.listViewUni);
         ArrayList<University> arrUniversity = new ArrayList<>();
 
-        arrUniversity.add(new University(R.drawable.angiang, "Đại học An Giang", 40));
-        arrUniversity.add(new University(R.drawable.uit, "Đại học Công nghệ Thông tin", 60));
-        arrUniversity.add(new University(R.drawable.fpt, "Đại học FPT", 40));
-        arrUniversity.add(new University(R.drawable.bachkhoa, "Đại học Bách Khoa", 60));
-        arrUniversity.add(new University(R.drawable.hoasen, "Đại học Hoa Sen", 50));
-        arrUniversity.add(new University(R.drawable.yduoc, "Đại học Y Dược", 55));
-        arrUniversity.add(new University(R.drawable.cantho, "Đại học Cần Thơ", 45));
-        arrUniversity.add(new University(R.drawable.rmit, "Đại học RMIT", 55));
-        arrUniversity.add(new University(R.drawable.ngoaithuong, "Đại học Ngoại thương", 55));
-        arrUniversity.add(new University(R.drawable.kinhte, "Đại học Kinh tế", 55));
-        arrUniversity.add(new University(R.drawable.supham, "Đại học Sư phạm", 45));
-        arrUniversity.add(new University(R.drawable.suphamkithuat, "Đại học Sư phạm Kĩ thuật", 55));
-        arrUniversity.add(new University(R.drawable.tonducthang, "Đại học Tôn Đức Thắng", 55));
-
+        arrUniversity.add(new University(R.drawable.angiang, "Đại học An Giang", 1, 40));
+        arrUniversity.add(new University(R.drawable.uit, "Đại học Công nghệ Thông tin", 5,60));
+        arrUniversity.add(new University(R.drawable.fpt, "Đại học FPT", 1, 40));
+        arrUniversity.add(new University(R.drawable.bachkhoa, "Đại học Bách Khoa", 5, 60));
+        arrUniversity.add(new University(R.drawable.hoasen, "Đại học Hoa Sen", 3, 50));
+        arrUniversity.add(new University(R.drawable.yduoc, "Đại học Y Dược", 4, 55));
+        arrUniversity.add(new University(R.drawable.cantho, "Đại học Cần Thơ", 2, 45));
+        arrUniversity.add(new University(R.drawable.rmit, "Đại học RMIT", 4, 55));
+        arrUniversity.add(new University(R.drawable.ngoaithuong, "Đại học Ngoại thương", 4, 55));
+        arrUniversity.add(new University(R.drawable.kinhte, "Đại học Kinh tế", 4, 55));
+        arrUniversity.add(new University(R.drawable.supham, "Đại học Sư phạm", 2, 45));
+        arrUniversity.add(new University(R.drawable.suphamkithuat, "Đại học Sư phạm Kĩ thuật", 4, 55));
+        arrUniversity.add(new University(R.drawable.tonducthang, "Đại học Tôn Đức Thắng", 4, 55));
+        arrUniversity.add(new University(R.drawable.cancel, "Không học", 0, 0));
         UniversityAdapter adapter = new UniversityAdapter(this, R.layout.university_line, arrUniversity);
         lvUni.setAdapter(adapter);
 
-//        for (int i=0; i<5; i++)
-//        {
-//            if (arrUniversity.get(i).getScore() < 55)
-//            {
-//                lvUni.getChildAt(i).setBackgroundColor(Color.RED);//R.drawable.list_item_unable);
-//            }
-//        }
+        lvUni.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (arrUniversity.get(position).getName().equals("Không học")){
+                    contentHtml += "Bạn quyết định không học đại học<br/>";
+                    saveGame.saveJob("Thất nghiệp");
+                }
+                else {
+                    contentHtml += "Bạn chọn vào học tại trường " + arrUniversity.get(position).getName() + "<br/>";
+                    saveGame.saveJob("Sinh viên");
+                }
+                saveGame.saveDetailActivity(contentHtml);
+                txtContent.setText(android.text.Html.fromHtml(contentHtml));
+                txtJob.setText(saveGame.getJob());
+                dialog.dismiss();
+            }
+        });
 
         dialog.show();
     }
