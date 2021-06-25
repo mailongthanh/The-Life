@@ -183,7 +183,7 @@ public class Shopping extends AppCompatActivity {
                     arrAsset.add(arrProduct.get(position));
                     MainActivity.saveGame.saveAsset(arrAsset);
                     loadGame();
-                    Toast.makeText(Shopping.this, "Bạn đã mua thành công", Toast.LENGTH_SHORT).show();
+                    MainActivity.createNotification(R.drawable.payment,"Thanh toán thành công", Shopping.this);
                 } else createDialogOFM();
             }
         });

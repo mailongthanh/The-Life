@@ -23,7 +23,7 @@
         android:textColor="@color/Blue"
         android:textStyle="bold"
         android:layout_toRightOf="@id/imageviewUni"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="50dp"
         android:layout_centerVertical="true"/>
 
 </RelativeLayout>

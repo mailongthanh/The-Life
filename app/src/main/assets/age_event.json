@@ -6,7 +6,7 @@
         {"content": "Cắn bác sĩ", "selection":false,
           "event": [
             { "event" :"Dù được bố mẹ khuyến khích đưa đi tiêm, nhưng đứng trước mũi tiêm, bạn cắn bác sĩ và từ chối tiêm ngừa. \nBạn có nguy cơ mắc bệnh", "assets": 0, "happy": 0, "health": -5, "smart":-3, "appearance": 0, "sick": ""},
-            { "event" :"Dù được bố mẹ đưa đi tiêm ở bệnh viện huyện, nhưng trước mũi tiêm bạn quyết định cắn bác sĩ. \nBố mẹ bạn bắt đầu trở trên gay gắt hơn và ép bạn tiêm", "assets": 0, "happy": -5, "health": -5, "smart":0, "appearance": 0, "sick": ""}
+            { "event" :"Dù được bố mẹ đưa đi tiêm ở bệnh viện huyện, nhưng trước mũi tiêm bạn quyết định cắn bác sĩ. \nBố mẹ bạn bắt đầu trở nên gay gắt hơn và ép bạn tiêm", "assets": 0, "happy": -5, "health": -5, "smart":0, "appearance": 0, "sick": ""}
           ]},
         {"content": "Khóc, không muốn tiêm", "selection":false,
           "event":[
@@ -108,7 +108,7 @@
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
   ],
   [
-    {"title":"Đời sống học đường", "event": "Bạn đang bị một đám ức hiếp trong lớp \n\nBạn muốn làm gì ? ", "selection": true,
+    {"title":"Học đường", "event": "Bạn đang bị một đám ức hiếp trong lớp \n\nBạn muốn làm gì ? ", "selection": true,
       "select":[
         {"content": "Đấm trả", "selection":false,
           "event": [
@@ -133,11 +133,11 @@
   ],
   [],
   [
-    {"title": "Bản tin thời sự", "event": "Một trận sóng thần không lường trước được đã tàn phá hoạt động kinh doanh ở Nhật Bản, giết chết 15.893 người và gây ra thiệt hại không thể phục hồi cho các khu vực xung quanh",
+    {"title": "Thời sự", "event": "Một trận sóng thần không lường trước được đã tàn phá hoạt động kinh doanh ở Nhật Bản, giết chết 15.893 người và gây ra thiệt hại không thể phục hồi cho các khu vực xung quanh",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
     {"title": "Kiến thức","event": "Hôm nay bạn xem trên tivi, bạn biết được rằng: \n\nKhông bao gồm hình ảnh, chỉ riêng phần nội dung chữ của ngôn ngữ tiếng Anh trên wikipedia đã chiếm khoảng 14GB.",
       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""},
-    {"title": "Bản tin thời sự", "event": "\nTính tới thời điềm này, trên thế giới đã có tổng số ca nhiễm Covid lên tới 173.036.310 ca.",
+    {"title": "Thời sự", "event": "\nTính tới thời điềm này, trên thế giới đã có tổng số ca nhiễm Covid lên tới 173.036.310 ca.",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
   ],
   [
@@ -208,7 +208,7 @@
       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""}
   ],
   [
-    {"title":"Đời sống học đường", "event": "Trên đường đến trường, bạn phát hiện một đám côn đồ đang vây quanh trấn lột bạn thân của mình \n\nBạn muốn làm gì ? ", "selection": true,
+    {"title":"Học đường", "event": "Trên đường đến trường, bạn phát hiện một đám côn đồ đang vây quanh trấn lột bạn thân của mình \n\nBạn muốn làm gì ? ", "selection": true,
       "select":[
         {"content": "Giải cứu bạn mình", "selection":false,
           "event": [
@@ -224,7 +224,7 @@
       ]}
   ],
   [
-    {"title":"Thi tuyển sinh 10", "event": "Bàn tay ta làm nên tất cả\n\nCó sức người sỏi đá cũng thành công.\n\nHãy chỉ ra BPTT trong câu ? ", "selection": true,
+    {"title":"Thi tuyển 10", "event": "Bàn tay ta làm nên tất cả\n\nCó sức người sỏi đá cũng thành công.\n\nHãy chỉ ra BPTT trong câu ? ", "selection": true,
       "select":[
         {"content": "A. Ẩn dụ", "selection":false,
           "event": [
@@ -243,7 +243,7 @@
             {"event": "Bạn đã chọn đáp án chính xác trong bài thi, bạn là thủ khoa đầu vào của trường THPT", "assets": 500, "happy": 10, "health": 0, "smart":5, "appearance": 0, "sick": ""}
           ]}
       ]},
-    {"title":"Thi tuyển sinh 10", "event": "Giải phương trình: 2x^2 – 7x + 3 = 0  ? ", "selection": true,
+    {"title":"Thi tuyển 10", "event": "Giải phương trình: 2x^2 – 7x + 3 = 0  ? ", "selection": true,
       "select":[
         {"content": "A. x1 = 3, x2 = 0.5", "selection":false,
           "event": [
@@ -388,7 +388,7 @@
   [
     {"title": "Kiến thức","event": "Hôm nay bạn đọc được một bài báo hay, bạn biết được rằng: \n\nBụi trong nhà không phải từ tế bào chết trong cơ thể người ra như nhiều người vẫn lầm tưởng, thực tế chúng do chính con người mang từ ngoài đường về.",
       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""},
-    {"title": "Bản tin thời sự", "event": "\n\n Một cuộc tấn công khủng bố ở Israel đã cướp đi sinh mạng của hơn 1239 người vô tội",
+    {"title": "Thời sự", "event": "\n\n Một cuộc tấn công khủng bố ở Israel đã cướp đi sinh mạng của hơn 1239 người vô tội",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
   ],
   [
@@ -410,13 +410,13 @@
       "selection": false,"assets": 0, "happy": 0, "health": -10, "smart":3, "appearance": 0, "sick": "cảm"}
   ],
   [
-    {"title": "Sức khoẻ","event": "Bạn đã bị sốt xuất huyết, nhanh chóng gặp bác sĩ dể điều trị",
+    {"title": "Sức khoẻ","event": "Bạn đã bị sốt xuất huyết, nhanh chóng gặp bác sĩ để điều trị",
       "selection": false,"assets": 0, "happy": 0, "health": -30, "smart":0, "appearance": 0, "sick": "sốt xuất huyết"},
     {"title": "Đời sống","event": "Bạn bị kẻ gian móc túi khi mua sắm tại một siêu thị gần chỗ ở",
       "selection": false,"assets": -500, "happy": -3, "health": 0, "smart":0, "appearance": 0, "sick": ""}
   ],
   [
-    {"title": "Bản tin thời sự", "event": "\n\n\nMột bức tượng được tạo ra bởi nghệ sĩ nổi tiếng thế giới, Jakiliam, đã vỡ vụn ngay sau khi được mua với giá 500 triệu tại một cuộc đấu giá nghệ thuật ở Mỹ.",
+    {"title": "Thời sự", "event": "\n\n\nMột bức tượng được tạo ra bởi nghệ sĩ nổi tiếng thế giới, Jakiliam, đã vỡ vụn ngay sau khi được mua với giá 500 triệu tại một cuộc đấu giá nghệ thuật ở Mỹ.",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
     {"title": "Kiến thức","event": "Hôm nay bạn nghe được một điều thú vị, bạn biết được rằng: \n\nNếu như mắt của con người là một chiếc camera thì độ phân giải của nó khoảng 576 megapixel",
       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""}
@@ -425,7 +425,7 @@
   [], //30
   [],
   [
-    {"title": "Bản tin thời sự", "event": "\n\nMột cơn sóng thần cao chót vót ập vào bờ biển của Nhật Bản. Hơn 170 người không thể thoát ra khỏi",
+    {"title": "Thời sự", "event": "\n\nMột cơn sóng thần cao chót vót ập vào bờ biển của Nhật Bản. Hơn 170 người không thể thoát ra khỏi",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
     {"title": "Sức khoẻ","event": "Bạn đã bị đau mỏi lưng",
       "selection": false,"assets": 0, "happy": 0, "health": -10, "smart":0, "appearance": 0, "sick": ""}
@@ -445,15 +445,15 @@
             { "event": "Bạn quyết định phớt lờ đứa bé", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
           ]}
       ]},
-    {"title": "Bản tin thời sự", "event": "\n\nViệt nam lần đầu tiên phóng thành công tàu Chú Cuội đưa người lên mặt trăng, đặt viên gạch đầu cho con đường theo đuổi vũ trụ cùng các cường quốc khác",
+    {"title": "Thời sự", "event": "\n\nViệt nam lần đầu tiên phóng thành công tàu Chú Cuội đưa người lên mặt trăng, đặt viên gạch đầu cho con đường theo đuổi vũ trụ cùng các cường quốc khác",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
-    {"title": "Bản tin thời sự", "event": "\n\nMột nhà máy sản xuất chất nổ ở Trung Quốc phát nổ giết chết hơn 1000 công nhân và làm chết hơn 50 người gần đó",
+    {"title": "Thời sự", "event": "\n\nMột nhà máy sản xuất chất nổ ở Trung Quốc phát nổ giết chết hơn 1000 công nhân và làm chết hơn 50 người gần đó",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
   ],
   [
     {"title": "Sức khoẻ","event": "Bạn đã bị trĩ, nhanh chóng đến bệnh viện điều trị",
       "selection": false,"assets": 0, "happy": 0, "health": -30, "smart":0, "appearance": 0, "sick": "trĩ"},
-    {"title": "Bản tin thời sự", "event": "\n\n\nMáy tính ở Mỹ phát triển đến mức tự có nhận thức, đã vung lên tấn công công nhân tại. Trận chiến sau đó cướp đi sinh mạng của 150 con người và tiêu diệt 50 robot.",
+    {"title": "Thời sự", "event": "\n\n\nMáy tính ở Mỹ phát triển đến mức tự có nhận thức, đã vung lên tấn công công nhân tại. Trận chiến sau đó cướp đi sinh mạng của 150 con người và tiêu diệt 50 robot.",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
   ]
 ]

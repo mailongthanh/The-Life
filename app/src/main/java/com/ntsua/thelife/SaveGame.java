@@ -59,6 +59,11 @@ public class SaveGame {
         editor.commit();
     }
 
+    public void saveCrime(int time) {
+        editor.putInt("crime",time);
+        editor.commit();
+    }
+
     public void saveNewFriendInYear(int friend)
     {
         editor.putInt("friend", friend);
@@ -312,6 +317,11 @@ public class SaveGame {
     public int getJogging()
     {
         return preferences.getInt("jogging", 0);
+    }
+
+    public int getCrime()
+    {
+        return preferences.getInt("crime", 0);
     }
 
     public int getTuVi()

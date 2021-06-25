@@ -1,0 +1,108 @@
+{
+  "Móc túi": [
+    {"event": "Bạn lượn 1 vòng công viên, bạn móc được 1 vài chiếc smartphone của người đi đường", "asset":"", "selection": false, "assets": 1000, "happy": 5, "health": 0, "smart":0, "appearance": -5},
+    {"event": "Bạn lượn 1 vòng thành phố, bạn chuẩn bị móc túi của một người đi đường thì bị anh ta tóm được, bạn bị đấm cho mấy phát nhưng may mắn bạn chạy trốn được", "asset":"","selection": false, "assets": 0, "happy": -15, "health": -20, "smart":0, "appearance": -5},
+    {"event": "Bạn giả vờ vấp ngã, nhờ người khác đỡ dậy, bạn lợi dụng lúc họ sơ ý bạn móc được ví của họ", "asset":"", "selection": false, "assets": 3000, "happy": 5, "health": 0, "smart":0, "appearance": -5},
+    {"event": "Bạn bị bắt gặp là đang móc ví, đối phương doạ là sẽ báo cảnh sát bắt bạn, bạn có muốn trừ khử người này không ?", "asset":"dao", "name": "dao","selection": true,
+      "select":[
+        [
+          {"event": "Sau khi thủ tiêu đối phương, bạn đã giấu ở một nơi trời không biết đất không hay, và do đối phương là một người cô độc, chỉ còn 1 mình trên đời nên không một ai biết bạn đã làm gì","prison":false, "assets": 100000, "happy": -50, "health": -20, "smart":0, "appearance": -10},
+          {"event": "Sau khi thủ tiêu đối phương, bạn bắt đầu trở nên ân hận vì tội lỗi mà mình gây ra, bạn bị ám ảnh với tội ác của mình, cuối cùng kết thúc cuộc đời bằng việc tự sát", "prison":false, "assets": 0, "happy": 0, "health": -100, "smart":0, "appearance": 0},
+          {"event": "Sau khi thủ tiêu đối phương, mấy ngày sau bạn liền bị gọi tới cơ quan chức năng để điều tra, bạn luôn mồm phủ nhận tội danh, nhưng với bằng chứng đầy đù, cuối cùng bạn không thoát khỏi được tội ác của mình", "prison":true, "assets": 0, "happy": -30, "health": -20, "smart":0, "appearance": -20}
+        ],
+        [
+          {"event": "Bạn vờ như không nghe, bạn giật đồ rồi bỏ chạy, cũng may những lời nói đó chỉ là hù doạ","prison":false, "assets": 100000, "happy": 30, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn lo sợ mà từ bỏ rồi chạy đi mất, cũng may những lời nói đó chỉ là những lời hâm doạ suông","prison":false, "assets": 0, "happy": 20, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn phớt lờ rồi giựt ví chạy đi mất, mấy ngày sau bạn bị gọi lên điều tra, do tính chất phạm tội chưa quá nguy hiểm, nên bạn chị bị tịch thu tài sản và phạt hành chính răn đe","prison":false, "assets": -10000, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+        ]
+      ]},
+    {"event": "Bạn móc túi của một quý bà trên đường thì bị phát hiện, mụ cảnh cáo bạn nếu bạn giúp tạt axit vào người dụ dỗ chồng mụ thì sẽ được thưởng, ngược lại mụ sẽ kiện bạn ra toà \n\nBạn quyết định ra sao ?",  "asset":"poison", "selection": true,
+      "select" : [
+        [
+          {"event": "Bạn sợ hãi nghe theo lệnh bà ta, sau nhiều lần lẫn trốn thì cuối cùng bạn cũng bị bắt, và chịu tội án cho hành vi của mình","prison":true, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn sợ hãi nghe theo lệnh bà ta, nhưng không may thay đối tượng là vợ của một ông trùm băng đảng thế là bạn bị vạ lây vào ẩu đả thanh toán băng đảng, bạn chịu nhiều thương tích sau cuộc ẩu đả","prison":false, "assets": 0, "happy": 0, "health": -30, "smart":0, "appearance": 0},
+          {"event": "Bạn sợ hãi nghe theo lệnh bà ta, thực hiện xong bà ta cũng đã tặng thưởng cho bạn 1 phần tiền lớn","prison":false, "assets": 10000, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+        ],
+        [
+          {"event": "Bạn từ chối yêu cầu của bà ta, \n\n'CẮT!!!'\n\n Hoá ra nãy giờ chỉ là đang diễn kịch mà thôi, bạn thở phào nhẹ nhõm" ,"prison":false, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn từ chối yêu cầu của bà ta, bạn tiết lộ kế hoạch với đối tượng mà mụ nhắm tới, hoá ra đối tượng cũng là một quý bà xửng xỏ trong giới kinh doanh, thế là bạn được bảo kê nhờ thông tin của mình" ,"prison":0, "assets": 10000, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+        ]
+  ]}],
+  "Cướp cửa hàng": [
+    {"event": "Mục tiêu của bạn là tiệm vàng, bạn đang bỏ vàng vào vali thì đột nhiên bị chủ nhà phát hiện, bạn có muốn trừ khử người này ?", "asset":"gun", "selection": true,
+      "select": [
+        [
+          {"event": "Bạn giết chủ tiệm rồi bỏ trốn, do không có đủ chứng cứ nên vụ án đã bị đưa vào ngõ cụt và kết thúc ","prison":0, "assets": 100000, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn giết chủ tiệm rồi bỏ trốn, tuy nhiên bạn bị phát hiện bởi camera cửa tiệm, cuối cùng bạn cũng phải trả giá cho tội ác của mình","prison":true, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn giết chủ tiệm rồi bỏ trốn, tuy nhiên bạn bị phát hiện bởi camera cửa tiệm, cuối cùng bạn cũng phải trả giá cho tội ác của mình","prison":true, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn giết chủ tiệm rồi bỏ trốn, tuy nhiên bạn bị phát hiện bởi camera cửa tiệm, cuối cùng bạn cũng phải trả giá cho tội ác của mình","prison":true, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn giết chủ tiệm rồi bỏ trốn, tuy nhiên bạn bị phát hiện bởi camera cửa tiệm, cuối cùng bạn cũng phải trả giá cho tội ác của mình","prison":true, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn giết chủ tiệm rồi bỏ trốn, tuy nhiên bạn bị phát hiện bởi camera cửa tiệm, cuối cùng bạn cũng phải trả giá cho tội ác của mình","prison":true, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn giết chủ tiệm rồi bỏ trốn, tuy nhiên bạn bị phát hiện bởi camera cửa tiệm, cuối cùng bạn cũng phải trả giá cho tội ác của mình","prison":true, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn giết chủ tiệm rồi bỏ trốn, tuy nhiên bạn bị phát hiện bởi camera cửa tiệm, cuối cùng bạn cũng phải trả giá cho tội ác của mình","prison":true, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn giết chủ tiệm rồi bỏ trốn, tuy nhiên bạn bị phát hiện bởi camera cửa tiệm, cuối cùng bạn cũng phải trả giá cho tội ác của mình","prison":true, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn giết chủ tiệm rồi bỏ trốn, tuy nhiên bạn bị phát hiện bởi camera cửa tiệm, cuối cùng bạn cũng phải trả giá cho tội ác của mình","prison":true, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn giết chủ tiệm rồi bỏ trốn, tuy nhiên bạn bị phát hiện bởi camera cửa tiệm, cuối cùng bạn cũng phải trả giá cho tội ác của mình","prison":true, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+        ],
+        [
+          {"event": "Bạn không có vật gì để đối kháng, chỉ đành bỏ trốn chạy ra ngoài, mấy ngày sau bạn bị cơ quan chức năng mời làm việc, bạn tự thú và chỉ bị phạt hành chính và tịch thu số vàng trộm được","prison":false, "assets": -100000, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn không có vật gì để đối kháng, thế là bạn chỉ đành bỏ chạy, tuy bạn đã chạy trốn, nhưng cuối cùng cũng không thể thoát, bạn bị kết án với số tiền trộm được","prison":true, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn không có vật gì để đối kháng, bạn cũng không có đường nào để chạy, bạn tuyệt vọng, chủ nhà cảm thấy có chút đồng cảm với bạn, cho bạn 1 ít tiền và hi vọng bạn sẽ sống lương thiện","prison":false, "assets": 500, "happy": 5, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn không có đường nào để chạy, bạn bị chủ nhà đấm cho ra bã, cũng may cuối cùng bạn cũng chạy thoát ra ngoài cửa sổ","prison":false, "assets": 0, "happy": -5, "health": -10, "smart":0, "appearance": 0}
+        ]
+        ]},
+    {"event": "Bạn vào một tiệm bánh mì gần đó, chôm số tiền để trong két tủ trong lúc chủ tiệm đi mất, bạn mừng thầm vì hôm nay bạn kiếm được khá nhiều", "asset":"", "selection": false, "assets": 5000, "happy": 5, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Bạn quyết định đánh cắp số tiền có trong cửa hàng tạp hoá, tuy nhiên bạn bị chủ tiệm phục kích và đánh không thương tiếc", "asset":"", "selection": false, "assets": 0, "happy": -5, "health": -10, "smart":0, "appearance": 0},
+    {"event": "Bạn quyết định đánh cắp số tiền có trong quán cà phê, tuy nhiên bạn phát hiện hoàn cảnh khó khăn của người chủ tiệm này, bạn quyết định bỏ lại tất cả, cùng với một số tiền của bản thân hi vọng có thể giúp ích", "asset":"", "selection": false, "assets": 100, "happy": 10, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Bạn quyết định đánh cắp số tiền có trong tiệm thuốc, tuy nhiên bạn bị chủ tiệm phục kích và đánh không thương tiếc", "asset":"", "selection": false, "assets": 0, "happy": -5, "health": -10, "smart":0, "appearance": 0},
+    {"event": "Bạn vào quán cơm gần đó, chôm số tiền để trong két tủ trong lúc chủ tiệm đi mất, bạn mừng thầm vì hôm nay bạn kiếm được khá nhiều", "asset":"", "selection": false, "assets": 1000, "happy": 5, "health": 0, "smart":0, "appearance": 0}
+  ],
+  "Buôn rau": [
+    {"event": "Bạn vận chuyển cần sa sắp đến khu vực được giao thì chẳng may có cảnh sát đứng chặn ở chốt kiểm tra, sau một lát xem xét thì phát hiện số cần sa lưu trữ, bạn bị tống tù vì tội án của mình", "prison":true, "selection": false, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Bạn đang trên đường vận chuyển cần sa thì chẳng may, có một con gấu tấn công bạn từ phía sau xe, bạn sợ quá bỏ xe mà chạy, để lại đống cần sa giữa rừng", "prison":false, "selection": false, "assets": -10000, "happy": -10, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Sau nhiều phong ba bão táp, cuối cùng bạn cũng vận chuyển được số cần, cuộc sống của bạn bước sang trang mới tại đây", "prison":false, "selection": false, "assets": 100000, "happy": 10, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Sau nhiều phong ba bão táp, cuối cùng bạn cũng vận chuyển được số cần, tuy nhiên bạn bị chặn lại ở nơi giao dịch, hoá ra kế hoạch đã bị bại lộ", "prison":true, "selection": false, "assets": 0, "happy": -10, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Trên đường đi giao dịch thì bỗng xe bạn bị hư, cần phải sửa chửa nhanh chóng trước khi bị nghi ngờ", "asset":"toolbox", "name": "bộ công cụ","selection": true,
+      "select":[
+        [
+          {"event": "Sau khi sửa chữa chiếc xe, bạn tiếp tục đến điểm giao dịch, mọi chuyện có vẻ thuộn buồm xuôi gió","prison":false, "assets": 100000, "happy": 0, "health": 0, "smart":0, "appearance": -10},
+          {"event": "Tuy có bộ công cụ nhưng với tay nghề của bạn vẫn chưa đủ để sửa, cuối cùng thì toa hàng của bạn cũng bị cảnh sát phát hiện", "prison":true, "assets": 0, "happy": -10, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn sửa chữa thành công chiếc xe, chạy được một đoạn thì bị cảnh sát đuổi tới, bạn đành phóng bỏ chiếc xe lao xuống vực rồi bỏ phóng ra ngoài cửa sổ để trốn ", "prison":false, "assets": 0, "happy": 0, "health": -5, "smart":0, "appearance": 0}
+        ],
+        [
+          {"event": "Bạn không có đủ dụng cụ để sửa xe, chỉ đành bỏ lại chiếc xe mà lo cho bản thân mình","prison":false, "assets": -500, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn không có đủ dụng cụ để sửa xe, chỉ đành bỏ lại chiếc xe mà lo cho bản thân mình, tuy nhiên cuối cùng bạn vẫn bị bắt giữ ","prison":true, "assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn không có đủ dụng cụ để sửa xe, tuy nhiên bạn khiến chiếc xe đi được thêm một đoạn, nhưng cuối cùng thì cũng bị bắt","prison":true, "assets": 0, "happy": -5, "health": 0, "smart":0, "appearance": 0}
+        ]
+      ]}
+  ],
+  "Hack": [
+    {"event": "Bạn nảy ra ý tưởng đánh cấp dữ liệu người dùng facebook để bán, tuy nhiên cần có một máy tính để hỗ trợ ?", "asset":"laptop", "name": "máy tính","selection": true,
+      "select":[
+        [
+          {"event": "Bạn hack thành công facebook, và kiếm tiền triệu nhờ vào buôn bán thông tin người dùng facebook","prison":false, "assets": 100000, "happy": 10, "health": 0, "smart":5, "appearance": 0},
+          {"event": "Bạn hack không thành công facebook, trái lại bạn còn bị truy vết và tra cứu trách nhiệm hình sự", "prison":true, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn hack thành công facebook, tuy nhiên thông tin dữ liệu người dùng lại không có giá trị như bạn nghĩ", "prison":false, "assets": 100, "happy": -5, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn hack không thành công facebook, nhưng nhờ vào sự nhạy bén của mình, bạn đã che giấu được thông tin và không bị phát hiện", "prison":false, "assets": 0, "happy": 10, "health": 0, "smart":10, "appearance": 0}
+        ],
+        [
+          {"event": "Bạn không có máy tính để truy cập","prison":false, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+        ]
+      ]},
+    {"event": "Bạn nảy ra ý tưởng hack vào dữ liệu NASA để tống tiền, tuy nhiên cần có một máy tính mạnh để hỗ trợ ?", "asset":"pc", "name": "máy tính để bàn","selection": true,
+      "select":[
+        [
+          {"event": "Bạn hack thành công NASA, và kiếm tiền triệu nhờ vào tống tiền chính NASA","prison":false, "assets": 100000, "happy": 10, "health": 0, "smart":5, "appearance": 0},
+          {"event": "Bạn hack không thành công NASA, trái lại bạn còn bị truy vết và tra cứu trách nhiệm hình sự", "prison":true, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn hack thành công NASA, tuy nhiên bên họ tìm kiếm được một hacker tài năng hơn đánh bại bạn, thế là bạn đành bó tay", "prison":false, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn hack không thành công NASA, nhưng nhờ vào sự nhạy bén của mình, bạn đã che giấu được thông tin và không bị phát hiện", "prison":false, "assets": 0, "happy": 5, "health": 0, "smart":10, "appearance": 0}
+        ],
+        [
+          {"event": "Bạn không có máy tính để truy cập","prison":false, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+        ]
+      ]},
+    {"event": "Bạn nhận lời hack cho một người quen, được phép sử dụng máy tính của họ để hack, sau khi hoàn thành bạn được thưởng phần thưởng xứng đáng", "asset":"", "selection": false, "assets": 3000, "happy": 5, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Bạn thuê một dàn PC trong một Cyber, bạn hack vào hệ thống nước thành phố chỉ cho vui", "asset":"", "selection": false, "assets": 0, "happy": 10, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Sau nhiều lần truy vết, thì cuối cùng bạn cũng bị bắt, tuy nhiên do tính chất chưa đến mức nguy hiểm nên bạn chỉ bị phạt hành chính", "asset":"", "selection": false, "assets": -10000, "happy": -5, "health": 0, "smart":0, "appearance": 0}
+  ]
+}
