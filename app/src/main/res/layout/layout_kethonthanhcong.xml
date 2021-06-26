@@ -16,7 +16,7 @@
         android:gravity="center_horizontal"
         android:text="CHÚC MỪNG ĐÁM CƯỚI CỦA BẠN"
         android:fontFamily="@font/anton"
-        android:textColor="@color/Red"
+        android:textColor="@color/Blue"
         android:textSize="20sp" />
 
     <LinearLayout
@@ -36,8 +36,9 @@
 
 
             <pl.droidsonroids.gif.GifTextView
-                android:layout_width="273dp"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
 
                 android:background="@drawable/cauhon" />
 
@@ -56,7 +57,7 @@
             android:layout_marginBottom="5dp"
             android:background="@drawable/custom_button_menu"
             android:text="Đồng ý"
-            android:textColor="@color/Red"
+            android:textColor="@color/Blue"
             android:textStyle="bold"
             app:backgroundTint="@null" />
 

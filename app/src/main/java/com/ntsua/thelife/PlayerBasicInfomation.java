@@ -21,9 +21,11 @@ public class PlayerBasicInfomation {
     private int NumberOfFriend = 0;
     private int NumberOfGirlFriend = 0;
     private int NewFriendInYear = 0;
+
     private int Jogging = 0;
     private int Exercise = 0;
     private int Library = 0;
+    private int Crime;
 
     private int NhaHang = 0;
     private int NuocEp = 0;
@@ -208,6 +210,14 @@ public class PlayerBasicInfomation {
 
     public void setNewFriendInYear(int newFriendInYear) {
         NewFriendInYear = newFriendInYear;
+    }
+
+    public int getCrime() {
+        return Crime;
+    }
+
+    public void setCrime(int crime) {
+        Crime = crime;
     }
 
     public int getJogging() {

@@ -189,6 +189,15 @@ public class SaveGame {
         reference.child("Basic").child("driving").setValue(driving);
     }
 
+    public void saveCrime(int time) {
+        infomation.setCrime(time);
+        reference.child("Basic").child("crime").setValue(time);
+    }
+
+    public int getCrime()
+    {
+        return infomation.getCrime();
+    }
 
     public String getName() {
         return infomation.getName();

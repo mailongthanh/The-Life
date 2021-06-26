@@ -2072,6 +2072,7 @@ drawable pizza
 drawable playground
 drawable plus
 drawable poison
+drawable police
 drawable previous
 drawable principal
 drawable psychiatrist

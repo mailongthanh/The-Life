@@ -12,13 +12,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
+        android:padding="1dp"
         android:background="#007BFF">
 
         <TextView
             android:id="@+id/textviewTitle"
             android:layout_width="208dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_centerInParent="true"
             android:fontFamily="@font/anton"
             android:gravity="center"
@@ -29,6 +29,8 @@
             android:id="@+id/imageviewHoatDongBack"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
             android:src="@drawable/previous"
             android:onClick="gotoMainMenu"/>
 

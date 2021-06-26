@@ -45,9 +45,10 @@
 
 
                 <pl.droidsonroids.gif.GifTextView
-                    android:layout_width="267dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="124dp"
                     android:background="@drawable/happylove"
+                    android:layout_gravity="center"
                     android:padding="5dp" />
 
                 <RelativeLayout
@@ -67,6 +68,7 @@
                         android:layout_marginRight="83dp"
                         android:background="@drawable/custom_button_menu"
                         android:text="Đồng ý"
+                        android:textColor="@color/Blue"
                         app:backgroundTint="@null" />
 
                 </RelativeLayout>
@@ -86,7 +88,7 @@
         android:gravity="center"
         android:padding="5dp"
         android:text="Thông báo"
-        android:textColor="@color/Red"
+        android:textColor="@color/Blue"
         android:textSize="20sp"
         android:textStyle="bold" />
 

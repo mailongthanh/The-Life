@@ -80,7 +80,6 @@ public class Startup extends AppCompatActivity {
                 {
                     startActivity(new Intent(Startup.this, Shopping.class));
                 }
-
             }
         });
 

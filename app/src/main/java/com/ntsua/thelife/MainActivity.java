@@ -321,8 +321,6 @@ public class MainActivity extends AppCompatActivity {
         txtContent.setText(jsonResult.getString("event"));
         contentHtml += txtContent.getText().toString() + "<br>";
 
-
-
         int value = 0;
         value = jsonResult.getInt("happy");
         if (value == 0)
@@ -681,7 +679,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
         return dialog;
     }
 
@@ -827,9 +824,6 @@ public class MainActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 
-
-
-
     void loadGame()
     {
         contentHtml = saveGame.getDetailActivity();
@@ -956,6 +950,7 @@ public class MainActivity extends AppCompatActivity {
         saveGame.saveExercise(0);
         saveGame.saveJogging(0);
         saveGame.saveJogging(0);
+        saveGame.saveCrime(0);
         txtJob.setText(saveGame.getJob());
         txtMoney.setText("0 VND");
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
@@ -1022,6 +1017,7 @@ public class MainActivity extends AppCompatActivity {
         saveGame.saveRauCu(0);
         saveGame.saveKeo(0);
         saveGame.saveFastFood(0);
+        saveGame.saveCrime(0);
 
         for (int i=0; i<arrRelationship.size(); i++)
         {
