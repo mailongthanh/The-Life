@@ -61,7 +61,7 @@ public class BoiToan extends AppCompatActivity {
                     if (MainActivity.saveGame.getTuVi() < 2) {
                         try {
                             Activity.CreateDialog("Bói tử vi", "Bói toán");
-                            MainActivity.saveGame.saveJogging(MainActivity.saveGame.getTuVi() + 1);
+                            MainActivity.saveGame.saveTuVi(MainActivity.saveGame.getTuVi() + 1);
                             loadGame();
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -77,7 +77,7 @@ public class BoiToan extends AppCompatActivity {
                     if (MainActivity.saveGame.getBoiSN() < 2) {
                         try {
                             Activity.CreateDialog("Bói công danh sự nghiệp", "Bói toán");
-                            MainActivity.saveGame.saveExercise(MainActivity.saveGame.getBoiSN() + 1);
+                            MainActivity.saveGame.saveBoiSN(MainActivity.saveGame.getBoiSN() + 1);
                             loadGame();
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -93,7 +93,7 @@ public class BoiToan extends AppCompatActivity {
                     if (MainActivity.saveGame.getBoiTinh() < 2) {
                         try {
                             Activity.CreateDialog("Bói tình duyên", "Bói toán");
-                            MainActivity.saveGame.saveJogging(MainActivity.saveGame.getBoiTinh() + 1);
+                            MainActivity.saveGame.saveBoiTinh(MainActivity.saveGame.getBoiTinh() + 1);
                             loadGame();
                         } catch (JSONException e) {
                             e.printStackTrace();
