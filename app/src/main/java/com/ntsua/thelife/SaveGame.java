@@ -1,446 +1,569 @@
 package com.ntsua.thelife;
 
 import android.content.SharedPreferences;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.GenericTypeIndicator;
+import com.google.firebase.database.ValueEventListener;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class SaveGame {
     private SharedPreferences preferences;
     private SharedPreferences.Editor editor;
     Gson gson;
 
+    private LoadDone loadDone;
+    private DatabaseReference reference;
+    private PlayerBasicInfomation infomation;
+    private ArrayList<QuanHe> arrRelationship;
+    private ArrayList<Food> arrAsset;
+    private ArrayList<Sick> arrSick;
+
+    boolean isOnCreate = true;
+
     public SaveGame(SharedPreferences preferences) {
+
         this.preferences = preferences;
         editor = this.preferences.edit();
         gson = new Gson();
+
+//        if (getDetailActivity().isEmpty())
+//            reference.child("Basic").setValue(infomation);
+    }
+
+    public void loadData()
+    {
+        if (!isOnCreate)
+        {
+            loadDone.onLoaded();
+            return;
+        }
+        assert FirebaseAuth.getInstance().getUid() != null;
+        reference = FirebaseDatabase.getInstance().getReference().child(FirebaseAuth.getInstance().getUid());
+
+        arrAsset = new ArrayList<>();
+        arrRelationship = new ArrayList<>();
+        arrSick = new ArrayList<>();
+        infomation = new PlayerBasicInfomation();
+
+        reference.child("Basic").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                infomation = snapshot.getValue(PlayerBasicInfomation.class);
+                if (infomation == null)
+                    reference.child("Basic").setValue(new PlayerBasicInfomation());
+                else if (isOnCreate){
+                    loadDone.onLoaded();
+                    isOnCreate = false;
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull @NotNull DatabaseError error) {
+
+            }
+        });
+
+        reference.child("asset").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                GenericTypeIndicator<ArrayList<Food>> objectsGTypeInd = new GenericTypeIndicator<ArrayList<Food>>() {};
+                arrAsset = snapshot.getValue(objectsGTypeInd);
+            }
+
+            @Override
+            public void onCancelled(@NonNull @NotNull DatabaseError error) {
+
+            }
+        });
+
+        reference.child("relationship").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                GenericTypeIndicator<ArrayList<QuanHe>> objectsGTypeInd = new GenericTypeIndicator<ArrayList<QuanHe>>() {};
+                arrRelationship = snapshot.getValue(objectsGTypeInd);
+            }
+
+            @Override
+            public void onCancelled(@NonNull @NotNull DatabaseError error) {
+
+            }
+        });
+
+        reference.child("sick").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                GenericTypeIndicator<ArrayList<Sick>> objectsGTypeInd = new GenericTypeIndicator<ArrayList<Sick>>() {};
+                arrSick = snapshot.getValue(objectsGTypeInd);
+            }
+
+            @Override
+            public void onCancelled(@NonNull @NotNull DatabaseError error) {
+
+            }
+        });
+    }
+
+    public void setOnLoaded(LoadDone loadDone)
+    {
+        this.loadDone = loadDone;
+    }
+
+    public void saveDetailActivity(String detail)
+    {
+        infomation.setDetailActivity(detail);
+        reference.child("Basic").child("detailActivity").setValue(detail);
+    }
+
+    public String getDetailActivity() {
+
+        return infomation.getDetailActivity();
     }
 
     public void saveBirthDay(String day)
     {
-        editor.putString("birth", day);
-        editor.commit();
+        infomation.setBirthday(day);
+        reference.child("Basic").child("birthday").setValue(day);
     }
 
     public String getBirthDay()
     {
-        return preferences.getString("birth", "0/0/0");
+        return infomation.getBirthday();
     }
 
     public void saveAvatar(int id)
     {
-        editor.putInt("avatar", id);
-        editor.commit();
+        infomation.setAvatar(id);
+        reference.child("Basic").child("avatar").setValue(id);
     }
 
     public int getAvatar()
     {
-        return preferences.getInt("avatar", 0);
+        return infomation.getAvatar();
     }
 
     public void saveDating(boolean isDating)
     {
-        editor.putBoolean("dating", isDating);
-        editor.commit();
+        infomation.setDating(isDating);
+        reference.child("Basic").child("dating").setValue(isDating);
+    }
+
+    public boolean getDating()
+    {
+        return infomation.isDating();
     }
 
     public  void saveEnglish(boolean english)
     {
-        editor.putBoolean("english", english);
-        editor.commit();
-    }
-
-    public void saveDriving(boolean driving)
-    {
-        editor.putBoolean("driving", driving);
-        editor.commit();
-    }
-
-    public void saveNumberOfFriends(int number)
-    {
-        editor.putInt("allfriend", number);
-        editor.commit();
-    }
-
-    public void saveJogging(int time) {
-        editor.putInt("jogging", time);
-        editor.commit();
-    }
-
-    public void saveCrime(int time) {
-        editor.putInt("crime",time);
-        editor.commit();
-    }
-
-    public void saveNewFriendInYear(int friend)
-    {
-        editor.putInt("friend", friend);
-        editor.commit();
-    }
-
-    public void saveExercise(int time) {
-        editor.putInt("exercise", time);
-        editor.commit();
-    }
-
-    public void saveLibrary(int time) {
-        editor.putInt("library", time);
-        editor.commit();
-    }
-
-    public void saveSalary(int salary) {
-        editor.putInt("salary", salary);
-        editor.commit();
-    }
-
-    public void saveSkill(int skill) {
-        editor.putInt("skill", skill);
-        editor.commit();
-    }
-
-    public void saveName(String name) {
-        editor.putString("name", name);
-        editor.commit();
-    }
-
-    public void saveMoney(int money) {
-        editor.putInt("money", money);
-        editor.commit();
-    }
-    public void saveNhaHang(int mon) {
-        editor.putInt("Nhà hàng", mon);
-        editor.commit();
-    }
-
-    public void saveAge(int age) {
-        editor.putInt("age", age);
-        editor.commit();
-    }
-
-    public void saveGender(boolean isBoy)
-    {
-        editor.putBoolean("gender", isBoy);
-        editor.commit();
-    }
-
-    public void savePlayerInfo(int happy, int health, int smart, int appearance) {
-        editor.putInt("happy", happy);
-        editor.putInt("health", health);
-        editor.putInt("smart", smart);
-        editor.putInt("appearance", appearance);
-        editor.commit();
-    }
-
-    public void saveDetailActivity(String s) {
-        editor.putString("detail", s);
-        editor.commit();
-    }
-
-    public void saveNumberOfGirlFriend(int number)
-    {
-        editor.putInt("girl", number);
-        editor.commit();
-    }
-
-    public void saveRelationship(ArrayList<QuanHe> arrRelationship) {
-        String json = gson.toJson(arrRelationship);
-        editor.putString("relationship", json);
-        editor.commit();
-    }
-    public void saveAsset(ArrayList<Food> arrAsset) {
-        String json = gson.toJson(arrAsset);
-        editor.putString("asset", json);
-        editor.commit();
-    }
-
-    public void saveJob(String job) {
-        editor.putString("job", job);
-        editor.commit();
-    }
-    public void saveTraSua(int mon) {
-        editor.putInt("Trà sữa", mon);
-        editor.commit();
-    }
-    public int getTraSua()
-    {
-        return preferences.getInt("Trà sữa", 0);
-    }
-    public void saveCaPhe(int mon) {
-        editor.putInt("Cà phê", mon);
-        editor.commit();
-    }
-    public int getCaPhe()
-    {
-        return preferences.getInt("Cà phê", 0);
-    }
-    public void saveRuou(int mon) {
-        editor.putInt("Rượu", mon);
-        editor.commit();
-    }
-    public int getRuou()
-    {
-        return preferences.getInt("Rượu", 0);
-    }
-    public void saveBia(int mon) {
-        editor.putInt("Bia", mon);
-        editor.commit();
-    }
-    public int getBia()
-    {
-        return preferences.getInt("Bia", 0);
-    }
-    public void saveHamBurGer(int mon) {
-        editor.putInt("Hamburger", mon);
-        editor.commit();
-    }
-    public int getHamBurGer()
-    {
-        return preferences.getInt("Hamburger", 0);
-    }
-    public void saveBanhMi(int mon) {
-        editor.putInt("Bánh mì", mon);
-        editor.commit();
-    }
-    public int getBanhMi()
-    {
-        return preferences.getInt("Bánh mì", 0);
-    }
-    public void saveMy(int mon) {
-        editor.putInt("Mỳ", mon);
-        editor.commit();
-    }
-    public int getMy()
-    {
-        return preferences.getInt("Mỳ", 0);
-    }
-    public void saveTraiCay(int mon) {
-        editor.putInt("Trái cây", mon);
-        editor.commit();
-    }
-    public int getTraiCay()
-    {
-        return preferences.getInt("Trái cây", 0);
-    }
-    public void savePizza(int mon) {
-        editor.putInt("Pizza", mon);
-        editor.commit();
-    }
-    public int getPizza()
-    {
-        return preferences.getInt("Pizza", 0);
-    }
-    public void saveLau(int mon) {
-        editor.putInt("Lẩu", mon);
-        editor.commit();
-    }
-    public int getLau()
-    {
-        return preferences.getInt("Lẩu", 0);
-    }
-    public void saveCom(int mon) {
-        editor.putInt("Cơm", mon);
-        editor.commit();
-    }
-    public int getCom()
-    {
-        return preferences.getInt("Cơm", 0);
-    }
-    public void saveHaiSan(int mon) {
-        editor.putInt("Hải sản", mon);
-        editor.commit();
-    }
-    public int getHaiSan()
-    {
-        return preferences.getInt("Hải sản", 0);
-    }
-    public void saveGa(int mon) {
-        editor.putInt("Gà", mon);
-        editor.commit();
-    }
-    public int getGa()
-    {
-        return preferences.getInt("Gà", 0);
-    }
-    public void saveRauCu(int mon) {
-        editor.putInt("Rau củ", mon);
-        editor.commit();
-    }
-    public int getRauCu()
-    {
-        return preferences.getInt("Rau củ", 0);
-    }
-    public void saveKeo(int mon) {
-        editor.putInt("Kẹo", mon);
-        editor.commit();
-    }
-    public int getKeo()
-    {
-        return preferences.getInt("Kẹo", 0);
-    }
-    public void saveFastFood(int mon) {
-        editor.putInt("Thức ăn nhanh", mon);
-        editor.commit();
-    }
-    public int getFastFood()
-    {
-        return preferences.getInt("Thức ăn nhanh", 0);
-    }
-    public void saveNuocEp(int mon) {
-        editor.putInt("Nước ép trái cây", mon);
-        editor.commit();
-    }
-    public int getNuocEp()
-    {
-        return preferences.getInt("Nước ép trái cây", 0);
-    }
-    public boolean getDating()
-    {
-        return preferences.getBoolean("dating", false);
-    }
-    public int getNhaHang()
-    {
-        return preferences.getInt("Nhà hàng", 0);
+        infomation.setEnglish(english);
+        reference.child("Basic").child("english").setValue(english);
     }
 
     public boolean getEnglish()
     {
-        return preferences.getBoolean("english", false);
+        return infomation.isEnglish();
     }
 
     public boolean getDriving()
     {
-        return preferences.getBoolean("driving", false);
+        return infomation.isDriving();
     }
 
-    public int getNumberOfFriends()
+    public void saveDriving(boolean driving)
     {
-        return preferences.getInt("allfriend", 0);
+        infomation.setDriving(driving);
+        reference.child("Basic").child("driving").setValue(driving);
     }
 
-    public int getNewFriendInYear()
-    {
-        return preferences.getInt("friend", 0);
-    }
-
-    public int getJogging()
-    {
-        return preferences.getInt("jogging", 0);
+    public void saveCrime(int time) {
+        infomation.setCrime(time);
+        reference.child("Basic").child("crime").setValue(time);
     }
 
     public int getCrime()
     {
-        return preferences.getInt("crime", 0);
+        return infomation.getCrime();
     }
 
-    public int getTuVi()
+    public String getName() {
+        return infomation.getName();
+    }
+
+    public void saveName(String name) {
+        infomation.setName(name);
+        reference.child("Basic").child("name").setValue(name);
+    }
+
+    public int getAge() {
+        return infomation.getAge();
+    }
+
+    public void saveAge(int age) {
+        infomation.setAge(age);
+        reference.child("Basic").child("age").setValue(age);
+    }
+
+    public boolean getGender() {
+        return infomation.isBoy();
+    }
+
+    public void saveGender(boolean boy) {
+        infomation.setBoy(boy);
+        reference.child("Basic").child("boy").setValue(boy);
+    }
+
+
+    public String getJob() {
+        return infomation.getJob();
+    }
+
+    public void saveJob(String job) {
+        infomation.setJob(job);
+        reference.child("Basic").child("job").setValue(job);
+    }
+
+    public int getMoney() {
+        return infomation.getMoney();
+    }
+
+    public void saveMoney(int money) {
+        infomation.setMoney(money);
+        reference.child("Basic").child("money").setValue(money);
+    }
+
+    public void savePlayerInfo(int happy, int health, int smart, int appearance)
     {
-        return preferences.getInt("Bói tử vi", 0);
+        infomation.setHappy(happy);
+        reference.child("Basic").child("happy").setValue(happy);
+
+        infomation.setHealth(health);
+        reference.child("Basic").child("health").setValue(health);
+
+        infomation.setSmart(smart);
+        reference.child("Basic").child("smart").setValue(smart);
+
+        infomation.setAppearance(appearance);
+        reference.child("Basic").child("appearance").setValue(appearance);
     }
 
-    public int getBoiSN()
-    {
-        return preferences.getInt("Bói công danh sự nghiệp", 0);
+    public int getHappy() {
+        return infomation.getHappy();
     }
 
-    public int getBoiTinh()
-    {
-        return preferences.getInt("Bói tình duyên", 0);
+    public int getHealth() {
+        return infomation.getHealth();
     }
 
-    public int getExercise()
-    {
-        return preferences.getInt("exercise", 0);
+    public int getSmart() {
+        return infomation.getSmart();
     }
 
-    public int getLibrary()
-    {
-        return preferences.getInt("library", 0);
+    public int getAppearance() {
+        return infomation.getAppearance();
     }
 
-    public int getSalary()
-    {
-        return preferences.getInt("salary", 0);
+    public int getSalary() {
+        return infomation.getSalary();
     }
 
-    public String getName(){
-        return preferences.getString("name", "NoName");
+    public void saveSalary(int salary) {
+        infomation.setSalary(salary);
+        reference.child("Basic").child("salary").setValue(salary);
     }
 
-    public boolean getGender() { return preferences.getBoolean("gender", false);}
-
-    public int getHappy()
-    {
-        return  preferences.getInt("happy", 0);
+    public int getSkill() {
+        return infomation.getSkill();
     }
 
-    public int getHealth()
-    {
-        return  preferences.getInt("health", 0);
+    public void saveSkill(int skill) {
+        infomation.setSkill(skill);
+        reference.child("Basic").child("skill").setValue(skill);
     }
 
-    public int getSmart()
-    {
-        return  preferences.getInt("smart", 0);
+    public int getNumberOfFriends() {
+        return infomation.getNumberOfFriend();
     }
 
-    public int getAppearance()
-    {
-        return  preferences.getInt("appearance",0);
+    public void saveNumberOfFriends(int numberOfFriend) {
+        infomation.setNumberOfFriend(numberOfFriend);
+        reference.child("Basic").child("numberOfFriend").setValue(numberOfFriend);
     }
 
-    public String getJob()
-    {
-        return preferences.getString("job", "unemployment");
+    public int getNumberOfGirlFriend() {
+        return infomation.getNumberOfGirlFriend();
     }
 
-    public int getMoney()
-    {
-        return preferences.getInt("money", 5000);
+    public void saveNumberOfGirlFriend(int numberOfGirlFriend) {
+        infomation.setNumberOfGirlFriend(numberOfGirlFriend);
+        reference.child("Basic").child("numberOfGirlFriend").setValue(numberOfGirlFriend);
     }
 
-    public int getAge(){ return preferences.getInt("age", 0);}
-
-    public String getDetailActivity() {
-        return preferences.getString("detail", "");
+    public int getNewFriendInYear() {
+        return infomation.getNewFriendInYear();
     }
 
-    public int getSkill()
-    {
-        return preferences.getInt("skill", 0);
+    public void saveNewFriendInYear(int newFriendInYear) {
+        infomation.setSalary(newFriendInYear);
+        reference.child("Basic").child("newFriendInYear").setValue(newFriendInYear);
     }
 
-    public int getNumberOfGirlFriend()
-    {
-        return preferences.getInt("girl", 999);
+    public int getJogging() {
+        return infomation.getJogging();
+    }
+
+    public void saveJogging(int jogging) {
+        infomation.setJogging(jogging);
+        reference.child("Basic").child("jogging").setValue(jogging);
+    }
+
+    public int getExercise() {
+        return infomation.getExercise();
+    }
+
+    public void saveExercise(int exercise) {
+        infomation.setExercise(exercise);
+        reference.child("Basic").child("exercise").setValue(exercise);
+    }
+
+    public int getLibrary() {
+        return infomation.getLibrary();
+    }
+
+    public void saveLibrary(int library) {
+        infomation.setLibrary(library);
+        reference.child("Basic").child("library").setValue(library);
+    }
+
+    public int getNhaHang() {
+        return infomation.getNhaHang();
+    }
+
+    public void saveNhaHang(int nhaHang) {
+        infomation.setNhaHang(nhaHang);
+        reference.child("Basic").child("nhaHang").setValue(nhaHang);
+    }
+
+    public int getNuocEp() {
+        return infomation.getNuocEp();
+    }
+
+    public void saveNuocEp(int nuocEp) {
+        infomation.setNuocEp(nuocEp);
+        reference.child("Basic").child("nuocEp").setValue(nuocEp);
+    }
+
+    public int getTraSua() {
+        return infomation.getTraSua();
+    }
+
+    public void saveTraSua(int traSua) {
+        infomation.setTraSua(traSua);
+        reference.child("Basic").child("traSua").setValue(traSua);
+    }
+
+    public int getCaPhe() {
+        return infomation.getCaPhe();
+    }
+
+    public void saveCaPhe(int caPhe) {
+        infomation.setCaPhe(caPhe);
+        reference.child("Basic").child("caPhe").setValue(caPhe);
+    }
+
+    public int getRuou() {
+        return infomation.getRuou();
+    }
+
+    public void saveRuou(int ruou) {
+        infomation.setRuou(ruou);
+        reference.child("Basic").child("ruou").setValue(ruou);
+    }
+
+    public int getBia() {
+        return infomation.getBia();
+    }
+
+    public void saveBia(int bia) {
+        infomation.setBia(bia);
+        reference.child("Basic").child("bia").setValue(bia);
+    }
+
+    public int getHamBurGer() {
+        return infomation.getHamburger();
+    }
+
+    public void saveHamBurGer(int hamburger) {
+        infomation.setHamburger(hamburger);
+        reference.child("Basic").child("hamburger").setValue(hamburger);
+    }
+
+    public int getBanhMi() {
+        return infomation.getBanhMi();
+    }
+
+    public void saveBanhMi(int banhMi) {
+        infomation.setBanhMi(banhMi);
+        reference.child("Basic").child("banhMi").setValue(banhMi);
+    }
+
+    public int getMy() {
+        return infomation.getMi();
+    }
+
+    public void saveMy(int mi) {
+        infomation.setMi(mi);
+        reference.child("Basic").child("mi").setValue(mi);
+    }
+
+    public int getTraiCay() {
+        return infomation.getTraiCay();
+    }
+
+    public void saveTraiCay(int traiCay) {
+        infomation.setTraiCay(traiCay);
+        reference.child("Basic").child("traiCay").setValue(traiCay);
+    }
+
+    public int getPizza() {
+        return infomation.getPizza();
+    }
+
+    public void savePizza(int pizza) {
+        infomation.setPizza(pizza);
+        reference.child("Basic").child("pizza").setValue(pizza);
+    }
+
+    public int getLau() {
+        return infomation.getLau();
+    }
+
+    public void saveLau(int lau) {
+        infomation.setLau(lau);
+        reference.child("Basic").child("lau").setValue(lau);
+    }
+
+    public int getCom() {
+        return infomation.getCom();
+    }
+
+    public void saveCom(int com) {
+        infomation.setCom(com);
+        reference.child("Basic").child("com").setValue(com);
+    }
+
+    public int getHaiSan() {
+        return infomation.getHaiSan();
+    }
+
+    public void saveHaiSan(int haiSan) {
+        infomation.setHaiSan(haiSan);
+        reference.child("Basic").child("haiSan").setValue(haiSan);
+    }
+
+    public int getGa() {
+        return infomation.getGa();
+    }
+
+    public void saveGa(int ga) {
+        infomation.setGa(ga);
+        reference.child("Basic").child("ga").setValue(ga);
+    }
+
+    public int getRauCu() {
+        return infomation.getRauCu();
+    }
+
+    public void saveRauCu(int rauCu) {
+        infomation.setRauCu(rauCu);
+        reference.child("Basic").child("rauCu").setValue(rauCu);
+    }
+
+    public int getKeo() {
+        return infomation.getKeo();
+    }
+
+    public void saveKeo(int keo) {
+        infomation.setKeo(keo);
+        reference.child("Basic").child("keo").setValue(keo);
+    }
+
+    public int getFastFood() {
+        return infomation.getThucAnNhanh();
+    }
+
+    public void saveFastFood(int thucAnNhanh) {
+        infomation.setThucAnNhanh(thucAnNhanh);
+        reference.child("Basic").child("thucAnNhanh").setValue(thucAnNhanh);
+    }
+
+    public int getTuVi() {
+        return infomation.getTuVi();
+    }
+
+    public void saveTuVi(int tuVi) {
+        infomation.setTuVi(tuVi);
+        reference.child("Basic").child("tuVi").setValue(tuVi);
+    }
+
+    public int getBoiSN() {
+        return infomation.getBoiSuNghiep();
+    }
+
+    public void saveBoiSN(int boiSuNghiep) {
+        infomation.setBoiSuNghiep(boiSuNghiep);
+        reference.child("Basic").child("boiSuNghiep").setValue(boiSuNghiep);
+    }
+
+    public int getBoiTinh() {
+        return infomation.getBoiTinh();
+    }
+
+    public void saveBoiTinh(int boiTinh) {
+        infomation.setBoiTinh(boiTinh);
+        reference.child("Basic").child("boiTinh").setValue(boiTinh);
+    }
+
+    public void saveRelationship(ArrayList<QuanHe> arrRelationship) {
+        this.arrRelationship = arrRelationship;
+        reference.child("relationship").setValue(arrRelationship);
     }
 
     public ArrayList<QuanHe> getRelationship(){
-        String json = preferences.getString("relationship", "");
-        Type type = new TypeToken<ArrayList<QuanHe>>() {}.getType();
-        ArrayList<QuanHe> arrRelationship = gson.fromJson(json, type);
         return arrRelationship;
     }
 
+    public void saveAsset(ArrayList<Food> arrAsset) {
+        this.arrAsset = arrAsset;
+        reference.child("asset").setValue(arrAsset);
+    }
+
     public ArrayList<Food> getAsset(){
-        String json = preferences.getString("asset","");
-        Type type = new TypeToken<ArrayList<Food>>() {}.getType();
-        ArrayList<Food> arrAsset = gson.fromJson(json,type);
         return arrAsset;
     }
 
     public void saveSick(ArrayList<Sick> arrSick) {
-        String json = gson.toJson(arrSick);
-        editor.putString("sick", json);
-        editor.commit();
+        this.arrSick = arrSick;
+        reference.child("sick").setValue(arrSick);
     }
 
     public ArrayList<Sick> getSick(){
-        String json = preferences.getString("sick","");
-        Type type = new TypeToken<ArrayList<Sick>>() {}.getType();
-        ArrayList<Sick> arrSick = gson.fromJson(json,type);
         return arrSick;
     }
+}
+interface LoadDone{
+    void onLoaded();
 }

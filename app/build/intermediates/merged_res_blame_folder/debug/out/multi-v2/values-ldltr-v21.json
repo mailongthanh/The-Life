@@ -4,7 +4,11 @@
             "outputFile": "D:\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
             "map": [
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-3\\58cd43936856d4a1edea7db3fdacda42\\transformed\\appcompat-1.2.0\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+=======
+                    "source": "C:\\Users\\HOME\\.gradle\\caches\\transforms-3\\a2158f784ce81f7d45d75677a5f03b08\\transformed\\appcompat-1.2.0\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+>>>>>>> dad39c3506aeb108a32b36dd3e3351c51b749377
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

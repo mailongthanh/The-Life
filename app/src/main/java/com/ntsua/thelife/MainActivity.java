@@ -93,24 +93,47 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         AnhXa();
+        //Toast.makeText(this, saveGame.getAvatar() + "", Toast.LENGTH_SHORT).show();
         //Test
         //startActivityForResult(new Intent(MainActivity.this,  CreateName.class), REQUEST_CODE_INIT);
 
-        try {
-            if (saveGame.getDetailActivity().equals("")) {
-                startActivityForResult(new Intent(MainActivity.this, CreateName.class), REQUEST_CODE_INIT);
+        saveGame.setOnLoaded(new LoadDone() {
+            @Override
+            public void onLoaded() {
+                //Toast.makeText(MainActivity.this, "Loaded " + time, Toast.LENGTH_SHORT).show();
+                try {
+                    if (saveGame.getDetailActivity().equals("")) {
+                        startActivityForResult(new Intent(MainActivity.this, CreateName.class), REQUEST_CODE_INIT);
+                    }
+                    else {
+                        loadGame();
+                        readEvent();
+                        readJob();
+                        readFriend();
+                        changeWork();
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
             }
-            else {
-                loadGame();
-                readEvent();
-                //Toast.makeText(this, "hể", Toast.LENGTH_SHORT).show();
-                readJob();
-                readFriend();
-                changeWork();
-            }
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+        });
+        //Toast.makeText(this, "Load Data", Toast.LENGTH_SHORT).show();
+        saveGame.loadData();
+//        try {
+//            if (saveGame.getDetailActivity().equals("")) {
+//                startActivityForResult(new Intent(MainActivity.this, CreateName.class), REQUEST_CODE_INIT);
+//            }
+//            else {
+//                loadGame();
+//                readEvent();
+//                //Toast.makeText(this, "hể", Toast.LENGTH_SHORT).show();
+//                readJob();
+//                readFriend();
+//                changeWork();
+//            }
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
         ibtnAddAge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -520,6 +543,7 @@ public class MainActivity extends AppCompatActivity {
         //Tao dialog asset
         Dialog dialog = createAssetDialog();
 
+        //Toast.makeText(this, "Asset", Toast.LENGTH_SHORT).show();
         //Anh xa
         TextView txtContent = dialog.findViewById(R.id.textviewAssetContent);
         ImageView imgAsset = dialog.findViewById(R.id.imageviewAsset);
@@ -559,10 +583,10 @@ public class MainActivity extends AppCompatActivity {
                     createNotification(R.drawable.cancel, "Bạn đã sở hữu món đồ này đâu mà đồng ý!!!", MainActivity.this);
                 else {
                     try {
+                        dialog.dismiss();
                         JSONArray arr = arrSelect.getJSONArray(0);
                         jsonResult = arr.getJSONObject(new Random().nextInt(arr.length()));
                         dialogEventResult(title, false);
-                        dialog.dismiss();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -575,10 +599,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 JSONArray arr = null;
                 try {
+                    //Toast.makeText(MainActivity.this, "Cancel", Toast.LENGTH_SHORT).show();
                     arr = arrSelect.getJSONArray(1);
                     jsonResult = arr.getJSONObject(new Random().nextInt(arr.length()));
-                    dialogEventResult(title, false);
                     dialog.dismiss();
+                    dialogEventResult(title, false);
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -1139,6 +1165,10 @@ public class MainActivity extends AppCompatActivity {
         saveGame.saveKeo(0);
         saveGame.saveFastFood(0);
         saveGame.saveCrime(0);
+<<<<<<< HEAD
+=======
+
+>>>>>>> dad39c3506aeb108a32b36dd3e3351c51b749377
         for (int i=0; i<arrRelationship.size(); i++)
         {
             QuanHe friend = arrRelationship.get(i);
@@ -1195,7 +1225,7 @@ public class MainActivity extends AppCompatActivity {
     {
         for (int i=0; i<array.size(); i++) {
             QuanHe quanHe = array.get(i);
-            int id = quanHe.HinhAnh;
+            int id = quanHe.getHinhAnh();
             if (quanHe.isBoy()) //Boy
             {
                 if (quanHe.getTuoi() >= 60) id = R.drawable.boy_8;
@@ -1442,7 +1472,12 @@ public class MainActivity extends AppCompatActivity {
 
 
         preferences = getSharedPreferences("data", MODE_PRIVATE);
-        saveGame = new SaveGame(preferences);
+
+        if (saveGame == null)
+        {
+            saveGame = new SaveGame(preferences);
+            //Toast.makeText(this, "Save game null", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void gotoActivity(View view)
@@ -1455,6 +1490,12 @@ public class MainActivity extends AppCompatActivity {
     {
         startActivity(new Intent(MainActivity.this, RelationShip.class));
         overridePendingTransition(R.anim.enter, R.anim.exit);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        
     }
 }
 

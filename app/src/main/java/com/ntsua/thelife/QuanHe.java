@@ -9,7 +9,7 @@ public class QuanHe implements Serializable {
     private int Tuoi;
     private int DoThanMat;
     private NameOfRelationship QuanHe;
-    public int HinhAnh;
+    private int HinhAnh;
     private boolean isBoy;
     private int interaction;
 
@@ -63,6 +63,9 @@ public class QuanHe implements Serializable {
 
     public void setBoy(boolean boy) {
         isBoy = boy;
+    }
+
+    public QuanHe() {
     }
 
     public QuanHe(String hoten, int tuoi, int doThanMat, NameOfRelationship quanhe, int hinhAnh, boolean isBoy) {
