@@ -1,91 +1,4269 @@
 {
   "student": {
     "work": [
-      {"content": "Học bài",
+      {
+        "content": "Học bài",
         "event": [
-          {"event": "Bạn từ chối đi chơi với bạn bè để học bài nhưng quên mất hôm nay không có bài để học.",
-            "assets": 0, "happy": -2, "health":0 , "smart":0, "appearance": 0, "skill": 0},
-          {"event": "Hôm này học được rất nhiều bài.",
-            "assets": 0, "happy": 0, "health": -2, "smart":2, "appearance": 0, "skill": 5},
-          {"event": "Bạn học luôn bài cho ngày mai",
-            "assets": 0, "happy": 1, "health": -2, "smart":3, "appearance": 0, "skill": 10}
-        ]},
-      {"content": "Không học đi chơi",
+          {
+            "event": "Bạn từ chối đi chơi với bạn bè để học bài nhưng quên mất hôm nay không có bài để học.",
+            "assets": 0,
+            "happy": -2,
+            "health": 0,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Hôm này học được rất nhiều bài.",
+            "assets": 0,
+            "happy": 0,
+            "health": -2,
+            "smart": 2,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn học luôn bài cho ngày mai",
+            "assets": 0,
+            "happy": 1,
+            "health": -2,
+            "smart": 3,
+            "appearance": 0,
+            "skill": 10
+          }
+        ]
+      },
+      {
+        "content": "Không học đi chơi",
         "event": [
-          {"event": "Hôm nay không có bài để học, bạn đi chơi một cách thoải mái.",
-            "assets": 0, "happy": 3, "health":0 , "smart":0, "appearance": 0, "skill": 0},
-          {"event": "Bạn đi chơi quên mất việc học bài",
-            "assets": 0, "happy": 2, "health":0 , "smart":-2, "appearance": 0, "skill": 0},
-          {"event": "3",
-            "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0, "skill": 0},
-          {"event": "4",
-            "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0, "skill": 0},
-          {"event": "5",
-            "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0, "skill": 0}
-        ]}
+          {
+            "event": "Hôm nay không có bài để học, bạn đi chơi một cách thoải mái.",
+            "assets": 0,
+            "happy": 3,
+            "health": 0,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn đi chơi quên mất việc học bài",
+            "assets": 0,
+            "happy": 2,
+            "health": 0,
+            "smart": -2,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "3",
+            "assets": 0,
+            "happy": -2,
+            "health": -1,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "4",
+            "assets": 0,
+            "happy": -2,
+            "health": -1,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "5",
+            "assets": 0,
+            "happy": -2,
+            "health": -1,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
     ],
     "event": [
-      {"require": 5, "event": "Bạn được rủ đi phượt với bạn bè, bạn cần có siêu siêu super xe để đi",
-        "asset": "gun", "name": "Súng", "newjob": "",
-        "selection":false, "select":[
+      {
+        "require": 5,
+        "event": "Bạn được rủ đi phượt với bạn bè, bạn cần có siêu siêu super xe để đi",
+        "asset": "gun",
+        "name": "Súng",
+        "newjob": "",
+        "selection": false,
+        "select": [
           [
-            {"event": "Té xe siêu xe", "salary": 0, "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0},
-            {"event": "Đi chơi rất vui", "salary": 0, "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0},
-            {"event":"Xẹp bánh", "salary": 0, "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0}
+            {
+              "event": "Té xe siêu xe",
+              "salary": 0,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            },
+            {
+              "event": "Đi chơi rất vui",
+              "salary": 0,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            },
+            {
+              "event": "Xẹp bánh",
+              "salary": 0,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
           ],
           [
-            {"event": "Bạn bè đi chơi vui ơ là vui, còn bạn ở nhà", "salary": 0, "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0},
-            {"event":"Mưa thế là ai cũng nghỉ đi, ở nhà hết", "salary": 0, "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0},
-            {"event":"Bạn không đi, thế là nhóm nản nghỉ đi hết :))", "salary": 0, "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0}
+            {
+              "event": "Bạn bè đi chơi vui ơ là vui, còn bạn ở nhà",
+              "salary": 0,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            },
+            {
+              "event": "Mưa thế là ai cũng nghỉ đi, ở nhà hết",
+              "salary": 0,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            },
+            {
+              "event": "Bạn không đi, thế là nhóm nản nghỉ đi hết :))",
+              "salary": 0,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
           ]
-      ]},
-      {"require": 10, "event": "Bạn được bố mẹ thưởng nóng 100k vì đạt được điểm 10 cuối kì.",
-        "asset": "", "newjob": "",
-        "selection":false, "salary": 0, "assets": 100, "happy": 3, "health": 0, "smart":0, "appearance": 0},
-      {"require": 20, "event": "Bạn được bố mẹ cho đi du lịch vì thành tích học tập xuất sắc. Bạn muốn đi đâu ?",
-        "asset": "PT02", "newjob": "",
-        "selection":true, "select":[
-        {"content":"Hà Nội", "selection": false,
-          "event":[
-            {"event": "HaNoi", "salary": 0, "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0},
-            {"event":"Đà Nẵng", "salary": 0, "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0},
-            {"event":"Sài Gòn", "salary": 0, "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0}
-          ]},
-        {"content":"Đà Nẵng", "selection": false,
-          "event":[
-            {"event": "HaNoi", "salary": 0, "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0},
-            {"event":"Đà Nẵng", "salary": 0, "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0},
-            {"event":"Sài Gòn", "salary": 0, "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0}
-          ]},
-        {"content":"Hồ Chí Minh", "selection": false,
-          "event":[
-            {"event": "HaNoi", "salary": 0, "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0},
-            {"event":"Đà Nẵng", "salary": 0, "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0},
-            {"event":"Sài Gòn", "salary": 0, "assets": 0, "happy": 5, "health": 0, "smart":0, "appearance": 0}
-          ]}
-      ]},
-      {"require": 30, "event": "Thành tích học tập của bạn đứng top trong trường", "newjob": "",
-        "selection":false, "salary": 0, "assets": 0, "happy": 0, "health": 5, "smart":0, "appearance": 0}
+        ]
+      },
+      {
+        "require": 10,
+        "event": "Bạn được bố mẹ thưởng nóng 100k vì đạt được điểm 10 cuối kì.",
+        "asset": "",
+        "newjob": "",
+        "selection": false,
+        "salary": 0,
+        "assets": 100,
+        "happy": 3,
+        "health": 0,
+        "smart": 0,
+        "appearance": 0
+      },
+      {
+        "require": 20,
+        "event": "Bạn được bố mẹ cho đi du lịch vì thành tích học tập xuất sắc. Bạn muốn đi đâu ?",
+        "asset": "PT02",
+        "newjob": "",
+        "selection": true,
+        "select": [
+          {
+            "content": "Hà Nội",
+            "selection": false,
+            "event": [
+              {
+                "event": "HaNoi",
+                "salary": 0,
+                "assets": 0,
+                "happy": 5,
+                "health": 0,
+                "smart": 0,
+                "appearance": 0
+              },
+              {
+                "event": "Đà Nẵng",
+                "salary": 0,
+                "assets": 0,
+                "happy": 5,
+                "health": 0,
+                "smart": 0,
+                "appearance": 0
+              },
+              {
+                "event": "Sài Gòn",
+                "salary": 0,
+                "assets": 0,
+                "happy": 5,
+                "health": 0,
+                "smart": 0,
+                "appearance": 0
+              }
+            ]
+          },
+          {
+            "content": "Đà Nẵng",
+            "selection": false,
+            "event": [
+              {
+                "event": "HaNoi",
+                "salary": 0,
+                "assets": 0,
+                "happy": 5,
+                "health": 0,
+                "smart": 0,
+                "appearance": 0
+              },
+              {
+                "event": "Đà Nẵng",
+                "salary": 0,
+                "assets": 0,
+                "happy": 5,
+                "health": 0,
+                "smart": 0,
+                "appearance": 0
+              },
+              {
+                "event": "Sài Gòn",
+                "salary": 0,
+                "assets": 0,
+                "happy": 5,
+                "health": 0,
+                "smart": 0,
+                "appearance": 0
+              }
+            ]
+          },
+          {
+            "content": "Hồ Chí Minh",
+            "selection": false,
+            "event": [
+              {
+                "event": "HaNoi",
+                "salary": 0,
+                "assets": 0,
+                "happy": 5,
+                "health": 0,
+                "smart": 0,
+                "appearance": 0
+              },
+              {
+                "event": "Đà Nẵng",
+                "salary": 0,
+                "assets": 0,
+                "happy": 5,
+                "health": 0,
+                "smart": 0,
+                "appearance": 0
+              },
+              {
+                "event": "Sài Gòn",
+                "salary": 0,
+                "assets": 0,
+                "happy": 5,
+                "health": 0,
+                "smart": 0,
+                "appearance": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "require": 30,
+        "event": "Thành tích học tập của bạn đứng top trong trường",
+        "newjob": "",
+        "selection": false,
+        "salary": 0,
+        "assets": 0,
+        "happy": 0,
+        "health": 5,
+        "smart": 0,
+        "appearance": 0
+      }
+    ]
+  },
+  "Ca sĩ đám cưới": {
+    "work": [
+      {
+        "content": "Hát theo yêu cầu",
+        "event": [
+          {
+            "event": "Bạn đi hát đám ma, tử khí làm bạn bị cảm lạnh",
+            "assets": 3000,
+            "happy": -2,
+            "health": -2,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn đi hát đám ma, tang gia được xoa dịu nhờ giọng hát của bạn",
+            "assets": 3500,
+            "happy": 2,
+            "health": -2,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn đi hát ở vũ trường, tại đó mở máy lạnh với nhiệt độ quá thấp khiên bạn bị viêm họng",
+            "assets": 3500,
+            "happy": -2,
+            "health": -2,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      },
+      {
+        "content": "Đi hát đám cưới",
+        "event": [
+          {
+            "event": "Bạn hát trong tiệc cưới của một cặp đôi xã hội đen. Giờ đây bạn có thêm 30 fan là giang hồ xăm trổ",
+            "assets": 3000,
+            "happy": 2,
+            "health": -2,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Đi hát đám cưới nhưng bạn lỡ hát nhầm bài ĐỒI THÔNG HAI MỘ, cô dâu chú rể đánh bạn sưng mặt",
+            "assets": -1500,
+            "happy": -2,
+            "health": -5,
+            "smart": 0,
+            "appearance": -1,
+            "skill": -5
+          },
+          {
+            "event": "Hôm nay bạn chạy show tận 3 cái đám cưới. Thu về tận 5 triệu tiền cát xê",
+            "assets": 5000,
+            "happy": 0,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Hiện tại không phải là mùa cưới, bạn không nhận được show hát nào",
+            "assets": 0,
+            "happy": -3,
+            "health": 0,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Hôm đó bạn bị cảm khiến bạn hát lệch giọng. Khách ngồi bên dưới la ó mời bạn xuống",
+            "assets": 0,
+            "happy": -3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -3
+          },
+          {
+            "event": "Bạn hát trong tiệc cưới lần 3 của một đại gia miệt vườn. Tiệc cưới hôm đó đa số khách mời là những người trung niên khiến bạn phải hát nhạc Bolero",
+            "assets": 6000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 20,
+        "event": "Sau nhiều năm giọng hát của bạn ngày càng tiến bộ, bạn bắt đầu được mời hát phòng trà",
+        "asset": "",
+        "name": "",
+        "newjob": "Ca sĩ phòng trà",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là ca sĩ phòng trà lương 10 triệu/ 1 năm",
+              "salary": 10000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục với công việc ca sĩ đám cưới",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Ca sĩ phòng trà": {
+    "work": [
+      {
+        "content": "Dạy hát",
+        "event": [
+          {
+            "event": "Lớp không đủ học viên. Bạn hủy lớp và chịu phí thuê chỗ dạy 2 triệu",
+            "assets": 2000,
+            "happy": -3,
+            "health": -2,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Nhiều học viên của bạn học mãi không tiến bộ, từ fan chuyển thành anti fan",
+            "assets": 0,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Lớp bạn thu hút 50 học viên, các học viên vì ngưỡng mộ tâm huyết giảng dạy của bạn mà dần chuyển thành fan. Bạn thu về phí dạy học 5 triệu đồng",
+            "assets": 5000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn được một đại gia biết đến và nhờ dạy kèm giùm đứa con gái của ông. Mỗi tháng bạn kiếm được tận 10 triệu",
+            "assets": 10000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      },
+      {
+        "content": "Đi hát",
+        "event": [
+          {
+            "event": "Bạn được một ông bầu chú ý và gọi đi hát ở nhiều nơi. Nhờ đó mà bạn kiếm về cho mình nhiều fan và nhiều tiền",
+            "assets": 10000,
+            "happy": 3,
+            "health": -4,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 10
+          },
+          {
+            "event": " Phòng trà ế khách, bạn tự hát tự mình nghe",
+            "assets": 0,
+            "happy": -2,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Khách ở phòng trà hôm nay là các cụ già khó tính, chê dòng nhạc bạn hát là nhạc trẻ lố lăng. Họ bỏ về giữa chừng khiến bạn khá buồn và xấu hổ",
+            "assets": 2000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Bạn bị khách sàm sỡ",
+            "assets": 0,
+            "happy": -10,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 70,
+        "event": "Sau một thời gian dài chinh chiến khắp các phòng trà, vũ trường bạn đã tạo được một tên tuổi ổn định và được công ty IDOL BIGMIT để ý muốn mời bạn làm ca sĩ thần tượng bạn có đồng ý không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Ca sĩ thần tượng",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là ca sĩ thần tượng với thu nhập 50 triệu/ 1 năm",
+              "salary": 50000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn vẫn tiếp tục với công việc Ca sĩ phòng trà",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Ca sĩ thần tượng": {
+    "work": [
+      {
+        "content": "Đi hát",
+        "event": [
+          {
+            "event": "Bạn được công ty chỉ cho đi hát ở một show âm nhạc tầm cỡ quốc tế. Với nhiều tháng ngày luyện tập cả giọng hát lẫn nhảy múa, bạn tự tin trình diễn và được nhiều khán giả vỗ tay khen ngợi",
+            "assets": 15000,
+            "happy": 3,
+            "health": -4,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Trong lúc biểu diễn, bạn bị fan cuồng cầm hung khí nhảy lên sân khấu sàm sỡ và đe dọa. May có bảo vệ giải thoát bạn, không thì bạn cũng toi đời",
+            "assets": 0,
+            "happy": -10,
+            "health": -7,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Hôm đó bạn bị đau họng nên bạn hát khá dở. Khán giả bên dưới la ó, chê bai yêu cầu bạn đi xuống. Bạn bị công ty khiển trách không biết giữ gìn sức khỏe và quyết định trừ lương của bạn",
+            "assets": -5000,
+            "happy": -5,
+            "health": -4,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      },
+      {
+        "content": "Đi họp fan",
+        "event": [
+          {
+            "event": "Bạn được fan tặng cho một bao thư chứa tận 10 triệu. Đêm đó bạn vui quá mất ngủ",
+            "assets": 10000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Trong buổi họp fan, khi đang bước đi lên khán đài thì bạn bị trượt chân té. Bạn xấu hổ quá trời!!!",
+            "assets": 0,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 90,
+        "event": "Bạn đã theo ngành ca sĩ quá lâu. Với việc rèn luyện giọng hát chăm chỉ và đi biểu diễn ở khắp mọi nơi. Bây giờ bạn đã đủ khả năng để trở thành một DIVA triệu người hâm mộ. Bạn có muốn làm công việc này?",
+        "asset": "",
+        "name": "",
+        "newjob": "DIVA",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là một DIVA lương 100 triệu/ 1 năm",
+              "salary": 100000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là một ca sĩ thần tượng lương 50 triệu/ 1 năm",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "DIVA": {
+    "work": [
+      {
+        "content": "Đi show quốc tế",
+        "event": [
+          {
+            "event": "Bạn được ekip sắp lịch cho một show quốc tế với 1 triệu khán giả đang chờ bạn. Tiếc thay trời hôm đó bị bão, show đành hoãn, cả bạn và fan rất buồn",
+            "assets": 0,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Hôm đó bạn biểu diễn ở một show mang tầm cỡ lớn. Bạn đừa sắp đặt biểu diễn sau cùng. Khi bạn vừa xuất hiện và cất giọng hát DIVA của mình ai trong concert cũng phải nổi da gà vì quá hay",
+            "assets": 100000,
+            "happy": 5,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn có một show song ca cùng một DIVA khác. Tối hôm đó, cả 2 bạn cùng song kiếm hợp bích phối hợp nhịp nhàng mang đến cho khán giả những bài hát tuyệt hay",
+            "assets": 150000,
+            "happy": 5,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
     ]
   },
   "coder": {
     "work": [
-      {"content": "Viết một con game xịn xò",
+      {
+        "content": "Viết một con game xịn xò",
         "event": [
-          {"event": "1", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
-          {"event": "2", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
-          {"event": "3", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
-          {"event": "4", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
-          {"event": "5", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0}
-      ]},
-      {"content": "Đi dạy thêm",
+          {
+            "event": "Game bạn viết ra đạt 100000 người chơi, bạn thu về rất nhiều tiền",
+            "assets": 20000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Nhiều người chơi phản hồi game của bạn dính nhiều bug khiến họ tức giận không chơi nữa",
+            "assets": -10000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      },
+      {
+        "content": "Đi dạy thêm",
         "event": [
-          {"event": "1", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
-          {"event": "2", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
-          {"event": "3", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
-          {"event": "4", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0},
-          {"event": "5", "assets": 0, "happy": -2, "health": -1, "smart":0, "appearance": 0}
-        ]}
+          {
+            "event": "Bạn mở một lớp dạy học lập trình C++. Vì không có tên tuổi nên lớp bạn mở ra không ai học",
+            "assets": 0,
+            "happy": -2,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn dạy thêm lập trình ở trung tâm IT. Lớp bạn dạy có 50 học viên và các học viên đều hiểu bài bạn dạy",
+            "assets": 1000,
+            "happy": 2,
+            "health": -3,
+            "smart": 0,
+            "appearance": 5,
+            "skill": 5
+          }
+        ]
+      },
+      {
+        "content": "Viết phần mềm",
+        "event": [
+          {
+            "event": "Bạn vừa viết xong phần mềm bảo mật cho khách hàng. 3 ngày sau khách đến mắng vốn bạn, thông tin khách bị rò rỉ tùm lum sau 3 tiếng. Bạn phải đền bù 10 triệu đồng",
+            "assets": -10000,
+            "happy": -3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Bạn viết phần mềm tường lửa cho công ty A, rồi nhạn thêm phá giải tường lửa cho công ty B đối thủ. Bạn thấy mình thật thông minh. Bạn kiếm lời 30 triệu đồng",
+            "assets": 30000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      },
+      {
+        "content": "Đào bitcoin",
+        "event": [
+          {
+            "event": "Bạn đào được 10 bitcoin, nhận được 50 triệu",
+            "assets": 50000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn đào được 2 bitcoin, nhận được 20 triệu",
+            "assets": 20000,
+            "happy": 2,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Đào nhiều quá khiến máy tính hỏng mất rồi",
+            "assets": 0,
+            "happy": -10,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 65,
+        "event": "Sếp thấy bạn làm việc rất chăm chỉ và ngỏ ý thăng chức bạn lên làm chuyên gia công nghệ bạn có đồng ý không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Chuyên gia công nghệ",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là một chuyên gia công nghệ, thu nhập 50 triệu/1 năm",
+              "salary": 50000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục với công việc lập trình viên",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Chuyên gia công nghệ": {
+    "work": [
+      {
+        "content": "Thuyết trình các sự kiện",
+        "event": [
+          {
+            "event": "Bạn đi tham gia sự kiện. Đến phần phát biểu của bạn, mọi người bỏ về hết. Hóa ra đang có chương trình phát quà miễn phí ở ngoài cổng đúng lúc bạn nói. Dù sao bạn vẫn nhận được 23 triệu mà không cần nói",
+            "assets": 23000,
+            "happy": 3,
+            "health": -4,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Chẳng ai mời bạn đi sự kiện cả. Bạn buồn đôi phút",
+            "assets": 0,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      },
+      {
+        "content": "Thử nghiệm phần mềm",
+        "event": [
+          {
+            "event": "Công ty bạn ra sản phẩm mới. Bạn kiểm tra tới lui cũng không tìm ra lỗi. Thế nhưng khi đưa sản phẩm cho người dùng sử dụng thì quá trời lỗi. Người sử dụng là ó, còn công ty cắt lương và còn phạt bạn 10 triệu",
+            "assets": -10000,
+            "happy": -3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Công ty FBY software mời bạn về thử nghiệm sản phẩm mới của họ. Bạn một hơi chỉ ra 20 lỗi của phần mềm mới. Bạn được trả 20 triệu cho khả năng của mình",
+            "assets": 20000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      },
+      {
+        "content": "Hack hệ thống",
+        "event": [
+          {
+            "event": "Bạn hack được 1 thẻ ngân hàng chứa 300 triệu",
+            "assets": 300000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn không hack được gì cả",
+            "assets": 0,
+            "happy": -4,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+          "event": "Bạn không những không hack thành công mà còn bị công an phát hiện tịch thu máy tính",
+          "assets": 0,
+          "happy": -10,
+          "health": -3,
+          "smart": 0,
+          "appearance": 0,
+          "skill": -5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 100,
+        "event": "Với việc tiếp xúc các máy móc công nghệ tiên tiến, thời gian ngồi code của bạn là vô số kể, trình độ của bạn trong lĩnh vực IT đã đạt mức MASTER. Bạn có muốn thăng cấp lên Chủ tịch tập đoàn công nghệ thông tin không?",
+        "asset": "Công ty",
+        "name": "Công ty",
+        "newjob": "Chủ tịch tập đoàn công nghệ thông tin",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là chủ tịch của tập đoàn công nghệ thông tin với thu nhập 300 triệu một năm",
+              "salary": 300000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn vẫn tiếp tục với công việc Chuyên gia công nghệ",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Cài win dạo": {
+    "work": [
+      {
+        "content": "Tới nhà khách cài win",
+        "event": [
+          {
+            "event": "Bạn sửa quá tốt, khách vô cùng hài lòng nên đã boa cho bạn 2 triệu",
+            "assets": 2000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn tới nhà của một ông ông lão và cài win cho cái máy tính cũ kỉ của ông. Trong lúc sửa vô tình máy tính bị đột tử. Ông lão tức giận bắt bạn phải đền tiền",
+            "assets": -1000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      },
+      {
+        "content": "Sửa điện thoại thêm",
+        "event": [
+          {
+            "event": "Bạn vừa sửa xong cái điện thoại, khách hàng mừng quá lôi thêm chục cái nữa cho bạn sửa. Hơi mệt nhưng đáng, bạn đút túi 2 triệu đem về",
+            "assets": 2000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn sửa điện thoại làm hư luôn của khách, phải đền 2 triệu đồng",
+            "assets": -2000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      },
+      {
+        "content": "Bán linh kiện điện tử",
+        "event": [
+          {
+            "event": "Khách hàng thay linh kiện. Giá gốc 2 triệu bạn bán 3 triệu rưỡi. Bạn buôn bán lời 1 triệu rưỡi",
+            "assets": 1500,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Khách hàng phát hiện bạn bán linh kiện với giá cắt cổ nên không mua nữa, còn tặng bạn 2 tiếng đồng hồ nghe chửi trước khi ra về",
+            "assets": 0,
+            "happy": -4,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 15,
+        "event": "Sau một thời gian cài win miệt mài bạn đã đủ trình để lên làm một lập trình viên, bạn có đồng ý không?",
+        "asset": "laptop",
+        "name": "laptop",
+        "newjob": "Lập trình viên",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là một lập trình viên lương tháng 20 triệu",
+              "salary": 20000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là một người cài Win dạo tháng 5 triệu",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Chủ tịch tập đoàn công nghệ thông tin": {
+    "work": [
+      {
+        "content": "Trốn thuế",
+        "event": [
+          {
+            "event": "Trốn thuế thành công, bạn đút túi được 300 triệu đồng tiền thuế",
+            "assets": 300000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn bị công an phát hiện trốn thuế, bạn bị phạt gấp đôi số tiền phải nộp",
+            "assets": 600000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      },
+      {
+        "content": "Sản xuất smartphone",
+        "event": [
+          {
+            "event": "Điện thoại V-Phong của bạn sản xuất ra tạo nên một cơn sốt trong thị trường di động. Đánh bại B-Phong và A-Phone, trờ thành chiếc điện thoại quốc dân 2021. Bạn thu về cho mình 200 triệu",
+            "assets": 200000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Sản phẩm smartphone bạn tạo ra được cho là đạo nhái của hãng pineapple bạn bị kiện và phải trả 400 triệu",
+            "assets": -400000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill":0
+          }
+        ]
+      },
+      {
+        "content": "Mua lại startup công nghệ",
+        "event": [
+          {
+            "event": "Bạn mua lại startup YaVoo nhưng làm ăn thua lỗ bạn mất 100 triệu",
+            "assets": -100000,
+            "happy": -3,
+            "health": -6,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn mua lại startup FaveLook, thu lời 120 triệu",
+            "assets": 120000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 20
+          }
+        ]
+      }
+    ],
+    "event": [
+    ]
+  },
+  "Phụ bếp": {
+    "work": [
+      {
+        "content": "Phụ bếp",
+        "event": [
+          {
+            "event": "Làm trong môi trường nhiều dinh dưỡng nên bạn ngày càng có da có thịt, đồng nghiệp bảo thay vì cầm khăn lau sàn thì bạn lăn sẽ sạch hơn",
+            "assets": 0,
+            "happy": -3,
+            "health": -3,
+            "smart": 0,
+            "appearance": -3,
+            "skill": 5
+          },
+          {
+            "event": "Đồ ăn ngon quá, bạn ăn vụng một miếng, sếp phát hiện phạt rửa chén một tuần. Miếng ăn là miếng nhục mà :((",
+            "assets": 0,
+            "happy": -3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Tốc độ nấu ăn của bạn ngày càng nhanh, sếp thưởng cho 2 triệu để khuyến khích",
+            "assets": 2000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Ngày nào cũng được ăn ké đồ ăn chất lượng 5 sao, cuộc đời bạn không gì sung sướng hơn",
+            "assets": 2000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      },
+      {
+        "content": "Tăng ca",
+        "event": [
+          {
+            "event": "Bạn nhận được 5 triệu tiền tăng ca, nhưng mua thuốc uống hết 1 triệu :((",
+            "assets": 4000,
+            "happy": -3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn nhận được thêm 2 triệu tiền tăng ca",
+            "assets": 2000,
+            "happy": 2,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      },
+      {
+        "content": "Lấy trộm nguyên liệu đem bán",
+        "event": [
+          {
+            "event": "Bạn bị bắt quả tang và bị phạt 1 triệu",
+            "assets": -1000,
+            "happy": -3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Bạn lấy được vài món đồ của nhà hàng và đem đi bán. Bạn thu về cho mình 1 triệu",
+            "assets": 1000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 20,
+        "event": "Sau một thời gian phụ bếp học lén các công thức nấu ăn của đầu bếp bạn đã đủ kinh nghiệm để làm đầu bếp chính. Bạn có muốn nhận công việc không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Đầu bếp",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là một đầu bếp lương tháng 20 triệu",
+              "salary": 20000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là một phụ bếp",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Đầu bếp": {
+    "work": [
+      {
+        "content": "Tăng ca",
+        "event": [
+          {
+            "event": "Bạn nhận được 7 triệu tiền tăng ca",
+            "assets": 7000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Ở trong bếp quá lâu, tiếp xúc với lửa dầu mỡ khiến nhan sắc bạn tàn tạ, nhận 5 triệu tiền tăng ca nhưng mua kem dưỡng da hết 3 triệu",
+            "assets": 2000,
+            "happy": -5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      },
+      {
+        "content": "Sáng tạo",
+        "event": [
+          {
+            "event": "Thử dùng rượu nấu món mới, bạn làm cháy bếp, sếp trừ 5 triệu vào tiền lương của bạn",
+            "assets": -5000,
+            "happy": -3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Món bánh bạn sáng tạo ra giúp nhà hàng đạt giải nhất trong cuộc thi toàn quốc, sếp thưởng bạn 10 triệu",
+            "assets": 10000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      },
+      {
+        "content": "Nấu ăn",
+        "event": [
+          {
+            "event": "Khách rất hài lòng với món ăn bạn nấu, tiền tip bạn nhận được là 2 triệu",
+            "assets": 2000,
+            "happy": 3,
+            "health": -4,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Trong lúc ăn thì một thực khách phát hiện có gián trong tô soup do bạn nấu. Bạn xin lỗi và phải trả toàn bộ chi phí ăn của thực khách đó",
+            "assets": -5000,
+            "happy": -3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 55,
+        "event": "Nhờ các tài năng và kinh nghiệm của mình bạn đã khiến danh tiếng của mình vang xa trong làng ẩm thực, bạn được các đầu bếp liên tục gửi lời mới tới nếm thử thức ăn của họ. Bạn có muốn trở thành một chuyên gia ẩm thực không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Chuyên gia ẩm thực",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là một chuyên gia ẩm thực với thu nhập 50 triệu/ 1 năm",
+              "salary": 50000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là một đầu bếp",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Chuyên gia ẩm thực": {
+    "work": [
+      {
+        "content": "Đánh giá món ăn",
+        "event": [
+          {
+            "event": "Trong một lần làm BGK, sau khi ăn 20 món xong bạn bị tào tháo rượt tè le. Nghề nào cũng có cái khổ",
+            "assets": 10000,
+            "happy": -3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Một nhà hàng đút lót cho bạn 12 triệu để bạn đánh giá tốt cho họ. Bạn không đồng ý. Nhà hàng đó cũng không thèm mời bạn nữa. Nhưng chỉ sau 2 tháng nhà hàng đó cũng phải đóng của vì làm ăn gian dối",
+            "assets": 0,
+            "happy": 0,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Một lần lỡ ăn quá cay khiến vị giác của bạn bị tê liệt",
+            "assets": 0,
+            "happy": 0,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      },
+      {
+        "content": "Mở lớp dạy nấu ăn",
+        "event": [
+          {
+            "event": "Lớp đông vui như trẩy hội, bạn thu 15 triệu học phí. Kinh nghiệm giảng dạy cũng tăng lên",
+            "assets": 15000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Tiền học phí không đủ bù vào tiền mua nguyên liệu cho học viên ăn bạn lỗ tận 2 triệu",
+            "assets": -2000,
+            "happy": -3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 90,
+        "event": "Sau một thời gian làm việc trong giới ẩm thực thực lực và kinh nghiệm của bạn không ai sánh bằng. Bạn được nhà nước phong danh VUA ĐẦU BẾP bạn có muốn nhận chức danh này không?",
+        "asset": "Quán ăn",
+        "name": "Quán ăn",
+        "newjob": "VUA ĐẦU BẾP",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là VUA ĐẦU BẾP thu nhập 200 triệu 1 năm",
+              "salary": 20000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là một chuyên gia ẩm thực",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "VUA ĐẦU BẾP": {
+    "work": [
+      {
+        "content": "Trốn thuế",
+        "event": [
+          {
+            "event": "Vì làm VUA ĐẦU BẾP thu về quá nhiều tiền bạn quyết định trốn thuế. Bạn thành công và vẫn giữ cho mình 200 triệu",
+            "assets": 200000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn bị công an phát hiện trốn thuế, bạn bị phạt gấp đôi số tiền phải nộp",
+            "assets": 400000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      },
+      {
+        "content": "Làm BGK các cuộc thi nấu ăn",
+        "event": [
+          {
+            "event": "Thí sinh làm món ăn quá tệ. Bạn tức giận đến mức cầm dĩa thức ăn bỏ vào thùng rác. Tưởng điều đó sẽ không hài lòng khán giả xem chương trình. Ai ngờ điều đó khiến họ mến bạn, danh tiếng bạn vang xa. Chủ chương trình thưởng cho bạn 100 triệu tiền tham gia",
+            "assets": 100000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Trong lúc đang thử món ăn do thí sinh nấu, bạn bị ngộ độc :( nhờ có thuốc mà bạn thoát khỏi cơn nguy kịch. Tiền cứu chữa cho lần đó là 150 triệu",
+            "assets": -1500000,
+            "happy": -5,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
+    ]
+  },
+  "Phóng viên": {
+    "work": [
+      {
+        "content": "Viết bài",
+        "event": [
+          {
+            "event": "Bạn được tòa soạn vinh danh là phóng viên năng nổ nhất tháng, bạn được thưởng 5 triệu",
+            "assets": 5000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bài viết của bạn mang vấn đề liên quan tới chính trị. Bạn bị tòa soạn khiển trách và quyết định trừ lương của bạn",
+            "assets": -2000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Tháng này bạn có 5 bài viết rất chất lượng bạn được thưởng 3 triệu",
+            "assets": 3000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 20,
+        "event": "Với các bài viết chất lượng và sự chăm chỉ trong công việc bạn được tòa soạn thăng chức lên làm trưởng chuyên mục bạn có đồng ý không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Trưởng chuyên mục",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bạn là trưởng chuyên mục phụ trách một chuyên mục lớn trong tòa soạn",
+              "salary": 25000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là phóng viên",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Trưởng chuyên mục": {
+    "work": [
+      {
+        "content": "Viết quảng cáo ngoài",
+        "event": [
+          {
+            "event": "Bạn viết quảng cáo cho một cửa hàng thời trang, 2 tháng sau cửa hàng đó đóng cửa vì ế",
+            "assets": -4000,
+            "happy": -3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Bài quảng cáo của bạn về nhà hàng 5 sao V-RES đã giúp nhà hàng tăng doanh thu. Nhà hàng cảm ơn bạn và gửi cho bạn một phong bao 5 triệu",
+            "assets": 5000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      },
+      {
+        "content": "Viết bài",
+        "event": [
+          {
+            "event": "Bạn bị thoái hóa đốt sống cổ do ngồi một chỗ viết bài quá lâu mà không đi vận động. Tiền vật lý trị liệu hết 3 triệu",
+            "assets": -3000,
+            "happy": -3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Với kinh nghiệm viết bài của mình, bài viết của bạn nhận được lời khen ngợi từ trưởng tòa soạn và nhận 4 triệu tiền thưởng",
+            "assets": 4000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 50,
+        "event": "Sau một thời gian làm trưởng chuyên mục chủ tòa soạn muốn mời bạn lên làm thư ký tòa soạn bạn có đồng ý không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Thư ký tòa soạn",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là thư ký tòa soạn lương năm 50 triệu",
+              "salary": 50000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục trưởng chuyên mục",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Thư ký tòa soạn": {
+    "work": [
+      {
+        "content": "Đi đến các buổi họp báo",
+        "event": [
+          {
+            "event": "Bạn cùng sếp đi đến buổi họp báo ra mắt album nhạc mới của ca sĩ PTM, buổi họp báo thành công còn bạn thì được đại diện tòa soạn phỏng vấn riêng ca sĩ nên thu về rất nhiều tin tức cho bài báo của mình",
+            "assets": 5000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Sếp yêu cầu bạn đi cùng tới buổi họp báo ra mắt phim MDD, ai ngờ do tối hôm qua thức khuya xem đá banh. Hôm sau bạn ngủ quên và cho sếp leo cây. Bạn bị sếp khiển trách và trừ 2 triệu vào tiền lương",
+            "assets": -2000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      },
+      {
+        "content": "Kiểm tra bài viết",
+        "event": [
+          {
+            "event": "Bạn kiểm tra một cách tỉ mỉ các bài viết do các phóng viên viết. Sếp khen bài làm việc rất chăm chỉ",
+            "assets": 4000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Do chủ quan mà bạn đã để lọt một bài viết có liên quan đến vấn đề nhạy cảm lên báo. Bạn bị sếp khiển trách và trừ lương",
+            "assets": -2000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 75,
+        "event": "Chủ tòa soạn thấy bạn đã cố gắng rất nhiều sau nhiều năm làm ở tòa soạn nên muốn nhường lại công việc của mình cho bạn. Bạn có chấp nhận không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Tổng biên tập",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là tổng biên tập lương 100 triệu 1 năm",
+              "salary": 20000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là thư ký tòa soạn",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Tổng biên tập": {
+    "work": [
+      {
+        "content": "Quản lý và kiểm duyệt các bài viết được gửi",
+        "event": [
+          {
+            "event": "Các bài viết được bạn đề xuất sau khi kiểm duyệt giúp tòa soạn ngày một nổi tiếng và phát triển. Bạn thu về 20 triệu",
+            "assets": 20000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Sau một thời gian làm việc khiến cơ thể bạn xuống cấp. Bạn phải bỏ ra 5 triệu tiền khám để bảo dưỡng sức khỏe của mình",
+            "assets": 5000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
+    ]
+  },
+  "Cầu thủ dự bị": {
+    "work": [
+      {
+        "content": "Xin vào sân",
+        "event": [
+          {
+            "event": "Sau một hồi khóc lóc van xin quỳ lạy năn nỉ ỉ ôi quên cả liêm sỉ, bạn được cho vào sân 15 phút, HLV bố thí cho bạn 500k",
+            "assets": 500,
+            "happy": 3,
+            "health": 0,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "HLV không tin tưởng nên cho bạn ngồi dự bị suốt trận đấu, chẳng được ra sân chút nào",
+            "assets": 0,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Đội nhà hòa 1-1 và nhất định phải thắng trận này. Chỉ còn 5 phút bù giờ và bạn được HLV tin tưởng cho vào đá. Bạn thực hiện 1 cú dứt điểm cực hay và giúp đội nhà giành được 3 điểm. HLV thưởng nóng cho bạn 5 triệu đồng",
+            "assets": 5000,
+            "happy": 5,
+            "health": 0,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      },
+      {
+        "content": "Cổ vũ đồng đội",
+        "event": [
+          {
+            "event": "Bạn đứng trong hàng ghế dự bị, thấy đội thua sml, bạn hát bài Niềm tin chiến thắng. Cả đội vực dậy tinh thần, lội ngược dòng thành công. Bạn được HLV tán thưởng",
+            "assets": 0,
+            "happy": 3,
+            "health": 0,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Do ngồi dự bị quá chán. Bạn lấy điện thoại chơi game. Bị HLV phát hiện và phạt bạn 1 triệu cho chừa",
+            "assets": -1000,
+            "happy": -5,
+            "health": 0,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 15,
+        "event": "Sau một thời gian miệt mài rèn luyện, trình độ và kinh nghiệm của bạn đã đạt lên một tầm cao mới, bạn được HLV tin tưởng và muốn cho bạn đá chính bạn chấp nhận chứ ?",
+        "asset": "",
+        "name": "",
+        "newjob": "Chân sút triển vọng",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là một Chân sút triển vọng thu nhập 40 triệu 1 năm",
+              "salary": 40000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là cầu thủ dự bị",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Chân sút triển vọng": {
+    "work": [
+      {
+        "content": "Thi đấu",
+        "event": [
+          {
+            "event": "Bạn lập hattrick giúp đội mình dành chiến thắng 3-2, được thưởng nóng 10 triệu",
+            "assets": 10000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Trong một trận đấu căng thẳng và đội nhà đang bị dẫn trước. Bạn đã thực hiện một đường truyền cực ảo giúp đồng đội ghi bạn. Trước một trận đấu chói sáng của mình, bạn đã được một fan hâm mộ gửi tặng 5 triệu",
+            "assets": 5000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Trong một trận đấu bạn bị đội bạn chơi xấu, đá thẳng vào chân bạn và khiến bạn bị chấn thương. Bạn phải nghỉ ở nhà 5 tháng",
+            "assets": 0,
+            "happy": -5,
+            "health": -25,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      },
+      {
+        "content": "Mở lớp dạy kỹ thuật",
+        "event": [
+          {
+            "event": "Học trò của bạn được CLB HANOI VTC chiêu mộ, bạn được phụ huynh biếu cho 5 triệu đồng",
+            "assets": 5000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Tháng này vì thi đấu khá mờ nhạt nên tên tuổi của bạn cũng đi xuống theo, không ai thèm đến lớp dạy của bạn.",
+            "assets": -4000,
+            "happy": -5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 50,
+        "event": "Với khả năng đá bóng của mình, tên tuổi của bạn lên như diều gặp gió. Bây giờ bạn là một trong những tên tuổi đắt giá nhất làng bóng đá. Bạn có muốn tiến lên công việc Ngôi sao bóng đá không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Ngôi sao bóng đá",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là Ngôi sao bóng đá. Thu nhập 100 triệu một năm",
+              "salary": 100000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là chân sút triển vọng",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Ngôi sao bóng đá": {
+    "work": [
+      {
+        "content": "Thi đấu",
+        "event": [
+          {
+            "event": "Trong trận đấu với đội M ngày hôm qua. Bạn đã dùng skill 5 sao của mình để lừa bóng qua 5 cầu thủ. Mọi người ai nấy trên khán đài đều lóa mắt với màn trình diễn của bạn",
+            "assets": 20000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn bị đối thủ phạm lỗi và gặp chấn thương. Phải nghỉ thi đấu trong một thời gian dài",
+            "assets": 0,
+            "happy": -5,
+            "health": -30,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Bạn đối mặt với loạt sút penalty căng não quyết định số phận của đội bóng của mình. Bạn là người thực hiện quả Penalty cuối cùng và đã sút thành công. Bạn được mọi người ca ngợi như một anh hùng của trận đấu",
+            "assets": 20000,
+            "happy": 5,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      },
+      {
+        "content": "Đi họp báo",
+        "event": [
+          {
+            "event": "Bạn có một buổi họp báo về một số vấn đề trong cuộc sống của bạn. Một phóng viên đã có một câu hỏi nhạy cảm đụng chạm tự ái của bạn. Bạn tức giận bỏ về",
+            "assets": 0,
+            "happy": -5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Sau một trận đấu thành công. Bạn đến họp báo và thấy 2 chai coca đặt trên bàn của bạn.Bạn vì muốn khuyên mọi người bảo vệ sức khỏe mà bỏ 2 chai coca đi và đặt 2 chai nước suối lên bàn. Ai ngờ hành động đó tạo trend. Hôm sau hình ảnh của bạn xuất hiện trên các mặt báo",
+            "assets": 5000,
+            "happy": 5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      },
+      {
+        "content": "Đóng quảng cáo",
+        "event": [
+          {
+            "event": "Bạn được mời đóng quảng cáo cho shoppew. Bạn thu về túi mình 10 triệu đồng",
+            "assets": 10000,
+            "happy": 3,
+            "health": -6,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn được mời đóng quáng cáo giày cho hãng NUKE. Sau buổi quảng cáo thành công đó bạn được mời làm gương mặt đại diện cho hãng",
+            "assets": 10000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 90,
+        "event": "Sau một khoảng thời gian thi đấu.Bạn đã có tất cả các danh hiệu lớn nhỏ. Bạn được vinh danh là huyền thoại của làng bóng đá. Bạn có chấp nhận danh hiệu đó không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Huyền thoại bóng đá",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bạn là Huyền thoại bóng đá với thu nhập 200 triệu 1 năm",
+              "salary": 200000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là ngôi sao bóng đá",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Huyền thoại bóng đá": {
+    "work": [
+      {
+        "content": "Thi đấu",
+        "event": [
+          {
+            "event": "Tên bạn được vang danh khắp các khán đài. Mọi trận đấu có mặt bạn đều là những trận đấu kinh điển.",
+            "assets": 100000,
+            "happy": 3,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Vì đố kị với tài năng của mình bạn bị một đối thủ phạm lỗi cực kì thô bạo khiến bạn xém mất đi sự nghiệp cầu thủ vĩnh viễn. Tiền phẫu thuật chân hết 200 triệu",
+            "assets":  200000,
+            "happy": -20,
+            "health": -50,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
+    ]
+  },
+  "Bồi bàn": {
+    "work": [
+      {
+        "content": "Phục vụ khách",
+        "event": [
+          {
+            "event": "Khách thấy bạn nhiệt tình nên thường xuyên để lại tip, gom lại cũng được 3 triệu",
+            "assets": 3000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Đi sớm về muộn, luôn chăm chỉ không ngại khó ngại khổ, bạn được chủ nhà hàng tuyên dương và thưởng 2 triệu",
+            "assets": 2000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 6
+          },
+          {
+            "event": "Đi trễ thường xuyên bạn bị phạt 500k",
+            "assets": -500,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      },
+      {
+        "content": "Làm tăng ca",
+        "event": [
+          {
+            "event": "Bạn nhận 2 triệu từ tiền tăng ca",
+            "assets": 2000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn nhận được 3 triệu tăng ca, nhưng không có thời gian cho gia đình bạn bè, mọi người dần xa cách bạn",
+            "assets": 3000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      },
+      {
+        "content": "Gian lận hóa đơn",
+        "event": [
+          {
+            "event": "Bạn gian lận hóa đơn thành công. Bạn bỏ túi cho mình 1 triệu đồng",
+            "assets": 1000,
+            "happy": 3,
+            "health": -4,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn bị phát hiện khi gian lân hóa đơn. Bạn bị trừ 3 triệu tiền lương",
+            "assets": -3000,
+            "happy": -3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 20,
+        "event": "Sau một thời gian cày miệt mài bạn được phong lên làm thu ngân, bạn có đồng ý không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Thu ngân",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là một thu ngân lương 15 triệu 1 năm",
+              "salary": 15000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là một bồi bàn",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Thu ngân": {
+    "work": [
+      {
+        "content": "Thu tiền",
+        "event": [
+          {
+            "event": "Các hóa đơn được bạn sắp xếp, tính toán một cách cẩn thận. Chủ nhà hàng thưởng bạn 2 triệu",
+            "assets": 2000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn lơ đễnh lỡ làm mất đi 5 triệu doanh thu nhà hàng. Bạn phải bỏ tiền túi ra đền lại",
+            "assets": -5000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 50,
+        "event": "Quản lý nhà hàng thấy bạn làm việc chăm chỉ. Anh ấy ra riêng lặp một nhà hàng khác và mời bạn làm quản lý. Bạn có đồng ý không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Lập trình viên",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Chúc mừng bây giờ bạn là quản lý nhà hàng thu nhập 40 triệu 1 năm",
+              "salary": 40000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục làm ở nhà hàng cũ với vai trò thu ngân",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Quản lý nhà hàng": {
+    "work": [
+      {
+        "content": "Quản lý",
+        "event": [
+          {
+            "event": "Nhà hàng tổ chức một tiệc cưới, nhờ một tay bạn quản lý mà mọi thứ đều diễn ra êm đẹp. Chủ thưởng cho bạn 5 triệu",
+            "assets": 5000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Tối qua thức khuya coi đá banh. Sáng hôm sau bạn ngủ quên, chủ nhà hàng gọi cho bạn cả chục cuộc gọi nhưng bạn không bắt máy. Bạn bị chủ khiển trách và trừ 2 triệu tiền lương",
+            "assets": 2000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 80,
+        "event": "Bạn đã làm việc trong lĩnh vực này quá lâu để có thể đủ trình độ và mở ra một nhà hàng riêng. Bạn có muốn trở thành chủ của một nhà hàng không?",
+        "asset": "Quán ăn",
+        "name": "Quán ăn",
+        "newjob": "Chủ nhà hàng",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn chủ nhà hàng thu nhập 100 triệu 1 năm",
+              "salary": 100000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là quản lý của nhà hàng cũ",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Chủ nhà hàng": {
+    "work": [
+      {
+        "content": "Trốn thuế",
+        "event": [
+          {
+            "event": "Trốn thuế thành công, bạn đút túi được 50 triệu đồng tiền thuế",
+            "assets": 50000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn bị công an phát hiện trốn thuế, bạn bị phạt gấp đôi số tiền phải nộp",
+            "assets": 100000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      },
+      {
+        "content": "Thống kê sổ sách",
+        "event": [
+          {
+            "event": "Tháng này nhà hàng của bạn được nhiều thực khách ghé thăm, bạn thu về cho riêng mình 50 triệu",
+            "assets": 50000,
+            "happy": 3,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Dạo này vì dịch bệnh nên nhà hàng bạn làm ăn thua lỗ, bạn phải trả nhiều khoản chi phí mà tiền thì không có. Bạn lỗ tận 100 triệu",
+            "assets": -100000,
+            "happy": -5,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
+    ]
+  },
+  "Diễn viên đóng thế": {
+    "work": [
+      {
+        "content": "Làm việc",
+        "event": [
+          {
+            "event": "Bạn được thuê dự một vài sự kiện vì giống hết diễn viên chính",
+            "assets": 2000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Diễn viên chính bị ốm, bạn đóng thay và được đạo diễn khen ngợi",
+            "assets": 3000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Tham gia đóng thế 2 phim bạn nhận được 3 triệu tiền thù lao",
+            "assets": 3000,
+            "happy": 5,
+            "health": -4,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn đóng thế cảnh nóng đồng tính. Bạn nhận được 4 triệu tiền cát xê. Đúng là hi sinh vì nghề nghiệp",
+            "assets": 4000,
+            "happy": 5,
+            "health": -4,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn đóng vai xác chết, vai diễn phải nín thở lâu nên hơi mệt, bạn nhận 1 triệu cát xê",
+            "assets": 1000,
+            "happy": 5,
+            "health": -4,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn đóng vai người dân chạy loạn trong thiên tai, vai diễn dễ ẹt, bạn nhận 1 triệu cát xê",
+            "assets": 1000,
+            "happy": 5,
+            "health": -4,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Hiện không có vai diễn nào cho bạn cả",
+            "assets": 0,
+            "happy": -5,
+            "health": 0,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 30,
+        "event": "Sau nhiều năm rèn luyện, diễn xuất của bạn để lại nhiều dấu ấn trên màn ảnh, đạo diễn mời bạn thủ vai chính cho một bộ phim truyền hình. Bạn có đồng ý không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Diễn viên chính",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là diễn viên chính thu nhập 40 triệu 1 năm",
+              "salary": 40000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là một diễn viên đóng thế",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Diễn viên chính": {
+    "work": [
+      {
+        "content": "Tham gia dự án mới",
+        "event": [
+          {
+            "event": "Bạn đang không có dự án nào, hãy nghỉ ngơi một thời gian",
+            "assets": 0,
+            "happy": 0,
+            "health": 0,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn tham gia dự án phim hài, bạn diễn gần chết mà không ai cười, bạn đành cười trừ",
+            "assets": 0,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Cảnh hành động của bạn làm khán giả hồi hộp muốn xiu. Bạn có thêm 100 fan yêu mến",
+            "assets": 10000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn sinh ra là để đóng phim tình cảm. Bạn có thêm 80 fan ngôn tình",
+            "assets": 8000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Một hôm bạn đóng một cảnh hành động, bạn trượt té và bị gãy tay. Bạn nghỉ ở nhà 2 tháng",
+            "assets": 0,
+            "happy": -5,
+            "health": -20,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      },
+      {
+        "content": "Đóng phim",
+        "event": [
+          {
+            "event": "Phim của bạn thắng lớn được chiếu vào giờ vàng. Bạn nhận được 10 triệu cát xê",
+            "assets": 10000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn diễn hơi lố. 20 fan bỏ rơi bạn",
+            "assets": -2000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Phim của bạn ăn khách. Bạn nhận 6 triệu cát xê",
+            "assets": 6000,
+            "happy": 5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 80,
+        "event": "Với nhiều vai diễn để đời, giờ đây bạn đã có được một hình tượng vững chắc trong lòng fan. Bạn là một trong số những diễn viên đắt giá nhất Vollywood. Bạn có muốn trở thành Ngôi sao điện ảnh không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Ngôi sao điện ảnh",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là ngôi sao điện ảnh thu nhập 150 triệu 1 năm",
+              "salary": 150000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là diễn viên chính",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Ngôi sao điện ảnh": {
+    "work": [
+      {
+        "content": "Trốn thuế",
+        "event": [
+          {
+            "event": "Trốn thuế thành công, bạn đút túi được 50 triệu đồng tiền thuế",
+            "assets": 50000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn bị công an phát hiện trốn thuế, bạn bị phạt gấp đôi số tiền phải nộp",
+            "assets": 100000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      },
+      {
+        "content": "Đóng phim",
+        "event": [
+          {
+            "event": "Bạn đóng vai chính trong một bộ phim điện ảnh tình cảm gia đình. Vai diễn của bạn để lại một dấu ấn khó phai trong lòng người xem. Bạn được thưởng 50 triệu tiền cát xê",
+            "assets": 50000,
+            "happy": 3,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Trong lúc đóng phim bạn gặp tai nạn diễn xuất dẫn tới chấn thương. Bạn phải nghỉ ở nhà 4 tháng",
+            "assets": 0,
+            "happy": -10,
+            "health": -30,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      },
+      {
+        "content": "Họp fan",
+        "event": [
+          {
+            "event": "Fan hâm mộ yêu mến bạn tặng bạn 10 triệu",
+            "assets": 10000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn bị fan cuồng sàm sỡ",
+            "assets": 0,
+            "happy": -10,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
+    ]
+  },
+  "Thực tập sinh": {
+    "work": [
+      {
+        "content": "Dạy thế",
+        "event": [
+          {
+            "event": "Bạn được một giáo viên nhờ dạy thế ở một lớp cá biệt 2 ngày. Bạn bị tụi học sinh lớp đó bắt nạt",
+            "assets": 0,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Bạn được phân công dạy thế một lớp chuyên. Buổi học hôm đó diễn ra êm đẹp. Các em học sinh cũng rất ngoan và lắng nghe bài giảng của bạn",
+            "assets": 1000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn được một giáo viên chủ nhiệm nhờ kèm cặp một em học sinh học yếu. Với tài năng của mình chỉ với 1 tháng em học sinh ấy từ yếu mà lên khá. Bạn được hiệu trưởng khen ngợi và thưởng nóng 1 triệu",
+            "assets": 1000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 20,
+        "event": "Sau một thời gian làm thực tập sinh bạn được bổ nhiệm làm giáo viên. Bạn có muốn đảm nhận?",
+        "asset": "",
+        "name": "",
+        "newjob": "Giáo viên",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là một giáo viên lương 10 triệu",
+              "salary": 10000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là một thực tập sinh",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Giáo viên": {
+    "work": [
+      {
+        "content": "Đi dạy",
+        "event": [
+          {
+            "event": "Hôm nay lớp bạn khá ngoan. Các em đều hiểu bài",
+            "assets": 1000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Hôm nay một em trong lớp học phao bài trong lúc thi cuối kì. Bạn bị hiệu trưởng khiển trách vì là chủ nhiệm của em ấy",
+            "assets": 0,
+            "happy": -5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      },
+      {
+        "content": "Dạy thêm",
+        "event": [
+          {
+            "event": "Tháng này không học sinh nào thèm đăng ký học bạn cả. Bạn phải trả tiền thuê chỗ học :(",
+            "assets": -2000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Lớp học thêm của bạn nhận được 50 em. Các em đều hiểu bài. Phụ huynh bồi dưỡng them cho bạn 2 triệu",
+            "assets": 7000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 15,
+        "event": "Sau một thời gian làm trong lĩnh vực nhà giáo, bạn được phân làm trưởng của một bộ môn. Bạn có đồng ý không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Trưởng bộ môn",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là một trưởng bộ môn thu nhập 13 triệu",
+              "salary": 20000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là giáo viên",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Trưởng bộ môn": {
+    "work": [
+      {
+        "content": "Đi dạy",
+        "event": [
+          {
+            "event": "Bạn khiển trách một giáo viên trong bộ môn vì liên tục bỏ tiết không lý do",
+            "assets": 0,
+            "happy": 0,
+            "health": -1,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Một học sinh do bạn bồi dưỡng đoạt giải Olympic quốc gia, bạn được thưởng 10 triệu đồng",
+            "assets": 10000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn bị nhà trường khiển trách do vô tình để lộ đề thi cuối kì",
+            "assets": 0,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      },
+      {
+        "content": "Luyện thi đại học",
+        "event": [
+          {
+            "event": "50% em học sinh đậu đại học với NV1. Bạn gây dựng niềm tin với phụ huynh",
+            "assets": 10000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "70% các em học bạn đâu đại học",
+            "assets": 15000,
+            "happy": 5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Lớp không đủ học viên bạn hủy lớp và đợi dip sau",
+            "assets": 0,
+            "happy": -5,
+            "health": 0,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 75,
+        "event": "Sau một thời gian làm trưởng bộ môn. Hiệu trưởng sắp về hưu nên muốn đề cử bạn lên thay thế. Bạn có đồng ý không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Hiệu trưởng",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là một lập trình viên lương tháng 20 triệu",
+              "salary": 20000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là một người cài Win dạo tháng 5 triệu",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Hiệu trưởng": {
+    "work": [
+      {
+        "content": "Trốn thuế",
+        "event": [
+          {
+            "event": "Trốn thuế thành công, bạn đút túi được 50 triệu đồng tiền thuế",
+            "assets": 50000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn bị công an phát hiện trốn thuế, bạn bị phạt gấp đôi số tiền phải nộp",
+            "assets": 100000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      },
+      {
+        "content": "Tới các hội nghị giáo dục để thuyết trình",
+        "event": [
+          {
+            "event": "Buổi thuyết trình diễn ra suông sẻ. Bạn được đánh giá cao về trình độ hiểu biết",
+            "assets": 20000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn không được ai mời để thuyết trình",
+            "assets": 0,
+            "happy": -5,
+            "health": 0,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
+    ]
+  },
+  "Bán hàng rong": {
+    "work": [
+      {
+        "content": "Hành nghề",
+        "event": [
+          {
+            "event": "Bạn bán nhập rau củ ở đà lạt về bán. Bạn thu lời tận 500k",
+            "assets": 500,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn bị ma cũ đánh cho 1 trận vì dám giành địa bàn của chúng",
+            "assets": 0,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn bị quy tắc đô thị tịch thu hàng và lập biên bản báo cáo",
+            "assets": -1000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 15,
+        "event": "Bạn có muốn trở thành chủ shop online không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Chủ shop online",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là chủ shop online thu nhập 20 triệu",
+              "salary": 20000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là nguời bán hàng rong",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Chủ shop online": {
+    "work": [
+      {
+        "content": "Nhập hàng bán",
+        "event": [
+          {
+            "event": "Bạn nhập một loạt son nước ngoài về bán. Bán chưa được bao nhiêu thì bị khách bốc phốt bán hàng giả. Bạn bị lỗ vốn",
+            "assets": -5000,
+            "happy": -3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Bên nước ngoài có một loại socola đang hot. Bạn bèn nhập về và livestream để bán. Khách mua ăn thử khen ngon và gọi người thân vô mua thêm. Bạn thu lời hơn 4 triệu",
+            "assets": 4000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 50,
+        "event": "Bạn có muốn mở một siêu thị mini và làm chủ không?",
+        "asset": "Cửa hàng nhỏ",
+        "name": "Cửa hàng nhỏ",
+        "newjob": "Quản lý siêu thị mini",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bạn là quản lý siêu thị mini thu nhập 40 triệu 1 năm",
+              "salary": 40000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục chủ shop online",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Quản lý siêu thị mini": {
+    "work": [
+      {
+        "content": "Quản lý",
+        "event": [
+          {
+            "event": "Siêu thị mini của bạn nhập về một loạt hàng mới và được nhiều khách hàng ưa chuộn. Doanh thu siêu thị tăng cao. Riêng bạn thu về 5 triệu",
+            "assets": 5000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn bị công an phát hiện bán hàng hết hạn sử dụng và phạt bạn 4 triệu đồng",
+            "assets": -4000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
+    ]
+  },
+  "Binh nhất": {
+    "work": [
+      {
+        "content": "Phục vụ hậu cần",
+        "event": [
+          {
+            "event": "Bạn nấu ăn cho tiểu đội và được mọi người khen ngon. Bạn được thưởng 1 triệu",
+            "assets": 1000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Sáng chăn nuôi tắm rửa heo, chiều đi trăn trâu, tối ngủ trong chuồng bò. Các động vật được bạn chăm sóc khỏe mạnh bạn được thưởng 3 triệu",
+            "assets": 3000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      },
+      {
+        "content": "Tăng gia sản xuất",
+        "event": [
+          {
+            "event": "Nhờ năng nổ tăng gia sản xuất mà đơn vị luôn có thực phẩm sạch để sử dụng. Bạn được thưởng 2 triệu",
+            "assets": 2000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Sức khỏe bạn được cải thiện đáng kể nhờ ăn rau sạch do chính mình trồng",
+            "assets": 0,
+            "happy": 5,
+            "health": 3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Một hôm bạn ngủ quên. Bị binh trưởng khiển trách và cho bạn chạy 50 chục vòng sân",
+            "assets": 0,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 25,
+        "event": "Sau một thời gian làm binh nhất. Bạn được thăng hàm lên làm Trung sĩ. Bạn đồng ý chứ?",
+        "asset": "",
+        "name": "",
+        "newjob": "Trung sĩ",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là một trung sĩ thu nhập 15 triệu 1 năm",
+              "salary": 15000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là binh nhất",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Trung sĩ": {
+    "work": [
+      {
+        "content": "Xung phong tiền tuyến",
+        "event": [
+          {
+            "event": "Bạn nhận nhiệm vụ bảo vệ rừng, chống lâm tặc. Vì đam mê hái hóa bắt bướm mà bạn đi lạc. Nhiệm vụ thất bại, bạn bị phạt dọn hố phân 2 tháng trừ 3 triệu tiền lương",
+            "assets": 3000,
+            "happy": -3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Bạn nhận nhiệm vụ bảo vệ biển đảo. Bạn bắt sống được 5 thằng giặc và giữ an toàn cho biển đảo 1 thán",
+            "assets": 6000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      },
+      {
+        "content": "Huấn luyện tân binh",
+        "event": [
+          {
+            "event": "Bạn huấn luyện cho binh đoàn của mình một cách cẩn thận. Được cấp trên khen thưởng",
+            "assets": 2000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Giữa đêm các tân binh không ngủ mà tụ tập hát hò, bạn phải thức cả đêm dẹp loạn. Hôm sau bạn còn bị cấp trên khiển trách",
+            "assets": 0,
+            "happy": -7,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Bạn được bầu chọn là trung sĩ 5 tốt với 90% phiếu bầu từ chiến sĩ.Bạn được thưởng 5 triệu",
+            "assets": 5000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 50,
+        "event": "Bạn được thăng hàm lên làm Thượng úy. Bạn có đồng ý không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Thượng úy",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là thượng úy thu nhập 25 triệu 1 năm",
+              "salary": 25000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là trung sĩ",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Thượng úy": {
+    "work": [
+      {
+        "content": "Phòng chống tham nhũng",
+        "event": [
+          {
+            "event": "Bạn bắt được một nhóm tham nhũng. Bạn lập được chiến công lớn cho nhà nước",
+            "assets": 0,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn điều tra và xử lý thành công một vụ chiến sĩ cấp dưới móc nối với bên ngoài đẻ tuồn hàng cấm vào quân đội. Bạn được tuyên dương trước mọi người",
+            "assets": 5000,
+            "happy": 5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 90,
+        "event": "Sau nhiều đóng góp cho Đảng và Đất Nước. Bạn được phong lên làm Đại Tá. Bạn có đồng ý không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Đại tá",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bạn được phong lên làm đại tá thu nhập 50 triệu 1 năm",
+              "salary": 50000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là Thượng úy",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Đại tá": {
+    "work": [
+      {
+        "content": "Họp nhà nước",
+        "event": [
+          {
+            "event": "Bạn được đề cử đi họp đại biểu và mời thuyết trình. Buổi thuyết trình của bạn về các tệ nạn xã hội rất hay và được mọi người ca ngợi",
+            "assets": 0,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Sau nhiều năm làm việc trong quân đội đi chinh chiến nhiều nơi khiến cơ thể bạn xuống cấp. Bạn phải đi bác sĩ để khám bệnh hết 5 triệu",
+            "assets": -5000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      },
+      {
+        "content": "Lãnh đạo các cuộc bảo vệ tiền tuyến",
+        "event": [
+          {
+            "event": "Đội binh do bạn lãnh đạo hoàn thành tốt nhiệm vụ bảo vệ biển đảo. Bạn được nhà nươc phong tặng huy chương và phong bì 4 triệu",
+            "assets": 4000,
+            "happy": 3,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
+    ]
+  },
+  "Nhân viên sale": {
+    "work": [
+      {
+        "content": "Bán hàng",
+        "event": [
+          {
+            "event": "Tháng này bạn bán được 30 món hàng",
+            "assets": 3000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Tháng này kinh tế đi xuống dẫn tới việc hàng bạn bán không ai có tiền để mua. Bạn thua lỗ và bị công ty khiển trách",
+            "assets": -3000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      },
+      {
+        "content": "Quảng cáo các hàng sale",
+        "event": [
+          {
+            "event": "Bạn gọi điện cho các khách hàng và sản phẩm sale của mình nhưng không ai thèm quan tâm mà còn tắt máy giữa chừng",
+            "assets": 0,
+            "happy":-3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Bạn tới siêu thị và quảng cáo mặt hàng mới của công ty mình với giá sale hấp dẫn. Mọi người chú ý và tới mua. Hôm đó bạn thu về một đống tiền",
+            "assets": 4000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 20,
+        "event": "Bạn được bổ nhiệm lên làm trưởng phòng marketing.Bạn có đồng ý không?",
+        "asset": "laptop",
+        "name": "laptop",
+        "newjob": "Trưởng phòng marketing",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là trưởng phòng marketing. Thu nhập 20 triệu 1 năm",
+              "salary": 20000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là nhân viên sale",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Trưởng phòng marketing": {
+    "work": [
+      {
+        "content": "Quản lý",
+        "event": [
+          {
+            "event": "Bạn đề xuất các chiến lược marketing mới và được mọi người tán thành. Sau một thời gian thực hiện chiến lược của bạn. Công ty thu lời. Bạn được giám đốc khen ngợi và thưởng nóng liên 5 triệu",
+            "assets": 5000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn quản lý các công việc marketing của các nhân viên một cách chăm chỉ. Nhờ có bạn mà công ty phát triển",
+            "assets": 0,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Đề xuất về chiến lược marketing của bạn khiến doanh thu công ty giảm. Bạn bị phê bình và trừ lương",
+            "assets": -5000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      },
+      {
+        "content": "Sản xuất smartphone",
+        "event": [
+          {
+            "event": "Điện thoại V-Phong của bạn sản xuất ra tạo nên một cơn sốt trong thị trường di động. Đánh bại B-Phong và A-Phone, trờ thành chiếc điện thoại quốc dân 2021. Bạn thu về cho mình 200 triệu",
+            "assets": 200000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 15
+          },
+          {
+            "event": "Sản phẩm smartphone bạn tạo ra được cho là đạo nhái của hãng pineapple bạn bị kiện và phải trả 400 triệu",
+            "assets": -400000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -3
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 55,
+        "event": "Trong một cuộc họp bầu ra viên chức. Bạn được bầu làm Giám đốc kinh doanh vì đã làm việc rất chăm chỉ. Bạn có đồng ý không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Giám đốc kinh doanh",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là Giám đốc kinh doanh thu nhập 50 triệu 1 năm",
+              "salary": 50000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là trưởng phòng marketing",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Giám đốc kinh doanh": {
+    "work": [
+      {
+        "content": "Làm việc",
+        "event": [
+          {
+            "event": "Bạn mở một cuộc họp và cùng các nhân viên bàn về vấn đề doanh thu của công ty. Cuộc họp diễn ra thuận lợi còn bạn được mọi người khen ngợi vì có những ý tưởng rất hay",
+            "assets": 0,
+            "happy": 5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Công ty bạn doanh thu có phần giảm xuống. Bạn phải bỏ tiền tui của mình ra để bù vốn cho công ty",
+            "assets": -150000,
+            "happy": -5,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": []
+  },
+  "Chạy Grab": {
+    "work": [
+      {
+        "content": "Chạy Grab",
+        "event": [
+          {
+            "event": "Mùa hè chạy grab làm làn da bạn vừa đen vừa xấu, nhưng khách thương tình đánh giá cho bạn 5 sao và tip thêm cho bạn 1 triệu",
+            "assets": 1000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Chở đúng tên tội phạm mà bạn không biết, đang đi trên đường thì cảnh sát chặn lại bắt, khách vào tù nên bạn không biết đòi ai 500k tiền xe",
+            "assets": -500,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      },
+      {
+        "content": "Ship đồ ăn",
+        "event": [
+          {
+            "event": "Bạn kiếm được 2 triệu từ việc ship đồ ăn",
+            "assets": 2000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn bị khách bùng 5 ly CongMe trị giá 300 với lý do T đặt cho vui thôi",
+            "assets": -300,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 15,
+        "event": "Sau một thời gian chạy Grab bạn được thăng cấp lên Tài xế Taxi?",
+        "asset": "Ô tô",
+        "name": "Ô tô",
+        "newjob": "Tài xê Taxi",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là một tài xế Taxi thu nhập 10 triệu 1 năm",
+              "salary": 10000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là một người chạy Grab",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Tài xế Taxi": {
+    "work": [
+      {
+        "content": "Chở khách",
+        "event": [
+          {
+            "event": "Hôm nay bạn chở được 30 vị khách",
+            "assets": 3000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Hôm nay trời mưa cả ngày, ai cũng ở nhà nên không ai đi xe bạn cả. Bạn lại còn lỗ 1 triệu tiền xăng chạy vòng vòng kiếm khách",
+            "assets": -1000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 50,
+        "event": "Sau một thời gian miệt mài chạy xe bạn được tin tưởng được giao cho công việc quản lý đội xe?",
+        "asset": "",
+        "name": "",
+        "newjob": "Quản lý đội xe",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là quản lý đội xe thu nhập 15 triệu 1 năm",
+              "salary": 15000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là tài xế taxi",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Quản lý đội xe": {
+    "work": [
+      {
+        "content": "Quản lý",
+        "event": [
+          {
+            "event": "Hôm nay anh em tài xế ai nấy cũng hăng hái làm việc. Đội do bạn quản lý thu về rất nhiều doanh thu. Bạn được sếp trên khen thưởng cho 3 triệu",
+            "assets": 3000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Nhờ công sức bạn bỏ ra quản lý. Đội xe bạn ngày một phát triển và mang về doanh thu tốt. Anh em trong đội ai nấy đều hòa thuận và yêu mến bạn. Bạn cảm thấy rất vui",
+            "assets": 0,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Một số tài xế bất mãn vì chạy không thu về bao nhiêu tiền mà toàn chịu lỗ vì tiền xăng nên xin bạn nghỉ việc. Bạn bị sếp trên khiển trách vì đã không quản lý đội xe tốt",
+            "assets": 0,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 75,
+        "event": "Với khả năng của mình giờ đây bạn có thể quản lý công việc xe cộ, tài xế khá tốt. Bạn có tự tin bản thân mình ra mở một công ty taxi riêng không?",
+        "asset": "Công ty",
+        "name": "Công ty",
+        "newjob": "Chủ công ty Taxi",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là chủ công ty Taxi thu nhập 100 triệu một năm",
+              "salary": 100000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là quản lý đội xe của công ty cũ",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Chủ công ty Taxi": {
+    "work": [
+      {
+        "content": "Trốn thuế",
+        "event": [
+          {
+            "event": "Trốn thuế thành công, bạn đút túi được 50 triệu đồng tiền thuế",
+            "assets": 50000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn bị công an phát hiện trốn thuế, bạn bị phạt gấp đôi số tiền phải nộp",
+            "assets": 100000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      },
+      {
+        "content": "Quản lý công việc",
+        "event": [
+          {
+            "event": "Anh em tài xế than phiền bạn đang bốc lột sức lao động của họ nên họ nghỉ việc hết. Tháng đó công ty bạn lỗ 200 triệu",
+            "assets": -200000,
+            "happy": 3,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Tháng đó công ty bạn làm ăn phát tài. Nhiều người tin tưởng hãng xe taxi của bạn. Bạn thu về 250 triệu",
+            "assets": 250000,
+            "happy": 5,
+            "health": -15,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
+    ]
+  },
+  "Bác sĩ thực tập": {
+    "work": [
+      {
+        "content": "Bán thuốc chui",
+        "event": [
+          {
+            "event": "Phi vụ thất bại, bạn bị bảo vệ bắt, bị phạt 2 triệu",
+            "assets": 300000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Bạn bán được 80 đơn thuốc cho 80 bệnh nhân. Bạn kiếm lời 8 triệu",
+            "assets": 600000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn bán chui được 35 đơn cho bệnh nhân bạn kiếm được 3,5 triệu",
+            "assets": 3500,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      },
+      {
+        "content": "Chăm sóc bệnh nhân",
+        "event": [
+          {
+            "event": "Bạn chăm sóc được 30 bệnh nhân trong ca trực của mình",
+            "assets": 3000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn tiêm lệch ven cho bệnh nhân, các bệnh nhân kế tiếp không chịu để bạn tiêm",
+            "assets": 0,
+            "happy": -3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Bạn phát nhầm thuốc cho một bệnh nhân, khiến họ suýt uống và mất mạng. Giám đốc bệnh viện trách bạn và phạt bạn 2 tháng lương",
+            "assets": -30000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Nhờ sự nhiệt tình của bạn mà hơn 100 bệnh nhân được bạn chăm sóc cảm thấy khỏe hơn. Giám đốc khen thưởng cho bạn 30 triệu",
+            "assets": 30000,
+            "happy": 3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 10
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 35,
+        "event": "Sau một thời gian dài làm bác sĩ thực tập nay bạn đã có nhiều kinh nghiệm, bạn có muốn tiến lên làm bác sĩ chính không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Bác sĩ chính lương 30 triệu / 1 năm",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là một bác sĩ chính",
+              "salary": 30000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là bác sĩ thực tập",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Bác sĩ chính": {
+    "work": [
+      {
+        "content": "Khám chữa bệnh",
+        "event": [
+          {
+            "event": "Bạn khám được 70 bệnh nhân trong ca trực của mình",
+            "assets": 7000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn khám được 60 bệnh nhân trong ca trực của mình",
+            "assets": 6000,
+            "happy": 3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn bị mắng té tát một bệnh nhân do họ không chịu dùng thuốc theo đơn, 10 bệnh nhân khác thấy sợ quá nên chạy qua bác sĩ khác",
+            "assets": -1000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Bạn phát nhầm thuốc cho một bệnh nhân, 10 bệnh nhân khách đòi chuyển viện",
+            "assets": -1000,
+            "happy": -5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          }
+        ]
+      },
+      {
+        "content": "Phòng khám tư",
+        "event": [
+          {
+            "event": "Một bệnh nhân chờ lâu quá không được khám, đứng lên chửi một tràng rồi bỏ đi",
+            "assets": 200000,
+            "happy": -3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Có một người gặp tai nạn giao thông rất nặng, tới phòng khám bạn và nhờ bạn cấp cứu kịp thời, bệnh nhân được chuyển vào bệnh viên và đã dần ổn định. Người nhà bệnh nhân biết ơn bạn rất nhiều",
+            "assets": 5000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn khám được 80 bệnh nhân tại phòng khám tư",
+            "assets": 8000,
+            "happy": 5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 55,
+        "event": "Sau nhiều năm cống hiến bạn được thăng chức lên làm Bác sĩ trưởng khoa",
+        "asset": "",
+        "name": "",
+        "newjob": "Bác sĩ trưởng khoa",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn bác sĩ trưởng khoa thu nhập một năm 50 triệu",
+              "salary": 50000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là bác sĩ chính",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Bác sĩ trưởng khoa": {
+    "work": [
+      {
+        "content": "Khám chữa bệnh",
+        "event": [
+          {
+            "event": "Bạn thử nghiệm loại thuốc mới, 30% bệnh nhân đáp ứng tốt, 70% gặp phản ứng phụ, 20 bệnh nhân yêu cầu đổi bác sĩ",
+            "assets": -2000,
+            "happy": -3,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": -5
+          },
+          {
+            "event": "Bạn khám được 200 bệnh nhân trong ca trực của mình",
+            "assets": 20000,
+            "happy": 3,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      },
+      {
+        "content": "Phẫu thuật",
+        "event": [
+          {
+            "event": "Bạn phẫu thuật não thành công cho con của một đại gia ngành cà phê, đại gia tăng bạn 100 triệu để báo đáp",
+            "assets": 100000,
+            "happy": 3,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn phẫu thuật thành công 5 ca ghép thận trong một tháng. Bạn được bồi dưỡng 15 triệu đồng",
+            "assets": 15000,
+            "happy": 0,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          },
+          {
+            "event": "Bạn phẫu thuật thành công 5 ca ghép tim trong một tháng. Bạn được bồi dưỡng 20 triệu đồng",
+            "assets": 20000,
+            "happy": 0,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "require": 85,
+        "event": "Viện trưởng tuổi đã lớn và thấy bạn làm việc rất chăm chỉ nên có ý định nhường chức lại cho bạn, bạn có đồng ý nhận chức không?",
+        "asset": "",
+        "name": "",
+        "newjob": "Viện trưởng",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Bây giờ bạn là Viện trưởng của một bệnh viện thu nhập 150 triệu một năm",
+              "salary": 150000,
+              "assets": 0,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Bạn tiếp tục là bác sĩ trưởng khoa",
+              "salary": 0,
+              "assets": 0,
+              "happy": 0,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "Viện trưởng": {
+    "work": [
+      {
+        "content": "Đi thuyết trình ở các trường đại học",
+        "event": [
+          {
+            "event": "Hôm đó bạn thuyết trình về một chủng loại virus mới, mọi người trong giảng đường ai nấy đều tập trung nghe bạn nói. Buổi thuyết trình diễn ra thành công tốt đẹp",
+            "assets": 100000,
+            "happy": 3,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Không ai mời bạn đi thuyết trình cả bạn buồn đôi chút",
+            "assets": 0,
+            "happy": -5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      },
+      {
+        "content": "Nghiên cứu và sáng chế ra thuốc mới",
+        "event": [
+          {
+            "event": "Thuốc chữa sỏi thận của bạn và bệnh viện của mình nghiên cứu đã cứu được rất nhiều người. Danh tiếng bệnh viên bạn vang xa, còn riêng bạn thu về cho mình 500 triệu",
+            "assets": 500000,
+            "happy": 5,
+            "health": -20,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Thuốc bạn sáng chế ra khiến người uống bị tác dụng phụ. Bạn bị bệnh nhân kiện. Bạn thua kiện và phải bồi thường 300 triệu đồng",
+            "assets": -300000,
+            "happy": -10,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
     ],
     "event": [
     ]

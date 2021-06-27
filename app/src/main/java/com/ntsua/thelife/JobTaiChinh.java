@@ -54,7 +54,6 @@ public class JobTaiChinh extends AppCompatActivity {
         arrCaSi.add(new Food("Nhân viên sale", "Thu nhập 12 triệu/ 1 năm", R.drawable.saler, 12));
         arrCaSi.add(new Food("Trưởng phòng marketing", "Thu nhập 20 triệu/ 1 năm", R.drawable.marketing, 20));
         arrCaSi.add(new Food("Giám đốc kinh doanh", "Thu nhập 50 triệu/ 1 năm", R.drawable.giamdoc, 50));
-        arrCaSi.add(new Food("Tổng giám đốc", "Thu nhập 100 triệu/ 1 năm", R.drawable.tonggiamdoc, 100));
         adapter = new FoodAdapter(this, R.layout.food_line, arrCaSi);
         lvCaSi.setAdapter(adapter);
         lvCaSi.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -63,23 +62,42 @@ public class JobTaiChinh extends AppCompatActivity {
                 //Toast.makeText(Degree.this, MainActivity.saveGame.getMoney() + " - " + arrDegree.get(position).getFoodName(), Toast.LENGTH_SHORT).show();
                 switch (position) {
                     case 0:
-                        try {
-                            //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
-                            JSONArray arrDamCuoi = jsonCaSi.getJSONArray("Tài chính");
-                            JSONArray arrQuestion = chooseQuestion(arrDamCuoi);
-                            dialogEvent(arrQuestion, 0);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
+                        if(MainActivity.saveGame.getJob().equals("Nhân viên sale"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobTaiChinh.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Trưởng phòng marketing")||MainActivity.saveGame.getJob().equals("Giám đốc kinh doanh")){
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm ở chức vụ cao hơn", JobTaiChinh.this);}
+                        else{
+                            try {
+                                //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
+                                JSONArray arrDamCuoi = jsonCaSi.getJSONArray("Tài chính");
+                                JSONArray arrQuestion = chooseQuestion(arrDamCuoi);
+                                dialogEvent(arrQuestion, 0);
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
                         }
                         break;
                     case 1:
-                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobTaiChinh.this);
+                        if(MainActivity.saveGame.getJob().equals("Trưởng phòng marketing"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm công việc này", JobTaiChinh.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Giám đốc kinh doanh")){
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm ở chức vụ cao hơn", JobTaiChinh.this);}
+                        else{
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobTaiChinh.this);
+                        }
                         break;
                     case 2:
-                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobTaiChinh.this);
-                        break;
-                    case 3:
-                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobTaiChinh.this);
+                        if(MainActivity.saveGame.getJob().equals("Giám đốc kinh doanh"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm công việc này", JobTaiChinh.this);
+                        }
+                        else{
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobTaiChinh.this);
+                        }
                         break;
                 }
             }
@@ -113,6 +131,7 @@ public class JobTaiChinh extends AppCompatActivity {
         if (index == 3)
         {
             dialogResult(true);
+            MainActivity.saveGame.saveJob("Nhân viên sale");
             return;
         }
 

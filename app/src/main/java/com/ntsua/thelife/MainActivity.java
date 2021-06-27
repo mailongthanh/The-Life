@@ -605,12 +605,15 @@ public class MainActivity extends AppCompatActivity {
             {
                 if (!jsonResult.getString("asset").equals(""))
                     dialogJobEventWithAsset("Công Việc");
-                else if (jsonResult.getBoolean("selection")) {
-                    dialogJobEvent("Công việc");
-                } else {
-                    saveGame.saveSalary(jsonResult.getInt("salary"));
+                else if (!jsonResult.getString("newjob").equals(""))
+                {
+                    saveGame.saveJob(jsonResult.getString("newjob"));
+                    changeWork();saveGame.saveSalary(jsonResult.getInt("salary"));
                     dialogEventResult("Công việc", false);
                     //Toast.makeText(MainActivity.this, "error", Toast.LENGTH_SHORT).show();
+                }
+                else if (jsonResult.getBoolean("selection")) {
+                    dialogJobEvent("Công việc");
                 }
                 break;
             }
@@ -836,11 +839,155 @@ public class MainActivity extends AppCompatActivity {
     void changeWork() throws JSONException {
         switch (saveGame.getJob())
         {
+            case "Trẻ trâu":
+                jsonJob = jsonAllJob.getJSONObject("student");
+                break;
             case "Lập trình viên":
                 jsonJob = jsonAllJob.getJSONObject("coder");
                 break;
-            case "Trẻ trâu":
-                jsonJob = jsonAllJob.getJSONObject("student");
+            case "Chuyên gia công nghệ":
+                jsonJob = jsonAllJob.getJSONObject("Chuyên gia công nghệ");
+                break;
+            case "Cài WIN dạo":
+                jsonJob = jsonAllJob.getJSONObject("Cài win dạo");
+                break;
+            case "Chủ tịch tập đoàn công nghệ thông tin":
+                jsonJob = jsonAllJob.getJSONObject("Chủ tịch tập đoàn công nghệ thông tin");
+                break;
+            case "Ca sĩ đám cưới":
+                jsonJob = jsonAllJob.getJSONObject("Ca sĩ đám cưới");
+                break;
+            case "Ca sĩ phòng trà":
+                jsonJob = jsonAllJob.getJSONObject("Ca sĩ phòng trà");
+                break;
+            case "Ca sĩ thần tượng":
+                jsonJob = jsonAllJob.getJSONObject("Ca sĩ thần tượng");
+                break;
+            case "DIVA":
+                jsonJob = jsonAllJob.getJSONObject("DIVA");
+                break;
+            case "Phụ bếp":
+                jsonJob = jsonAllJob.getJSONObject("Phụ bếp");
+                break;
+            case "Đầu bếp":
+                jsonJob = jsonAllJob.getJSONObject("Đầu bếp");
+                break;
+            case "Chuyên gia ẩm thực":
+                jsonJob = jsonAllJob.getJSONObject("Chuyên gia ẩm thực");
+                break;
+            case "VUA ĐẦU BẾP":
+                jsonJob = jsonAllJob.getJSONObject("VUA ĐẦU BẾP");
+                break;
+            case "Phóng viên":
+                jsonJob = jsonAllJob.getJSONObject("Phóng viên");
+                break;
+            case "Trưởng chuyên mục":
+                jsonJob = jsonAllJob.getJSONObject("Trưởng chuyên mục");
+                break;
+            case "Thư ký tòa soạn":
+                jsonJob = jsonAllJob.getJSONObject("Thư ký tòa soạn");
+                break;
+            case "Tổng biên tập":
+                jsonJob = jsonAllJob.getJSONObject("Tổng biên tập");
+                break;
+            case "Cầu thủ dự bị":
+                jsonJob = jsonAllJob.getJSONObject("Cầu thủ dự bị");
+                break;
+            case "Chân sút triển vọng":
+                jsonJob = jsonAllJob.getJSONObject("Chân sút triển vọng");
+                break;
+            case "Ngôi sao bóng đá":
+                jsonJob = jsonAllJob.getJSONObject("Ngôi sao bóng đá");
+                break;
+            case "Huyền thoại bóng đá":
+                jsonJob = jsonAllJob.getJSONObject("Huyền thoại bóng đá");
+                break;
+            case "Bồi bàn":
+                jsonJob = jsonAllJob.getJSONObject("Bồi bàn");
+                break;
+            case "Thu ngân":
+                jsonJob = jsonAllJob.getJSONObject("Thu ngân");
+                break;
+            case "Quản lý nhà hàng":
+                jsonJob = jsonAllJob.getJSONObject("Quản lý nhà hàng");
+                break;
+            case "Chủ nhà hàng":
+                jsonJob = jsonAllJob.getJSONObject("Chủ nhà hàng");
+                break;
+            case "Diễn viên đóng thế":
+                jsonJob = jsonAllJob.getJSONObject("Diễn viên đóng thế");
+                break;
+            case "Diễn viên chính":
+                jsonJob = jsonAllJob.getJSONObject("Diễn viên chính");
+                break;
+            case "Ngôi sao điện ảnh":
+                jsonJob = jsonAllJob.getJSONObject("Ngôi sao điện ảnh");
+                break;
+            case "Thực tập sinh":
+                jsonJob = jsonAllJob.getJSONObject("Thực tập sinh");
+                break;
+            case "Giáo viên":
+                jsonJob = jsonAllJob.getJSONObject("Giáo viên");
+                break;
+            case "Trưởng bộ môn":
+                jsonJob = jsonAllJob.getJSONObject("Trưởng bộ môn");
+                break;
+            case "Hiệu trưởng":
+                jsonJob = jsonAllJob.getJSONObject("Hiệu trưởng");
+                break;
+            case "Bán hàng rong":
+                jsonJob = jsonAllJob.getJSONObject("Bán hàng rong");
+                break;
+            case "Chủ shop online":
+                jsonJob = jsonAllJob.getJSONObject("Chủ shop online");
+                break;
+            case "Quản lý siêu thị mini":
+                jsonJob = jsonAllJob.getJSONObject("Quản lý siêu thị mini");
+                break;
+            case "Binh nhất":
+                jsonJob = jsonAllJob.getJSONObject("Binh nhất");
+                break;
+            case "Trung sĩ":
+                jsonJob = jsonAllJob.getJSONObject("Trung sĩ");
+                break;
+            case "Thượng úy":
+                jsonJob = jsonAllJob.getJSONObject("Thượng úy");
+                break;
+            case "Đại tá":
+                jsonJob = jsonAllJob.getJSONObject("Đại tá");
+                break;
+            case "Nhân viên sale":
+                jsonJob = jsonAllJob.getJSONObject("Nhân viên sale");
+                break;
+            case "Trưởng phòng marketing":
+                jsonJob = jsonAllJob.getJSONObject("Trưởng phòng marketing");
+                break;
+            case "Giám đốc kinh doanh":
+                jsonJob = jsonAllJob.getJSONObject("Giám đốc kinh doanh");
+                break;
+            case "Chạy Grab":
+                jsonJob = jsonAllJob.getJSONObject("Chạy Grab");
+                break;
+            case "Tài xế Taxi":
+                jsonJob = jsonAllJob.getJSONObject("Tài xế Taxi");
+                break;
+            case "Quản lý đội xe":
+                jsonJob = jsonAllJob.getJSONObject("Quản lý đội xe");
+                break;
+            case "Chủ công ty Taxi":
+                jsonJob = jsonAllJob.getJSONObject("Chủ công ty Taxi");
+                break;
+            case "Bác sĩ thực tập":
+                jsonJob = jsonAllJob.getJSONObject("Bác sĩ thực tập");
+                break;
+            case "Bác sĩ chính":
+                jsonJob = jsonAllJob.getJSONObject("Bác sĩ chính");
+                break;
+            case "Bác sĩ trưởng khoa":
+                jsonJob = jsonAllJob.getJSONObject("Bác sĩ trưởng khoa");
+                break;
+            case "Viện trưởng":
+                jsonJob = jsonAllJob.getJSONObject("Viện trưởng");
                 break;
         }
     }
@@ -919,7 +1066,7 @@ public class MainActivity extends AppCompatActivity {
         saveGame.saveMoney(50000);
         saveGame.saveDetailActivity(contentHtml);
         saveGame.saveName(name);
-        saveGame.saveJob("Trẻ trâu");
+        saveGame.saveJob("VUA ĐẦU BẾP");
         saveGame.saveSkill(0);
         saveGame.saveExercise(0);
         saveGame.saveJogging(0);
@@ -991,21 +1138,7 @@ public class MainActivity extends AppCompatActivity {
         saveGame.saveRauCu(0);
         saveGame.saveKeo(0);
         saveGame.saveFastFood(0);
-<<<<<<< HEAD
         saveGame.saveCrime(0);
-        int health = saveGame.getHealth();
-        if (prbHappy.getProgress() < 30)
-        {
-            health -= (30 - prbHappy.getProgress());
-        }
-        health -= (int) (saveGame.getAge() / 4);
-        saveGame.savePlayerInfo(saveGame.getHappy(), health, saveGame.getSmart(), saveGame.getAppearance());
-        prbHealth.setProgress(health);
-        txtHealth.setText(prbHealth.getProgress() + "%");
-        changeProgressBackground(prbHealth);
-=======
->>>>>>> da99362ed0277c2cb239de6cdf15e95b85e4a24a
-
         for (int i=0; i<arrRelationship.size(); i++)
         {
             QuanHe friend = arrRelationship.get(i);
