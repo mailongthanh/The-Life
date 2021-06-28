@@ -242,7 +242,6 @@ public class MainActivity extends AppCompatActivity
                     replaceFragment(new FragmentRate());
                     currentFragment = FRAGMENT_RATE;
                 }
-                break;
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);
@@ -278,13 +277,6 @@ public class MainActivity extends AppCompatActivity
         if  (fragmentMain == null)
             fragmentMain = new FragmentMain();
         fragmentMain.onActivityResult(requestCode, resultCode, data);
-//        Toast.makeText(this, requestCode + " " + resultCode, Toast.LENGTH_SHORT).show();
-//        if (requestCode == REQUEST_CODE_INIT && resultCode == RESULT_OK && data != null) {
-//            String name = data.getStringExtra("name");
-//            boolean isboy = data.getBooleanExtra("gender", false);
-//
-//
-//        }
         super.onActivityResult(requestCode, resultCode, data);
     }
 }

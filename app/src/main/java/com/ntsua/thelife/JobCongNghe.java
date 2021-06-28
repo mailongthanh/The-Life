@@ -64,23 +64,53 @@ public class JobCongNghe extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        try {
-                            //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
-                            JSONArray arrDamCuoi = jsonCaSi.getJSONArray("Công nghệ");
-                            JSONArray arrQuestion = chooseQuestion(arrDamCuoi);
-                            dialogEvent(arrQuestion, 0);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
+                        if(MainActivity.saveGame.getJob().equals("Cài WIN dạo"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobCongNghe.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Lập trình viên")||MainActivity.saveGame.getJob().equals("Chuyên gia công nghệ")||MainActivity.saveGame.getJob().equals("Chủ tịch tập đoàn công nghệ thông tin")){
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm ở chức vụ cao hơn", JobCongNghe.this);}
+                        else{
+                            try {
+                                //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
+                                JSONArray arrDamCuoi = jsonCaSi.getJSONArray("Công nghệ");
+                                JSONArray arrQuestion = chooseQuestion(arrDamCuoi);
+                                dialogEvent(arrQuestion, 0);
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
                         }
                         break;
                     case 1:
-                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCongNghe.this);
+                        if(MainActivity.saveGame.getJob().equals("Lập trình viên"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm công việc này", JobCongNghe.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Chuyên gia công nghệ")||MainActivity.saveGame.getJob().equals("Chủ tịch tập đoàn công nghệ thông tin")){
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm ở chức vụ cao hơn", JobCongNghe.this);}
+                        else{
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCongNghe.this);
+                        }
                         break;
                     case 2:
-                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCongNghe.this);
+                        if(MainActivity.saveGame.getJob().equals("Chuyên gia công nghệ"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm công việc này", JobCongNghe.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Chủ tịch tập đoàn công nghệ thông tin")){
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm ở chức vụ cao hơn", JobCongNghe.this);}
+                        else{
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCongNghe.this);
+                        }
                         break;
                     case 3:
-                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCongNghe.this);
+                        if(MainActivity.saveGame.getJob().equals("Chủ tịch tập đoàn công nghệ thông tin"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm công việc này", JobCongNghe.this);
+                        }
+                        else{
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCongNghe.this);
+                        }
                         break;
                 }
             }
@@ -114,6 +144,7 @@ public class JobCongNghe extends AppCompatActivity {
         if (index == 3)
         {
             dialogResult(true);
+            MainActivity.saveGame.saveJob("Cài WIN dạo");
             return;
         }
 
