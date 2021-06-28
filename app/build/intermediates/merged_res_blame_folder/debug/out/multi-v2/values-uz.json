@@ -4,23 +4,6 @@
             "outputFile": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-uz\\values-uz.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HOME\\.gradle\\caches\\transforms-3\\c654acf8717f8cc4eec7d0cbb557bf01\\transformed\\navigation-ui-2.3.3\\res\\values-uz\\values-uz.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,156",
-                        "endColumns": "100,121",
-                        "endOffsets": "151,273"
-                    },
-                    "to": {
-                        "startLines": "104,105",
-                        "startColumns": "4,4",
-                        "startOffsets": "9970,10071",
-                        "endColumns": "100,121",
-                        "endOffsets": "10066,10188"
-                    }
-                },
-                {
                     "source": "C:\\Users\\HOME\\.gradle\\caches\\transforms-3\\c3cfcc4ca0b43eab16bcb0888115f4ac\\transformed\\jetified-play-services-basement-17.1.0\\res\\values-uz\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -69,6 +52,23 @@
                         "startOffsets": "288,393,488,588,670,770,887,972,1050,1141,1234,1329,1423,1517,1610,1705,1800,1891,1983,2067,2177,2283,2383,2491,2597,2699,2860,10276",
                         "endColumns": "104,94,99,81,99,116,84,77,90,92,94,93,93,92,94,94,90,91,83,109,105,99,107,105,101,160,98,83",
                         "endOffsets": "388,483,583,665,765,882,967,1045,1136,1229,1324,1418,1512,1605,1700,1795,1886,1978,2062,2172,2278,2378,2486,2592,2694,2855,2954,10355"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\HOME\\.gradle\\caches\\transforms-3\\3243fca3120fc625e0afe098c02023f6\\transformed\\navigation-ui-2.3.5\\res\\values-uz\\values-uz.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,156",
+                        "endColumns": "100,121",
+                        "endOffsets": "151,273"
+                    },
+                    "to": {
+                        "startLines": "104,105",
+                        "startColumns": "4,4",
+                        "startOffsets": "9970,10071",
+                        "endColumns": "100,121",
+                        "endOffsets": "10066,10188"
                     }
                 },
                 {

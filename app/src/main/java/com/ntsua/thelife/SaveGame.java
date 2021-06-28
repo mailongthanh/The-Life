@@ -23,9 +23,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SaveGame {
-    private SharedPreferences preferences;
-    private SharedPreferences.Editor editor;
-    Gson gson;
 
     private LoadDone loadDone;
     private DatabaseReference reference;
@@ -36,11 +33,8 @@ public class SaveGame {
 
     boolean isOnCreate = true;
 
-    public SaveGame(SharedPreferences preferences) {
-
-        this.preferences = preferences;
-        editor = this.preferences.edit();
-        gson = new Gson();
+    public SaveGame()
+    {
 
 //        if (getDetailActivity().isEmpty())
 //            reference.child("Basic").setValue(infomation);

@@ -4,23 +4,6 @@
             "outputFile": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rPT\\values-pt-rPT.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HOME\\.gradle\\caches\\transforms-3\\c654acf8717f8cc4eec7d0cbb557bf01\\transformed\\navigation-ui-2.3.3\\res\\values-pt-rPT\\values-pt-rPT.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,167",
-                        "endColumns": "111,119",
-                        "endOffsets": "162,282"
-                    },
-                    "to": {
-                        "startLines": "127,128",
-                        "startColumns": "4,4",
-                        "startOffsets": "12790,12902",
-                        "endColumns": "111,119",
-                        "endOffsets": "12897,13017"
-                    }
-                },
-                {
                     "source": "C:\\Users\\HOME\\.gradle\\caches\\transforms-3\\7a04f665f6f61eec72bd39ff53927f73\\transformed\\jetified-facebook-login-8.1.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
@@ -122,6 +105,23 @@
                         "endLines": "5,33,34,35,36,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,129",
                         "endColumns": "12,81,102,119,80,63,91,78,64,89,67,61,72,63,53,125,57,61,53,75,142,86,81,108,81,81,86,66,65,74,79,86,72,76,72,73,92,76,92,97,73,80,98,52,65,88,87,61,63,62,115,102,106,103,85",
                         "endOffsets": "273,3098,3201,3321,3402,8888,8980,9059,9124,9214,9282,9344,9417,9481,9535,9661,9719,9781,9835,9911,10054,10141,10223,10332,10414,10496,10583,10650,10716,10791,10871,10958,11031,11108,11181,11255,11348,11425,11518,11616,11690,11771,11870,11923,11989,12078,12166,12228,12292,12355,12471,12574,12681,12785,13103"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\HOME\\.gradle\\caches\\transforms-3\\3243fca3120fc625e0afe098c02023f6\\transformed\\navigation-ui-2.3.5\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,167",
+                        "endColumns": "111,119",
+                        "endOffsets": "162,282"
+                    },
+                    "to": {
+                        "startLines": "127,128",
+                        "startColumns": "4,4",
+                        "startOffsets": "12790,12902",
+                        "endColumns": "111,119",
+                        "endOffsets": "12897,13017"
                     }
                 }
             ]

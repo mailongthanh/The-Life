@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#EEEEEE"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageAvatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/boy" />
+
+            <TextView
+                android:id="@+id/textviewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/imageAvatar"
+                android:text="Name of player"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/Blue"/>
+
+            <TextView
+                android:id="@+id/textviewJob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textviewName"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/imageAvatar"
+                android:text="Job" />
+
+            <TextView
+                android:id="@+id/textviewMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="$0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textviewMoney"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="Tài khoản" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:weightSum="6">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/buttonInfant"
+                        android:background="@drawable/custom_button_menu"
+                        android:layout_weight="1"
+                        app:backgroundTint="@null"
+                        android:layout_margin="2dp"
+                        android:text="Trẻ con"
+                        android:textStyle="bold"
+                        android:textColor="@color/Blue"/>
+
+                    <Button
+                        android:id="@+id/buttonAssets"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_button_menu"
+                        android:onClick="gotoAsset"
+                        android:text="Tài sản"
+                        android:textColor="@color/Blue"
+                        android:textStyle="bold"
+                        app:backgroundTint="@null" />
+                    <!--<ImageButton
+                        android:id="@+id/imageButtonAssets"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_weight="1"/>-->
+
+                </TableRow>
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/buttonRelationship"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_button_menu"
+                        android:onClick="gotoRelationship"
+                        android:text="Mối quan hệ"
+                        android:textStyle="bold"
+                        android:textColor="@color/Blue"
+                        app:backgroundTint="@null" />
+
+                    <Button
+                        android:id="@+id/buttonActivity"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_button_menu"
+                        android:onClick="gotoActivity"
+                        android:text="Hoạt động"
+                        android:textStyle="bold"
+                        android:textColor="@color/Blue"
+                        app:backgroundTint="@null" />
+                    <!--<ImageButton
+                        android:id="@+id/imageButtonRelationship"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_weight="1"/>
+                    <ImageButton
+                        android:id="@+id/imageButtonActivity"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_weight="1"/>-->
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageButton
+                android:id="@+id/imagebuttonAddAge"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:src="@drawable/plus"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:weightSum="4"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="match_parent"
+                    android:text="Hạnh phúc"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/Red"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/happy"
+                    android:layout_gravity="center_vertical"/>
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp">
+                    <ProgressBar
+                        android:id="@+id/progressbarHappy"
+                        android:layout_width="180dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:max="100"
+                        android:min="0"
+                        android:progress="2"
+                        android:progressDrawable="@drawable/custom_progressbar"
+                        style="@android:style/Widget.ProgressBar.Horizontal"/>
+
+                    <TextView
+                        android:id="@+id/txtHappy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/progressbarHappy"
+                        android:gravity="center"
+                        android:shadowColor="#555555"
+                        android:text="2%" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="match_parent"
+                    android:text="Sức khỏe"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/Red"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heartbeat"
+                    android:layout_gravity="center_vertical"/>
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp">
+                    <ProgressBar
+                        android:id="@+id/progressbarHealth"
+                        android:layout_width="180dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:progressDrawable="@drawable/custom_progressbar"
+                        android:max="100"
+                        android:min="0"
+                        android:progress="100"
+                        style="?android:attr/progressBarStyleHorizontal"/>
+                    <TextView
+                        android:id="@+id/txtHealth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/progressbarHealth"
+                        android:gravity="center"
+                        android:text="100%"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="match_parent"
+                    android:text="Thông minh"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/Red"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mental_health"
+                    android:layout_gravity="center_vertical"/>
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp">
+                    <ProgressBar
+                        android:id="@+id/progressbarSmart"
+                        android:layout_width="180dp"
+                        android:layout_height="20dp"
+                        android:progressDrawable="@drawable/custom_progressbar"
+                        android:layout_gravity="center_vertical"
+                        android:max="100"
+                        android:min="0"
+                        android:progress="100"
+                        style="?android:attr/progressBarStyleHorizontal"/>
+                    <TextView
+                        android:id="@+id/txtSmart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/progressbarSmart"
+                        android:gravity="center"
+                        android:text="100%"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Ngoại hình"
+                    android:textColor="@color/Red"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/appearance"
+                    android:layout_gravity="center_vertical"/>
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp">
+                    <ProgressBar
+                        android:id="@+id/progressbarAppearance"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="180dp"
+                        android:layout_height="20dp"
+                        android:progressDrawable="@drawable/custom_progressbar"
+                        android:layout_gravity="center_vertical"
+                        android:max="100"
+                        android:min="0"
+                        android:progress="100"/>
+                    <TextView
+                        android:id="@+id/txtAppearance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/progressbarAppearance"
+                        android:gravity="center"
+                        android:text="100%"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textViewDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="Noi dung"
+            android:textColor="@color/Blue"/>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

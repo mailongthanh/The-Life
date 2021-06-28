@@ -39,8 +39,6 @@ public class LoginActivity extends AppCompatActivity {
     LoginButton loginButton;
     Button btnShow;
 
-    public static SaveGame save;
-
     FirebaseAuth auth = FirebaseAuth.getInstance();
 
     @Override
@@ -131,7 +129,6 @@ public class LoginActivity extends AppCompatActivity {
 
     void gotoGame()
     {
-        save = new SaveGame(getSharedPreferences("data", MODE_PRIVATE));
         startActivity(new Intent(this, MainActivity.class));
     }
 
