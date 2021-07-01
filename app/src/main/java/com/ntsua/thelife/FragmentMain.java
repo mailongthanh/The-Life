@@ -828,6 +828,9 @@ public class FragmentMain extends Fragment {
     void initNewAge() {
         //Toast.makeText(this, "new age", Toast.LENGTH_SHORT).show();
         int age = MainActivity.saveGame.getAge() + 1;
+        MainActivity.saveGame.saveBoiSN(0);
+        MainActivity.saveGame.saveTuVi(0);
+        MainActivity.saveGame.saveBoiTinh(0);
         MainActivity.saveGame.saveAge(age);
         MainActivity.saveGame.saveExercise(0);
         MainActivity.saveGame.saveJogging(0);

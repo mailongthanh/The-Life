@@ -272,6 +272,6 @@ public class JobQuanDoi extends AppCompatActivity {
         txtName.setText(MainActivity.saveGame.getName());
         txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
         txtJob.setText(MainActivity.saveGame.getJob());
-        imgAvatar = findViewById(R.id.imageAvatar);
+        imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());
     }
 }

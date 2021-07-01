@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-#Sun Jun 27 16:46:38 ICT 2021
+#Thu Jul 01 20:56:03 ICT 2021
 base.2=D\:\\The-Life\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-=======
-#Thu Jul 01 15:58:50 ICT 2021
-base.2=D\:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
->>>>>>> dd128fb2c2d832fd636d6aeb5fa01a6e773d446c
 path.2=classes2.dex
 base.1=D\:\\The-Life\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
 path.1=classes.dex
