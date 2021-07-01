@@ -1140,6 +1140,9 @@ public class MainActivity extends AppCompatActivity {
     {
         //Toast.makeText(this, "new age", Toast.LENGTH_SHORT).show();
         int age = saveGame.getAge() + 1;
+        saveGame.saveTuVi(0);
+        saveGame.saveBoiSN(0);
+        saveGame.saveBoiTinh(0);
         saveGame.saveAge(age);
         saveGame.saveExercise(0);
         saveGame.saveJogging(0);
@@ -1165,10 +1168,6 @@ public class MainActivity extends AppCompatActivity {
         saveGame.saveKeo(0);
         saveGame.saveFastFood(0);
         saveGame.saveCrime(0);
-<<<<<<< HEAD
-=======
-
->>>>>>> dad39c3506aeb108a32b36dd3e3351c51b749377
         for (int i=0; i<arrRelationship.size(); i++)
         {
             QuanHe friend = arrRelationship.get(i);
