@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentShare"
+    android:id="@+id/frameShare"
+    android:background="@drawable/custom_button_menu"
+    android:layout_margin="10dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Chia sẻ thành tích của bạn lên Facebook"
+            android:textColor="#ff00"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_above="@id/relativeData"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_dialog">
+
+            <RelativeLayout
+                android:id="@+id/relativeBasicInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/custom_dialog"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imageAvatar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/boy" />
+
+                <TextView
+                    android:id="@+id/textviewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/imageAvatar"
+                    android:text="Name of player"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Blue"/>
+
+                <TextView
+                    android:id="@+id/textviewJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textviewName"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/imageAvatar"
+                    android:text="Job" />
+
+                <TextView
+                    android:id="@+id/textviewMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="$0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textviewMoney"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="Tài khoản" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewTotal"
+                android:layout_below="@id/relativeBasicInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Tổng tài sản: 0 VND"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/Blue"
+                android:layout_marginTop="13dp"/>
+
+            <LinearLayout
+                android:layout_below="@id/textViewTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:weightSum="4"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Hạnh phúc"
+                        android:textColor="@color/Red"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/happy"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <ProgressBar
+                            android:id="@+id/progressbarHappy"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:max="100"
+                            android:min="0"
+                            android:progress="2"
+                            android:progressDrawable="@drawable/custom_progressbar" />
+
+                        <TextView
+                            android:id="@+id/txtHappy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:shadowColor="#555555"
+                            android:text="2%" />
+
+                    </RelativeLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Sức khỏe"
+                        android:textColor="@color/Red"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/heartbeat"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView3"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ProgressBar
+                            android:id="@+id/progressbarHealth"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:max="100"
+                            android:min="0"
+                            android:progress="100"
+                            android:progressDrawable="@drawable/custom_progressbar" />
+
+                        <TextView
+                            android:id="@+id/txtHealth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/progressbarHealth"
+                            android:gravity="center"
+                            android:text="100%" />
+                    </RelativeLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Thông minh"
+                        android:textColor="@color/Red"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/mental_health"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView4"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ProgressBar
+                            android:id="@+id/progressbarSmart"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:max="100"
+                            android:min="0"
+                            android:progress="100"
+                            android:progressDrawable="@drawable/custom_progressbar" />
+
+                        <TextView
+                            android:id="@+id/txtSmart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/progressbarSmart"
+                            android:gravity="center"
+                            android:text="100%" />
+                    </RelativeLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Ngoại hình"
+                        android:textColor="@color/Red"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/appearance"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView5"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ProgressBar
+                            android:id="@+id/progressbarAppearance"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:max="100"
+                            android:min="0"
+                            android:progress="100"
+                            android:progressDrawable="@drawable/custom_progressbar" />
+
+                        <TextView
+                            android:id="@+id/txtAppearance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/progressbarAppearance"
+                            android:gravity="center"
+                            android:text="100%" />
+                    </RelativeLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.facebook.share.widget.ShareButton
+            android:id="@+id/buttonShare"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/relativeData"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Chia sẻ"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

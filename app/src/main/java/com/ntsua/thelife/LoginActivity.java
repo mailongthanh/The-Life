@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,6 +18,9 @@ import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+import com.facebook.share.model.SharePhoto;
+import com.facebook.share.model.SharePhotoContent;
+import com.facebook.share.widget.ShareButton;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
@@ -38,8 +43,6 @@ public class LoginActivity extends AppCompatActivity {
     CallbackManager callbackManager;
     LoginButton loginButton;
     Button btnShow;
-
-    public static SaveGame save;
 
     FirebaseAuth auth = FirebaseAuth.getInstance();
 
@@ -131,7 +134,6 @@ public class LoginActivity extends AppCompatActivity {
 
     void gotoGame()
     {
-        save = new SaveGame(getSharedPreferences("data", MODE_PRIVATE));
         startActivity(new Intent(this, MainActivity.class));
     }
 
@@ -146,6 +148,18 @@ public class LoginActivity extends AppCompatActivity {
 //            Toast.makeText(this, "Set Data", Toast.LENGTH_SHORT).show();
             //showProfile();
             gotoGame();
+//            Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.boy);
+//
+//            ShareButton btn = findViewById(R.id.buttonShareLogin);
+//            SharePhoto photo = new  SharePhoto.Builder()
+//                    .setBitmap(bitmap)
+//                    .build();
+//
+//            SharePhotoContent sharePhotoContent = new SharePhotoContent.Builder()
+//                    .addPhoto(photo)
+//                    .build();
+//
+//            btn.setShareContent(sharePhotoContent);
         }
     }
 

@@ -23,9 +23,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SaveGame {
-    private SharedPreferences preferences;
-    private SharedPreferences.Editor editor;
-    Gson gson;
 
     private LoadDone loadDone;
     private DatabaseReference reference;
@@ -36,11 +33,8 @@ public class SaveGame {
 
     boolean isOnCreate = true;
 
-    public SaveGame(SharedPreferences preferences) {
-
-        this.preferences = preferences;
-        editor = this.preferences.edit();
-        gson = new Gson();
+    public SaveGame()
+    {
 
 //        if (getDetailActivity().isEmpty())
 //            reference.child("Basic").setValue(infomation);
@@ -65,8 +59,12 @@ public class SaveGame {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                 infomation = snapshot.getValue(PlayerBasicInfomation.class);
-                if (infomation == null)
+                if (infomation == null) {
+                    //Toast.makeText(, "", Toast.LENGTH_SHORT).show();
                     reference.child("Basic").setValue(new PlayerBasicInfomation());
+                    reference.child("Information").child("PhotoUri").setValue(FirebaseAuth.getInstance().getCurrentUser().getPhotoUrl().toString());
+                    reference.child("Information").child("Name").setValue(FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
+                }
                 else if (isOnCreate){
                     loadDone.onLoaded();
                     isOnCreate = false;
@@ -78,7 +76,7 @@ public class SaveGame {
             }
         });
 
-        reference.child("asset").addValueEventListener(new ValueEventListener() {
+        reference.child("Asset").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                 GenericTypeIndicator<ArrayList<Food>> objectsGTypeInd = new GenericTypeIndicator<ArrayList<Food>>() {};
@@ -91,7 +89,7 @@ public class SaveGame {
             }
         });
 
-        reference.child("relationship").addValueEventListener(new ValueEventListener() {
+        reference.child("Relationship").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                 GenericTypeIndicator<ArrayList<QuanHe>> objectsGTypeInd = new GenericTypeIndicator<ArrayList<QuanHe>>() {};
@@ -104,7 +102,7 @@ public class SaveGame {
             }
         });
 
-        reference.child("sick").addValueEventListener(new ValueEventListener() {
+        reference.child("Sick").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                 GenericTypeIndicator<ArrayList<Sick>> objectsGTypeInd = new GenericTypeIndicator<ArrayList<Sick>>() {};
@@ -539,7 +537,7 @@ public class SaveGame {
 
     public void saveRelationship(ArrayList<QuanHe> arrRelationship) {
         this.arrRelationship = arrRelationship;
-        reference.child("relationship").setValue(arrRelationship);
+        reference.child("Relationship").setValue(arrRelationship);
     }
 
     public ArrayList<QuanHe> getRelationship(){
@@ -548,7 +546,7 @@ public class SaveGame {
 
     public void saveAsset(ArrayList<Food> arrAsset) {
         this.arrAsset = arrAsset;
-        reference.child("asset").setValue(arrAsset);
+        reference.child("Asset").setValue(arrAsset);
     }
 
     public ArrayList<Food> getAsset(){
@@ -557,7 +555,7 @@ public class SaveGame {
 
     public void saveSick(ArrayList<Sick> arrSick) {
         this.arrSick = arrSick;
-        reference.child("sick").setValue(arrSick);
+        reference.child("Sick").setValue(arrSick);
     }
 
     public ArrayList<Sick> getSick(){

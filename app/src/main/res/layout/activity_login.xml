@@ -7,6 +7,17 @@
     tools:context=".LoginActivity">
 
 
+    <com.facebook.share.widget.ShareButton
+        android:id="@+id/buttonShareLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:text="Show"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
     <Button
         android:id="@+id/buttonShow"
         android:layout_width="wrap_content"
