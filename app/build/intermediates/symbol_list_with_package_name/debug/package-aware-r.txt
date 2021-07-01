@@ -1791,6 +1791,7 @@ drawable avd_show_password
 drawable bachkhoa
 drawable back
 drawable background_crime
+drawable background_ratings
 drawable badminton
 drawable banhxeo
 drawable bar
@@ -2317,6 +2318,7 @@ id chip2
 id chip3
 id chip_group
 id chronometer
+id circleViewAvatar
 id circle_center
 id clear_text
 id clip_horizontal
@@ -2632,6 +2634,7 @@ id progressbarSmart
 id radio
 id ratio
 id rectangles
+id recyclerViewRatings
 id relativeBasicInfo
 id relativeData
 id reverseSawtooth
@@ -2726,6 +2729,8 @@ id textView3
 id textView4
 id textViewDetail
 id textViewPlayerName
+id textViewRank
+id textViewRateName
 id textViewTotal
 id textViewUserName
 id text_input_end_icon
@@ -2759,6 +2764,7 @@ id textviewNameRelationship
 id textviewNotificationContent
 id textviewNotificationTitle
 id textviewProName
+id textviewRateMoney
 id textviewRelationship
 id textviewRelationshipTitle
 id textviewRelationship_Appearance
@@ -3054,6 +3060,7 @@ layout notification_template_part_time
 layout player_info
 layout productline
 layout quan_he
+layout rating_line
 layout relationship
 layout select_dialog_item_material
 layout select_dialog_multichoice_material

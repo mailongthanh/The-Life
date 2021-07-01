@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:background="@drawable/custom_dialog"
+    android:layout_margin="3dp">
+
+    <TextView
+        android:id="@+id/textViewRank"
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:text="10"
+        android:textColor="#006FFF"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/textViewRateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ten nguoi dung"
+        android:textColor="@color/Blue"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textViewRank" />
+    <TextView
+        android:id="@+id/textviewRateMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="money"
+        android:textColor="@color/Blue"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textViewRank"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleViewAvatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/boy"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        app:civ_border_color="@color/Blue"
+        app:civ_border_width="1dp"/>
+
+</RelativeLayout>

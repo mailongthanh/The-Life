@@ -1,15 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FragmentRate"
-    android:background="#ff0">
+    android:background="@drawable/background_ratings">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Rate" />
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/recyclerViewRatings"
+            android:layout_marginBottom="16dp"
+            android:text="Bảng xếp hạng người dùng"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#ff0"
+            android:gravity="center" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewRatings"
+            android:layout_weight="8.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+    </LinearLayout>
 
 </FrameLayout>

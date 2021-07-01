@@ -62,8 +62,8 @@ public class SaveGame {
                 if (infomation == null) {
                     //Toast.makeText(, "", Toast.LENGTH_SHORT).show();
                     reference.child("Basic").setValue(new PlayerBasicInfomation());
-                    reference.child("Infomation").child("PhotoUri").setValue(FirebaseAuth.getInstance().getCurrentUser().getPhotoUrl().toString());
-                    reference.child("Infomation").child("Name").setValue(FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
+                    reference.child("Information").child("PhotoUri").setValue(FirebaseAuth.getInstance().getCurrentUser().getPhotoUrl().toString());
+                    reference.child("Information").child("Name").setValue(FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
                 }
                 else if (isOnCreate){
                     loadDone.onLoaded();
@@ -537,7 +537,7 @@ public class SaveGame {
 
     public void saveRelationship(ArrayList<QuanHe> arrRelationship) {
         this.arrRelationship = arrRelationship;
-        reference.child("relationship").setValue(arrRelationship);
+        reference.child("Relationship").setValue(arrRelationship);
     }
 
     public ArrayList<QuanHe> getRelationship(){
@@ -546,7 +546,7 @@ public class SaveGame {
 
     public void saveAsset(ArrayList<Food> arrAsset) {
         this.arrAsset = arrAsset;
-        reference.child("asset").setValue(arrAsset);
+        reference.child("Asset").setValue(arrAsset);
     }
 
     public ArrayList<Food> getAsset(){
@@ -555,7 +555,7 @@ public class SaveGame {
 
     public void saveSick(ArrayList<Sick> arrSick) {
         this.arrSick = arrSick;
-        reference.child("sick").setValue(arrSick);
+        reference.child("Sick").setValue(arrSick);
     }
 
     public ArrayList<Sick> getSick(){

@@ -2,26 +2,35 @@ com/ntsua/thelife/FragmentRate.java
  com.ntsua.thelife.FragmentRate
  com.ntsua.thelife.FragmentRate$1
  com.ntsua.thelife.FragmentRate$1$1
-com/ntsua/thelife/University.java
- com.ntsua.thelife.University
+com/ntsua/thelife/Ratings.java
+ com.ntsua.thelife.Ratings
+ com.ntsua.thelife.Ratings$1
+com/ntsua/thelife/LoginActivity.java
+ com.ntsua.thelife.LoginActivity
+ com.ntsua.thelife.LoginActivity$1
+ com.ntsua.thelife.LoginActivity$2
+ com.ntsua.thelife.LoginActivity$3
 com/ntsua/thelife/AiLaTrieuPhu_TienThuongAdapter.java
  com.ntsua.thelife.AiLaTrieuPhu_TienThuongAdapter
+com/ntsua/thelife/University.java
+ com.ntsua.thelife.University
+com/ntsua/thelife/RatingAdapter.java
+ com.ntsua.thelife.RatingAdapter
+ com.ntsua.thelife.RatingAdapter$MyHolder
 com/ntsua/thelife/HoatDongQHAdapter.java
  com.ntsua.thelife.HoatDongQHAdapter
  com.ntsua.thelife.HoatDongQHAdapter$1
  com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
 com/ntsua/thelife/Food.java
  com.ntsua.thelife.Food
-com/ntsua/thelife/BuildConfig.java
- com.ntsua.thelife.BuildConfig
 com/ntsua/thelife/AiLaTrieuPhu_Dialog_KhanGia.java
  com.ntsua.thelife.AiLaTrieuPhu_Dialog_KhanGia
-com/ntsua/thelife/AiLaTrieuPhu_FaceData.java
- com.ntsua.thelife.AiLaTrieuPhu_FaceData
 com/ntsua/thelife/NameOfRelationship.java
  com.ntsua.thelife.NameOfRelationship
-com/ntsua/thelife/HoatDongQH.java
- com.ntsua.thelife.HoatDongQH
+com/ntsua/thelife/BuildConfig.java
+ com.ntsua.thelife.BuildConfig
+com/ntsua/thelife/AiLaTrieuPhu_DSCauHoi.java
+ com.ntsua.thelife.AiLaTrieuPhu_DSCauHoi
 com/ntsua/thelife/productAdapter.java
  com.ntsua.thelife.productAdapter
  com.ntsua.thelife.productAdapter$1
@@ -35,8 +44,8 @@ com/ntsua/thelife/SelectGender.java
  com.ntsua.thelife.SelectGender$3
 com/ntsua/thelife/PlayerBasicInfomation.java
  com.ntsua.thelife.PlayerBasicInfomation
-com/ntsua/thelife/Sick.java
- com.ntsua.thelife.Sick
+com/ntsua/thelife/AiLaTrieuPhu_CauHoi.java
+ com.ntsua.thelife.AiLaTrieuPhu_CauHoi
 com/ntsua/thelife/QuanHeAdapter.java
  com.ntsua.thelife.QuanHeAdapter
  com.ntsua.thelife.QuanHeAdapter$1
@@ -45,13 +54,10 @@ com/ntsua/thelife/AiLaTrieuPhu.java
  com.ntsua.thelife.AiLaTrieuPhu
 com/ntsua/thelife/Modau.java
  com.ntsua.thelife.Modau
-com/ntsua/thelife/AiLaTrieuPhu_CauHoi.java
- com.ntsua.thelife.AiLaTrieuPhu_CauHoi
-com/ntsua/thelife/AiLaTrieuPhu_ing.java
- com.ntsua.thelife.AiLaTrieuPhu_ing
- com.ntsua.thelife.AiLaTrieuPhu_ing$1
- com.ntsua.thelife.AiLaTrieuPhu_ing$2
- com.ntsua.thelife.AiLaTrieuPhu_ing$2$1
+com/ntsua/thelife/AiLaTrieuPhu_FaceData.java
+ com.ntsua.thelife.AiLaTrieuPhu_FaceData
+com/ntsua/thelife/Sick.java
+ com.ntsua.thelife.Sick
 com/ntsua/thelife/CreateName.java
  com.ntsua.thelife.CreateName
  com.ntsua.thelife.CreateName$1
@@ -61,19 +67,19 @@ com/ntsua/thelife/CrimeAdapter.java
  com.ntsua.thelife.CrimeAdapter$ViewHolder
 com/ntsua/thelife/SongKhac.java
  com.ntsua.thelife.SongKhac
-com/ntsua/thelife/AiLaTrieuPhu_DSCauHoi.java
- com.ntsua.thelife.AiLaTrieuPhu_DSCauHoi
+com/ntsua/thelife/HoatDongQH.java
+ com.ntsua.thelife.HoatDongQH
 com/ntsua/thelife/ALTP_QLDBCauHoi.java
  com.ntsua.thelife.ALTP_QLDBCauHoi
 com/ntsua/thelife/FoodAdapter.java
  com.ntsua.thelife.FoodAdapter
  com.ntsua.thelife.FoodAdapter$1
  com.ntsua.thelife.FoodAdapter$ViewHolder
-com/ntsua/thelife/LoginActivity.java
- com.ntsua.thelife.LoginActivity
- com.ntsua.thelife.LoginActivity$1
- com.ntsua.thelife.LoginActivity$2
- com.ntsua.thelife.LoginActivity$3
+com/ntsua/thelife/AiLaTrieuPhu_ing.java
+ com.ntsua.thelife.AiLaTrieuPhu_ing
+ com.ntsua.thelife.AiLaTrieuPhu_ing$1
+ com.ntsua.thelife.AiLaTrieuPhu_ing$2
+ com.ntsua.thelife.AiLaTrieuPhu_ing$2$1
 com/ntsua/thelife/HoatDong.java
  com.ntsua.thelife.HoatDong
  com.ntsua.thelife.HoatDong$1
