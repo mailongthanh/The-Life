@@ -239,6 +239,10 @@ attr chipSurfaceColor
 attr circleCrop
 attr circleRadius
 attr circularProgressIndicatorStyle
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clickAction
 attr clockFaceBackgroundColor
 attr clockHandColor
@@ -2294,6 +2298,8 @@ id buttonInfant
 id buttonNotificationtOke
 id buttonPanel
 id buttonRelationship
+id buttonShare
+id buttonShareLogin
 id buttonShow
 id cache_measures
 id cancel_action
@@ -2397,6 +2403,7 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id frameShare
 id ghost_view
 id ghost_view_holder
 id gone
@@ -2425,6 +2432,10 @@ id imageCrime
 id imageFood
 id imagePro
 id imageView
+id imageView2
+id imageView3
+id imageView4
+id imageView5
 id imageViewNewFriend
 id imageViewUserAvatar
 id imagebuttonAddAge
@@ -2621,6 +2632,8 @@ id progressbarSmart
 id radio
 id ratio
 id rectangles
+id relativeBasicInfo
+id relativeData
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2707,8 +2720,13 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
+id textView3
+id textView4
 id textViewDetail
 id textViewPlayerName
+id textViewTotal
 id textViewUserName
 id text_input_end_icon
 id text_input_error_icon
@@ -3154,7 +3172,6 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
-string hello_blank_fragment
 string hello_first_fragment
 string hello_second_fragment
 string hide_bottom_view_on_scroll_behavior
@@ -4007,6 +4024,7 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize

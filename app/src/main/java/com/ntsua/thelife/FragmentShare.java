@@ -1,12 +1,34 @@
 package com.ntsua.thelife;
 
+import android.app.Activity;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.facebook.share.model.SharePhoto;
+import com.facebook.share.model.SharePhotoContent;
+import com.facebook.share.widget.ShareButton;
+
+import org.jetbrains.annotations.NotNull;
+import org.json.JSONException;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,10 +77,154 @@ public class FragmentShare extends Fragment {
         }
     }
 
+    View view;
+    TextView txtTotal, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName, txtJob;
+    ProgressBar prbHappy, prbHealth, prbSmart, prbAppearance;
+    ImageView imgAvatar;
+    ShareButton btnShare;
+    Bitmap bitmapShare;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_share, container, false);
+        // Inflate the layout for this
+        view = inflater.inflate(R.layout.fragment_share, container, false);
+        AnhXa();
+        loadData();
+
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                RelativeLayout relativeLayout = view.findViewById(R.id.relativeData);
+                bitmapShare = takeScreenshotForView(relativeLayout);
+                SharePhoto photo = new  SharePhoto.Builder()
+                        .setBitmap(bitmapShare)
+                        .build();
+
+                SharePhotoContent sharePhotoContent = new SharePhotoContent.Builder()
+                        .addPhoto(photo)
+                        .build();
+
+                btnShare.setShareContent(sharePhotoContent);
+            }
+        }, 1000);
+
+
+
+//        RelativeLayout relativeLayout = view.findViewById(R.id.relativeData);
+//
+//        SharePhoto photo = new  SharePhoto.Builder()
+//                .setBitmap(bitmapShare)
+//                .build();
+//
+//        SharePhotoContent sharePhotoContent = new SharePhotoContent.Builder()
+//                .addPhoto(photo)
+//                .build();
+//
+//        btnShare.setShareContent(sharePhotoContent);
+//        btnShare.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                RelativeLayout relativeLayout = view.findViewById(R.id.relativeData);
+//                bitmapShare = takeScreenshotForView(relativeLayout);
+//                SharePhoto photo = new  SharePhoto.Builder()
+//                        .setBitmap(bitmapShare)
+//                        .build();
+//
+//                SharePhotoContent sharePhotoContent = new SharePhotoContent.Builder()
+//                        .addPhoto(photo)
+//                        .build();
+//
+//                btnShare.setShareContent(sharePhotoContent);
+//            }
+//        });
+
+        return view;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+
+    }
+
+    private void loadData() {
+        imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());
+        prbAppearance.setProgress(MainActivity.saveGame.getAppearance());
+        prbHappy.setProgress(MainActivity.saveGame.getHappy());
+        prbHealth.setProgress(MainActivity.saveGame.getHealth());
+        prbSmart.setProgress(MainActivity.saveGame.getSmart());
+
+        txtAppearance.setText(prbAppearance.getProgress() + "%");
+        txtHappy.setText(prbHappy.getProgress() + "%");
+        txtSmart.setText(prbSmart.getProgress() + "%");
+        txtHealth.setText(prbHealth.getProgress() + "%");
+
+        txtTotal.setText("Tổng tài sản: " + totalAsset() + " VND");
+
+        txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
+        txtName.setText(MainActivity.saveGame.getName());
+        txtJob.setText(MainActivity.saveGame.getJob());
+        changeProgressBackground(prbAppearance);
+        changeProgressBackground(prbHappy);
+        changeProgressBackground(prbHealth);
+        changeProgressBackground(prbSmart);
+    }
+
+    int totalAsset()
+    {
+        int money = MainActivity.saveGame.getMoney();
+        ArrayList<Food> arrAsset = MainActivity.saveGame.getAsset();
+        if (arrAsset == null)
+            return money;
+        for (int i=0; i<arrAsset.size(); i++)
+        {
+            money += arrAsset.get(i).getPrice();
+        }
+
+        return money;
+    }
+
+    void changeProgressBackground(ProgressBar pb) {
+        int progress = pb.getProgress();
+        if (progress >= 80)
+            pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar));
+        else if (progress < 80 && progress > 30)
+            pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar_medium));
+        else pb.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progressbar_low));
+        //Toast.makeText(this, "a", Toast.LENGTH_SHORT).show();
+    }
+
+    public Bitmap takeScreenshotForView(View view) {
+        view.measure(View.MeasureSpec.makeMeasureSpec(view.getWidth(), View.MeasureSpec.EXACTLY), View.MeasureSpec.makeMeasureSpec(view.getHeight(), View.MeasureSpec.EXACTLY));
+        view.layout((int) view.getX(), (int) view.getY(), (int) view.getX() + view.getMeasuredWidth(), (int) view.getY() + view.getMeasuredHeight());
+        view.setDrawingCacheEnabled(true);
+        view.buildDrawingCache(true);
+        Bitmap bitmap = Bitmap.createBitmap(view.getDrawingCache());
+        view.setDrawingCacheEnabled(false);
+        return bitmap;
+    }
+
+    private void AnhXa()
+    {
+        imgAvatar = view.findViewById(R.id.imageAvatar);
+
+        txtAppearance = view.findViewById(R.id.txtAppearance);
+        txtHappy = view.findViewById(R.id.txtHappy);
+        txtSmart = view.findViewById(R.id.txtSmart);
+        txtHealth = view.findViewById(R.id.txtHealth);
+        txtMoney = view.findViewById(R.id.textviewMoney);
+        txtName = view.findViewById(R.id.textviewName);
+        txtJob = view.findViewById(R.id.textviewJob);
+        txtTotal = view.findViewById(R.id.textViewTotal);
+
+        prbAppearance = view.findViewById(R.id.progressbarAppearance);
+        prbHappy = view.findViewById(R.id.progressbarHappy);
+        prbHealth = view.findViewById(R.id.progressbarHealth);
+        prbSmart = view.findViewById(R.id.progressbarSmart);
+
+        btnShare = view.findViewById(R.id.buttonShare);
     }
 }

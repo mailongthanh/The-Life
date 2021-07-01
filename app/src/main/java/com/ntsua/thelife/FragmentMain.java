@@ -33,6 +33,10 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.squareup.picasso.Picasso;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -44,6 +48,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -98,6 +104,9 @@ public class FragmentMain extends Fragment {
     String contentHtml;
     int money;
     int REQUEST_CODE_INIT = 123;
+
+    CircleImageView imgUserAvatar;
+    TextView txtUserName, txtPlayerName;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -666,6 +675,25 @@ public class FragmentMain extends Fragment {
         changeProgressBackground(prbHappy);
         changeProgressBackground(prbHealth);
         changeProgressBackground(prbSmart);
+
+        setUserInfo();
+    }
+
+    private void setUserInfo() {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                txtUserName = getActivity().findViewById(R.id.textViewUserName);
+                txtPlayerName = getActivity().findViewById(R.id.textViewPlayerName);
+                imgUserAvatar = getActivity().findViewById(R.id.imageViewUserAvatar);
+
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+                txtUserName.setText(user.getDisplayName());
+                txtPlayerName.setText(MainActivity.saveGame.getName());
+                Picasso.get().load(user.getPhotoUrl()).into(imgUserAvatar);
+            }
+        }, 2000);
     }
 
     void changeWork() throws JSONException {
@@ -1170,7 +1198,7 @@ public class FragmentMain extends Fragment {
             String name = data.getStringExtra("name");
             boolean isBoy = data.getBooleanExtra("gender", false);
 
-            Toast.makeText(getActivity(), "INIT", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getActivity(), "INIT", Toast.LENGTH_SHORT).show();
             try {
                 init(name, isBoy);
                 readJob();

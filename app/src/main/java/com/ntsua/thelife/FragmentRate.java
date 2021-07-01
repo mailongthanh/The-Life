@@ -2,11 +2,24 @@ package com.ntsua.thelife;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.GenericTypeIndicator;
+import com.google.firebase.database.ValueEventListener;
+
+import org.jetbrains.annotations.NotNull;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,10 +68,36 @@ public class FragmentRate extends Fragment {
         }
     }
 
+    View view;
+    DatabaseReference data = FirebaseDatabase.getInstance().getReference();
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_rate, container, false);
+        view = inflater.inflate(R.layout.fragment_rate, container, false);
+        data.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                for(DataSnapshot snap: snapshot.getChildren())
+                {
+                    //Toast.makeText(getActivity(), "" + snap.getKey(), Toast.LENGTH_SHORT).show();
+                    GenericTypeIndicator<ArrayList<Food>> objectsGTypeInd = new GenericTypeIndicator<ArrayList<Food>>() {};
+                    ArrayList<Food> arrAsset = snap.child("asset").getValue(objectsGTypeInd);
+                    if (arrAsset != null)
+                    {
+                        Toast.makeText(getActivity(), "" + arrAsset.get(0).getFoodName(), Toast.LENGTH_SHORT).show();
+                    }
+                    else Toast.makeText(getActivity(), "NULL", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull @NotNull DatabaseError error) {
+
+            }
+        });
+
+        return view;
     }
 }

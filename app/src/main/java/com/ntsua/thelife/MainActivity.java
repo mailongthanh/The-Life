@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
@@ -14,6 +15,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -29,6 +31,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserInfo;
+
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
 
@@ -52,6 +58,9 @@ public class MainActivity extends AppCompatActivity
 
     int currentFragment = FRAGMENT_MAIN;
     FragmentMain fragmentMain;
+
+    //auth.signOut();
+    //LoginManager.getInstance().logOut();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +86,8 @@ public class MainActivity extends AppCompatActivity
             fragmentMain = new FragmentMain();
         replaceFragment(fragmentMain);
     }
+
+
 
     public void startInit()
     {
@@ -232,8 +243,15 @@ public class MainActivity extends AppCompatActivity
             case R.id.menu_share:
                 if (currentFragment != FRAGMENT_SHARE)
                 {
-                    replaceFragment(new FragmentShare());
+                    FragmentShare share = new FragmentShare();
+                    replaceFragment(share);
                     currentFragment = FRAGMENT_SHARE;
+
+//                    FragmentShare fragmentShare = (FragmentShare) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment_content_main);
+//
+//                    ConstraintLayout layout = findViewById(R.id.content_main);
+//                    Bitmap bitmap = takeScreenshotForView(layout);
+//                    fragmentShare.imgTest.setImageBitmap(bitmap);
                 }
                 break;
             case R.id.menu_rank:
@@ -278,6 +296,16 @@ public class MainActivity extends AppCompatActivity
             fragmentMain = new FragmentMain();
         fragmentMain.onActivityResult(requestCode, resultCode, data);
         super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    public Bitmap takeScreenshotForView(View view) {
+        view.measure(View.MeasureSpec.makeMeasureSpec(view.getWidth(), View.MeasureSpec.EXACTLY), View.MeasureSpec.makeMeasureSpec(view.getHeight(), View.MeasureSpec.EXACTLY));
+        view.layout((int) view.getX(), (int) view.getY(), (int) view.getX() + view.getMeasuredWidth(), (int) view.getY() + view.getMeasuredHeight());
+        view.setDrawingCacheEnabled(true);
+        view.buildDrawingCache(true);
+        Bitmap bitmap = Bitmap.createBitmap(view.getDrawingCache());
+        view.setDrawingCacheEnabled(false);
+        return bitmap;
     }
 }
 

@@ -59,8 +59,12 @@ public class SaveGame {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                 infomation = snapshot.getValue(PlayerBasicInfomation.class);
-                if (infomation == null)
+                if (infomation == null) {
+                    //Toast.makeText(, "", Toast.LENGTH_SHORT).show();
                     reference.child("Basic").setValue(new PlayerBasicInfomation());
+                    reference.child("Infomation").child("PhotoUri").setValue(FirebaseAuth.getInstance().getCurrentUser().getPhotoUrl().toString());
+                    reference.child("Infomation").child("Name").setValue(FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
+                }
                 else if (isOnCreate){
                     loadDone.onLoaded();
                     isOnCreate = false;
@@ -72,7 +76,7 @@ public class SaveGame {
             }
         });
 
-        reference.child("asset").addValueEventListener(new ValueEventListener() {
+        reference.child("Asset").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                 GenericTypeIndicator<ArrayList<Food>> objectsGTypeInd = new GenericTypeIndicator<ArrayList<Food>>() {};
@@ -85,7 +89,7 @@ public class SaveGame {
             }
         });
 
-        reference.child("relationship").addValueEventListener(new ValueEventListener() {
+        reference.child("Relationship").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                 GenericTypeIndicator<ArrayList<QuanHe>> objectsGTypeInd = new GenericTypeIndicator<ArrayList<QuanHe>>() {};
@@ -98,7 +102,7 @@ public class SaveGame {
             }
         });
 
-        reference.child("sick").addValueEventListener(new ValueEventListener() {
+        reference.child("Sick").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                 GenericTypeIndicator<ArrayList<Sick>> objectsGTypeInd = new GenericTypeIndicator<ArrayList<Sick>>() {};
