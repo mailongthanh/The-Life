@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "621373504593",
+    "firebase_url": "https://the-life-32d81-default-rtdb.firebaseio.com",
+    "project_id": "the-life-32d81",
+    "storage_bucket": "the-life-32d81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621373504593:android:8d68e267c32b8efdc38c70",
+        "android_client_info": {
+          "package_name": "com.ntsua.thelife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621373504593-9i3lk9d97k0inlrmmhagrgu1kol5aifo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9aCOsI48AGZTJ_2adpBxuGrr07q50zGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621373504593-9i3lk9d97k0inlrmmhagrgu1kol5aifo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

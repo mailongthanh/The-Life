@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -35,6 +36,7 @@ public class JobCauThu extends AppCompatActivity {
     ArrayList<Food> arrCaSi;
     TextView txtName, txtJob, txtMoney;
     JSONObject jsonCaSi;
+    ImageView imgAvatar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +44,7 @@ public class JobCauThu extends AppCompatActivity {
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
+        imgAvatar = findViewById(R.id.imageAvatar);
         loadGame();
         try {
             readDegree();
@@ -64,25 +67,54 @@ public class JobCauThu extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        try {
-                            //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
-                            JSONArray arrDamCuoi = jsonCaSi.getJSONArray("Cầu thủ");
-                            JSONArray arrQuestion = chooseQuestion(arrDamCuoi);
-                            dialogEvent(arrQuestion, 0);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
+                        if(MainActivity.saveGame.getJob().equals("Cầu thủ dự bị"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobCauThu.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Chân sút triển vọng")||MainActivity.saveGame.getJob().equals("Ngôi sao bóng đá")||MainActivity.saveGame.getJob().equals("Huyền thoại bóng đá")){
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm ở chức vụ cao hơn", JobCauThu.this);}
+                        else{
+                            try {
+                                //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
+                                JSONArray arrDamCuoi = jsonCaSi.getJSONArray("Cầu thủ");
+                                JSONArray arrQuestion = chooseQuestion(arrDamCuoi);
+                                dialogEvent(arrQuestion, 0);
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
                         }
                         break;
                     case 1:
-                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCauThu.this);
+                        if(MainActivity.saveGame.getJob().equals("Chân sút triển vọng"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm công việc này", JobCauThu.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Ngôi sao bóng đá")||MainActivity.saveGame.getJob().equals("Huyền thoại bóng đá")){
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm ở chức vụ cao hơn", JobCauThu.this);}
+                        else{
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCauThu.this);
+                        }
                         break;
                     case 2:
-                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCauThu.this);
+                        if(MainActivity.saveGame.getJob().equals("Ngôi sao bóng đá"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm công việc này", JobCauThu.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Huyền thoại bóng đá")){
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm ở chức vụ cao hơn", JobCauThu.this);}
+                        else{
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCauThu.this);
+                        }
                         break;
                     case 3:
-                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCauThu.this);
+                        if(MainActivity.saveGame.getJob().equals("Huyền thoại bóng đá"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm công việc này", JobCauThu.this);
+                        }
+                        else{
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCauThu.this);
+                        }
                         break;
-
                 }
             }
         });
@@ -115,6 +147,7 @@ public class JobCauThu extends AppCompatActivity {
         if (index == 3)
         {
             dialogResult(true);
+            MainActivity.saveGame.saveJob("Cầu thủ dự bị");
             return;
         }
 
@@ -239,5 +272,6 @@ public class JobCauThu extends AppCompatActivity {
         txtName.setText(MainActivity.saveGame.getName());
         txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
         txtJob.setText(MainActivity.saveGame.getJob());
+        imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());
     }
 }

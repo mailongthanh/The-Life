@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="#FF0000">
+
+    <ImageButton
+        android:id="@+id/imageButtonMenu"
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:src="@drawable/menu" />
+
+    <ImageView
+        android:layout_width="117dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="@font/anton"
+        android:src="@drawable/thelife"
+        android:textSize="20sp" />
+</RelativeLayout>

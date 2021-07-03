@@ -7,6 +7,9 @@ public class Sick {
     private String json;
     private int health; //Sức khỏe bị trừ mỗi năm nếu có bệnh mà không chữa
 
+    public Sick() {
+    }
+
     public Sick(boolean isSick, String sickName, String docter, String json, int health) {
         this.isSick = isSick;
         SickName = sickName;

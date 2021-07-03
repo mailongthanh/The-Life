@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:id="@+id/menu_main"
+        android:title="Trang chính"
+        android:icon="@drawable/icon_main"/>
+    <item android:id="@+id/menu_share"
+        android:title="Chia sẻ lên Facebook"
+        android:icon="@drawable/icon_share"/>
+    <item android:id="@+id/menu_rank"
+        android:title="Bảng xếp hạng"
+        android:icon="@drawable/icon_rate"/>
+    <item android:id="@+id/menu_reset"
+        android:title="Tạo nhân vật mới"
+        android:icon="@drawable/icon_new_game"/>
+    <item android:id="@+id/menu_logout"
+        android:title="Đăng xuất"
+        android:icon="@drawable/icon_logout"/>
+
+</menu>

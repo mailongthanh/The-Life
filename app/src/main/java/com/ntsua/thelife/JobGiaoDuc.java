@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -35,6 +36,7 @@ public class JobGiaoDuc extends AppCompatActivity {
     ArrayList<Food> arrCaSi;
     TextView txtName, txtJob, txtMoney;
     JSONObject jsonCaSi;
+    ImageView imgAvatar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +44,7 @@ public class JobGiaoDuc extends AppCompatActivity {
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
+        imgAvatar = findViewById(R.id.imageAvatar);
         loadGame();
         try {
             readDegree();
@@ -54,7 +57,6 @@ public class JobGiaoDuc extends AppCompatActivity {
         arrCaSi.add(new Food("Thực tập sinh", "Thu nhập 5 triệu/ 1 năm", R.drawable.thuctapsinh, 5));
         arrCaSi.add(new Food("Giáo viên", "Thu nhập 10 triệu/ 1 năm", R.drawable.teacher, 10));
         arrCaSi.add(new Food("Trưởng bộ môn", "Thu nhập 13 triệu/ 1 năm", R.drawable.superteacher, 13));
-        arrCaSi.add(new Food("Phó hiệu trưởng", "Thu nhập 25 triệu/ 1 năm", R.drawable.vicepresident, 25));
         arrCaSi.add(new Food("Hiệu trưởng", "Thu nhập 50 triệu/ 1 năm", R.drawable.principal, 50));
         adapter = new FoodAdapter(this, R.layout.food_line, arrCaSi);
         lvCaSi.setAdapter(adapter);
@@ -65,23 +67,53 @@ public class JobGiaoDuc extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        try {
-                            //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
-                            JSONArray arrDamCuoi = jsonCaSi.getJSONArray("Giáo dục");
-                            JSONArray arrQuestion = chooseQuestion(arrDamCuoi);
-                            dialogEvent(arrQuestion, 0);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
+                        if(MainActivity.saveGame.getJob().equals("Thực tập sinh"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobGiaoDuc.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Giáo viên")||MainActivity.saveGame.getJob().equals("Trưởng bộ môn")||MainActivity.saveGame.getJob().equals("Hiệu trưởng")){
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm ở chức vụ cao hơn", JobGiaoDuc.this);}
+                        else{
+                            try {
+                                //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
+                                JSONArray arrDamCuoi = jsonCaSi.getJSONArray("Giáo dục");
+                                JSONArray arrQuestion = chooseQuestion(arrDamCuoi);
+                                dialogEvent(arrQuestion, 0);
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
                         }
                         break;
                     case 1:
-                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobGiaoDuc.this);
+                        if(MainActivity.saveGame.getJob().equals("Giáo viên"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm công việc này", JobGiaoDuc.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Trưởng bộ môn")||MainActivity.saveGame.getJob().equals("Hiệu trưởng")){
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm ở chức vụ cao hơn", JobGiaoDuc.this);}
+                        else{
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobGiaoDuc.this);
+                        }
                         break;
                     case 2:
-                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobGiaoDuc.this);
+                        if(MainActivity.saveGame.getJob().equals("Trưởng bộ môn"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm công việc này", JobGiaoDuc.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Hiệu trưởng")){
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm ở chức vụ cao hơn", JobGiaoDuc.this);}
+                        else{
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobGiaoDuc.this);
+                        }
                         break;
                     case 3:
-                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobGiaoDuc.this);
+                        if(MainActivity.saveGame.getJob().equals("Hiệu trưởng"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm công việc này", JobGiaoDuc.this);
+                        }
+                        else{
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobGiaoDuc.this);
+                        }
                         break;
                 }
             }
@@ -115,6 +147,7 @@ public class JobGiaoDuc extends AppCompatActivity {
         if (index == 3)
         {
             dialogResult(true);
+            MainActivity.saveGame.saveJob("Thực tập sinh");
             return;
         }
 
@@ -239,5 +272,6 @@ public class JobGiaoDuc extends AppCompatActivity {
         txtName.setText(MainActivity.saveGame.getName());
         txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
         txtJob.setText(MainActivity.saveGame.getJob());
+        imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());
     }
 }

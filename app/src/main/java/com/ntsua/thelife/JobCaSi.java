@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -34,6 +35,7 @@ public class JobCaSi extends AppCompatActivity {
     ArrayList<Food> arrCaSi;
     TextView txtName, txtJob, txtMoney;
     JSONObject jsonCaSi;
+    ImageView imgAvatar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +43,7 @@ public class JobCaSi extends AppCompatActivity {
         txtName = findViewById(R.id.textviewName);
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
+        imgAvatar = findViewById(R.id.imageAvatar);
         loadGame();
         try {
             readDegree();
@@ -63,6 +66,13 @@ public class JobCaSi extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
+                        if(MainActivity.saveGame.getJob().equals("Ca sĩ đám cưới"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobCaSi.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Ca sĩ phòng trà")||MainActivity.saveGame.getJob().equals("Ca sĩ thần tượng")||MainActivity.saveGame.getJob().equals("DIVA")){
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm ở chức vụ cao hơn", JobCaSi.this);}
+                        else{
                             try {
                                 //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
                                 JSONArray arrDamCuoi = jsonCaSi.getJSONArray("Đám cưới");
@@ -71,45 +81,38 @@ public class JobCaSi extends AppCompatActivity {
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
+                        }
                         break;
-                    //case 1:
-                            //try {
-                                //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
-                               // JSONArray arrDriving = jsonCaSi.getJSONArray("Phòng trà");
-                                //JSONArray arrQuestion = chooseQuestion(arrDriving);
-                                //dialogEvent(arrQuestion, 0);
-                            //} catch (JSONException e) {
-                               // e.printStackTrace();
-                            //}
-                        //break;
-                    //case 2:
-                        //try {
-                            //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
-                            //JSONArray arrDriving = jsonCaSi.getJSONArray("Thần tượng");
-                            //JSONArray arrQuestion = chooseQuestion(arrDriving);
-                            //dialogEvent(arrQuestion, 0);
-                        //} catch (JSONException e) {
-                            //e.printStackTrace();
-                       // }
-                        //break;
-                    //case 3:
-                        //try {
-                            //Toast.makeText(Degree.this, "here", Toast.LENGTH_SHORT).show();
-                            //JSONArray arrDriving = jsonCaSi.getJSONArray("DIVA");
-                            //JSONArray arrQuestion = chooseQuestion(arrDriving);
-                            //dialogEvent(arrQuestion, 0);
-                        //} catch (JSONException e) {
-                          //  e.printStackTrace();
-                        //}
-                       // break;
                     case 1:
-                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCaSi.this);
+                        if(MainActivity.saveGame.getJob().equals("Ca sĩ phòng trà"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm công việc này", JobCaSi.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Ca sĩ thần tượng")||MainActivity.saveGame.getJob().equals("DIVA")){
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm ở chức vụ cao hơn", JobCaSi.this);}
+                        else{
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCaSi.this);
+                        }
                         break;
                     case 2:
-                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCaSi.this);
+                        if(MainActivity.saveGame.getJob().equals("Ca sĩ thần tượng"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm công việc này", JobCaSi.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("DIVA")){
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm ở chức vụ cao hơn", JobCaSi.this);}
+                        else{
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCaSi.this);
+                        }
                         break;
                     case 3:
-                        MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCaSi.this);
+                        if(MainActivity.saveGame.getJob().equals("DIVA"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm công việc này", JobCaSi.this);
+                        }
+                        else{
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn chưa có kinh nghiệm cho vị trí này", JobCaSi.this);
+                        }
                         break;
                 }
             }
@@ -143,6 +146,7 @@ public class JobCaSi extends AppCompatActivity {
         if (index == 3)
         {
             dialogResult(true);
+            MainActivity.saveGame.saveJob("Ca sĩ đám cưới");
             return;
         }
 
@@ -267,5 +271,6 @@ public class JobCaSi extends AppCompatActivity {
         txtName.setText(MainActivity.saveGame.getName());
         txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
         txtJob.setText(MainActivity.saveGame.getJob());
+        imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());
     }
 }

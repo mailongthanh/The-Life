@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ntsua.thelife">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/boy"
@@ -9,10 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheLife">
-        <activity android:name=".AiLaTrieuPhu_ing"/>
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AiLaTrieuPhu_ing" />
         <activity android:name=".AiLaTrieuPhu" />
-        <activity android:name=".Asset"></activity>
-        <activity android:name=".JobGiaoDuc"></activity>
+        <activity android:name=".Asset" />
+        <activity android:name=".JobGiaoDuc" />
         <activity android:name=".JobYTe" />
         <activity android:name=".JobDienVien" />
         <activity android:name=".JobTaiChinh" />
@@ -45,18 +53,20 @@
         <activity android:name=".RelationShip" />
         <activity android:name=".FoodActivity" />
         <activity android:name=".SelectGender" />
-        <activity android:name=".CreateName"/>
+        <activity android:name=".CreateName" />
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_application_id"/>
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider3807860139341525"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+
     </application>
 
 </manifest>

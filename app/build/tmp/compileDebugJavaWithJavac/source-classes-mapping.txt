@@ -1,6 +1,24 @@
+<<<<<<< HEAD
 com/ntsua/thelife/HoatDong.java
  com.ntsua.thelife.HoatDong
  com.ntsua.thelife.HoatDong$1
+=======
+com/ntsua/thelife/MainActivity.java
+ com.ntsua.thelife.MainActivity
+ com.ntsua.thelife.MainActivity$1
+ com.ntsua.thelife.MainActivity$2
+ com.ntsua.thelife.MainActivity$2$1
+ com.ntsua.thelife.MainActivity$2$2
+ com.ntsua.thelife.MainActivity$2$2$1
+com/ntsua/thelife/Ratings.java
+ com.ntsua.thelife.Ratings
+ com.ntsua.thelife.Ratings$1
+com/ntsua/thelife/LoginActivity.java
+ com.ntsua.thelife.LoginActivity
+ com.ntsua.thelife.LoginActivity$1
+ com.ntsua.thelife.LoginActivity$2
+ com.ntsua.thelife.LoginActivity$3
+>>>>>>> d3245fd50e62a2b85fbf1cc6ce288ed922a017a6
 com/ntsua/thelife/AiLaTrieuPhu_TienThuongAdapter.java
  com.ntsua.thelife.AiLaTrieuPhu_TienThuongAdapter
 com/ntsua/thelife/CrimeActivity.java
@@ -10,6 +28,7 @@ com/ntsua/thelife/CrimeActivity.java
  com.ntsua.thelife.CrimeActivity$3
  com.ntsua.thelife.CrimeActivity$4
  com.ntsua.thelife.CrimeActivity$5
+<<<<<<< HEAD
 com/ntsua/thelife/JobBaoChi.java
  com.ntsua.thelife.JobBaoChi
  com.ntsua.thelife.JobBaoChi$1
@@ -30,6 +49,27 @@ com/ntsua/thelife/JobDienVien.java
  com.ntsua.thelife.JobDienVien$2
  com.ntsua.thelife.JobDienVien$3
  com.ntsua.thelife.JobDienVien$4
+=======
+com/ntsua/thelife/RatingAdapter.java
+ com.ntsua.thelife.RatingAdapter
+ com.ntsua.thelife.RatingAdapter$MyHolder
+com/ntsua/thelife/BuildConfig.java
+ com.ntsua.thelife.BuildConfig
+com/ntsua/thelife/FragmentRate.java
+ com.ntsua.thelife.FragmentRate
+ com.ntsua.thelife.FragmentRate$1
+ com.ntsua.thelife.FragmentRate$1$1
+com/ntsua/thelife/AiLaTrieuPhu_Dialog_KhanGia.java
+ com.ntsua.thelife.AiLaTrieuPhu_Dialog_KhanGia
+com/ntsua/thelife/FragmentShare.java
+ com.ntsua.thelife.FragmentShare
+ com.ntsua.thelife.FragmentShare$1
+com/ntsua/thelife/ActivitiesEvent.java
+ com.ntsua.thelife.ActivitiesEvent
+ com.ntsua.thelife.ActivitiesEvent$1
+ com.ntsua.thelife.ActivitiesEvent$2
+ com.ntsua.thelife.ActivitiesEvent$3
+>>>>>>> d3245fd50e62a2b85fbf1cc6ce288ed922a017a6
 com/ntsua/thelife/RelationShip.java
  com.ntsua.thelife.RelationShip
  com.ntsua.thelife.RelationShip$1
@@ -52,12 +92,19 @@ com/ntsua/thelife/MakeUp.java
  com.ntsua.thelife.MakeUp$1
  com.ntsua.thelife.MakeUp$2
  com.ntsua.thelife.MakeUp$3
+<<<<<<< HEAD
 com/ntsua/thelife/JobCongNghe.java
  com.ntsua.thelife.JobCongNghe
  com.ntsua.thelife.JobCongNghe$1
  com.ntsua.thelife.JobCongNghe$2
  com.ntsua.thelife.JobCongNghe$3
  com.ntsua.thelife.JobCongNghe$4
+=======
+com/ntsua/thelife/CrimeAdapter.java
+ com.ntsua.thelife.CrimeAdapter
+ com.ntsua.thelife.CrimeAdapter$1
+ com.ntsua.thelife.CrimeAdapter$ViewHolder
+>>>>>>> d3245fd50e62a2b85fbf1cc6ce288ed922a017a6
 com/ntsua/thelife/QuanHeAdapter.java
  com.ntsua.thelife.QuanHeAdapter
  com.ntsua.thelife.QuanHeAdapter$1
@@ -69,13 +116,19 @@ com/ntsua/thelife/Modau.java
 com/ntsua/thelife/Travel.java
  com.ntsua.thelife.Travel
 com/ntsua/thelife/SaveGame.java
+ com.ntsua.thelife.LoadDone
  com.ntsua.thelife.SaveGame
  com.ntsua.thelife.SaveGame$1
  com.ntsua.thelife.SaveGame$2
+ com.ntsua.thelife.SaveGame$2$1
  com.ntsua.thelife.SaveGame$3
+ com.ntsua.thelife.SaveGame$3$1
+ com.ntsua.thelife.SaveGame$4
+ com.ntsua.thelife.SaveGame$4$1
 com/ntsua/thelife/CreateName.java
  com.ntsua.thelife.CreateName
  com.ntsua.thelife.CreateName$1
+<<<<<<< HEAD
 com/ntsua/thelife/JobAmThuc.java
  com.ntsua.thelife.JobAmThuc
  com.ntsua.thelife.JobAmThuc$1
@@ -88,6 +141,12 @@ com/ntsua/thelife/JobTaiChinh.java
  com.ntsua.thelife.JobTaiChinh$2
  com.ntsua.thelife.JobTaiChinh$3
  com.ntsua.thelife.JobTaiChinh$4
+=======
+com/ntsua/thelife/Sick.java
+ com.ntsua.thelife.Sick
+com/ntsua/thelife/Food.java
+ com.ntsua.thelife.Food
+>>>>>>> d3245fd50e62a2b85fbf1cc6ce288ed922a017a6
 com/ntsua/thelife/Startup.java
  com.ntsua.thelife.Startup
  com.ntsua.thelife.Startup$1
@@ -105,12 +164,19 @@ com/ntsua/thelife/AiLaTrieuPhu_ing.java
  com.ntsua.thelife.AiLaTrieuPhu_ing$2$1
 com/ntsua/thelife/HoatDongQH.java
  com.ntsua.thelife.HoatDongQH
+<<<<<<< HEAD
 com/ntsua/thelife/JobYTe.java
  com.ntsua.thelife.JobYTe
  com.ntsua.thelife.JobYTe$1
  com.ntsua.thelife.JobYTe$2
  com.ntsua.thelife.JobYTe$3
  com.ntsua.thelife.JobYTe$4
+=======
+com/ntsua/thelife/HoatDongQHAdapter.java
+ com.ntsua.thelife.HoatDongQHAdapter
+ com.ntsua.thelife.HoatDongQHAdapter$1
+ com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
+>>>>>>> d3245fd50e62a2b85fbf1cc6ce288ed922a017a6
 com/ntsua/thelife/SportActivity.java
  com.ntsua.thelife.SportActivity
  com.ntsua.thelife.SportActivity$1
@@ -132,6 +198,96 @@ com/ntsua/thelife/FoodActivity.java
  com.ntsua.thelife.FoodActivity
  com.ntsua.thelife.FoodActivity$1
  com.ntsua.thelife.FoodActivity$2
+<<<<<<< HEAD
+=======
+com/ntsua/thelife/AiLaTrieuPhu_CauHoi.java
+ com.ntsua.thelife.AiLaTrieuPhu_CauHoi
+com/ntsua/thelife/Cooking.java
+ com.ntsua.thelife.Cooking
+com/ntsua/thelife/Tuong_tacActivity.java
+ com.ntsua.thelife.Tuong_tacActivity
+ com.ntsua.thelife.Tuong_tacActivity$1
+ com.ntsua.thelife.Tuong_tacActivity$2
+ com.ntsua.thelife.Tuong_tacActivity$3
+ com.ntsua.thelife.Tuong_tacActivity$4
+ com.ntsua.thelife.Tuong_tacActivity$5
+com/ntsua/thelife/AiLaTrieuPhu_FaceData.java
+ com.ntsua.thelife.AiLaTrieuPhu_FaceData
+com/ntsua/thelife/Entertainment.java
+ com.ntsua.thelife.Entertainment
+ com.ntsua.thelife.Entertainment$1
+ com.ntsua.thelife.Entertainment$2
+ com.ntsua.thelife.Entertainment$3
+ com.ntsua.thelife.Entertainment$4
+com/ntsua/thelife/Playground.java
+ com.ntsua.thelife.Playground
+ com.ntsua.thelife.Playground$1
+com/ntsua/thelife/AiLaTrieuPhu_DSCauHoi.java
+ com.ntsua.thelife.AiLaTrieuPhu_DSCauHoi
+com/ntsua/thelife/FragmentMain.java
+ com.ntsua.thelife.FragmentMain
+ com.ntsua.thelife.FragmentMain$1
+ com.ntsua.thelife.FragmentMain$10
+ com.ntsua.thelife.FragmentMain$11
+ com.ntsua.thelife.FragmentMain$12
+ com.ntsua.thelife.FragmentMain$13
+ com.ntsua.thelife.FragmentMain$14
+ com.ntsua.thelife.FragmentMain$15
+ com.ntsua.thelife.FragmentMain$16
+ com.ntsua.thelife.FragmentMain$17
+ com.ntsua.thelife.FragmentMain$18
+ com.ntsua.thelife.FragmentMain$19
+ com.ntsua.thelife.FragmentMain$2
+ com.ntsua.thelife.FragmentMain$3
+ com.ntsua.thelife.FragmentMain$4
+ com.ntsua.thelife.FragmentMain$5
+ com.ntsua.thelife.FragmentMain$6
+ com.ntsua.thelife.FragmentMain$7
+ com.ntsua.thelife.FragmentMain$8
+ com.ntsua.thelife.FragmentMain$9
+com/ntsua/thelife/Love.java
+ com.ntsua.thelife.Love
+ com.ntsua.thelife.Love$1
+ com.ntsua.thelife.Love$2
+ com.ntsua.thelife.Love$3
+com/ntsua/thelife/SelectGender.java
+ com.ntsua.thelife.SelectGender
+ com.ntsua.thelife.SelectGender$1
+ com.ntsua.thelife.SelectGender$2
+ com.ntsua.thelife.SelectGender$3
+com/ntsua/thelife/Asset.java
+ com.ntsua.thelife.Asset
+com/ntsua/thelife/PlayerBasicInfomation.java
+ com.ntsua.thelife.PlayerBasicInfomation
+com/ntsua/thelife/NameOfRelationship.java
+ com.ntsua.thelife.NameOfRelationship
+com/ntsua/thelife/Hospital.java
+ com.ntsua.thelife.Hospital
+ com.ntsua.thelife.Hospital$1
+ com.ntsua.thelife.Hospital$2
+com/ntsua/thelife/BoiToan.java
+ com.ntsua.thelife.BoiToan
+ com.ntsua.thelife.BoiToan$1
+ com.ntsua.thelife.BoiToan$2
+com/ntsua/thelife/ChuyenViec.java
+ com.ntsua.thelife.ChuyenViec
+ com.ntsua.thelife.ChuyenViec$1
+com/ntsua/thelife/HoatDong.java
+ com.ntsua.thelife.HoatDong
+ com.ntsua.thelife.HoatDong$1
+com/ntsua/thelife/JobYTe.java
+ com.ntsua.thelife.JobYTe
+ com.ntsua.thelife.JobYTe$1
+ com.ntsua.thelife.JobYTe$2
+ com.ntsua.thelife.JobYTe$3
+ com.ntsua.thelife.JobYTe$4
+com/ntsua/thelife/JobCongNghe.java
+ com.ntsua.thelife.JobCongNghe
+ com.ntsua.thelife.JobCongNghe$1
+ com.ntsua.thelife.JobCongNghe$2
+ com.ntsua.thelife.JobCongNghe$3
+ com.ntsua.thelife.JobCongNghe$4
+>>>>>>> d3245fd50e62a2b85fbf1cc6ce288ed922a017a6
 com/ntsua/thelife/JobGiaoDuc.java
  com.ntsua.thelife.JobGiaoDuc
  com.ntsua.thelife.JobGiaoDuc$1
@@ -144,6 +300,7 @@ com/ntsua/thelife/JobKinhDoanh.java
  com.ntsua.thelife.JobKinhDoanh$2
  com.ntsua.thelife.JobKinhDoanh$3
  com.ntsua.thelife.JobKinhDoanh$4
+<<<<<<< HEAD
 com/ntsua/thelife/Tuong_tacActivity.java
  com.ntsua.thelife.Tuong_tacActivity
  com.ntsua.thelife.Tuong_tacActivity$1
@@ -153,12 +310,27 @@ com/ntsua/thelife/Tuong_tacActivity.java
  com.ntsua.thelife.Tuong_tacActivity$5
 com/ntsua/thelife/AiLaTrieuPhu_FaceData.java
  com.ntsua.thelife.AiLaTrieuPhu_FaceData
+=======
+com/ntsua/thelife/JobBaoChi.java
+ com.ntsua.thelife.JobBaoChi
+ com.ntsua.thelife.JobBaoChi$1
+ com.ntsua.thelife.JobBaoChi$2
+ com.ntsua.thelife.JobBaoChi$3
+ com.ntsua.thelife.JobBaoChi$4
+com/ntsua/thelife/JobCaSi.java
+ com.ntsua.thelife.JobCaSi
+ com.ntsua.thelife.JobCaSi$1
+ com.ntsua.thelife.JobCaSi$2
+ com.ntsua.thelife.JobCaSi$3
+ com.ntsua.thelife.JobCaSi$4
+>>>>>>> d3245fd50e62a2b85fbf1cc6ce288ed922a017a6
 com/ntsua/thelife/JobDichVu.java
  com.ntsua.thelife.JobDichVu
  com.ntsua.thelife.JobDichVu$1
  com.ntsua.thelife.JobDichVu$2
  com.ntsua.thelife.JobDichVu$3
  com.ntsua.thelife.JobDichVu$4
+<<<<<<< HEAD
 com/ntsua/thelife/Playground.java
  com.ntsua.thelife.Playground
  com.ntsua.thelife.Playground$1
@@ -225,6 +397,14 @@ com/ntsua/thelife/Entertainment.java
  com.ntsua.thelife.Entertainment$4
 com/ntsua/thelife/Sick.java
  com.ntsua.thelife.Sick
+=======
+com/ntsua/thelife/JobAmThuc.java
+ com.ntsua.thelife.JobAmThuc
+ com.ntsua.thelife.JobAmThuc$1
+ com.ntsua.thelife.JobAmThuc$2
+ com.ntsua.thelife.JobAmThuc$3
+ com.ntsua.thelife.JobAmThuc$4
+>>>>>>> d3245fd50e62a2b85fbf1cc6ce288ed922a017a6
 com/ntsua/thelife/JobTaiXe.java
  com.ntsua.thelife.JobTaiXe
  com.ntsua.thelife.JobTaiXe$1
@@ -237,6 +417,7 @@ com/ntsua/thelife/JobCauThu.java
  com.ntsua.thelife.JobCauThu$2
  com.ntsua.thelife.JobCauThu$3
  com.ntsua.thelife.JobCauThu$4
+<<<<<<< HEAD
 com/ntsua/thelife/Cooking.java
  com.ntsua.thelife.Cooking
 com/ntsua/thelife/AiLaTrieuPhu_CauHoi.java
@@ -254,6 +435,14 @@ com/ntsua/thelife/ActivitiesEvent.java
  com.ntsua.thelife.ActivitiesEvent$1
  com.ntsua.thelife.ActivitiesEvent$2
  com.ntsua.thelife.ActivitiesEvent$3
+=======
+com/ntsua/thelife/JobDienVien.java
+ com.ntsua.thelife.JobDienVien
+ com.ntsua.thelife.JobDienVien$1
+ com.ntsua.thelife.JobDienVien$2
+ com.ntsua.thelife.JobDienVien$3
+ com.ntsua.thelife.JobDienVien$4
+>>>>>>> d3245fd50e62a2b85fbf1cc6ce288ed922a017a6
 com/ntsua/thelife/JobQuanDoi.java
  com.ntsua.thelife.JobQuanDoi
  com.ntsua.thelife.JobQuanDoi$1
