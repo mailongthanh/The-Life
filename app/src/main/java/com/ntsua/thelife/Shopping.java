@@ -44,6 +44,10 @@ public class Shopping extends AppCompatActivity {
         lvShopping = findViewById(R.id.listviewShopping);
 
         arrAsset = new ArrayList<>();
+        if(MainActivity.saveGame.getAsset()!= null)
+        {
+            arrAsset = MainActivity.saveGame.getAsset();
+        }
         arrShopping = new ArrayList<>();
         arrShopping.add(new Food("Phương tiện đi lại","Công cụ di chuyển",R.drawable.vehicle,0));
         arrShopping.add(new Food("Bất động sản","Tài sản đứng im",R.drawable.house,0));

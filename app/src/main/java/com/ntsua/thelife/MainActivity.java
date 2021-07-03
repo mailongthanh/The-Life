@@ -74,44 +74,65 @@ public class MainActivity extends AppCompatActivity {
     ImageButton ibtnAddAge;
     ProgressBar prbHappy, prbHealth, prbSmart, prbAppearance;
     ScrollView scrollView;
-    TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName, txtJob;
+    TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName, txtJob, txtScrollviewContent;
     SharedPreferences preferences;
     static public SaveGame saveGame;
     static public  ArrayList<QuanHe> arrFriend;
+    public static final String year ="";
     ArrayList<QuanHe> arrRelationship;
     JSONArray arrJsonAge;
     JSONObject jsonResult, jsonAllJob, jsonJob;
     String contentHtml;
-    int money;
+    Bundle bundle;
+    int money, TempAge, prisonYear = 0;
     long currentTime = 0;
     Toast backToast;
 
     int REQUEST_CODE_INIT = 123;
 
+    @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         AnhXa();
+
+        Intent intent = getIntent();
+        bundle = intent.getExtras();
+
+        if(bundle!=null)
+        {
+            prisonYear = bundle.getInt(year);
+        }
+
+        if(prisonYear!=0)
+        {
+            createNotification(R.drawable.police,"Bạn đã bị bắt, bạn cần phải xám hối cho những hành vi tội lỗi của mình, hiện tại bạn sẽ không thể thực hiện được một số hoạt động thường ngày của mình",this);
+            TempAge = saveGame.getAge();
+            scrollView.setBackgroundResource(R.drawable.background_prison);
+            txtScrollviewContent.setVisibility(View.INVISIBLE);
+            btnAssets.setEnabled(false);
+            btnActivity.setEnabled(false);
+            btnRelationship.setEnabled(false);
+        }
         //Test
         //startActivityForResult(new Intent(MainActivity.this,  CreateName.class), REQUEST_CODE_INIT);
-
         try {
-            if (saveGame.getDetailActivity().equals("")) {
+             if (saveGame.getDetailActivity().equals("")) {
                 startActivityForResult(new Intent(MainActivity.this, CreateName.class), REQUEST_CODE_INIT);
-            }
-            else {
-                loadGame();
-                readEvent();
-                //Toast.makeText(this, "hể", Toast.LENGTH_SHORT).show();
-                readJob();
-                readFriend();
-                changeWork();
-            }
+             } else {
+                 loadGame();
+                 readEvent();
+                 //Toast.makeText(this, "hể", Toast.LENGTH_SHORT).show();
+                 readJob();
+                 readFriend();
+                 changeWork();
+             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
         ibtnAddAge.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 try {
@@ -121,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
         btnWork.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -131,9 +153,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        //createNotification(R.drawable.holding_hands, "Bạn đã có bằng tiếng anh rồi Bạn đã có bằng tiếng anh rồi Bạn đã có bằng tiếng anh rồi", this);
 
-        //dialogUniversity();
+
+            //createNotification(R.drawable.holding_hands, "Bạn đã có bằng tiếng anh rồi Bạn đã có bằng tiếng anh rồi Bạn đã có bằng tiếng anh rồi", this);
+
+            //dialogUniversity();
 //        saveGame.saveAge(17);
 //        saveGame.savePlayerInfo(100, 100, 60, 100);
     }
@@ -174,6 +198,34 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
     }
 
+    void DeathofRelation()
+    {
+        Random random = new Random();
+        int happy = saveGame.getHappy();
+        NameOfRelationship dad = NameOfRelationship.Dad;
+        NameOfRelationship mom = NameOfRelationship.Mom;
+        int image = getResources().getIdentifier("death","drawable", this.getPackageName());
+
+        for(int i = 0; i< arrRelationship.size();i++)
+        {
+            QuanHe Relatives = arrRelationship.get(i);
+            if(Relatives.getTuoi() >= 75 && Relatives.getTuoi() <=90 && Relatives.HinhAnh != image)
+            {
+                int flag = random.nextInt(4);
+                if(Relatives.getTuoi() == 90) flag = 1;
+                if(flag == 1) {
+                    Relatives.HinhAnh = image;
+                    if(Relatives.getQuanHe() == dad || Relatives.getQuanHe() == mom) {
+                        createNotification(Relatives.getHinhAnh(), Relatives.getQuanHe() + " của bạn đã mất", this);
+                    } else createNotification(Relatives.getHinhAnh(),Relatives.getQuanHe() + " của bạn" + Relatives.getHoten() + " đã mất",this);
+                    prbHappy.setProgress(prbHappy.getProgress() - 30);
+                    this.txtHappy.setText(prbHappy.getProgress() + "%");
+                }
+            }
+        }
+        saveGame.saveRelationship(arrRelationship);
+    }
+
     void doWork() throws JSONException {
         JSONArray arrJob = jsonJob.getJSONArray("work");
         dialogJob(arrJob);
@@ -184,49 +236,69 @@ public class MainActivity extends AppCompatActivity {
     void addAge() throws JSONException {
         //them tuoi
         int age = saveGame.getAge() + 1;
+        int year = TempAge + prisonYear - age;
+        if(prisonYear!=0) {
+            if (age >= TempAge + prisonYear) {
+                btnRelationship.setEnabled(true);
+                btnActivity.setEnabled(true);
+                scrollView.setBackgroundColor(Color.WHITE);
+                txtScrollviewContent.setVisibility(View.VISIBLE);
+                btnAssets.setEnabled(true);
+                prisonYear = 0;
 
-        if (age == 18)
-        {
-            addAgeHTML(18);
-            dialogUniversity();
-            return;
+                if(age > TempAge + prisonYear)
+                {
+                    createNotification(R.drawable.police,"Bạn đã được thả, hi vọng bạn đã nhận ra tội lỗi của mình", this);
+                }
+            }
+            if(age < TempAge + prisonYear ) {
+                createNotification(R.drawable.police, "Bạn còn "+ year +" năm tù trước khi được thả tự do" , this);
+            }
+            initNewAge();
+            addAgeHTML(age);
         }
+        else {
+            if (age == 18) {
+                addAgeHTML(18);
+                dialogUniversity();
+                return;
+            }
 //        if (age == 6)
 //        {
 //            saveGame.saveJob("Học sinh");
 //            //Change work
 //            txtContent.setText("Học sinh");
 //        }
-        //lay su kien tuoi
-        JSONArray arrAge = arrJsonAge.getJSONArray(age);
-        Random random = new Random();
-        //Toast.makeText(this, arrAge.length() + " - " + age, Toast.LENGTH_SHORT).show();
-        if (arrAge.length() == 0)
-        {
-            createNotification(saveGame.getAvatar(), "Năm nay không có sự kiện gì đặc biệt",this);
-            initNewAge();
-            addAgeHTML(age);
-            contentHtml = saveGame.getDetailActivity();
-            contentHtml += "Năm nay không có sự kiện gì đặc biệt<br>";
-            txtContent.setText(android.text.Html.fromHtml(contentHtml));
-            saveGame.saveDetailActivity(contentHtml);
-            return;
-        }
-        final JSONObject[] object = {arrAge.getJSONObject(random.nextInt(arrAge.length()))};
+            //lay su kien tuoi
+            JSONArray arrAge = arrJsonAge.getJSONArray(age);
+            Random random = new Random();
+            //Toast.makeText(this, arrAge.length() + " - " + age, Toast.LENGTH_SHORT).show();
+            if (arrAge.length() == 0) {
+                createNotification(saveGame.getAvatar(), "Năm nay không có sự kiện gì đặc biệt", this);
+                initNewAge();
+                addAgeHTML(age);
+                contentHtml = saveGame.getDetailActivity();
+                contentHtml += "Năm nay không có sự kiện gì đặc biệt<br>";
+                txtContent.setText(android.text.Html.fromHtml(contentHtml));
+                saveGame.saveDetailActivity(contentHtml);
+                return;
+            }
+            final JSONObject[] object = {arrAge.getJSONObject(random.nextInt(arrAge.length()))};
 
-        final String[] event = {object[0].getString("event")};
-        String title = object[0].getString("title");
+            final String[] event = {object[0].getString("event")};
+            String title = object[0].getString("title");
 
-        //Kiem tra su kien co su lua chon hay khong
-        final boolean[] isSelection = {object[0].getBoolean("selection")};
+            //Kiem tra su kien co su lua chon hay khong
+            final boolean[] isSelection = {object[0].getBoolean("selection")};
 
-        //Tao dialog hien thi su kien
-        if (isSelection[0])
-            dialogEvent(object, isSelection, title, event);
-        else {
-            jsonResult = object[0];
-            addAgeHTML(age);
-            dialogEventResult(title, true);
+            //Tao dialog hien thi su kien
+            if (isSelection[0])
+                dialogEvent(object, isSelection, title, event);
+            else {
+                jsonResult = object[0];
+                addAgeHTML(age);
+                dialogEventResult(title, true);
+            }
         }
     }
 
@@ -242,7 +314,6 @@ public class MainActivity extends AppCompatActivity {
             dialogEventResult(title, true);
             return;
         }
-
 
         //Them thong tin da choi vao textview
         //contentHtml += event[0] + "<br>";
@@ -363,7 +434,10 @@ public class MainActivity extends AppCompatActivity {
                     if (saveGame.getHealth() <= 0)
                         checkMySelf(MainActivity.this, "\"Qua đời vì sức khỏe yếu kéo dài, không chịu nổi những biến cố trong cuộc sống\"");
                     else if (isAgeEvent)
+                    {
                         initNewAge();
+                        DeathofRelation();
+                    }
                     else jobEvent();
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -991,8 +1065,8 @@ public class MainActivity extends AppCompatActivity {
         saveGame.saveRauCu(0);
         saveGame.saveKeo(0);
         saveGame.saveFastFood(0);
-<<<<<<< HEAD
         saveGame.saveCrime(0);
+
         int health = saveGame.getHealth();
         if (prbHappy.getProgress() < 30)
         {
@@ -1003,8 +1077,6 @@ public class MainActivity extends AppCompatActivity {
         prbHealth.setProgress(health);
         txtHealth.setText(prbHealth.getProgress() + "%");
         changeProgressBackground(prbHealth);
-=======
->>>>>>> da99362ed0277c2cb239de6cdf15e95b85e4a24a
 
         for (int i=0; i<arrRelationship.size(); i++)
         {
@@ -1031,7 +1103,6 @@ public class MainActivity extends AppCompatActivity {
         dialogLostFriend(0);
 
         //xet suc khoe
-        int health = saveGame.getHealth();
         if (prbHappy.getProgress() < 30) //Kiem tra xem co van de ve tam li hay khong (happy<30)
         {
             health -= (30 - prbHappy.getProgress());
@@ -1063,7 +1134,13 @@ public class MainActivity extends AppCompatActivity {
         for (int i=0; i<array.size(); i++) {
             QuanHe quanHe = array.get(i);
             int id = quanHe.HinhAnh;
-            if (quanHe.isBoy()) //Boy
+
+            if(id == R.drawable.death)
+            {
+                continue;
+            }
+
+            if (quanHe.isBoy() && id != R.drawable.death) //Boy
             {
                 if (quanHe.getTuoi() >= 60) id = R.drawable.boy_8;
                 else if (quanHe.getTuoi() >= 40) {
@@ -1306,6 +1383,7 @@ public class MainActivity extends AppCompatActivity {
         btnAssets = findViewById(R.id.buttonAssets);
         btnWork = findViewById(R.id.buttonInfant);
         scrollView = findViewById(R.id.scrollViewText);
+        txtScrollviewContent = findViewById(R.id.textViewDetail);
 
 
         preferences = getSharedPreferences("data", MODE_PRIVATE);

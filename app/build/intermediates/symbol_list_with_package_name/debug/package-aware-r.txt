@@ -1707,6 +1707,7 @@ drawable avd_show_password
 drawable bachkhoa
 drawable back
 drawable background_crime
+drawable background_prison
 drawable badminton
 drawable banhxeo
 drawable bar
@@ -1868,6 +1869,7 @@ drawable ic_mtrl_chip_close_circle
 drawable idol
 drawable insult
 drawable it
+drawable jail
 drawable jobsearch
 drawable jogging
 drawable kinhte
