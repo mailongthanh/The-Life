@@ -381,8 +381,6 @@ public class CrimeActivity extends AppCompatActivity {
 
     void Prison(int year)
     {
-        Bundle bundle = new Bundle();
-        Intent intent = new Intent(CrimeActivity.this,MainActivity.class);
         int imageKnife = getResources().getIdentifier("dao","drawable", this.getPackageName());
         int imageGun = getResources().getIdentifier("gun","drawable", this.getPackageName());
         int imagePoison = getResources().getIdentifier("poison","drawable", this.getPackageName());
@@ -400,10 +398,7 @@ public class CrimeActivity extends AppCompatActivity {
             }
             saveGame.saveAsset(arrProduct);
         }
-
-        //bundle.putBoolean(MainActivity.isPrison,isPrison);
-        bundle.putInt(MainActivity.year,year);
-        intent.putExtras(bundle);
-        startActivity(intent);
+        saveGame.saveNamTu(year);
+        startActivity(new Intent(CrimeActivity.this, MainActivity.class));
     }
 }

@@ -46,7 +46,7 @@ public class RelationShip extends AppCompatActivity {
         lvQuanHe.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(MangQuanHe.get(position).HinhAnh != R.drawable.death) {
+                if(MangQuanHe.get(position).getHinhAnh()!= R.drawable.death) {
                     gotoTuongTac(position);
                 }
             }

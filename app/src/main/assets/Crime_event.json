@@ -73,7 +73,7 @@
       "select":[
         [
           {"event": "Bạn hack thành công facebook, và kiếm tiền triệu nhờ vào buôn bán thông tin người dùng facebook","year":0, "assets": 100000, "happy": 10, "health": 0, "smart":5, "appearance": 0},
-          {"event": "Bạn hack không thành công facebook, trái lại bạn còn bị truy vết và tra cứu trách nhiệm hình sự, lãnh án 4 năm tù", "year":4, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn hack không thành công facebook, trái lại bạn còn bị truy vết và tra cứu trách nhiệm hình sự, lãnh án 4 năm tù", "year":4, "assets": 0, "happy": 0, "health": -100, "smart":0, "appearance": 0},
           {"event": "Bạn hack thành công facebook, tuy nhiên thông tin dữ liệu người dùng lại không có giá trị như bạn nghĩ", "year":0, "assets": 100, "happy": -5, "health": 0, "smart":0, "appearance": 0},
           {"event": "Bạn hack không thành công facebook, nhưng nhờ vào sự nhạy bén của mình, bạn đã che giấu được thông tin và không bị phát hiện", "year":0, "assets": 0, "happy": 10, "health": 0, "smart":10, "appearance": 0}
         ],
@@ -85,7 +85,7 @@
       "select":[
         [
           {"event": "Bạn hack thành công NASA, và kiếm tiền triệu nhờ vào tống tiền chính NASA","year":0, "assets": 100000, "happy": 10, "health": 0, "smart":5, "appearance": 0},
-          {"event": "Bạn hack không thành công NASA, trái lại bạn còn bị truy vết và tra cứu trách nhiệm hình sự, lãnh án 6 năm tù",  "year":6,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn hack không thành công NASA, trái lại bạn còn bị truy vết và tra cứu trách nhiệm hình sự, lãnh án 6 năm tù",  "year":6,"assets": 0, "happy": 0, "health": -100, "smart":0, "appearance": 0},
           {"event": "Bạn hack thành công NASA, tuy nhiên bên họ tìm kiếm được một hacker tài năng hơn đánh bại bạn, thế là bạn đành bó tay",  "year":0, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
           {"event": "Bạn hack không thành công NASA, nhưng nhờ vào sự nhạy bén của mình, bạn đã che giấu được thông tin và không bị phát hiện", "year":0, "assets": 0, "happy": 5, "health": 0, "smart":10, "appearance": 0}
         ],

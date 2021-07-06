@@ -1791,11 +1791,8 @@ drawable avd_show_password
 drawable bachkhoa
 drawable back
 drawable background_crime
-<<<<<<< HEAD
 drawable background_prison
-=======
 drawable background_ratings
->>>>>>> d3245fd50e62a2b85fbf1cc6ce288ed922a017a6
 drawable badminton
 drawable banhxeo
 drawable bar

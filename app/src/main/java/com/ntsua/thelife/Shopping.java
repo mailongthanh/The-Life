@@ -42,18 +42,12 @@ public class Shopping extends AppCompatActivity {
         loadGame();
 
         lvShopping = findViewById(R.id.listviewShopping);
-
-<<<<<<< HEAD
         arrAsset = new ArrayList<>();
         if(MainActivity.saveGame.getAsset()!= null)
         {
             arrAsset = MainActivity.saveGame.getAsset();
         }
-=======
-        arrAsset = MainActivity.saveGame.getAsset();
-        if  (arrAsset == null)
-            arrAsset = new ArrayList<>();
->>>>>>> d3245fd50e62a2b85fbf1cc6ce288ed922a017a6
+        if  (arrAsset == null) arrAsset = new ArrayList<>();
         arrShopping = new ArrayList<>();
         arrShopping.add(new Food("Phương tiện đi lại","Công cụ di chuyển",R.drawable.vehicle,0));
         arrShopping.add(new Food("Bất động sản","Tài sản đứng im",R.drawable.house,0));

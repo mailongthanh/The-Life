@@ -1,6 +1,7 @@
 package com.ntsua.thelife;
 
 import android.content.SharedPreferences;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -47,6 +48,7 @@ public class SaveGame {
             loadDone.onLoaded();
             return;
         }
+
         assert FirebaseAuth.getInstance().getUid() != null;
         reference = FirebaseDatabase.getInstance().getReference().child(FirebaseAuth.getInstance().getUid());
 
@@ -533,6 +535,14 @@ public class SaveGame {
     public void saveBoiTinh(int boiTinh) {
         infomation.setBoiTinh(boiTinh);
         reference.child("Basic").child("boiTinh").setValue(boiTinh);
+    }
+
+    public int getNamTu() {return infomation.getNamTu(); }
+
+    public void saveNamTu(int namTu)
+    {
+        infomation.setNamTu(namTu);
+        reference.child("Basic").child("namTu").setValue(namTu);
     }
 
     public void saveRelationship(ArrayList<QuanHe> arrRelationship) {
