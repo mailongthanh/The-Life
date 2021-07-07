@@ -30,6 +30,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.facebook.login.LoginManager;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -37,6 +39,7 @@ import com.google.firebase.auth.UserInfo;
 
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -229,7 +232,8 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onNavigationItemSelected(@NonNull @NotNull MenuItem item) {
-
+        Button btnAccept, btnCancel;
+        Dialog dialog;
         switch (item.getItemId()) {
             case R.id.menu_main:
                 if (currentFragment != FRAGMENT_MAIN)
@@ -246,12 +250,6 @@ public class MainActivity extends AppCompatActivity
                     FragmentShare share = new FragmentShare();
                     replaceFragment(share);
                     currentFragment = FRAGMENT_SHARE;
-
-//                    FragmentShare fragmentShare = (FragmentShare) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment_content_main);
-//
-//                    ConstraintLayout layout = findViewById(R.id.content_main);
-//                    Bitmap bitmap = takeScreenshotForView(layout);
-//                    fragmentShare.imgTest.setImageBitmap(bitmap);
                 }
                 break;
             case R.id.menu_rank:
@@ -260,10 +258,77 @@ public class MainActivity extends AppCompatActivity
                     replaceFragment(new FragmentRate());
                     currentFragment = FRAGMENT_RATE;
                 }
+                break;
+            case R.id.menu_reset:
+                dialog = creatDialogQuestion("Bạn có muốn tạo nhân vật mới ? Tiến trình hiện tại sẽ bị mất");
+                btnAccept = dialog.findViewById(R.id.buttonQuestionAccept);
+                btnCancel = dialog.findViewById(R.id.buttonQuestionCancel);
+
+                btnAccept.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        saveGame.saveDetailActivity("");
+                        saveGame = null;
+                        fragmentMain = new FragmentMain();
+                        replaceFragment(fragmentMain);
+                        dialog.dismiss();
+                    }
+                });
+
+                btnCancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.show();
+
+                break;
+            case R.id.menu_logout:
+                dialog = creatDialogQuestion("Bạn có thực sự muốn đăng xuất");
+                btnAccept = dialog.findViewById(R.id.buttonQuestionAccept);
+                btnCancel = dialog.findViewById(R.id.buttonQuestionCancel);
+
+                btnAccept.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        saveGame = null;
+                        FirebaseAuth.getInstance().signOut();
+                        LoginManager.getInstance().logOut();
+                        dialog.dismiss();
+                        startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                    }
+                });
+
+                btnCancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.show();
+                break;
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    Dialog creatDialogQuestion(String content)
+    {
+        Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_question_yesno);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogResultAnimation;
+
+        TextView txtContent = dialog.findViewById(R.id.textviewQuestionContent);
+        txtContent.setText(content);
+
+        return dialog;
     }
 
     private void replaceFragment(Fragment fragment)
@@ -296,16 +361,6 @@ public class MainActivity extends AppCompatActivity
             fragmentMain = new FragmentMain();
         fragmentMain.onActivityResult(requestCode, resultCode, data);
         super.onActivityResult(requestCode, resultCode, data);
-    }
-
-    public Bitmap takeScreenshotForView(View view) {
-        view.measure(View.MeasureSpec.makeMeasureSpec(view.getWidth(), View.MeasureSpec.EXACTLY), View.MeasureSpec.makeMeasureSpec(view.getHeight(), View.MeasureSpec.EXACTLY));
-        view.layout((int) view.getX(), (int) view.getY(), (int) view.getX() + view.getMeasuredWidth(), (int) view.getY() + view.getMeasuredHeight());
-        view.setDrawingCacheEnabled(true);
-        view.buildDrawingCache(true);
-        Bitmap bitmap = Bitmap.createBitmap(view.getDrawingCache());
-        view.setDrawingCacheEnabled(false);
-        return bitmap;
     }
 }
 

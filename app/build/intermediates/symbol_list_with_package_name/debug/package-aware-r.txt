@@ -1901,6 +1901,7 @@ drawable company
 drawable compliment
 drawable congrat
 drawable cook
+drawable custom_button_login
 drawable custom_button_menu
 drawable custom_color
 drawable custom_dialog
@@ -1994,6 +1995,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable icon
 drawable icon_logout
 drawable icon_main
 drawable icon_new_game
@@ -2015,6 +2017,7 @@ drawable lieutenant
 drawable life_insurance
 drawable list_item_unable
 drawable list_selector
+drawable login_background
 drawable lollipop
 drawable lottery
 drawable love
@@ -2277,6 +2280,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnLogin
 id btn_Roi
 id btn_SelectNam
 id btn_SelectNu
@@ -2298,10 +2302,10 @@ id buttonDialogRelationship_Oke
 id buttonInfant
 id buttonNotificationtOke
 id buttonPanel
+id buttonQuestionAccept
+id buttonQuestionCancel
 id buttonRelationship
 id buttonShare
-id buttonShareLogin
-id buttonShow
 id cache_measures
 id cancel_action
 id cancel_button
@@ -2624,6 +2628,7 @@ id percent
 id pin
 id position
 id postLayout
+id progressBarLoadData
 id progress_bar
 id progress_circular
 id progress_horizontal
@@ -2764,6 +2769,7 @@ id textviewNameRelationship
 id textviewNotificationContent
 id textviewNotificationTitle
 id textviewProName
+id textviewQuestionContent
 id textviewRateMoney
 id textviewRelationship
 id textviewRelationshipTitle
@@ -2981,6 +2987,7 @@ layout dialog_muasam
 layout dialog_new_friend
 layout dialog_notification
 layout dialog_out_of_money
+layout dialog_question_yesno
 layout dialog_relationship
 layout dialog_tattoo
 layout dialog_totinhthanhcong
