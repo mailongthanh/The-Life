@@ -90,13 +90,14 @@
 
                     <Button
                         android:id="@+id/buttonInfant"
-                        android:background="@drawable/custom_button_menu"
-                        android:layout_weight="1"
-                        app:backgroundTint="@null"
                         android:layout_margin="2dp"
                         android:text="Làm việc"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_button_menu"
+                        android:onClick="gotoRelationship"
                         android:textStyle="bold"
-                        android:textColor="@color/Blue"/>
+                        android:textColor="@color/Blue"
+                        app:backgroundTint="@null" />
 
                     <Button
                         android:id="@+id/buttonAssets"

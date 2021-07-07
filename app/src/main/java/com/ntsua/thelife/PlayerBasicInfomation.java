@@ -49,6 +49,16 @@ public class PlayerBasicInfomation {
     private int BoiSuNghiep = 0;
     private int BoiTinh = 0;
 
+    private int namTu = 0;
+
+    public int getNamTu() {
+        return namTu;
+    }
+
+    public void setNamTu(int namTu) {
+        this.namTu = namTu;
+    }
+
     public PlayerBasicInfomation() {
     }
 

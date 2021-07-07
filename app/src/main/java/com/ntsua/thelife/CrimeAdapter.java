@@ -25,7 +25,6 @@ public class CrimeAdapter extends BaseAdapter {
         this.layout = layout;
         this.arrCrime = arrCrime;
     }
-
     @Override
     public int getCount() {
         return arrCrime.size();

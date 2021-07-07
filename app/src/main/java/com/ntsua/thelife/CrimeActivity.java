@@ -26,6 +26,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.time.Year;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -35,7 +36,7 @@ public class CrimeActivity extends AppCompatActivity {
 
     ListView lvCrime;
     CrimeAdapter adapter;
-    ArrayList<Food> arrCrime;
+    ArrayList<Food> arrCrime, arrProduct;
     TextView txtName, txtJob, txtMoney;
     ImageView imgAvatar;
     JSONObject JsonCrime;
@@ -59,6 +60,7 @@ public class CrimeActivity extends AppCompatActivity {
 
         lvCrime = findViewById(R.id.listviewCrime);
         arrCrime = new ArrayList<>();
+        arrProduct = saveGame.getAsset();
 
         arrCrime.add(new Food("Móc túi", "đi Loot", R.drawable.pickpocket, 0));
         arrCrime.add(new Food("Cướp cửa hàng", "$$$$$$$$", R.drawable.robber, 0));
@@ -165,7 +167,7 @@ public class CrimeActivity extends AppCompatActivity {
 
         if(!isSelection[0])
         {
-            dialogEventResult(objects[0], name);
+            dialogEventResult(objects[0],name,0);
         }
         else dialogJobEventWithAsset(objects[0],name);
 
@@ -184,15 +186,15 @@ public class CrimeActivity extends AppCompatActivity {
         TextView txtTitle = dialog.findViewById(R.id.textviewDialogAssetTitle);
 
         int imageID = getResources().getIdentifier(jsonObject.getString("asset"), "drawable", this.getPackageName());
+
         //Gan gia tri
         txtTitle.setText(title);
         txtContent.setText(jsonObject.getString("event"));
         imgAsset.setImageResource(imageID);
         txtAssetName.setText(jsonObject.getString("name"));
         JSONArray arrSelect = jsonObject.getJSONArray("select");
-
         boolean isOwn = false;
-        ArrayList<Food> arrProduct = saveGame.getAsset();
+
         if (arrProduct != null) {
             for (int i = 0; i < arrProduct.size(); i++) {
                 if (imageID == arrProduct.get(i).getImage()) //Trung ID hinh la so huu
@@ -215,8 +217,10 @@ public class CrimeActivity extends AppCompatActivity {
                 else {
                     try {
                         JSONArray arr = arrSelect.getJSONArray(0);
-                        JSONObject jsSelection = arr.getJSONObject(new Random().nextInt(arr.length()));
-                        dialogEventResult(jsSelection,title);
+                        JSONObject jsSelection =arr.getJSONObject(new Random().nextInt(arr.length()));
+                        //boolean prison = jsSelection.getBoolean("prison");
+                        int year = jsSelection.getInt("year");
+                        dialogEventResult(jsSelection,title, year);
                         dialog.dismiss();
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -232,7 +236,8 @@ public class CrimeActivity extends AppCompatActivity {
                 try {
                     arr = arrSelect.getJSONArray(1);
                     JSONObject jsSelection = arr.getJSONObject(new Random().nextInt(arr.length()));
-                    dialogEventResult(jsSelection, title);
+                    int year = jsSelection.getInt("year");
+                    dialogEventResult(jsSelection, title, year);
                     dialog.dismiss();
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -275,7 +280,7 @@ public class CrimeActivity extends AppCompatActivity {
         }
     }
 
-    void dialogEventResult(JSONObject object, String title) throws JSONException {
+    void dialogEventResult(JSONObject object, String title, int year) throws JSONException {
         Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setCanceledOnTouchOutside(false);
@@ -297,7 +302,6 @@ public class CrimeActivity extends AppCompatActivity {
         txtTitle.setText(title);
         String event = object.getString("event");
         txtContent.setText(event);
-
 
         int happy = MainActivity.saveGame.getHappy();
         int health = MainActivity.saveGame.getHealth();
@@ -366,8 +370,35 @@ public class CrimeActivity extends AppCompatActivity {
                 TextView txtMoney = activity.findViewById(R.id.textviewMoney);
                 txtMoney.setText(MainActivity.saveGame.getMoney() + " VND");
                 dialog.dismiss();
+                if(year!=0)
+                {
+                    Prison(year);
+                }
             }
         });
         dialog.show();
+    }
+
+    void Prison(int year)
+    {
+        int imageKnife = getResources().getIdentifier("dao","drawable", this.getPackageName());
+        int imageGun = getResources().getIdentifier("gun","drawable", this.getPackageName());
+        int imagePoison = getResources().getIdentifier("poison","drawable", this.getPackageName());
+        int imageSword = getResources().getIdentifier("matau","drawable", this.getPackageName());
+
+        if(arrProduct != null)
+        {
+            for (int i = 0; i < arrProduct.size(); i++) {
+                if (arrProduct.get(i).getImage() == imageKnife || arrProduct.get(i).getImage() == imageGun
+                || arrProduct.get(i).getImage() == imagePoison || arrProduct.get(i).getImage() == imageSword)
+                {
+                    arrProduct.remove(i);
+                    i -=1;
+                }
+            }
+            saveGame.saveAsset(arrProduct);
+        }
+        saveGame.saveNamTu(year);
+        startActivity(new Intent(CrimeActivity.this, MainActivity.class));
     }
 }

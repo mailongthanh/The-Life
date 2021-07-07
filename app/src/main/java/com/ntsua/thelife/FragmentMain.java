@@ -97,12 +97,12 @@ public class FragmentMain extends Fragment {
     ImageButton ibtnAddAge;
     ProgressBar prbHappy, prbHealth, prbSmart, prbAppearance, prbLoadData;
     ScrollView scrollView;
-    TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName, txtJob;
+    TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName, txtJob, txtScrollviewContent;
     ArrayList<QuanHe> arrRelationship;
     JSONArray arrJsonAge;
     JSONObject jsonResult, jsonAllJob, jsonJob;
     String contentHtml;
-    int money;
+    int money, TempAge, namTu;
     int REQUEST_CODE_INIT = 123;
 
     CircleImageView imgUserAvatar;
@@ -115,8 +115,39 @@ public class FragmentMain extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
     }
+
+    void DeathofRelation()
+    {
+        Random random = new Random();
+        int happy = MainActivity.saveGame.getHappy();
+        int image = R.drawable.death;
+
+        NameOfRelationship dad = NameOfRelationship.Dad;
+        NameOfRelationship mom = NameOfRelationship.Mom;
+
+        for(int i = 0; i< arrRelationship.size();i++)
+        {
+            QuanHe Relatives = arrRelationship.get(i);
+            if(Relatives.getTuoi() >= 75 && Relatives.getTuoi() <=90 && Relatives.getHinhAnh() != image)
+            {
+                int flag = random.nextInt(4);
+                if(Relatives.getTuoi() == 90) flag = 1;
+                if(flag == 1) {
+                    Relatives.setHinhAnh(image);
+
+                    if(Relatives.getQuanHe() == dad || Relatives.getQuanHe() == mom) {
+                        MainActivity.createNotification(Relatives.getHinhAnh(), Relatives.getQuanHe() + " của bạn đã mất", view.getContext());
+                    } else MainActivity.createNotification(Relatives.getHinhAnh(),Relatives.getQuanHe() + " của bạn" + Relatives.getHoten() + " đã mất",view.getContext());
+
+                    prbHappy.setProgress(prbHappy.getProgress() - 30);
+                    this.txtHappy.setText(prbHappy.getProgress() + "%");
+                }
+            }
+        }
+        MainActivity.saveGame.saveRelationship(arrRelationship);
+    }
+
 
     void dialogJob(JSONArray arrJob) throws JSONException {
         Dialog dialog = createDialog("Làm việc", "Làm, làm nữa, làm mãi");
@@ -163,47 +194,69 @@ public class FragmentMain extends Fragment {
     void addAge() throws JSONException {
         //them tuoi
         int age = MainActivity.saveGame.getAge() + 1;
+        int year = TempAge + namTu - age;
+        if(namTu!=0) {
+            if (age >= TempAge + namTu) {
+                btnRelationship.setEnabled(true);
+                btnActivity.setEnabled(true);
+                scrollView.setBackgroundColor(Color.WHITE);
+                txtScrollviewContent.setVisibility(View.VISIBLE);
+                btnAssets.setEnabled(true);
+                namTu = 0;
+                MainActivity.saveGame.saveNamTu(namTu);
 
-        if (age == 18) {
-            addAgeHTML(18);
-            dialogUniversity();
-            return;
+                if(age > TempAge + namTu)
+                {
+                    MainActivity.createNotification(R.drawable.police,"Bạn đã được thả, hi vọng bạn đã nhận ra tội lỗi của mình", view.getContext());
+                }
+            } else {
+                MainActivity.createNotification(R.drawable.police, "Bạn còn "+ year +" năm tù trước khi được thả tự do" , view.getContext());
+            }
+            initNewAge();
+            addAgeHTML(age);
         }
+        else {
+            if (age == 18) {
+                addAgeHTML(18);
+                dialogUniversity();
+                return;
+            }
 //        if (age == 6)
 //        {
 //            saveGame.saveJob("Học sinh");
 //            //Change work
 //            txtContent.setText("Học sinh");
 //        }
-        //lay su kien tuoi
-        JSONArray arrAge = arrJsonAge.getJSONArray(age);
-        Random random = new Random();
-        //Toast.makeText(this, arrAge.length() + " - " + age, Toast.LENGTH_SHORT).show();
-        if (arrAge.length() == 0) {
-            MainActivity.createNotification(MainActivity.saveGame.getAvatar(), "Năm nay không có sự kiện gì đặc biệt", view.getContext());
-            initNewAge();
-            addAgeHTML(age);
-            contentHtml = MainActivity.saveGame.getDetailActivity();
-            contentHtml += "Năm nay không có sự kiện gì đặc biệt<br>";
-            txtContent.setText(android.text.Html.fromHtml(contentHtml));
-            MainActivity.saveGame.saveDetailActivity(contentHtml);
-            return;
-        }
-        final JSONObject[] object = {arrAge.getJSONObject(random.nextInt(arrAge.length()))};
+            //lay su kien tuoi
+            JSONArray arrAge = arrJsonAge.getJSONArray(age);
+            Random random = new Random();
+            //Toast.makeText(this, arrAge.length() + " - " + age, Toast.LENGTH_SHORT).show();
+            if (arrAge.length() == 0) {
+                MainActivity.createNotification(MainActivity.saveGame.getAvatar(), "Năm nay không có sự kiện gì đặc biệt", view.getContext());
+                initNewAge();
+                addAgeHTML(age);
+                contentHtml = MainActivity.saveGame.getDetailActivity();
+                contentHtml += "Năm nay không có sự kiện gì đặc biệt<br>";
+                txtContent.setText(android.text.Html.fromHtml(contentHtml));
+                MainActivity.saveGame.saveDetailActivity(contentHtml);
+                return;
+            }
+            final JSONObject[] object = {arrAge.getJSONObject(random.nextInt(arrAge.length()))};
 
-        final String[] event = {object[0].getString("event")};
-        String title = object[0].getString("title");
+            final String[] event = {object[0].getString("event")};
+            String title = object[0].getString("title");
 
-        //Kiem tra su kien co su lua chon hay khong
-        final boolean[] isSelection = {object[0].getBoolean("selection")};
+            //Kiem tra su kien co su lua chon hay khong
+            final boolean[] isSelection = {object[0].getBoolean("selection")};
 
-        //Tao dialog hien thi su kien
-        if (isSelection[0])
-            dialogEvent(object, isSelection, title, event);
-        else {
-            jsonResult = object[0];
-            addAgeHTML(age);
-            dialogEventResult(title, true);
+            //Tao dialog hien thi su kien
+            if (isSelection[0])
+                dialogEvent(object, isSelection, title, event);
+            else {
+                jsonResult = object[0];
+                addAgeHTML(age);
+                dialogEventResult(title, true);
+            }
         }
     }
 
@@ -331,10 +384,15 @@ public class FragmentMain extends Fragment {
             public void onClick(View v) {
                 dialog.dismiss();
                 try {
-                    if (MainActivity.saveGame.getHealth() <= 0)
+                    if (MainActivity.saveGame.getHealth() <= 0) {
                         MainActivity.checkMySelf(view.getContext(), "\"Qua đời vì sức khỏe yếu kéo dài, không chịu nổi những biến cố trong cuộc sống\"");
+                    }
                     else if (isAgeEvent)
+                    {
                         initNewAge();
+                        DeathofRelation();
+                    }
+
                     else jobEvent();
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -828,6 +886,9 @@ public class FragmentMain extends Fragment {
     void initNewAge() {
         //Toast.makeText(this, "new age", Toast.LENGTH_SHORT).show();
         int age = MainActivity.saveGame.getAge() + 1;
+        MainActivity.saveGame.saveBoiSN(0);
+        MainActivity.saveGame.saveTuVi(0);
+        MainActivity.saveGame.saveBoiTinh(0);
         MainActivity.saveGame.saveAge(age);
         MainActivity.saveGame.saveExercise(0);
         MainActivity.saveGame.saveJogging(0);
@@ -910,6 +971,10 @@ public class FragmentMain extends Fragment {
         for (int i = 0; i < array.size(); i++) {
             QuanHe quanHe = array.get(i);
             int id = quanHe.getHinhAnh();
+            if(id == R.drawable.death)
+            {
+                continue;
+            }
             if (quanHe.isBoy()) //Boy
             {
                 if (quanHe.getTuoi() >= 60) id = R.drawable.boy_8;
@@ -1128,6 +1193,7 @@ public class FragmentMain extends Fragment {
         btnAssets = view.findViewById(R.id.buttonAssets);
         btnWork = view.findViewById(R.id.buttonInfant);
         scrollView = view.findViewById(R.id.scrollViewText);
+        txtScrollviewContent = view.findViewById(R.id.textViewDetail);
 
 
         if (MainActivity.saveGame == null) {
@@ -1148,6 +1214,18 @@ public class FragmentMain extends Fragment {
             @Override
             public void onLoaded() {
                 prbLoadData.setVisibility(ProgressBar.INVISIBLE);
+                //Toast.makeText(MainActivity.this, "Loaded " + time, Toast.LENGTH_SHORT).show();
+                namTu = MainActivity.saveGame.getNamTu();
+                if(namTu!=0)
+                {
+                    MainActivity.createNotification(R.drawable.police,"Bạn đã bị bắt, bạn cần phải xám hối cho những hành vi tội lỗi của mình, hiện tại bạn sẽ không thể thực hiện được một số hoạt động thường ngày của mình",view.getContext());
+                    TempAge = MainActivity.saveGame.getAge();
+                    scrollView.setBackgroundResource(R.drawable.background_prison);
+                    txtScrollviewContent.setVisibility(View.INVISIBLE);
+                    btnAssets.setEnabled(false);
+                    btnActivity.setEnabled(false);
+                    btnRelationship.setEnabled(false);
+                }
                 try {
                     if (MainActivity.saveGame.getDetailActivity().equals("")) {
                         MainActivity mainActivity = (MainActivity) getActivity();

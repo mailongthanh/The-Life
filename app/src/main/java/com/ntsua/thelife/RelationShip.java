@@ -46,7 +46,9 @@ public class RelationShip extends AppCompatActivity {
         lvQuanHe.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                gotoTuongTac(position);
+                if(MangQuanHe.get(position).getHinhAnh()!= R.drawable.death) {
+                    gotoTuongTac(position);
+                }
             }
         });
         loadGame();
@@ -97,5 +99,7 @@ public class RelationShip extends AppCompatActivity {
         startActivity(intent);
         overridePendingTransition(R.anim.enter, R.anim.exit);
     }
+
+
 
 }

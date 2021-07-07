@@ -90,8 +90,6 @@ public class MainActivity extends AppCompatActivity
         replaceFragment(fragmentMain);
     }
 
-
-
     public void startInit()
     {
         startActivityForResult(new Intent(this, CreateName.class), REQUEST_CODE_INIT);
@@ -137,6 +135,9 @@ public class MainActivity extends AppCompatActivity
 
     static public void checkMySelf(Context context, String content) {
         if (saveGame.getHealth() <= 0) {
+            MainActivity.saveGame.saveNamTu(0);
+            MainActivity.saveGame.saveAsset(null);
+
             Dialog dialog = createNotification(R.drawable.cancel, "Bạn đã qua đời vì sức khỏe quá yếu", context);
             //gọi acitvity died
             Button btn = dialog.findViewById(R.id.buttonNotificationtOke);
@@ -198,7 +199,6 @@ public class MainActivity extends AppCompatActivity
                             }, 2300);
                         }
                     });
-
                     death.show();
                 }
             });
