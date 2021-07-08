@@ -91,11 +91,12 @@
                     <Button
                         android:id="@+id/buttonInfant"
                         android:layout_margin="2dp"
+                        android:text="Làm việc"
                         android:layout_weight="1"
                         android:background="@drawable/custom_button_menu"
-                        android:text="Trẻ con"
-                        android:textColor="@color/Blue"
+                        android:onClick="gotoRelationship"
                         android:textStyle="bold"
+                        android:textColor="@color/Blue"
                         app:backgroundTint="@null" />
 
                     <Button
@@ -353,24 +354,37 @@
 
     </LinearLayout>
 
-    <ScrollView
-        android:id="@+id/scrollViewText"
+    <FrameLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
-        <TextView
-            android:id="@+id/textViewDetail"
+        <ProgressBar
+            android:id="@+id/progressBarLoadData"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <ScrollView
+            android:id="@+id/scrollViewText"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp"
-            android:text="Noi dung"
-            android:textColor="@color/Blue"/>
-    </ScrollView>
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="@color/Blue" />
+        </ScrollView>
+
+    </FrameLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -66,7 +66,11 @@ public class JobCaSi extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        if(MainActivity.saveGame.getJob().equals("Ca sĩ đám cưới"))
+                        if(MainActivity.saveGame.getSmart()<60 &&!MainActivity.saveGame.getJob().equals("Ca sĩ đám cưới")&&!MainActivity.saveGame.getJob().equals("Ca sĩ phòng trà")&&!MainActivity.saveGame.getJob().equals("Ca sĩ thần tượng")&&!MainActivity.saveGame.getJob().equals("DIVA"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Nghề yêu cầu chỉ số thông minh phải lớn hơn 60", JobCaSi.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Ca sĩ đám cưới"))
                         {
                             MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobCaSi.this);
                         }

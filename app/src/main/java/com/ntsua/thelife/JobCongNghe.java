@@ -67,7 +67,11 @@ public class JobCongNghe extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        if(MainActivity.saveGame.getJob().equals("Cài WIN dạo"))
+                        if(MainActivity.saveGame.getSmart()<75 &&!MainActivity.saveGame.getJob().equals("Cài WIN dạo")&&!MainActivity.saveGame.getJob().equals("Lập trình viên")&&!MainActivity.saveGame.getJob().equals("Chuyên gia công nghệ")&&!MainActivity.saveGame.getJob().equals("Chủ tịch tập đoàn công nghệ thông tin"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Nghề yêu cầu chỉ số thông minh phải lớn hơn 75", JobCongNghe.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Cài WIN dạo"))
                         {
                             MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobCongNghe.this);
                         }

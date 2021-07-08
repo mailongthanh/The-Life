@@ -67,7 +67,11 @@ public class JobYTe extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        if(MainActivity.saveGame.getJob().equals("Bác sĩ thực tập"))
+                        if(MainActivity.saveGame.getSmart()<80 &&!MainActivity.saveGame.getJob().equals("Bác sĩ thực tập")&&!MainActivity.saveGame.getJob().equals("Bác sĩ chính")&&!MainActivity.saveGame.getJob().equals("Bác sĩ trưởng khoa")&&!MainActivity.saveGame.getJob().equals("Viện trưởng"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Nghề yêu cầu chỉ số thông minh phải lớn hơn 80", JobYTe.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Bác sĩ thực tập"))
                         {
                             MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobYTe.this);
                         }

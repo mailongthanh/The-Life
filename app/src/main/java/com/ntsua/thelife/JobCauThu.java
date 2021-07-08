@@ -67,7 +67,11 @@ public class JobCauThu extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        if(MainActivity.saveGame.getJob().equals("Cầu thủ dự bị"))
+                        if(MainActivity.saveGame.getSmart()<60 &&!MainActivity.saveGame.getJob().equals("Cầu thủ dự bị")&&!MainActivity.saveGame.getJob().equals("Chân sút triển vọng")&&!MainActivity.saveGame.getJob().equals("Ngôi sao bóng đá")&&!MainActivity.saveGame.getJob().equals("Huyền thoại bóng đá"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Nghề yêu cầu chỉ số thông minh phải lớn hơn 60", JobCauThu.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Cầu thủ dự bị"))
                         {
                             MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobCauThu.this);
                         }

@@ -4267,5 +4267,75 @@
     ],
     "event": [
     ]
+  },
+  "Tù nhân": {
+    "work": [
+      {
+        "content": "Lao động khổ sai",
+        "event": [
+          {
+            "event": "Bạn được quản giáo giao cho công việc lao dọn nhà vệ sinh. Trong lúc làm việc thì có một đám tù nhân cũ đi về sinh và bắt gặp bạn. Chúng đánh bạn và nhúng đầu bạn vào bồn vệ sinh.",
+            "assets": 0,
+            "happy": -5,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn được quản giáo giao cho công việc bới đất trồng cây. Bạn chăm chỉ làm việc tới tận chiều. Quản giáo thấy vậy khen bạn và đặc ân cho bạn một phần cơm tù nhiều thức ăn",
+            "assets": 0,
+            "happy": 5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Hôm nay nhà tù nhận được một số vật dụng trồng cây và cần có một số lượng tù nhân phụ bưng đồ. Bạn xung phong đảm nhận công việc đó. Quản giáo đã có cái nhìn tốt hơn về bạn",
+            "assets": 0,
+            "happy": 5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Trong lúc bạn đang làm công việc phụ bếp trong tù thì gần đó xảy ra xung đột đánh nhau giữa các tù nhân. Bạn bỗng nhiên bị ăn nguyên một mâm cơm lên mặt trong khi người khác đánh nhau",
+            "assets": 0,
+            "happy": -5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      },
+      {
+        "content": "Học nghề trông tù",
+        "event": [
+          {
+            "event": "Nhà tù mở lớp dạy may trong tù cho các tù nhân. Bạn tham gia và với bàn tay đầy hoa tay của mình. Sản phẩm may của bạn được các quản giáo đánh giá rất cao",
+            "assets": 0,
+            "happy": 5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Trong lúc học may, bạn bị một tù nhân làm phiền và muốn kiếm chuyện với bạn. Bạn cũng không kém cạnh đứng lên và đánh thẳng vào mặt tên đó. Hậu quả, cả 2 bị quản giáo thưởng cho mỗi người 3 gậy vào đầu",
+            "assets": 0,
+            "happy": -10,
+            "health": -10,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
+    ]
   }
 }

@@ -66,7 +66,11 @@ public class JobDienVien extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        if(MainActivity.saveGame.getJob().equals("Diễn viên đóng thế"))
+                        if(MainActivity.saveGame.getSmart()<60 &&!MainActivity.saveGame.getJob().equals("Diễn viên đóng thế")&&!MainActivity.saveGame.getJob().equals("Diễn viên chính")&&!MainActivity.saveGame.getJob().equals("Ngôi sao điện ảnh"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Nghề yêu cầu chỉ số thông minh phải lớn hơn 60", JobDienVien.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Diễn viên đóng thế"))
                         {
                             MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobDienVien.this);
                         }

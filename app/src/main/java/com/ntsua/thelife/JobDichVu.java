@@ -67,7 +67,11 @@ public class JobDichVu extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        if(MainActivity.saveGame.getJob().equals("Bồi bàn"))
+                        if(MainActivity.saveGame.getSmart()<60 &&!MainActivity.saveGame.getJob().equals("Bồi bàn")&&!MainActivity.saveGame.getJob().equals("Thu ngân")&&!MainActivity.saveGame.getJob().equals("Quản lý nhà hàng")&&!MainActivity.saveGame.getJob().equals("Chủ nhà hàng"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Nghề yêu cầu chỉ số thông minh phải lớn hơn 60", JobDichVu.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Bồi bàn"))
                         {
                             MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobDichVu.this);
                         }

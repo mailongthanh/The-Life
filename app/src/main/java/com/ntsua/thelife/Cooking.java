@@ -33,7 +33,7 @@ public class Cooking extends AppCompatActivity {
         arrCooking.add(new Food("Bún bò", "", R.drawable.bunbo, 0));
         arrCooking.add(new Food("Phở", "", R.drawable.pho, 0));
         arrCooking.add(new Food("Pizza", "", R.drawable.pizza, 0));
-        arrCooking.add(new Food("Bánh xèo", "", R.drawable.banhxeo, 0));
+        arrCooking.add(new Food("Bánh xèo", "", R.drawable.altp_5050, 0));
         adapter = new FoodAdapter(this, R.layout.food_line, arrCooking);
         lvCooking.setAdapter(adapter);
     }

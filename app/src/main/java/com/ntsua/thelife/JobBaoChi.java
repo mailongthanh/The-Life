@@ -66,7 +66,11 @@ public class JobBaoChi extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        if(MainActivity.saveGame.getJob().equals("Phóng viên"))
+                        if(MainActivity.saveGame.getSmart()<70 &&!MainActivity.saveGame.getJob().equals("Phóng viên")&&!MainActivity.saveGame.getJob().equals("Trưởng chuyên mục")&&!MainActivity.saveGame.getJob().equals("Thư ký tòa soạn")&&!MainActivity.saveGame.getJob().equals("Tổng biên tập"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Nghề yêu cầu chỉ số thông minh phải lớn hơn 70", JobBaoChi.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Phóng viên"))
                         {
                             MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobBaoChi.this);
                         }

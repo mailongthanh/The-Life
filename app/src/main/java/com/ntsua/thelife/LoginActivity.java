@@ -16,6 +16,7 @@ import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.facebook.share.model.SharePhoto;
@@ -42,20 +43,21 @@ public class LoginActivity extends AppCompatActivity {
     String TAG = "Facebook";
     CallbackManager callbackManager;
     LoginButton loginButton;
-    Button btnShow;
+    Button btnLogin;
 
     FirebaseAuth auth = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FacebookSdk.sdkInitialize(this.getApplicationContext());
         setContentView(R.layout.activity_login);
 
-        btnShow = findViewById(R.id.buttonShow);
-        btnShow.setOnClickListener(new View.OnClickListener() {
+        btnLogin = findViewById(R.id.btnLogin);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProfile();
+                loginButton.performClick();
             }
         });
         // Initialize Facebook Login button
@@ -108,28 +110,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void showProfile() {
-//        FirebaseUser user = auth.getCurrentUser();
-//        //Toast.makeText(this, user.getDisplayName(), Toast.LENGTH_SHORT).show();
-//        //startActivity(new Intent(this, MainActivity.class));
-//        DatabaseReference data = FirebaseDatabase.getInstance().getReference();
-//        data.child("name").setValue("NTSuaaaaaaaa");
-//
-//
-//        //Toast.makeText(this, data.getRoot().toString(), Toast.LENGTH_SHORT).show();
-//
-//        data.child("name").addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
-//                Toast.makeText(LoginActivity.this, snapshot.getValue().toString(), Toast.LENGTH_SHORT).show();
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull @NotNull DatabaseError error) {
-//
-//            }
-//        });
         startActivity(new Intent(this, MainActivity.class));
-
     }
 
     void gotoGame()
@@ -142,24 +123,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onStart();
         if (auth.getCurrentUser() != null)
         {
-            //Toast.makeText(this, "null", Toast.LENGTH_SHORT).show();
-//            DatabaseReference data = FirebaseDatabase.getInstance().getReference();
-//            data.child("name").setValue("NTSua");
-//            Toast.makeText(this, "Set Data", Toast.LENGTH_SHORT).show();
-            //showProfile();
             gotoGame();
-//            Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.boy);
-//
-//            ShareButton btn = findViewById(R.id.buttonShareLogin);
-//            SharePhoto photo = new  SharePhoto.Builder()
-//                    .setBitmap(bitmap)
-//                    .build();
-//
-//            SharePhotoContent sharePhotoContent = new SharePhotoContent.Builder()
-//                    .addPhoto(photo)
-//                    .build();
-//
-//            btn.setShareContent(sharePhotoContent);
         }
     }
 

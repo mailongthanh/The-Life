@@ -95,7 +95,7 @@ public class FragmentMain extends Fragment {
     Button btnActivity, btnRelationship, btnWork, btnAssets;
     ImageView imgAvatar;
     ImageButton ibtnAddAge;
-    ProgressBar prbHappy, prbHealth, prbSmart, prbAppearance;
+    ProgressBar prbHappy, prbHealth, prbSmart, prbAppearance, prbLoadData;
     ScrollView scrollView;
     TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName, txtJob, txtScrollviewContent;
     ArrayList<QuanHe> arrRelationship;
@@ -780,6 +780,9 @@ public class FragmentMain extends Fragment {
             case "Trẻ trâu":
                 jsonJob = jsonAllJob.getJSONObject("student");
                 break;
+            case "Tù nhân":
+                jsonJob = jsonAllJob.getJSONObject("Tù nhân");
+                break;
         }
     }
 
@@ -1210,6 +1213,7 @@ public class FragmentMain extends Fragment {
         prbHappy = view.findViewById(R.id.progressbarHappy);
         prbHealth = view.findViewById(R.id.progressbarHealth);
         prbSmart = view.findViewById(R.id.progressbarSmart);
+        prbLoadData = view.findViewById(R.id.progressBarLoadData);
 
         ibtnAddAge = view.findViewById(R.id.imagebuttonAddAge);
         btnAssets = view.findViewById(R.id.buttonAssets);
@@ -1234,6 +1238,7 @@ public class FragmentMain extends Fragment {
         MainActivity.saveGame.setOnLoaded(new LoadDone() {
             @Override
             public void onLoaded() {
+                prbLoadData.setVisibility(ProgressBar.INVISIBLE);
                 //Toast.makeText(MainActivity.this, "Loaded " + time, Toast.LENGTH_SHORT).show();
                 namTu = MainActivity.saveGame.getNamTu();
                 tienAn = MainActivity.saveGame.getTienAn();
@@ -1249,7 +1254,7 @@ public class FragmentMain extends Fragment {
                 }
                 if(namTu!=0)
                 {
-                    MainActivity.saveGame.saveJob("Lập trình viên");
+                    MainActivity.saveGame.saveJob("Tù nhân");
                     TempAge = MainActivity.saveGame.getAge();
 
                     btnAssets.setEnabled(false);
@@ -1270,7 +1275,6 @@ public class FragmentMain extends Fragment {
 
                 try {
                     if (MainActivity.saveGame.getDetailActivity().equals("")) {
-                        //startActivityForResult(new Intent(getActivity(), CreateName.class), REQUEST_CODE_INIT);
                         MainActivity mainActivity = (MainActivity) getActivity();
                         mainActivity.startInit();
                     }
