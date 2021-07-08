@@ -101,7 +101,7 @@ public class FragmentMain extends Fragment {
     ArrayList<QuanHe> arrRelationship;
     JSONArray arrJsonAge;
     JSONObject jsonResult, jsonAllJob, jsonJob;
-    String contentHtml;
+    String contentHtml, tienAn;
     int money, TempAge, namTu;
     int REQUEST_CODE_INIT = 123;
 
@@ -120,22 +120,20 @@ public class FragmentMain extends Fragment {
     void DeathofRelation()
     {
         Random random = new Random();
-        int happy = MainActivity.saveGame.getHappy();
-        int image = R.drawable.death;
-
         NameOfRelationship dad = NameOfRelationship.Dad;
         NameOfRelationship mom = NameOfRelationship.Mom;
+        int flag, image = R.drawable.death;
 
         for(int i = 0; i< arrRelationship.size();i++)
         {
             QuanHe Relatives = arrRelationship.get(i);
             if(Relatives.getTuoi() >= 75 && Relatives.getTuoi() <=90 && Relatives.getHinhAnh() != image)
             {
-                int flag = random.nextInt(4);
+                flag = random.nextInt(4);
                 if(Relatives.getTuoi() == 90) flag = 1;
+
                 if(flag == 1) {
                     Relatives.setHinhAnh(image);
-
                     if(Relatives.getQuanHe() == dad || Relatives.getQuanHe() == mom) {
                         MainActivity.createNotification(Relatives.getHinhAnh(), Relatives.getQuanHe() + " của bạn đã mất", view.getContext());
                     } else MainActivity.createNotification(Relatives.getHinhAnh(),Relatives.getQuanHe() + " của bạn" + Relatives.getHoten() + " đã mất",view.getContext());
@@ -194,23 +192,43 @@ public class FragmentMain extends Fragment {
     void addAge() throws JSONException {
         //them tuoi
         int age = MainActivity.saveGame.getAge() + 1;
+        //So nam ra tu
         int year = TempAge + namTu - age;
+
+        if(age > 5)
+        {
+            btnAssets.setEnabled(true);
+            btnActivity.setEnabled(true);
+
+            btnAssets.setBackgroundResource(R.drawable.custom_button_menu);
+            btnActivity.setBackgroundResource(R.drawable.custom_button_menu);
+        }
         if(namTu!=0) {
             if (age >= TempAge + namTu) {
-                btnRelationship.setEnabled(true);
-                btnActivity.setEnabled(true);
-                scrollView.setBackgroundColor(Color.WHITE);
-                txtScrollviewContent.setVisibility(View.VISIBLE);
-                btnAssets.setEnabled(true);
                 namTu = 0;
                 MainActivity.saveGame.saveNamTu(namTu);
+                MainActivity.saveGame.saveJob("Thất nghiệp");
 
-                if(age > TempAge + namTu)
-                {
-                    MainActivity.createNotification(R.drawable.police,"Bạn đã được thả, hi vọng bạn đã nhận ra tội lỗi của mình", view.getContext());
-                }
+                btnActivity.setEnabled(true);
+                btnRelationship.setEnabled(true);
+                btnAssets.setEnabled(true);
+
+                btnActivity.setBackgroundResource(R.drawable.custom_button_menu);
+                btnRelationship.setBackgroundResource(R.drawable.custom_button_menu);
+                btnAssets.setBackgroundResource(R.drawable.custom_button_menu);
+
+                scrollView.setBackgroundColor(Color.WHITE);
+                txtScrollviewContent.setVisibility(View.VISIBLE);
+                txtJob.setText("Thất nghiệp");
+
+                MainActivity.createNotification(R.drawable.police,
+                        "Bạn đã được thả, hi vọng bạn đã nhận ra tội lỗi của mình",
+                        view.getContext());
+
             } else {
-                MainActivity.createNotification(R.drawable.police, "Bạn còn "+ year +" năm tù trước khi được thả tự do" , view.getContext());
+                MainActivity.createNotification(R.drawable.police,
+                        "Bạn còn "+ year +" năm tù trước khi được thả tự do" ,
+                        view.getContext());
             }
             initNewAge();
             addAgeHTML(age);
@@ -224,7 +242,7 @@ public class FragmentMain extends Fragment {
 //        if (age == 6)
 //        {
 //            saveGame.saveJob("Học sinh");
-//            //Change work
+//            //Chancge work
 //            txtContent.setText("Học sinh");
 //        }
             //lay su kien tuoi
@@ -845,6 +863,13 @@ public class FragmentMain extends Fragment {
         MainActivity.saveGame.saveJogging(0);
         MainActivity.saveGame.saveJogging(0);
         MainActivity.saveGame.saveCrime(0);
+
+        btnAssets.setEnabled(false);
+        btnActivity.setEnabled(false);
+
+        btnAssets.setBackgroundResource(R.drawable.list_item_unable);
+        btnActivity.setBackgroundResource(R.drawable.list_item_unable);
+
         txtJob.setText(MainActivity.saveGame.getJob());
         txtMoney.setText("0 VND");
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
@@ -1107,8 +1132,6 @@ public class FragmentMain extends Fragment {
         }
     }
 
-    
-
     void changeProgressBackground(ProgressBar pb) {
         int progress = pb.getProgress();
         if (progress >= 80)
@@ -1208,22 +1231,43 @@ public class FragmentMain extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_main, container, false);
         AnhXa();
-
         MainActivity.saveGame.setOnLoaded(new LoadDone() {
             @Override
             public void onLoaded() {
                 //Toast.makeText(MainActivity.this, "Loaded " + time, Toast.LENGTH_SHORT).show();
                 namTu = MainActivity.saveGame.getNamTu();
+                tienAn = MainActivity.saveGame.getTienAn();
+                Toast.makeText(view.getContext(), String.valueOf(MainActivity.saveGame.getAge()), Toast.LENGTH_SHORT).show();
+
+                if(MainActivity.saveGame.getAge() <= 6)
+                {
+                    btnAssets.setEnabled(false);
+                    btnActivity.setEnabled(false);
+
+                    btnAssets.setBackgroundResource(R.drawable.list_item_unable);
+                    btnActivity.setBackgroundResource(R.drawable.list_item_unable);
+                }
                 if(namTu!=0)
                 {
-                    MainActivity.createNotification(R.drawable.police,"Bạn đã bị bắt, bạn cần phải xám hối cho những hành vi tội lỗi của mình, hiện tại bạn sẽ không thể thực hiện được một số hoạt động thường ngày của mình",view.getContext());
+                    MainActivity.saveGame.saveJob("Lập trình viên");
                     TempAge = MainActivity.saveGame.getAge();
-                    scrollView.setBackgroundResource(R.drawable.background_prison);
-                    txtScrollviewContent.setVisibility(View.INVISIBLE);
+
                     btnAssets.setEnabled(false);
                     btnActivity.setEnabled(false);
                     btnRelationship.setEnabled(false);
+
+                    btnAssets.setBackgroundResource(R.drawable.list_item_unable);
+                    btnActivity.setBackgroundResource(R.drawable.list_item_unable);
+                    btnRelationship.setBackgroundResource(R.drawable.list_item_unable);
+
+                    scrollView.setBackgroundResource(R.drawable.background_prison);
+                    txtScrollviewContent.setVisibility(View.INVISIBLE);
+                    
+                    MainActivity.createNotification(R.drawable.police,
+                            "Bạn bị bắt vì tội " + tienAn +", bạn sẽ không thể thực hiện được một số hoạt động thường ngày của mình",
+                            view.getContext());
                 }
+
                 try {
                     if (MainActivity.saveGame.getDetailActivity().equals("")) {
                         //startActivityForResult(new Intent(getActivity(), CreateName.class), REQUEST_CODE_INIT);

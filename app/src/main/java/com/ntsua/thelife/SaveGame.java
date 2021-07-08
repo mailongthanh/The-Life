@@ -545,6 +545,14 @@ public class SaveGame {
         reference.child("Basic").child("namTu").setValue(namTu);
     }
 
+    public String getTienAn() {return  infomation.getTienAn();}
+
+    public void saveTienAn(String tienAn)
+    {
+        infomation.setTienAn(tienAn);
+        reference.child("Basic").child("tienAn").setValue(tienAn);
+    }
+
     public void saveRelationship(ArrayList<QuanHe> arrRelationship) {
         this.arrRelationship = arrRelationship;
         reference.child("Relationship").setValue(arrRelationship);

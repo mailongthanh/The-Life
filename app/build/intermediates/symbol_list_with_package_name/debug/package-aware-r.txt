@@ -2161,6 +2161,7 @@ drawable triangle
 drawable trienvong
 drawable trungsi
 drawable tuvi
+drawable ugly
 drawable uit
 drawable vehicle
 drawable vespa
@@ -2186,6 +2187,7 @@ id ListViewQuanHe
 id ListViewTuongTac
 id META
 id NO_DEBUG
+id RelativeHoatDong
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2266,6 +2268,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id automatic
+id banner
 id barrier
 id baseline
 id beginOnFirstDraw

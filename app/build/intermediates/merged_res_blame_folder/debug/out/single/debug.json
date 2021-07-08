@@ -1236,6 +1236,10 @@
         "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\altp_btn_selected.xml"
     },
     {
+        "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ugly.png.flat",
+        "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\ugly.png"
+    },
+    {
         "merged": "D:\\HOC TAP\\UngDung\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_actor.png.flat",
         "source": "D:\\HOC TAP\\UngDung\\The-Life\\app\\src\\main\\res\\drawable\\actor.png"
     },

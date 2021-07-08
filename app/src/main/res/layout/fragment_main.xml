@@ -90,7 +90,6 @@
 
                     <Button
                         android:id="@+id/buttonInfant"
-                        android:layout_height="63dp"
                         android:layout_margin="2dp"
                         android:layout_weight="1"
                         android:background="@drawable/custom_button_menu"

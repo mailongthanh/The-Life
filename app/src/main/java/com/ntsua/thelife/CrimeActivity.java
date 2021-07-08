@@ -167,7 +167,7 @@ public class CrimeActivity extends AppCompatActivity {
 
         if(!isSelection[0])
         {
-            dialogEventResult(objects[0],name,0);
+            dialogEventResult(objects[0],name,0,"");
         }
         else dialogJobEventWithAsset(objects[0],name);
 
@@ -220,7 +220,8 @@ public class CrimeActivity extends AppCompatActivity {
                         JSONObject jsSelection =arr.getJSONObject(new Random().nextInt(arr.length()));
                         //boolean prison = jsSelection.getBoolean("prison");
                         int year = jsSelection.getInt("year");
-                        dialogEventResult(jsSelection,title, year);
+                        String criminal = jsSelection.getString("criminal");
+                        dialogEventResult(jsSelection,title, year, criminal);
                         dialog.dismiss();
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -237,7 +238,7 @@ public class CrimeActivity extends AppCompatActivity {
                     arr = arrSelect.getJSONArray(1);
                     JSONObject jsSelection = arr.getJSONObject(new Random().nextInt(arr.length()));
                     int year = jsSelection.getInt("year");
-                    dialogEventResult(jsSelection, title, year);
+                    dialogEventResult(jsSelection, title, year,"");
                     dialog.dismiss();
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -280,7 +281,7 @@ public class CrimeActivity extends AppCompatActivity {
         }
     }
 
-    void dialogEventResult(JSONObject object, String title, int year) throws JSONException {
+    void dialogEventResult(JSONObject object, String title, int year, String criminal) throws JSONException {
         Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setCanceledOnTouchOutside(false);
@@ -372,14 +373,14 @@ public class CrimeActivity extends AppCompatActivity {
                 dialog.dismiss();
                 if(year!=0)
                 {
-                    Prison(year);
+                    Prison(year, criminal);
                 }
             }
         });
         dialog.show();
     }
 
-    void Prison(int year)
+    void Prison(int year, String criminal)
     {
         int imageKnife = getResources().getIdentifier("dao","drawable", this.getPackageName());
         int imageGun = getResources().getIdentifier("gun","drawable", this.getPackageName());
@@ -399,6 +400,7 @@ public class CrimeActivity extends AppCompatActivity {
             saveGame.saveAsset(arrProduct);
         }
         saveGame.saveNamTu(year);
+        saveGame.saveTienAn(criminal);
         startActivity(new Intent(CrimeActivity.this, MainActivity.class));
     }
 }

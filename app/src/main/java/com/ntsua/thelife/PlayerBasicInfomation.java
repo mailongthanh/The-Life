@@ -50,6 +50,15 @@ public class PlayerBasicInfomation {
     private int BoiTinh = 0;
 
     private int namTu = 0;
+    private String tienAn = "";
+
+    public String getTienAn() {
+        return tienAn;
+    }
+
+    public void setTienAn(String tienAn) {
+        this.tienAn = tienAn;
+    }
 
     public int getNamTu() {
         return namTu;
