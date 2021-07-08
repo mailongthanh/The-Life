@@ -68,7 +68,11 @@ public class JobAmThuc extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        if(MainActivity.saveGame.getJob().equals("Phụ bếp"))
+                        if(MainActivity.saveGame.getSmart()<50 &&!MainActivity.saveGame.getJob().equals("Phụ bếp")&&!MainActivity.saveGame.getJob().equals("Đầu bếp")&&!MainActivity.saveGame.getJob().equals("Chuyên gia ẩm thực")&&!MainActivity.saveGame.getJob().equals("VUA ĐẦU BẾP"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Nghề yêu cầu chỉ số thông minh phải lớn hơn 50", JobAmThuc.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Phụ bếp"))
                         {
                             MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobAmThuc.this);
                         }

@@ -67,7 +67,11 @@ public class JobGiaoDuc extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        if(MainActivity.saveGame.getJob().equals("Thực tập sinh"))
+                        if(MainActivity.saveGame.getSmart()<75 &&!MainActivity.saveGame.getJob().equals("Thực tập sinh")&&!MainActivity.saveGame.getJob().equals("Giáo viên")&&!MainActivity.saveGame.getJob().equals("Trưởng bộ môn")&&!MainActivity.saveGame.getJob().equals("Hiệu trưởng"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Nghề yêu cầu chỉ số thông minh phải lớn hơn 75", JobGiaoDuc.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Thực tập sinh"))
                         {
                             MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobGiaoDuc.this);
                         }

@@ -67,7 +67,11 @@ public class JobQuanDoi extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        if(MainActivity.saveGame.getJob().equals("Binh nhất"))
+                        if(MainActivity.saveGame.getAge()>18&&MainActivity.saveGame.getAge()<27 &&!MainActivity.saveGame.getJob().equals("Binh nhất")&&!MainActivity.saveGame.getJob().equals("Trung sĩ")&&!MainActivity.saveGame.getJob().equals("Thượng úy")&&!MainActivity.saveGame.getJob().equals("Đại tá"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Bạn chỉ được nhập ngũ trong độ tuổi từ 18 đến 27", JobQuanDoi.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Binh nhất"))
                         {
                             MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobQuanDoi.this);
                         }

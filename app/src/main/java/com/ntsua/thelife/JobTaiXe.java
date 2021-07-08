@@ -67,7 +67,11 @@ public class JobTaiXe extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        if(MainActivity.saveGame.getJob().equals("Chạy Grab"))
+                        if(MainActivity.saveGame.getSmart()<50 &&!MainActivity.saveGame.getJob().equals("Chạy Grab")&&!MainActivity.saveGame.getJob().equals("Tài xế Taxi")&&!MainActivity.saveGame.getJob().equals("Quản lý đội xe")&&!MainActivity.saveGame.getJob().equals("Chủ công ty Taxi"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Nghề yêu cầu chỉ số thông minh phải lớn hơn 50", JobTaiXe.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Chạy Grab"))
                         {
                             MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobTaiXe.this);
                         }

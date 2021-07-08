@@ -66,7 +66,11 @@ public class JobKinhDoanh extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        if(MainActivity.saveGame.getJob().equals("Bán hàng rong"))
+                        if(MainActivity.saveGame.getSmart()<40 &&!MainActivity.saveGame.getJob().equals("Bán hàng rong")&&!MainActivity.saveGame.getJob().equals("Chủ shop online")&&!MainActivity.saveGame.getJob().equals("Quản lý siêu thị mini"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Nghề yêu cầu chỉ số thông minh phải lớn hơn 40", JobKinhDoanh.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Bán hàng rong"))
                         {
                             MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobKinhDoanh.this);
                         }

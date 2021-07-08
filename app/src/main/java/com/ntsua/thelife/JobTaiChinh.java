@@ -66,7 +66,11 @@ public class JobTaiChinh extends AppCompatActivity {
                 //Toast.makeText(Degree.this, MainActivity.saveGame.getMoney() + " - " + arrDegree.get(position).getFoodName(), Toast.LENGTH_SHORT).show();
                 switch (position) {
                     case 0:
-                        if(MainActivity.saveGame.getJob().equals("Nhân viên sale"))
+                        if(MainActivity.saveGame.getSmart()<60 &&!MainActivity.saveGame.getJob().equals("Nhân viên sale")&&!MainActivity.saveGame.getJob().equals("Trưởng phòng marketing")&&!MainActivity.saveGame.getJob().equals("Giám đốc kinh doanh"))
+                        {
+                            MainActivity.createNotification(R.drawable.jobsearch, "Nghề yêu cầu chỉ số thông minh phải lớn hơn 60", JobTaiChinh.this);
+                        }
+                        else if(MainActivity.saveGame.getJob().equals("Nhân viên sale"))
                         {
                             MainActivity.createNotification(R.drawable.jobsearch, "Bạn đang làm việc ở vị trí này", JobTaiChinh.this);
                         }
