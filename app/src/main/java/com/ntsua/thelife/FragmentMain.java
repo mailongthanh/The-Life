@@ -1242,7 +1242,6 @@ public class FragmentMain extends Fragment {
                 //Toast.makeText(MainActivity.this, "Loaded " + time, Toast.LENGTH_SHORT).show();
                 namTu = MainActivity.saveGame.getNamTu();
                 tienAn = MainActivity.saveGame.getTienAn();
-                Toast.makeText(view.getContext(), String.valueOf(MainActivity.saveGame.getAge()), Toast.LENGTH_SHORT).show();
 
                 if(MainActivity.saveGame.getAge() <= 6)
                 {
