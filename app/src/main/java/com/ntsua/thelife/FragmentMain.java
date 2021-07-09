@@ -151,7 +151,6 @@ public class FragmentMain extends Fragment {
         Dialog dialog = createDialog("Làm việc", "Làm, làm nữa, làm mãi");
         LinearLayout dialogCustom = dialog.findViewById(R.id.dialog_event);
 
-
         for (int i = 0; i < arrJob.length(); i++) {
             JSONObject object = arrJob.getJSONObject(i);
             Button btn = addButton(dialogCustom, object.getString("content"));
@@ -195,7 +194,7 @@ public class FragmentMain extends Fragment {
         //So nam ra tu
         int year = TempAge + namTu - age;
 
-        if(age > 5)
+        if(age > 5 && namTu == 0)
         {
             btnAssets.setEnabled(true);
             btnActivity.setEnabled(true);
@@ -570,12 +569,15 @@ public class FragmentMain extends Fragment {
             if (currentSkill < require && currentSkill + addSkill >= require) {
                 if (!jsonResult.getString("asset").equals(""))
                     dialogJobEventWithAsset("Công Việc");
-                else if (jsonResult.getBoolean("selection")) {
-                    dialogJobEvent("Công việc");
-                } else {
+                else if(!jsonResult.getString("newjob").equals(""))
+                {
+                    MainActivity.saveGame.saveJob(jsonResult.getString("newjob"));
+                    changeWork();
                     MainActivity.saveGame.saveSalary(jsonResult.getInt("salary"));
                     dialogEventResult("Công việc", false);
-                    //Toast.makeText(MainActivity.this, "error", Toast.LENGTH_SHORT).show();
+                }
+                else if (jsonResult.getBoolean("selection")) {
+                    dialogJobEvent("Công việc");
                 }
                 break;
             }
@@ -774,15 +776,161 @@ public class FragmentMain extends Fragment {
 
     void changeWork() throws JSONException {
         switch (MainActivity.saveGame.getJob()) {
-            case "Lập trình viên":
-                jsonJob = jsonAllJob.getJSONObject("coder");
-                break;
             case "Trẻ trâu":
                 jsonJob = jsonAllJob.getJSONObject("student");
                 break;
             case "Tù nhân":
                 jsonJob = jsonAllJob.getJSONObject("Tù nhân");
                 break;
+            case "Ca sĩ đám cưới":
+                jsonJob = jsonAllJob.getJSONObject("Ca sĩ đám cưới");
+                break;
+            case "Ca sĩ phòng trà":
+                jsonJob = jsonAllJob.getJSONObject("Ca sĩ phòng trà");
+                break;
+            case "Ca sĩ thần tượng":
+                jsonJob = jsonAllJob.getJSONObject("Ca sĩ thần tượng");
+                break;
+            case "DIVA":
+                jsonJob = jsonAllJob.getJSONObject("DIVA");
+                break;
+            case "Lập trình viên":
+                jsonJob = jsonAllJob.getJSONObject("coder");
+                break;
+            case "Chuyên gia công nghệ":
+                jsonJob = jsonAllJob.getJSONObject("Chuyên gia công nghệ");
+                break;
+            case "Chủ tịch tập đoàn công nghệ thông tin":
+                jsonJob = jsonAllJob.getJSONObject("Chủ tịch tập đoàn công nghệ thông tin");
+                break;
+            case "Cài win dạo":
+                jsonJob = jsonAllJob.getJSONObject("Cài win dạo");
+                break;
+            case "Phụ bếp":
+                jsonJob = jsonAllJob.getJSONObject("Phụ bếp");
+                break;
+            case "Đầu bếp":
+                jsonJob = jsonAllJob.getJSONObject("Đầu bếp");
+                break;
+            case "Chuyên gia ẩm thực":
+                jsonJob = jsonAllJob.getJSONObject("Chuyên gia ẩm thực");
+                break;
+            case "VUA ĐẦU BẾP":
+                jsonJob = jsonAllJob.getJSONObject("VUA ĐẦU BẾP");
+                break;
+            case "Phóng viên":
+                jsonJob = jsonAllJob.getJSONObject("Phóng viên");
+                break;
+            case "Trưởng chuyên mục":
+                jsonJob = jsonAllJob.getJSONObject("Trưởng chuyên mục");
+                break;
+            case "Thư ký tòa soạn":
+                jsonJob = jsonAllJob.getJSONObject("Thư ký tòa soạn");
+                break;
+            case "Tổng biên tập":
+                jsonJob = jsonAllJob.getJSONObject("Tổng biên tập");
+                break;
+            case "Cầu thủ dự bị":
+                jsonJob = jsonAllJob.getJSONObject("Cầu thủ dự bị");
+                break;
+            case "Chân sút triển vọng":
+                jsonJob = jsonAllJob.getJSONObject("Chân sút triển vọng");
+                break;
+            case "Ngôi sao bóng đá":
+                jsonJob = jsonAllJob.getJSONObject("Ngôi sao bóng đá");
+                break;
+            case "Huyền thoại bóng đá":
+                jsonJob = jsonAllJob.getJSONObject("Huyền thoại bóng đá");
+                break;
+            case "Bồi bàn":
+                jsonJob = jsonAllJob.getJSONObject("Bồi bàn");
+                break;
+            case "Thu ngân":
+                jsonJob = jsonAllJob.getJSONObject("Thu ngân");
+                break;
+            case "Quản lý nhà hàng":
+                jsonJob = jsonAllJob.getJSONObject("Quản lý nhà hàng");
+                break;
+            case "Chủ nhà hàng":
+                jsonJob = jsonAllJob.getJSONObject("Chủ nhà hàng");
+                break;
+            case "Diễn viên đóng thế":
+                jsonJob = jsonAllJob.getJSONObject("Diễn viên đóng thế");
+                break;
+            case "Diễn viên chính":
+                jsonJob = jsonAllJob.getJSONObject("Diễn viên chính");
+                break;
+            case "Ngôi sao điện ảnh":
+                jsonJob = jsonAllJob.getJSONObject("Ngôi sao điện ảnh");
+                break;
+            case "Thực tập sinh":
+                jsonJob = jsonAllJob.getJSONObject("Thực tập sinh");
+                break;
+            case "Giáo viên":
+                jsonJob = jsonAllJob.getJSONObject("Giáo viên");
+                break;
+            case "Trưởng bộ môn":
+                jsonJob = jsonAllJob.getJSONObject("Trưởng bộ môn");
+                break;
+            case "Hiệu trưởng":
+                jsonJob = jsonAllJob.getJSONObject("Hiệu trưởng");
+                break;
+            case "Bán hàng rong":
+                jsonJob = jsonAllJob.getJSONObject("Bán hàng rong");
+                break;
+            case "Chủ shop online":
+                jsonJob = jsonAllJob.getJSONObject("Chủ shop online");
+                break;
+            case "Quản lý siêu thị mini":
+                jsonJob = jsonAllJob.getJSONObject("Quản lý siêu thị mini");
+                break;
+            case "Binh nhất":
+                jsonJob = jsonAllJob.getJSONObject("Binh nhất");
+                break;
+            case "Trung sĩ":
+                jsonJob = jsonAllJob.getJSONObject("Trung sĩ");
+                break;
+            case "Thượng úy":
+                jsonJob = jsonAllJob.getJSONObject("Thượng úy");
+                break;
+            case "Đại tá":
+                jsonJob = jsonAllJob.getJSONObject("Đại tá");
+                break;
+            case "Nhân viên sale":
+                jsonJob = jsonAllJob.getJSONObject("Nhân viên sale");
+                break;
+            case "Trưởng phòng marketing":
+                jsonJob = jsonAllJob.getJSONObject("Trưởng phòng marketing");
+                break;
+            case "Giám đốc kinh doanh":
+                jsonJob = jsonAllJob.getJSONObject("Giám đốc kinh doanh");
+                break;
+            case "Chạy Grab":
+                jsonJob = jsonAllJob.getJSONObject("Chạy Grab");
+                break;
+            case "Tài xế Taxi":
+                jsonJob = jsonAllJob.getJSONObject("Tài xế Taxi");
+                break;
+            case "Quản lý đội xe":
+                jsonJob = jsonAllJob.getJSONObject("Quản lý đội xe");
+                break;
+            case "Chủ công ty Taxi":
+                jsonJob = jsonAllJob.getJSONObject("Chủ công ty Taxi");
+                break;
+            case "Bác sĩ thực tập":
+                jsonJob = jsonAllJob.getJSONObject("Bác sĩ thực tập");
+                break;
+            case "Bác sĩ chính":
+                jsonJob = jsonAllJob.getJSONObject("Bác sĩ chính");
+                break;
+            case "Bác sĩ trưởng khoa":
+                jsonJob = jsonAllJob.getJSONObject("Bác sĩ trưởng khoa");
+                break;
+            case "Viện trưởng":
+                jsonJob = jsonAllJob.getJSONObject("Viện trưởng");
+                break;
+
+
         }
     }
 
@@ -1308,6 +1456,7 @@ public class FragmentMain extends Fragment {
             public void onClick(View v) {
                 try {
                     doWork();
+                    Toast.makeText(view.getContext(), String.valueOf(MainActivity.saveGame.getSkill()), Toast.LENGTH_SHORT).show();
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }

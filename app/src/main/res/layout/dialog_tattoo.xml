@@ -14,7 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hình xăm"
-        android:textColor="#FF1500"
+        android:textColor="@color/Blue"
+        android:fontFamily="@font/anton"
         android:textSize="20sp"
         android:gravity="center_horizontal"/>
 
@@ -43,19 +44,21 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/custom_button_menu"
-            android:drawableLeft="@drawable/dragon"
-            android:text="Hình con rồng"
+            android:drawableLeft="@drawable/dragontatoo"
+            android:text="Rồng xanh"
+            android:textColor="@color/Blue"
             app:backgroundTint="@null" />
 
         <Button
-            android:id="@+id/buttonDialogEventdiamond"
+            android:id="@+id/buttonDialogEventtiger"
             android:layout_width="245dp"
             android:layout_height="54dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:text="Kim cương"
+            android:text="Mãnh hổ cali"
+            android:textColor="@color/Blue"
             android:background="@drawable/custom_button_menu"
-            android:drawableLeft="@drawable/diamondv"
+            android:drawableLeft="@drawable/tiger"
             app:backgroundTint="@null"
             android:layout_marginBottom="5dp"/>
         <Button
@@ -64,9 +67,10 @@
             android:layout_height="54dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:text="Hoa tuyết"
+            android:text="Chiến ưng"
             android:background="@drawable/custom_button_menu"
-            android:drawableLeft="@drawable/snowflakes"
+            android:drawableLeft="@drawable/eagle"
+            android:textColor="@color/Blue"
             app:backgroundTint="@null"
             android:layout_marginBottom="5dp"/>
         <Button
@@ -75,10 +79,11 @@
             android:layout_height="54dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:text="Con rắn"
+            android:text="Mãng xà"
             android:background="@drawable/custom_button_menu"
             android:drawableLeft="@drawable/snake"
             app:backgroundTint="@null"
+            android:textColor="@color/Blue"
             android:layout_marginBottom="5dp"/>
         <Button
             android:id="@+id/buttonDialogEventOke"
@@ -87,6 +92,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:text="Không xăm nữa"
+            android:textColor="@color/Blue"
             android:background="@drawable/custom_button_menu"
             app:backgroundTint="@null"
             android:layout_marginBottom="5dp"/>

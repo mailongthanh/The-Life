@@ -127,7 +127,6 @@
             {"event": "Bạn nịnh bợ đứa cầm đầu trong băng, bạn được làm đàn em của nó, bạn bắt đầu làm những việc bất lương như bọn bắt nạt", "assets": 0, "happy": -5, "health": 0, "smart":-5, "appearance": -5, "sick": ""}
           ]}
       ]},
-
     {"title": "Kiến thức","event": "Hôm nay bạn nghe trên lớp ráo nhau rằng: \n\nCách gọi Oẳn tù tì thực chất chính là gọi One, Two, Three",
       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""}
   ],
@@ -137,7 +136,7 @@
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
     {"title": "Kiến thức","event": "Hôm nay bạn xem trên tivi, bạn biết được rằng: \n\nKhông bao gồm hình ảnh, chỉ riêng phần nội dung chữ của ngôn ngữ tiếng Anh trên wikipedia đã chiếm khoảng 14GB.",
       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""},
-    {"title": "Thời sự", "event": "\nTính tới thời điềm này, trên thế giới đã có tổng số ca nhiễm Covid lên tới 173.036.310 ca.",
+    {"title": "Thời sự", "event": "Tính tới thời điềm này, trên thế giới đã có tổng số ca nhiễm Covid lên tới 173.036.310 ca.",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
   ],
   [
@@ -323,15 +322,15 @@
       ]}
   ],
   [
-    {"title": "Bản tin thời sự", "event": "\nMột chi nhánh dữ liệu ở Hoa Kì đã khiến thông tin cá nhân của 125.479 cư dân bị rò rỉ trên dark web.",
+    {"title": "Thời sự", "event": "Một chi nhánh dữ liệu ở Hoa Kì đã khiến thông tin cá nhân của 125.479 cư dân bị rò rỉ trên dark web.",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
     {"title": "Kiến thức","event": "Hôm nay bạn đọc được một quyển sách hay, bạn biết được rằng: \n\nCác nhà khoa học cho rằng, các loài sinh vật sẽ sống đến khi quả tim của chúng đập đến nhịp thứ 1 tỷ. Tuy nhiên, nhờ sự phát triển của y học, loài người đang dần vượt qua giới hạn này.",
       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""},
-    {"title": "Bản tin thời sự", "event": "\n\nMột người phụ nữ 45 tuổi ở Singapore đã trúng giải độc đắc xổ số lần thứ ba, khiến cô ấy trở thành một trong những công dân giàu có nhất cả nước.",
+    {"title": "Thời sự", "event": "Một người phụ nữ 45 tuổi ở Singapore đã trúng giải độc đắc xổ số lần thứ ba, khiến cô ấy trở thành một trong những công dân giàu có nhất cả nước.",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
   ],
   [
-    {"title": "Bản tin thời sự", "event": "\n\nkhu vực từ Đà Nẵng đến Bình Thuận tiếp tục có nắng nóng, có nơi nắng nóng gay gắt với nhiệt độ cao nhất phổ biến 35-37 độ C, có nơi trên 38 độ C.",
+    {"title": "Thời sự", "event": "khu vực từ Đà Nẵng đến Bình Thuận tiếp tục có nắng nóng, có nơi nắng nóng gay gắt với nhiệt độ cao nhất phổ biến 35-37 độ C, có nơi trên 38 độ C.",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
     {"title":"Đời sống", "event": "Đang trên đường về thì bạn gặp ăn cướp núp sau một con hẻm \n Trước tình huống đó bạn muốn làm gì ? ", "selection": true,
       "select":[
@@ -356,9 +355,9 @@
   ],
   [],
   [
-    {"title": "Bản tin thời sự", "event": "\n\nMột vụ xả súng tại bang Florida, Mỹ, đã khiến 10 người thiệt mạng và 20 trường hợp khác bị thương",
+    {"title": "Thời sự", "event": "Một vụ xả súng tại bang Florida, Mỹ, đã khiến 10 người thiệt mạng và 20 trường hợp khác bị thương",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
-    {"title": "Bản tin thời sự", "event": "\n\nTheo nhận định Giám đốc khu vực châu Á - Thái Bình Dương thuộc Hội Chữ thập Đỏ và Trăng lưỡi liềm Đỏ quốc tế, tỷ lệ mắc Covid-19 đã ở mức báo động đỏ tại các quốc gia Đông Nam Á ",
+    {"title": "Thời sự", "event": "Theo nhận định Giám đốc khu vực châu Á - Thái Bình Dương thuộc Hội Chữ thập Đỏ và Trăng lưỡi liềm Đỏ quốc tế, tỷ lệ mắc Covid-19 đã ở mức báo động đỏ tại các quốc gia Đông Nam Á ",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
   ],
   [
@@ -416,7 +415,7 @@
       "selection": false,"assets": -500, "happy": -3, "health": 0, "smart":0, "appearance": 0, "sick": ""}
   ],
   [
-    {"title": "Thời sự", "event": "\n\n\nMột bức tượng được tạo ra bởi nghệ sĩ nổi tiếng thế giới, Jakiliam, đã vỡ vụn ngay sau khi được mua với giá 500 triệu tại một cuộc đấu giá nghệ thuật ở Mỹ.",
+    {"title": "Thời sự", "event": "Một bức tượng được tạo ra bởi nghệ sĩ nổi tiếng thế giới, Jakiliam, đã vỡ vụn ngay sau khi được mua với giá 500 triệu tại một cuộc đấu giá nghệ thuật ở Mỹ.",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
     {"title": "Kiến thức","event": "Hôm nay bạn nghe được một điều thú vị, bạn biết được rằng: \n\nNếu như mắt của con người là một chiếc camera thì độ phân giải của nó khoảng 576 megapixel",
       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""}

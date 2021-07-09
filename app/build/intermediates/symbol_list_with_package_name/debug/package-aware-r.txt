@@ -1934,7 +1934,9 @@ drawable doctor
 drawable dog
 drawable dogrobber
 drawable dragon
+drawable dragontatoo
 drawable drink
+drawable eagle
 drawable editor
 drawable education
 drawable entertainment
@@ -2152,6 +2154,7 @@ drawable thailand
 drawable thanksgiving
 drawable thelife
 drawable thuctapsinh
+drawable tiger
 drawable tombstone
 drawable tonducthang
 drawable tonggiamdoc
@@ -2297,10 +2300,10 @@ id buttonAssetAccept
 id buttonAssetCancel
 id buttonAssets
 id buttonDialogEventOke
-id buttonDialogEventdiamond
 id buttonDialogEventdragon
 id buttonDialogEventsnake
 id buttonDialogEventsnow
+id buttonDialogEventtiger
 id buttonDialogFriendAccept
 id buttonDialogFriendCancel
 id buttonDialogRelationship_Oke
