@@ -130,7 +130,7 @@ public class JobDienVien extends AppCompatActivity {
     void dialogResult(boolean result)
     {
         if (result) {
-            MainActivity.createNotification(R.drawable.holding_hands, "Chúc mừng bạn đã xuất sắc vượt qua bài phỏng vấn. Bắt đầu từ mai bạn có thể bắt đầu công việc của mình", JobDienVien.this);
+            MainActivity.createNotification(R.drawable.holding_hands, "Chúc mừng bạn đã xuất sắc vượt qua bài phỏng vấn. Bắt đầu từ mai bạn có thể bắt đầu công việc của mình, hãy chăm chỉ làm việc rồi bạn sẽ được thăng quan tiến chức", JobDienVien.this);
         }
         else MainActivity.createNotification(R.drawable.cancel, "Trả lời sai bét, bạn không được nhận công việc", JobDienVien.this);
     }

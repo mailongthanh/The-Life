@@ -383,7 +383,7 @@ public class FragmentMain extends Fragment {
         } else {
             toString(value, txtAssets);
             money += value;
-            this.txtMoney.setText(money + " VND");
+            this.txtMoney.setText(money + "K VND");
             MainActivity.saveGame.saveMoney(money);
         }
         MainActivity.saveGame.savePlayerInfo(prbHappy.getProgress(), prbHealth.getProgress(), prbSmart.getProgress(), prbAppearance.getProgress());
@@ -744,7 +744,7 @@ public class FragmentMain extends Fragment {
         txtHealth.setText(prbHealth.getProgress() + "%");
 
         money = MainActivity.saveGame.getMoney();
-        txtMoney.setText(money + "VND");
+        txtMoney.setText(money + "K VND");
         txtName.setText(MainActivity.saveGame.getName());
         txtJob.setText(MainActivity.saveGame.getJob());
         arrRelationship = MainActivity.saveGame.getRelationship();
@@ -929,8 +929,6 @@ public class FragmentMain extends Fragment {
             case "Viện trưởng":
                 jsonJob = jsonAllJob.getJSONObject("Viện trưởng");
                 break;
-
-
         }
     }
 
@@ -1005,7 +1003,7 @@ public class FragmentMain extends Fragment {
         MainActivity.saveGame.saveAvatar(avatarID);
         MainActivity.saveGame.saveAge(0);
         MainActivity.saveGame.saveBirthDay(format.format(date));
-        MainActivity.saveGame.saveMoney(50000);
+        MainActivity.saveGame.saveMoney(0);
         MainActivity.saveGame.saveDetailActivity(contentHtml);
         MainActivity.saveGame.saveName(name);
         MainActivity.saveGame.saveJob("Trẻ trâu");
@@ -1017,12 +1015,11 @@ public class FragmentMain extends Fragment {
 
         btnAssets.setEnabled(false);
         btnActivity.setEnabled(false);
-
         btnAssets.setBackgroundResource(R.drawable.list_item_unable);
         btnActivity.setBackgroundResource(R.drawable.list_item_unable);
 
         txtJob.setText(MainActivity.saveGame.getJob());
-        txtMoney.setText("0 VND");
+        txtMoney.setText("0K VND");
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
         scrollView.post(new Runnable() {
             @Override

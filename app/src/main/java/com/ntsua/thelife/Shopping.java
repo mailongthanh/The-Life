@@ -86,6 +86,7 @@ public class Shopping extends AppCompatActivity {
                 }
                 if(arrShopping.get(position).getFoodName() == "Công cụ")
                 {
+                    Toast.makeText(Shopping.this, String.valueOf(MainActivity.saveGame.getMoney()), Toast.LENGTH_SHORT).show();
                     ArrayList<Food> arrTool = new ArrayList<>();
                     arrTool.add(new Food("laptop","Máy tính xách tay, tiện cho việc di chuyển, cấu hình trung bình. GIÁ 10.000.000 VND",R.drawable.laptop,10000));
                     arrTool.add(new Food("Webcam","Công cụ hữu ích cho các streamer. GIÁ 200.000 VND",R.drawable.webcam,200));
@@ -100,7 +101,7 @@ public class Shopping extends AppCompatActivity {
                 {
                     ArrayList<Food> arrWeapon = new ArrayList<>();
                     arrWeapon.add(new Food("Dao","GIÁ 50.000 VND",R.drawable.dao,50));
-                    arrWeapon.add(new Food("Thuốc độc","GIÁ 300.000 VND",R.drawable.poison,200));
+                    arrWeapon.add(new Food("Thuốc độc","GIÁ 300.000 VND",R.drawable.poison,300));
                     arrWeapon.add(new Food("Súng","GIÁ 10.000.000 VND",R.drawable.gun,10000));
                     arrWeapon.add(new Food("Mã tấu","GIÁ 5.000.000 VND",R.drawable.matau,5000));
                     CreateDialogHangNong(arrWeapon,"HÀNG NÓNG");
@@ -112,7 +113,7 @@ public class Shopping extends AppCompatActivity {
 
     private void loadGame() {
         txtName.setText(MainActivity.saveGame.getName());
-        txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
+        txtMoney.setText(MainActivity.saveGame.getMoney() + "K VND");
         txtJob.setText(MainActivity.saveGame.getJob());
         imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());
     }
@@ -137,9 +138,9 @@ public class Shopping extends AppCompatActivity {
         lvProduct.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(MainActivity.saveGame.getMoney() >= arrProduct.get(3).getPrice()) {
+                if(MainActivity.saveGame.getMoney() >= arrProduct.get(position).getPrice()) {
 
-                    int money = MainActivity.saveGame.getMoney() - arrProduct.get(3).getPrice();
+                    int money = MainActivity.saveGame.getMoney() - arrProduct.get(position).getPrice();
                     MainActivity.saveGame.saveMoney(money);
                     loadGame();
                     arrAsset.add(arrProduct.get(position));
@@ -179,9 +180,9 @@ public class Shopping extends AppCompatActivity {
         lvProduct.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(MainActivity.saveGame.getMoney() >= arrProduct.get(3).getPrice())
+                if(MainActivity.saveGame.getMoney() >= arrProduct.get(position).getPrice())
                 {
-                    int money = MainActivity.saveGame.getMoney() - arrProduct.get(3).getPrice();
+                    int money = MainActivity.saveGame.getMoney() - arrProduct.get(position).getPrice();
                     MainActivity.saveGame.saveMoney(money);
                     
                     arrAsset.add(arrProduct.get(position));

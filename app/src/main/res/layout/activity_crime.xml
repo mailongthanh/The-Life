@@ -34,9 +34,10 @@
         </TextView>
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="15dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
             android:src="@drawable/previous"
             android:onClick="gotoMainMenu"/>
 

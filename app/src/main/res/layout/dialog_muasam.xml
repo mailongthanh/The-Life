@@ -3,7 +3,6 @@
     android:layout_height="wrap_content"
     android:layout_width="300dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="5dp"
     android:orientation="vertical"
     android:background="@drawable/custom_button_menu"

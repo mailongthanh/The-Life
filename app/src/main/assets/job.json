@@ -88,8 +88,8 @@
       {
         "require": 5,
         "event": "Bạn được rủ đi phượt với bạn bè, bạn cần có siêu siêu super xe để đi",
-        "asset": "gun",
-        "name": "Súng",
+        "asset": "car",
+        "name": "Xe",
         "newjob": "",
         "selection": false,
         "select": [
@@ -124,7 +124,7 @@
           ],
           [
             {
-              "event": "Bạn bè đi chơi vui ơ là vui, còn bạn ở nhà",
+              "event": "Bạn bè đi chơi vui ơi là vui, còn bạn ở nhà",
               "salary": 0,
               "assets": 0,
               "happy": 5,
@@ -295,7 +295,7 @@
         "event": [
           {
             "event": "Bạn đi hát đám ma, tử khí làm bạn bị cảm lạnh",
-            "assets": 3000,
+            "assets": 2000,
             "happy": -2,
             "health": -2,
             "smart": 0,
@@ -304,7 +304,7 @@
           },
           {
             "event": "Bạn đi hát đám ma, tang gia được xoa dịu nhờ giọng hát của bạn",
-            "assets": 3500,
+            "assets": 3000,
             "happy": 2,
             "health": -2,
             "smart": 0,
@@ -313,7 +313,7 @@
           },
           {
             "event": "Bạn đi hát ở vũ trường, tại đó mở máy lạnh với nhiệt độ quá thấp khiên bạn bị viêm họng",
-            "assets": 3500,
+            "assets": 2000,
             "happy": -2,
             "health": -2,
             "smart": 0,
@@ -543,7 +543,7 @@
         "content": "Đi hát",
         "event": [
           {
-            "event": "Bạn được công ty chỉ cho đi hát ở một show âm nhạc tầm cỡ quốc tế. Với nhiều tháng ngày luyện tập cả giọng hát lẫn nhảy múa, bạn tự tin trình diễn và được nhiều khán giả vỗ tay khen ngợi",
+            "event": "Bạn được công ty giới thiệu đi hát ở một show âm nhạc tầm cỡ quốc tế. Với nhiều tháng ngày luyện tập cả giọng hát lẫn nhảy múa, bạn tự tin trình diễn và được nhiều khán giả vỗ tay khen ngợi",
             "assets": 15000,
             "happy": 3,
             "health": -4,
@@ -3455,7 +3455,7 @@
         ]
       },
       {
-        "content": "Quảng cáo các hàng sale",
+        "content": "Quảng cáo",
         "event": [
           {
             "event": "Bạn gọi điện cho các khách hàng và sản phẩm sale của mình nhưng không ai thèm quan tâm mà còn tắt máy giữa chừng",
@@ -4219,7 +4219,7 @@
   "Viện trưởng": {
     "work": [
       {
-        "content": "Đi thuyết trình ở các trường đại học",
+        "content": "Thuyết trình ",
         "event": [
           {
             "event": "Hôm đó bạn thuyết trình về một chủng loại virus mới, mọi người trong giảng đường ai nấy đều tập trung nghe bạn nói. Buổi thuyết trình diễn ra thành công tốt đẹp",
@@ -4242,7 +4242,7 @@
         ]
       },
       {
-        "content": "Nghiên cứu và sáng chế ra thuốc mới",
+        "content": "Nghiên cứu thuốc mới",
         "event": [
           {
             "event": "Thuốc chữa sỏi thận của bạn và bệnh viện của mình nghiên cứu đã cứu được rất nhiều người. Danh tiếng bệnh viên bạn vang xa, còn riêng bạn thu về cho mình 500 triệu",
@@ -4312,7 +4312,7 @@
         ]
       },
       {
-        "content": "Học nghề trông tù",
+        "content": "Học nghề trong tù",
         "event": [
           {
             "event": "Nhà tù mở lớp dạy may trong tù cho các tù nhân. Bạn tham gia và với bàn tay đầy hoa tay của mình. Sản phẩm may của bạn được các quản giáo đánh giá rất cao",
