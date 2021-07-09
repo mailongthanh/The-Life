@@ -1,4 +1,4 @@
-#Thu Jul 08 12:03:58 ICT 2021
+#Fri Jul 09 19:22:40 ICT 2021
 base.2=D\:\\The-Life\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.2=classes2.dex
 base.1=D\:\\The-Life\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex

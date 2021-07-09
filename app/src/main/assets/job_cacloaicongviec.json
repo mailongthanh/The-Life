@@ -290,7 +290,8 @@
         "Khám bệnh, chữa bệnh; Đào tạo cán bộ; Nghiên cứu khoa học; Chỉ đạo tuyến;  Phòng bệnh; Hợp tác quốc tế; Quản lý kinh tế trong bệnh viện"
       ],
       "correct": 2}
-  ], "Quân đội": [
+  ],
+  "Quân đội": [
   {"question": "Tổ chức cao nhất trong hệ thống tổ chức quân đội là cơ quan nào?",
     "answers": [
       "Bộ Quốc phòng",

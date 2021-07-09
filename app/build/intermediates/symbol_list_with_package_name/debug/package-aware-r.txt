@@ -1934,7 +1934,9 @@ drawable doctor
 drawable dog
 drawable dogrobber
 drawable dragon
+drawable dragontatoo
 drawable drink
+drawable eagle
 drawable editor
 drawable education
 drawable entertainment
@@ -2152,6 +2154,7 @@ drawable thailand
 drawable thanksgiving
 drawable thelife
 drawable thuctapsinh
+drawable tiger
 drawable tombstone
 drawable tonducthang
 drawable tonggiamdoc
@@ -2164,6 +2167,7 @@ drawable triangle
 drawable trienvong
 drawable trungsi
 drawable tuvi
+drawable ugly
 drawable uit
 drawable vehicle
 drawable vespa
@@ -2189,6 +2193,7 @@ id ListViewQuanHe
 id ListViewTuongTac
 id META
 id NO_DEBUG
+id RelativeHoatDong
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2269,6 +2274,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id automatic
+id banner
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2294,14 +2300,15 @@ id buttonAssetAccept
 id buttonAssetCancel
 id buttonAssets
 id buttonDialogEventOke
-id buttonDialogEventdiamond
 id buttonDialogEventdragon
 id buttonDialogEventsnake
 id buttonDialogEventsnow
+id buttonDialogEventtiger
 id buttonDialogFriendAccept
 id buttonDialogFriendCancel
 id buttonDialogRelationship_Oke
 id buttonInfant
+id buttonJobAccept
 id buttonNotificationtOke
 id buttonPanel
 id buttonQuestionAccept
@@ -2757,12 +2764,14 @@ id textviewDescriptionCr
 id textviewDialogAssetTitle
 id textviewDialogEventContent
 id textviewDialogEventTitle
+id textviewDialogJobTitle
 id textviewDialogRelationshipContent
 id textviewDialogRelationshipTitle
 id textviewFoodName
 id textviewFriendAge
 id textviewFriendName
 id textviewJob
+id textviewJobUpgradeContent
 id textviewMoney
 id textviewMqhA
 id textviewName
@@ -2985,6 +2994,7 @@ layout dialog_event_result
 layout dialog_hangnong
 layout dialog_job_accept
 layout dialog_job_asset
+layout dialog_job_upgrade_event
 layout dialog_muasam
 layout dialog_new_friend
 layout dialog_notification

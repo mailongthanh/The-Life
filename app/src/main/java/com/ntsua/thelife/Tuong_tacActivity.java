@@ -98,8 +98,6 @@ public class Tuong_tacActivity extends AppCompatActivity {
         //Load game
         loadGame();
 
-
-
         lvTuongTac.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int index, long id) {
@@ -168,6 +166,13 @@ public class Tuong_tacActivity extends AppCompatActivity {
                         }
                         break;
                     case "Tỏ tình":
+                        if(MainActivity.saveGame.getAppearance() < 50)
+                        {
+                            MainActivity.createNotification(R.drawable.ugly,
+                                    "hãy chăm chút cho vẻ bề ngoài bản thân trước",
+                                    Tuong_tacActivity.this);
+                            return;
+                        }
                         if (MainActivity.saveGame.getDating())
                         {
                             MainActivity.createNotification(R.drawable.cancel,
@@ -231,8 +236,13 @@ public class Tuong_tacActivity extends AppCompatActivity {
         MangTuongTac.add(new HoatDongQH(R.drawable.compliment, "Khen ngợi", "Thảo mai khen ngợi"));
         MangTuongTac.add(new HoatDongQH(R.drawable.communication, "Đàm đạo", "Đàm đạo chuyện thế gian"));
         MangTuongTac.add(new HoatDongQH(R.drawable.insult, "Xúc phạm", "Giết người bằng lời nói"));
-        MangTuongTac.add(new HoatDongQH(R.drawable.film, "Rủ xem phim", "Phimcuzzzzz.net"));
         quanHe  = MainActivity.saveGame.getRelationship().get(position);
+
+        if(MainActivity.saveGame.getAge() > 5 )
+        {
+            MangTuongTac.add(new HoatDongQH(R.drawable.film, "Rủ xem phim", "Phimcuzzzzz.net"));
+        }
+
         if (quanHe.getQuanHe() == NameOfRelationship.Friend)
         {
             MangTuongTac.add(new HoatDongQH(R.drawable.love, "Tỏ tình", "Mày yêu tao không để tao còn tán con khác"));

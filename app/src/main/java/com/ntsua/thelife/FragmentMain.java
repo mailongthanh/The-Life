@@ -101,7 +101,7 @@ public class FragmentMain extends Fragment {
     ArrayList<QuanHe> arrRelationship;
     JSONArray arrJsonAge;
     JSONObject jsonResult, jsonAllJob, jsonJob;
-    String contentHtml;
+    String contentHtml, tienAn;
     int money, TempAge, namTu;
     int REQUEST_CODE_INIT = 123;
     CircleImageView imgUserAvatar;
@@ -119,22 +119,20 @@ public class FragmentMain extends Fragment {
     void DeathofRelation()
     {
         Random random = new Random();
-        int happy = MainActivity.saveGame.getHappy();
-        int image = R.drawable.death;
-
         NameOfRelationship dad = NameOfRelationship.Dad;
         NameOfRelationship mom = NameOfRelationship.Mom;
+        int flag, image = R.drawable.death;
 
         for(int i = 0; i< arrRelationship.size();i++)
         {
             QuanHe Relatives = arrRelationship.get(i);
             if(Relatives.getTuoi() >= 75 && Relatives.getTuoi() <=90 && Relatives.getHinhAnh() != image)
             {
-                int flag = random.nextInt(4);
+                flag = random.nextInt(4);
                 if(Relatives.getTuoi() == 90) flag = 1;
+
                 if(flag == 1) {
                     Relatives.setHinhAnh(image);
-
                     if(Relatives.getQuanHe() == dad || Relatives.getQuanHe() == mom) {
                         MainActivity.createNotification(Relatives.getHinhAnh(), Relatives.getQuanHe() + " của bạn đã mất", view.getContext());
                     } else MainActivity.createNotification(Relatives.getHinhAnh(),Relatives.getQuanHe() + " của bạn" + Relatives.getHoten() + " đã mất",view.getContext());
@@ -151,7 +149,6 @@ public class FragmentMain extends Fragment {
     void dialogJob(JSONArray arrJob) throws JSONException {
         Dialog dialog = createDialog("Làm việc", "Làm, làm nữa, làm mãi");
         LinearLayout dialogCustom = dialog.findViewById(R.id.dialog_event);
-
 
         for (int i = 0; i < arrJob.length(); i++) {
             JSONObject object = arrJob.getJSONObject(i);
@@ -193,23 +190,43 @@ public class FragmentMain extends Fragment {
     void addAge() throws JSONException {
         //them tuoi
         int age = MainActivity.saveGame.getAge() + 1;
+        //So nam ra tu
         int year = TempAge + namTu - age;
+
+        if(age > 5 && namTu == 0)
+        {
+            btnAssets.setEnabled(true);
+            btnActivity.setEnabled(true);
+
+            btnAssets.setBackgroundResource(R.drawable.custom_button_menu);
+            btnActivity.setBackgroundResource(R.drawable.custom_button_menu);
+        }
         if(namTu!=0) {
             if (age >= TempAge + namTu) {
-                btnRelationship.setEnabled(true);
-                btnActivity.setEnabled(true);
-                scrollView.setBackgroundColor(Color.WHITE);
-                txtScrollviewContent.setVisibility(View.VISIBLE);
-                btnAssets.setEnabled(true);
                 namTu = 0;
                 MainActivity.saveGame.saveNamTu(namTu);
+                MainActivity.saveGame.saveJob("Thất nghiệp");
 
-                if(age > TempAge + namTu)
-                {
-                    MainActivity.createNotification(R.drawable.police,"Bạn đã được thả, hi vọng bạn đã nhận ra tội lỗi của mình", view.getContext());
-                }
+                btnActivity.setEnabled(true);
+                btnRelationship.setEnabled(true);
+                btnAssets.setEnabled(true);
+
+                btnActivity.setBackgroundResource(R.drawable.custom_button_menu);
+                btnRelationship.setBackgroundResource(R.drawable.custom_button_menu);
+                btnAssets.setBackgroundResource(R.drawable.custom_button_menu);
+
+                scrollView.setBackgroundColor(Color.WHITE);
+                txtScrollviewContent.setVisibility(View.VISIBLE);
+                txtJob.setText("Thất nghiệp");
+
+                MainActivity.createNotification(R.drawable.police,
+                        "Bạn đã được thả, hi vọng bạn đã nhận ra tội lỗi của mình",
+                        view.getContext());
+
             } else {
-                MainActivity.createNotification(R.drawable.police, "Bạn còn "+ year +" năm tù trước khi được thả tự do" , view.getContext());
+                MainActivity.createNotification(R.drawable.police,
+                        "Bạn còn "+ year +" năm tù trước khi được thả tự do" ,
+                        view.getContext());
             }
             initNewAge();
             addAgeHTML(age);
@@ -223,7 +240,7 @@ public class FragmentMain extends Fragment {
 //        if (age == 6)
 //        {
 //            saveGame.saveJob("Học sinh");
-//            //Change work
+//            //Chancge work
 //            txtContent.setText("Học sinh");
 //        }
             //lay su kien tuoi
@@ -462,7 +479,33 @@ public class FragmentMain extends Fragment {
         }
         dialog.show();
     }
+    void dialogJobUpgradeEvent(String title) throws JSONException {
+        //Tao dialog asset
+        Dialog dialog = createJobUpgradeDialog();
+        //Toast.makeText(this, "Asset", Toast.LENGTH_SHORT).show();
+        //Anh xa
+        TextView txtContent = dialog.findViewById(R.id.textviewJobUpgradeContent);
+        Button btnAccept = dialog.findViewById(R.id.buttonJobAccept);
+        //Gan gia tri
+        txtContent.setText(jsonResult.getString("event"));
+        JSONArray arrSelect = jsonResult.getJSONArray("select");
+        btnAccept.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                    try {
+                        dialog.dismiss();
+                        JSONArray arr = arrSelect.getJSONArray(0);
+                        jsonResult = arr.getJSONObject(new Random().nextInt(arr.length()));
+                        dialogEventResult(title, false);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+        });
+        dialog.show();
+    }
     void dialogJobEventWithAsset(String title) throws JSONException {
         //Tao dialog asset
         Dialog dialog = createAssetDialog();
@@ -542,7 +585,6 @@ public class FragmentMain extends Fragment {
         int currentSkill = MainActivity.saveGame.getSkill();
         int addSkill = jsonResult.getInt("skill");
         MainActivity.saveGame.saveSkill(currentSkill + addSkill);
-
         JSONArray arrJob = jsonJob.getJSONArray("event");
         for (int i = 0; i < arrJob.length(); i++) {
             //Toast.makeText(MainActivity.this, "error1", Toast.LENGTH_SHORT).show();
@@ -553,10 +595,10 @@ public class FragmentMain extends Fragment {
                     dialogJobEventWithAsset("Công Việc");
                 else if(!jsonResult.getString("newjob").equals(""))
                 {
+                    dialogJobUpgradeEvent("Công Việc");
                     MainActivity.saveGame.saveJob(jsonResult.getString("newjob"));
                     changeWork();
                     MainActivity.saveGame.saveSalary(jsonResult.getInt("salary"));
-                    dialogEventResult("Công việc", false);
                 }
                 else if (jsonResult.getBoolean("selection")) {
                     dialogJobEvent("Công việc");
@@ -579,10 +621,27 @@ public class FragmentMain extends Fragment {
         btn.setLayoutParams(params);
         btn.setTextColor(Color.argb(255, 16, 54, 103));
         dialogCustom.addView(btn);
-
         return btn;
     }
-
+    Dialog createJobUpgradeDialog() {
+        //Dinh dang dialog
+        Dialog dialog = new Dialog(view.getContext());
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_job_upgrade_event);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogEventAnimation;
+        dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
+            @Override
+            public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_BACK) {
+                    return true;
+                }
+                return false;
+            }
+        });
+        return dialog;
+    }
     Dialog createAssetDialog() {
         //Dinh dang dialog
         Dialog dialog = new Dialog(view.getContext());
@@ -758,11 +817,158 @@ public class FragmentMain extends Fragment {
 
     void changeWork() throws JSONException {
         switch (MainActivity.saveGame.getJob()) {
+            case "Trẻ trâu":
+                jsonJob = jsonAllJob.getJSONObject("student");
+                break;
+            case "Tù nhân":
+                jsonJob = jsonAllJob.getJSONObject("Tù nhân");
+                break;
+            case "Ca sĩ đám cưới":
+                jsonJob = jsonAllJob.getJSONObject("Ca sĩ đám cưới");
+                break;
+            case "Ca sĩ phòng trà":
+                jsonJob = jsonAllJob.getJSONObject("Ca sĩ phòng trà");
+                break;
+            case "Ca sĩ thần tượng":
+                jsonJob = jsonAllJob.getJSONObject("Ca sĩ thần tượng");
+                break;
+            case "DIVA":
+                jsonJob = jsonAllJob.getJSONObject("DIVA");
+                break;
             case "Lập trình viên":
                 jsonJob = jsonAllJob.getJSONObject("coder");
                 break;
-            case "Trẻ trâu":
-                jsonJob = jsonAllJob.getJSONObject("student");
+            case "Chuyên gia công nghệ":
+                jsonJob = jsonAllJob.getJSONObject("Chuyên gia công nghệ");
+                break;
+            case "Chủ tịch tập đoàn công nghệ thông tin":
+                jsonJob = jsonAllJob.getJSONObject("Chủ tịch tập đoàn công nghệ thông tin");
+                break;
+            case "Cài WIN dạo":
+                jsonJob = jsonAllJob.getJSONObject("Cài WIN dạo");
+                break;
+            case "Phụ bếp":
+                jsonJob = jsonAllJob.getJSONObject("Phụ bếp");
+                break;
+            case "Đầu bếp":
+                jsonJob = jsonAllJob.getJSONObject("Đầu bếp");
+                break;
+            case "Chuyên gia ẩm thực":
+                jsonJob = jsonAllJob.getJSONObject("Chuyên gia ẩm thực");
+                break;
+            case "VUA ĐẦU BẾP":
+                jsonJob = jsonAllJob.getJSONObject("VUA ĐẦU BẾP");
+                break;
+            case "Phóng viên":
+                jsonJob = jsonAllJob.getJSONObject("Phóng viên");
+                break;
+            case "Trưởng chuyên mục":
+                jsonJob = jsonAllJob.getJSONObject("Trưởng chuyên mục");
+                break;
+            case "Thư ký tòa soạn":
+                jsonJob = jsonAllJob.getJSONObject("Thư ký tòa soạn");
+                break;
+            case "Tổng biên tập":
+                jsonJob = jsonAllJob.getJSONObject("Tổng biên tập");
+                break;
+            case "Cầu thủ dự bị":
+                jsonJob = jsonAllJob.getJSONObject("Cầu thủ dự bị");
+                break;
+            case "Chân sút triển vọng":
+                jsonJob = jsonAllJob.getJSONObject("Chân sút triển vọng");
+                break;
+            case "Ngôi sao bóng đá":
+                jsonJob = jsonAllJob.getJSONObject("Ngôi sao bóng đá");
+                break;
+            case "Huyền thoại bóng đá":
+                jsonJob = jsonAllJob.getJSONObject("Huyền thoại bóng đá");
+                break;
+            case "Bồi bàn":
+                jsonJob = jsonAllJob.getJSONObject("Bồi bàn");
+                break;
+            case "Thu ngân":
+                jsonJob = jsonAllJob.getJSONObject("Thu ngân");
+                break;
+            case "Quản lý nhà hàng":
+                jsonJob = jsonAllJob.getJSONObject("Quản lý nhà hàng");
+                break;
+            case "Chủ nhà hàng":
+                jsonJob = jsonAllJob.getJSONObject("Chủ nhà hàng");
+                break;
+            case "Diễn viên đóng thế":
+                jsonJob = jsonAllJob.getJSONObject("Diễn viên đóng thế");
+                break;
+            case "Diễn viên chính":
+                jsonJob = jsonAllJob.getJSONObject("Diễn viên chính");
+                break;
+            case "Ngôi sao điện ảnh":
+                jsonJob = jsonAllJob.getJSONObject("Ngôi sao điện ảnh");
+                break;
+            case "Thực tập sinh":
+                jsonJob = jsonAllJob.getJSONObject("Thực tập sinh");
+                break;
+            case "Giáo viên":
+                jsonJob = jsonAllJob.getJSONObject("Giáo viên");
+                break;
+            case "Trưởng bộ môn":
+                jsonJob = jsonAllJob.getJSONObject("Trưởng bộ môn");
+                break;
+            case "Hiệu trưởng":
+                jsonJob = jsonAllJob.getJSONObject("Hiệu trưởng");
+                break;
+            case "Bán hàng rong":
+                jsonJob = jsonAllJob.getJSONObject("Bán hàng rong");
+                break;
+            case "Chủ shop online":
+                jsonJob = jsonAllJob.getJSONObject("Chủ shop online");
+                break;
+            case "Quản lý siêu thị mini":
+                jsonJob = jsonAllJob.getJSONObject("Quản lý siêu thị mini");
+                break;
+            case "Binh nhất":
+                jsonJob = jsonAllJob.getJSONObject("Binh nhất");
+                break;
+            case "Trung sĩ":
+                jsonJob = jsonAllJob.getJSONObject("Trung sĩ");
+                break;
+            case "Thượng úy":
+                jsonJob = jsonAllJob.getJSONObject("Thượng úy");
+                break;
+            case "Đại tá":
+                jsonJob = jsonAllJob.getJSONObject("Đại tá");
+                break;
+            case "Nhân viên sale":
+                jsonJob = jsonAllJob.getJSONObject("Nhân viên sale");
+                break;
+            case "Trưởng phòng marketing":
+                jsonJob = jsonAllJob.getJSONObject("Trưởng phòng marketing");
+                break;
+            case "Giám đốc kinh doanh":
+                jsonJob = jsonAllJob.getJSONObject("Giám đốc kinh doanh");
+                break;
+            case "Chạy Grab":
+                jsonJob = jsonAllJob.getJSONObject("Chạy Grab");
+                break;
+            case "Tài xế Taxi":
+                jsonJob = jsonAllJob.getJSONObject("Tài xế Taxi");
+                break;
+            case "Quản lý đội xe":
+                jsonJob = jsonAllJob.getJSONObject("Quản lý đội xe");
+                break;
+            case "Chủ công ty Taxi":
+                jsonJob = jsonAllJob.getJSONObject("Chủ công ty Taxi");
+                break;
+            case "Bác sĩ thực tập":
+                jsonJob = jsonAllJob.getJSONObject("Bác sĩ thực tập");
+                break;
+            case "Bác sĩ chính":
+                jsonJob = jsonAllJob.getJSONObject("Bác sĩ chính");
+                break;
+            case "Bác sĩ trưởng khoa":
+                jsonJob = jsonAllJob.getJSONObject("Bác sĩ trưởng khoa");
+                break;
+            case "Viện trưởng":
+                jsonJob = jsonAllJob.getJSONObject("Viện trưởng");
                 break;
         }
     }
@@ -847,6 +1053,13 @@ public class FragmentMain extends Fragment {
         MainActivity.saveGame.saveJogging(0);
         MainActivity.saveGame.saveJogging(0);
         MainActivity.saveGame.saveCrime(0);
+
+        btnAssets.setEnabled(false);
+        btnActivity.setEnabled(false);
+
+        btnAssets.setBackgroundResource(R.drawable.list_item_unable);
+        btnActivity.setBackgroundResource(R.drawable.list_item_unable);
+
         txtJob.setText(MainActivity.saveGame.getJob());
         txtMoney.setText("0 VND");
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
@@ -1109,8 +1322,6 @@ public class FragmentMain extends Fragment {
         }
     }
 
-    
-
     void changeProgressBackground(ProgressBar pb) {
         int progress = pb.getProgress();
         if (progress >= 80)
@@ -1211,23 +1422,43 @@ public class FragmentMain extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_main, container, false);
         AnhXa();
-
         MainActivity.saveGame.setOnLoaded(new LoadDone() {
             @Override
             public void onLoaded() {
                 prbLoadData.setVisibility(ProgressBar.INVISIBLE);
                 //Toast.makeText(MainActivity.this, "Loaded " + time, Toast.LENGTH_SHORT).show();
                 namTu = MainActivity.saveGame.getNamTu();
+                tienAn = MainActivity.saveGame.getTienAn();
+
+                if(MainActivity.saveGame.getAge() <= 6)
+                {
+                    btnAssets.setEnabled(false);
+                    btnActivity.setEnabled(false);
+
+                    btnAssets.setBackgroundResource(R.drawable.list_item_unable);
+                    btnActivity.setBackgroundResource(R.drawable.list_item_unable);
+                }
                 if(namTu!=0)
                 {
-                    MainActivity.createNotification(R.drawable.police,"Bạn đã bị bắt, bạn cần phải xám hối cho những hành vi tội lỗi của mình, hiện tại bạn sẽ không thể thực hiện được một số hoạt động thường ngày của mình",view.getContext());
+                    MainActivity.saveGame.saveJob("Tù nhân");
                     TempAge = MainActivity.saveGame.getAge();
-                    scrollView.setBackgroundResource(R.drawable.background_prison);
-                    txtScrollviewContent.setVisibility(View.INVISIBLE);
+
                     btnAssets.setEnabled(false);
                     btnActivity.setEnabled(false);
                     btnRelationship.setEnabled(false);
+
+                    btnAssets.setBackgroundResource(R.drawable.list_item_unable);
+                    btnActivity.setBackgroundResource(R.drawable.list_item_unable);
+                    btnRelationship.setBackgroundResource(R.drawable.list_item_unable);
+
+                    scrollView.setBackgroundResource(R.drawable.background_prison);
+                    txtScrollviewContent.setVisibility(View.INVISIBLE);
+                    
+                    MainActivity.createNotification(R.drawable.police,
+                            "Bạn bị bắt vì tội " + tienAn +", bạn sẽ không thể thực hiện được một số hoạt động thường ngày của mình",
+                            view.getContext());
                 }
+
                 try {
                     if (MainActivity.saveGame.getDetailActivity().equals("")) {
                         MainActivity mainActivity = (MainActivity) getActivity();
@@ -1264,6 +1495,7 @@ public class FragmentMain extends Fragment {
             public void onClick(View v) {
                 try {
                     doWork();
+                    Toast.makeText(view.getContext(), String.valueOf(MainActivity.saveGame.getSkill()), Toast.LENGTH_SHORT).show();
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }

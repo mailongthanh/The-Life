@@ -169,7 +169,7 @@
       {
         "require": 20,
         "event": "Bạn được bố mẹ cho đi du lịch vì thành tích học tập xuất sắc. Bạn muốn đi đâu ?",
-        "asset": "PT02",
+        "asset": "",
         "newjob": "",
         "selection": true,
         "select": [
@@ -401,17 +401,6 @@
               "smart": 0,
               "appearance": 0
             }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục với công việc ca sĩ đám cưới",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
           ]
         ]
       }
@@ -521,17 +510,6 @@
               "smart": 0,
               "appearance": 0
             }
-          ],
-          [
-            {
-              "event": "Bạn vẫn tiếp tục với công việc Ca sĩ phòng trà",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
           ]
         ]
       }
@@ -610,17 +588,6 @@
               "salary": 100000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là một ca sĩ thần tượng lương 50 triệu/ 1 năm",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -791,17 +758,6 @@
               "smart": 0,
               "appearance": 0
             }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục với công việc lập trình viên",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
           ]
         ]
       }
@@ -907,23 +863,12 @@
               "smart": 0,
               "appearance": 0
             }
-          ],
-          [
-            {
-              "event": "Bạn vẫn tiếp tục với công việc Chuyên gia công nghệ",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
           ]
         ]
       }
     ]
   },
-  "Cài win dạo": {
+  "Cài WIN dạo": {
     "work": [
       {
         "content": "Tới nhà khách cài win",
@@ -1010,17 +955,6 @@
               "salary": 20000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là một người cài Win dạo tháng 5 triệu",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -1214,17 +1148,6 @@
               "smart": 0,
               "appearance": 0
             }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là một phụ bếp",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
           ]
         ]
       }
@@ -1321,17 +1244,6 @@
               "smart": 0,
               "appearance": 0
             }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là một đầu bếp",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
           ]
         ]
       }
@@ -1410,17 +1322,6 @@
               "salary": 20000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là một chuyên gia ẩm thực",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -1513,6 +1414,15 @@
             "smart": 0,
             "appearance": 0,
             "skill": 5
+          },
+          {
+            "event": "Tháng này bạn có 7 bài viết rất chất lượng bạn được thưởng 4 triệu",
+            "assets": 3000,
+            "happy": 5,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 5
           }
         ]
       }
@@ -1532,17 +1442,6 @@
               "salary": 25000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là phóng viên",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -1620,17 +1519,6 @@
               "smart": 0,
               "appearance": 0
             }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục trưởng chuyên mục",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
           ]
         ]
       }
@@ -1700,17 +1588,6 @@
               "salary": 20000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là thư ký tòa soạn",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -1826,17 +1703,6 @@
               "smart": 0,
               "appearance": 0
             }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là cầu thủ dự bị",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
           ]
         ]
       }
@@ -1915,17 +1781,6 @@
               "salary": 100000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là chân sút triển vọng",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -2031,17 +1886,6 @@
               "salary": 200000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là ngôi sao bóng đá",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -2180,17 +2024,6 @@
               "smart": 0,
               "appearance": 0
             }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là một bồi bàn",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
           ]
         ]
       }
@@ -2241,17 +2074,6 @@
               "smart": 0,
               "appearance": 0
             }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục làm ở nhà hàng cũ với vai trò thu ngân",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
           ]
         ]
       }
@@ -2298,17 +2120,6 @@
               "salary": 100000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là quản lý của nhà hàng cũ",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -2460,17 +2271,6 @@
               "smart": 0,
               "appearance": 0
             }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là một diễn viên đóng thế",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
           ]
         ]
       }
@@ -2576,17 +2376,6 @@
               "salary": 150000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là diễn viên chính",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -2725,17 +2514,6 @@
               "smart": 0,
               "appearance": 0
             }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là một thực tập sinh",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
           ]
         ]
       }
@@ -2805,17 +2583,6 @@
               "salary": 20000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là giáo viên",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -2907,17 +2674,6 @@
               "salary": 20000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là một người cài Win dạo tháng 5 triệu",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -3033,17 +2789,6 @@
               "smart": 0,
               "appearance": 0
             }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là nguời bán hàng rong",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
           ]
         ]
       }
@@ -3090,17 +2835,6 @@
               "salary": 40000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục chủ shop online",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -3204,7 +2938,8 @@
         "asset": "",
         "name": "",
         "newjob": "Trung sĩ",
-        "selection": false,
+        "oldjob": "Binh nhất",
+        "selection": true,
         "select": [
           [
             {
@@ -3212,17 +2947,6 @@
               "salary": 15000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là binh nhất",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -3292,7 +3016,7 @@
     ],
     "event": [
       {
-        "require": 50,
+        "require": 40,
         "event": "Bạn được thăng hàm lên làm Thượng úy. Bạn có đồng ý không?",
         "asset": "",
         "name": "",
@@ -3305,17 +3029,6 @@
               "salary": 25000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là trung sĩ",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -3366,17 +3079,6 @@
               "salary": 50000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là Thượng úy",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -3497,17 +3199,6 @@
               "smart": 0,
               "appearance": 0
             }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là nhân viên sale",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
           ]
         ]
       }
@@ -3586,17 +3277,6 @@
               "salary": 50000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là trưởng phòng marketing",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -3702,17 +3382,6 @@
               "smart": 0,
               "appearance": 0
             }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là một người chạy Grab",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
           ]
         ]
       }
@@ -3759,17 +3428,6 @@
               "salary": 15000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là tài xế taxi",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -3829,17 +3487,6 @@
               "salary": 100000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là quản lý đội xe của công ty cũ",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0
@@ -3996,17 +3643,6 @@
               "smart": 0,
               "appearance": 0
             }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là bác sĩ thực tập",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
           ]
         ]
       }
@@ -4107,17 +3743,6 @@
               "smart": 0,
               "appearance": 0
             }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là bác sĩ chính",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
           ]
         ]
       }
@@ -4196,17 +3821,6 @@
               "salary": 150000,
               "assets": 0,
               "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn tiếp tục là bác sĩ trưởng khoa",
-              "salary": 0,
-              "assets": 0,
-              "happy": 0,
               "health": 0,
               "smart": 0,
               "appearance": 0

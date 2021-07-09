@@ -64,12 +64,12 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\layout\\activity_job_kinh_doanh.xml"
     },
     {
-        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_holding_hands.png.flat",
-        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\holding_hands.png"
-    },
-    {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_saler.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\saler.png"
+    },
+    {
+        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_holding_hands.png.flat",
+        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\holding_hands.png"
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tennis_racket.png.flat",
@@ -84,12 +84,12 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\hospital.png"
     },
     {
-        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_girl_5.png.flat",
-        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\girl_5.png"
-    },
-    {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_supermarket.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\supermarket.png"
+    },
+    {
+        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_girl_5.png.flat",
+        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\girl_5.png"
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_chutichtapdoan.png.flat",
@@ -176,12 +176,12 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\uit.png"
     },
     {
-        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dragon.png.flat",
-        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\dragon.png"
-    },
-    {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_boy_8.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\boy_8.png"
+    },
+    {
+        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dragon.png.flat",
+        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\dragon.png"
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset.png.flat",
@@ -240,12 +240,12 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\layout\\activity_degree.xml"
     },
     {
-        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_masion.png.flat",
-        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\masion.png"
-    },
-    {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_reporter.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\reporter.png"
+    },
+    {
+        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_masion.png.flat",
+        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\masion.png"
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_noodle.png.flat",
@@ -276,12 +276,12 @@
         "source": "D:\\The-Life\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bike.png.flat",
-        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\bike.png"
-    },
-    {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_degree.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\degree.png"
+    },
+    {
+        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bike.png.flat",
+        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\bike.png"
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_shopping.xml.flat",
@@ -344,12 +344,12 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\massage.png"
     },
     {
-        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_daubep.png.flat",
-        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\daubep.png"
-    },
-    {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_altp_5050.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\altp_5050.png"
+    },
+    {
+        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_daubep.png.flat",
+        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\daubep.png"
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cantho.png.flat",
@@ -374,6 +374,10 @@
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_factory.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\factory.png"
+    },
+    {
+        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dragontatoo.png.flat",
+        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\dragontatoo.png"
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_main.xml.flat",
@@ -564,12 +568,12 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\layout\\activity_ailatrieuphu_ing.xml"
     },
     {
-        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_otl.gif.flat",
-        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\otl.gif"
-    },
-    {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_boy_2.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\boy_2.png"
+    },
+    {
+        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_otl.gif.flat",
+        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\otl.gif"
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_career.png.flat",
@@ -588,16 +592,16 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\quanlynhahang.png"
     },
     {
-        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back.png.flat",
-        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\back.png"
+        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_kitchenhelper.png.flat",
+        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\kitchenhelper.png"
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_book.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\book.png"
     },
     {
-        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_kitchenhelper.png.flat",
-        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\kitchenhelper.png"
+        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back.png.flat",
+        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\back.png"
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_substitution.png.flat",
@@ -640,12 +644,12 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\waiter.png"
     },
     {
-        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_beer.png.flat",
-        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\beer.png"
-    },
-    {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bachkhoa.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\bachkhoa.png"
+    },
+    {
+        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_beer.png.flat",
+        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\beer.png"
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -678,6 +682,10 @@
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_idol.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\idol.png"
+    },
+    {
+        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_job_upgrade_event.xml.flat",
+        "source": "D:\\The-Life\\app\\src\\main\\res\\layout\\dialog_job_upgrade_event.xml"
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_suphamkithuat.png.flat",
@@ -848,6 +856,10 @@
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\smartphones.png"
     },
     {
+        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_eagle.png.flat",
+        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\eagle.png"
+    },
+    {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_diva.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\diva.png"
     },
@@ -930,6 +942,10 @@
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bistro.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\bistro.png"
+    },
+    {
+        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ugly.png.flat",
+        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\ugly.png"
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_angiang.png.flat",
@@ -1058,6 +1074,10 @@
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_painttool.png.flat",
         "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\painttool.png"
+    },
+    {
+        "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tiger.png.flat",
+        "source": "D:\\The-Life\\app\\src\\main\\res\\drawable\\tiger.png"
     },
     {
         "merged": "D:\\The-Life\\app\\build\\intermediates\\res\\merged\\debug\\drawable_diamondv.png.flat",
