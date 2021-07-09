@@ -104,7 +104,6 @@ public class FragmentMain extends Fragment {
     String contentHtml;
     int money, TempAge, namTu;
     int REQUEST_CODE_INIT = 123;
-
     CircleImageView imgUserAvatar;
     TextView txtUserName, txtPlayerName;
 
@@ -552,12 +551,15 @@ public class FragmentMain extends Fragment {
             if (currentSkill < require && currentSkill + addSkill >= require) {
                 if (!jsonResult.getString("asset").equals(""))
                     dialogJobEventWithAsset("Công Việc");
-                else if (jsonResult.getBoolean("selection")) {
-                    dialogJobEvent("Công việc");
-                } else {
+                else if(!jsonResult.getString("newjob").equals(""))
+                {
+                    MainActivity.saveGame.saveJob(jsonResult.getString("newjob"));
+                    changeWork();
                     MainActivity.saveGame.saveSalary(jsonResult.getInt("salary"));
                     dialogEventResult("Công việc", false);
-                    //Toast.makeText(MainActivity.this, "error", Toast.LENGTH_SHORT).show();
+                }
+                else if (jsonResult.getBoolean("selection")) {
+                    dialogJobEvent("Công việc");
                 }
                 break;
             }
