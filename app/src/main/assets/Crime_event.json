@@ -2,30 +2,32 @@
   "Móc túi": [
     {"event": "Bạn lượn 1 vòng công viên, bạn móc được 1 vài chiếc smartphone của người đi đường", "asset":"", "selection": false, "assets": 1000, "happy": 5, "health": 0, "smart":0, "appearance": -5},
     {"event": "Bạn lượn 1 vòng thành phố, bạn chuẩn bị móc túi của một người đi đường thì bị anh ta tóm được, bạn bị đấm cho mấy phát nhưng may mắn bạn chạy trốn được", "asset":"","selection": false, "assets": 0, "happy": -15, "health": -20, "smart":0, "appearance": -5},
-    {"event": "Bạn giả vờ vấp ngã, nhờ người khác đỡ dậy, bạn lợi dụng lúc họ sơ ý bạn móc được ví của họ", "asset":"", "selection": false, "assets": 3000, "happy": 5, "health": 0, "smart":0, "appearance": -5},
+    {"event": "Bạn giả vờ vấp ngã, nhờ người khác đỡ dậy, bạn lợi dụng lúc họ sơ ý bạn móc được ví của họ", "asset":"", "selection": false, "assets": 2000, "happy": 5, "health": 0, "smart":0, "appearance": -5},
+    {"event": "Sau nhiều lần hành tẩu giang hồ, thì bạn không may bị bắt, bạn chỉ bị nhắc nhở, và phạt hành chính", "asset":"", "selection": false, "assets": -1000, "happy": -5, "health": 0, "smart":0, "appearance": 0},
     {"event": "Bạn bị bắt gặp là đang móc ví, đối phương doạ là sẽ báo cảnh sát bắt bạn, bạn có muốn trừ khử người này không ?", "asset":"dao", "name": "dao","selection": true,
       "select":[
         [
-          {"event": "Sau khi thủ tiêu đối phương, bạn đã giấu ở một nơi trời không biết đất không hay, và do đối phương là một người cô độc, chỉ còn 1 mình trên đời nên không một ai biết bạn đã làm gì","year":0,"criminal":"", "assets": 100000, "happy": -50, "health": -20, "smart":0, "appearance": -10},
+          {"event": "Sau khi thủ tiêu đối phương, bạn đã giấu ở một nơi trời không biết đất không hay, và do đối phương là một người cô độc, chỉ còn 1 mình trên đời nên không một ai biết bạn đã làm gì","year":0,"criminal":"", "assets": 10000, "happy": -30, "health": -20, "smart":0, "appearance": -10},
           {"event": "Sau khi thủ tiêu đối phương, bạn bắt đầu trở nên ân hận vì tội lỗi mà mình gây ra, bạn bị ám ảnh với tội ác của mình, cuối cùng kết thúc cuộc đời bằng việc tự sát", "year":0,"criminal":"", "assets": 0, "happy": 0, "health": -100, "smart":0, "appearance": 0},
-          {"event": "Sau khi thủ tiêu đối phương, mấy ngày sau bạn liền bị gọi tới cơ quan chức năng để điều tra, với bằng chứng đầy đủ, cuối cùng bạn không thoát khỏi được tội ác của mình, tịch thu vật chứng và án tù 5 năm", "year":5,"criminal":"giết người", "assets": 0, "happy": -30, "health": -20, "smart":0, "appearance": -20}
+          {"event": "Sau khi thủ tiêu đối phương, mấy ngày sau bạn liền bị gọi tới cơ quan chức năng để điều tra, với bằng chứng đầy đủ, cuối cùng bạn không thoát khỏi được tội ác của mình, tịch thu vật chứng và án tù 5 năm", "year":5,"criminal":"giết người", "assets": 0, "happy": -20, "health": -20, "smart":0, "appearance": -20}
         ],
         [
-          {"event": "Bạn vờ như không nghe, bạn giật đồ rồi bỏ chạy, cũng may những lời nói đó chỉ là hù doạ","year":0,"criminal":"", "assets": 100000, "happy": 30, "health": 0, "smart":0, "appearance": 0},
-          {"event": "Bạn lo sợ mà từ bỏ rồi chạy đi mất, cũng may những lời nói đó chỉ là những lời hâm doạ suông","year":0,"criminal":"", "assets": 0, "happy": 20, "health": 0, "smart":0, "appearance": 0},
-          {"event": "Bạn phớt lờ rồi giựt ví chạy đi mất, mấy ngày sau bạn bị gọi lên điều tra, do tính chất phạm tội chưa quá nguy hiểm, nên bạn chị bị tịch thu tài sản và phạt hành chính răn đe","year":0,"criminal":"", "assets": -10000, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+          {"event": "Bạn vờ như không nghe, bạn giật đồ rồi bỏ chạy, cũng may những lời nói đó chỉ là hù doạ","year":0,"criminal":"", "assets": 5000, "happy": 30, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn lo sợ mà từ bỏ rồi chạy đi mất, cũng may những lời nói đó chỉ là những lời hâm doạ suông","year":0,"criminal":"", "assets": 0, "happy": 10, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn phớt lờ rồi giựt ví chạy đi mất, mấy ngày sau bạn bị gọi lên điều tra, do tính chất phạm tội chưa quá nguy hiểm, nên bạn chỉ bị tịch thu tài sản và phạt hành chính răn đe","year":0,"criminal":"", "assets": -5000, "happy": 0, "health": 0, "smart":0, "appearance": 0}
         ]
       ]},
     {"event": "Bạn móc túi của một quý bà trên đường thì bị phát hiện, mụ cảnh cáo bạn nếu bạn giúp tạt axit vào người dụ dỗ chồng mụ thì sẽ được thưởng, ngược lại mụ sẽ kiện bạn ra toà \n\nBạn quyết định ra sao ?",  "asset":"poison", "name": "thuốc độc", "selection": true,
       "select" : [
         [
-          {"event": "Bạn sợ hãi nghe theo lệnh bà ta, sau nhiều lần lẫn trốn thì cuối cùng bạn cũng bị bắt, và chịu tội án 3 năm tù cho hành vi của mình","year":3,"criminal":"cố ý gây thương tích", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
-          {"event": "Bạn sợ hãi nghe theo lệnh bà ta, nhưng không may thay đối tượng là vợ của một ông trùm băng đảng thế là bạn bị vạ lây vào ẩu đả thanh toán băng đảng, bạn chịu nhiều thương tích sau cuộc ẩu đả","year":0, "criminal":"","assets": 0, "happy": 0, "health": -30, "smart":0, "appearance": 0},
+          {"event": "Bạn sợ hãi nghe theo lệnh bà ta, sau nhiều lần lẫn trốn thì cuối cùng bạn cũng bị bắt, và chịu tội án 3 năm tù cho hành vi của mình","year":3,"criminal":"cố ý gây thương tích", "assets": 0, "happy": -10, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn sợ hãi nghe theo lệnh bà ta, nhưng không may đối tượng là vợ của một ông trùm băng đảng thế là bạn bị vạ lây vào ẩu đả thanh toán băng đảng, bạn chịu nhiều thương tích sau cuộc ẩu đả","year":0, "criminal":"","assets": 0, "happy": -10, "health": -30, "smart":0, "appearance": 0},
           {"event": "Bạn sợ hãi nghe theo lệnh bà ta, thực hiện xong bà ta cũng đã tặng thưởng cho bạn 1 phần tiền lớn","year":0,"criminal":"", "assets": 10000, "happy": 0, "health": 0, "smart":0, "appearance": 0}
         ],
         [
           {"event": "Bạn từ chối yêu cầu của bà ta, \n\n'CẮT!!!'\n\n Hoá ra nãy giờ chỉ là đang diễn kịch mà thôi, bạn thở phào nhẹ nhõm", "year":0,"criminal":"","assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
-          {"event": "Bạn từ chối yêu cầu của bà ta, bạn tiết lộ kế hoạch với đối tượng mà mụ nhắm tới, hoá ra đối tượng cũng là một quý bà xửng xỏ trong giới kinh doanh, thế là bạn được bảo kê nhờ thông tin của mình" ,"year":0, "criminal":"", "assets": 10000, "happy": 0, "health": 0, "smart":0, "appearance": 0}
+          {"event": "Bạn từ chối yêu cầu của bà ta, bạn tiết lộ kế hoạch với đối tượng mà mụ nhắm tới, hoá ra đối tượng cũng là một quý bà xửng xỏ trong giới kinh doanh, thế là bạn được bảo kê nhờ thông tin của mình" ,"year":0, "criminal":"", "assets": 10000, "happy": 10, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn từ chối yêu cầu của bà ta rồi chạy đi mất, không lâu sau bạn bị một đám vệ sĩ của mụ vây đánh", "year":0,"criminal":"","assets": 0, "happy": 0, "health": -30, "smart":0, "appearance": 0}
         ]
   ]}],
   "Cướp cửa hàng": [
@@ -33,15 +35,14 @@
       "select": [
         [
           {"event": "Bạn giết chủ tiệm rồi bỏ trốn, do không có đủ chứng cứ nên vụ án đã bị đưa vào ngõ cụt và kết thúc ","year":0, "criminal":"", "assets": 100000, "happy": 0, "health": 0, "smart":0, "appearance": 0},
-          {"event": "Bạn giết chủ tiệm rồi bỏ trốn, tuy nhiên bạn bị phát hiện bởi camera cửa tiệm, bạn lãnh án 5 năm tù giam","year":5, "criminal":"giết người", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
-          {"event": "Bạn giết chủ tiệm rồi bỏ trốn, tuy nhiên bạn bị phát hiện bởi camera cửa tiệm, bạn lãnh án 5 năm tù giam","year":5, "criminal":"giết người",  "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
-          {"event": "Bạn giết chủ tiệm rồi bỏ trốn, tuy nhiên bạn bị phát hiện bởi camera cửa tiệm, bạn lãnh án 5 năm tù giam","year":5, "criminal":"giết người", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
-
+          {"event": "Bạn giết chủ tiệm rồi bỏ trốn, tuy nhiên bạn bị phát hiện bởi camera cửa tiệm, bạn lãnh án 5 năm tù giam","year":5, "criminal":"giết người", "assets": 0, "happy": -20, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn bắn lệch vào tay trái của chủ tiệm, bạn bị cướp súng và cuối cùng bị đánh ngã quỵ xuống đất, cuối cùng bạn chịu án 3 năm tù","year":3, "criminal":"giết người không thành công",  "assets": 0, "happy": -10, "health": 0, "smart":0, "appearance": 0}
         ],
         [
           {"event": "Bạn không có vật gì để đối kháng, chỉ đành bỏ trốn chạy ra ngoài, mấy ngày sau bạn bị cơ quan chức năng mời làm việc, bạn tự thú và chỉ bị phạt hành chính và tịch thu số vàng trộm được","year":0, "criminal":"", "assets": -100000, "happy": 0, "health": 0, "smart":0, "appearance": 0},
           {"event": "Bạn không có vật gì để đối kháng, bạn cũng không có đường nào để chạy, bạn tuyệt vọng, chủ nhà cảm thấy có chút đồng cảm với bạn, cho bạn 1 ít tiền và hi vọng bạn sẽ sống lương thiện","year":0, "criminal":"", "assets": 500, "happy": 5, "health": 0, "smart":0, "appearance": 0},
-          {"event": "Bạn không có đường nào để chạy, bạn bị chủ nhà đấm cho ra bã, cũng may cuối cùng bạn cũng chạy thoát ra ngoài cửa sổ","year":0, "criminal":"", "assets": 0, "happy": -5, "health": -10, "smart":0, "appearance": 0}
+          {"event": "Bạn không có đường nào để chạy, bạn bị chủ nhà đấm cho ra bã, cũng may cuối cùng bạn cũng chạy thoát ra ngoài cửa sổ","year":0, "criminal":"", "assets": 0, "happy": -5, "health": -10, "smart":0, "appearance": 0},
+          {"event": "Bạn đành buông tay chịu trói, với hành vi của mình bạn bị bắt giam 1 năm tù","year":1, "criminal":"trộm cắp tài sản", "assets": 0, "happy": -10, "health": -10, "smart":0, "appearance": 0}
         ]
         ]},
     {"event": "Bạn vào một tiệm bánh mì gần đó, chôm số tiền để trong két tủ trong lúc chủ tiệm đi mất, bạn mừng thầm vì hôm nay bạn kiếm được khá nhiều", "asset":"", "selection": false, "assets": 5000, "happy": 5, "health": 0, "smart":0, "appearance": 0},
@@ -52,7 +53,9 @@
   ],
   "Buôn rau": [
     {"event": "Bạn đang trên đường vận chuyển cần sa thì chẳng may, có một con gấu tấn công bạn từ phía sau xe, bạn sợ quá bỏ xe mà chạy, để lại đống cần sa giữa rừng", "year":0, "criminal":"", "selection": false, "assets": -10000, "happy": -10, "health": 0, "smart":0, "appearance": 0},
-    {"event": "Sau nhiều phong ba bão táp, cuối cùng bạn cũng vận chuyển được số cần, cuộc sống của bạn bước sang trang mới tại đây", "year":0, "criminal":"", "selection": false, "assets": 100000, "happy": 10, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Sau nhiều phong ba bão táp, cuối cùng bạn cũng vận chuyển được số cần sa, cuộc sống của bạn bước sang trang mới tại đây", "year":0, "criminal":"", "selection": false, "assets": 10000, "happy": 10, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Vừa mới ngày đầu giao cần sa, bạn đã bị tóm gọn, có lẽ bạn không hợp với nghề này. Bạn chịu án 3 năm tù", "year":3, "criminal":"vận chuyển chất gây nghiện", "selection": false, "assets": 0, "happy": -10, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Sau nhiều phong ba bão táp, cuối cùng bạn cũng vận chuyển được đến vị trí giao, tuy nhiên bạn bị công an phục kích bất ngờ tại đây. Bạn lãnh án 5 năm tù giam", "year":5, "criminal":"vận chuyển chất gây nghiện", "selection": false, "assets": 0, "happy": -10, "health": 0, "smart":0, "appearance": 0},
     {"event": "Trên đường đi giao dịch thì bỗng xe bạn bị hư, cần phải sửa chửa nhanh chóng trước khi bị nghi ngờ", "asset":"toolbox", "name": "bộ công cụ","selection": true,
       "select":[
         [
@@ -72,7 +75,8 @@
     {"event": "Bạn nảy ra ý tưởng đánh cấp dữ liệu người dùng facebook để bán, tuy nhiên cần có một máy tính để hỗ trợ ?", "asset":"laptop", "name": "máy tính","selection": true,
       "select":[
         [
-          {"event": "Bạn hack thành công facebook, và kiếm tiền triệu nhờ vào buôn bán thông tin người dùng facebook","year":0,"criminal":"", "assets": 100000, "happy": 10, "health": 0, "smart":5, "appearance": 0},
+          {"event": "Bạn hack thành công facebook, nhưng khoan, đây hình như chỉ là cái bẫy do cục An Ninh mạng bày sẵn, bạn đã bị lừa. Bạn lãnh án 5 năm tù giam ",  "year":5, "criminal":"đánh cấp thông tin chuộc lợi","assets": 0, "happy": -10, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn hack thành công facebook, và kiếm tiền triệu nhờ vào buôn bán thông tin người dùng facebook","year":0,"criminal":"", "assets": 10000, "happy": 10, "health": 0, "smart":5, "appearance": 0},
           {"event": "Bạn hack không thành công facebook, trái lại bạn còn bị truy vết và tra cứu trách nhiệm hình sự, lãnh án 4 năm tù", "year":4,"criminal":"đánh cắp thông tin chuộc lợi", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
           {"event": "Bạn hack thành công facebook, tuy nhiên thông tin dữ liệu người dùng lại không có giá trị như bạn nghĩ", "year":0, "criminal":"","assets": 100, "happy": -5, "health": 0, "smart":0, "appearance": 0},
           {"event": "Bạn hack không thành công facebook, nhưng nhờ vào sự nhạy bén của mình, bạn đã che giấu được thông tin và không bị phát hiện", "year":0, "criminal":"", "assets": 0, "happy": 10, "health": 0, "smart":10, "appearance": 0}
@@ -85,7 +89,8 @@
       "select":[
         [
           {"event": "Bạn hack thành công NASA, và kiếm tiền triệu nhờ vào tống tiền chính NASA","year":0, "criminal":"", "assets": 100000, "happy": 10, "health": 0, "smart":5, "appearance": 0},
-          {"event": "Bạn hack không thành công NASA, trái lại bạn còn bị truy vết và tra cứu trách nhiệm hình sự, lãnh án 6 năm tù",  "year":6, "criminal":"đánh cấp thông tin chuộc lợi","assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn hack không thành công NASA, trái lại bạn còn bị truy vết và tra cứu trách nhiệm hình sự, lãnh án 6 năm tù",  "year":6, "criminal":"đánh cấp thông tin chuộc lợi","assets": 0, "happy": -10, "health": 0, "smart":0, "appearance": 0},
+          {"event": "Bạn hack thành công NASA, nhưng khoan, đây hình như chỉ là cái bẫy do cục An Ninh mạng bày sẵn, bạn đã bị lừa. Bạn lãnh án 5 năm tù giam ",  "year":5, "criminal":"đánh cấp thông tin chuộc lợi","assets": 0, "happy": -10, "health": 0, "smart":0, "appearance": 0},
           {"event": "Bạn hack thành công NASA, tuy nhiên bên họ tìm kiếm được một hacker tài năng hơn đánh bại bạn, thế là bạn đành bó tay",  "year":0, "criminal":"", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
           {"event": "Bạn hack không thành công NASA, nhưng nhờ vào sự nhạy bén của mình, bạn đã che giấu được thông tin và không bị phát hiện", "year":0, "criminal":"", "assets": 0, "happy": 5, "health": 0, "smart":10, "appearance": 0}
         ],

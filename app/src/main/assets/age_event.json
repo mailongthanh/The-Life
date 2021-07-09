@@ -10,7 +10,7 @@
           ]},
         {"content": "Khóc, không muốn tiêm", "selection":false,
           "event":[
-            { "event": "Đứng trước cổng bệnh viện, bạn oà khóc, tỏ thái độ không muốn tiêm ngừa, nhưng dưới sự bắt ép của bố mẹ, kết quả bạn vẫn phải tiêm", "assets": 0, "happy": -5, "health": 5, "smart":0, "appearance": 0, "sick": ""},
+            { "event": "Đứng trước cổng bệnh viện, bạn oà khóc, tỏ thái độ không muốn tiêm, nhưng dưới sự bắt ép của bố mẹ, kết quả bạn vẫn phải tiêm", "assets": 0, "happy": -5, "health": 5, "smart":0, "appearance": 0, "sick": ""},
             { "event": "Đứng trước mũi tiêm bạn oà khóc, bác sĩ cũng bảo rằng có thể hôm nay sức khoẻ của bạn không được tốt, bố mẹ bạn nghe vậy cũng không muốn ép buộc bạn", "assets": 0, "happy": 0, "health": -5, "smart":0, "appearance": 0, "sick": ""}
           ]},
         {"content": "Để bác sĩ tiêm ngừa", "selection":true, "event": "Bạn muốn cho vị bác sĩ nào tiêm cho mình ?",
@@ -136,7 +136,7 @@
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
     {"title": "Kiến thức","event": "Hôm nay bạn xem trên tivi, bạn biết được rằng: \n\nKhông bao gồm hình ảnh, chỉ riêng phần nội dung chữ của ngôn ngữ tiếng Anh trên wikipedia đã chiếm khoảng 14GB.",
       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""},
-    {"title": "Thời sự", "event": "Tính tới thời điềm này, trên thế giới đã có tổng số ca nhiễm Covid lên tới 173.036.310 ca.",
+    {"title": "Thời sự", "event": "Tính tới thời điểm này, trên thế giới đã có tổng số ca nhiễm Covid lên tới 173.036.310 ca.",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
   ],
   [
@@ -187,25 +187,7 @@
     {"title": "Giáo dục", "event": "Bạn bắt đầu học lớp 6 tại một trường THCS ở tỉnh",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
   ],
-  [
-    {"title":"Đời sống", "event": "Vì một tai nạn, tình cờ bạn có cơ hội chạm môi một bạn nữ trong lớp \n\nBạn muốn làm gì ? ", "selection": true,
-      "select":[
-        {"content": "Tới luôn", "selection":false,
-          "event": [
-            { "event" :"Bạn lợi dụng cơ hội, chạm môi với một bạn nữ, tình cờ là cô bạn này cũng thích bạn", "assets": 0, "happy": 10, "health": 0, "smart":5, "appearance": 0, "sick": ""},
-            { "event" :"Bạn lợi dụng cơ hội, chạm môi với một bạn nữ, tuy nhiên bạn nhận ra mắt bạn đã lầm, thực chất đối phương là thằng bạn thân của mình ", "assets": 0, "happy": -10, "health": 0, "smart":-5, "appearance": -5, "sick": ""}
-          ]},
-
-        {"content": "Né tránh", "selection":false,
-          "event":[
-            { "event": "Đứng trước tình huống có lợi cho mình, nhưng bạn lại lãng tránh, bạn nhận ra rằng, đất nước còn chưa sánh vai với cường quốc năm châu, bạn phải cố gắng học tập, ý chí bạn cháy rực", "assets": 0, "happy": 10, "health": 0, "smart":10, "appearance": 5, "sick": ""},
-            { "event": "Đứng trước tình huống có lợi cho mình, nhưng bạn lại lãng tránh, đối phương cảm thấy bạn có vấn đề về giới tính của mình", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": -10, "sick": ""}
-          ]}
-      ]},
-
-    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một mẫu tin trên báo, bạn nhận ra rằng: \n\nBạn không thể cảm nhận bất kì mùi nào khi bạn ngủ. ",
-      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""}
-  ],
+  [],
   [
     {"title":"Học đường", "event": "Trên đường đến trường, bạn phát hiện một đám côn đồ đang vây quanh trấn lột bạn thân của mình \n\nBạn muốn làm gì ? ", "selection": true,
       "select":[
@@ -390,6 +372,7 @@
     {"title": "Thời sự", "event": "\n\n Một cuộc tấn công khủng bố ở Israel đã cướp đi sinh mạng của hơn 1239 người vô tội",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
   ],
+  [],
   [
     {"title":"Đời sống", "event": "Đang trên đường về thì bạn gặp một người tàn tật đang xin tiền \n Trước tình huống đó bạn muốn làm gì ? ", "selection": true,
       "select":[
@@ -417,14 +400,14 @@
   [
     {"title": "Thời sự", "event": "Một bức tượng được tạo ra bởi nghệ sĩ nổi tiếng thế giới, Jakiliam, đã vỡ vụn ngay sau khi được mua với giá 500 triệu tại một cuộc đấu giá nghệ thuật ở Mỹ.",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
-    {"title": "Kiến thức","event": "Hôm nay bạn nghe được một điều thú vị, bạn biết được rằng: \n\nNếu như mắt của con người là một chiếc camera thì độ phân giải của nó khoảng 576 megapixel",
+    {"title": "Kiến thức","event": "Hôm nay bạn nghe được một điều thú vị, bạn biết được rằng: \nNếu như mắt của con người là một chiếc camera thì độ phân giải của nó khoảng 576 megapixel",
       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""}
   ],
   [],
   [], //30
   [],
   [
-    {"title": "Thời sự", "event": "\n\nMột cơn sóng thần cao chót vót ập vào bờ biển của Nhật Bản. Hơn 170 người không thể thoát ra khỏi",
+    {"title": "Thời sự", "event": "Một cơn sóng thần cao chót vót ập vào bờ biển của Nhật Bản. Hơn 170 người không thể thoát ra khỏi",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
     {"title": "Sức khoẻ","event": "Bạn đã bị đau mỏi lưng",
       "selection": false,"assets": 0, "happy": 0, "health": -10, "smart":0, "appearance": 0, "sick": ""}
@@ -452,7 +435,56 @@
   [
     {"title": "Sức khoẻ","event": "Bạn đã bị trĩ, nhanh chóng đến bệnh viện điều trị",
       "selection": false,"assets": 0, "happy": 0, "health": -30, "smart":0, "appearance": 0, "sick": "trĩ"},
-    {"title": "Thời sự", "event": "\n\n\nMáy tính ở Mỹ phát triển đến mức tự có nhận thức, đã vung lên tấn công công nhân tại. Trận chiến sau đó cướp đi sinh mạng của 150 con người và tiêu diệt 50 robot.",
+    {"title": "Thời sự", "event": "Máy tính ở Mỹ phát triển đến mức tự có nhận thức, đã vung lên tấn công công nhân. Trận chiến sau đó cướp đi sinh mạng của 150 con người và tiêu diệt 50 robot.",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
-  ]
+  ],
+  [
+    {"title": "Đời sống","event": "Bạn gặp lại người bạn của mình khi đang đi dạo trên đường, cả hai cùng nhau ôn lại bao kỉ niệm",
+      "selection": false,"assets": 0, "happy": 20, "health": 0, "smart":0, "appearance": 0, "sick": ""},
+    {"title": "Thời sự", "event": "Việt Nam đang bước vào vòng loại Wordcup cực kì căng thẳng",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
+  ],
+  [],
+  [
+    {"title":"Đời sống", "event": "Bạn bắt gặp một đám bắt nạt đang quay quanh một cậu sinh viên trong 1 con hẻm. \n\nTrước tình huống đó bạn muốn làm gì ? ", "selection": true,
+      "select":[
+        {"content": "Giúp đỡ", "selection":false,
+          "event": [
+            { "event" :"Bạn quyết định giúp đỡ cậu sinh viên, bạn lao vào ăn thua đủ với đám kia, tụi nó hứa là sẽ không dám tái phạm nữa, bạn nhận được lời cảm ơn chân thành của cậu sinh viên", "assets": 0, "happy": 30, "health": -5, "smart":0, "appearance": 10, "sick": ""},
+            { "event" :"Bạn quyết định giúp đỡ cậu sinh viên, bạn lao vào ăn thua đủ với đám kia, tuy nhiên hình như cả nhóm chỉ đang diễn kịch cho buổi văn nghệ trường", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": -5, "sick": ""},
+            { "event" :"Bạn quyết định giúp đỡ cậu sinh viên, cuối cùng cũng cứu được cậu, hoá ra cậu là con trai của một đại gia Sài Thành, bạn được họ trả ơn hậu hỉnh ", "assets": 10000, "happy": 10, "health": 0, "smart":0, "appearance": 0, "sick": ""}
+
+          ]},
+
+        {"content": "Phớt lờ", "selection":false,
+          "event":[
+            { "event": "Bạn phớt lờ và xem như không thấy gì", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
+            { "event": "Bạn quyết định phớt lờ, tối đó bạn xem thấy tin nói rằng cậu sinh viên kia đã tự tử do chịu áp lực bạo lực học đường, bạn hối hận vô cùng", "assets": 0, "happy": -30, "health": 0, "smart":0, "appearance": 0, "sick": ""}
+          ]}
+      ]},
+    {"title": "Thời sự", "event": "Nhiều vùng nam bộ đang chống chịu nạn khô hạn kéo dài",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
+  ],
+  [
+    {"title":"Đời sống", "event": "Vì một tai nạn, tình cờ bạn có cơ hội chạm môi một bạn nữ trong lớp \n\nBạn muốn làm gì ? ", "selection": true,
+      "select":[
+        {"content": "Tới luôn", "selection":false,
+          "event": [
+            { "event" :"Bạn lợi dụng cơ hội, chạm môi với một bạn nữ, tình cờ là cô bạn này cũng thích bạn", "assets": 0, "happy": 10, "health": 0, "smart":5, "appearance": 0, "sick": ""},
+            { "event" :"Bạn lợi dụng cơ hội, chạm môi với một bạn nữ, tuy nhiên bạn nhận ra mắt bạn đã lầm, thực chất đối phương là thằng bạn thân của mình ", "assets": 0, "happy": -10, "health": 0, "smart":-5, "appearance": -5, "sick": ""}
+          ]},
+
+        {"content": "Né tránh", "selection":false,
+          "event":[
+            { "event": "Đứng trước tình huống có lợi cho mình, nhưng bạn lại lãng tránh, bạn nhận ra rằng, đất nước còn chưa sánh vai với cường quốc năm châu, bạn phải cố gắng học tập, ý chí bạn cháy rực", "assets": 0, "happy": 10, "health": 0, "smart":10, "appearance": 5, "sick": ""},
+            { "event": "Đứng trước tình huống có lợi cho mình, nhưng bạn lại lãng tránh, đối phương cảm thấy bạn có vấn đề về giới tính của mình", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": -10, "sick": ""}
+          ]}
+      ]},
+
+    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một mẫu tin trên báo, bạn nhận ra rằng: \n\nBạn không thể cảm nhận bất kì mùi nào khi bạn ngủ. ",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""}
+  ],
+  [],
+  [],
+  []
 ]
