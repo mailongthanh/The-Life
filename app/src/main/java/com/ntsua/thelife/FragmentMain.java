@@ -1051,6 +1051,7 @@ public class FragmentMain extends Fragment {
         MainActivity.saveGame.saveJogging(0);
         MainActivity.saveGame.saveJogging(0);
         MainActivity.saveGame.saveCrime(0);
+        MainActivity.saveGame.saveTienAn(null);
 
         btnAssets.setEnabled(false);
         btnActivity.setEnabled(false);

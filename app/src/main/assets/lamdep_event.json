@@ -96,5 +96,33 @@
       "smart": 0,
       "appearance": 4
     }
+  ],
+  "Dragon": [
+    {"event": "Bạn xăm hình rồng vào tay của mình, sự oai phong của linh thú khiến tố chất bạn trở nên oai phong hơn", "assets": -1000, "happy": 10, "health": 0, "smart":0, "appearance": 8},
+    {"event": "Bạn xăm hình rồng, tuy nhiên con rồng trên tay bạn lại trông giống con giun hơn, nhuệ khí của bạn đi xuống", "assets": 100, "happy":-5, "health": 0, "smart":0, "appearance": 5},
+    {"event": "Bạn vừa xăm được nửa hình rồng thì đau quá không chịu nổi, bạn quyết định từ bỏ giữa chừng", "assets": -1000, "happy":-5, "health": -3, "smart":0, "appearance": 2},
+    {"event": "Bạn xăm hình rồng vào người mình, cả người bạn hừng hực khí thế, bạn thấy mình đẹp trai hẳn lên", "assets": -1000, "happy": 10, "health": 0, "smart":0, "appearance": 14},
+    {"event": "Hình bạn vừa xăm trông có vẻ không như bạn mong đợi, nhuệ khí bạn xuống hẳn đi", "assets":0 , "happy": -5, "health": 0, "smart":0, "appearance": 3}
+  ],
+  "Tiger": [
+    {"event": "Bạn xăm hình mãnh hổ cali vào tay của mình, sự oai phong của linh thú khiến tố chất bạn trở nên oai phong hơn", "assets": -1000, "happy": 10, "health": 0, "smart":0, "appearance": 7},
+    {"event": "Bạn xăm mãnh hổ, tuy nhiên mãnh hổ trên tay bạn lại trông giống con mèo hơn, nhuệ khí của bạn đi xuống", "assets": 100, "happy":-5, "health": 0, "smart":0, "appearance": 3},
+    {"event": "Bạn vừa xăm được nửa hình hổ thì đau quá không chịu nổi, bạn quyết định từ bỏ giữa chừng", "assets": -1000, "happy":-5, "health": -3, "smart":0, "appearance": 1},
+    {"event": "Bạn xăm hình mãnh hổ cali vào người mình, cả người bạn hừng hực khí thế, bạn thấy mình giống như nhà đệ nhất tiên tri nào đó", "assets": -1000, "happy": 10, "health": 0, "smart":0, "appearance": 17},
+    {"event": "Hình bạn vừa xăm trông có vẻ không như bạn mong đợi, nhuệ khí bạn xuống hẳn đi", "assets":0 , "happy": -5, "health": 0, "smart":0, "appearance": 2}
+  ],
+  "Eagle": [
+    {"event": "Bạn xăm hình đại bàng vào tay của mình, sự oai phong của nó khiến tố chất bạn trở nên oai phong hơn", "assets": -1000, "happy": 10, "health": 0, "smart":0, "appearance": 7},
+    {"event": "Bạn xăm hình đại bàng, tuy nhiên đại bàng trên tay bạn lại trông giống con chim sẻ hơn, nhuệ khí của bạn đi xuống", "assets": 100, "happy":-5, "health": 0, "smart":0, "appearance": 3},
+    {"event": "Bạn vừa xăm được nửa hình đại bàng thì đau quá không chịu nổi, bạn quyết định từ bỏ giữa chừng", "assets": -1000, "happy":-5, "health": -3, "smart":0, "appearance": 2},
+    {"event": "Bạn xăm hình chiến ưng vào người mình, cả người bạn hừng hực khí thế, bạn thấy mình đẹp trai hẳn lên", "assets": -1000, "happy": 10, "health": 0, "smart":0, "appearance": 10},
+    {"event": "Hình bạn vừa xăm trông có vẻ không như bạn mong đợi, nhuệ khí bạn xuống hẳn đi", "assets":0 , "happy": -5, "health": 0, "smart":0, "appearance": 2}
+  ],
+  "Snake": [
+    {"event": "Bạn xăm mãng xà vào tay của mình, sự oai phong của nó khiến tố chất bạn trở nên oai phong hơn", "assets": -1000, "happy": 10, "health": 0, "smart":0, "appearance": 7},
+    {"event": "Bạn xăm mãng xà, tuy nhiên con rắn trên tay bạn lại trông giống con giun hơn, nhuệ khí của bạn đi xuống", "assets": 100, "happy":-5, "health": 0, "smart":0, "appearance": 5},
+    {"event": "Bạn vừa xăm được nửa con rắn thì đau quá không chịu nổi, bạn quyết định từ bỏ giữa chừng", "assets": -1000, "happy":-5, "health": -3, "smart":0, "appearance": 3},
+    {"event": "Bạn xăm mãng xà vào người mình, cả người bạn hừng hực khí thế, bạn thấy mình ngầu lòi hẳn lên", "assets": -1000, "happy": 10, "health": 0, "smart":0, "appearance": 15},
+    {"event": "Hình bạn vừa xăm trông có vẻ không như bạn mong đợi, nhuệ khí bạn xuống hẳn đi", "assets":0 , "happy": -5, "health": 0, "smart":0, "appearance": 4}
   ]
 }
