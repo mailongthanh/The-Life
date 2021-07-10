@@ -53,7 +53,7 @@ public class Playground extends AppCompatActivity {
 
     private void loadGame() {
         txtName.setText(MainActivity.saveGame.getName());
-        txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
+        txtMoney.setText(MainActivity.saveGame.getMoney() + "K VND");
         txtJob.setText(MainActivity.saveGame.getJob());
         imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());
     }

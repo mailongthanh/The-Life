@@ -143,7 +143,7 @@ public class ActivitiesEvent {
                 //Cap nhat lai tien hien thi
                 Activity activity = (Activity) context;
                 TextView txtMoney = activity.findViewById(R.id.textviewMoney);
-                txtMoney.setText(MainActivity.saveGame.getMoney() + " VND");
+                txtMoney.setText(MainActivity.saveGame.getMoney() + "K VND");
                 dialog.dismiss();
                 if (MainActivity.saveGame.getHealth() <= 0)
                     MainActivity.checkMySelf(context, "\"Qua đời vì sức khỏe yếu kéo dài, không chịu nổi những biến cố trong cuộc sống\"");

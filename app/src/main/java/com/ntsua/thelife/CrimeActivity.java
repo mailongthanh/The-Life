@@ -127,7 +127,7 @@ public class CrimeActivity extends AppCompatActivity {
 
     private void loadGame() {
         txtName.setText(saveGame.getName());
-        txtMoney.setText(saveGame.getMoney() + "VND");
+        txtMoney.setText(saveGame.getMoney() + "K VND");
         txtJob.setText(saveGame.getJob());
         imgAvatar.setImageResource(saveGame.getAvatar());
     }
@@ -369,7 +369,7 @@ public class CrimeActivity extends AppCompatActivity {
                 //Cap nhat lai tien hien thi
                 Activity activity = (Activity) CrimeActivity.this;
                 TextView txtMoney = activity.findViewById(R.id.textviewMoney);
-                txtMoney.setText(MainActivity.saveGame.getMoney() + " VND");
+                txtMoney.setText(MainActivity.saveGame.getMoney() + "K VND");
                 dialog.dismiss();
                 if(year!=0)
                 {

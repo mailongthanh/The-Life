@@ -162,9 +162,9 @@ public class FragmentShare extends Fragment {
         txtSmart.setText(prbSmart.getProgress() + "%");
         txtHealth.setText(prbHealth.getProgress() + "%");
 
-        txtTotal.setText("Tổng tài sản: " + totalAsset() + " VND");
+        txtTotal.setText("Tổng tài sản: " + totalAsset() + "K VND");
 
-        txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
+        txtMoney.setText(MainActivity.saveGame.getMoney() + "K VND");
         txtName.setText(MainActivity.saveGame.getName());
         txtJob.setText(MainActivity.saveGame.getJob());
         changeProgressBackground(prbAppearance);

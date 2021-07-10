@@ -86,7 +86,6 @@ public class Shopping extends AppCompatActivity {
                 }
                 if(arrShopping.get(position).getFoodName() == "Công cụ")
                 {
-                    Toast.makeText(Shopping.this, String.valueOf(MainActivity.saveGame.getMoney()), Toast.LENGTH_SHORT).show();
                     ArrayList<Food> arrTool = new ArrayList<>();
                     arrTool.add(new Food("laptop","Máy tính xách tay, tiện cho việc di chuyển, cấu hình trung bình. GIÁ 10.000.000 VND",R.drawable.laptop,10000));
                     arrTool.add(new Food("Webcam","Công cụ hữu ích cho các streamer. GIÁ 200.000 VND",R.drawable.webcam,200));

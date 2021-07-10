@@ -20,6 +20,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -36,6 +37,7 @@ public class ChuyenViec extends AppCompatActivity {
     ArrayList<Food> arrViec;
     TextView txtName, txtJob, txtMoney;
     ImageView imgAvatar;
+    String tienAn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +46,9 @@ public class ChuyenViec extends AppCompatActivity {
         txtJob = findViewById(R.id.textviewJob);
         txtMoney = findViewById(R.id.textviewMoney);
         imgAvatar = findViewById(R.id.imageAvatar);
+
         loadGame();
+
         lvViec = (ListView) findViewById((R.id.listviewViec));
         arrViec = new ArrayList<>();
         arrViec.add(new Food("Ca sĩ", "", R.drawable.singer, 0));
@@ -62,6 +66,8 @@ public class ChuyenViec extends AppCompatActivity {
         arrViec.add(new Food("Giáo dục", "", R.drawable.education, 0));
         adapter = new FoodAdapter(this, R.layout.food_line, arrViec);
         lvViec.setAdapter(adapter);
+        tienAn = MainActivity.saveGame.getTienAn();
+        Toast.makeText(this, tienAn, Toast.LENGTH_SHORT).show();
 
         lvViec.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -82,10 +88,14 @@ public class ChuyenViec extends AppCompatActivity {
                     Intent myintent = new Intent(view.getContext(), JobBaoChi.class);
                     startActivityForResult(myintent, 3);
                 }
-                if (position == 4) {
+                if (position == 4 && tienAn == "") {
                     Intent myintent = new Intent(view.getContext(), JobQuanDoi.class);
                     startActivityForResult(myintent, 4);
-                }
+                } else if( position == 4)
+                {
+                    MainActivity.createNotification(R.drawable.cancel,
+                            "Do bạn có tiền án "+ tienAn +" nên bạn không thể gia nhập môi trường quân đội",
+                            ChuyenViec.this);}
                 if (position == 5) {
                     Intent myintent = new Intent(view.getContext(), JobKinhDoanh.class);
                     startActivityForResult(myintent, 5);
@@ -124,7 +134,7 @@ public class ChuyenViec extends AppCompatActivity {
     }
     private void loadGame() {
         txtName.setText(MainActivity.saveGame.getName());
-        txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
+        txtMoney.setText(MainActivity.saveGame.getMoney() + "K VND");
         txtJob.setText(MainActivity.saveGame.getJob());
         imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());
     }

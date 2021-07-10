@@ -379,7 +379,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
             }
             txtAssets.setText(money);
             MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() + value);
-            txtMoney.setText(value + MainActivity.saveGame.getMoney() + " VND");
+            txtMoney.setText(value + MainActivity.saveGame.getMoney() + "K VND");
         }
         MainActivity.saveGame.savePlayerInfo(happy, health, smart, appearance);
         value = object.getInt("relationship");
@@ -464,7 +464,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
 
     private void loadGame() {
         txtName.setText(MainActivity.saveGame.getName());
-        txtMoney.setText(MainActivity.saveGame.getMoney() + " VND");
+        txtMoney.setText(MainActivity.saveGame.getMoney() + "K VND");
         txtJob.setText(MainActivity.saveGame.getJob());
         arrQuanHe = MainActivity.saveGame.getRelationship();
         imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());

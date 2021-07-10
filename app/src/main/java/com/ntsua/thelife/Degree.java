@@ -101,7 +101,7 @@ public class Degree extends AppCompatActivity {
                                 JSONArray arrQuestion = chooseQuestion(arrDriving);
                                 dialogEvent(arrQuestion, 0, "driving");
                                 MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() - arrDegree.get(position).getPrice());
-                                txtMoney.setText(MainActivity.saveGame.getMoney() + " VND");
+                                txtMoney.setText(MainActivity.saveGame.getMoney() + "K VND");
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
@@ -232,7 +232,7 @@ public class Degree extends AppCompatActivity {
 
     private void loadGame() {
         txtName.setText(MainActivity.saveGame.getName());
-        txtMoney.setText(MainActivity.saveGame.getMoney() + "VND");
+        txtMoney.setText(MainActivity.saveGame.getMoney() + "K VND");
         txtJob.setText(MainActivity.saveGame.getJob());
         imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());
     }

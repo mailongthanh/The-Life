@@ -1011,8 +1011,6 @@ public class FragmentMain extends Fragment {
 //        arrRelationship.add(new QuanHe("Mai Long Thành", 19, 80, NameOfRelationship.Friend, R.drawable.boy, true));
 //        arrRelationship.add(new QuanHe("Võ Thành Phát", 19, 20, NameOfRelationship.Friend, R.drawable.boy, true));
 //        arrRelationship.add(new QuanHe("Hoàng Nhật Tiến", 19, 50, NameOfRelationship.Friend, R.drawable.boy, true));
-        arrRelationship.add(new QuanHe("Crush", 19, 90, NameOfRelationship.Friend, R.drawable.boy, true));
-
         MainActivity.saveGame.saveRelationship(arrRelationship);
         this.arrRelationship = arrRelationship;
         MainActivity.saveGame.saveNewFriendInYear(0);
@@ -1494,7 +1492,6 @@ public class FragmentMain extends Fragment {
             public void onClick(View v) {
                 try {
                     doWork();
-                    Toast.makeText(view.getContext(), String.valueOf(MainActivity.saveGame.getSkill()), Toast.LENGTH_SHORT).show();
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
