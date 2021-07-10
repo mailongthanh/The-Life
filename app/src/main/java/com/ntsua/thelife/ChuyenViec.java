@@ -37,7 +37,7 @@ public class ChuyenViec extends AppCompatActivity {
     ArrayList<Food> arrViec;
     TextView txtName, txtJob, txtMoney;
     ImageView imgAvatar;
-    String tienAn;
+    String tienAn="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,8 +67,6 @@ public class ChuyenViec extends AppCompatActivity {
         adapter = new FoodAdapter(this, R.layout.food_line, arrViec);
         lvViec.setAdapter(adapter);
         tienAn = MainActivity.saveGame.getTienAn();
-        Toast.makeText(this, tienAn, Toast.LENGTH_SHORT).show();
-
         lvViec.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -91,7 +89,7 @@ public class ChuyenViec extends AppCompatActivity {
                 if (position == 4 && tienAn == "") {
                     Intent myintent = new Intent(view.getContext(), JobQuanDoi.class);
                     startActivityForResult(myintent, 4);
-                } else if( position == 4)
+                } else if(tienAn != "")
                 {
                     MainActivity.createNotification(R.drawable.cancel,
                             "Do bạn có tiền án "+ tienAn +" nên bạn không thể gia nhập môi trường quân đội",

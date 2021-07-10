@@ -2300,8 +2300,8 @@ int id buttonAssetCancel 0x7f0a0072
 int id buttonAssets 0x7f0a0073
 int id buttonDialogEventOke 0x7f0a0074
 int id buttonDialogEventdragon 0x7f0a0075
-int id buttonDialogEventsnake 0x7f0a0076
-int id buttonDialogEventsnow 0x7f0a0077
+int id buttonDialogEventeagle 0x7f0a0076
+int id buttonDialogEventsnake 0x7f0a0077
 int id buttonDialogEventtiger 0x7f0a0078
 int id buttonDialogFriendAccept 0x7f0a0079
 int id buttonDialogFriendCancel 0x7f0a007a

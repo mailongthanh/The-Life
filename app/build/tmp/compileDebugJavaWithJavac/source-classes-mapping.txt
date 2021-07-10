@@ -67,6 +67,10 @@ com/ntsua/thelife/MakeUp.java
  com.ntsua.thelife.MakeUp$1
  com.ntsua.thelife.MakeUp$2
  com.ntsua.thelife.MakeUp$3
+ com.ntsua.thelife.MakeUp$4
+ com.ntsua.thelife.MakeUp$5
+ com.ntsua.thelife.MakeUp$6
+ com.ntsua.thelife.MakeUp$7
 com/ntsua/thelife/JobCongNghe.java
  com.ntsua.thelife.JobCongNghe
  com.ntsua.thelife.JobCongNghe$1
@@ -201,12 +205,17 @@ com/ntsua/thelife/Asset.java
  com.ntsua.thelife.Asset
 com/ntsua/thelife/PlayerBasicInfomation.java
  com.ntsua.thelife.PlayerBasicInfomation
-com/ntsua/thelife/JobQuanDoi.java
- com.ntsua.thelife.JobQuanDoi
- com.ntsua.thelife.JobQuanDoi$1
- com.ntsua.thelife.JobQuanDoi$2
- com.ntsua.thelife.JobQuanDoi$3
- com.ntsua.thelife.JobQuanDoi$4
+com/ntsua/thelife/MainActivity.java
+ com.ntsua.thelife.MainActivity
+ com.ntsua.thelife.MainActivity$1
+ com.ntsua.thelife.MainActivity$2
+ com.ntsua.thelife.MainActivity$2$1
+ com.ntsua.thelife.MainActivity$2$2
+ com.ntsua.thelife.MainActivity$2$2$1
+ com.ntsua.thelife.MainActivity$3
+ com.ntsua.thelife.MainActivity$4
+ com.ntsua.thelife.MainActivity$5
+ com.ntsua.thelife.MainActivity$6
 com/ntsua/thelife/Hospital.java
  com.ntsua.thelife.Hospital
  com.ntsua.thelife.Hospital$1
@@ -217,11 +226,29 @@ com/ntsua/thelife/BoiToan.java
  com.ntsua.thelife.BoiToan$2
 com/ntsua/thelife/NameOfRelationship.java
  com.ntsua.thelife.NameOfRelationship
-com/ntsua/thelife/ActivitiesEvent.java
- com.ntsua.thelife.ActivitiesEvent
- com.ntsua.thelife.ActivitiesEvent$1
- com.ntsua.thelife.ActivitiesEvent$2
- com.ntsua.thelife.ActivitiesEvent$3
+com/ntsua/thelife/FragmentMain.java
+ com.ntsua.thelife.FragmentMain
+ com.ntsua.thelife.FragmentMain$1
+ com.ntsua.thelife.FragmentMain$10
+ com.ntsua.thelife.FragmentMain$11
+ com.ntsua.thelife.FragmentMain$12
+ com.ntsua.thelife.FragmentMain$13
+ com.ntsua.thelife.FragmentMain$14
+ com.ntsua.thelife.FragmentMain$15
+ com.ntsua.thelife.FragmentMain$16
+ com.ntsua.thelife.FragmentMain$17
+ com.ntsua.thelife.FragmentMain$18
+ com.ntsua.thelife.FragmentMain$19
+ com.ntsua.thelife.FragmentMain$2
+ com.ntsua.thelife.FragmentMain$20
+ com.ntsua.thelife.FragmentMain$21
+ com.ntsua.thelife.FragmentMain$3
+ com.ntsua.thelife.FragmentMain$4
+ com.ntsua.thelife.FragmentMain$5
+ com.ntsua.thelife.FragmentMain$6
+ com.ntsua.thelife.FragmentMain$7
+ com.ntsua.thelife.FragmentMain$8
+ com.ntsua.thelife.FragmentMain$9
 com/ntsua/thelife/BuildConfig.java
  com.ntsua.thelife.BuildConfig
 com/ntsua/thelife/Food.java
@@ -262,37 +289,14 @@ com/ntsua/thelife/HoatDongQHAdapter.java
  com.ntsua.thelife.HoatDongQHAdapter
  com.ntsua.thelife.HoatDongQHAdapter$1
  com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
-com/ntsua/thelife/MainActivity.java
- com.ntsua.thelife.MainActivity
- com.ntsua.thelife.MainActivity$1
- com.ntsua.thelife.MainActivity$2
- com.ntsua.thelife.MainActivity$2$1
- com.ntsua.thelife.MainActivity$2$2
- com.ntsua.thelife.MainActivity$2$2$1
- com.ntsua.thelife.MainActivity$3
- com.ntsua.thelife.MainActivity$4
- com.ntsua.thelife.MainActivity$5
- com.ntsua.thelife.MainActivity$6
-com/ntsua/thelife/FragmentMain.java
- com.ntsua.thelife.FragmentMain
- com.ntsua.thelife.FragmentMain$1
- com.ntsua.thelife.FragmentMain$10
- com.ntsua.thelife.FragmentMain$11
- com.ntsua.thelife.FragmentMain$12
- com.ntsua.thelife.FragmentMain$13
- com.ntsua.thelife.FragmentMain$14
- com.ntsua.thelife.FragmentMain$15
- com.ntsua.thelife.FragmentMain$16
- com.ntsua.thelife.FragmentMain$17
- com.ntsua.thelife.FragmentMain$18
- com.ntsua.thelife.FragmentMain$19
- com.ntsua.thelife.FragmentMain$2
- com.ntsua.thelife.FragmentMain$20
- com.ntsua.thelife.FragmentMain$21
- com.ntsua.thelife.FragmentMain$3
- com.ntsua.thelife.FragmentMain$4
- com.ntsua.thelife.FragmentMain$5
- com.ntsua.thelife.FragmentMain$6
- com.ntsua.thelife.FragmentMain$7
- com.ntsua.thelife.FragmentMain$8
- com.ntsua.thelife.FragmentMain$9
+com/ntsua/thelife/ActivitiesEvent.java
+ com.ntsua.thelife.ActivitiesEvent
+ com.ntsua.thelife.ActivitiesEvent$1
+ com.ntsua.thelife.ActivitiesEvent$2
+ com.ntsua.thelife.ActivitiesEvent$3
+com/ntsua/thelife/JobQuanDoi.java
+ com.ntsua.thelife.JobQuanDoi
+ com.ntsua.thelife.JobQuanDoi$1
+ com.ntsua.thelife.JobQuanDoi$2
+ com.ntsua.thelife.JobQuanDoi$3
+ com.ntsua.thelife.JobQuanDoi$4
