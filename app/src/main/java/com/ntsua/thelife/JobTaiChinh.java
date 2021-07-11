@@ -140,6 +140,7 @@ public class JobTaiChinh extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Nhân viên sale");
+            MainActivity.saveGame.saveSalary(12000);
             return;
         }
 

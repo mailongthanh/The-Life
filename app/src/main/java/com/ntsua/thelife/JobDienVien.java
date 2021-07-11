@@ -140,6 +140,7 @@ public class JobDienVien extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Diễn viên đóng thế");
+            MainActivity.saveGame.saveSalary(5000);
             return;
         }
 

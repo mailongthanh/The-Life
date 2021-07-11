@@ -152,6 +152,7 @@ public class JobGiaoDuc extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Thực tập sinh");
+            MainActivity.saveGame.saveSalary(5000);
             return;
         }
 

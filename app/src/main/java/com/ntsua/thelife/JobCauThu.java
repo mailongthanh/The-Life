@@ -152,6 +152,7 @@ public class JobCauThu extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Cầu thủ dự bị");
+            MainActivity.saveGame.saveSalary(15000);
             return;
         }
 

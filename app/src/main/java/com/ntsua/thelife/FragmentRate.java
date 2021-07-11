@@ -117,6 +117,13 @@ public class FragmentRate extends Fragment {
                     ArrayList<Food> arrAsset = snap.child("Asset").getValue(objectsGTypeInd);
 
                     int money = snap.child("Basic").child("money").getValue(Integer.class);
+                    if (arrAsset != null)
+                    {
+                        for (int i=0; i<arrAsset.size(); i++)
+                        {
+                            money += arrAsset.get(i).getPrice();
+                        }
+                    }
 
                     String name = snap.child("Information").child("Name").getValue(String.class);
                     String uri = snap.child("Information").child("PhotoUri").getValue(String.class);

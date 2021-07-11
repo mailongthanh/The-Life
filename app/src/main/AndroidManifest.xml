@@ -17,6 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".game2048_batdau"></activity>
+        <activity android:name=".game2048"></activity>
         <activity android:name=".AiLaTrieuPhu_ing" />
         <activity android:name=".AiLaTrieuPhu" />
         <activity android:name=".Asset" />

@@ -152,6 +152,7 @@ public class JobCongNghe extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Cài WIN dạo");
+            MainActivity.saveGame.saveSalary(5000);
             return;
         }
 

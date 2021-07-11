@@ -152,6 +152,7 @@ public class JobDichVu extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Bồi bàn");
+            MainActivity.saveGame.saveSalary(8000);
             return;
         }
 

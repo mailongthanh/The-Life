@@ -151,6 +151,7 @@ public class JobCaSi extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Ca sĩ đám cưới");
+            MainActivity.saveGame.saveSalary(8000);
             return;
         }
 

@@ -3951,5 +3951,213 @@
     ],
     "event": [
     ]
+  },
+  "Trẻ trâu": {
+    "work": [
+      {
+        "content": "Phá làng phá xóm",
+        "event": [
+          {
+            "event": "Bạn cùng lũ bạn trong xóm đi hái xoài ở nhà ông Năm. Xoài chưa kịp hái thì bạn bị ông năm phát hiện. Ông thả chó đứng dưới góc cây canh bạn. Lũ bạn chạy trốn về hết. Bạn phải đợi đến tận tối để ba mẹ bảo lãnh cho về. Bạn bị là một trận tơi bời",
+            "assets": 0,
+            "happy": -5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn cùng lũ bạn trong xóm chơi đá banh. Bạn trong lúc đá quá hăng, bạn vô tình đá vô của kính của nhà dì Tư. Dì tức giận gọi mẹ bạn và bắt đền tấm kính hết 500k. Về nhà bạn bị mẹ đánh cho sưng cả mông",
+            "assets": 0,
+            "happy": -5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn cùng lũ trong xóm chơi đá lon. Bạn với thân hình nhanh nhạy đã thắng hết tất cả các đứa bạn trong xóm. Đứa nào cũng phải trố mắt thán phục bạn",
+            "assets": 0,
+            "happy": 5,
+            "health": 5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Vào một chiều đầy gió, bạn cùng lũ bạn đi thả diều trên đồng. Diều bạn vừa đẹp lại bay cao nhất. Bạn đã có một khoảng thời gian vô cùng vui vẻ",
+            "assets": 0,
+            "happy": 5,
+            "health": 5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      },
+      {
+        "content": "Ở nhà học bài",
+        "event": [
+          {
+            "event": "Bạn được mẹ mua tặng cuốn sách dạy học viết chữ. Bạn chăm chú ngồi cạnh mẹ và học một cách chăm chỉ. Sau buổi học, mẹ thưởng cho bạn một bịch kẹo vì sự cố gắng của mình",
+            "assets": 0,
+            "happy": 10,
+            "health": -2,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn được ba chỉ cho cách đọc chữ và làm phép toán đơn giản. Trong lúc học, ba hỏi câu nào bạn cũng trả lời được. Ba khen bạn thông minh giống mình. Bạn rất vui và hạnh phúc",
+            "assets": 0,
+            "happy": 10,
+            "health": -2,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
+    ]
+  },
+  "Sinh viên": {
+    "work": [
+      {
+        "content": "Chạy deadline",
+        "event": [
+          {
+            "event": "Hôm nay giảng viên trên trường thấy bạn học chưa hiểu bài,thế là họ cho bạn tận 5 cái deadline để bạn làm cho hiểu",
+            "assets": 0,
+            "happy": -5,
+            "health": -5,
+            "smart": 5,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Tối hôm sau là giờ nộp deadline. Mà tới giờ bạn vẫn chưa hoàn thành xong bài tập. Thế là tối hôm đó bạn thức đến tận chiều hôm sau để hoàn thành nó. Sau khi hoàn thành xong bạn thở phào nhẹ nhõm và đánh một giấc tới tận sáng mai.",
+            "assets": 0,
+            "happy": 0,
+            "health": -5,
+            "smart": 2,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn đã hoàn thành xong deadline của mình và giờ thì chỉ cần nộp. Bỗng nhiên có đứa bạn rủ bạn đi chơi đá banh. Bạn vì chủ quan mà để deadline đó rồi tự hứa chiều về sẽ nộp. Đến khi chiều về bạn quên bén đi mất, thế là hôm sau bạn bị giảng viên mắng một trận tơi bời",
+            "assets": 0,
+            "happy": -5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      },
+      {
+        "content": "Tham gia hoạt động ngoài giờ lấy điểm rèn luyện",
+        "event": [
+          {
+            "event": "Bạn tham gia chiến dịch Xuân tình nguyện, và được trường cộng cho 5 điểm rèn luyện",
+            "assets": 0,
+            "happy": 5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn tham gia chiến dịch Mùa hè xanh, và được trường cộng cho 10 điểm rèn luyện",
+            "assets": 0,
+            "happy": 5,
+            "health": -5,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          }
+
+        ]
+      },
+      {
+        "content": "Học tập",
+        "event": [
+          {
+            "event": "Hôm nay bạn lên lớp và học môn có liên quan đến nghề. Học tuy mệt nhưng bạn vẫn rất vui vì học được nhiều điều mới",
+            "assets": 0,
+            "happy": 5,
+            "health": -5,
+            "smart": 4,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Hôm nay bạn học các môn chính trị, ngồi học một hồi bạn thấy có vài bạn ngủ gục cả trên bàn.",
+            "assets": 0,
+            "happy": 0,
+            "health": -5,
+            "smart": 4,
+            "appearance": 0,
+            "skill": 0
+          }
+
+        ]
+      }
+    ],
+    "event": [
+    ]
+  },
+  "Thất nghiệp": {
+    "work": [
+      {
+        "content": "Tham gia hoạt động tình nguyện",
+        "event": [
+          {
+            "event": "Trong quãng thời gian thất nghiệp bạn tham gia hoạt động tình nguyện SaiGon Children's charity. Công sức của bạn bỏ ra rất xứng đáng khi nhờ bạn mà các trẻ em nghèo có được các dụng cụ học tập, thức ăn",
+            "assets": 0,
+            "happy": 5,
+            "health": -5,
+            "smart": 1,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn tham gia hoạt động Mùa hè xanh trong lúc thất nghiệp nhầm nâng cao sự hoạt bát, năng động, tăng khả năng giao tiếp.",
+            "assets": 0,
+            "happy": 5,
+            "health": -5,
+            "smart": 1,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      },
+      {
+        "content": "Đi học nghề",
+        "event": [
+          {
+            "event": "Gần nhà bạn có mở một lớp học về kinh tế. Bạn háo hức đóng tiền học phí 500k để đăng ký học. Hôm sau, bạn tới lớp thì thấy không có ai. Hỏi bà hàng xóm thì biết rằng lớp học đó lừa đảo, tối hôm qua đã bị công an bắt và dẹp lớp.",
+            "assets": -500,
+            "happy": -3,
+            "health": -3,
+            "smart": 0,
+            "appearance": 0,
+            "skill": 0
+          },
+          {
+            "event": "Bạn cùng bạn mình đăng ký học lớp dạy giao tiếp và thuyết trình trước mặt mọi người. Sau buổi học, bạn và bạn mình rất vui vì đã học được rất nhiều kỹ năng mềm",
+            "assets": 0,
+            "happy": 5,
+            "health": -5,
+            "smart": 2,
+            "appearance": 0,
+            "skill": 0
+          }
+        ]
+      }
+    ],
+    "event": [
+    ]
   }
 }

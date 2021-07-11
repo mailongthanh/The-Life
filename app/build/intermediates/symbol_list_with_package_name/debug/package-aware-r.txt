@@ -75,6 +75,7 @@ animator nav_default_pop_exit_anim
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
+array mauNenCuaSo
 array preloaded_fonts
 attr action
 attr actionBarDivider
@@ -1956,6 +1957,8 @@ drawable fortunetelling
 drawable fpt
 drawable frame
 drawable fruits
+drawable game2048_diem
+drawable game2048_gameplay
 drawable gangster
 drawable genderselect_button
 drawable giamdoc
@@ -2419,6 +2422,7 @@ id floating
 id forever
 id fragment_container_view_tag
 id frameShare
+id gdvGamePlay
 id ghost_view
 id ghost_view_holder
 id gone
@@ -2833,6 +2837,7 @@ id txtAppearance
 id txtHappy
 id txtHealth
 id txtSmart
+id txtoVuong
 id txvCauHoi
 id txvCauTL1
 id txvCauTL2
@@ -2932,6 +2937,8 @@ layout activity_crime
 layout activity_degree
 layout activity_entertainment
 layout activity_food
+layout activity_game2048
+layout activity_game2048_batdau
 layout activity_hoat_dong
 layout activity_hospital
 layout activity_job_am_thuc
@@ -3009,6 +3016,7 @@ layout food_line
 layout fragment_main
 layout fragment_rate
 layout fragment_share
+layout game2048_item_ovuong
 layout item_altp_tienthuong
 layout layout_kethonthanhcong
 layout layout_kethonthatbai

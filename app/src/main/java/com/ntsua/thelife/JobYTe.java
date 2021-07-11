@@ -155,6 +155,7 @@ public class JobYTe extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Bác sĩ thực tập");
+            MainActivity.saveGame.saveSalary(8000);
             return;
         }
 

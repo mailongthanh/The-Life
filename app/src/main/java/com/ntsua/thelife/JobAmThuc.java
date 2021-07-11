@@ -153,6 +153,7 @@ public class JobAmThuc extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Phụ bếp");
+            MainActivity.saveGame.saveSalary(6000);
             return;
         }
 
