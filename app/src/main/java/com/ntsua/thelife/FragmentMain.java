@@ -15,6 +15,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.os.Handler;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -190,6 +191,7 @@ public class FragmentMain extends Fragment {
     }
 
     void addAge() throws JSONException {
+        //Log.d("Salary", "setSalary: New age");
         //them tuoi
         int age = MainActivity.saveGame.getAge() + 1;
         //So nam ra tu
@@ -292,12 +294,6 @@ public class FragmentMain extends Fragment {
                 addAgeHTML(age);
                 dialogEventResult(title, true);
             }
-
-//            if (age == 17) {
-//                addAgeHTML(17);
-//                dialogUniversity();
-//                return;
-//            }
         }
     }
 
@@ -623,7 +619,8 @@ public class FragmentMain extends Fragment {
                     dialogJobUpgradeEvent("Công Việc");
                     MainActivity.saveGame.saveJob(jsonResult.getString("newjob"));
                     changeWork();
-                    MainActivity.saveGame.saveSalary(jsonResult.getInt("salary"));
+                    //jsonResult.getJSONArray("select").getJSONObject(0).
+                    MainActivity.saveGame.saveSalary(jsonResult.getJSONArray("select").getJSONArray(0).getJSONObject(0).getInt("salary"));
                 }
                 else if (jsonResult.getBoolean("selection")) {
                     dialogJobEvent("Công việc");
@@ -1196,7 +1193,7 @@ public class FragmentMain extends Fragment {
         {
             health -= (30 - prbHappy.getProgress());
         }
-        health -= (int) (MainActivity.saveGame.getAge() / 4); //Tru suc khoe theo do tuoi, tuoi cang cao tru cang nhieu
+        health -= (int) (MainActivity.saveGame.getAge() / 6); //Tru suc khoe theo do tuoi, tuoi cang cao tru cang nhieu
         String reason = "";
         if (health <= 0)
             reason = "\"Qua đời vì tuổi già sức yếu\"";
@@ -1389,7 +1386,6 @@ public class FragmentMain extends Fragment {
         } else if (age > 18)
         {
             int money = 0;
-            int salary =0;
             if (!isHouse())
             {
                 contentHtml += "Trả tiền thuê nhà 3 triệu <br />";
@@ -1400,10 +1396,11 @@ public class FragmentMain extends Fragment {
                 contentHtml += "Trả tiền đi xe nhà 2 triệu <br />";
                 money += 2000;
             }
-            contentHtml +="Tiền lương của bạn mỗi năm: " + MainActivity.saveGame.getSalary() +"000<br />";
-            salary += MainActivity.saveGame.getSalary();
-            MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() - money + salary);
+            String salary = String.format( "%,d", MainActivity.saveGame.getSalary()*1000);
+            contentHtml += "Tiền lương của bạn mỗi năm: " + salary +" VND<br />";
+            MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() - money + MainActivity.saveGame.getSalary());
             txtMoney.setText(MainActivity.saveGame.getMoney() + "K VND");
+            //Toast.makeText(getActivity(), "" + MainActivity.saveGame.getSalary(), Toast.LENGTH_SHORT).show();
         }
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
         scrollView.post(new Runnable() {

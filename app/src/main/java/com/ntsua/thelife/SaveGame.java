@@ -325,7 +325,7 @@ public class SaveGame {
     }
 
     public void saveNewFriendInYear(int newFriendInYear) {
-        infomation.setSalary(newFriendInYear);
+        infomation.setNewFriendInYear(newFriendInYear);
         reference.child("Basic").child("newFriendInYear").setValue(newFriendInYear);
     }
 

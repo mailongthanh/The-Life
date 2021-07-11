@@ -1,5 +1,8 @@
 package com.ntsua.thelife;
 
+import android.util.Log;
+import android.widget.Toast;
+
 public class PlayerBasicInfomation {
     private int Avatar = 0;
     private String Name = "";
@@ -233,10 +236,13 @@ public class PlayerBasicInfomation {
     }
 
     public int getSalary() {
+        //Log.d("Salary", "getSalary: " + Salary);
         return Salary;
     }
 
     public void setSalary(int salary) {
+        //Toast.makeText(MainActivity.getContext(), "Change", Toast.LENGTH_SHORT).show();
+        //Log.d("Salary", "setSalary: " + salary);
         Salary = salary;
     }
 
