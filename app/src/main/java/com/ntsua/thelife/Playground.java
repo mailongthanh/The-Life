@@ -42,6 +42,11 @@ public class Playground extends AppCompatActivity {
         lvPlayground.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (position == 0) {
+                    Intent myintent = new Intent(Playground.this, game2048_batdau.class);
+                    startActivityForResult(myintent, 0);
+                }
+                overridePendingTransition(R.anim.enter, R.anim.exit);
                 if (position == 1) {
                     Intent myintent = new Intent(Playground.this, AiLaTrieuPhu.class);
                     startActivityForResult(myintent, 0);
