@@ -1,30 +1,52 @@
 {
   "nhasi": [
-    {"event": "Hết bệnh", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true},
-    {"event": "Hết bệnh", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true},
-    {"event": "Không hết", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": false},
-    {"event": "Không hết", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": false}
+    {"event": "Sau khi kiên trì thực hiện theo phác đồ điều trị của bác sĩ, nay bạn đã hoàn toàn khỏi bệnh",
+      "assets": 0, "happy": 5, "health": 20, "smart":0, "appearance": 0, "result": true},
+    {"event": "Bạn kiên trì thực hiện theo phác đồ điều trị của bác sĩ, nhưng có vẻ không mang về kết quả như mong đợi",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "result": false}
   ],
  "mat": [
-   {"event": "Het", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true},
-   {"event": "Het", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true}
+   {"event": "Sau khi kiên trì thực hiện theo phác đồ điều trị của bác sĩ, nay bạn đã hoàn toàn khỏi bệnh",
+     "assets": 0, "happy": 5, "health": 20, "smart":0, "appearance": 0, "result": true},
+   {"event": "Bạn kiên trì thực hiện theo phác đồ điều trị của bác sĩ, nhưng có vẻ không mang về kết quả như mong đợi",
+     "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "result": false}
  ],
   "taimuihong": [
-    {"event": "", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true}
+    {"event": "Sau khi kiên trì thực hiện theo phác đồ điều trị của bác sĩ, nay bạn đã hoàn toàn khỏi bệnh",
+      "assets": 0, "happy": 5, "health": 20, "smart":0, "appearance": 0, "result": true},
+    {"event": "Bạn kiên trì thực hiện theo phác đồ điều trị của bác sĩ, nhưng có vẻ không mang về kết quả như mong đợi",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "result": false}
   ],
   "dalieu": [
-    {"event": "", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true}
+    {"event": "Sau khi kiên trì thực hiện theo phác đồ điều trị của bác sĩ, nay bạn đã hoàn toàn khỏi bệnh",
+      "assets": 0, "happy": 5, "health": 20, "smart":0, "appearance": 0, "result": true},
+    {"event": "Bạn kiên trì thực hiện theo phác đồ điều trị của bác sĩ, nhưng có vẻ không mang về kết quả như mong đợi",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "result": false}
   ],
   "camsot": [
-    {"event": "", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true}
+    {"event": "Sau khi kiên trì thực hiện theo phác đồ điều trị của bác sĩ, nay bạn đã hoàn toàn khỏi bệnh",
+      "assets": 0, "happy": 5, "health": 20, "smart":0, "appearance": 0, "result": true},
+    {"event": "Bạn kiên trì thực hiện theo phác đồ điều trị của bác sĩ, nhưng có vẻ không mang về kết quả như mong đợi",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "result": false}
   ],
   "tri": [
-    {"event": "", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true}
+    {"event": "Sau khi kiên trì thực hiện theo phác đồ điều trị của bác sĩ, nay bạn đã hoàn toàn khỏi bệnh",
+      "assets": 0, "happy": 5, "health": 20, "smart":0, "appearance": 0, "result": true},
+    {"event": "Bạn kiên trì thực hiện theo phác đồ điều trị của bác sĩ, nhưng có vẻ không mang về kết quả như mong đợi",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "result": false}
   ],
   "sotxuathuyet": [
-    {"event": "", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": true}
+    {"event": "Sau khi kiên trì thực hiện theo phác đồ điều trị của bác sĩ, nay bạn đã hoàn toàn khỏi bệnh",
+      "assets": 0, "happy": 5, "health": 20, "smart":0, "appearance": 0, "result": true},
+    {"event": "Bạn kiên trì thực hiện theo phác đồ điều trị của bác sĩ, nhưng có vẻ không mang về kết quả như mong đợi",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "result": false}
   ],
   "tamly": [
-    {"event": "", "assets": 0, "happy": 3, "health": 0, "smart":0, "appearance": 0, "result": false}
+    {"event": "Sau nhiều thời gian kiên trì chữa bệnh, bạn đã khỏi hoàn toàn chứng bệnh trầm cảm",
+      "assets": 0, "happy": 40, "health": 20, "smart":0, "appearance": 0, "result": true},
+    {"event": "Sau nhiều thời gian kiên trì chữa bệnh, tuy không hoàn toàn khỏi nhưng bạn đã thấy kha khá hơn",
+      "assets": 0, "happy": 20, "health": 10, "smart":0, "appearance": 0, "result": true},
+    {"event": "Sau nhiều thời gian kiên trì chữa bệnh, bạn vẫn không thấy tiến triển gì",
+      "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "result": false}
   ]
 }

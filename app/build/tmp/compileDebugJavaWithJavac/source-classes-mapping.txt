@@ -89,10 +89,16 @@ com/ntsua/thelife/AiLaTrieuPhu_ing.java
  com.ntsua.thelife.AiLaTrieuPhu_ing$1
  com.ntsua.thelife.AiLaTrieuPhu_ing$2
  com.ntsua.thelife.AiLaTrieuPhu_ing$2$1
-com/ntsua/thelife/HoatDong.java
- com.ntsua.thelife.HoatDong
- com.ntsua.thelife.HoatDong$1
- com.ntsua.thelife.HoatDong$2
+com/ntsua/thelife/SaveGame.java
+ com.ntsua.thelife.LoadDone
+ com.ntsua.thelife.SaveGame
+ com.ntsua.thelife.SaveGame$1
+ com.ntsua.thelife.SaveGame$2
+ com.ntsua.thelife.SaveGame$2$1
+ com.ntsua.thelife.SaveGame$3
+ com.ntsua.thelife.SaveGame$3$1
+ com.ntsua.thelife.SaveGame$4
+ com.ntsua.thelife.SaveGame$4$1
 com/ntsua/thelife/JobYTe.java
  com.ntsua.thelife.JobYTe
  com.ntsua.thelife.JobYTe$1
@@ -211,10 +217,29 @@ com/ntsua/thelife/JobQuanDoi.java
  com.ntsua.thelife.JobQuanDoi$2
  com.ntsua.thelife.JobQuanDoi$3
  com.ntsua.thelife.JobQuanDoi$4
-com/ntsua/thelife/Hospital.java
- com.ntsua.thelife.Hospital
- com.ntsua.thelife.Hospital$1
- com.ntsua.thelife.Hospital$2
+com/ntsua/thelife/FragmentMain.java
+ com.ntsua.thelife.FragmentMain
+ com.ntsua.thelife.FragmentMain$1
+ com.ntsua.thelife.FragmentMain$10
+ com.ntsua.thelife.FragmentMain$11
+ com.ntsua.thelife.FragmentMain$12
+ com.ntsua.thelife.FragmentMain$13
+ com.ntsua.thelife.FragmentMain$14
+ com.ntsua.thelife.FragmentMain$15
+ com.ntsua.thelife.FragmentMain$16
+ com.ntsua.thelife.FragmentMain$17
+ com.ntsua.thelife.FragmentMain$18
+ com.ntsua.thelife.FragmentMain$19
+ com.ntsua.thelife.FragmentMain$2
+ com.ntsua.thelife.FragmentMain$20
+ com.ntsua.thelife.FragmentMain$21
+ com.ntsua.thelife.FragmentMain$3
+ com.ntsua.thelife.FragmentMain$4
+ com.ntsua.thelife.FragmentMain$5
+ com.ntsua.thelife.FragmentMain$6
+ com.ntsua.thelife.FragmentMain$7
+ com.ntsua.thelife.FragmentMain$8
+ com.ntsua.thelife.FragmentMain$9
 com/ntsua/thelife/JobCongNghe.java
  com.ntsua.thelife.JobCongNghe
  com.ntsua.thelife.JobCongNghe$1
@@ -275,36 +300,11 @@ com/ntsua/thelife/MainActivity.java
  com.ntsua.thelife.MainActivity$4
  com.ntsua.thelife.MainActivity$5
  com.ntsua.thelife.MainActivity$6
-com/ntsua/thelife/FragmentMain.java
- com.ntsua.thelife.FragmentMain
- com.ntsua.thelife.FragmentMain$1
- com.ntsua.thelife.FragmentMain$10
- com.ntsua.thelife.FragmentMain$11
- com.ntsua.thelife.FragmentMain$12
- com.ntsua.thelife.FragmentMain$13
- com.ntsua.thelife.FragmentMain$14
- com.ntsua.thelife.FragmentMain$15
- com.ntsua.thelife.FragmentMain$16
- com.ntsua.thelife.FragmentMain$17
- com.ntsua.thelife.FragmentMain$18
- com.ntsua.thelife.FragmentMain$19
- com.ntsua.thelife.FragmentMain$2
- com.ntsua.thelife.FragmentMain$20
- com.ntsua.thelife.FragmentMain$21
- com.ntsua.thelife.FragmentMain$3
- com.ntsua.thelife.FragmentMain$4
- com.ntsua.thelife.FragmentMain$5
- com.ntsua.thelife.FragmentMain$6
- com.ntsua.thelife.FragmentMain$7
- com.ntsua.thelife.FragmentMain$8
- com.ntsua.thelife.FragmentMain$9
-com/ntsua/thelife/SaveGame.java
- com.ntsua.thelife.LoadDone
- com.ntsua.thelife.SaveGame
- com.ntsua.thelife.SaveGame$1
- com.ntsua.thelife.SaveGame$2
- com.ntsua.thelife.SaveGame$2$1
- com.ntsua.thelife.SaveGame$3
- com.ntsua.thelife.SaveGame$3$1
- com.ntsua.thelife.SaveGame$4
- com.ntsua.thelife.SaveGame$4$1
+com/ntsua/thelife/HoatDong.java
+ com.ntsua.thelife.HoatDong
+ com.ntsua.thelife.HoatDong$1
+ com.ntsua.thelife.HoatDong$2
+com/ntsua/thelife/Hospital.java
+ com.ntsua.thelife.Hospital
+ com.ntsua.thelife.Hospital$1
+ com.ntsua.thelife.Hospital$2

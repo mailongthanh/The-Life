@@ -71,6 +71,12 @@ public class Hospital extends AppCompatActivity {
                                 Hospital.this);
                         return;
                     }
+                    if (MainActivity.saveGame.getMoney() < arrHospital.get(position).getPrice()){
+                        MainActivity.createNotification(R.drawable.money,
+                                "Chả đủ tiền, bạn bị viêm màng túi rồi",
+                                Hospital.this);
+                        return;
+                    }
                     try {
                         JSONArray arr = jsonSick.getJSONArray("tamly");
                         JSONObject object = arr.getJSONObject(new Random().nextInt(arr.length()));
