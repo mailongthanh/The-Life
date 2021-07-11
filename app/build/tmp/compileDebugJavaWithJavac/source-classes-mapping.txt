@@ -205,17 +205,12 @@ com/ntsua/thelife/Asset.java
  com.ntsua.thelife.Asset
 com/ntsua/thelife/PlayerBasicInfomation.java
  com.ntsua.thelife.PlayerBasicInfomation
-com/ntsua/thelife/MainActivity.java
- com.ntsua.thelife.MainActivity
- com.ntsua.thelife.MainActivity$1
- com.ntsua.thelife.MainActivity$2
- com.ntsua.thelife.MainActivity$2$1
- com.ntsua.thelife.MainActivity$2$2
- com.ntsua.thelife.MainActivity$2$2$1
- com.ntsua.thelife.MainActivity$3
- com.ntsua.thelife.MainActivity$4
- com.ntsua.thelife.MainActivity$5
- com.ntsua.thelife.MainActivity$6
+com/ntsua/thelife/JobQuanDoi.java
+ com.ntsua.thelife.JobQuanDoi
+ com.ntsua.thelife.JobQuanDoi$1
+ com.ntsua.thelife.JobQuanDoi$2
+ com.ntsua.thelife.JobQuanDoi$3
+ com.ntsua.thelife.JobQuanDoi$4
 com/ntsua/thelife/Hospital.java
  com.ntsua.thelife.Hospital
  com.ntsua.thelife.Hospital$1
@@ -267,10 +262,11 @@ com/ntsua/thelife/JobTaiXe.java
  com.ntsua.thelife.JobTaiXe$2
  com.ntsua.thelife.JobTaiXe$3
  com.ntsua.thelife.JobTaiXe$4
-com/ntsua/thelife/FragmentRate.java
- com.ntsua.thelife.FragmentRate
- com.ntsua.thelife.FragmentRate$1
- com.ntsua.thelife.FragmentRate$1$1
+com/ntsua/thelife/ActivitiesEvent.java
+ com.ntsua.thelife.ActivitiesEvent
+ com.ntsua.thelife.ActivitiesEvent$1
+ com.ntsua.thelife.ActivitiesEvent$2
+ com.ntsua.thelife.ActivitiesEvent$3
 com/ntsua/thelife/JobCauThu.java
  com.ntsua.thelife.JobCauThu
  com.ntsua.thelife.JobCauThu$1
@@ -289,14 +285,18 @@ com/ntsua/thelife/HoatDongQHAdapter.java
  com.ntsua.thelife.HoatDongQHAdapter
  com.ntsua.thelife.HoatDongQHAdapter$1
  com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
-com/ntsua/thelife/ActivitiesEvent.java
- com.ntsua.thelife.ActivitiesEvent
- com.ntsua.thelife.ActivitiesEvent$1
- com.ntsua.thelife.ActivitiesEvent$2
- com.ntsua.thelife.ActivitiesEvent$3
-com/ntsua/thelife/JobQuanDoi.java
- com.ntsua.thelife.JobQuanDoi
- com.ntsua.thelife.JobQuanDoi$1
- com.ntsua.thelife.JobQuanDoi$2
- com.ntsua.thelife.JobQuanDoi$3
- com.ntsua.thelife.JobQuanDoi$4
+com/ntsua/thelife/MainActivity.java
+ com.ntsua.thelife.MainActivity
+ com.ntsua.thelife.MainActivity$1
+ com.ntsua.thelife.MainActivity$2
+ com.ntsua.thelife.MainActivity$2$1
+ com.ntsua.thelife.MainActivity$2$2
+ com.ntsua.thelife.MainActivity$2$2$1
+ com.ntsua.thelife.MainActivity$3
+ com.ntsua.thelife.MainActivity$4
+ com.ntsua.thelife.MainActivity$5
+ com.ntsua.thelife.MainActivity$6
+com/ntsua/thelife/FragmentRate.java
+ com.ntsua.thelife.FragmentRate
+ com.ntsua.thelife.FragmentRate$1
+ com.ntsua.thelife.FragmentRate$1$1
