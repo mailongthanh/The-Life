@@ -151,6 +151,7 @@ public class JobBaoChi extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Phóng viên");
+            MainActivity.saveGame.saveSalary(13000);
             return;
         }
 

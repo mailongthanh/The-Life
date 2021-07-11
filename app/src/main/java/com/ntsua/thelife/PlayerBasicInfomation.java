@@ -48,9 +48,64 @@ public class PlayerBasicInfomation {
     private int TuVi = 0;
     private int BoiSuNghiep = 0;
     private int BoiTinh = 0;
-
     private int namTu = 0;
     private String tienAn = "";
+    private int HongKong =0;
+    private int America =0;
+    private int Korea =0;
+    private int ThaiLand=0;
+    private int VungTau=0;
+    private int PhuQuoc=0;
+    private int DaNang=0;
+    public int getHongKong() {
+        return HongKong;
+    }
+
+    public void setHongKong(int hongKong) {
+        HongKong = hongKong;
+    }
+    public int getAmerica() {
+        return America;
+    }
+
+    public void setAmerica(int america) {
+        America = america;
+    }
+    public int getKorea() {
+        return Korea;
+    }
+
+    public void setKorea(int korea) {
+        Korea = korea;
+    }
+    public int getThaiLand() {
+        return ThaiLand;
+    }
+
+    public void setThaiLand(int thaiLand) {
+        ThaiLand = thaiLand;
+    }
+    public int getVungTau() {
+        return VungTau;
+    }
+
+    public void setVungTau(int vungTau) {
+        VungTau = vungTau;
+    }
+    public int getPhuQuoc() {
+        return PhuQuoc;
+    }
+
+    public void setPhuQuoc(int phuQuoc) {
+       PhuQuoc = phuQuoc;
+    }
+    public int getDaNang() {
+        return DaNang;
+    }
+
+    public void setDaNang(int daNang) {
+        DaNang = daNang;
+    }
 
     public String getTienAn() {
         return tienAn;

@@ -10,6 +10,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
+import androidx.annotation.MainThread;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
@@ -450,7 +451,7 @@ public class FragmentMain extends Fragment {
         if (!jsonResult.getBoolean("selection")) {
             JSONArray arr = jsonResult.getJSONArray("event");
             jsonResult = arr.getJSONObject(new Random().nextInt(arr.length()));
-            MainActivity.saveGame.saveSalary(jsonResult.getInt("salary"));
+            //MainActivity.saveGame.saveSalary(jsonResult.getInt("salary"));
             //Tao dialog hien thi ket qua cua event
             dialogEventResult(title, false);
             return;
@@ -1052,7 +1053,7 @@ public class FragmentMain extends Fragment {
         MainActivity.saveGame.saveJogging(0);
         MainActivity.saveGame.saveCrime(0);
         MainActivity.saveGame.saveTienAn(null);
-
+        MainActivity.saveGame.saveSalary(0);
         btnAssets.setEnabled(false);
         btnActivity.setEnabled(false);
         btnAssets.setBackgroundResource(R.drawable.list_item_unable);
@@ -1127,7 +1128,13 @@ public class FragmentMain extends Fragment {
         MainActivity.saveGame.saveKeo(0);
         MainActivity.saveGame.saveFastFood(0);
         MainActivity.saveGame.saveCrime(0);
-
+        MainActivity.saveGame.saveDaNang(0);
+        MainActivity.saveGame.savePhuQuoc(0);
+        MainActivity.saveGame.saveVungTau(0);
+        MainActivity.saveGame.saveThaiLand(0);
+        MainActivity.saveGame.saveKorea(0);
+        MainActivity.saveGame.saveAmerica(0);
+        MainActivity.saveGame.saveHongKong(0);
         for (int i = 0; i < arrRelationship.size(); i++) {
             QuanHe friend = arrRelationship.get(i);
             friend.setInteraction(0);
@@ -1348,6 +1355,7 @@ public class FragmentMain extends Fragment {
         } else if (age > 18)
         {
             int money = 0;
+            int salary =0;
             if (!isHouse())
             {
                 contentHtml += "Trả tiền thuê nhà 3 triệu <br />";
@@ -1358,8 +1366,9 @@ public class FragmentMain extends Fragment {
                 contentHtml += "Trả tiền đi xe nhà 2 triệu <br />";
                 money += 2000;
             }
-
-            MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() - money);
+            contentHtml +="Tiền lương của bạn mỗi năm: " + MainActivity.saveGame.getSalary() +"000<br />";
+            salary += MainActivity.saveGame.getSalary();
+            MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() - money + salary);
             txtMoney.setText(MainActivity.saveGame.getMoney() + "K VND");
         }
         txtContent.setText(android.text.Html.fromHtml(contentHtml));

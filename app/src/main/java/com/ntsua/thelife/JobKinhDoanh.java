@@ -140,6 +140,7 @@ public class JobKinhDoanh extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Bán hàng rong");
+            MainActivity.saveGame.saveSalary(8000);
             return;
         }
 

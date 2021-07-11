@@ -152,6 +152,7 @@ public class JobTaiXe extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Chạy Grab");
+            MainActivity.saveGame.saveSalary(8000);
             return;
         }
 
