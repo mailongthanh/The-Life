@@ -12,4 +12,18 @@
     <color name="Red">#DF0029</color>
     <color name="Aqua">#66FFFF</color>
     <color name="Gray">#EEEEEE</color>
+    <array name="mauNenCuaSo">
+        <item>#EEE4DA</item>
+        <item>#EDE0C8</item>
+        <item>#F59563</item>
+        <item>#dc8558</item>
+        <item>#F67C5F</item>
+        <item>#F65E3B</item>
+        <item>#fdde7b</item>
+        <item>#e7ca70</item>
+        <item>#E9C12B</item>
+        <item>#E3BA14</item>
+        <item>#EDC501</item>
+        <item>#60D992</item>
+    </array>
 </resources>

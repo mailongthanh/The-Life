@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "D:\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ja\\values-ja.xml",
+=======
+            "outputFile": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan10\\1\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ja\\values-ja.xml",
+>>>>>>> c9fc84a5dd99b7008b65a9d4f7c9d81695ace644
             "map": [
                 {
                     "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-3\\7a04f665f6f61eec72bd39ff53927f73\\transformed\\jetified-facebook-login-8.1.0\\res\\values-ja\\values-ja.xml",
