@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Study\\University\\Sophomore\\HK2\\Nhap mon di dong\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+            "outputFile": "C:\\Users\\Admin\\Desktop\\HOCTAP\\Didong\\doan10\\1\\The-Life\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HOME\\.gradle\\caches\\transforms-3\\a2158f784ce81f7d45d75677a5f03b08\\transformed\\appcompat-1.2.0\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-3\\a2158f784ce81f7d45d75677a5f03b08\\transformed\\appcompat-1.2.0\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

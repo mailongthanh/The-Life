@@ -5,11 +5,20 @@ com/ntsua/thelife/HoatDong.java
 com/ntsua/thelife/Ratings.java
  com.ntsua.thelife.Ratings
  com.ntsua.thelife.Ratings$1
+com/ntsua/thelife/ActivitiesEvent.java
+ com.ntsua.thelife.ActivitiesEvent
+ com.ntsua.thelife.ActivitiesEvent$1
+ com.ntsua.thelife.ActivitiesEvent$2
+ com.ntsua.thelife.ActivitiesEvent$3
 com/ntsua/thelife/LoginActivity.java
  com.ntsua.thelife.LoginActivity
  com.ntsua.thelife.LoginActivity$1
  com.ntsua.thelife.LoginActivity$2
  com.ntsua.thelife.LoginActivity$3
+com/ntsua/thelife/HoatDongQHAdapter.java
+ com.ntsua.thelife.HoatDongQHAdapter
+ com.ntsua.thelife.HoatDongQHAdapter$1
+ com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
 com/ntsua/thelife/AiLaTrieuPhu_TienThuongAdapter.java
  com.ntsua.thelife.AiLaTrieuPhu_TienThuongAdapter
 com/ntsua/thelife/CrimeActivity.java
@@ -34,6 +43,10 @@ com/ntsua/thelife/JobCaSi.java
  com.ntsua.thelife.JobCaSi$2
  com.ntsua.thelife.JobCaSi$3
  com.ntsua.thelife.JobCaSi$4
+com/ntsua/thelife/CrimeAdapter.java
+ com.ntsua.thelife.CrimeAdapter
+ com.ntsua.thelife.CrimeAdapter$1
+ com.ntsua.thelife.CrimeAdapter$ViewHolder
 com/ntsua/thelife/AiLaTrieuPhu_Dialog_KhanGia.java
  com.ntsua.thelife.AiLaTrieuPhu_Dialog_KhanGia
 com/ntsua/thelife/FragmentShare.java
@@ -186,6 +199,12 @@ com/ntsua/thelife/JobDichVu.java
 com/ntsua/thelife/Playground.java
  com.ntsua.thelife.Playground
  com.ntsua.thelife.Playground$1
+com/ntsua/thelife/JobQuanDoi.java
+ com.ntsua.thelife.JobQuanDoi
+ com.ntsua.thelife.JobQuanDoi$1
+ com.ntsua.thelife.JobQuanDoi$2
+ com.ntsua.thelife.JobQuanDoi$3
+ com.ntsua.thelife.JobQuanDoi$4
 com/ntsua/thelife/AiLaTrieuPhu_DSCauHoi.java
  com.ntsua.thelife.AiLaTrieuPhu_DSCauHoi
 com/ntsua/thelife/ChuyenViec.java
@@ -205,12 +224,17 @@ com/ntsua/thelife/Asset.java
  com.ntsua.thelife.Asset
 com/ntsua/thelife/PlayerBasicInfomation.java
  com.ntsua.thelife.PlayerBasicInfomation
-com/ntsua/thelife/JobQuanDoi.java
- com.ntsua.thelife.JobQuanDoi
- com.ntsua.thelife.JobQuanDoi$1
- com.ntsua.thelife.JobQuanDoi$2
- com.ntsua.thelife.JobQuanDoi$3
- com.ntsua.thelife.JobQuanDoi$4
+com/ntsua/thelife/MainActivity.java
+ com.ntsua.thelife.MainActivity
+ com.ntsua.thelife.MainActivity$1
+ com.ntsua.thelife.MainActivity$2
+ com.ntsua.thelife.MainActivity$2$1
+ com.ntsua.thelife.MainActivity$2$2
+ com.ntsua.thelife.MainActivity$2$2$1
+ com.ntsua.thelife.MainActivity$3
+ com.ntsua.thelife.MainActivity$4
+ com.ntsua.thelife.MainActivity$5
+ com.ntsua.thelife.MainActivity$6
 com/ntsua/thelife/Hospital.java
  com.ntsua.thelife.Hospital
  com.ntsua.thelife.Hospital$1
@@ -262,11 +286,10 @@ com/ntsua/thelife/JobTaiXe.java
  com.ntsua.thelife.JobTaiXe$2
  com.ntsua.thelife.JobTaiXe$3
  com.ntsua.thelife.JobTaiXe$4
-com/ntsua/thelife/ActivitiesEvent.java
- com.ntsua.thelife.ActivitiesEvent
- com.ntsua.thelife.ActivitiesEvent$1
- com.ntsua.thelife.ActivitiesEvent$2
- com.ntsua.thelife.ActivitiesEvent$3
+com/ntsua/thelife/FragmentRate.java
+ com.ntsua.thelife.FragmentRate
+ com.ntsua.thelife.FragmentRate$1
+ com.ntsua.thelife.FragmentRate$1$1
 com/ntsua/thelife/JobCauThu.java
  com.ntsua.thelife.JobCauThu
  com.ntsua.thelife.JobCauThu$1
@@ -277,26 +300,12 @@ com/ntsua/thelife/Cooking.java
  com.ntsua.thelife.Cooking
 com/ntsua/thelife/AiLaTrieuPhu_CauHoi.java
  com.ntsua.thelife.AiLaTrieuPhu_CauHoi
-com/ntsua/thelife/CrimeAdapter.java
- com.ntsua.thelife.CrimeAdapter
- com.ntsua.thelife.CrimeAdapter$1
- com.ntsua.thelife.CrimeAdapter$ViewHolder
-com/ntsua/thelife/HoatDongQHAdapter.java
- com.ntsua.thelife.HoatDongQHAdapter
- com.ntsua.thelife.HoatDongQHAdapter$1
- com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
-com/ntsua/thelife/MainActivity.java
- com.ntsua.thelife.MainActivity
- com.ntsua.thelife.MainActivity$1
- com.ntsua.thelife.MainActivity$2
- com.ntsua.thelife.MainActivity$2$1
- com.ntsua.thelife.MainActivity$2$2
- com.ntsua.thelife.MainActivity$2$2$1
- com.ntsua.thelife.MainActivity$3
- com.ntsua.thelife.MainActivity$4
- com.ntsua.thelife.MainActivity$5
- com.ntsua.thelife.MainActivity$6
-com/ntsua/thelife/FragmentRate.java
- com.ntsua.thelife.FragmentRate
- com.ntsua.thelife.FragmentRate$1
- com.ntsua.thelife.FragmentRate$1$1
+com/ntsua/thelife/game2048.java
+ com.ntsua.thelife.game2048
+ com.ntsua.thelife.game2048$1
+com/ntsua/thelife/game2048_oSoAdapter.java
+ com.ntsua.thelife.game2048_oSoAdapter
+com/ntsua/thelife/game2048_oVuong.java
+ com.ntsua.thelife.game2048_oVuong
+com/ntsua/thelife/game2048_batdau.java
+ com.ntsua.thelife.game2048_batdau
