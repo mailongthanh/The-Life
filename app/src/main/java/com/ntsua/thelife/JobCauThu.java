@@ -152,6 +152,12 @@ public class JobCauThu extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Cầu thủ dự bị");
+            MainActivity.saveGame.saveSalary(15000);
+            txtJob.setText("Cầu thủ dự bị");
+            if(MainActivity.saveGame.getUniversity()) {
+                MainActivity.createNotification(R.drawable.cancel,"Bạn đã từ bỏ môi trường đại học",this);
+                MainActivity.saveGame.saveUniversity(false);
+            }
             return;
         }
 

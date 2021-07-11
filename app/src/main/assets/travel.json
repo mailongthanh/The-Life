@@ -1,0 +1,120 @@
+{
+  "Hong Kong": [
+    {
+      "event": "Trong chuyến du lịch 5 ngày 4 đêm tại HongKong. Bạn đã được tham quan rất nhiều cảnh đẹp tại đó trong đó có một số địa điểm nổi bật như the Peak-đỉnh núi cao nhất Hong Kong, Tháp đồng hồ, khám phá chợ đêm náo nhiệt ở Temple Street, khu vui chơi Lan Kwai Fong. Bạn đã được ăn rất nhiều món ngon và được gặp mặt những người HongKong đầy thân thiện, vui tính. Bạn thấy chuyến du lịch này tuy phải bỏ ra nhiều tiền nhưng nó rất xứng đáng. Bạn rất vui và hạnh phúc",
+      "assets": -10000,
+      "happy": 20,
+      "health": 10,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Bạn bị lừa mua gói du lịch giá rẻ chỉ bằng nửa giá với giá gốc để đi HongKong 5 ngày 4 đêm. Bạn thất vọng và rất buồn",
+      "assets": -5000,
+      "happy": -5,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    }
+  ],
+  "America": [
+    {
+      "event": "Bạn cùng bạn mình mua gói du lịch qua Mỹ. Gói du lịch rất mắc tận 70 triệu và đi trong 8 ngày 7 đêm. Tại Mỹ bạn được đi tham quan Vườn quốc gia Grand Canyon, Vịnh Hanauma, Cung điện Lolani, Bảo tàng nghệ thuật Honolulu, Tháp Stratosphere và Đại lộ danh vọng Hollywood. Sau chuyến du lịch, bạn và bạn mình thu về cho mình rất nhiều kiến thức về con người, lịch sử và địa danh của nước Mỹ. Cả 2 rất vui vì chuyến đi rất bổ ích",
+      "assets": -70000,
+      "happy": 25,
+      "health": 15,
+      "smart": 15,
+      "appearance": 0
+    }
+  ],
+  "Korea": [
+    {
+      "event": "Lần này bạn đăng ký cùng đoàn đi du lịch Hàn Quốc. Bạn đã ghé thăm Cung điện Gyeongbokgung, Quảng trường Gwanghwamun, Suối Cheonggyecheon, Chợ Namdaemun và Bảo tàng Quốc gia Hàn Quốc. Chuyến đi rất vui và bạn tự hứa với lòng sẽ trở lại Hàn Quốc một lần nữa",
+      "assets": -12000,
+      "happy": 15,
+      "health": 5,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Bạn tham rẻ đi mua gói du lịch hàn quốc giá rẻ trên mạng. Cuối cùng bị lừa. Bạn vô cùng đau lòng :(",
+      "assets": -4000,
+      "happy": -5,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    }
+  ],
+  "ThaiLand": [
+    {
+      "event": "Bạn đăng ký đi du lịch ở Thái Lan. Chuyến du lịch diễn ra khá trơn tru cho tới khi bạn được nếm thử món Lẩu Thái của nước này. Vì nó quá cay nên đã khiến bạn bị ngộ độc dẫn tới phải nằm khách sạn suốt chuyến du lịch để hồi sức. Bạn rất buồn",
+      "assets": -6000,
+      "happy": -10,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Bạn đi du lịch ở Thái Lan. Nơi đây có rất nhiều địa danh nổi tiếng như: Grand Palace, Chùa Phật Ngọc, Cung điện Vimanmek, Chợ nổi Damnoen Saduak và Vườn thú Khao Kheow. Chuyến du lịch vô cùng thú vị và khiến bạn giải tỏa sau những giờ làm việc mệt mỏi",
+      "assets": -6000,
+      "happy": 15,
+      "health": 10,
+      "smart": 0,
+      "appearance": 0
+    }
+  ],
+  "Vũng Tàu": [
+    {
+      "event": "Mùa hè nóng nực, bạn và bạn của mình đã đăng ký một chuyến đi Vũng Tàu để tắm biển và giải tỏa sau những ngày làm việc mệt mỏi. Chuyến đi rất vui. Bạn thầm nghĩ không cần phải đi những nói nước ngoài mới tìm được niềm vui và niềm vui là ở bạn bè đi cùng",
+      "assets": -500,
+      "happy": 10,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Trong chuyến đi Vũng Tàu, bạn ăn quá nhiều đồ hải sản tươi sống dẫn tới tối đó bạn bị đau bụng. Bạn của bạn phải đi mua thuốc tiêu cho bạn uống. Bạn tự hứa sẽ không ăn đồ sống quá nhiều nữa :(",
+      "assets": -500,
+      "happy": -3,
+      "health": -5,
+      "smart": 0,
+      "appearance": 0
+    }
+  ],
+  "Phú Quốc": [
+    {
+      "event": "Bạn đăng ký đi du lịch ở Phú Quốc. Chuyến đi trên một hòn đảo nhỏ khiến bạn được giải tỏa sau những ngày học tập, làm việc căng thẳng và áp lực",
+      "assets": -1000,
+      "happy": 10,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Chuyến đi Phúc Quốc lần này bạn được khám phá khá nhiều điều mới: bạn được đi cáp treo, ăn tối trên thuyền đánh cá, bạn được đi suối Tranh và ghé thăm vườn quốc gia Phú Quốc. Tuy chuyến đi bắt bạn phải đi bộ nhiều nhưng nó khiến bạn rất vui và thư giãn",
+      "assets": -1000,
+      "happy": 10,
+      "health": 5,
+      "smart": 0,
+      "appearance": 0
+    }
+  ],
+  "Đà Nẵng": [
+    {
+      "event": "Chuyến đi Đà Nẵng kì này bạn được ghé thăm : Cầu Vàng-Bà Nà Hills với một bàn tay Phật tựa như đang đỡ cây cầu, ngôi nhà úp ngược cho bạn chụp những tấm ảnh vi diệu, suối khoáng thần tài trải nghiệm cảm giác tắm suối và Vinpearl Hội An cho bạn những trải nghiệm vui chơi khá thú vị. Bạn cảm thấy chuyến du lịch vừa rẻ lại vừa cho du khách những cảm giác mới lạ, đầy thư giãn",
+      "assets": -2000,
+      "happy": 15,
+      "health": 10,
+      "smart": 0,
+      "appearance": 0
+    },
+    {
+      "event": "Bạn bị lừa mua gói du lịch đà nẵng với giá trị 500k. Hôm sau vừa bước ra sân bay để chuẩn bị đi thì bạn bị nhân viên sân bay mời về vì đó là vé giả mạo :( bạn rất thất vọng",
+      "assets": -500,
+      "happy": -5,
+      "health": 0,
+      "smart": 0,
+      "appearance": 0
+    }
+  ]
+}

@@ -140,6 +140,12 @@ public class JobKinhDoanh extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Bán hàng rong");
+            MainActivity.saveGame.saveSalary(8000);
+            txtJob.setText("Bán hàng rong");
+            if(MainActivity.saveGame.getUniversity()) {
+                MainActivity.createNotification(R.drawable.cancel,"Bạn đã từ bỏ môi trường đại học",this);
+                MainActivity.saveGame.saveUniversity(false);
+            }
             return;
         }
 

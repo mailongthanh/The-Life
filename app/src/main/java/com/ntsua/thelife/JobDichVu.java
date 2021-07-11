@@ -152,6 +152,12 @@ public class JobDichVu extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Bồi bàn");
+            MainActivity.saveGame.saveSalary(8000);
+            txtJob.setText("Bồi bàn");
+            if(MainActivity.saveGame.getUniversity()) {
+                MainActivity.createNotification(R.drawable.cancel,"Bạn đã từ bỏ môi trường đại học",this);
+                MainActivity.saveGame.saveUniversity(false);
+            }
             return;
         }
 

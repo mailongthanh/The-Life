@@ -125,6 +125,7 @@ public class AiLaTrieuPhu_ing extends AppCompatActivity {
                                 viTriCauHoi = 15;
                                 txvThuaGame.setVisibility(View.VISIBLE);
                                 txvThuaGame.setText("Chuc mung ban da duoc \n" + arrTienThuong.get(0) + "000 vnd");
+                                MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney()+150000000);
                                 return;
                             }
                             hienCauHoi();
@@ -133,6 +134,9 @@ public class AiLaTrieuPhu_ing extends AppCompatActivity {
                             // 8 5
                             int vitriTienThuong = (viTriCauHoi / 5) * 5;
                             txvThuaGame.setText("Ban sẽ ra về với tiền thương là \n" + arrTienThuong.get(14 - vitriTienThuong) + "000 vnd");
+                            int i = Integer.parseInt(arrTienThuong.get(14-vitriTienThuong));
+                            i = i*1000;
+                            MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney()+i);
                         }
                     }
                 }.start();

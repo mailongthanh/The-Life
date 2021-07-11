@@ -153,6 +153,12 @@ public class JobAmThuc extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Phụ bếp");
+            MainActivity.saveGame.saveSalary(6000);
+            txtJob.setText("Phụ bếp");
+            if(MainActivity.saveGame.getUniversity()) {
+                MainActivity.createNotification(R.drawable.cancel,"Bạn đã từ bỏ môi trường đại học",this);
+                MainActivity.saveGame.saveUniversity(false);
+            }
             return;
         }
 

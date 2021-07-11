@@ -155,6 +155,12 @@ public class JobYTe extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Bác sĩ thực tập");
+            MainActivity.saveGame.saveSalary(8000);
+            txtJob.setText("Bác sĩ thực tập");
+            if(MainActivity.saveGame.getUniversity()) {
+                MainActivity.createNotification(R.drawable.cancel,"Bạn đã từ bỏ môi trường đại học",this);
+                MainActivity.saveGame.saveUniversity(false);
+            }
             return;
         }
 

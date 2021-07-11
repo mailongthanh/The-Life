@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -67,7 +68,7 @@ public class JobQuanDoi extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        if(MainActivity.saveGame.getAge()>18&&MainActivity.saveGame.getAge()<27 &&!MainActivity.saveGame.getJob().equals("Binh nhất")&&!MainActivity.saveGame.getJob().equals("Trung sĩ")&&!MainActivity.saveGame.getJob().equals("Thượng úy")&&!MainActivity.saveGame.getJob().equals("Đại tá"))
+                        if(MainActivity.saveGame.getAge()<18&&MainActivity.saveGame.getAge()>27 &&!MainActivity.saveGame.getJob().equals("Binh nhất")&&!MainActivity.saveGame.getJob().equals("Trung sĩ")&&!MainActivity.saveGame.getJob().equals("Thượng úy")&&!MainActivity.saveGame.getJob().equals("Đại tá"))
                         {
                             MainActivity.createNotification(R.drawable.jobsearch, "Bạn chỉ được nhập ngũ trong độ tuổi từ 18 đến 27", JobQuanDoi.this);
                         }
@@ -152,6 +153,12 @@ public class JobQuanDoi extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Binh nhất");
+            MainActivity.saveGame.saveSalary(7000);
+            txtJob.setText("Binh nhất");
+            if(MainActivity.saveGame.getUniversity()) {
+                MainActivity.createNotification(R.drawable.cancel,"Bạn đã từ bỏ môi trường đại học",this);
+                MainActivity.saveGame.saveUniversity(false);
+            }
             return;
         }
 
@@ -268,7 +275,6 @@ public class JobQuanDoi extends AppCompatActivity {
     }
     public void gotoMainMenu(View view)
     {
-        //startActivity(new Intent(JobCaSi.this, ChuyenViec.class));
         overridePendingTransition(R.anim.enter, R.anim.exit);
         onBackPressed();
     }

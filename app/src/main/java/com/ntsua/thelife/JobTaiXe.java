@@ -152,6 +152,12 @@ public class JobTaiXe extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Chạy Grab");
+            MainActivity.saveGame.saveSalary(8000);
+            txtJob.setText("Chạy Grab");
+            if(MainActivity.saveGame.getUniversity()) {
+                MainActivity.createNotification(R.drawable.cancel,"Bạn đã từ bỏ môi trường đại học",this);
+                MainActivity.saveGame.saveUniversity(false);
+            }
             return;
         }
 

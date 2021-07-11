@@ -151,6 +151,12 @@ public class JobCaSi extends AppCompatActivity {
         {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Ca sĩ đám cưới");
+            MainActivity.saveGame.saveSalary(8000);
+            txtJob.setText("Ca sĩ đám cưới");
+            if(MainActivity.saveGame.getUniversity()) {
+                MainActivity.createNotification(R.drawable.cancel,"Bạn đã từ bỏ môi trường đại học",this);
+                MainActivity.saveGame.saveUniversity(false);
+            }
             return;
         }
 

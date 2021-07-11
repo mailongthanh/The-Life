@@ -1976,6 +1976,7 @@ drawable googleg_standard_color_18
 drawable grab
 drawable gradient_bg
 drawable gradient_bg_select
+drawable graduation
 drawable guitar
 drawable gun
 drawable hacker

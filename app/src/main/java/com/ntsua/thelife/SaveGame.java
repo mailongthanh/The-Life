@@ -167,6 +167,14 @@ public class SaveGame {
         return infomation.isDating();
     }
 
+    public void saveUniversity(boolean university)
+    {
+        infomation.setUniversity(university);
+        reference.child("Basic").child("university").setValue(university);
+    }
+    public boolean getUniversity() {return  infomation.isUniversity();}
+
+
     public  void saveEnglish(boolean english)
     {
         infomation.setEnglish(english);
@@ -575,7 +583,62 @@ public class SaveGame {
         this.arrSick = arrSick;
         reference.child("Sick").setValue(arrSick);
     }
+    public int getHongKong() {
+        return infomation.getHongKong();
+    }
 
+    public void saveHongKong(int hongKong) {
+        infomation.setHongKong(hongKong);
+        reference.child("Basic").child("hongKong").setValue(hongKong);
+    }
+    public int getAmerica() {
+        return infomation.getAmerica();
+    }
+
+    public void saveAmerica(int america) {
+        infomation.setAmerica(america);
+        reference.child("Basic").child("america").setValue(america);
+    }
+    public int getKorea() {
+        return infomation.getKorea();
+    }
+
+    public void saveKorea(int korea) {
+        infomation.setKorea(korea);
+        reference.child("Basic").child("korea").setValue(korea);
+    }
+    public int getThaiLand() {
+        return infomation.getThaiLand();
+    }
+
+    public void saveThaiLand(int thaiLand) {
+        infomation.setThaiLand(thaiLand);
+        reference.child("Basic").child("thaiLand").setValue(thaiLand);
+    }
+    public int getVungTau() {
+        return infomation.getVungTau();
+    }
+
+    public void saveVungTau(int vungTau) {
+        infomation.setVungTau(vungTau);
+        reference.child("Basic").child("vungTau").setValue(vungTau);
+    }
+    public int getPhuQuoc() {
+        return infomation.getPhuQuoc();
+    }
+
+    public void savePhuQuoc(int phuQuoc) {
+        infomation.setPhuQuoc(phuQuoc);
+        reference.child("Basic").child("phuQuoc").setValue(phuQuoc);
+    }
+    public int getDaNang() {
+        return infomation.getDaNang();
+    }
+
+    public void saveDaNang(int daNang) {
+        infomation.setDaNang(daNang);
+        reference.child("Basic").child("daNang").setValue(daNang);
+    }
     public ArrayList<Sick> getSick(){
         return arrSick;
     }

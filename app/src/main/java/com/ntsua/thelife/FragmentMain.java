@@ -10,6 +10,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
+import androidx.annotation.MainThread;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
@@ -99,10 +100,11 @@ public class FragmentMain extends Fragment {
     ScrollView scrollView;
     TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName, txtJob, txtScrollviewContent;
     ArrayList<QuanHe> arrRelationship;
-    JSONArray arrJsonAge;
+    JSONArray arrJsonAge, arrAge;
     JSONObject jsonResult, jsonAllJob, jsonJob;
     String contentHtml, tienAn;
     int money, TempAge, namTu;
+    boolean University = false;
     int REQUEST_CODE_INIT = 123;
     CircleImageView imgUserAvatar;
     TextView txtUserName, txtPlayerName;
@@ -197,15 +199,19 @@ public class FragmentMain extends Fragment {
         {
             btnAssets.setEnabled(true);
             btnActivity.setEnabled(true);
+            btnWork.setEnabled(true);
 
             btnAssets.setBackgroundResource(R.drawable.custom_button_menu);
             btnActivity.setBackgroundResource(R.drawable.custom_button_menu);
+            btnWork.setBackgroundResource(R.drawable.custom_button_menu);
         }
+
         if(namTu!=0) {
             if (age >= TempAge + namTu) {
                 namTu = 0;
                 MainActivity.saveGame.saveNamTu(namTu);
                 MainActivity.saveGame.saveJob("Thất nghiệp");
+                changeWork();
 
                 btnActivity.setEnabled(true);
                 btnRelationship.setEnabled(true);
@@ -232,22 +238,35 @@ public class FragmentMain extends Fragment {
             addAgeHTML(age);
         }
         else {
-            if (age == 18) {
+            if (age == 6)
+            {
+                MainActivity.saveGame.saveJob("Học sinh");
+                txtJob.setText("Học sinh");
+                changeWork();
+            }
+            if(age == 18)
+            {
                 addAgeHTML(18);
                 dialogUniversity();
                 return;
             }
-//        if (age == 6)
-//        {
-//            saveGame.saveJob("Học sinh");
-//            //Chancge work
-//            txtContent.setText("Học sinh");
-//        }
+
+            if(age == 22 && University == true)
+            {
+                addAgeHTML(22);
+                MainActivity.createNotification(R.drawable.graduation,"bạn đã kết thúc 4 năm đại học",view.getContext());
+                MainActivity.saveGame.saveJob("Thất nghiệp");
+                txtJob.setText("Thất nghiệp");
+                changeWork();
+                return;
+            }
             //lay su kien tuoi
-            JSONArray arrAge = arrJsonAge.getJSONArray(age);
+            if(age < arrJsonAge.length()) {
+                arrAge = arrJsonAge.getJSONArray(age);
+            } else arrAge = null;
             Random random = new Random();
             //Toast.makeText(this, arrAge.length() + " - " + age, Toast.LENGTH_SHORT).show();
-            if (arrAge.length() == 0) {
+            if (arrAge == null||arrAge.length() == 0 ) {
                 MainActivity.createNotification(MainActivity.saveGame.getAvatar(), "Năm nay không có sự kiện gì đặc biệt", view.getContext());
                 initNewAge();
                 addAgeHTML(age);
@@ -273,6 +292,12 @@ public class FragmentMain extends Fragment {
                 addAgeHTML(age);
                 dialogEventResult(title, true);
             }
+
+//            if (age == 17) {
+//                addAgeHTML(17);
+//                dialogUniversity();
+//                return;
+//            }
         }
     }
 
@@ -450,7 +475,7 @@ public class FragmentMain extends Fragment {
         if (!jsonResult.getBoolean("selection")) {
             JSONArray arr = jsonResult.getJSONArray("event");
             jsonResult = arr.getJSONObject(new Random().nextInt(arr.length()));
-            MainActivity.saveGame.saveSalary(jsonResult.getInt("salary"));
+            //MainActivity.saveGame.saveSalary(jsonResult.getInt("salary"));
             //Tao dialog hien thi ket qua cua event
             dialogEventResult(title, false);
             return;
@@ -817,7 +842,7 @@ public class FragmentMain extends Fragment {
 
     void changeWork() throws JSONException {
         switch (MainActivity.saveGame.getJob()) {
-            case "Trẻ trâu":
+            case "Học sinh":
                 jsonJob = jsonAllJob.getJSONObject("student");
                 break;
             case "Tù nhân":
@@ -970,6 +995,15 @@ public class FragmentMain extends Fragment {
             case "Viện trưởng":
                 jsonJob = jsonAllJob.getJSONObject("Viện trưởng");
                 break;
+            case "Sinh viên":
+                jsonJob = jsonAllJob.getJSONObject("Sinh viên");
+                break;
+            case "Thất nghiệp":
+                jsonJob = jsonAllJob.getJSONObject("Thất nghiệp");
+                break;
+            case "Trẻ trâu":
+                jsonJob = jsonAllJob.getJSONObject("Trẻ trâu");
+                break;
         }
     }
 
@@ -1052,7 +1086,8 @@ public class FragmentMain extends Fragment {
         MainActivity.saveGame.saveJogging(0);
         MainActivity.saveGame.saveCrime(0);
         MainActivity.saveGame.saveTienAn(null);
-
+        MainActivity.saveGame.saveUniversity(false);
+        MainActivity.saveGame.saveSalary(0);
         btnAssets.setEnabled(false);
         btnActivity.setEnabled(false);
         btnAssets.setBackgroundResource(R.drawable.list_item_unable);
@@ -1127,7 +1162,13 @@ public class FragmentMain extends Fragment {
         MainActivity.saveGame.saveKeo(0);
         MainActivity.saveGame.saveFastFood(0);
         MainActivity.saveGame.saveCrime(0);
-
+        MainActivity.saveGame.saveDaNang(0);
+        MainActivity.saveGame.savePhuQuoc(0);
+        MainActivity.saveGame.saveVungTau(0);
+        MainActivity.saveGame.saveThaiLand(0);
+        MainActivity.saveGame.saveKorea(0);
+        MainActivity.saveGame.saveAmerica(0);
+        MainActivity.saveGame.saveHongKong(0);
         for (int i = 0; i < arrRelationship.size(); i++) {
             QuanHe friend = arrRelationship.get(i);
             friend.setInteraction(0);
@@ -1348,6 +1389,7 @@ public class FragmentMain extends Fragment {
         } else if (age > 18)
         {
             int money = 0;
+            int salary =0;
             if (!isHouse())
             {
                 contentHtml += "Trả tiền thuê nhà 3 triệu <br />";
@@ -1358,8 +1400,9 @@ public class FragmentMain extends Fragment {
                 contentHtml += "Trả tiền đi xe nhà 2 triệu <br />";
                 money += 2000;
             }
-
-            MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() - money);
+            contentHtml +="Tiền lương của bạn mỗi năm: " + MainActivity.saveGame.getSalary() +"000<br />";
+            salary += MainActivity.saveGame.getSalary();
+            MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() - money + salary);
             txtMoney.setText(MainActivity.saveGame.getMoney() + "K VND");
         }
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
@@ -1430,6 +1473,13 @@ public class FragmentMain extends Fragment {
                 } else if (arrUniversity.get(position).getRequire() <= MainActivity.saveGame.getSmart()) {
                     contentHtml += "Bạn chọn vào học tại trường " + arrUniversity.get(position).getName() + "<br/>";
                     MainActivity.saveGame.saveJob("Sinh viên");
+                    University = true;
+                    MainActivity.saveGame.saveUniversity(University);
+                    try {
+                        changeWork();
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                 }
                 else return;
                 MainActivity.saveGame.saveDetailActivity(contentHtml);
@@ -1490,6 +1540,7 @@ public class FragmentMain extends Fragment {
                 //Toast.makeText(MainActivity.this, "Loaded " + time, Toast.LENGTH_SHORT).show();
                 namTu = MainActivity.saveGame.getNamTu();
                 tienAn = MainActivity.saveGame.getTienAn();
+                University = MainActivity.saveGame.getUniversity();
 
                 if(MainActivity.saveGame.getAge() <= 6)
                 {
