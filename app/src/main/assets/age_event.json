@@ -205,7 +205,7 @@
       ]}
   ],
   [
-    {"title":"Thi tuyển 10", "event": "Bàn tay ta làm nên tất cả\n\nCó sức người sỏi đá cũng thành công.\n\nHãy chỉ ra BPTT trong câu ? ", "selection": true,
+    {"title":"Thi tuyển 10", "event": "Bàn tay ta làm nên tất cả\nCó sức người sỏi đá cũng thành cơm.\nHãy chỉ ra BPTT trong câu ? ", "selection": true,
       "select":[
         {"content": "A. Ẩn dụ", "selection":false,
           "event": [
@@ -374,7 +374,7 @@
   ],
   [],
   [
-    {"title":"Đời sống", "event": "Đang trên đường về thì bạn gặp một người tàn tật đang xin tiền \n Trước tình huống đó bạn muốn làm gì ? ", "selection": true,
+    {"title":"Đời sống", "event": "Đang trên đường về thì bạn gặp một người khuyết tật đang xin tiền \n Trước tình huống đó bạn muốn làm gì ? ", "selection": true,
       "select":[
         {"content": "Cho tiền", "selection":false,
           "event": [
@@ -466,12 +466,12 @@
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
   ],
   [
-    {"title":"Đời sống", "event": "Vì một tai nạn, tình cờ bạn có cơ hội chạm môi một bạn nữ trong lớp \n\nBạn muốn làm gì ? ", "selection": true,
+    {"title":"Đời sống", "event": "Vì một tai nạn, tình cờ bạn có cơ hội chạm môi một người khác giới \n\nBạn muốn làm gì ? ", "selection": true,
       "select":[
         {"content": "Tới luôn", "selection":false,
           "event": [
-            { "event" :"Bạn lợi dụng cơ hội, chạm môi với một bạn nữ, tình cờ là cô bạn này cũng thích bạn", "assets": 0, "happy": 10, "health": 0, "smart":5, "appearance": 0, "sick": ""},
-            { "event" :"Bạn lợi dụng cơ hội, chạm môi với một bạn nữ, tuy nhiên bạn nhận ra mắt bạn đã lầm, thực chất đối phương là thằng bạn thân của mình ", "assets": 0, "happy": -10, "health": 0, "smart":-5, "appearance": -5, "sick": ""}
+            { "event" :"Bạn lợi dụng cơ hội, chạm môi với người bạn kia, tình cờ là người bạn này cũng thích bạn", "assets": 0, "happy": 10, "health": 0, "smart":5, "appearance": 0, "sick": ""},
+            { "event" :"Bạn lợi dụng cơ hội, chạm môi với người bạn kia, tuy nhiên bạn nhận ra mắt bạn đã lầm, thực chất đối phương chỉ đang giả vờ khác giới thôi", "assets": 0, "happy": -10, "health": 0, "smart":-5, "appearance": -5, "sick": ""}
           ]},
 
         {"content": "Né tránh", "selection":false,
@@ -480,11 +480,43 @@
             { "event": "Đứng trước tình huống có lợi cho mình, nhưng bạn lại lãng tránh, đối phương cảm thấy bạn có vấn đề về giới tính của mình", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": -10, "sick": ""}
           ]}
       ]},
-
-    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một mẫu tin trên báo, bạn nhận ra rằng: \n\nBạn không thể cảm nhận bất kì mùi nào khi bạn ngủ. ",
+    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một mẫu tin trên báo, bạn nhận ra rằng: \nBạn không thể cảm nhận bất kì mùi nào khi bạn ngủ.",
       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""}
   ],
+  [
+    {"title": "Tin tức","event": "Năm nay cả thế giới bóng đá trở nên dậy sóng khi nghe tin Messi đoạt được quả bóng vàng năm nay",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
+    {"title": "Sức khoẻ","event": "Bạn đang có dấu hiệu của bệnh trĩ, hãy nhanh chóng đến viện",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": "trĩ"}
+  ],
+  [
+    {"title": "Tin tức","event": "Hàng loạt thí sinh năm nay xa bờ do lệch tủ với đề văn Sóng trong kì thi trung học phổ thông quốc gia",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
+    {"title": "Tin tức","event": "Hàng loạt thí sinh năm nay cho rằng đề thi THPTQG môn anh dễ hơn rất nhiều với đề vật lí, gây tranh cãi giữa các khối",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
+  ], //40
   [],
   [],
-  []
+  [
+    {"title": "Tin tức","event": "Việt Nam chế tạo thành công vacxin chống lại dịch bệnh, trở thánh quốc gia đầu tiên ngăn chặn hoàn toàn virut",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
+    {"title":"Đời sống", "event": "Đang đi dạo thì bạn gặp một đứa nhỏ mời bạn vé số, \n\nTrước tình huống đó bạn muốn làm gì ? ", "selection": true,
+      "select":[
+        {"content": "Mua giúp", "selection":false,
+          "event": [
+            { "event" :"Bạn quyết định mua giúp đứa bé bán vé số, tối hôm đó bạn xem kết quả xổ số, bạn trúng được giải 4", "assets": 3000, "happy": 10, "health": 0, "smart":0, "appearance": 10, "sick": ""},
+            { "event" :"Bạn quyết định mua giúp đứa bé bán vé số, tối hôm đó bạn xem kết quả xổ số, bạn không trúng được giải nào", "assets": -50, "happy": -3, "health": 0, "smart":0, "appearance": 0, "sick": ""}
+          ]},
+
+        {"content": "Phớt lờ", "selection":false,
+          "event":[
+            { "event": "Bạn quyết định phớt lờ đứa bé, tối hôm đó xem kết quả xổ số, bạn nhận ra mình đã bỏ qua tờ vé trúng giải độc đắc \n\nBạn cảm thấy hối hận vô cùng", "assets": 0, "happy": -20, "health": 0, "smart":0, "appearance": 0, "sick": ""},
+            { "event": "Bạn quyết định phớt lờ đứa bé", "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
+          ]}
+      ]}
+  ],
+  [
+    {"title": "Kiến thức","event": "các nhà khoa học đưa ra nghiên cứu:\nThành phần trong máu có hàm lượng muối tương đương nước biển. Thực tế này củng cố giả thiết sự sống đến từ đại dương",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""}
+  ]
 ]

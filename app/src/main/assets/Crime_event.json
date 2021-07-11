@@ -1,9 +1,9 @@
 {
   "Móc túi": [
-    {"event": "Bạn lượn 1 vòng công viên, bạn móc được 1 vài chiếc smartphone của người đi đường", "asset":"", "selection": false, "assets": 1000, "happy": 5, "health": 0, "smart":0, "appearance": -5},
-    {"event": "Bạn lượn 1 vòng thành phố, bạn chuẩn bị móc túi của một người đi đường thì bị anh ta tóm được, bạn bị đấm cho mấy phát nhưng may mắn bạn chạy trốn được", "asset":"","selection": false, "assets": 0, "happy": -15, "health": -20, "smart":0, "appearance": -5},
-    {"event": "Bạn giả vờ vấp ngã, nhờ người khác đỡ dậy, bạn lợi dụng lúc họ sơ ý bạn móc được ví của họ", "asset":"", "selection": false, "assets": 2000, "happy": 5, "health": 0, "smart":0, "appearance": -5},
-    {"event": "Sau nhiều lần hành tẩu giang hồ, thì bạn không may bị bắt, bạn chỉ bị nhắc nhở, và phạt hành chính", "asset":"", "selection": false, "assets": -1000, "happy": -5, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Bạn lượn 1 vòng công viên, bạn móc được 1 vài chiếc smartphone của người đi đường","year":0, "criminal":"", "asset":"", "selection": false, "assets": 1000, "happy": 5, "health": 0, "smart":0, "appearance": -5},
+    {"event": "Bạn lượn 1 vòng thành phố, bạn chuẩn bị móc túi của một người đi đường thì bị anh ta tóm được, bạn bị đấm cho mấy phát nhưng may mắn bạn chạy trốn được","year":0, "criminal":"", "asset":"","selection": false, "assets": 0, "happy": -15, "health": -20, "smart":0, "appearance": -5},
+    {"event": "Bạn giả vờ vấp ngã, nhờ người khác đỡ dậy, bạn lợi dụng lúc họ sơ ý bạn móc được ví của họ","year":0, "criminal":"", "asset":"", "selection": false, "assets": 2000, "happy": 5, "health": 0, "smart":0, "appearance": -5},
+    {"event": "Sau nhiều lần hành tẩu giang hồ, thì bạn không may bị bắt, bạn chỉ bị nhắc nhở, và phạt hành chính","year":0, "criminal":"", "asset":"", "selection": false, "assets": -1000, "happy": -5, "health": 0, "smart":0, "appearance": 0},
     {"event": "Bạn bị bắt gặp là đang móc ví, đối phương doạ là sẽ báo cảnh sát bắt bạn, bạn có muốn trừ khử người này không ?", "asset":"dao", "name": "dao","selection": true,
       "select":[
         [
@@ -45,16 +45,16 @@
           {"event": "Bạn đành buông tay chịu trói, với hành vi của mình bạn bị bắt giam 1 năm tù","year":1, "criminal":"trộm cắp tài sản", "assets": 0, "happy": -10, "health": -10, "smart":0, "appearance": 0}
         ]
         ]},
-    {"event": "Bạn vào một tiệm bánh mì gần đó, chôm số tiền để trong két tủ trong lúc chủ tiệm đi mất, bạn mừng thầm vì hôm nay bạn kiếm được khá nhiều", "asset":"", "selection": false, "assets": 5000, "happy": 5, "health": 0, "smart":0, "appearance": 0},
-    {"event": "Bạn quyết định đánh cắp số tiền có trong cửa hàng tạp hoá, tuy nhiên bạn bị chủ tiệm phục kích và đánh không thương tiếc", "asset":"", "selection": false, "assets": 0, "happy": -5, "health": -10, "smart":0, "appearance": 0},
-    {"event": "Bạn quyết định đánh cắp số tiền có trong quán cà phê, tuy nhiên bạn phát hiện hoàn cảnh khó khăn của người chủ tiệm này, bạn quyết định bỏ lại tất cả, cùng với một số tiền của bản thân hi vọng có thể giúp ích", "asset":"", "selection": false, "assets": 100, "happy": 10, "health": 0, "smart":0, "appearance": 0},
-    {"event": "Bạn quyết định đánh cắp số tiền có trong tiệm thuốc, tuy nhiên bạn bị chủ tiệm phục kích và đánh không thương tiếc", "asset":"", "selection": false, "assets": 0, "happy": -5, "health": -10, "smart":0, "appearance": 0},
-    {"event": "Bạn vào quán cơm gần đó, chôm số tiền để trong két tủ trong lúc chủ tiệm đi mất, bạn mừng thầm vì hôm nay bạn kiếm được khá nhiều", "asset":"", "selection": false, "assets": 1000, "happy": 5, "health": 0, "smart":0, "appearance": 0}
+    {"event": "Bạn vào một tiệm bánh mì gần đó, chôm số tiền để trong két tủ trong lúc chủ tiệm đi mất, bạn mừng thầm vì hôm nay bạn kiếm được khá nhiều","year":0, "criminal":"", "asset":"", "selection": false, "assets": 5000, "happy": 5, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Bạn quyết định đánh cắp số tiền có trong cửa hàng tạp hoá, tuy nhiên bạn bị chủ tiệm phục kích và đánh không thương tiếc","year":0, "criminal":"", "asset":"", "selection": false, "assets": 0, "happy": -5, "health": -10, "smart":0, "appearance": 0},
+    {"event": "Bạn quyết định đánh cắp số tiền có trong quán cà phê, tuy nhiên bạn phát hiện hoàn cảnh khó khăn của người chủ tiệm này, bạn quyết định bỏ lại tất cả, cùng với một số tiền của bản thân hi vọng có thể giúp ích","year":0, "criminal":"", "asset":"", "selection": false, "assets": 100, "happy": 10, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Bạn quyết định đánh cắp số tiền có trong tiệm thuốc, tuy nhiên bạn bị chủ tiệm phục kích và đánh không thương tiếc","year":0, "criminal":"", "asset":"", "selection": false, "assets": 0, "happy": -5, "health": -10, "smart":0, "appearance": 0},
+    {"event": "Bạn vào quán cơm gần đó, chôm số tiền để trong két tủ trong lúc chủ tiệm đi mất, bạn mừng thầm vì hôm nay bạn kiếm được khá nhiều","year":0, "criminal":"", "asset":"", "selection": false, "assets": 1000, "happy": 5, "health": 0, "smart":0, "appearance": 0}
   ],
   "Buôn rau": [
     {"event": "Bạn đang trên đường vận chuyển cần sa thì chẳng may, có một con gấu tấn công bạn từ phía sau xe, bạn sợ quá bỏ xe mà chạy, để lại đống cần sa giữa rừng", "year":0, "criminal":"", "selection": false, "assets": -10000, "happy": -10, "health": 0, "smart":0, "appearance": 0},
     {"event": "Sau nhiều phong ba bão táp, cuối cùng bạn cũng vận chuyển được số cần sa, cuộc sống của bạn bước sang trang mới tại đây", "year":0, "criminal":"", "selection": false, "assets": 10000, "happy": 10, "health": 0, "smart":0, "appearance": 0},
-    {"event": "Vừa mới ngày đầu giao cần sa, bạn đã bị tóm gọn, có lẽ bạn không hợp với nghề này. Bạn chịu án 3 năm tù", "year":3, "criminal":"vận chuyển chất gây nghiện", "selection": false, "assets": 0, "happy": -10, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Vừa mới chạy được 1 quãng, bạn đã bị tóm gọn, có lẽ bạn không hợp với nghề này. Bạn chịu án 3 năm tù", "year":3, "criminal":"vận chuyển chất gây nghiện", "selection": false, "assets": 0, "happy": -10, "health": 0, "smart":0, "appearance": 0},
     {"event": "Sau nhiều phong ba bão táp, cuối cùng bạn cũng vận chuyển được đến vị trí giao, tuy nhiên bạn bị công an phục kích bất ngờ tại đây. Bạn lãnh án 5 năm tù giam", "year":5, "criminal":"vận chuyển chất gây nghiện", "selection": false, "assets": 0, "happy": -10, "health": 0, "smart":0, "appearance": 0},
     {"event": "Trên đường đi giao dịch thì bỗng xe bạn bị hư, cần phải sửa chửa nhanh chóng trước khi bị nghi ngờ", "asset":"toolbox", "name": "bộ công cụ","selection": true,
       "select":[
@@ -98,8 +98,8 @@
           {"event": "Bạn không có máy tính để truy cập","year":0, "assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0}
         ]
       ]},
-    {"event": "Bạn nhận lời hack cho một người quen, được phép sử dụng máy tính của họ để hack, sau khi hoàn thành bạn được thưởng phần thưởng xứng đáng", "asset":"", "selection": false, "assets": 3000, "happy": 5, "health": 0, "smart":0, "appearance": 0},
-    {"event": "Bạn thuê một dàn PC trong một Cyber, bạn hack vào hệ thống nước thành phố chỉ cho vui", "asset":"", "selection": false, "assets": 0, "happy": 10, "health": 0, "smart":0, "appearance": 0},
-    {"event": "Sau nhiều lần truy vết, thì cuối cùng bạn cũng bị bắt, tuy nhiên do tính chất chưa đến mức nguy hiểm nên bạn chỉ bị phạt hành chính", "asset":"", "selection": false, "assets": -10000, "happy": -5, "health": 0, "smart":0, "appearance": 0}
+    {"event": "Bạn nhận lời hack cho một người quen, được phép sử dụng máy tính của họ để hack, sau khi hoàn thành bạn được thưởng phần thưởng xứng đáng", "year":0, "criminal":"", "asset":"", "selection": false, "assets": 3000, "happy": 5, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Bạn thuê một dàn PC trong một Cyber, bạn hack vào hệ thống nước thành phố chỉ cho vui","year":0, "criminal":"", "asset":"", "selection": false, "assets": 0, "happy": 10, "health": 0, "smart":0, "appearance": 0},
+    {"event": "Sau nhiều lần truy vết, thì cuối cùng bạn cũng bị bắt, tuy nhiên do tính chất chưa đến mức nguy hiểm nên bạn chỉ bị phạt hành chính","year":0, "criminal":"", "asset":"", "selection": false, "assets": -10000, "happy": -5, "health": 0, "smart":0, "appearance": 0}
   ]
 }

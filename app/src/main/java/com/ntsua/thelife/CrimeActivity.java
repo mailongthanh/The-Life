@@ -161,13 +161,16 @@ public class CrimeActivity extends AppCompatActivity {
 
         final JSONObject[] objects = {arrCrime.getJSONObject(random.nextInt(arrCrime.length()))};
 
-        final String[] event = {objects[0].getString("event")};
-
         final boolean[] isSelection = {objects[0].getBoolean("selection")};
+
+        final int[] year ={objects[0].getInt("year")};
+
+        final String[] criminal = {objects[0].getString("criminal")};
 
         if(!isSelection[0])
         {
-            dialogEventResult(objects[0],name,0,"");
+            Toast.makeText(this, criminal[0] + String.valueOf(year[0]), Toast.LENGTH_SHORT).show();
+            dialogEventResult(objects[0],name,year[0],criminal[0]);
         }
         else dialogJobEventWithAsset(objects[0],name);
 
@@ -238,6 +241,7 @@ public class CrimeActivity extends AppCompatActivity {
                     arr = arrSelect.getJSONArray(1);
                     JSONObject jsSelection = arr.getJSONObject(new Random().nextInt(arr.length()));
                     int year = jsSelection.getInt("year");
+                    String criminal = jsSelection.getString("criminal");
                     dialogEventResult(jsSelection, title, year,"");
                     dialog.dismiss();
                 } catch (JSONException e) {
@@ -367,6 +371,9 @@ public class CrimeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Cap nhat lai tien hien thi
+                if (MainActivity.saveGame.getHealth() <= 0) {
+                    MainActivity.checkMySelf(v.getContext(), "\"Qua đời vì va chạm xã hội, cơ thể bản thân không chống chịu nổi\"");
+                }
                 Activity activity = (Activity) CrimeActivity.this;
                 TextView txtMoney = activity.findViewById(R.id.textviewMoney);
                 txtMoney.setText(MainActivity.saveGame.getMoney() + "K VND");

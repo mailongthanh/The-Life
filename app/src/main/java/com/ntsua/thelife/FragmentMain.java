@@ -99,7 +99,7 @@ public class FragmentMain extends Fragment {
     ScrollView scrollView;
     TextView txtContent, txtHappy, txtHealth, txtSmart, txtAppearance, txtMoney, txtName, txtJob, txtScrollviewContent;
     ArrayList<QuanHe> arrRelationship;
-    JSONArray arrJsonAge;
+    JSONArray arrJsonAge, arrAge;
     JSONObject jsonResult, jsonAllJob, jsonJob;
     String contentHtml, tienAn;
     int money, TempAge, namTu;
@@ -244,10 +244,12 @@ public class FragmentMain extends Fragment {
 //            txtContent.setText("Học sinh");
 //        }
             //lay su kien tuoi
-            JSONArray arrAge = arrJsonAge.getJSONArray(age);
+            if(age < arrJsonAge.length()) {
+                arrAge = arrJsonAge.getJSONArray(age);
+            } else arrAge = null;
             Random random = new Random();
             //Toast.makeText(this, arrAge.length() + " - " + age, Toast.LENGTH_SHORT).show();
-            if (arrAge.length() == 0) {
+            if (arrAge == null||arrAge.length() == 0 ) {
                 MainActivity.createNotification(MainActivity.saveGame.getAvatar(), "Năm nay không có sự kiện gì đặc biệt", view.getContext());
                 initNewAge();
                 addAgeHTML(age);
