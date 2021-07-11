@@ -1,7 +1,26 @@
-com/ntsua/thelife/HoatDong.java
- com.ntsua.thelife.HoatDong
- com.ntsua.thelife.HoatDong$1
- com.ntsua.thelife.HoatDong$2
+com/ntsua/thelife/FragmentMain.java
+ com.ntsua.thelife.FragmentMain
+ com.ntsua.thelife.FragmentMain$1
+ com.ntsua.thelife.FragmentMain$10
+ com.ntsua.thelife.FragmentMain$11
+ com.ntsua.thelife.FragmentMain$12
+ com.ntsua.thelife.FragmentMain$13
+ com.ntsua.thelife.FragmentMain$14
+ com.ntsua.thelife.FragmentMain$15
+ com.ntsua.thelife.FragmentMain$16
+ com.ntsua.thelife.FragmentMain$17
+ com.ntsua.thelife.FragmentMain$18
+ com.ntsua.thelife.FragmentMain$19
+ com.ntsua.thelife.FragmentMain$2
+ com.ntsua.thelife.FragmentMain$20
+ com.ntsua.thelife.FragmentMain$21
+ com.ntsua.thelife.FragmentMain$3
+ com.ntsua.thelife.FragmentMain$4
+ com.ntsua.thelife.FragmentMain$5
+ com.ntsua.thelife.FragmentMain$6
+ com.ntsua.thelife.FragmentMain$7
+ com.ntsua.thelife.FragmentMain$8
+ com.ntsua.thelife.FragmentMain$9
 com/ntsua/thelife/Ratings.java
  com.ntsua.thelife.Ratings
  com.ntsua.thelife.Ratings$1
@@ -45,9 +64,15 @@ com/ntsua/thelife/JobDienVien.java
  com.ntsua.thelife.JobDienVien$2
  com.ntsua.thelife.JobDienVien$3
  com.ntsua.thelife.JobDienVien$4
-com/ntsua/thelife/RelationShip.java
- com.ntsua.thelife.RelationShip
- com.ntsua.thelife.RelationShip$1
+com/ntsua/thelife/MakeUp.java
+ com.ntsua.thelife.MakeUp
+ com.ntsua.thelife.MakeUp$1
+ com.ntsua.thelife.MakeUp$2
+ com.ntsua.thelife.MakeUp$3
+ com.ntsua.thelife.MakeUp$4
+ com.ntsua.thelife.MakeUp$5
+ com.ntsua.thelife.MakeUp$6
+ com.ntsua.thelife.MakeUp$7
 com/ntsua/thelife/productAdapter.java
  com.ntsua.thelife.productAdapter
  com.ntsua.thelife.productAdapter$1
@@ -62,15 +87,10 @@ com/ntsua/thelife/Shopping.java
  com.ntsua.thelife.Shopping$4
  com.ntsua.thelife.Shopping$5
  com.ntsua.thelife.Shopping$6
-com/ntsua/thelife/MakeUp.java
- com.ntsua.thelife.MakeUp
- com.ntsua.thelife.MakeUp$1
- com.ntsua.thelife.MakeUp$2
- com.ntsua.thelife.MakeUp$3
- com.ntsua.thelife.MakeUp$4
- com.ntsua.thelife.MakeUp$5
- com.ntsua.thelife.MakeUp$6
- com.ntsua.thelife.MakeUp$7
+com/ntsua/thelife/UniversityAdapter.java
+ com.ntsua.thelife.UniversityAdapter
+ com.ntsua.thelife.UniversityAdapter$1
+ com.ntsua.thelife.UniversityAdapter$ViewHolder
 com/ntsua/thelife/JobCongNghe.java
  com.ntsua.thelife.JobCongNghe
  com.ntsua.thelife.JobCongNghe$1
@@ -148,10 +168,10 @@ com/ntsua/thelife/University.java
  com.ntsua.thelife.University
 com/ntsua/thelife/SongKhac.java
  com.ntsua.thelife.SongKhac
-com/ntsua/thelife/UniversityAdapter.java
- com.ntsua.thelife.UniversityAdapter
- com.ntsua.thelife.UniversityAdapter$1
- com.ntsua.thelife.UniversityAdapter$ViewHolder
+com/ntsua/thelife/FragmentRate.java
+ com.ntsua.thelife.FragmentRate
+ com.ntsua.thelife.FragmentRate$1
+ com.ntsua.thelife.FragmentRate$1$1
 com/ntsua/thelife/FoodActivity.java
  com.ntsua.thelife.FoodActivity
  com.ntsua.thelife.FoodActivity$1
@@ -168,13 +188,10 @@ com/ntsua/thelife/JobKinhDoanh.java
  com.ntsua.thelife.JobKinhDoanh$2
  com.ntsua.thelife.JobKinhDoanh$3
  com.ntsua.thelife.JobKinhDoanh$4
-com/ntsua/thelife/Tuong_tacActivity.java
- com.ntsua.thelife.Tuong_tacActivity
- com.ntsua.thelife.Tuong_tacActivity$1
- com.ntsua.thelife.Tuong_tacActivity$2
- com.ntsua.thelife.Tuong_tacActivity$3
- com.ntsua.thelife.Tuong_tacActivity$4
- com.ntsua.thelife.Tuong_tacActivity$5
+com/ntsua/thelife/HoatDong.java
+ com.ntsua.thelife.HoatDong
+ com.ntsua.thelife.HoatDong$1
+ com.ntsua.thelife.HoatDong$2
 com/ntsua/thelife/AiLaTrieuPhu_FaceData.java
  com.ntsua.thelife.AiLaTrieuPhu_FaceData
 com/ntsua/thelife/JobDichVu.java
@@ -221,29 +238,10 @@ com/ntsua/thelife/BoiToan.java
  com.ntsua.thelife.BoiToan$2
 com/ntsua/thelife/NameOfRelationship.java
  com.ntsua.thelife.NameOfRelationship
-com/ntsua/thelife/FragmentMain.java
- com.ntsua.thelife.FragmentMain
- com.ntsua.thelife.FragmentMain$1
- com.ntsua.thelife.FragmentMain$10
- com.ntsua.thelife.FragmentMain$11
- com.ntsua.thelife.FragmentMain$12
- com.ntsua.thelife.FragmentMain$13
- com.ntsua.thelife.FragmentMain$14
- com.ntsua.thelife.FragmentMain$15
- com.ntsua.thelife.FragmentMain$16
- com.ntsua.thelife.FragmentMain$17
- com.ntsua.thelife.FragmentMain$18
- com.ntsua.thelife.FragmentMain$19
- com.ntsua.thelife.FragmentMain$2
- com.ntsua.thelife.FragmentMain$20
- com.ntsua.thelife.FragmentMain$21
- com.ntsua.thelife.FragmentMain$3
- com.ntsua.thelife.FragmentMain$4
- com.ntsua.thelife.FragmentMain$5
- com.ntsua.thelife.FragmentMain$6
- com.ntsua.thelife.FragmentMain$7
- com.ntsua.thelife.FragmentMain$8
- com.ntsua.thelife.FragmentMain$9
+com/ntsua/thelife/HoatDongQHAdapter.java
+ com.ntsua.thelife.HoatDongQHAdapter
+ com.ntsua.thelife.HoatDongQHAdapter$1
+ com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
 com/ntsua/thelife/BuildConfig.java
  com.ntsua.thelife.BuildConfig
 com/ntsua/thelife/Food.java
@@ -281,10 +279,6 @@ com/ntsua/thelife/CrimeAdapter.java
  com.ntsua.thelife.CrimeAdapter
  com.ntsua.thelife.CrimeAdapter$1
  com.ntsua.thelife.CrimeAdapter$ViewHolder
-com/ntsua/thelife/HoatDongQHAdapter.java
- com.ntsua.thelife.HoatDongQHAdapter
- com.ntsua.thelife.HoatDongQHAdapter$1
- com.ntsua.thelife.HoatDongQHAdapter$ViewHolder
 com/ntsua/thelife/MainActivity.java
  com.ntsua.thelife.MainActivity
  com.ntsua.thelife.MainActivity$1
@@ -296,7 +290,13 @@ com/ntsua/thelife/MainActivity.java
  com.ntsua.thelife.MainActivity$4
  com.ntsua.thelife.MainActivity$5
  com.ntsua.thelife.MainActivity$6
-com/ntsua/thelife/FragmentRate.java
- com.ntsua.thelife.FragmentRate
- com.ntsua.thelife.FragmentRate$1
- com.ntsua.thelife.FragmentRate$1$1
+com/ntsua/thelife/RelationShip.java
+ com.ntsua.thelife.RelationShip
+ com.ntsua.thelife.RelationShip$1
+com/ntsua/thelife/Tuong_tacActivity.java
+ com.ntsua.thelife.Tuong_tacActivity
+ com.ntsua.thelife.Tuong_tacActivity$1
+ com.ntsua.thelife.Tuong_tacActivity$2
+ com.ntsua.thelife.Tuong_tacActivity$3
+ com.ntsua.thelife.Tuong_tacActivity$4
+ com.ntsua.thelife.Tuong_tacActivity$5

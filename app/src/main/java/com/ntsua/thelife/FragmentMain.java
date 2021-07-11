@@ -1427,10 +1427,11 @@ public class FragmentMain extends Fragment {
                 if (arrUniversity.get(position).getName().equals("Không học")) {
                     contentHtml += "Bạn quyết định không học đại học<br/>";
                     MainActivity.saveGame.saveJob("Thất nghiệp");
-                } else {
+                } else if (arrUniversity.get(position).getRequire() <= MainActivity.saveGame.getSmart()) {
                     contentHtml += "Bạn chọn vào học tại trường " + arrUniversity.get(position).getName() + "<br/>";
                     MainActivity.saveGame.saveJob("Sinh viên");
                 }
+                else return;
                 MainActivity.saveGame.saveDetailActivity(contentHtml);
                 txtContent.setText(android.text.Html.fromHtml(contentHtml));
                 txtJob.setText(MainActivity.saveGame.getJob());

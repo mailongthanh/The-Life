@@ -391,7 +391,7 @@ public class Tuong_tacActivity extends AppCompatActivity {
             if (value > 0)
                 thanmat = "+ " + thanmat;
             else {
-                txtAssets.setTextColor(Color.RED);
+                txtRelationship.setTextColor(Color.RED);
             }
             txtRelationship.setText(thanmat);
 
