@@ -303,14 +303,7 @@
           ]}
       ]}
   ],
-  [
-    {"title": "Thời sự", "event": "Một chi nhánh dữ liệu ở Hoa Kì đã khiến thông tin cá nhân của 125.479 cư dân bị rò rỉ trên dark web.",
-      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
-    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một quyển sách hay, bạn biết được rằng: \n\nCác nhà khoa học cho rằng, các loài sinh vật sẽ sống đến khi quả tim của chúng đập đến nhịp thứ 1 tỷ. Tuy nhiên, nhờ sự phát triển của y học, loài người đang dần vượt qua giới hạn này.",
-      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""},
-    {"title": "Thời sự", "event": "Một người phụ nữ 45 tuổi ở Singapore đã trúng giải độc đắc xổ số lần thứ ba, khiến cô ấy trở thành một trong những công dân giàu có nhất cả nước.",
-      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
-  ],
+  [],
   [
     {"title": "Thời sự", "event": "khu vực từ Đà Nẵng đến Bình Thuận tiếp tục có nắng nóng, có nơi nắng nóng gay gắt với nhiệt độ cao nhất phổ biến 35-37 độ C, có nơi trên 38 độ C.",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
@@ -335,11 +328,31 @@
     {"title": "Kiến thức","event": "Hôm nay bạn đọc được một bài viết hay trên mạng, bạn học được rằng: \n\nNếu con người đứng tại thiên hà M100 cách Trái Đất 55 triệu năm ánh sáng và dùng một thiết bị quan sát tối tân để nhìn về Trái Đất, sẽ chỉ nhìn thấy được những hình ảnh trong giai đoạn khủng long tuyệt chủng.",
       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""}
   ],
-  [],
+  [
+    {"title": "Thời sự", "event": "Một chi nhánh dữ liệu ở Hoa Kì đã khiến thông tin cá nhân của 125.479 cư dân bị rò rỉ trên dark web.",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
+    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một quyển sách hay, bạn biết được rằng: \n\nCác nhà khoa học cho rằng, các loài sinh vật sẽ sống đến khi quả tim của chúng đập đến nhịp thứ 1 tỷ. Tuy nhiên, nhờ sự phát triển của y học, loài người đang dần vượt qua giới hạn này.",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""},
+    {"title": "Thời sự", "event": "Một người phụ nữ 45 tuổi ở Singapore đã trúng giải độc đắc xổ số lần thứ ba, khiến cô ấy trở thành một trong những công dân giàu có nhất cả nước.",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
+  ],
   [
     {"title": "Thời sự", "event": "Một vụ xả súng tại bang Florida, Mỹ, đã khiến 10 người thiệt mạng và 20 trường hợp khác bị thương",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""},
     {"title": "Thời sự", "event": "Theo nhận định Giám đốc khu vực châu Á - Thái Bình Dương thuộc Hội Chữ thập Đỏ và Trăng lưỡi liềm Đỏ quốc tế, tỷ lệ mắc Covid-19 đã ở mức báo động đỏ tại các quốc gia Đông Nam Á ",
+      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
+  ], //21
+  [],
+  [
+    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một bài báo hay, bạn biết được rằng: \n\nVì biến đổi khí hậu, nhiệt độ Trái Đất tăng lên nên có thể đến năm 2050, cây cacao không thể tồn tại được nữa. Điều này có nghĩa là có thể sẽ không có trái cacao để làm nên chocolate.",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""},
+    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một bài báo hay, bạn biết được rằng: \n\nChúng ta thường nghe nói một ai đó dị ứng với mèo nhưng có một sự thật mà ít được nhắc tới là mèo cũng có thể bị dị ứng với con người",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""}
+  ],
+  [
+    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một bài báo hay, bạn biết được rằng: \n\nBụi trong nhà không phải từ tế bào chết trong cơ thể người ra như nhiều người vẫn lầm tưởng, thực tế chúng do chính con người mang từ ngoài đường về.",
+      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""},
+    {"title": "Thời sự", "event": "\n\n Một cuộc tấn công khủng bố ở Israel đã cướp đi sinh mạng của hơn 1239 người vô tội",
       "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
   ],
   [
@@ -360,19 +373,6 @@
     {"title": "Kiến thức","event": "Hôm nay bạn đọc được một quyển sách hay, bạn biết được rằng: \n\nDạ dày và thực quản của con người có tới hơn 100 triệu tế bào thần kinh, nhiều hơn cả tế bào thần kinh trong não loài mèo. Chính vì vậy, chúng được coi là \"bộ não thứ hai\" của con người.",
       "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""}
   ],
-  [
-    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một bài báo hay, bạn biết được rằng: \n\nVì biến đổi khí hậu, nhiệt độ Trái Đất tăng lên nên có thể đến năm 2050, cây cacao không thể tồn tại được nữa. Điều này có nghĩa là có thể sẽ không có trái cacao để làm nên chocolate.",
-      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""},
-    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một bài báo hay, bạn biết được rằng: \n\nChúng ta thường nghe nói một ai đó dị ứng với mèo nhưng có một sự thật mà ít được nhắc tới là mèo cũng có thể bị dị ứng với con người",
-      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""}
-  ],
-  [
-    {"title": "Kiến thức","event": "Hôm nay bạn đọc được một bài báo hay, bạn biết được rằng: \n\nBụi trong nhà không phải từ tế bào chết trong cơ thể người ra như nhiều người vẫn lầm tưởng, thực tế chúng do chính con người mang từ ngoài đường về.",
-      "selection": false,"assets": 0, "happy": 0, "health": 0, "smart":3, "appearance": 0, "sick": ""},
-    {"title": "Thời sự", "event": "\n\n Một cuộc tấn công khủng bố ở Israel đã cướp đi sinh mạng của hơn 1239 người vô tội",
-      "selection":false,"assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0, "sick": ""}
-  ],
-  [],
   [
     {"title":"Đời sống", "event": "Đang trên đường về thì bạn gặp một người khuyết tật đang xin tiền \n Trước tình huống đó bạn muốn làm gì ? ", "selection": true,
       "select":[

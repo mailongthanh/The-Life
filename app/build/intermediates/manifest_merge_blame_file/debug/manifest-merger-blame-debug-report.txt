@@ -6,766 +6,364 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-<<<<<<< HEAD
-8-->D:\The-Life\app\src\main\AndroidManifest.xml
+8-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->D:\The-Life\app\src\main\AndroidManifest.xml
+9-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->D:\The-Life\app\src\main\AndroidManifest.xml:5:5-66
-11-->D:\The-Life\app\src\main\AndroidManifest.xml:5:22-64
-=======
-8-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml
-9        android:targetSdkVersion="30" />
-9-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml
-10
-11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:5:5-66
-11-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:5:22-64
->>>>>>> c9fc84a5dd99b7008b65a9d4f7c9d81695ace644
+11-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:5:5-66
+11-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
-12-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:22-76
+12-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
+12-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:22-76
 13    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-<<<<<<< HEAD
-13-->[com.android.installreferrer:installreferrer:1.0] C:\Users\Admin\.gradle\caches\transforms-3\21784ed74532728639a5d8b524ffa76c\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:5-110
-13-->[com.android.installreferrer:installreferrer:1.0] C:\Users\Admin\.gradle\caches\transforms-3\21784ed74532728639a5d8b524ffa76c\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:22-107
+13-->[com.android.installreferrer:installreferrer:1.0] C:\Users\HP\.gradle\caches\transforms-3\790e3e1656b2725497bebd313b3d6341\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:5-110
+13-->[com.android.installreferrer:installreferrer:1.0] C:\Users\HP\.gradle\caches\transforms-3\790e3e1656b2725497bebd313b3d6341\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:22-107
 14
 15    <application
-15-->D:\The-Life\app\src\main\AndroidManifest.xml:7:5-70:19
+15-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:7:5-72:19
 16        android:allowBackup="true"
-16-->D:\The-Life\app\src\main\AndroidManifest.xml:8:9-35
-=======
-13-->[com.android.installreferrer:installreferrer:1.0] C:\Users\Admin\.gradle\caches\transforms-3\58deec7fb7c5365ac53d1fa86099d602\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:5-110
-13-->[com.android.installreferrer:installreferrer:1.0] C:\Users\Admin\.gradle\caches\transforms-3\58deec7fb7c5365ac53d1fa86099d602\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:22-107
-14
-15    <application
-15-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:7:5-72:19
-16        android:allowBackup="true"
-16-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:8:9-35
->>>>>>> c9fc84a5dd99b7008b65a9d4f7c9d81695ace644
+16-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:8:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-17-->[androidx.core:core:1.3.1] C:\Users\Admin\.gradle\caches\transforms-3\480831b1b3283f6982530db0ba612030\transformed\core-1.3.1\AndroidManifest.xml:24:18-86
+17-->[androidx.core:core:1.3.1] C:\Users\HP\.gradle\caches\transforms-3\480831b1b3283f6982530db0ba612030\transformed\core-1.3.1\AndroidManifest.xml:24:18-86
 18        android:debuggable="true"
 19        android:icon="@drawable/boy"
-<<<<<<< HEAD
-19-->D:\The-Life\app\src\main\AndroidManifest.xml:9:9-37
+19-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:9:9-37
 20        android:label="@string/app_name"
-20-->D:\The-Life\app\src\main\AndroidManifest.xml:10:9-41
+20-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:10:9-41
 21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->D:\The-Life\app\src\main\AndroidManifest.xml:11:9-54
+21-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:11:9-54
 22        android:supportsRtl="true"
-22-->D:\The-Life\app\src\main\AndroidManifest.xml:12:9-35
+22-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:12:9-35
 23        android:testOnly="true"
 24        android:theme="@style/Theme.TheLife" >
-24-->D:\The-Life\app\src\main\AndroidManifest.xml:13:9-45
+24-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:13:9-45
 25        <activity android:name="com.ntsua.thelife.LoginActivity" >
-25-->D:\The-Life\app\src\main\AndroidManifest.xml:14:9-19:20
-25-->D:\The-Life\app\src\main\AndroidManifest.xml:14:19-48
+25-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:14:9-19:20
+25-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:14:19-48
 26            <intent-filter>
-26-->D:\The-Life\app\src\main\AndroidManifest.xml:15:13-18:29
+26-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:15:13-18:29
 27                <action android:name="android.intent.action.MAIN" />
-27-->D:\The-Life\app\src\main\AndroidManifest.xml:16:17-69
-27-->D:\The-Life\app\src\main\AndroidManifest.xml:16:25-66
+27-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:16:17-69
+27-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:16:25-66
 28
 29                <category android:name="android.intent.category.LAUNCHER" />
-29-->D:\The-Life\app\src\main\AndroidManifest.xml:17:17-77
-29-->D:\The-Life\app\src\main\AndroidManifest.xml:17:27-74
-30            </intent-filter>
-31        </activity>
-32        <activity android:name="com.ntsua.thelife.AiLaTrieuPhu_ing" />
-32-->D:\The-Life\app\src\main\AndroidManifest.xml:20:9-54
-32-->D:\The-Life\app\src\main\AndroidManifest.xml:20:19-51
-33        <activity android:name="com.ntsua.thelife.AiLaTrieuPhu" />
-33-->D:\The-Life\app\src\main\AndroidManifest.xml:21:9-50
-33-->D:\The-Life\app\src\main\AndroidManifest.xml:21:19-47
-34        <activity android:name="com.ntsua.thelife.Asset" />
-34-->D:\The-Life\app\src\main\AndroidManifest.xml:22:9-43
-34-->D:\The-Life\app\src\main\AndroidManifest.xml:22:19-40
-35        <activity android:name="com.ntsua.thelife.JobGiaoDuc" />
-35-->D:\The-Life\app\src\main\AndroidManifest.xml:23:9-48
-35-->D:\The-Life\app\src\main\AndroidManifest.xml:23:19-45
-36        <activity android:name="com.ntsua.thelife.JobYTe" />
-36-->D:\The-Life\app\src\main\AndroidManifest.xml:24:9-44
-36-->D:\The-Life\app\src\main\AndroidManifest.xml:24:19-41
-37        <activity android:name="com.ntsua.thelife.JobDienVien" />
-37-->D:\The-Life\app\src\main\AndroidManifest.xml:25:9-49
-37-->D:\The-Life\app\src\main\AndroidManifest.xml:25:19-46
-38        <activity android:name="com.ntsua.thelife.JobTaiChinh" />
-38-->D:\The-Life\app\src\main\AndroidManifest.xml:26:9-49
-38-->D:\The-Life\app\src\main\AndroidManifest.xml:26:19-46
-39        <activity android:name="com.ntsua.thelife.JobCongNghe" />
-39-->D:\The-Life\app\src\main\AndroidManifest.xml:27:9-49
-39-->D:\The-Life\app\src\main\AndroidManifest.xml:27:19-46
-40        <activity android:name="com.ntsua.thelife.JobDichVu" />
-40-->D:\The-Life\app\src\main\AndroidManifest.xml:28:9-47
-40-->D:\The-Life\app\src\main\AndroidManifest.xml:28:19-44
-41        <activity android:name="com.ntsua.thelife.JobAmThuc" />
-41-->D:\The-Life\app\src\main\AndroidManifest.xml:29:9-47
-41-->D:\The-Life\app\src\main\AndroidManifest.xml:29:19-44
-42        <activity android:name="com.ntsua.thelife.JobKinhDoanh" />
-42-->D:\The-Life\app\src\main\AndroidManifest.xml:30:9-50
-42-->D:\The-Life\app\src\main\AndroidManifest.xml:30:19-47
-43        <activity android:name="com.ntsua.thelife.JobQuanDoi" />
-43-->D:\The-Life\app\src\main\AndroidManifest.xml:31:9-48
-43-->D:\The-Life\app\src\main\AndroidManifest.xml:31:19-45
-44        <activity android:name="com.ntsua.thelife.JobBaoChi" />
-44-->D:\The-Life\app\src\main\AndroidManifest.xml:32:9-47
-44-->D:\The-Life\app\src\main\AndroidManifest.xml:32:19-44
-45        <activity android:name="com.ntsua.thelife.JobTaiXe" />
-45-->D:\The-Life\app\src\main\AndroidManifest.xml:33:9-46
-45-->D:\The-Life\app\src\main\AndroidManifest.xml:33:19-43
-46        <activity android:name="com.ntsua.thelife.JobCauThu" />
-46-->D:\The-Life\app\src\main\AndroidManifest.xml:34:9-47
-46-->D:\The-Life\app\src\main\AndroidManifest.xml:34:19-44
-47        <activity android:name="com.ntsua.thelife.JobCaSi" />
-47-->D:\The-Life\app\src\main\AndroidManifest.xml:35:9-45
-47-->D:\The-Life\app\src\main\AndroidManifest.xml:35:19-42
-48        <activity android:name="com.ntsua.thelife.ChuyenViec" />
-48-->D:\The-Life\app\src\main\AndroidManifest.xml:36:9-48
-48-->D:\The-Life\app\src\main\AndroidManifest.xml:36:19-45
-49        <activity android:name="com.ntsua.thelife.Shopping" />
-49-->D:\The-Life\app\src\main\AndroidManifest.xml:37:9-46
-49-->D:\The-Life\app\src\main\AndroidManifest.xml:37:19-43
-50        <activity android:name="com.ntsua.thelife.BoiToan" />
-50-->D:\The-Life\app\src\main\AndroidManifest.xml:38:9-45
-50-->D:\The-Life\app\src\main\AndroidManifest.xml:38:19-42
-51        <activity android:name="com.ntsua.thelife.MakeUp" />
-51-->D:\The-Life\app\src\main\AndroidManifest.xml:39:9-44
-51-->D:\The-Life\app\src\main\AndroidManifest.xml:39:19-41
-52        <activity android:name="com.ntsua.thelife.Cooking" />
-52-->D:\The-Life\app\src\main\AndroidManifest.xml:40:9-45
-52-->D:\The-Life\app\src\main\AndroidManifest.xml:40:19-42
-53        <activity android:name="com.ntsua.thelife.Startup" />
-53-->D:\The-Life\app\src\main\AndroidManifest.xml:41:9-45
-53-->D:\The-Life\app\src\main\AndroidManifest.xml:41:19-42
-54        <activity android:name="com.ntsua.thelife.Hospital" />
-54-->D:\The-Life\app\src\main\AndroidManifest.xml:42:9-46
-54-->D:\The-Life\app\src\main\AndroidManifest.xml:42:19-43
-55        <activity android:name="com.ntsua.thelife.SongKhac" />
-55-->D:\The-Life\app\src\main\AndroidManifest.xml:43:9-46
-55-->D:\The-Life\app\src\main\AndroidManifest.xml:43:19-43
-56        <activity android:name="com.ntsua.thelife.Travel" />
-56-->D:\The-Life\app\src\main\AndroidManifest.xml:44:9-44
-56-->D:\The-Life\app\src\main\AndroidManifest.xml:44:19-41
-57        <activity android:name="com.ntsua.thelife.Entertainment" />
-57-->D:\The-Life\app\src\main\AndroidManifest.xml:45:9-51
-57-->D:\The-Life\app\src\main\AndroidManifest.xml:45:19-48
-58        <activity android:name="com.ntsua.thelife.Degree" />
-58-->D:\The-Life\app\src\main\AndroidManifest.xml:46:9-44
-58-->D:\The-Life\app\src\main\AndroidManifest.xml:46:19-41
-59        <activity android:name="com.ntsua.thelife.Love" />
-59-->D:\The-Life\app\src\main\AndroidManifest.xml:47:9-42
-59-->D:\The-Life\app\src\main\AndroidManifest.xml:47:19-39
-60        <activity android:name="com.ntsua.thelife.Playground" />
-60-->D:\The-Life\app\src\main\AndroidManifest.xml:48:9-48
-60-->D:\The-Life\app\src\main\AndroidManifest.xml:48:19-45
-61        <activity android:name="com.ntsua.thelife.HoatDong" />
-61-->D:\The-Life\app\src\main\AndroidManifest.xml:49:9-46
-61-->D:\The-Life\app\src\main\AndroidManifest.xml:49:19-43
-62        <activity android:name="com.ntsua.thelife.CrimeActivity" />
-62-->D:\The-Life\app\src\main\AndroidManifest.xml:50:9-51
-62-->D:\The-Life\app\src\main\AndroidManifest.xml:50:19-48
-63        <activity android:name="com.ntsua.thelife.Tuong_tacActivity" />
-63-->D:\The-Life\app\src\main\AndroidManifest.xml:51:9-55
-63-->D:\The-Life\app\src\main\AndroidManifest.xml:51:19-52
-64        <activity android:name="com.ntsua.thelife.SportActivity" />
-64-->D:\The-Life\app\src\main\AndroidManifest.xml:52:9-51
-64-->D:\The-Life\app\src\main\AndroidManifest.xml:52:19-48
-65        <activity android:name="com.ntsua.thelife.RelationShip" />
-65-->D:\The-Life\app\src\main\AndroidManifest.xml:53:9-50
-65-->D:\The-Life\app\src\main\AndroidManifest.xml:53:19-47
-66        <activity android:name="com.ntsua.thelife.FoodActivity" />
-66-->D:\The-Life\app\src\main\AndroidManifest.xml:54:9-50
-66-->D:\The-Life\app\src\main\AndroidManifest.xml:54:19-47
-67        <activity android:name="com.ntsua.thelife.SelectGender" />
-67-->D:\The-Life\app\src\main\AndroidManifest.xml:55:9-50
-67-->D:\The-Life\app\src\main\AndroidManifest.xml:55:19-47
-68        <activity android:name="com.ntsua.thelife.CreateName" />
-68-->D:\The-Life\app\src\main\AndroidManifest.xml:56:9-48
-68-->D:\The-Life\app\src\main\AndroidManifest.xml:56:19-45
-69        <activity android:name="com.ntsua.thelife.MainActivity" >
-69-->D:\The-Life\app\src\main\AndroidManifest.xml:57:9-58:20
-69-->D:\The-Life\app\src\main\AndroidManifest.xml:57:19-47
-70        </activity>
-71
-72        <meta-data
-72-->D:\The-Life\app\src\main\AndroidManifest.xml:60:9-62:57
-73            android:name="preloaded_fonts"
-73-->D:\The-Life\app\src\main\AndroidManifest.xml:61:13-43
-74            android:resource="@array/preloaded_fonts" />
-74-->D:\The-Life\app\src\main\AndroidManifest.xml:62:13-54
-75        <meta-data
-75-->D:\The-Life\app\src\main\AndroidManifest.xml:63:9-64:62
-76            android:name="com.facebook.sdk.ApplicationId"
-76-->D:\The-Life\app\src\main\AndroidManifest.xml:63:20-65
-77            android:value="@string/facebook_application_id" />
-77-->D:\The-Life\app\src\main\AndroidManifest.xml:64:13-60
-78
-79        <provider
-79-->D:\The-Life\app\src\main\AndroidManifest.xml:66:9-68:38
-80            android:name="com.facebook.FacebookContentProvider"
-80-->D:\The-Life\app\src\main\AndroidManifest.xml:67:13-64
-81            android:authorities="com.facebook.app.FacebookContentProvider3807860139341525"
-81-->D:\The-Life\app\src\main\AndroidManifest.xml:66:19-97
-82            android:exported="true" />
-82-->D:\The-Life\app\src\main\AndroidManifest.xml:68:13-36
-83
-84        <activity
-84-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:30:9-33:66
-85            android:name="com.facebook.FacebookActivity"
-85-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:31:13-57
-86            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-86-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:32:13-96
-87            android:theme="@style/com_facebook_activity_theme" />
-87-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:33:13-63
-88        <activity android:name="com.facebook.CustomTabMainActivity" />
-88-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:34:9-71
-88-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:34:19-68
-89        <activity
-89-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:35:9-49:20
-90            android:name="com.facebook.CustomTabActivity"
-90-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:36:13-58
-91            android:exported="true" >
-91-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:37:13-36
-92            <intent-filter>
-92-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:39:13-48:29
-93                <action android:name="android.intent.action.VIEW" />
-93-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:17-69
-93-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:25-66
-94
-95                <category android:name="android.intent.category.DEFAULT" />
-95-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:17-76
-95-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:27-73
-96                <category android:name="android.intent.category.BROWSABLE" />
-96-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:17-78
-96-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:27-75
-97
-98                <data
-98-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:45:17-47:50
-99                    android:host="cct.com.ntsua.thelife"
-99-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:46:21-56
-100                    android:scheme="fbconnect" />
-100-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:47:21-47
-101            </intent-filter>
-102        </activity>
-103        <activity
-103-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
-104            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-104-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
-105            android:excludeFromRecents="true"
-105-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
-106            android:exported="true"
-106-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
-107            android:launchMode="singleTask"
-107-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
-108            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-108-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
-109            <intent-filter>
-109-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
-110                <action android:name="android.intent.action.VIEW" />
-110-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:17-69
-110-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:25-66
-111
-112                <category android:name="android.intent.category.DEFAULT" />
-112-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:17-76
-112-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:27-73
-113                <category android:name="android.intent.category.BROWSABLE" />
-113-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:17-78
-113-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:27-75
-114
-115                <data
-115-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:45:17-47:50
-116                    android:host="firebase.auth"
-116-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:46:21-56
-117                    android:path="/"
-118                    android:scheme="genericidp" />
-118-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:47:21-47
-119            </intent-filter>
-120        </activity>
-121        <activity
-121-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
-122            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-122-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
-123            android:excludeFromRecents="true"
-123-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
-124            android:exported="true"
-124-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
-125            android:launchMode="singleTask"
-125-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
-126            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-126-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
-127            <intent-filter>
-127-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
-128                <action android:name="android.intent.action.VIEW" />
-128-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:17-69
-128-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:25-66
-129
-130                <category android:name="android.intent.category.DEFAULT" />
-130-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:17-76
-130-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:27-73
-131                <category android:name="android.intent.category.BROWSABLE" />
-131-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:17-78
-131-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:27-75
-132
-133                <data
-133-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:45:17-47:50
-134                    android:host="firebase.auth"
-134-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:46:21-56
-135                    android:path="/"
-136                    android:scheme="recaptcha" />
-136-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:47:21-47
-137            </intent-filter>
-138        </activity>
-139
-140        <service
-140-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
-141            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
-141-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
-142            android:enabled="true"
-142-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
-143            android:exported="false" >
-143-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
-144            <intent-filter>
-144-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
-145                <action android:name="com.google.firebase.auth.api.gms.service.START" />
-145-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
-145-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
-146
-147                <category android:name="android.intent.category.DEFAULT" />
-147-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:17-76
-147-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:27-73
-148            </intent-filter>
-149        </service>
-150        <service
-150-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:74:9-80:19
-151            android:name="com.google.firebase.components.ComponentDiscoveryService"
-151-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:75:13-84
-152            android:directBootAware="true"
-152-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
-153            android:exported="false" >
-153-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:76:13-37
-154            <meta-data
-154-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
-155                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-155-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
-156                android:value="com.google.firebase.components.ComponentRegistrar" />
-156-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
-157            <meta-data
-157-->[com.google.firebase:firebase-database:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\2a0a7d9e5d9562bc2e2d324b0f0ab34e\transformed\jetified-firebase-database-20.0.0\AndroidManifest.xml:32:13-34:85
-158                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-158-->[com.google.firebase:firebase-database:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\2a0a7d9e5d9562bc2e2d324b0f0ab34e\transformed\jetified-firebase-database-20.0.0\AndroidManifest.xml:33:17-109
-159                android:value="com.google.firebase.components.ComponentRegistrar" />
-159-->[com.google.firebase:firebase-database:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\2a0a7d9e5d9562bc2e2d324b0f0ab34e\transformed\jetified-firebase-database-20.0.0\AndroidManifest.xml:34:17-82
-160        </service>
-161
-162        <provider
-162-->[com.squareup.picasso:picasso:2.71828] C:\Users\Admin\.gradle\caches\transforms-3\8efbfc15f4353ed3c6d655691aa99553\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-163            android:name="com.squareup.picasso.PicassoProvider"
-163-->[com.squareup.picasso:picasso:2.71828] C:\Users\Admin\.gradle\caches\transforms-3\8efbfc15f4353ed3c6d655691aa99553\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-164            android:authorities="com.ntsua.thelife.com.squareup.picasso"
-164-->[com.squareup.picasso:picasso:2.71828] C:\Users\Admin\.gradle\caches\transforms-3\8efbfc15f4353ed3c6d655691aa99553\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-165            android:exported="false" />
-165-->[com.squareup.picasso:picasso:2.71828] C:\Users\Admin\.gradle\caches\transforms-3\8efbfc15f4353ed3c6d655691aa99553\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-166        <provider
-166-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
-167            android:name="com.google.firebase.provider.FirebaseInitProvider"
-167-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
-168            android:authorities="com.ntsua.thelife.firebaseinitprovider"
-168-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
-169            android:directBootAware="true"
-169-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
-170            android:exported="false"
-170-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
-171            android:initOrder="100" />
-171-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
-172        <!--
-173         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
-174         with the application context. This config is merged in with the host app's manifest,
-175         but there can only be one provider with the same authority activated at any given
-176         point; so if the end user has two or more different apps that use Facebook SDK, only the
-177         first one will be able to use the provider. To work around this problem, we use the
-178         following placeholder in the authority to identify each host application as if it was
-179         a completely different provider.
-180        -->
-181        <provider
-181-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:39:9-42:40
-182            android:name="com.facebook.internal.FacebookInitProvider"
-182-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:40:13-70
-183            android:authorities="com.ntsua.thelife.FacebookInitProvider"
-183-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:41:13-72
-184            android:exported="false" />
-184-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:42:13-37
-185
-186        <receiver
-186-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:44:9-50:20
-187            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-187-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:45:13-86
-188            android:exported="false" >
-188-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:46:13-37
-189            <intent-filter>
-189-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:47:13-49:29
-190                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-190-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:48:17-95
-190-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:48:25-92
-191            </intent-filter>
-192        </receiver>
-193
-194        <activity
-194-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Admin\.gradle\caches\transforms-3\050b950fead925e70c4183b5cb6cd1a8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-195            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-195-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Admin\.gradle\caches\transforms-3\050b950fead925e70c4183b5cb6cd1a8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-196            android:exported="false"
-196-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Admin\.gradle\caches\transforms-3\050b950fead925e70c4183b5cb6cd1a8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-197            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-197-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Admin\.gradle\caches\transforms-3\050b950fead925e70c4183b5cb6cd1a8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-198
-199        <meta-data
-199-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Admin\.gradle\caches\transforms-3\c3cfcc4ca0b43eab16bcb0888115f4ac\transformed\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
-200            android:name="com.google.android.gms.version"
-200-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Admin\.gradle\caches\transforms-3\c3cfcc4ca0b43eab16bcb0888115f4ac\transformed\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
-201            android:value="@integer/google_play_services_version" />
-201-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Admin\.gradle\caches\transforms-3\c3cfcc4ca0b43eab16bcb0888115f4ac\transformed\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
-202    </application>
-203
-204</manifest>
-=======
-19-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:9:9-37
-20        android:label="@string/app_name"
-20-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:10:9-41
-21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:11:9-54
-22        android:supportsRtl="true"
-22-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:12:9-35
-23        android:testOnly="true"
-24        android:theme="@style/Theme.TheLife" >
-24-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:13:9-45
-25        <activity android:name="com.ntsua.thelife.LoginActivity" >
-25-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:14:9-19:20
-25-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:14:19-48
-26            <intent-filter>
-26-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:15:13-18:29
-27                <action android:name="android.intent.action.MAIN" />
-27-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:16:17-69
-27-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:16:25-66
-28
-29                <category android:name="android.intent.category.LAUNCHER" />
-29-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:17:17-77
-29-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:17:27-74
+29-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:17:17-77
+29-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:17:27-74
 30            </intent-filter>
 31        </activity>
 32        <activity android:name="com.ntsua.thelife.game2048_batdau" />
-32-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:20:9-62
-32-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:20:19-50
+32-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:20:9-62
+32-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:20:19-50
 33        <activity android:name="com.ntsua.thelife.game2048" />
-33-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:21:9-55
-33-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:21:19-43
+33-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:21:9-55
+33-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:21:19-43
 34        <activity android:name="com.ntsua.thelife.AiLaTrieuPhu_ing" />
-34-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:22:9-54
-34-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:22:19-51
+34-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:22:9-54
+34-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:22:19-51
 35        <activity android:name="com.ntsua.thelife.AiLaTrieuPhu" />
-35-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:23:9-50
-35-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:23:19-47
+35-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:23:9-50
+35-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:23:19-47
 36        <activity android:name="com.ntsua.thelife.Asset" />
-36-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:24:9-43
-36-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:24:19-40
+36-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:24:9-43
+36-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:24:19-40
 37        <activity android:name="com.ntsua.thelife.JobGiaoDuc" />
-37-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:25:9-48
-37-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:25:19-45
+37-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:25:9-48
+37-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:25:19-45
 38        <activity android:name="com.ntsua.thelife.JobYTe" />
-38-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:26:9-44
-38-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:26:19-41
+38-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:26:9-44
+38-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:26:19-41
 39        <activity android:name="com.ntsua.thelife.JobDienVien" />
-39-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:27:9-49
-39-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:27:19-46
+39-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:27:9-49
+39-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:27:19-46
 40        <activity android:name="com.ntsua.thelife.JobTaiChinh" />
-40-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:28:9-49
-40-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:28:19-46
+40-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:28:9-49
+40-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:28:19-46
 41        <activity android:name="com.ntsua.thelife.JobCongNghe" />
-41-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:29:9-49
-41-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:29:19-46
+41-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:29:9-49
+41-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:29:19-46
 42        <activity android:name="com.ntsua.thelife.JobDichVu" />
-42-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:30:9-47
-42-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:30:19-44
+42-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:30:9-47
+42-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:30:19-44
 43        <activity android:name="com.ntsua.thelife.JobAmThuc" />
-43-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:31:9-47
-43-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:31:19-44
+43-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:31:9-47
+43-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:31:19-44
 44        <activity android:name="com.ntsua.thelife.JobKinhDoanh" />
-44-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:32:9-50
-44-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:32:19-47
+44-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:32:9-50
+44-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:32:19-47
 45        <activity android:name="com.ntsua.thelife.JobQuanDoi" />
-45-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:33:9-48
-45-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:33:19-45
+45-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:33:9-48
+45-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:33:19-45
 46        <activity android:name="com.ntsua.thelife.JobBaoChi" />
-46-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:34:9-47
-46-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:34:19-44
+46-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:34:9-47
+46-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:34:19-44
 47        <activity android:name="com.ntsua.thelife.JobTaiXe" />
-47-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:35:9-46
-47-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:35:19-43
+47-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:35:9-46
+47-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:35:19-43
 48        <activity android:name="com.ntsua.thelife.JobCauThu" />
-48-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:36:9-47
-48-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:36:19-44
+48-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:36:9-47
+48-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:36:19-44
 49        <activity android:name="com.ntsua.thelife.JobCaSi" />
-49-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:37:9-45
-49-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:37:19-42
+49-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:37:9-45
+49-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:37:19-42
 50        <activity android:name="com.ntsua.thelife.ChuyenViec" />
-50-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:38:9-48
-50-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:38:19-45
+50-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:38:9-48
+50-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:38:19-45
 51        <activity android:name="com.ntsua.thelife.Shopping" />
-51-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:39:9-46
-51-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:39:19-43
+51-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:39:9-46
+51-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:39:19-43
 52        <activity android:name="com.ntsua.thelife.BoiToan" />
-52-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:40:9-45
-52-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:40:19-42
+52-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:40:9-45
+52-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:40:19-42
 53        <activity android:name="com.ntsua.thelife.MakeUp" />
-53-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:41:9-44
-53-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:41:19-41
+53-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:41:9-44
+53-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:41:19-41
 54        <activity android:name="com.ntsua.thelife.Cooking" />
-54-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:42:9-45
-54-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:42:19-42
+54-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:42:9-45
+54-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:42:19-42
 55        <activity android:name="com.ntsua.thelife.Startup" />
-55-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:43:9-45
-55-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:43:19-42
+55-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:43:9-45
+55-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:43:19-42
 56        <activity android:name="com.ntsua.thelife.Hospital" />
-56-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:44:9-46
-56-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:44:19-43
+56-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:44:9-46
+56-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:44:19-43
 57        <activity android:name="com.ntsua.thelife.SongKhac" />
-57-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:45:9-46
-57-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:45:19-43
+57-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:45:9-46
+57-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:45:19-43
 58        <activity android:name="com.ntsua.thelife.Travel" />
-58-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:46:9-44
-58-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:46:19-41
+58-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:46:9-44
+58-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:46:19-41
 59        <activity android:name="com.ntsua.thelife.Entertainment" />
-59-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:47:9-51
-59-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:47:19-48
+59-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:47:9-51
+59-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:47:19-48
 60        <activity android:name="com.ntsua.thelife.Degree" />
-60-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:48:9-44
-60-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:48:19-41
+60-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:48:9-44
+60-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:48:19-41
 61        <activity android:name="com.ntsua.thelife.Love" />
-61-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:49:9-42
-61-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:49:19-39
+61-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:49:9-42
+61-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:49:19-39
 62        <activity android:name="com.ntsua.thelife.Playground" />
-62-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:50:9-48
-62-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:50:19-45
+62-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:50:9-48
+62-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:50:19-45
 63        <activity android:name="com.ntsua.thelife.HoatDong" />
-63-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:51:9-46
-63-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:51:19-43
+63-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:51:9-46
+63-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:51:19-43
 64        <activity android:name="com.ntsua.thelife.CrimeActivity" />
-64-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:52:9-51
-64-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:52:19-48
+64-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:52:9-51
+64-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:52:19-48
 65        <activity android:name="com.ntsua.thelife.Tuong_tacActivity" />
-65-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:53:9-55
-65-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:53:19-52
+65-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:53:9-55
+65-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:53:19-52
 66        <activity android:name="com.ntsua.thelife.SportActivity" />
-66-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:54:9-51
-66-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:54:19-48
+66-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:54:9-51
+66-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:54:19-48
 67        <activity android:name="com.ntsua.thelife.RelationShip" />
-67-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:55:9-50
-67-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:55:19-47
+67-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:55:9-50
+67-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:55:19-47
 68        <activity android:name="com.ntsua.thelife.FoodActivity" />
-68-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:56:9-50
-68-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:56:19-47
+68-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:56:9-50
+68-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:56:19-47
 69        <activity android:name="com.ntsua.thelife.SelectGender" />
-69-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:57:9-50
-69-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:57:19-47
+69-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:57:9-50
+69-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:57:19-47
 70        <activity android:name="com.ntsua.thelife.CreateName" />
-70-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:58:9-48
-70-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:58:19-45
+70-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:58:9-48
+70-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:58:19-45
 71        <activity android:name="com.ntsua.thelife.MainActivity" >
-71-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:59:9-60:20
-71-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:59:19-47
+71-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:59:9-60:20
+71-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:59:19-47
 72        </activity>
 73
 74        <meta-data
-74-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:62:9-64:57
+74-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:62:9-64:57
 75            android:name="preloaded_fonts"
-75-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:63:13-43
+75-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:63:13-43
 76            android:resource="@array/preloaded_fonts" />
-76-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:64:13-54
+76-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:64:13-54
 77        <meta-data
-77-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:65:9-66:62
+77-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:65:9-66:62
 78            android:name="com.facebook.sdk.ApplicationId"
-78-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:65:20-65
+78-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:65:20-65
 79            android:value="@string/facebook_application_id" />
-79-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:66:13-60
+79-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:66:13-60
 80
 81        <provider
-81-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:68:9-70:38
+81-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:68:9-70:38
 82            android:name="com.facebook.FacebookContentProvider"
-82-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:69:13-64
+82-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:69:13-64
 83            android:authorities="com.facebook.app.FacebookContentProvider3807860139341525"
-83-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:68:19-97
+83-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:68:19-97
 84            android:exported="true" />
-84-->C:\Users\Admin\Desktop\HOCTAP\Didong\doan10\1\The-Life\app\src\main\AndroidManifest.xml:70:13-36
+84-->D:\HOC TAP\UngDung\The-Life\app\src\main\AndroidManifest.xml:70:13-36
 85
 86        <activity
-86-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:30:9-33:66
+86-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:30:9-33:66
 87            android:name="com.facebook.FacebookActivity"
-87-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:31:13-57
+87-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:31:13-57
 88            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-88-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:32:13-96
+88-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:32:13-96
 89            android:theme="@style/com_facebook_activity_theme" />
-89-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:33:13-63
+89-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:33:13-63
 90        <activity android:name="com.facebook.CustomTabMainActivity" />
-90-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:34:9-71
-90-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:34:19-68
+90-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:34:9-71
+90-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:34:19-68
 91        <activity
-91-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:35:9-49:20
+91-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:35:9-49:20
 92            android:name="com.facebook.CustomTabActivity"
-92-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:36:13-58
+92-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:36:13-58
 93            android:exported="true" >
-93-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:37:13-36
+93-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:37:13-36
 94            <intent-filter>
-94-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:39:13-48:29
+94-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:39:13-48:29
 95                <action android:name="android.intent.action.VIEW" />
-95-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:17-69
-95-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:25-66
+95-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:17-69
+95-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:25-66
 96
 97                <category android:name="android.intent.category.DEFAULT" />
-97-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:17-76
-97-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:27-73
+97-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:17-76
+97-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:27-73
 98                <category android:name="android.intent.category.BROWSABLE" />
-98-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:17-78
-98-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:27-75
+98-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:17-78
+98-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:27-75
 99
 100                <data
-100-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:45:17-47:50
+100-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:45:17-47:50
 101                    android:host="cct.com.ntsua.thelife"
-101-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:46:21-56
+101-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:46:21-56
 102                    android:scheme="fbconnect" />
-102-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:47:21-47
+102-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:47:21-47
 103            </intent-filter>
 104        </activity>
 105        <activity
-105-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
+105-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
 106            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-106-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
+106-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
 107            android:excludeFromRecents="true"
-107-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
+107-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
 108            android:exported="true"
-108-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
+108-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
 109            android:launchMode="singleTask"
-109-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
+109-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
 110            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-110-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
+110-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
 111            <intent-filter>
-111-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
+111-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
 112                <action android:name="android.intent.action.VIEW" />
-112-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:17-69
-112-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:25-66
+112-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:17-69
+112-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:25-66
 113
 114                <category android:name="android.intent.category.DEFAULT" />
-114-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:17-76
-114-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:27-73
+114-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:17-76
+114-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:27-73
 115                <category android:name="android.intent.category.BROWSABLE" />
-115-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:17-78
-115-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:27-75
+115-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:17-78
+115-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:27-75
 116
 117                <data
-117-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:45:17-47:50
+117-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:45:17-47:50
 118                    android:host="firebase.auth"
-118-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:46:21-56
+118-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:46:21-56
 119                    android:path="/"
 120                    android:scheme="genericidp" />
-120-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:47:21-47
+120-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:47:21-47
 121            </intent-filter>
 122        </activity>
 123        <activity
-123-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
+123-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
 124            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-124-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
+124-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
 125            android:excludeFromRecents="true"
-125-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
+125-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
 126            android:exported="true"
-126-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
+126-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
 127            android:launchMode="singleTask"
-127-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
+127-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
 128            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-128-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
+128-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
 129            <intent-filter>
-129-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
+129-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
 130                <action android:name="android.intent.action.VIEW" />
-130-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:17-69
-130-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:25-66
+130-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:17-69
+130-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:25-66
 131
 132                <category android:name="android.intent.category.DEFAULT" />
-132-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:17-76
-132-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:27-73
+132-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:17-76
+132-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:27-73
 133                <category android:name="android.intent.category.BROWSABLE" />
-133-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:17-78
-133-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:27-75
+133-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:17-78
+133-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:27-75
 134
 135                <data
-135-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:45:17-47:50
+135-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:45:17-47:50
 136                    android:host="firebase.auth"
-136-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:46:21-56
+136-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:46:21-56
 137                    android:path="/"
 138                    android:scheme="recaptcha" />
-138-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:47:21-47
+138-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:47:21-47
 139            </intent-filter>
 140        </activity>
 141
 142        <service
-142-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
+142-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
 143            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
-143-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
+143-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
 144            android:enabled="true"
-144-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
+144-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
 145            android:exported="false" >
-145-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
+145-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
 146            <intent-filter>
-146-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
+146-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
 147                <action android:name="com.google.firebase.auth.api.gms.service.START" />
-147-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
-147-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
+147-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
+147-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
 148
 149                <category android:name="android.intent.category.DEFAULT" />
-149-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:17-76
-149-->[com.facebook.android:facebook-common:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:27-73
+149-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:17-76
+149-->[com.facebook.android:facebook-common:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\ec744c9d4a186044cca2830a0aeaaac0\transformed\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:27-73
 150            </intent-filter>
 151        </service>
 152        <service
-152-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:74:9-80:19
+152-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:74:9-80:19
 153            android:name="com.google.firebase.components.ComponentDiscoveryService"
-153-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:75:13-84
+153-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:75:13-84
 154            android:directBootAware="true"
-154-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+154-->[com.google.firebase:firebase-common:20.0.0] C:\Users\HP\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
 155            android:exported="false" >
-155-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:76:13-37
+155-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:76:13-37
 156            <meta-data
-156-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
+156-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
 157                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-157-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
+157-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
 158                android:value="com.google.firebase.components.ComponentRegistrar" />
-158-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Admin\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
+158-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\HP\.gradle\caches\transforms-3\063f8a75ff9094b16269c9785b2f298b\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
 159            <meta-data
-159-->[com.google.firebase:firebase-database:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\2a0a7d9e5d9562bc2e2d324b0f0ab34e\transformed\jetified-firebase-database-20.0.0\AndroidManifest.xml:32:13-34:85
+159-->[com.google.firebase:firebase-database:20.0.0] C:\Users\HP\.gradle\caches\transforms-3\2a0a7d9e5d9562bc2e2d324b0f0ab34e\transformed\jetified-firebase-database-20.0.0\AndroidManifest.xml:32:13-34:85
 160                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-160-->[com.google.firebase:firebase-database:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\2a0a7d9e5d9562bc2e2d324b0f0ab34e\transformed\jetified-firebase-database-20.0.0\AndroidManifest.xml:33:17-109
+160-->[com.google.firebase:firebase-database:20.0.0] C:\Users\HP\.gradle\caches\transforms-3\2a0a7d9e5d9562bc2e2d324b0f0ab34e\transformed\jetified-firebase-database-20.0.0\AndroidManifest.xml:33:17-109
 161                android:value="com.google.firebase.components.ComponentRegistrar" />
-161-->[com.google.firebase:firebase-database:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\2a0a7d9e5d9562bc2e2d324b0f0ab34e\transformed\jetified-firebase-database-20.0.0\AndroidManifest.xml:34:17-82
+161-->[com.google.firebase:firebase-database:20.0.0] C:\Users\HP\.gradle\caches\transforms-3\2a0a7d9e5d9562bc2e2d324b0f0ab34e\transformed\jetified-firebase-database-20.0.0\AndroidManifest.xml:34:17-82
 162        </service>
 163
 164        <provider
-164-->[com.squareup.picasso:picasso:2.71828] C:\Users\Admin\.gradle\caches\transforms-3\e23f1a476bf65e456286e586ecba9ece\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+164-->[com.squareup.picasso:picasso:2.71828] C:\Users\HP\.gradle\caches\transforms-3\78fa99fc235febffa522235645031494\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
 165            android:name="com.squareup.picasso.PicassoProvider"
-165-->[com.squareup.picasso:picasso:2.71828] C:\Users\Admin\.gradle\caches\transforms-3\e23f1a476bf65e456286e586ecba9ece\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+165-->[com.squareup.picasso:picasso:2.71828] C:\Users\HP\.gradle\caches\transforms-3\78fa99fc235febffa522235645031494\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 166            android:authorities="com.ntsua.thelife.com.squareup.picasso"
-166-->[com.squareup.picasso:picasso:2.71828] C:\Users\Admin\.gradle\caches\transforms-3\e23f1a476bf65e456286e586ecba9ece\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+166-->[com.squareup.picasso:picasso:2.71828] C:\Users\HP\.gradle\caches\transforms-3\78fa99fc235febffa522235645031494\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
 167            android:exported="false" />
-167-->[com.squareup.picasso:picasso:2.71828] C:\Users\Admin\.gradle\caches\transforms-3\e23f1a476bf65e456286e586ecba9ece\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+167-->[com.squareup.picasso:picasso:2.71828] C:\Users\HP\.gradle\caches\transforms-3\78fa99fc235febffa522235645031494\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
 168        <provider
-168-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+168-->[com.google.firebase:firebase-common:20.0.0] C:\Users\HP\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
 169            android:name="com.google.firebase.provider.FirebaseInitProvider"
-169-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+169-->[com.google.firebase:firebase-common:20.0.0] C:\Users\HP\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
 170            android:authorities="com.ntsua.thelife.firebaseinitprovider"
-170-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+170-->[com.google.firebase:firebase-common:20.0.0] C:\Users\HP\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
 171            android:directBootAware="true"
-171-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+171-->[com.google.firebase:firebase-common:20.0.0] C:\Users\HP\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
 172            android:exported="false"
-172-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+172-->[com.google.firebase:firebase-common:20.0.0] C:\Users\HP\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
 173            android:initOrder="100" />
-173-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Admin\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+173-->[com.google.firebase:firebase-common:20.0.0] C:\Users\HP\.gradle\caches\transforms-3\4fc9739c493f1a18628976ad474bc617\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
 174        <!--
 175         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
 176         with the application context. This config is merged in with the host app's manifest,
@@ -776,44 +374,43 @@
 181         a completely different provider.
 182        -->
 183        <provider
-183-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:39:9-42:40
+183-->[com.facebook.android:facebook-core:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:39:9-42:40
 184            android:name="com.facebook.internal.FacebookInitProvider"
-184-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:40:13-70
+184-->[com.facebook.android:facebook-core:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:40:13-70
 185            android:authorities="com.ntsua.thelife.FacebookInitProvider"
-185-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:41:13-72
+185-->[com.facebook.android:facebook-core:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:41:13-72
 186            android:exported="false" />
-186-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:42:13-37
+186-->[com.facebook.android:facebook-core:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:42:13-37
 187
 188        <receiver
-188-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:44:9-50:20
+188-->[com.facebook.android:facebook-core:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:44:9-50:20
 189            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-189-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:45:13-86
+189-->[com.facebook.android:facebook-core:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:45:13-86
 190            android:exported="false" >
-190-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:46:13-37
+190-->[com.facebook.android:facebook-core:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:46:13-37
 191            <intent-filter>
-191-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:47:13-49:29
+191-->[com.facebook.android:facebook-core:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:47:13-49:29
 192                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-192-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:48:17-95
-192-->[com.facebook.android:facebook-core:8.1.0] C:\Users\Admin\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:48:25-92
+192-->[com.facebook.android:facebook-core:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:48:17-95
+192-->[com.facebook.android:facebook-core:8.1.0] C:\Users\HP\.gradle\caches\transforms-3\0bccd570087e83bf02d4a4cde8a7c645\transformed\jetified-facebook-core-8.1.0\AndroidManifest.xml:48:25-92
 193            </intent-filter>
 194        </receiver>
 195
 196        <activity
-196-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Admin\.gradle\caches\transforms-3\050b950fead925e70c4183b5cb6cd1a8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+196-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\HP\.gradle\caches\transforms-3\050b950fead925e70c4183b5cb6cd1a8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
 197            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-197-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Admin\.gradle\caches\transforms-3\050b950fead925e70c4183b5cb6cd1a8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+197-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\HP\.gradle\caches\transforms-3\050b950fead925e70c4183b5cb6cd1a8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
 198            android:exported="false"
-198-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Admin\.gradle\caches\transforms-3\050b950fead925e70c4183b5cb6cd1a8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+198-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\HP\.gradle\caches\transforms-3\050b950fead925e70c4183b5cb6cd1a8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
 199            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-199-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Admin\.gradle\caches\transforms-3\050b950fead925e70c4183b5cb6cd1a8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+199-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\HP\.gradle\caches\transforms-3\050b950fead925e70c4183b5cb6cd1a8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
 200
 201        <meta-data
-201-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Admin\.gradle\caches\transforms-3\c3cfcc4ca0b43eab16bcb0888115f4ac\transformed\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
+201-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\HP\.gradle\caches\transforms-3\c3cfcc4ca0b43eab16bcb0888115f4ac\transformed\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
 202            android:name="com.google.android.gms.version"
-202-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Admin\.gradle\caches\transforms-3\c3cfcc4ca0b43eab16bcb0888115f4ac\transformed\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
+202-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\HP\.gradle\caches\transforms-3\c3cfcc4ca0b43eab16bcb0888115f4ac\transformed\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
 203            android:value="@integer/google_play_services_version" />
-203-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Admin\.gradle\caches\transforms-3\c3cfcc4ca0b43eab16bcb0888115f4ac\transformed\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
+203-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\HP\.gradle\caches\transforms-3\c3cfcc4ca0b43eab16bcb0888115f4ac\transformed\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
 204    </application>
 205
 206</manifest>
->>>>>>> c9fc84a5dd99b7008b65a9d4f7c9d81695ace644

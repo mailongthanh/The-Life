@@ -167,6 +167,14 @@ public class SaveGame {
         return infomation.isDating();
     }
 
+    public void saveUniversity(boolean university)
+    {
+        infomation.setUniversity(university);
+        reference.child("Basic").child("university").setValue(university);
+    }
+    public boolean getUniversity() {return  infomation.isUniversity();}
+
+
     public  void saveEnglish(boolean english)
     {
         infomation.setEnglish(english);

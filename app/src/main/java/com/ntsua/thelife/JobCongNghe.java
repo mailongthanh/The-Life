@@ -153,6 +153,11 @@ public class JobCongNghe extends AppCompatActivity {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Cài WIN dạo");
             MainActivity.saveGame.saveSalary(5000);
+            txtJob.setText("Cài WIN dạo");
+            if(MainActivity.saveGame.getUniversity()) {
+                MainActivity.createNotification(R.drawable.cancel,"Bạn đã từ bỏ môi trường đại học",this);
+                MainActivity.saveGame.saveUniversity(false);
+            }
             return;
         }
 

@@ -141,6 +141,11 @@ public class JobTaiChinh extends AppCompatActivity {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Nhân viên sale");
             MainActivity.saveGame.saveSalary(12000);
+            txtJob.setText("Nhân viên sale");
+            if(MainActivity.saveGame.getUniversity()) {
+                MainActivity.createNotification(R.drawable.cancel,"Bạn đã từ bỏ môi trường đại học",this);
+                MainActivity.saveGame.saveUniversity(false);
+            }
             return;
         }
 

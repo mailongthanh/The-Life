@@ -4057,7 +4057,7 @@
         ]
       },
       {
-        "content": "Tham gia hoạt động ngoài giờ lấy điểm rèn luyện",
+        "content": "Kiếm điểm rèn luyện",
         "event": [
           {
             "event": "Bạn tham gia chiến dịch Xuân tình nguyện, và được trường cộng cho 5 điểm rèn luyện",
@@ -4111,7 +4111,7 @@
   "Thất nghiệp": {
     "work": [
       {
-        "content": "Tham gia hoạt động tình nguyện",
+        "content": "làm tình nguyện",
         "event": [
           {
             "event": "Trong quãng thời gian thất nghiệp bạn tham gia hoạt động tình nguyện SaiGon Children's charity. Công sức của bạn bỏ ra rất xứng đáng khi nhờ bạn mà các trẻ em nghèo có được các dụng cụ học tập, thức ăn",

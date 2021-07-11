@@ -50,6 +50,7 @@ public class PlayerBasicInfomation {
     private int BoiTinh = 0;
     private int namTu = 0;
     private String tienAn = "";
+    private boolean university = false;
     private int HongKong =0;
     private int America =0;
     private int Korea =0;
@@ -57,6 +58,15 @@ public class PlayerBasicInfomation {
     private int VungTau=0;
     private int PhuQuoc=0;
     private int DaNang=0;
+
+    public boolean isUniversity() {
+        return university;
+    }
+
+    public void setUniversity(boolean university) {
+        this.university = university;
+    }
+
     public int getHongKong() {
         return HongKong;
     }

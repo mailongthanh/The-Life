@@ -152,6 +152,11 @@ public class JobBaoChi extends AppCompatActivity {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Phóng viên");
             MainActivity.saveGame.saveSalary(13000);
+            txtJob.setText("Phóng viên");
+            if(MainActivity.saveGame.getUniversity()) {
+                MainActivity.createNotification(R.drawable.cancel,"Bạn đã từ bỏ môi trường đại học",this);
+                MainActivity.saveGame.saveUniversity(false);
+            }
             return;
         }
 

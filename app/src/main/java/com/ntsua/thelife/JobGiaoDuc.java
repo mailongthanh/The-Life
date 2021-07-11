@@ -153,6 +153,11 @@ public class JobGiaoDuc extends AppCompatActivity {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Thực tập sinh");
             MainActivity.saveGame.saveSalary(5000);
+            txtJob.setText("Thực tập sinh");
+            if(MainActivity.saveGame.getUniversity()) {
+                MainActivity.createNotification(R.drawable.cancel,"Bạn đã từ bỏ môi trường đại học",this);
+                MainActivity.saveGame.saveUniversity(false);
+            }
             return;
         }
 

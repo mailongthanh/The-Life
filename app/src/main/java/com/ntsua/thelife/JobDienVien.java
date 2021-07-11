@@ -141,6 +141,11 @@ public class JobDienVien extends AppCompatActivity {
             dialogResult(true);
             MainActivity.saveGame.saveJob("Diễn viên đóng thế");
             MainActivity.saveGame.saveSalary(5000);
+            txtJob.setText("Diễn viên đóng thế");
+            if(MainActivity.saveGame.getUniversity()) {
+                MainActivity.createNotification(R.drawable.cancel,"Bạn đã từ bỏ môi trường đại học",this);
+                MainActivity.saveGame.saveUniversity(false);
+            }
             return;
         }
 
