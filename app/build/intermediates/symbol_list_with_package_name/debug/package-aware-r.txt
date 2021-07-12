@@ -1957,6 +1957,7 @@ drawable fortunetelling
 drawable fpt
 drawable frame
 drawable fruits
+drawable game2048
 drawable game2048_diem
 drawable game2048_gameplay
 drawable gangster

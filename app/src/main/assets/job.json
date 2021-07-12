@@ -85,74 +85,7 @@
       }
     ],
     "event": [
-      {
-        "require": 5,
-        "event": "Bạn được rủ đi phượt với bạn bè, bạn cần có siêu siêu super xe để đi",
-        "asset": "car",
-        "name": "Xe",
-        "newjob": "",
-        "selection": false,
-        "select": [
-          [
-            {
-              "event": "Té xe siêu xe",
-              "salary": 0,
-              "assets": 0,
-              "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            },
-            {
-              "event": "Đi chơi rất vui",
-              "salary": 0,
-              "assets": 0,
-              "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            },
-            {
-              "event": "Xẹp bánh",
-              "salary": 0,
-              "assets": 0,
-              "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ],
-          [
-            {
-              "event": "Bạn bè đi chơi vui ơi là vui, còn bạn ở nhà",
-              "salary": 0,
-              "assets": 0,
-              "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            },
-            {
-              "event": "Mưa thế là ai cũng nghỉ đi, ở nhà hết",
-              "salary": 0,
-              "assets": 0,
-              "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            },
-            {
-              "event": "Bạn không đi, thế là nhóm nản nghỉ đi hết :))",
-              "salary": 0,
-              "assets": 0,
-              "happy": 5,
-              "health": 0,
-              "smart": 0,
-              "appearance": 0
-            }
-          ]
-        ]
-      },
+
       {
         "require": 10,
         "event": "Bạn được bố mẹ thưởng nóng 100k vì đạt được điểm 10 cuối kì.",
@@ -178,25 +111,16 @@
             "selection": false,
             "event": [
               {
-                "event": "HaNoi",
+                "event": "Bạn được bố mẹ cho đi du lịch vì thành tích học tập xuất sắc, chuyến đi ấy rất là vui",
                 "salary": 0,
                 "assets": 0,
-                "happy": 5,
+                "happy": 10,
                 "health": 0,
                 "smart": 0,
                 "appearance": 0
               },
               {
-                "event": "Đà Nẵng",
-                "salary": 0,
-                "assets": 0,
-                "happy": 5,
-                "health": 0,
-                "smart": 0,
-                "appearance": 0
-              },
-              {
-                "event": "Sài Gòn",
+                "event": "Bạn được bố mẹ cho đi du lịch vì thành tích học tập xuất sắc, tuy nhiên bạn bị say xe và chuyến đi ấy không vui cho lắm",
                 "salary": 0,
                 "assets": 0,
                 "happy": 5,
@@ -211,25 +135,16 @@
             "selection": false,
             "event": [
               {
-                "event": "HaNoi",
+                "event": "Bạn được bố mẹ cho đi du lịch vì thành tích học tập xuất sắc, chuyến đi ấy rất là vui",
                 "salary": 0,
                 "assets": 0,
-                "happy": 5,
+                "happy": 10,
                 "health": 0,
                 "smart": 0,
                 "appearance": 0
               },
               {
-                "event": "Đà Nẵng",
-                "salary": 0,
-                "assets": 0,
-                "happy": 5,
-                "health": 0,
-                "smart": 0,
-                "appearance": 0
-              },
-              {
-                "event": "Sài Gòn",
+                "event": "Bạn được bố mẹ cho đi du lịch vì thành tích học tập xuất sắc, tuy nhiên bạn bị say xe và chuyến đi ấy không vui cho lắm",
                 "salary": 0,
                 "assets": 0,
                 "happy": 5,
@@ -244,25 +159,16 @@
             "selection": false,
             "event": [
               {
-                "event": "HaNoi",
+                "event": "Bạn được bố mẹ cho đi du lịch vì thành tích học tập xuất sắc, chuyến đi ấy rất là vui",
                 "salary": 0,
                 "assets": 0,
-                "happy": 5,
+                "happy": 10,
                 "health": 0,
                 "smart": 0,
                 "appearance": 0
               },
               {
-                "event": "Đà Nẵng",
-                "salary": 0,
-                "assets": 0,
-                "happy": 5,
-                "health": 0,
-                "smart": 0,
-                "appearance": 0
-              },
-              {
-                "event": "Sài Gòn",
+                "event": "Bạn được bố mẹ cho đi du lịch vì thành tích học tập xuất sắc, tuy nhiên bạn bị say xe và chuyến đi ấy không vui cho lắm",
                 "salary": 0,
                 "assets": 0,
                 "happy": 5,
@@ -277,6 +183,7 @@
       {
         "require": 30,
         "event": "Thành tích học tập của bạn đứng top trong trường",
+        "asset": "",
         "newjob": "",
         "selection": false,
         "salary": 0,
@@ -285,6 +192,65 @@
         "health": 5,
         "smart": 0,
         "appearance": 0
+      },
+      {
+        "require": 40,
+        "event": "Trường tổ chức cuộc thi vẽ, bạn có tham gia không",
+        "asset": "painttool",
+        "name": "Bộ vẽ",
+        "newjob": "",
+        "selection": false,
+        "select": [
+          [
+            {
+              "event": "Tại cuộc thi vẽ, bạn vẽ một bức tranh tuyệt đẹp và đứng đầu cuộc thi vẽ trong trường",
+              "salary": 0,
+              "assets": 500,
+              "happy": 5,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            },
+            {
+              "event": "Tại cuộc thi vẽ, bạn đã xuất sắc đứng top cuộc thi vẽ trong trường",
+              "salary": 0,
+              "assets": 200,
+              "happy": 3,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            },
+            {
+              "event": "Tại cuộc thi vẽ trong trường, bạn đã cố gắng hết sức nhưng cuối cùng nhìn những đứa bạn nhận giải",
+              "salary": 0,
+              "assets": 0,
+              "happy": -2,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ],
+          [
+            {
+              "event": "Tại cuộc thi vẽ ở trường, bạn không tham gia.\n Bạn nhìn bạn bè thi đi và lãnh giải, tụ nhiên cảm thấy quyết định mình hơi sai sai",
+              "salary": 0,
+              "assets": 0,
+              "happy": -3,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            },
+            {
+              "event": "Tại cuộc thi vẽ ở trường, bạn không tham gia.\nTuy nhiên, những đứa bạn của bạn tham gia ai cũng không có giải",
+              "salary": 0,
+              "assets": 0,
+              "happy": 2,
+              "health": 0,
+              "smart": 0,
+              "appearance": 0
+            }
+          ]
+        ]
       }
     ]
   },

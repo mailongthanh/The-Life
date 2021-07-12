@@ -407,7 +407,8 @@ public class game2048 extends AppCompatActivity {
     }
 
     public void btn_back2048(View view) {
-        Intent i = new Intent(this,game2048_batdau.class);
-        startActivity(i);
+        //Intent i = new Intent(this,game2048_batdau.class);
+        //startActivity(i);
+        onBackPressed();
     }
 }

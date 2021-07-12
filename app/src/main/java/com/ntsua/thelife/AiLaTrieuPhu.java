@@ -20,7 +20,8 @@ public class AiLaTrieuPhu extends AppCompatActivity {
     }
 
     public void btn_quitgame(View view) {
-        Intent i = new Intent(this,Playground.class);
-        startActivity(i);
+        //Intent i = new Intent(this,Playground.class);
+       // startActivity(i);
+        onBackPressed();
     }
 }

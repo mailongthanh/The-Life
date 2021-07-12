@@ -169,7 +169,7 @@ public class CrimeActivity extends AppCompatActivity {
 
         if(!isSelection[0])
         {
-            Toast.makeText(this, criminal[0] + String.valueOf(year[0]), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, criminal[0] + String.valueOf(year[0]), Toast.LENGTH_SHORT).show();
             dialogEventResult(objects[0],name,year[0],criminal[0]);
         }
         else dialogJobEventWithAsset(objects[0],name);

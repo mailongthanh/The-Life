@@ -196,7 +196,6 @@ public class FragmentMain extends Fragment {
         int age = MainActivity.saveGame.getAge() + 1;
         //So nam ra tu
         int year = TempAge + namTu - age;
-
         if(age > 5 && namTu == 0)
         {
             btnAssets.setEnabled(true);
@@ -253,12 +252,14 @@ public class FragmentMain extends Fragment {
                 return;
             }
 
-            if(age == 22 && University == true)
+            if(age == 22 && University)
             {
                 addAgeHTML(22);
                 MainActivity.createNotification(R.drawable.graduation,"bạn đã kết thúc 4 năm đại học",view.getContext());
                 MainActivity.saveGame.saveJob("Thất nghiệp");
                 txtJob.setText("Thất nghiệp");
+                University = false;
+                MainActivity.saveGame.saveUniversity(false);
                 changeWork();
                 return;
             }
@@ -612,6 +613,7 @@ public class FragmentMain extends Fragment {
             jsonResult = arrJob.getJSONObject(i);
             int require = jsonResult.getInt("require");
             if (currentSkill < require && currentSkill + addSkill >= require) {
+                //Toast.makeText(getActivity(), "Congviec0", Toast.LENGTH_SHORT).show();
                 if (!jsonResult.getString("asset").equals(""))
                     dialogJobEventWithAsset("Công Việc");
                 else if(!jsonResult.getString("newjob").equals(""))
@@ -623,7 +625,12 @@ public class FragmentMain extends Fragment {
                     MainActivity.saveGame.saveSalary(jsonResult.getJSONArray("select").getJSONArray(0).getJSONObject(0).getInt("salary"));
                 }
                 else if (jsonResult.getBoolean("selection")) {
+                    //Toast.makeText(getActivity(), "Congviec", Toast.LENGTH_SHORT).show();
                     dialogJobEvent("Công việc");
+                }
+                else{
+                    //Toast.makeText(getActivity(), "Congviec2", Toast.LENGTH_SHORT).show();
+                    dialogEventResult("Công việc", false);
                 }
                 break;
             }
@@ -1439,6 +1446,15 @@ public class FragmentMain extends Fragment {
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.setContentView(R.layout.dialog_university);
         dialog.getWindow().getAttributes().windowAnimations = R.style.DialogResultAnimation;
+        dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
+            @Override
+            public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_BACK) {
+                    return true;
+                }
+                return false;
+            }
+        });
 
         //Anh xa
         ListView lvUni = dialog.findViewById(R.id.listViewUni);
