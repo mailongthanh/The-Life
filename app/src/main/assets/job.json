@@ -53,33 +53,6 @@
             "smart": -2,
             "appearance": 0,
             "skill": 0
-          },
-          {
-            "event": "3",
-            "assets": 0,
-            "happy": -2,
-            "health": -1,
-            "smart": 0,
-            "appearance": 0,
-            "skill": 0
-          },
-          {
-            "event": "4",
-            "assets": 0,
-            "happy": -2,
-            "health": -1,
-            "smart": 0,
-            "appearance": 0,
-            "skill": 0
-          },
-          {
-            "event": "5",
-            "assets": 0,
-            "happy": -2,
-            "health": -1,
-            "smart": 0,
-            "appearance": 0,
-            "skill": 0
           }
         ]
       }
