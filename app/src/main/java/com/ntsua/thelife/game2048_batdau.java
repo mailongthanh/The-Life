@@ -19,7 +19,8 @@ public class game2048_batdau extends AppCompatActivity {
     }
 
     public void btn_quitgame2048(View view) {
-        Intent i = new Intent(this,Playground.class);
-        startActivity(i);
+        //Intent i = new Intent(this,Playground.class);
+        //startActivity(i);
+        onBackPressed();
     }
 }

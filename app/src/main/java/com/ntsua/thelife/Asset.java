@@ -59,6 +59,7 @@ public class Asset extends AppCompatActivity {
 
     public void gotoMainMenu(View view)
     {
-        startActivity(new Intent(Asset.this, MainActivity.class));
+        overridePendingTransition(R.anim.enter, R.anim.exit);
+        onBackPressed();
     }
 }

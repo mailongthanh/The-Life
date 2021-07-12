@@ -167,6 +167,7 @@ public class CrimeActivity extends AppCompatActivity {
         {
             final int[] year ={objects[0].getInt("year")};
             final String[] criminal = {objects[0].getString("criminal")};
+
             dialogEventResult(objects[0],name,year[0],criminal[0]);
         }
         else dialogJobEventWithAsset(objects[0],name);

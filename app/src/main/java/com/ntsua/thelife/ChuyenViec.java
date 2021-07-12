@@ -89,7 +89,7 @@ public class ChuyenViec extends AppCompatActivity {
                 if (position == 4 && tienAn == "") {
                     Intent myintent = new Intent(view.getContext(), JobQuanDoi.class);
                     startActivityForResult(myintent, 4);
-                } else if(tienAn != "")
+                } else if(position == 4 && tienAn != "")
                 {
                     MainActivity.createNotification(R.drawable.cancel,
                             "Do bạn có tiền án "+ tienAn +" nên bạn không thể gia nhập môi trường quân đội",

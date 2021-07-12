@@ -274,7 +274,7 @@ public class MakeUp extends AppCompatActivity {
         txtName.setText(MainActivity.saveGame.getName());
         txtMoney.setText(MainActivity.saveGame.getMoney() + "K VND");
         txtJob.setText(MainActivity.saveGame.getJob());
-        imgAvatar = findViewById(R.id.imageAvatar);
+        imgAvatar.setImageResource(MainActivity.saveGame.getAvatar());
     }
 
     String readEvent()

@@ -24,7 +24,8 @@ public class game2048_oSoAdapter extends ArrayAdapter<Integer> {
 
     @Override
     public void notifyDataSetChanged() {
-        arr=game2048.getDatagame().getArrSO();
+        game2048 game = (game2048) ct;
+        arr = game.getArrSO();
         super.notifyDataSetChanged();
     }
 

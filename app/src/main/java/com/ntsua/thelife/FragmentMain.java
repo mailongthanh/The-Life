@@ -15,6 +15,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.os.Handler;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -190,6 +191,7 @@ public class FragmentMain extends Fragment {
     }
 
     void addAge() throws JSONException {
+        //Log.d("Salary", "setSalary: New age");
         //them tuoi
         int age = MainActivity.saveGame.getAge() + 1;
         //So nam ra tu
@@ -256,12 +258,14 @@ public class FragmentMain extends Fragment {
                 return;
             }
 
-            if(age == 22 && University == true)
+            if(age == 22 && University)
             {
                 addAgeHTML(22);
                 MainActivity.createNotification(R.drawable.graduation,"bạn đã kết thúc 4 năm đại học",view.getContext());
                 MainActivity.saveGame.saveJob("Thất nghiệp");
                 txtJob.setText("Thất nghiệp");
+                University = false;
+                MainActivity.saveGame.saveUniversity(false);
                 changeWork();
                 return;
             }
@@ -297,12 +301,6 @@ public class FragmentMain extends Fragment {
                 addAgeHTML(age);
                 dialogEventResult(title, true);
             }
-
-//            if (age == 17) {
-//                addAgeHTML(17);
-//                dialogUniversity();
-//                return;
-//            }
         }
     }
 
@@ -621,6 +619,7 @@ public class FragmentMain extends Fragment {
             jsonResult = arrJob.getJSONObject(i);
             int require = jsonResult.getInt("require");
             if (currentSkill < require && currentSkill + addSkill >= require) {
+                //Toast.makeText(getActivity(), "Congviec0", Toast.LENGTH_SHORT).show();
                 if (!jsonResult.getString("asset").equals(""))
                     dialogJobEventWithAsset("Công Việc");
                 else if(!jsonResult.getString("newjob").equals(""))
@@ -628,10 +627,16 @@ public class FragmentMain extends Fragment {
                     dialogJobUpgradeEvent("Công Việc");
                     MainActivity.saveGame.saveJob(jsonResult.getString("newjob"));
                     changeWork();
-                    MainActivity.saveGame.saveSalary(jsonResult.getInt("salary"));
+                    //jsonResult.getJSONArray("select").getJSONObject(0).
+                    MainActivity.saveGame.saveSalary(jsonResult.getJSONArray("select").getJSONArray(0).getJSONObject(0).getInt("salary"));
                 }
                 else if (jsonResult.getBoolean("selection")) {
+                    //Toast.makeText(getActivity(), "Congviec", Toast.LENGTH_SHORT).show();
                     dialogJobEvent("Công việc");
+                }
+                else{
+                    //Toast.makeText(getActivity(), "Congviec2", Toast.LENGTH_SHORT).show();
+                    dialogEventResult("Công việc", false);
                 }
                 break;
             }
@@ -1206,7 +1211,7 @@ public class FragmentMain extends Fragment {
         {
             health -= (30 - prbHappy.getProgress());
         }
-        health -= (int) (MainActivity.saveGame.getAge() / 4); //Tru suc khoe theo do tuoi, tuoi cang cao tru cang nhieu
+        health -= (int) (MainActivity.saveGame.getAge() / 6); //Tru suc khoe theo do tuoi, tuoi cang cao tru cang nhieu
         String reason = "";
         if (health <= 0)
             reason = "\"Qua đời vì tuổi già sức yếu\"";
@@ -1399,7 +1404,6 @@ public class FragmentMain extends Fragment {
         } else if (age > 18)
         {
             int money = 0;
-            int salary =0;
             if (!isHouse())
             {
                 contentHtml += "Trả tiền thuê nhà 3 triệu <br />";
@@ -1410,10 +1414,11 @@ public class FragmentMain extends Fragment {
                 contentHtml += "Trả tiền đi xe nhà 2 triệu <br />";
                 money += 2000;
             }
-            contentHtml +="Tiền lương của bạn mỗi năm: " + MainActivity.saveGame.getSalary() +"000<br />";
-            salary += MainActivity.saveGame.getSalary();
-            MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() - money + salary);
+            String salary = String.format( "%,d", MainActivity.saveGame.getSalary()*1000);
+            contentHtml += "Tiền lương của bạn mỗi năm: " + salary +" VND<br />";
+            MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() - money + MainActivity.saveGame.getSalary());
             txtMoney.setText(MainActivity.saveGame.getMoney() + "K VND");
+            //Toast.makeText(getActivity(), "" + MainActivity.saveGame.getSalary(), Toast.LENGTH_SHORT).show();
         }
         txtContent.setText(android.text.Html.fromHtml(contentHtml));
         scrollView.post(new Runnable() {
@@ -1452,6 +1457,15 @@ public class FragmentMain extends Fragment {
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.setContentView(R.layout.dialog_university);
         dialog.getWindow().getAttributes().windowAnimations = R.style.DialogResultAnimation;
+        dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
+            @Override
+            public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_BACK) {
+                    return true;
+                }
+                return false;
+            }
+        });
 
         //Anh xa
         ListView lvUni = dialog.findViewById(R.id.listViewUni);
@@ -1480,12 +1494,7 @@ public class FragmentMain extends Fragment {
                 if (arrUniversity.get(position).getName().equals("Không học")) {
                     contentHtml += "Bạn quyết định không học đại học<br/>";
                     MainActivity.saveGame.saveJob("Thất nghiệp");
-                    try {
-                        changeWork();
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                } else {
+                } else if (arrUniversity.get(position).getRequire() <= MainActivity.saveGame.getSmart()) {
                     contentHtml += "Bạn chọn vào học tại trường " + arrUniversity.get(position).getName() + "<br/>";
                     MainActivity.saveGame.saveJob("Sinh viên");
                     University = true;
@@ -1496,6 +1505,7 @@ public class FragmentMain extends Fragment {
                         e.printStackTrace();
                     }
                 }
+                else return;
                 MainActivity.saveGame.saveDetailActivity(contentHtml);
                 txtContent.setText(android.text.Html.fromHtml(contentHtml));
                 txtJob.setText(MainActivity.saveGame.getJob());

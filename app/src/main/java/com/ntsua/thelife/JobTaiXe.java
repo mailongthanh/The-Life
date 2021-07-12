@@ -123,26 +123,11 @@ public class JobTaiXe extends AppCompatActivity {
             }
         });
     }
-    void createDialogOFM() {
-        Dialog dialog = new Dialog(this);
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setCanceledOnTouchOutside(false);
-        dialog.setContentView(R.layout.dialog_job_accept);
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        LinearLayout dialogResult = dialog.findViewById(R.id.dialog_event_result);
-        Button btnOke = dialog.findViewById(R.id.buttonDialogEventOke);
-        btnOke.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss();
-            }
-        });
-        dialog.show();
-    }
     void dialogResult(boolean result)
     {
         if (result) {
             MainActivity.createNotification(R.drawable.holding_hands, "Chúc mừng bạn đã xuất sắc vượt qua bài phỏng vấn. Bắt đầu từ mai bạn có thể bắt đầu công việc của mình, hãy chăm chỉ làm việc rồi bạn sẽ được thăng quan tiến chức", JobTaiXe.this);
+            MainActivity.saveGame.saveSkill(0);
         }
         else MainActivity.createNotification(R.drawable.cancel, "Trả lời sai bét, bạn không được nhận công việc", JobTaiXe.this);
     }

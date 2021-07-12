@@ -9,16 +9,21 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 
 public class game2048_oVuong extends TextView {
+    game2048 context;
+
     public game2048_oVuong(Context context) {
         super(context);
+        this.context = (game2048) context;
     }
 
     public game2048_oVuong(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
+        this.context = (game2048)context;
     }
 
     public game2048_oVuong(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        this.context = (game2048)context;
     }
 
     @Override
@@ -47,7 +52,7 @@ public class game2048_oVuong extends TextView {
 
 
         GradientDrawable drawable = (GradientDrawable)this.getBackground();
-        drawable.setColor(game2048.getDatagame().colorr(so));
+        drawable.setColor(context.colorr(so));
         setBackground(drawable);
 
         if (so==0){

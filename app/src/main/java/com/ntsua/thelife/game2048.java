@@ -1,16 +1,24 @@
 package com.ntsua.thelife;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.facebook.login.LoginManager;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -21,27 +29,20 @@ public class game2048 extends AppCompatActivity {
     private float X,Y;
     private game2048_oSoAdapter adapter;
 
-
-    private static game2048 game2048s;
     private ArrayList<Integer> arrSO = new ArrayList<>();
     private int[] mangMau;
     private int[][] mangHaiChieu = new int[4][4];
     private Random r = new Random();
-//    TextView txvThuaGame2048;
-    static {
-        game2048s = new game2048();
-    }
-    public static game2048 getDatagame(){
-        return game2048s;
-    }
-    public void intt(Context context){
+
+    public void intt(){
+        //mContext = context;
         for (int i=0; i<4; i++){
             for(int j=0;j<4;j++){
                 mangHaiChieu[i][j]=0;
                 arrSO.add(0);
             }
         }
-        TypedArray ta= context.getResources().obtainTypedArray(R.array.mauNenCuaSo);
+        TypedArray ta= this.getResources().obtainTypedArray(R.array.mauNenCuaSo);
         mangMau = new int[ta.length()];
         for (int i=0; i<ta.length(); i++){
             mangMau[i] = ta.getColor(i,0);
@@ -77,8 +78,25 @@ public class game2048 extends AppCompatActivity {
                 soOTao=1;
             }else{
                 soOTao=0;
+                //Toast.makeText(mContext, "Thua", Toast.LENGTH_SHORT).show();
             }
         }
+        int zero = 0;
+        for (int i=0; i<4; i++)
+        {
+            for (int j=0; j<4; j++)
+            {
+                if (mangHaiChieu[i][j] == 0){
+                    zero = 1;
+                    break;
+                }
+            }
+            if (zero == 1)
+                break;
+        }
+        if(zero == 0 && isLose())
+            dialogGameOver();
+
         while (soOTao!=0){
             int i =r.nextInt(4), j =r.nextInt(4);
             if (mangHaiChieu[i][j]==0){
@@ -272,12 +290,62 @@ public class game2048 extends AppCompatActivity {
         chuyenDoi();
     }
 
+    private void dialogGameOver()
+    {
+        int score = getScore();
+        Dialog dialog = MainActivity.createNotification(R.drawable.cancel,
+                "Bạn đã thua       \nTổng điểm: " + score,
+                this);
 
+        MainActivity.saveGame.saveMoney(MainActivity.saveGame.getMoney() + score);
+        MainActivity.saveGame.savePlayerInfo(
+                MainActivity.saveGame.getHappy() + score / 100,
+                MainActivity.saveGame.getHealth(),
+                MainActivity.saveGame.getSmart() + score / 100,
+                MainActivity.saveGame.getAppearance()
+        );
 
+        Button btn = dialog.findViewById(R.id.buttonNotificationtOke);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //startActivity(new Intent(game2048.this, game2048_batdau.class));
+                //overridePendingTransition(R.anim.enter, R.anim.exit);
+                onBackPressed();
+            }
+        });
+    }
 
+    int getScore()
+    {
+        int score = 0;
+        for (int i=0; i<4; i++) {
+            for (int j = 0; j < 4; j++) {
+                score += mangHaiChieu[i][j];
+            }
+        }
 
+        return score;
+    }
 
-
+    boolean isLose()
+    {
+        for (int i=0; i<4; i++)
+        {
+            for (int j=0; j<4; j++)
+            {
+                if (i-1>=0 && mangHaiChieu[i-1][j] == mangHaiChieu[i][j])
+                    return false;
+                if (i+1<=3 && mangHaiChieu[i+1][j] == mangHaiChieu[i][j])
+                    return false;
+                if (j-1>=0 && mangHaiChieu[i][j-1] == mangHaiChieu[i][j])
+                    return false;
+                if (j+1<=3 && mangHaiChieu[i][j+1] == mangHaiChieu[i][j])
+                    return false;
+            }
+        }
+        return  true;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -287,6 +355,7 @@ public class game2048 extends AppCompatActivity {
         anhXa();
         khoiTao();
         setData();
+        //dialogGameOver();
     }
     private void anhXa(){
         gdvGamePlay = (GridView)findViewById(R.id.gdvGamePlay);
@@ -294,8 +363,8 @@ public class game2048 extends AppCompatActivity {
     }
     private void khoiTao(){
 //        txvThuaGame2048.setVisibility(View.GONE);
-        game2048.getDatagame().intt(game2048.this);
-        adapter = new game2048_oSoAdapter(game2048.this,0,game2048.getDatagame().getArrSO());
+        intt();
+        adapter = new game2048_oSoAdapter(game2048.this,0,getArrSO());
 
         listener = new View.OnTouchListener() {
             @Override
@@ -308,19 +377,19 @@ public class game2048 extends AppCompatActivity {
                     case MotionEvent.ACTION_UP:
                         if(Math.abs(event.getX()-X)>Math.abs(event.getY()-Y)){
                             if (event.getX()<X){
-                                game2048.getDatagame().vuotTrai();
+                                vuotTrai();
                                 adapter.notifyDataSetChanged();
                             }else{
-                                game2048.getDatagame().vuotPhai();
+                                vuotPhai();
                                 adapter.notifyDataSetChanged();
                             }
 
                         }else {
                             if (event.getY()<Y){
-                                game2048.getDatagame().vuotXuong();
+                                vuotXuong();
                                 adapter.notifyDataSetChanged();
                             }else{
-                                game2048.getDatagame().vuotLen();
+                                vuotLen();
                                 adapter.notifyDataSetChanged();
                             }
                         }
@@ -332,14 +401,14 @@ public class game2048 extends AppCompatActivity {
         };
     }
 
-
     private void setData(){
         gdvGamePlay.setAdapter(adapter);
         gdvGamePlay.setOnTouchListener(listener);
     }
 
     public void btn_back2048(View view) {
-        Intent i = new Intent(this,game2048_batdau.class);
-        startActivity(i);
+        //Intent i = new Intent(this,game2048_batdau.class);
+        //startActivity(i);
+        onBackPressed();
     }
 }
