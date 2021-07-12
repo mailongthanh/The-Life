@@ -1,14 +1,8 @@
 {
   "Móc túi": [
-    {"event": "Bạn lượn 1 vòng công viên, bạn móc được 1 vài chiếc smartphone của người đi đường","year":0, "criminal":"", "asset":"", "selection": false, "assets": 1000, "happy": 5, "health": 0, "smart":0, "appearance": -5},
-    {"event": "Bạn lượn 1 vòng thành phố, bạn chuẩn bị móc túi của một người đi đường thì bị anh ta tóm được, bạn bị đấm cho mấy phát nhưng may mắn bạn chạy trốn được","year":0, "criminal":"", "asset":"","selection": false, "assets": 0, "happy": -15, "health": -20, "smart":0, "appearance": -5},
-    {"event": "Bạn giả vờ vấp ngã, nhờ người khác đỡ dậy, bạn lợi dụng lúc họ sơ ý bạn móc được ví của họ","year":0, "criminal":"", "asset":"", "selection": false, "assets": 2000, "happy": 5, "health": 0, "smart":0, "appearance": -5},
-    {"event": "Sau nhiều lần hành tẩu giang hồ, thì bạn không may bị bắt, bạn chỉ bị nhắc nhở, và phạt hành chính","year":0, "criminal":"", "asset":"", "selection": false, "assets": -1000, "happy": -5, "health": 0, "smart":0, "appearance": 0},
     {"event": "Bạn bị bắt gặp là đang móc ví, đối phương doạ là sẽ báo cảnh sát bắt bạn, bạn có muốn trừ khử người này không ?", "asset":"dao", "name": "dao","selection": true,
       "select":[
         [
-          {"event": "Sau khi thủ tiêu đối phương, bạn đã giấu ở một nơi trời không biết đất không hay, và do đối phương là một người cô độc, chỉ còn 1 mình trên đời nên không một ai biết bạn đã làm gì","year":0,"criminal":"", "assets": 10000, "happy": -30, "health": -20, "smart":0, "appearance": -10},
-          {"event": "Sau khi thủ tiêu đối phương, bạn bắt đầu trở nên ân hận vì tội lỗi mà mình gây ra, bạn bị ám ảnh với tội ác của mình, cuối cùng kết thúc cuộc đời bằng việc tự sát", "year":0,"criminal":"", "assets": 0, "happy": 0, "health": -100, "smart":0, "appearance": 0},
           {"event": "Sau khi thủ tiêu đối phương, mấy ngày sau bạn liền bị gọi tới cơ quan chức năng để điều tra, với bằng chứng đầy đủ, cuối cùng bạn không thoát khỏi được tội ác của mình, tịch thu vật chứng và án tù 5 năm", "year":5,"criminal":"giết người", "assets": 0, "happy": -20, "health": -20, "smart":0, "appearance": -20}
         ],
         [
@@ -16,20 +10,8 @@
           {"event": "Bạn lo sợ mà từ bỏ rồi chạy đi mất, cũng may những lời nói đó chỉ là những lời hâm doạ suông","year":0,"criminal":"", "assets": 0, "happy": 10, "health": 0, "smart":0, "appearance": 0},
           {"event": "Bạn phớt lờ rồi giựt ví chạy đi mất, mấy ngày sau bạn bị gọi lên điều tra, do tính chất phạm tội chưa quá nguy hiểm, nên bạn chỉ bị tịch thu tài sản và phạt hành chính răn đe","year":0,"criminal":"", "assets": -5000, "happy": 0, "health": 0, "smart":0, "appearance": 0}
         ]
-      ]},
-    {"event": "Bạn móc túi của một quý bà trên đường thì bị phát hiện, mụ cảnh cáo bạn nếu bạn giúp tạt axit vào người dụ dỗ chồng mụ thì sẽ được thưởng, ngược lại mụ sẽ kiện bạn ra toà \n\nBạn quyết định ra sao ?",  "asset":"poison", "name": "thuốc độc", "selection": true,
-      "select" : [
-        [
-          {"event": "Bạn sợ hãi nghe theo lệnh bà ta, sau nhiều lần lẫn trốn thì cuối cùng bạn cũng bị bắt, và chịu tội án 3 năm tù cho hành vi của mình","year":3,"criminal":"cố ý gây thương tích", "assets": 0, "happy": -10, "health": 0, "smart":0, "appearance": 0},
-          {"event": "Bạn sợ hãi nghe theo lệnh bà ta, nhưng không may đối tượng là vợ của một ông trùm băng đảng thế là bạn bị vạ lây vào ẩu đả thanh toán băng đảng, bạn chịu nhiều thương tích sau cuộc ẩu đả","year":0, "criminal":"","assets": 0, "happy": -10, "health": -30, "smart":0, "appearance": 0},
-          {"event": "Bạn sợ hãi nghe theo lệnh bà ta, thực hiện xong bà ta cũng đã tặng thưởng cho bạn 1 phần tiền lớn","year":0,"criminal":"", "assets": 10000, "happy": 0, "health": 0, "smart":0, "appearance": 0}
-        ],
-        [
-          {"event": "Bạn từ chối yêu cầu của bà ta, \n\n'CẮT!!!'\n\n Hoá ra nãy giờ chỉ là đang diễn kịch mà thôi, bạn thở phào nhẹ nhõm", "year":0,"criminal":"","assets": 0, "happy": 0, "health": 0, "smart":0, "appearance": 0},
-          {"event": "Bạn từ chối yêu cầu của bà ta, bạn tiết lộ kế hoạch với đối tượng mà mụ nhắm tới, hoá ra đối tượng cũng là một quý bà xửng xỏ trong giới kinh doanh, thế là bạn được bảo kê nhờ thông tin của mình" ,"year":0, "criminal":"", "assets": 10000, "happy": 10, "health": 0, "smart":0, "appearance": 0},
-          {"event": "Bạn từ chối yêu cầu của bà ta rồi chạy đi mất, không lâu sau bạn bị một đám vệ sĩ của mụ vây đánh", "year":0,"criminal":"","assets": 0, "happy": 0, "health": -30, "smart":0, "appearance": 0}
-        ]
-  ]}],
+      ]}
+    ],
   "Cướp cửa hàng": [
     {"event": "Mục tiêu của bạn là tiệm vàng, bạn đang bỏ vàng vào vali thì đột nhiên bị chủ nhà phát hiện, bạn có muốn trừ khử người này ?", "asset":"gun", "selection": true,
       "select": [

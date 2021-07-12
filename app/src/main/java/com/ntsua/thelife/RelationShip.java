@@ -77,9 +77,9 @@ public class RelationShip extends AppCompatActivity {
     }
 
     public void gotoMainMenu(View view) {
-        //startActivity(new Intent(RelationShip.this, MainActivity.class));
+        startActivity(new Intent(RelationShip.this, MainActivity.class));
         overridePendingTransition(R.anim.enter, R.anim.exit);
-        onBackPressed();
+        //onBackPressed();
     }
 
     public void gotoTuongTac(int i){

@@ -195,15 +195,20 @@ public class FragmentMain extends Fragment {
         //So nam ra tu
         int year = TempAge + namTu - age;
 
+        if(age > 0)
+        {
+            btnWork.setEnabled(true);
+            btnWork.setBackgroundResource(R.drawable.custom_button_menu);
+        }
+
         if(age > 5 && namTu == 0)
         {
             btnAssets.setEnabled(true);
             btnActivity.setEnabled(true);
-            btnWork.setEnabled(true);
 
             btnAssets.setBackgroundResource(R.drawable.custom_button_menu);
             btnActivity.setBackgroundResource(R.drawable.custom_button_menu);
-            btnWork.setBackgroundResource(R.drawable.custom_button_menu);
+
         }
 
         if(namTu!=0) {
@@ -1085,13 +1090,17 @@ public class FragmentMain extends Fragment {
         MainActivity.saveGame.saveJogging(0);
         MainActivity.saveGame.saveJogging(0);
         MainActivity.saveGame.saveCrime(0);
+        MainActivity.saveGame.saveAsset(null);
         MainActivity.saveGame.saveTienAn(null);
         MainActivity.saveGame.saveUniversity(false);
         MainActivity.saveGame.saveSalary(0);
         btnAssets.setEnabled(false);
         btnActivity.setEnabled(false);
+        btnWork.setEnabled(false);
+
         btnAssets.setBackgroundResource(R.drawable.list_item_unable);
         btnActivity.setBackgroundResource(R.drawable.list_item_unable);
+        btnWork.setBackgroundResource(R.drawable.list_item_unable);
 
         txtJob.setText(MainActivity.saveGame.getJob());
         txtMoney.setText("0K VND");
@@ -1108,6 +1117,7 @@ public class FragmentMain extends Fragment {
         prbHappy.setProgress(80);
         prbSmart.setProgress(30);
         prbAppearance.setProgress(50);
+
         changeProgressBackground(prbAppearance);
         changeProgressBackground(prbHappy);
         changeProgressBackground(prbHealth);

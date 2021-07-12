@@ -275,8 +275,9 @@ public class JobQuanDoi extends AppCompatActivity {
     }
     public void gotoMainMenu(View view)
     {
+        startActivity(new Intent(JobQuanDoi.this,ChuyenViec.class));
         overridePendingTransition(R.anim.enter, R.anim.exit);
-        onBackPressed();
+        //onBackPressed();
     }
     private void loadGame() {
         txtName.setText(MainActivity.saveGame.getName());

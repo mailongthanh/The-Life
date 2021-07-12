@@ -163,13 +163,10 @@ public class CrimeActivity extends AppCompatActivity {
 
         final boolean[] isSelection = {objects[0].getBoolean("selection")};
 
-        final int[] year ={objects[0].getInt("year")};
-
-        final String[] criminal = {objects[0].getString("criminal")};
-
         if(!isSelection[0])
         {
-            Toast.makeText(this, criminal[0] + String.valueOf(year[0]), Toast.LENGTH_SHORT).show();
+            final int[] year ={objects[0].getInt("year")};
+            final String[] criminal = {objects[0].getString("criminal")};
             dialogEventResult(objects[0],name,year[0],criminal[0]);
         }
         else dialogJobEventWithAsset(objects[0],name);
