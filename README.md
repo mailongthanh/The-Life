@@ -24,8 +24,6 @@ Với hệ thống các nhiệm vụ, sự kiện cuộc sống đa dạng, nhi�
 ### Demo
 
 [Video](https://youtu.be/1KEYQ-q77EA?si=Q68YeLrIeXJ0eJTz)
-![image]()
-
 
 ### Một số hình ảnh trong game
 <img src="https://github.com/mailongthanh/The-Life/assets/72732661/c82d81b1-78fd-4a9c-97d8-d9741f19b8d1" width="300" height="700">
